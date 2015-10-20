@@ -1,8 +1,8 @@
 /*
-
-  TACHYONS
-
-*/
+ *
+ *   TACHYONS
+ *
+ *   */
 
 
 /* Variables */
@@ -158,7 +158,6 @@ dfn {
  */
 
 hr {
-    -moz-box-sizing: content-box;
     box-sizing: content-box;
     height: 0;
 }
@@ -364,9 +363,7 @@ input[type="radio"] {
  */
 
 input[type="search"] {
-    -webkit-appearance: textfield; /* 1 */
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box; /* 2 */
+    -webkit-appearance: textfield; /* 1 */ /* 2 */
     box-sizing: content-box;
 }
 
@@ -1493,21 +1490,26 @@ img { max-width: 100%; }
 
 .link {
   text-decoration: none;
-  transition: color .15s ease-in;
+  -webkit-transition: color .15s ease-in;
+          transition: color .15s ease-in;
 }
 
 .link:link,
 .link:visited {
-  transition: color .15s ease-in;
+  -webkit-transition: color .15s ease-in;
+          transition: color .15s ease-in;
 }
 .link:hover   {
-  transition: color .15s ease-in;
+  -webkit-transition: color .15s ease-in;
+          transition: color .15s ease-in;
 }
 .link:active  {
-  transition: color .15s ease-in;
+  -webkit-transition: color .15s ease-in;
+          transition: color .15s ease-in;
 }
 .link:focus   {
-  transition: color .15s ease-in;
+  -webkit-transition: color .15s ease-in;
+          transition: color .15s ease-in;
 }
 
 .underline             { text-decoration: underline; }
@@ -1950,10 +1952,31 @@ img { max-width: 100%; }
     color: rgba(255,255,255,1);
 }
 
+.white-100::-webkit-input-placeholder {
+    color: rgba(255,255,255,1);
+}
+
+.white-100::-moz-placeholder {
+    color: rgba(255,255,255,1);
+}
+
+.white-100:-ms-input-placeholder {
+    color: rgba(255,255,255,1);
+}
+
 .white-100::placeholder {
     color: rgba(255,255,255,1);
 }
 .white-90 {
+    color: rgba(255,255,255,.9);
+}
+.white-90::-webkit-input-placeholder {
+    color: rgba(255,255,255,.9);
+}
+.white-90::-moz-placeholder {
+    color: rgba(255,255,255,.9);
+}
+.white-90:-ms-input-placeholder {
     color: rgba(255,255,255,.9);
 }
 .white-90::placeholder {
@@ -1962,10 +1985,28 @@ img { max-width: 100%; }
 .white-80 {
     color: rgba(255,255,255,.8);
 }
+.white-80::-webkit-input-placeholder {
+    color: rgba(255,255,255,.8);
+}
+.white-80::-moz-placeholder {
+    color: rgba(255,255,255,.8);
+}
+.white-80:-ms-input-placeholder {
+    color: rgba(255,255,255,.8);
+}
 .white-80::placeholder {
     color: rgba(255,255,255,.8);
 }
 .white-70 {
+    color: rgba(255,255,255,.7);
+}
+.white-70::-webkit-input-placeholder {
+    color: rgba(255,255,255,.7);
+}
+.white-70::-moz-placeholder {
+    color: rgba(255,255,255,.7);
+}
+.white-70:-ms-input-placeholder {
     color: rgba(255,255,255,.7);
 }
 .white-70::placeholder {
@@ -1974,10 +2015,28 @@ img { max-width: 100%; }
 .white-60 {
     color: rgba(255,255,255,.6);
 }
+.white-60::-webkit-input-placeholder {
+    color: rgba(255,255,255,.6);
+}
+.white-60::-moz-placeholder {
+    color: rgba(255,255,255,.6);
+}
+.white-60:-ms-input-placeholder {
+    color: rgba(255,255,255,.6);
+}
 .white-60::placeholder {
     color: rgba(255,255,255,.6);
 }
 .white-50 {
+    color: rgba(255,255,255,.5);
+}
+.white-50::-webkit-input-placeholder {
+    color: rgba(255,255,255,.5);
+}
+.white-50::-moz-placeholder {
+    color: rgba(255,255,255,.5);
+}
+.white-50:-ms-input-placeholder {
     color: rgba(255,255,255,.5);
 }
 .white-50::placeholder {
@@ -1986,10 +2045,28 @@ img { max-width: 100%; }
 .white-40 {
     color: rgba(255,255,255,.4);
 }
+.white-40::-webkit-input-placeholder {
+    color: rgba(255,255,255,.4);
+}
+.white-40::-moz-placeholder {
+    color: rgba(255,255,255,.4);
+}
+.white-40:-ms-input-placeholder {
+    color: rgba(255,255,255,.4);
+}
 .white-40::placeholder {
     color: rgba(255,255,255,.4);
 }
 .white-30 {
+    color: rgba(255,255,255,.3);
+}
+.white-30::-webkit-input-placeholder {
+    color: rgba(255,255,255,.3);
+}
+.white-30::-moz-placeholder {
+    color: rgba(255,255,255,.3);
+}
+.white-30:-ms-input-placeholder {
     color: rgba(255,255,255,.3);
 }
 .white-30::placeholder {
@@ -1998,10 +2075,28 @@ img { max-width: 100%; }
 .white-20 {
     color: rgba(255,255,255,.2);
 }
+.white-20::-webkit-input-placeholder {
+    color: rgba(255,255,255,.2);
+}
+.white-20::-moz-placeholder {
+    color: rgba(255,255,255,.2);
+}
+.white-20:-ms-input-placeholder {
+    color: rgba(255,255,255,.2);
+}
 .white-20::placeholder {
     color: rgba(255,255,255,.2);
 }
 .white-10 {
+    color: rgba(255,255,255,.1);
+}
+.white-10::-webkit-input-placeholder {
+    color: rgba(255,255,255,.1);
+}
+.white-10::-moz-placeholder {
+    color: rgba(255,255,255,.1);
+}
+.white-10:-ms-input-placeholder {
     color: rgba(255,255,255,.1);
 }
 .white-10::placeholder {
@@ -3386,15 +3481,17 @@ img { max-width: 100%; }
 */
 .dim {
   opacity: 1;
-  transition: opacity .15s ease-in;
+  -webkit-transition: opacity .15s ease-in;
+          transition: opacity .15s ease-in;
 }
 .dim:hover,
 .dim:focus {
   opacity: .5;
-  transition: opacity .15s ease-in;
+  -webkit-transition: opacity .15s ease-in;
+          transition: opacity .15s ease-in;
 }
 .dim:active {
-  opacity: .8; transition: opacity .15s ease-out;
+  opacity: .8; -webkit-transition: opacity .15s ease-out; transition: opacity .15s ease-out;
 }
 
 /*
@@ -3414,7 +3511,8 @@ img { max-width: 100%; }
 
 .hide-child .child {
   opacity: 0;
-  transition: opacity .15s ease-in;
+  -webkit-transition: opacity .15s ease-in;
+          transition: opacity .15s ease-in;
 }
 
 .hide-child:hover  .child {
@@ -3425,7 +3523,8 @@ img { max-width: 100%; }
 .hide-child:focus  .child,
 .hide-child:active .child {
   opacity: 1;
-  transition: opacity .15s ease-in;
+  -webkit-transition: opacity .15s ease-in;
+          transition: opacity .15s ease-in;
 }
 /*
 
@@ -3442,18 +3541,22 @@ img { max-width: 100%; }
 */
 
 .gradient-blue { 
+  background-image: -webkit-linear-gradient(#4570B0, #0081C2); 
   background-image: linear-gradient(#4570B0, #0081C2);
 }
 
 .gradient-blue-reversed { 
+  background-image: -webkit-linear-gradient(#0081C2, #4570B0); 
   background-image: linear-gradient(#0081C2, #4570B0);
 }
 
 .gradient-light-blue { 
+  background-image: -webkit-linear-gradient(#76D3FE, #008AE0); 
   background-image: linear-gradient(#76D3FE, #008AE0);
 }
 
 .gradient-light-blue-reversed { 
+  background-image: -webkit-linear-gradient(#008AE0, #76D3FE); 
   background-image: linear-gradient(#008AE0, #76D3FE);
 }
 

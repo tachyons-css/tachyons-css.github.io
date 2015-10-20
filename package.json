@@ -3,22 +3,19 @@
   "version": "0.0.0",
   "description": "Documentation for Tachyons -- a performant, mobile-first, and 100% responsive modular css framework.",
   "main": "index.html",
+  "scripts": {
+    "start": "node build.js && superstatic"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/tachyons-css/tachyons-css.github.io.git"
   },
-  "keywords": [
-    "css",
-    "sass",
-    "oocss",
-    "performance",
-    "framework"
-  ],
   "author": "mrmrs",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/tachyons-css/tachyons-css.github.io/issues"
   },
+  "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^6.0.3",
     "browser-sync": "^2.9.11",
@@ -110,9 +107,5 @@
       "name": "tyler benziger",
       "url": "http://tybenz.com"
     }
-  ],
-  "scripts": {
-    "start": "watch 'node build.js' ./src"
-  },
-  "dependencies": {}
+  ]
 }
