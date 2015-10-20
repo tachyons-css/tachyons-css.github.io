@@ -1,6 +1,7 @@
 var fs = require('fs')
 var _ = require('lodash')
 var path = require('path')
+var mkdirp = require('mkdirp')
 var glob = require('glob')
 var titleize = require('titleize')
 var fm = require('json-front-matter')
@@ -14,6 +15,7 @@ var removeComments = require('postcss-discard-comments')
 var cssVariables = require('postcss-css-variables')
 var customMedia = require('postcss-custom-media')
 var mqPacker = require('css-mqpacker')
+var cssstats = require('cssstats')
 
 var tachyonsCss = fs.readFileSync('src/css/tachyons.css', 'utf8')
 
@@ -27,11 +29,13 @@ module.exports = function () {
     var template = fs.readFileSync('src/templates/components.html', 'utf8')
 
     components.forEach(function (component) {
-      var newDir = rmHtmlExt(component.replace('src/', 'examples/')) + '/index.html'
+      var newDir = rmHtmlExt(component.replace('src/', 'examples/'))
+      var newFile = newDir + '/index.html'
       var componentHtml = fs.readFileSync(component, 'utf8')
 
       var fmParsed = fm.parse(componentHtml)
       var frontMatter = fmParsed.attributes || {}
+      frontMatter.bodyClass = frontMatter.bodyClass || ''
       frontMatter.title = frontMatter.title || getTitle(component)
       frontMatter.classes = getClasses(fmParsed.body).map(function(klass) {
         return '.' + klass
@@ -55,13 +59,16 @@ module.exports = function () {
         from: 'src/css/tachyons.css'
       }).css
 
+      frontMatter.stats = cssstats(frontMatter.componentCss)
+
       // TODO: Update me once src/ uses the npm modules
       frontMatter.modules = Object.keys(moduleSrcs).map(function (module) {
         return 'tachyons-' + module.split('/_')[1].replace('.css', '')
       })
 
       var compiledPage = _.template(template)(frontMatter)
-      fs.writeFileSync(newDir, compiledPage)
+      mkdirp.sync(newDir)
+      fs.writeFileSync(newFile, compiledPage)
     })
   })
 }
