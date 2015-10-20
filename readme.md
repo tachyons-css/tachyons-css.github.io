@@ -6,9 +6,9 @@ Documentation for [Tachyons](http://tachyons.io).
 
 ```sh
 git clone https://github.com/tachyons-css/tachyons-css.github.io.git && cd $_
-npm i -g superstatic
-npm i
+npm i -g superstatic && npm i
 npm start
+open  http://localhost:3474
 ```
 
 ## License

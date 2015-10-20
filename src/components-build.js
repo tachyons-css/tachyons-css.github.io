@@ -15,20 +15,19 @@ var cssVariables = require('postcss-css-variables')
 var customMedia = require('postcss-custom-media')
 var mqPacker = require('css-mqpacker')
 
-var tachyonsCss = fs.readFileSync('src/tachyons.css', 'utf8')
+var tachyonsCss = fs.readFileSync('src/css/tachyons.css', 'utf8')
 
 module.exports = function () {
-  glob('examples/components/src/**/*.html', {}, function (err, components) {
+  glob('src/components/**/*.html', {}, function (err, components) {
     if (err) {
       console.error(err)
       return
     }
 
-    var template = fs.readFileSync('templates/components.html', 'utf8')
-
+    var template = fs.readFileSync('src/templates/components.html', 'utf8')
 
     components.forEach(function (component) {
-      var newDir = rmHtmlExt(component.replace('/src', '')) + '/index.html'
+      var newDir = rmHtmlExt(component.replace('src/', 'examples/')) + '/index.html'
       var componentHtml = fs.readFileSync(component, 'utf8')
 
       var fmParsed = fm.parse(componentHtml)
@@ -53,7 +52,7 @@ module.exports = function () {
         atImport(), cssVariables(), conditionals(), customMedia(), select(frontMatter.classes),
         removeComments(), mqPacker(), getModules()
       ]).process(tachyonsCss, {
-        from: 'src/tachyons.css'
+        from: 'src/css/tachyons.css'
       }).css
 
       // TODO: Update me once src/ uses the npm modules
@@ -68,6 +67,6 @@ module.exports = function () {
 }
 
 function getTitle(component) {
-  var title = rmHtmlExt(component).replace('examples/components/src/', '').replace(/(\/|_|-)/g, ' ')
+  var title = rmHtmlExt(component).replace('src/components/', '').replace(/(\/|_|-)/g, ' ')
   return titleize(title)
 }

@@ -219,9 +219,9 @@ var css = fs.readFileSync('./css/tachyons.css', 'utf8')
 
 //var ast = postcss.parse(css)
 var obj = cssstats(css)
-var size = filesize(gzip.sync(fs.readFileSync("css/tachyons.min.css", "utf8")))
+var size = filesize(gzip.sync(fs.readFileSync('css/tachyons.min.css', 'utf8')))
 
-var template = fs.readFileSync('./templates/index.html', 'utf8')
+var template = fs.readFileSync('./src/templates/index.html', 'utf8')
 var tpl = _.template(template)
 var html = tpl({
   size: size,

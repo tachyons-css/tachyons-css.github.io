@@ -12,16 +12,16 @@ var conditionals = require('postcss-conditionals')
 var cssvariables = require('postcss-css-variables')
 var customMedia = require('postcss-custom-media')
 
-var componentsBuild = require('./components-build')
+var componentsBuild = require('./src/components-build')
 
 // css to be processed
-var css = fs.readFileSync('src/tachyons.css', 'utf8')
+var css = fs.readFileSync('src/css/tachyons.css', 'utf8')
 
 // process css
 var output = postcss([
   atImport(), cssvariables(), conditionals(), customMedia(), autoprefixer()
 ]).process(css, {
-  from: 'src/tachyons.css',
+  from: 'src/css/tachyons.css',
   to: 'css/tachyons.css'
 }).css
 
