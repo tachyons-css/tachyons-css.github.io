@@ -17,6 +17,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "autoprefixer": "^6.2.3",
     "browser-sync": "^2.9.11",
     "css": "^2.1.0",
     "css-mqpacker": "^4.0.0",
