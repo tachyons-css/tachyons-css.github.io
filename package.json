@@ -1,6 +1,6 @@
 {
   "name": "tachyons-css.github.io",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Documentation for Tachyons -- a performant, mobile-first, and 100% responsive modular css framework.",
   "main": "index.html",
   "scripts": {
