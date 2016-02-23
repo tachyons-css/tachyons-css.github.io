@@ -1,8 +1,8 @@
 /*
- *
- *   TACHYONS
- *
- *   */
+
+  TACHYONS
+
+*/
 
 
 /* Variables */
@@ -13,7 +13,6 @@
 
 /* Modules */
 
-@import './_base';
 @import './_box-sizing';
 @import './_background-size';
 @import './_borders';
@@ -54,7 +53,6 @@
 @import './_vertical-align';
 @import './_hovers';
 @import './_styles';
-@import './_gradients';
 
 
 @import './_debug_children';
