@@ -49,160 +49,160 @@ var display = require('tachyons-display/package.json')
 
 // Size of files
 
-var backgroundSizeCss = fs.readFileSync('node_modules/tachyons-background-size/tachyons-background-size.min.css', 'utf8')
+var backgroundSizeCss = fs.readFileSync('node_modules/tachyons-background-size/css/tachyons-background-size.min.css', 'utf8')
 var backgroundSizeObj = cssstats(backgroundSizeCss)
 var backgroundSizeSize = filesize(backgroundSizeObj.gzipSize)
 
-var baseCss = fs.readFileSync('node_modules/tachyons-base/tachyons-base.min.css', 'utf8')
+var baseCss = fs.readFileSync('node_modules/tachyons-base/css/tachyons-base.min.css', 'utf8')
 var baseObj = cssstats(baseCss)
 var baseSize = filesize(baseObj.gzipSize)
 
-var borderColorsCss = fs.readFileSync('node_modules/tachyons-border-colors/tachyons-border-colors.min.css', 'utf8')
+var borderColorsCss = fs.readFileSync('node_modules/tachyons-border-colors/css/tachyons-border-colors.min.css', 'utf8')
 var borderColorsObj = cssstats(borderColorsCss)
 var borderColorsSize = filesize(borderColorsObj.gzipSize)
 
-var borderRadiusCss = fs.readFileSync('node_modules/tachyons-border-radius/tachyons-border-radius.min.css', 'utf8')
+var borderRadiusCss = fs.readFileSync('node_modules/tachyons-border-radius/css/tachyons-border-radius.min.css', 'utf8')
 var borderRadiusObj = cssstats(borderRadiusCss)
 var borderRadiusSize = filesize(borderRadiusObj.gzipSize)
 
-var borderStyleCss = fs.readFileSync('node_modules/tachyons-border-style/tachyons-border-style.min.css', 'utf8')
+var borderStyleCss = fs.readFileSync('node_modules/tachyons-border-style/css/tachyons-border-style.min.css', 'utf8')
 var borderStyleObj = cssstats(borderStyleCss)
 var borderStyleSize = filesize(borderStyleObj.gzipSize)
 
-var borderWidthsCss = fs.readFileSync('node_modules/tachyons-border-widths/tachyons-border-widths.min.css', 'utf8')
+var borderWidthsCss = fs.readFileSync('node_modules/tachyons-border-widths/css/tachyons-border-widths.min.css', 'utf8')
 var borderWidthsObj = cssstats(borderWidthsCss)
 var borderWidthsSize = filesize(borderWidthsObj.gzipSize)
 
-var bordersCss = fs.readFileSync('node_modules/tachyons-borders/tachyons-borders.min.css', 'utf8')
+var bordersCss = fs.readFileSync('node_modules/tachyons-borders/css/tachyons-borders.min.css', 'utf8')
 var bordersObj = cssstats(bordersCss)
 var bordersSize = filesize(bordersObj.gzipSize)
 
-var boxSizingCss = fs.readFileSync('node_modules/tachyons-box-sizing/tachyons-box-sizing.min.css', 'utf8')
+var boxSizingCss = fs.readFileSync('node_modules/tachyons-box-sizing/css/tachyons-box-sizing.min.css', 'utf8')
 var boxSizingObj = cssstats(boxSizingCss)
 var boxSizingSize = filesize(boxSizingObj.gzipSize)
 
-var clearsCss = fs.readFileSync('node_modules/tachyons-clears/tachyons-clears.min.css', 'utf8')
+var clearsCss = fs.readFileSync('node_modules/tachyons-clears/css/tachyons-clears.min.css', 'utf8')
 var clearsObj = cssstats(clearsCss)
 var clearsSize = filesize(clearsObj.gzipSize)
 
-//var colorsCss = fs.readFileSync('node_modules/tachyons-colors/tachyons-colors.min.css', 'utf8')
-var debugCss = fs.readFileSync('node_modules/tachyons-debug/tachyons-debug.min.css', 'utf8')
+//var colorsCss = fs.readFileSync('node_modules/tachyons-colors/css/tachyons-colors.min.css', 'utf8')
+var debugCss = fs.readFileSync('node_modules/tachyons-debug/css/tachyons-debug.min.css', 'utf8')
 var debugObj = cssstats(debugCss)
 var debugSize = filesize(debugObj.gzipSize)
 
-var floatsCss = fs.readFileSync('node_modules/tachyons-floats/tachyons-floats.min.css', 'utf8')
+var floatsCss = fs.readFileSync('node_modules/tachyons-floats/css/tachyons-floats.min.css', 'utf8')
 var floatsObj = cssstats(floatsCss)
 var floatsSize = filesize(floatsObj.gzipSize)
 
-var fontFamilyCss = fs.readFileSync('node_modules/tachyons-font-family/tachyons-font-family.min.css', 'utf8')
+var fontFamilyCss = fs.readFileSync('node_modules/tachyons-font-family/css/tachyons-font-family.min.css', 'utf8')
 var fontFamilyObj = cssstats(fontFamilyCss)
 var fontFamilySize = filesize(fontFamilyObj.gzipSize)
 
-var fontStyleCss = fs.readFileSync('node_modules/tachyons-font-style/tachyons-font-style.min.css', 'utf8')
+var fontStyleCss = fs.readFileSync('node_modules/tachyons-font-style/css/tachyons-font-style.min.css', 'utf8')
 var fontStyleObj = cssstats(fontStyleCss)
 var fontStyleSize = filesize(fontStyleObj.gzipSize)
 
-var fontWeightCss = fs.readFileSync('node_modules/tachyons-font-weight/tachyons-font-weight.min.css', 'utf8')
+var fontWeightCss = fs.readFileSync('node_modules/tachyons-font-weight/css/tachyons-font-weight.min.css', 'utf8')
 var fontWeightObj = cssstats(fontWeightCss)
 var fontWeightSize = filesize(fontWeightObj.gzipSize)
 
-var formsCss = fs.readFileSync('node_modules/tachyons-forms/tachyons-forms.min.css', 'utf8')
+var formsCss = fs.readFileSync('node_modules/tachyons-forms/css/tachyons-forms.min.css', 'utf8')
 var formsObj = cssstats(formsCss)
 var formsSize = filesize(formsObj.gzipSize)
 
-var heightsCss = fs.readFileSync('node_modules/tachyons-heights/tachyons-heights.min.css', 'utf8')
+var heightsCss = fs.readFileSync('node_modules/tachyons-heights/css/tachyons-heights.min.css', 'utf8')
 var heightsObj = cssstats(heightsCss)
 var heightsSize = filesize(heightsObj.gzipSize)
 
-var imagesCss = fs.readFileSync('node_modules/tachyons-images/tachyons-images.min.css', 'utf8')
+var imagesCss = fs.readFileSync('node_modules/tachyons-images/css/tachyons-images.min.css', 'utf8')
 var imagesObj = cssstats(imagesCss)
 var imagesSize = filesize(imagesObj.gzipSize)
 
-var letterSpacingCss = fs.readFileSync('node_modules/tachyons-letter-spacing/tachyons-letter-spacing.min.css', 'utf8')
+var letterSpacingCss = fs.readFileSync('node_modules/tachyons-letter-spacing/css/tachyons-letter-spacing.min.css', 'utf8')
 var letterSpacingObj = cssstats(letterSpacingCss)
 var letterSpacingSize = filesize(letterSpacingObj.gzipSize)
 
-var lineHeightCss = fs.readFileSync('node_modules/tachyons-line-height/tachyons-line-height.min.css', 'utf8')
+var lineHeightCss = fs.readFileSync('node_modules/tachyons-line-height/css/tachyons-line-height.min.css', 'utf8')
 var lineHeightObj = cssstats(lineHeightCss)
 var lineHeightSize = filesize(lineHeightObj.gzipSize)
 
-var linksCss = fs.readFileSync('node_modules/tachyons-links/tachyons-links.min.css', 'utf8')
+var linksCss = fs.readFileSync('node_modules/tachyons-links/css/tachyons-links.min.css', 'utf8')
 var linksObj = cssstats(baseCss)
 var linksSize = filesize(baseObj.gzipSize)
 
-var listsCss = fs.readFileSync('node_modules/tachyons-lists/tachyons-lists.min.css', 'utf8')
+var listsCss = fs.readFileSync('node_modules/tachyons-lists/css/tachyons-lists.min.css', 'utf8')
 var listsObj = cssstats(listsCss)
 var listsSize = filesize(listsObj.gzipSize)
 
-var maxWidthsCss = fs.readFileSync('node_modules/tachyons-max-widths/tachyons-max-widths.min.css', 'utf8')
+var maxWidthsCss = fs.readFileSync('node_modules/tachyons-max-widths/css/tachyons-max-widths.min.css', 'utf8')
 var maxWidthsObj = cssstats(maxWidthsCss)
 var maxWidthsSize = filesize(maxWidthsObj.gzipSize)
 
-var overflowCss = fs.readFileSync('node_modules/tachyons-overflow/tachyons-overflow.min.css', 'utf8')
+var overflowCss = fs.readFileSync('node_modules/tachyons-overflow/css/tachyons-overflow.min.css', 'utf8')
 var overflowObj = cssstats(overflowCss)
 var overflowSize = filesize(overflowObj.gzipSize)
 
-var positionCss = fs.readFileSync('node_modules/tachyons-position/tachyons-position.min.css', 'utf8')
+var positionCss = fs.readFileSync('node_modules/tachyons-position/css/tachyons-position.min.css', 'utf8')
 var positionObj = cssstats(positionCss)
 var positionSize = filesize(positionObj.gzipSize)
 
-//var queriesCss = fs.readFileSync('node_modules/tachyons-queries/tachyons-queries.min.css', 'utf8')
+//var queriesCss = fs.readFileSync('node_modules/tachyons-queries/css/tachyons-queries.min.css', 'utf8')
 //var baseObj = cssstats(baseCss)
 //var baseSize = filesize(baseObj.gzipSize)
 
-var skinsCss = fs.readFileSync('node_modules/tachyons-skins/tachyons-skins.min.css', 'utf8')
+var skinsCss = fs.readFileSync('node_modules/tachyons-skins/css/tachyons-skins.min.css', 'utf8')
 var skinsObj = cssstats(skinsCss)
 var skinsSize = filesize(skinsObj.gzipSize)
 
-var spacingCss = fs.readFileSync('node_modules/tachyons-spacing/tachyons-spacing.min.css', 'utf8')
+var spacingCss = fs.readFileSync('node_modules/tachyons-spacing/css/tachyons-spacing.min.css', 'utf8')
 var spacingObj = cssstats(spacingCss)
 var spacingSize = filesize(spacingObj.gzipSize)
 
-var textAlignCss = fs.readFileSync('node_modules/tachyons-text-align/tachyons-text-align.min.css', 'utf8')
+var textAlignCss = fs.readFileSync('node_modules/tachyons-text-align/css/tachyons-text-align.min.css', 'utf8')
 var textAlignObj = cssstats(textAlignCss)
 var textAlignSize = filesize(textAlignObj.gzipSize)
 
-var textDecorationCss = fs.readFileSync('node_modules/tachyons-text-decoration/tachyons-text-decoration.min.css', 'utf8')
+var textDecorationCss = fs.readFileSync('node_modules/tachyons-text-decoration/css/tachyons-text-decoration.min.css', 'utf8')
 var textDecorationObj = cssstats(textDecorationCss)
 var textDecorationSize = filesize(textDecorationObj.gzipSize)
 
-var textTransformCss = fs.readFileSync('node_modules/tachyons-text-transform/tachyons-text-transform.min.css', 'utf8')
+var textTransformCss = fs.readFileSync('node_modules/tachyons-text-transform/css/tachyons-text-transform.min.css', 'utf8')
 var textTransformObj = cssstats(textTransformCss)
 var textTransformSize = filesize(textTransformObj.gzipSize)
 
-var typeScaleCss = fs.readFileSync('node_modules/tachyons-type-scale/tachyons-type-scale.min.css', 'utf8')
+var typeScaleCss = fs.readFileSync('node_modules/tachyons-type-scale/css/tachyons-type-scale.min.css', 'utf8')
 var typeScaleObj = cssstats(typeScaleCss)
 var typeScaleSize = filesize(typeScaleObj.gzipSize)
 
-var typographyCss = fs.readFileSync('node_modules/tachyons-typography/tachyons-typography.min.css', 'utf8')
+var typographyCss = fs.readFileSync('node_modules/tachyons-typography/css/tachyons-typography.min.css', 'utf8')
 var typographyObj = cssstats(typographyCss)
 var typographySize = filesize(typographyObj.gzipSize)
 
-var utilitiesCss = fs.readFileSync('node_modules/tachyons-utilities/tachyons-utilities.min.css', 'utf8')
+var utilitiesCss = fs.readFileSync('node_modules/tachyons-utilities/css/tachyons-utilities.min.css', 'utf8')
 var utilitiesObj = cssstats(utilitiesCss)
 var utilitiesSize = filesize(utilitiesObj.gzipSize)
 
-var verticalAlignCss = fs.readFileSync('node_modules/tachyons-vertical-align/tachyons-vertical-align.min.css', 'utf8')
+var verticalAlignCss = fs.readFileSync('node_modules/tachyons-vertical-align/css/tachyons-vertical-align.min.css', 'utf8')
 var verticalAlignObj = cssstats(verticalAlignCss)
 var verticalAlignSize = filesize(verticalAlignObj.gzipSize)
 
-var visibilityCss = fs.readFileSync('node_modules/tachyons-visibility/tachyons-visibility.min.css', 'utf8')
+var visibilityCss = fs.readFileSync('node_modules/tachyons-visibility/css/tachyons-visibility.min.css', 'utf8')
 var visibilityObj = cssstats(visibilityCss)
 var visibilitySize = filesize(visibilityObj.gzipSize)
 
-var whiteSpaceCss = fs.readFileSync('node_modules/tachyons-white-space/tachyons-white-space.min.css', 'utf8')
+var whiteSpaceCss = fs.readFileSync('node_modules/tachyons-white-space/css/tachyons-white-space.min.css', 'utf8')
 var whiteSpaceObj = cssstats(whiteSpaceCss)
 var whiteSpaceSize = filesize(whiteSpaceObj.gzipSize)
 
-var widthsCss = fs.readFileSync('node_modules/tachyons-widths/tachyons-widths.min.css', 'utf8')
+var widthsCss = fs.readFileSync('node_modules/tachyons-widths/css/tachyons-widths.min.css', 'utf8')
 var widthsObj = cssstats(widthsCss)
 var widthsSize = filesize(widthsObj.gzipSize)
 
-var displayCss = fs.readFileSync('node_modules/tachyons-display/tachyons-display.min.css', 'utf8')
+var displayCss = fs.readFileSync('node_modules/tachyons-display/css/tachyons-display.min.css', 'utf8')
 var displayObj = cssstats(displayCss)
 var displaySize = filesize(displayObj.gzipSize)
 
-var srcDir = fs.readdirSync('./src/')
+var srcDir = fs.readdirSync('./css/')
 
 var filesCount = srcDir.length - 3
 
