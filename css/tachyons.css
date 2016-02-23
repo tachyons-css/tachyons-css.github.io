@@ -1491,25 +1491,25 @@ img { max-width: 100%; }
 .link {
   text-decoration: none;
   -webkit-transition: color .15s ease-in;
-          transition: color .15s ease-in;
+  transition: color .15s ease-in;
 }
 
 .link:link,
 .link:visited {
   -webkit-transition: color .15s ease-in;
-          transition: color .15s ease-in;
+  transition: color .15s ease-in;
 }
 .link:hover   {
   -webkit-transition: color .15s ease-in;
-          transition: color .15s ease-in;
+  transition: color .15s ease-in;
 }
 .link:active  {
   -webkit-transition: color .15s ease-in;
-          transition: color .15s ease-in;
+  transition: color .15s ease-in;
 }
 .link:focus   {
   -webkit-transition: color .15s ease-in;
-          transition: color .15s ease-in;
+  transition: color .15s ease-in;
 }
 
 .underline             { text-decoration: underline; }
@@ -3482,13 +3482,13 @@ img { max-width: 100%; }
 .dim {
   opacity: 1;
   -webkit-transition: opacity .15s ease-in;
-          transition: opacity .15s ease-in;
+  transition: opacity .15s ease-in;
 }
 .dim:hover,
 .dim:focus {
   opacity: .5;
   -webkit-transition: opacity .15s ease-in;
-          transition: opacity .15s ease-in;
+  transition: opacity .15s ease-in;
 }
 .dim:active {
   opacity: .8; -webkit-transition: opacity .15s ease-out; transition: opacity .15s ease-out;
@@ -3512,7 +3512,7 @@ img { max-width: 100%; }
 .hide-child .child {
   opacity: 0;
   -webkit-transition: opacity .15s ease-in;
-          transition: opacity .15s ease-in;
+  transition: opacity .15s ease-in;
 }
 
 .hide-child:hover  .child {
@@ -3524,7 +3524,7 @@ img { max-width: 100%; }
 .hide-child:active .child {
   opacity: 1;
   -webkit-transition: opacity .15s ease-in;
-          transition: opacity .15s ease-in;
+  transition: opacity .15s ease-in;
 }
 /*
 
