@@ -6,65 +6,55 @@
     <title>
       Spacing / Layout / Docs / TACHYONS
     </title>
-    <meta name="author" content="@mrmrs">
+    <meta name="author" content="@mr3rs">
     <meta name="description" content="Documentation on using the spacing module which provides utilities for the setting of margin and padding on elements.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/tachyons.css">
   </head>
   <body class="w-100 sans-serif">
-    <header class="bg-dark-gray white pbl">
-      <div class="bb b--mid-gray phm phl-ns pvl">
-        <h1 class="f4 ttu mtn heavy tracked"><a class="white link dim" href="/">Tachyons</a></h1>
-        <h2 class="f4 mvn semibold dib prxs"><a class="lightest-blue link dim" href="/docs/">Docs</a></h2>
-        <span class="thin white-40">/</span>
-        <h3 class="f4 mvn semibold dib prxs"><a class="lightest-blue link dim" href="/docs/#layout">Layout</a></h3>
-        <span class="thin white-40">/</span>
-        <h4 class="f4 mvn semibold dib">Spacing</h4>
-        <div class="mtl">
-          <dl class="white-60 prm light dib mrm">
-            <dt class="db">Version</dt>
-            <dd class="f2 f1-ns b db pln mln">3.1.0</dd>
-          </dl>
-          <dl class="white-60 light dib mrm">
-            <dt class="db">Filesize</dt>
-            <dd class="f2 f1-ns b db pln mln">1.94 kB</dd>
-          </dl>
-          <div class="cf">
-            <dl class="white-60 dib mrm mtn">
-              <dt class="db">Declarations </dt>
-              <dd class="db pln mln f2 f1-ns b">572</span></dd>
-            </dl>
-            <dl class="white-60 dib mrm">
-              <dt class="db prs">Selectors </dt>
-              <dd class="db pln mln f2 f1-ns b">446</dd>
-            </dl>
-            <dl class="white-60 dib mrm">
-              <dt class="db prs">Max. Specificity Score </dt>
-              <dd class="db pln mln f2 f1-ns b">10</dd>
-            </dl>
-            <dl class="white-60 dib mrm">
-              <dt class="db prs">Size of Avg. Rule </dt>
-              <dd class="db pln mln f2 f1-ns b">1.2825112107623318</dd>
-            </dl>
-          </div>
+
+    <header class="w-100 pa3 ph5-ns bg-near-white">
+  <div class="dt w-100">
+    <div class="dtc v-mid tl w-50">
+      <a class="f5 f4-ns fw6 mt0 mb1 link white-80">
+        Tachyons
+      </a>
+      <a href="/" class="link dim dn">
+        <div class="mw2 dib v-mid mr2">
+          <img src="img/logo.jpg" class="db w-100 br-100">
         </div>
+      </a>
+      <div class="dib v-mid">
+        <small class="nowrap f6 mt2 mt3-ns pr2 black-50">v4.0.0-beta</small>
+        <small class="nowrap fw6 f6 f5-ns mt2 mt3-ns pl2 black-50 dn"><%= size %></small>
       </div>
-      <div class="phm phl-ns pvm">
-        <p class="measure f3 lh-copy">
-          Spacing comes in two flavors. Depending on borders and background colors, the difference between padding and margin can be invisible to the naked eye of the user. But to a developer, they serve different roles. Most codebases lack a ratio based scale and instead are littered with values that are just magic numbers. This is bad.
-        </p>
-        <p class="measure f4 lh-copy">
-          Good design, is based in math. Certain patterns and ratios are so prevelant in nature and music that they can't be denied as elegant design solutions. Even in the 18th century, pages in books were designed with ratios. In the 21st century, we have gotten away from this on the web, often times using magic numbers to match a 'spec' that has been produced in a graphics program such as photoshop, illustrator, or sketch. While these programs are useful for sketching ideas, they aren't reflective of how the web works across device sizes or how things get drawn to the screen.
-        </p>
-        <p class="measure f4 lh-copy">
-Tachyons features a spacing scale based on powers of two that starts at .25rem (for most devices this will be the equivalent of 4px). Since tachyons uses rem units with px as a fallback, if a user has declared a different base font-size for their device, your spacing will scale based on a defined ratio that has stood the test of time. As powers of two will always produce integers, there will be no problems with sub pixel rendering across browsers. Computers aren't that great at math and so decimals lead to inconsistencies across platforms. Inconsistencies should be avoided where possible. You'll find that when using a well thought out scale - things just line up. It works, with little effort, regardless of your design knowledge or sensibilities.
-        </p>
-      </div>
-    </header>
+    </div>
+    <div class="dn dtc-l v-mid w-50 tr">
+      <a class="f6 b link dim dib mr2 black-70" href="#principles">Principles</a>
+      <a class="f6 b link dim dib mr2 black-70" href="#getting-started">Getting Started</a>
+      <a title="Tachyons on GitHub" href="http://github.com/mrmrs/tachyons/"
+         class="f6 b dim link black-70 mr1">
+        GitHub
+      </a>
+      <a title="Tachyons Npm Modules" href="#npm"
+         class="f6 b link black-70 tc dim ml1">
+        Npm
+      </a>
+    </div>
+  </div>
+  <nav class="pv2">
+    <a class="f6 fw6 link dim dib mr2 mid-gray" href="/docs/">Docs</a>
+    <a class="f6 fw6 link dim dib mr2 mid-gray" href="/docs/general">General</a>
+    <a class="f6 fw6 link dim dib mr2 mid-gray" href="/docs/typography">Typography</a>
+    <a class="f6 fw6 link dim dib mr2 mid-gray" href="/docs/layout">Layout</a>
+    <a class="f6 fw6 link dim dib mr2 mid-gray" href="/docs/themes">Themes</a>
+  </nav>
+</header>
+
     <main class="">
-<div class="phm phl-ns ptl pbxl">
+<div class="ph3 ph4-ns pt4 pb5">
   <h2 class="f3 bold">Examples</h2>
-  <h3 class="f5 book ptl caps">Padding All</h3>
+  <h3 class="f5 book pt4 caps">Padding All</h3>
   <p>paxs, pas, pam, pal, paxl, paxxl, paxxxl</p>
   <div><div class="pan mbs dib bg-black white">pan</div></div>
   <div><div class="paxs mbs dib bg-black white">paxs</div></div>
@@ -74,26 +64,26 @@ Tachyons features a spacing scale based on powers of two that starts at .25rem (
   <div><div class="paxl mbs dib bg-black white">paxl</div></div>
   <div><div class="paxxl mbs dib bg-black white">paxxl</div></div>
   <div><div class="paxxxl mbs dib bg-black white">paxxxl</div></div>
-  <h3 class="f5 book ptl caps">Padding Horizontal</h3>
+  <h3 class="f5 book pt4 caps">Padding Horizontal</h3>
   <div><div class="phn mbs dib bg-black white">phn</div></div>
   <div><div class="phxs mbs dib bg-black white">phxs </div></div>
   <div><div class="phs mbs dib bg-black white"> phs</div></div>
-  <div><div class="phm mbs dib bg-black white"> phm</div></div>
-  <div><div class="phl mbs dib bg-black white"> phl</div></div>
+  <div><div class="ph3 mbs dib bg-black white"> ph3</div></div>
+  <div><div class="ph4 mbs dib bg-black white"> ph4</div></div>
   <div><div class="phxl mbs dib bg-black white"> phxl</div></div>
   <div><div class="phxxl mbs dib bg-black white"> phxxl</div></div>
   <div><div class="phxxxl mbs dib bg-black white"> phxxxl</div></div>
-  <h3 class="f5 book ptl caps">Padding Vertical</h3>
+  <h3 class="f5 book pt4 caps">Padding Vertical</h3>
   <div><div class="pvn mbs dib bg-black white">pvn</div></div>
   <div><div class="pvxs mbs dib bg-black white">pvxs </div></div>
   <div><div class="pvs mbs dib bg-black white"> pvs</div></div>
   <div><div class="pvm mbs dib bg-black white"> pvm</div></div>
-  <div><div class="pvl mbs dib bg-black white"> pvl</div></div>
+  <div><div class="pv4 mbs dib bg-black white"> pv4</div></div>
   <div><div class="pvxl mbs dib bg-black white"> pvxl</div></div>
   <div><div class="pvxxl mbs dib bg-black white"> pvxxl</div></div>
   <div><div class="pvxxxl mbs dib bg-black white"> pvxxxl</div></div>
-  <h3 class="f5 book ptl caps">Padding Left</h3>
-  <div><div class="pln mbs dib bg-black white">pln</div></div>
+  <h3 class="f5 book pt4 caps">Padding Left</h3>
+  <div><div class="pl0 mbs dib bg-black white">pl0</div></div>
   <div><div class="plxs mbs dib bg-black white">plxs </div></div>
   <div><div class="pls mbs dib bg-black white"> pls</div></div>
   <div><div class="plm mbs dib bg-black white"> plm</div></div>
@@ -101,35 +91,35 @@ Tachyons features a spacing scale based on powers of two that starts at .25rem (
   <div><div class="plxl mbs dib bg-black white"> plxl</div></div>
   <div><div class="plxxl mbs dib bg-black white"> plxxl</div></div>
   <div><div class="plxxxl mbs dib bg-black white"> plxxxl</div></div>
-  <h3 class="f5 book ptl caps">Padding Right</h3>
+  <h3 class="f5 book pt4 caps">Padding Right</h3>
   <div><div class="prn mbs dib bg-black white">prn</div></div>
-  <div><div class="prxs mbs dib bg-black white">prxs </div></div>
+  <div><div class="pr1 mbs dib bg-black white">pr1 </div></div>
   <div><div class="prs mbs dib bg-black white"> prs</div></div>
   <div><div class="prm mbs dib bg-black white"> prm</div></div>
   <div><div class="prl mbs dib bg-black white"> prl</div></div>
   <div><div class="prxl mbs dib bg-black white"> prxl</div></div>
   <div><div class="prxxl mbs dib bg-black white"> prxxl</div></div>
   <div><div class="prxxxl mbs dib bg-black white"> prxxxl</div></div>
-  <h3 class="f5 book ptl caps">Padding Top</h3>
+  <h3 class="f5 book pt4 caps">Padding Top</h3>
   <div><div class="ptn mbs dib bg-black white">ptn</div></div>
   <div><div class="ptxs mbs dib bg-black white">ptxs </div></div>
   <div><div class="pts mbs dib bg-black white"> pts</div></div>
   <div><div class="ptm mbs dib bg-black white"> ptm</div></div>
-  <div><div class="ptl mbs dib bg-black white"> ptl</div></div>
+  <div><div class="pt4 mbs dib bg-black white"> pt4</div></div>
   <div><div class="ptxl mbs dib bg-black white"> ptxl</div></div>
   <div><div class="ptxxl mbs dib bg-black white"> ptxxl</div></div>
   <div><div class="ptxxxl mbs dib bg-black white"> ptxxxl</div></div>
-  <h3 class="f5 book ptl caps">Padding Bottom</h3>
+  <h3 class="f5 book pt4 caps">Padding Bottom</h3>
   <div><div class="ptn mbs dib bg-black white">ptn</div></div>
   <div><div class="pbxs mbs dib bg-black white">pbxs </div></div>
   <div><div class="pbs mbs dib bg-black white"> pbs</div></div>
   <div><div class="pbm mbs dib bg-black white"> pbm</div></div>
-  <div><div class="pbl mbs dib bg-black white"> pbl</div></div>
-  <div><div class="pbxl mbs dib bg-black white"> pbxl</div></div>
+  <div><div class="pb4 mbs dib bg-black white"> pb4</div></div>
+  <div><div class="pb5 mbs dib bg-black white"> pb5</div></div>
   <div><div class="pbxxl mbs dib bg-black white"> pbxxl</div></div>
   <div><div class="pbxxxl mbs dib bg-black white"> pbxxxl</div></div>
 <section>
-  <h3 class="f5 book ptl caps">Margin All</h3>
+  <h3 class="f5 book pt4 caps">Margin All</h3>
   <p>maxs, mas, mam, mal, maxl, maxxl, maxxxl</p>
   <div class="bg-black-10"><div class="man dib bg-black white">man</div></div>
   <div class="bg-black-20"><div class="maxs dib bg-black white">maxs</div></div>
@@ -139,7 +129,7 @@ Tachyons features a spacing scale based on powers of two that starts at .25rem (
   <div class="bg-black-60"><div class="maxl dib bg-black white">maxl</div></div>
   <div class="bg-black-70"><div class="maxxl dib bg-black white">maxxl</div></div>
   <div class="bg-black-80"><div class="maxxxl dib bg-black white">maxxxl</div></div>
-  <h3 class="f5 book ptl caps">Margin Horizontal</h3>
+  <h3 class="f5 book pt4 caps">Margin Horizontal</h3>
   <div class="bg-black-10"><div class="mhn dib bg-black white">mhn</div></div>
   <div class="bg-black-20"><div class="mhxs dib bg-black white">mhxs </div></div>
   <div class="bg-black-30"><div class="mhs dib bg-black white"> mhs</div></div>
@@ -148,7 +138,7 @@ Tachyons features a spacing scale based on powers of two that starts at .25rem (
   <div class="bg-black-60"><div class="mhxl dib bg-black white"> mhxl</div></div>
   <div class="bg-black-70"><div class="mhxxl dib bg-black white"> mhxxl</div></div>
   <div class="bg-black-80"><div class="mhxxxl dib bg-black white"> mhxxxl</div></div>
-  <h3 class="f5 book ptl caps">Margin Vertical</h3>
+  <h3 class="f5 book pt4 caps">Margin Vertical</h3>
   <div class="bg-black-10"><div class="mvn dib bg-black white">mvn</div></div>
   <div class="bg-black-20"><div class="mvxs dib bg-black white">mvxs </div></div>
   <div class="bg-black-30"><div class="mvs dib bg-black white"> mvs</div></div>
@@ -157,8 +147,8 @@ Tachyons features a spacing scale based on powers of two that starts at .25rem (
   <div class="bg-black-60"><div class="mvxl dib bg-black white"> mvxl</div></div>
   <div class="bg-black-70"><div class="mvxxl dib bg-black white"> mvxxl</div></div>
   <div class="bg-black-80"><div class="mvxxxl dib bg-black white"> mvxxxl</div></div>
-  <h3 class="f5 book ptl caps">Margin Left</h3>
-  <div class="bg-black-10"><div class="mln dib bg-black white">mln</div></div>
+  <h3 class="f5 book pt4 caps">Margin Left</h3>
+  <div class="bg-black-10"><div class="ml0 dib bg-black white">ml0</div></div>
   <div class="bg-black-20"><div class="mlxs dib bg-black white">mlxs </div></div>
   <div class="bg-black-30"><div class="mls dib bg-black white"> mls</div></div>
   <div class="bg-black-40"><div class="mlm dib bg-black white"> mlm</div></div>
@@ -166,25 +156,25 @@ Tachyons features a spacing scale based on powers of two that starts at .25rem (
   <div class="bg-black-60"><div class="mlxl dib bg-black white"> mlxl</div></div>
   <div class="bg-black-70"><div class="mlxxl dib bg-black white"> mlxxl</div></div>
   <div class="bg-black-80"><div class="mlxxxl dib bg-black white"> mlxxxl</div></div>
-  <h3 class="f5 book ptl caps">Margin Right</h3>
+  <h3 class="f5 book pt4 caps">Margin Right</h3>
   <div class="bg-black-10"><div class="mrn dib bg-black white">mrn</div><div class="dib pas bg-black"></div></div>
   <div class="bg-black-20"><div class="mrxs dib bg-black white">mrxs </div><div class="dib pas bg-black"></div></div>
   <div class="bg-black-30"><div class="mrs dib bg-black white"> mrs</div><div class="dib pas bg-black"></div></div>
-  <div class="bg-black-40"><div class="mrm dib bg-black white"> mrm</div><div class="dib pas bg-black"></div></div>
+  <div class="bg-black-40"><div class="mr3 dib bg-black white"> mr3</div><div class="dib pas bg-black"></div></div>
   <div class="bg-black-50"><div class="mrl dib bg-black white"> mrl</div><div class="dib pas bg-black"></div></div>
   <div class="bg-black-60"><div class="mrxl dib bg-black white"> mrxl</div><div class="dib pas bg-black"></div></div>
   <div class="bg-black-70"><div class="mrxxl dib bg-black white"> mrxxl</div><div class="dib pas bg-black"></div></div>
   <div class="bg-black-80"><div class="mrxxxl dib bg-black white"> mrxxxl</div><div class="dib pas bg-black"></div></div>
-  <h3 class="f5 book ptl caps">Margin Top</h3>
+  <h3 class="f5 book pt4 caps">Margin Top</h3>
   <div class="bg-black-10"><div class="mtn dib bg-black white">mtn</div></div>
   <div class="bg-black-20"><div class="mtxs dib bg-black white">mtxs </div></div>
   <div class="bg-black-30"><div class="mts dib bg-black white"> mts</div></div>
   <div class="bg-black-40"><div class="mtm dib bg-black white"> mtm</div></div>
   <div class="bg-black-50"><div class="mtl dib bg-black white"> mtl</div></div>
-  <div class="bg-black-60"><div class="mtxl dib bg-black white"> mtxl</div></div>
+  <div class="bg-black-60"><div class="mt5 dib bg-black white"> mt5</div></div>
   <div class="bg-black-70"><div class="mtxxl dib bg-black white"> mtxxl</div></div>
   <div class="bg-black-80"><div class="mtxxxl dib bg-black white"> mtxxxl</div></div>
-  <h3 class="f5 book ptl caps">Margin Bottom</h3>
+  <h3 class="f5 book pt4 caps">Margin Bottom</h3>
   <div class="bg-black-10"><div class="mbn dib bg-black white">mbn</div></div>
   <div class="bg-black-20"><div class="mbxs dib bg-black white">mbxs </div></div>
   <div class="bg-black-30"><div class="mbs dib bg-black white"> mbs</div></div>
@@ -194,32 +184,52 @@ Tachyons features a spacing scale based on powers of two that starts at .25rem (
   <div class="bg-black-70"><div class="mbxxl dib bg-black white"> mbxxl</div></div>
   <div class="bg-black-80"><div class="mbxxxl dib bg-black white"> mbxxxl</div></div>
 </section>
-  <div class="mtxl cf">
+  <div class="mt5 cf">
     <div class="dib mrl">
-      <h1 class="f4 ttu tracked semibold">Previous</h1>
-      <a href="/docs/layout/box-sizing/" class="link semibold blue dim">Box Sizing</a>
+      <h1 class="f4 ttu tracked fw6">Previous</h1>
+      <a href="/docs/layout/box-sizing/" class="link fw6 blue dim">Box Sizing</a>
     </div>
     <div class="dib">
-      <h1 class="f4 ttu tracked semibold">Next</h1>
-      <a href="/docs/layout/floats/" class="link semibold blue dim">Floats</a>
+      <h1 class="f4 ttu tracked fw6">Next</h1>
+      <a href="/docs/layout/floats/" class="link fw6 blue dim">Floats</a>
     </div>
   </div>
-  <div class="mtxl">
-    <h1 class="f4 ttu tracked semibold">Reference</h1>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin" class="link semibold blue dim">MDN - Margin</a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding" class="link semibold blue dim">MDN - Padding</a>
+  <div class="mt5">
+    <h1 class="f4 ttu tracked fw6">Reference</h1>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin" class="link fw6 blue dim">MDN - Margin</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding" class="link fw6 blue dim">MDN - Padding</a>
   </div>
 </div>
-      <section class="bg-dark-gray white ptl pbxl">
-<header class="phm phl-ns ptl">
+      <section class="bg-dark-gray white pt4 pb5">
+<header class="ph3 ph4-ns pt4">
         <kbd class="yellow">src/_spacing.css</kbd>
 </header>
-<pre class="phm phl-ns">
+<pre class="ph3 ph4-ns">
 <code class="small">
+/* Variables */
+
+:root {
+  --spacing-none: 0;
+  --spacing-extra-small: .25rem;
+  --spacing-small: .5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 2rem;
+  --spacing-extra-large: 4rem;
+  --spacing-extra-extra-large: 8rem;
+  --spacing-extra-extra-extra-large: 16rem;
+}
+
+/* Media Queries */
+
+@custom-media --breakpoint-not-small screen and (min-width: 48em);
+@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large screen and (min-width: 64em);
+
 /*
    SPACING
 
    An eight step powers of two scale ranging from 0 to 16rem.
+   Namespaces are composab4e and thus high4y grockab4e - check the legend below
 
    Legend:
 
@@ -235,582 +245,975 @@ Tachyons features a spacing scale based on powers of two that starts at .25rem (
    l = left
 
    n = none
-   xs = extra small
+   1 = extra small
    s = small
    m = medium
    l = large
-   xl = extra large
-   xxxl = extra extra large
-   xxxxl = extra extra extra large
+   x = extra
+   5 = extra large
+   xxx = extra extra large
 
 */
 
-.pan  {   padding: 0; }
-.paxs {   padding: .25rem; }
-.pas  {   padding: .5rem; }
-.pam  {   padding: 1rem; }
-.pal  {   padding: 2rem; }
-.paxl  {  padding: 4rem; }
-.paxxl {  padding: 8rem; }
-.paxxxl { padding: 16rem; }
 
-.pln  {   padding-left: 0; }
-.plxs {   padding-left: .25rem; }
-.pls  {   padding-left: .5rem; }
-.plm  {   padding-left: 1rem; }
-.pll  {   padding-left: 2rem; }
-.plxl  {  padding-left: 4rem; }
-.plxxl {  padding-left: 8rem; }
-.plxxxl { padding-left: 16rem; }
+.pa0  {  padding: var(--spacing-none); }
+.pa1 {  padding: var(--spacing-extra-small); }
+.pa2  {  padding: var(--spacing-small); }
+.pa3  {  padding: var(--spacing-medium); }
+.pa4  {  padding: var(--spacing-large); }
+.pa5  {  padding: var(--spacing-extra-large); }
+.pa6 {  padding: var(--spacing-extra-extra-large); }
+.pa7 { padding: var(--spacing-extra-extra-extra-large); }
 
-.prn  {   padding-right: 0; }
-.prxs {   padding-right: .25rem; }
-.prs  {   padding-right: .5rem; }
-.prm  {   padding-right: 1rem; }
-.prl  {   padding-right: 2rem; }
-.prxl  {  padding-right: 4rem; }
-.prxxl {  padding-right: 8rem; }
-.prxxxl { padding-right: 16rem; }
+.pl0  {  padding-left: var(--spacing-none); }
+.pl1 {  padding-left: var(--spacing-extra-small); }
+.pl2  {  padding-left: var(--spacing-small); }
+.pl3  {  padding-left: var(--spacing-medium); }
+.pl4  {  padding-left: var(--spacing-large); }
+.pl5  {  padding-left: var(--spacing-extra-large); }
+.pl6 {  padding-left: var(--spacing-extra-extra-large); }
+.pl7 { padding-left: var(--spacing-extra-extra-extra-large); }
 
-.pbn  {   padding-bottom: 0; }
-.pbxs {   padding-bottom: .25rem; }
-.pbs  {   padding-bottom: .5rem; }
-.pbm  {   padding-bottom: 1rem; }
-.pbl  {   padding-bottom: 2rem; }
-.pbxl  {  padding-bottom: 4rem; }
-.pbxxl {  padding-bottom: 8rem; }
-.pbxxxl { padding-bottom: 16rem; }
+.pr0  {  padding-right: var(--spacing-none); }
+.pr1 {  padding-right: var(--spacing-extra-small); }
+.pr2  {  padding-right: var(--spacing-small); }
+.pr3  {  padding-right: var(--spacing-medium); }
+.pr4  {  padding-right: var(--spacing-large); }
+.pr5  {  padding-right: var(--spacing-extra-large); }
+.pr6 {  padding-right: var(--spacing-extra-extra-large); }
+.pr7 { padding-right: var(--spacing-extra-extra-extra-large); }
 
-.ptn  {   padding-top: 0; }
-.ptxs {   padding-top: .25rem; }
-.pts  {   padding-top: .5rem; }
-.ptm  {   padding-top: 1rem; }
-.ptl  {   padding-top: 2rem; }
-.ptxl  {  padding-top: 4rem; }
-.ptxxl {  padding-top: 8rem; }
-.ptxxxl { padding-top: 16rem; }
+.pb0  {  padding-bottom: var(--spacing-none); }
+.pb1 {  padding-bottom: var(--spacing-extra-small); }
+.pb2  {  padding-bottom: var(--spacing-small); }
+.pb3  {  padding-bottom: var(--spacing-medium); }
+.pb4  {  padding-bottom: var(--spacing-large); }
+.pb5  {  padding-bottom: var(--spacing-extra-large); }
+.pb6 {  padding-bottom: var(--spacing-extra-extra-large); }
+.pb7 { padding-bottom: var(--spacing-extra-extra-extra-large); }
 
-.pvn {    padding-top: 0;       padding-bottom: 0; }
-.pvxs {   padding-top: .25rem;  padding-bottom: .25rem; }
-.pvs {    padding-top: .5rem;   padding-bottom: .5rem; }
-.pvm {    padding-top: 1rem;    padding-bottom: 1rem; }
-.pvl {    padding-top: 2rem;    padding-bottom: 2rem; }
-.pvxl {   padding-top: 4rem;    padding-bottom: 4rem; }
-.pvxxl {  padding-top: 8rem;    padding-bottom: 8rem; }
-.pvxxxl { padding-top: 16rem;   padding-bottom: 16rem; }
+.pt0  {  padding-top: var(--spacing-none); }
+.pt1 {  padding-top: var(--spacing-extra-small); }
+.pt2  {  padding-top: var(--spacing-small); }
+.pt3  {  padding-top: var(--spacing-medium); }
+.pt4  {  padding-top: var(--spacing-large); }
+.pt5  {  padding-top: var(--spacing-extra-large); }
+.pt6 {  padding-top: var(--spacing-extra-extra-large); }
+.pt7 { padding-top: var(--spacing-extra-extra-extra-large); }
 
-.phn {    padding-left: 0;      padding-right: 0; }
-.phxs {   padding-left: .25rem; padding-right: .25rem; }
-.phs {    padding-left: .5rem;  padding-right: .5rem; }
-.phm {    padding-left: 1rem;   padding-right: 1rem; }
-.phl {    padding-left: 2rem;   padding-right: 2rem; }
-.phxl {   padding-left: 4rem;   padding-right: 4rem; }
-.phxxl {  padding-left: 8rem;   padding-right: 8rem; }
-.phxxxl { padding-left: 16rem;  padding-right: 16rem; }
+.pv0 {
+  padding-top: var(--spacing-none);
+  padding-bottom: var(--spacing-none);
+}
+.pv1 {
+  padding-top: var(--spacing-extra-small);
+  padding-bottom: var(--spacing-extra-small);
+}
+.pv2 {
+  padding-top: var(--spacing-small);
+  padding-bottom: var(--spacing-small);
+}
+.pv3 {
+  padding-top: var(--spacing-medium);
+  padding-bottom: var(--spacing-medium);
+}
+.pv4 {
+  padding-top: var(--spacing-large);
+  padding-bottom: var(--spacing-large);
+}
+.pv5 {
+  padding-top: var(--spacing-extra-large);
+  padding-bottom: var(--spacing-extra-large);
+}
+.pv6 {
+  padding-top: var(--spacing-extra-extra-large);
+  padding-bottom: var(--spacing-extra-extra-large);
+}
 
-.man  {   margin: 0; }
-.maxs {   margin: .25rem; }
-.mas  {   margin: .5rem; }
-.mam  {   margin: 1rem; }
-.mal  {   margin: 2rem; }
-.maxl  {  margin: 4rem; }
-.maxxl {  margin: 8rem; }
-.maxxxl { margin: 16rem; }
+.pv7 {
+  padding-top: var(--spacing-extra-extra-extra-large);
+  padding-bottom: var(--spacing-extra-extra-extra-large);
+}
 
-.mln  {   margin-left: 0; }
-.mlxs {   margin-left: .25rem; }
-.mls  {   margin-left: .5rem; }
-.mlm  {   margin-left: 1rem; }
-.mll  {   margin-left: 2rem; }
-.mlxl  {  margin-left: 4rem; }
-.mlxxl {  margin-left: 8rem; }
-.mlxxxl { margin-left: 16rem; }
+.ph0 {
+  padding-left: var(--spacing-none);
+  padding-right: var(--spacing-none);
+}
 
-.mrn  {   margin-right: 0; }
-.mrxs {   margin-right: .25rem; }
-.mrs  {   margin-right: .5rem; }
-.mrm  {   margin-right: 1rem; }
-.mrl  {   margin-right: 2rem; }
-.mrxl  {  margin-right: 4rem; }
-.mrxxl {  margin-right: 8rem; }
-.mrxxxl { margin-right: 16rem; }
+.ph1 {
+  padding-left: var(--spacing-extra-small);
+  padding-right: var(--spacing-extra-small);
+}
 
-.mbn  {   margin-bottom: 0; }
-.mbxs {   margin-bottom: .25rem; }
-.mbs  {   margin-bottom: .5rem; }
-.mbm  {   margin-bottom: 1rem; }
-.mbl  {   margin-bottom: 2rem; }
-.mbxl  {  margin-bottom: 4rem; }
-.mbxxl {  margin-bottom: 8rem; }
-.mbxxxl { margin-bottom: 16rem; }
+.ph2 {
+  padding-left: var(--spacing-small);
+  padding-right: var(--spacing-small);
+}
 
-.mtn  {   margin-top: 0; }
-.mtxs {   margin-top: .25rem; }
-.mts  {   margin-top: .5rem; }
-.mtm  {   margin-top: 1rem; }
-.mtl  {   margin-top: 2rem; }
-.mtxl  {  margin-top: 4rem; }
-.mtxxl {  margin-top: 8rem; }
-.mtxxxl { margin-top: 16rem; }
+.ph3 {
+  padding-left: var(--spacing-medium);
+  padding-right: var(--spacing-medium);
+}
 
-.mvn   {   margin-top: 0;      margin-bottom: 0rem; }
-.mvxs  {   margin-top: .25rem; margin-bottom: .25rem; }
-.mvs   {   margin-top: .5rem;  margin-bottom: .5rem; }
-.mvm   {   margin-top: 1rem;   margin-bottom: 1rem; }
-.mvl   {   margin-top: 2rem;   margin-bottom: 2rem; }
-.mvxl   {  margin-top: 4rem;   margin-bottom: 4rem; }
-.mvxxl  {  margin-top: 8rem;   margin-bottom: 8rem; }
-.mvxxxl  { margin-top: 16rem;  margin-bottom: 16rem; }
+.ph4 {
+  padding-left: var(--spacing-large);
+  padding-right: var(--spacing-large);
+}
 
-.mhn   {   margin-left: 0;     margin-right: 0; }
-.mhs   {   margin-left: .5rem; margin-right: .5rem; }
-.mhm   {   margin-left: 1rem;  margin-right: 1rem; }
-.mhl   {   margin-left: 2rem;  margin-right: 2rem; }
-.mhxl   {  margin-left: 4rem;  margin-right: 4rem; }
-.mhxxl  {  margin-left: 8rem;  margin-right: 8rem; }
-.mhxxxl  { margin-left: 16rem; margin-right: 16rem; }
+.ph5 {
+  padding-left: var(--spacing-extra-large);
+  padding-right: var(--spacing-extra-large);
+}
+
+.ph6 {
+  padding-left: var(--spacing-extra-extra-large);
+  padding-right: var(--spacing-extra-extra-large);
+}
+
+.ph7 {
+  padding-left: var(--spacing-extra-extra-extra-large);
+  padding-right: var(--spacing-extra-extra-extra-large);
+}
+
+.ma0  {  margin: var(--spacing-none); }
+.ma1 {  margin: var(--spacing-extra-small); }
+.ma2  {  margin: var(--spacing-small); }
+.ma3  {  margin: var(--spacing-medium); }
+.ma4  {  margin: var(--spacing-large); }
+.ma5  {  margin: var(--spacing-extra-large); }
+.ma6 {  margin: var(--spacing-extra-extra-large); }
+.ma7 { margin: var(--spacing-extra-extra-extra-large); }
+
+.ml0  {  margin-left: var(--spacing-none); }
+.ml1 {  margin-left: var(--spacing-extra-small); }
+.ml2  {  margin-left: var(--spacing-small); }
+.ml3  {  margin-left: var(--spacing-medium); }
+.ml4  {  margin-left: var(--spacing-large); }
+.ml5  {  margin-left: var(--spacing-extra-large); }
+.ml6 {  margin-left: var(--spacing-extra-extra-large); }
+.ml7 { margin-left: var(--spacing-extra-extra-extra-large); }
+
+.mr0  {  margin-right: var(--spacing-none); }
+.mr1 {  margin-right: var(--spacing-extra-small); }
+.mr2  {  margin-right: var(--spacing-small); }
+.mr3  {  margin-right: var(--spacing-medium); }
+.mr4  {  margin-right: var(--spacing-large); }
+.mr5  {  margin-right: var(--spacing-extra-large); }
+.mr6 {  margin-right: var(--spacing-extra-extra-large); }
+.mr7 { margin-right: var(--spacing-extra-extra-extra-large); }
+
+.mb0  {  margin-bottom: var(--spacing-none); }
+.mb1 {  margin-bottom: var(--spacing-extra-small); }
+.mb2  {  margin-bottom: var(--spacing-small); }
+.mb3  {  margin-bottom: var(--spacing-medium); }
+.mb4  {  margin-bottom: var(--spacing-large); }
+.mb5  {  margin-bottom: var(--spacing-extra-large); }
+.mb6 {  margin-bottom: var(--spacing-extra-extra-large); }
+.mb7 { margin-bottom: var(--spacing-extra-extra-extra-large); }
+
+.mt0  {  margin-top: var(--spacing-none); }
+.mt1 {  margin-top: var(--spacing-extra-small); }
+.mt2  {  margin-top: var(--spacing-small); }
+.mt3  {  margin-top: var(--spacing-medium); }
+.mt4  {  margin-top: var(--spacing-large); }
+.mt5  {  margin-top: var(--spacing-extra-large); }
+.mt6 {  margin-top: var(--spacing-extra-extra-large); }
+.mt7 { margin-top: var(--spacing-extra-extra-extra-large); }
+
+.mv0   {
+  margin-top: var(--spacing-none);
+  margin-bottom: var(--spacing-none)rem;
+}
+.mv1  {
+  margin-top: var(--spacing-extra-small);
+  margin-bottom: var(--spacing-extra-small);
+}
+.mv2   {
+  margin-top: var(--spacing-small);
+  margin-bottom: var(--spacing-small);
+}
+.mv3   {
+  margin-top: var(--spacing-medium);
+  margin-bottom: var(--spacing-medium);
+}
+.mv4   {
+  margin-top: var(--spacing-large);
+  margin-bottom: var(--spacing-large);
+}
+.mv5   {
+  margin-top: var(--spacing-extra-large);
+  margin-bottom: var(--spacing-extra-large);
+}
+.mv6  {
+  margin-top: var(--spacing-extra-extra-large);
+  margin-bottom: var(--spacing-extra-extra-large);
+}
+.mv7  {
+  margin-top: var(--spacing-extra-extra-extra-large);
+  margin-bottom: var(--spacing-extra-extra-extra-large);
+}
+
+.mh0   {
+  margin-left: var(--spacing-none);
+  margin-right: var(--spacing-none);
+}
+.mh2   {
+  margin-left: var(--spacing-small);
+  margin-right: var(--spacing-small);
+}
+.mh3   {
+  margin-left: var(--spacing-medium);
+  margin-right: var(--spacing-medium);
+}
+.mh4   {
+  margin-left: var(--spacing-large);
+  margin-right: var(--spacing-large);
+}
+.mh5   {
+  margin-left: var(--spacing-extra-large);
+  margin-right: var(--spacing-extra-large);
+}
+.mh6  {
+  margin-left: var(--spacing-extra-extra-large);
+  margin-right: var(--spacing-extra-extra-large);
+}
+.mh7  {
+  margin-left: var(--spacing-extra-extra-extra-large);
+  margin-right: var(--spacing-extra-extra-extra-large);
+}
 
 @media (--breakpoint-not-small) {
-  .pan-ns  {   padding: 0; }
-  .paxs-ns {   padding: .25rem; }
-  .pas-ns  {   padding: .5rem; }
-  .pam-ns  {   padding: 1rem; }
-  .pal-ns  {   padding: 2rem; }
-  .paxl-ns  {  padding: 4rem; }
-  .paxxl-ns {  padding: 8rem; }
-  .paxxxl-ns { padding: 16rem; }
+  .pa0-ns  {  padding: var(--spacing-none); }
+  .pa1-ns {  padding: var(--spacing-extra-small); }
+  .pa2-ns  {  padding: var(--spacing-small); }
+  .pa3-ns  {  padding: var(--spacing-medium); }
+  .pa4-ns  {  padding: var(--spacing-large); }
+  .pa5-ns  {  padding: var(--spacing-extra-large); }
+  .pa6-ns {  padding: var(--spacing-extra-extra-large); }
+  .pa7-ns { padding: var(--spacing-extra-extra-extra-large); }
 
-  .pln-ns  {   padding-left: 0; }
-  .plxs-ns {   padding-left: .25rem; }
-  .pls-ns  {   padding-left: .5rem; }
-  .plm-ns  {   padding-left: 1rem; }
-  .pll-ns  {   padding-left: 2rem; }
-  .plxl-ns  {  padding-left: 4rem; }
-  .plxxl-ns {  padding-left: 8rem; }
-  .plxxxl-ns { padding-left: 16rem; }
+  .pl0-ns  {  padding-left: var(--spacing-none); }
+  .pl1-ns {  padding-left: var(--spacing-extra-small); }
+  .pl2-ns  {  padding-left: var(--spacing-small); }
+  .pl3-ns  {  padding-left: var(--spacing-medium); }
+  .pl4-ns  {  padding-left: var(--spacing-large); }
+  .pl5-ns  {  padding-left: var(--spacing-extra-large); }
+  .pl6-ns {  padding-left: var(--spacing-extra-extra-large); }
+  .pl7-ns { padding-left: var(--spacing-extra-extra-extra-large); }
 
-  .prn-ns  {   padding-right: 0; }
-  .prxs-ns {   padding-right: .25rem; }
-  .prs-ns  {   padding-right: .5rem; }
-  .prm-ns  {   padding-right: 1rem; }
-  .prl-ns  {   padding-right: 2rem; }
-  .prxl-ns {   padding-right: 4rem; }
-  .prxxl-ns {  padding-right: 8rem; }
-  .prxxxl-ns { padding-right: 16rem; }
+  .pr0-ns  {  padding-right: var(--spacing-none); }
+  .pr1-ns {  padding-right: var(--spacing-extra-small); }
+  .pr2-ns  {  padding-right: var(--spacing-small); }
+  .pr3-ns  {  padding-right: var(--spacing-medium); }
+  .pr4-ns  {  padding-right: var(--spacing-large); }
+  .pr5-ns {   padding-right: var(--spacing-extra-large); }
+  .pr6-ns {  padding-right: var(--spacing-extra-extra-large); }
+  .pr7-ns { padding-right: var(--spacing-extra-extra-extra-large); }
 
-  .pbn-ns  {   padding-bottom: 0; }
-  .pbxs-ns {   padding-bottom: .25rem; }
-  .pbs-ns  {   padding-bottom: .5rem; }
-  .pbm-ns  {   padding-bottom: 1rem; }
-  .pbl-ns  {   padding-bottom: 2rem; }
-  .pbxl-ns  {  padding-bottom: 4rem; }
-  .pbxxl-ns {  padding-bottom: 8rem; }
-  .pbxxxl-ns { padding-bottom: 16rem; }
+  .pb0-ns  {  padding-bottom: var(--spacing-none); }
+  .pb1-ns {  padding-bottom: var(--spacing-extra-small); }
+  .pb2-ns  {  padding-bottom: var(--spacing-small); }
+  .pb3-ns  {  padding-bottom: var(--spacing-medium); }
+  .pb4-ns  {  padding-bottom: var(--spacing-large); }
+  .pb5-ns  {  padding-bottom: var(--spacing-extra-large); }
+  .pb6-ns {  padding-bottom: var(--spacing-extra-extra-large); }
+  .pb7-ns { padding-bottom: var(--spacing-extra-extra-extra-large); }
 
-  .ptn-ns  {   padding-top: 0; }
-  .ptxs-ns {   padding-top: .25rem; }
-  .pts-ns  {   padding-top: .5rem; }
-  .ptm-ns  {   padding-top: 1rem; }
-  .ptl-ns  {   padding-top: 2rem; }
-  .ptxl-ns  {  padding-top: 4rem; }
-  .ptxxl-ns {  padding-top: 8rem; }
-  .ptxxxl-ns { padding-top: 16rem; }
+  .pt0-ns  {  padding-top: var(--spacing-none); }
+  .pt1-ns {  padding-top: var(--spacing-extra-small); }
+  .pt2-ns  {  padding-top: var(--spacing-small); }
+  .pt3-ns  {  padding-top: var(--spacing-medium); }
+  .pt4-ns  {  padding-top: var(--spacing-large); }
+  .pt5-ns  {  padding-top: var(--spacing-extra-large); }
+  .pt6-ns {  padding-top: var(--spacing-extra-extra-large); }
+  .pt7-ns { padding-top: var(--spacing-extra-extra-extra-large); }
 
-  .pvn-ns {    padding-top: 0;       padding-bottom: 0; }
-  .pvxs-ns {   padding-top: .25rem;  padding-bottom: .25rem; }
-  .pvs-ns {    padding-top: .5rem;   padding-bottom: .5rem; }
-  .pvm-ns {    padding-top: 1rem;    padding-bottom: 1rem; }
-  .pvl-ns {    padding-top: 2rem;    padding-bottom: 2rem; }
-  .pvxl-ns {   padding-top: 4rem;    padding-bottom: 4rem; }
-  .pvxxl-ns {  padding-top: 8rem;    padding-bottom: 8rem; }
-  .pvxxxl-ns { padding-top: 16rem;   padding-bottom: 16rem; }
+  .pv0-ns {
+    padding-top: var(--spacing-none);
+    padding-bottom: var(--spacing-none);
+  }
+  .pv1-ns {
+    padding-top: var(--spacing-extra-small);
+    padding-bottom: var(--spacing-extra-small);
+  }
+  .pv2-ns {
+    padding-top: var(--spacing-small);
+    padding-bottom: var(--spacing-small);
+  }
+  .pv3-ns {
+    padding-top: var(--spacing-medium);
+    padding-bottom: var(--spacing-medium);
+  }
+  .pv4-ns {
+    padding-top: var(--spacing-large);
+    padding-bottom: var(--spacing-large);
+  }
+  .pv5-ns {
+    padding-top: var(--spacing-extra-large);
+    padding-bottom: var(--spacing-extra-large);
+  }
+  .pv6-ns {
+    padding-top: var(--spacing-extra-extra-large);
+    padding-bottom: var(--spacing-extra-extra-large);
+  }
+  .pv7-ns {
+    padding-top: var(--spacing-extra-extra-extra-large);
+    padding-bottom: var(--spacing-extra-extra-extra-large);
+  }
+  .ph0-ns {
+    padding-left: var(--spacing-none);
+    padding-right: var(--spacing-none);
+  }
+  .pv1-ns {
+    padding-left: var(--spacing-extra-small);
+    padding-right: var(--spacing-extra-small);
+  }
+  .ph2-ns {
+    padding-left: var(--spacing-small);
+    padding-right: var(--spacing-small);
+  }
+  .ph3-ns {
+    padding-left: var(--spacing-medium);
+    padding-right: var(--spacing-medium);
+  }
+  .ph4-ns {
+    padding-left: var(--spacing-large);
+    padding-right: var(--spacing-large);
+  }
+  .ph5-ns {
+    padding-left: var(--spacing-extra-large);
+    padding-right: var(--spacing-extra-large);
+  }
+  .ph6-ns {
+    padding-left: var(--spacing-extra-extra-large);
+    padding-right: var(--spacing-extra-extra-large);
+  }
+  .ph7-ns {
+    padding-left: var(--spacing-extra-extra-extra-large);
+    padding-right: var(--spacing-extra-extra-extra-large);
+  }
 
-  .phn-ns {    padding-left: 0;      padding-right: 0; }
-  .pvxs-ns {   padding-left: .25rem; padding-right: .25rem; }
-  .phs-ns {    padding-left: .5rem;  padding-right: .5rem; }
-  .phm-ns {    padding-left: 1rem;   padding-right: 1rem; }
-  .phl-ns {    padding-left: 2rem;   padding-right: 2rem; }
-  .phxl-ns {   padding-left: 4rem;   padding-right: 4rem; }
-  .phxxl-ns {  padding-left: 8rem;   padding-right: 8rem; }
-  .phxxxl-ns { padding-left: 16rem;  padding-right: 16rem; }
+  .ma0-ns  {  margin: var(--spacing-none); }
+  .ma1-ns {  margin: var(--spacing-extra-small); }
+  .ma2-ns  {  margin: var(--spacing-small); }
+  .ma3-ns  {  margin: var(--spacing-medium); }
+  .ma4-ns  {  margin: var(--spacing-large); }
+  .ma5-ns  {  margin: var(--spacing-extra-large); }
+  .ma6-ns {  margin: var(--spacing-extra-extra-large); }
+  .ma7-ns { margin: var(--spacing-extra-extra-extra-large); }
 
-  .man-ns  {   margin: 0; }
-  .maxs-ns {   margin: .25rem; }
-  .mas-ns  {   margin: .5rem; }
-  .mam-ns  {   margin: 1rem; }
-  .mal-ns  {   margin: 2rem; }
-  .maxl-ns  {  margin: 4rem; }
-  .maxxl-ns {  margin: 8rem; }
-  .maxxxl-ns { margin: 16rem; }
+  .ml0-ns  {  margin-left: var(--spacing-none); }
+  .ml1-ns {  margin-left: var(--spacing-extra-small); }
+  .ml2-ns  {  margin-left: var(--spacing-small); }
+  .ml3-ns  {  margin-left: var(--spacing-medium); }
+  .ml4-ns  {  margin-left: var(--spacing-large); }
+  .ml5-ns  {  margin-left: var(--spacing-extra-large); }
+  .ml6-ns {  margin-left: var(--spacing-extra-extra-large); }
+  .ml7-ns { margin-left: var(--spacing-extra-extra-extra-large); }
 
-  .mln-ns  {   margin-left: 0; }
-  .mlxs-ns {   margin-left: .25rem; }
-  .mls-ns  {   margin-left: .5rem; }
-  .mlm-ns  {   margin-left: 1rem; }
-  .mll-ns  {   margin-left: 2rem; }
-  .mlxl-ns  {  margin-left: 4rem; }
-  .mlxxl-ns {  margin-left: 8rem; }
-  .mlxxxl-ns { margin-left: 16rem; }
+  .mr0-ns  {  margin-right: var(--spacing-none); }
+  .mr1-ns {  margin-right: var(--spacing-extra-small); }
+  .mr2-ns  {  margin-right: var(--spacing-small); }
+  .mr3-ns  {  margin-right: var(--spacing-medium); }
+  .mr4-ns  {  margin-right: var(--spacing-large); }
+  .mr5-ns  {  margin-right: var(--spacing-extra-large); }
+  .mr6-ns {  margin-right: var(--spacing-extra-extra-large); }
+  .mr7-ns { margin-right: var(--spacing-extra-extra-extra-large); }
 
-  .mrn-ns  {   margin-right: 0; }
-  .mrxs-ns {   margin-right: .25rem; }
-  .mrs-ns  {   margin-right: .5rem; }
-  .mrm-ns  {   margin-right: 1rem; }
-  .mrl-ns  {   margin-right: 2rem; }
-  .mrxl-ns  {  margin-right: 4rem; }
-  .mrxxl-ns {  margin-right: 8rem; }
-  .mrxxxl-ns { margin-right: 16rem; }
+  .mb0-ns  {  margin-bottom: var(--spacing-none); }
+  .mb1-ns {  margin-bottom: var(--spacing-extra-small); }
+  .mb2-ns  {  margin-bottom: var(--spacing-small); }
+  .mb3-ns  {  margin-bottom: var(--spacing-medium); }
+  .mb4-ns  {  margin-bottom: var(--spacing-large); }
+  .mb5-ns  {  margin-bottom: var(--spacing-extra-large); }
+  .mb6-ns {  margin-bottom: var(--spacing-extra-extra-large); }
+  .mb7-ns { margin-bottom: var(--spacing-extra-extra-extra-large); }
 
-  .mbn-ns  {   margin-bottom: 0; }
-  .mbxs-ns {   margin-bottom: .25rem; }
-  .mbs-ns  {   margin-bottom: .5rem; }
-  .mbm-ns  {   margin-bottom: 1rem; }
-  .mbl-ns  {   margin-bottom: 2rem; }
-  .mbxl-ns  {  margin-bottom: 4rem; }
-  .mbxxl-ns {  margin-bottom: 8rem; }
-  .mbxxxl-ns { margin-bottom: 16rem; }
+  .mt0-ns  {  margin-top: var(--spacing-none); }
+  .mt1-ns {  margin-top: var(--spacing-extra-small); }
+  .mt2-ns  {  margin-top: var(--spacing-small); }
+  .mt3-ns  {  margin-top: var(--spacing-medium); }
+  .mt4-ns  {  margin-top: var(--spacing-large); }
+  .mt5-ns  {  margin-top: var(--spacing-extra-large); }
+  .mt6-ns {  margin-top: var(--spacing-extra-extra-large); }
+  .mt7-ns { margin-top: var(--spacing-extra-extra-extra-large); }
 
-  .mtn-ns  {   margin-top: 0; }
-  .mtxs-ns {   margin-top: .25rem; }
-  .mts-ns  {   margin-top: .5rem; }
-  .mtm-ns  {   margin-top: 1rem; }
-  .mtl-ns  {   margin-top: 2rem; }
-  .mtxl-ns  {  margin-top: 4rem; }
-  .mtxxl-ns {  margin-top: 8rem; }
-  .mtxxxl-ns { margin-top: 16rem; }
+  .mv0-ns   {
+    margin-top: var(--spacing-none);
+    margin-bottom: var(--spacing-none)rem;
+  }
+  .mv1-ns  {
+    margin-top: var(--spacing-extra-small);
+    margin-bottom: var(--spacing-extra-small);
+  }
+  .mv2-ns   {
+    margin-top: var(--spacing-small);
+    margin-bottom: var(--spacing-small);
+  }
+  .mv3-ns   {
+    margin-top: var(--spacing-medium);
+    margin-bottom: var(--spacing-medium);
+  }
+  .mv4-ns   {
+    margin-top: var(--spacing-large);
+    margin-bottom: var(--spacing-large);
+  }
+  .mv5-ns   {
+    margin-top: var(--spacing-extra-large);
+    margin-bottom: var(--spacing-extra-large);
+  }
+  .mv6-ns  {
+    margin-top: var(--spacing-extra-extra-large);
+    margin-bottom: var(--spacing-extra-extra-large);
+  }
+  .mv7-ns  {
+    margin-top: var(--spacing-extra-extra-extra-large);
+    margin-bottom: var(--spacing-extra-extra-extra-large);
+  }
 
-  .mvn-ns   {   margin-top: 0;      margin-bottom: 0rem; }
-  .mvxs-ns  {   margin-top: .25rem; margin-bottom: .25rem; }
-  .mvs-ns   {   margin-top: .5rem;  margin-bottom: .5rem; }
-  .mvm-ns   {   margin-top: 1rem;   margin-bottom: 1rem; }
-  .mvl-ns   {   margin-top: 2rem;   margin-bottom: 2rem; }
-  .mvxl-ns   {  margin-top: 4rem;   margin-bottom: 4rem; }
-  .mvxxl-ns  {  margin-top: 8rem;   margin-bottom: 8rem; }
-  .mvxxxl-ns  { margin-top: 16rem;  margin-bottom: 16rem; }
-
-  .mhn-ns   {   margin-left: 0;     margin-right: 0; }
-  .mhs-ns   {   margin-left: .5rem; margin-right: .5rem; }
-  .mhm-ns   {   margin-left: 1rem;  margin-right: 1rem; }
-  .mhl-ns   {   margin-left: 2rem;  margin-right: 2rem; }
-  .mhxl-ns   {  margin-left: 4rem;  margin-right: 4rem; }
-  .mhxxl-ns  {  margin-left: 8rem;  margin-right: 8rem; }
-  .mhxxxl-ns  { margin-left: 16rem; margin-right: 16rem; }
+   .mh0-ns   {
+     margin-left: var(--spacing-none);
+     margin-right: var(--spacing-none);
+   }
+   .mh2-ns   {
+     margin-left: var(--spacing-small);
+     margin-right: var(--spacing-small);
+   }
+   .mh3-ns   {
+     margin-left: var(--spacing-medium);
+     margin-right: var(--spacing-medium);
+   }
+   .mh4-ns   {
+     margin-left: var(--spacing-large);
+     margin-right: var(--spacing-large);
+   }
+   .mh5-ns   {
+     margin-left: var(--spacing-extra-large);
+     margin-right: var(--spacing-extra-large);
+   }
+   .mh6-ns  {
+     margin-left: var(--spacing-extra-extra-large);
+     margin-right: var(--spacing-extra-extra-large);
+   }
+   .mh7-ns  {
+     margin-left: var(--spacing-extra-extra-extra-large);
+     margin-right: var(--spacing-extra-extra-extra-large);
+   }
 
 }
 
 @media (--breakpoint-medium) {
-  .pan-m  {   padding: 0; }
-  .paxs-m {   padding: .25rem; }
-  .pas-m  {   padding: .5rem; }
-  .pam-m  {   padding: 1rem; }
-  .pal-m  {   padding: 2rem; }
-  .paxl-m  {  padding: 4rem; }
-  .paxxl-m {  padding: 8rem; }
-  .paxxxl-m { padding: 16rem; }
+  .pa0-m  {  padding: var(--spacing-none); }
+  .pa1-m {  padding: var(--spacing-extra-small); }
+  .pa2-m  {  padding: var(--spacing-small); }
+  .pa3-m  {  padding: var(--spacing-medium); }
+  .pa4-m  {  padding: var(--spacing-large); }
+  .pa5-m  {  padding: var(--spacing-extra-large); }
+  .pa6-m {  padding: var(--spacing-extra-extra-large); }
+  .pa7-m { padding: var(--spacing-extra-extra-extra-large); }
 
-  .pln-m  {   padding-left: 0; }
-  .plxs-m {   padding-left: .25rem; }
-  .pls-m  {   padding-left: .5rem; }
-  .plm-m  {   padding-left: 1rem; }
-  .pll-m  {   padding-left: 2rem; }
-  .plxl-m  {  padding-left: 4rem; }
-  .plxxl-m {  padding-left: 8rem; }
-  .plxxxl-m { padding-left: 16rem; }
+  .pl0-m  {  padding-left: var(--spacing-none); }
+  .pl1-m {  padding-left: var(--spacing-extra-small); }
+  .pl2-m  {  padding-left: var(--spacing-small); }
+  .pl3-m  {  padding-left: var(--spacing-medium); }
+  .pl4-m  {  padding-left: var(--spacing-large); }
+  .pl5-m  {  padding-left: var(--spacing-extra-large); }
+  .pl6-m {  padding-left: var(--spacing-extra-extra-large); }
+  .pl7-m { padding-left: var(--spacing-extra-extra-extra-large); }
 
-  .prn-m  {   padding-right: 0; }
-  .prxs-m {   padding-right: .25rem; }
-  .prs-m  {   padding-right: .5rem; }
-  .prm-m  {   padding-right: 1rem; }
-  .prl-m  {   padding-right: 2rem; }
-  .prxl-m  {  padding-right: 4rem; }
-  .prxxl-m {  padding-right: 8rem; }
-  .prxxxl-m { padding-right: 16rem; }
+  .pr0-m  {  padding-right: var(--spacing-none); }
+  .pr1-m {  padding-right: var(--spacing-extra-small); }
+  .pr2-m  {  padding-right: var(--spacing-small); }
+  .pr3-m  {  padding-right: var(--spacing-medium); }
+  .pr4-m  {  padding-right: var(--spacing-large); }
+  .pr5-m  {  padding-right: var(--spacing-extra-large); }
+  .pr6-m {  padding-right: var(--spacing-extra-extra-large); }
+  .pr7-m { padding-right: var(--spacing-extra-extra-extra-large); }
 
-  .pbn-m  {   padding-bottom: 0; }
-  .pbxs-m {   padding-bottom: .25rem; }
-  .pbs-m  {   padding-bottom: .5rem; }
-  .pbm-m  {   padding-bottom: 1rem; }
-  .pbl-m  {   padding-bottom: 2rem; }
-  .pbxl-m  {  padding-bottom: 4rem; }
-  .pbxxl-m {  padding-bottom: 8rem; }
-  .pbxxxl-m { padding-bottom: 16rem; }
+  .pb0-m  {  padding-bottom: var(--spacing-none); }
+  .pb1-m {  padding-bottom: var(--spacing-extra-small); }
+  .pb2-m  {  padding-bottom: var(--spacing-small); }
+  .pb3-m  {  padding-bottom: var(--spacing-medium); }
+  .pb4-m  {  padding-bottom: var(--spacing-large); }
+  .pb5-m  {  padding-bottom: var(--spacing-extra-large); }
+  .pb6-m {  padding-bottom: var(--spacing-extra-extra-large); }
+  .pb7-m { padding-bottom: var(--spacing-extra-extra-extra-large); }
 
-  .ptn-m  {  padding-top: 0; }
-  .ptxs-m {  padding-top: .25rem; }
-  .pts-m  {  padding-top: .5rem; }
-  .ptm-m  {  padding-top: 1rem; }
-  .ptl-m  {  padding-top: 2rem; }
-  .ptxl-m  {  padding-top: 4rem; }
-  .ptxxl-m {  padding-top: 8rem; }
-  .ptxxxl-m { padding-top: 16rem; }
+  .pt0-m  {  padding-top: var(--spacing-none); }
+  .pt1-m {  padding-top: var(--spacing-extra-small); }
+  .pt2-m  {  padding-top: var(--spacing-small); }
+  .pt3-m  {  padding-top: var(--spacing-medium); }
+  .pt4-m  {  padding-top: var(--spacing-large); }
+  .pt5-m  {  padding-top: var(--spacing-extra-large); }
+  .pt6-m {  padding-top: var(--spacing-extra-extra-large); }
+  .pt7-m { padding-top: var(--spacing-extra-extra-extra-large); }
 
-  .pvn-m {    padding-top: 0;       padding-bottom: 0; }
-  .pvxs-m {   padding-top: .25rem;  padding-bottom: .25rem; }
-  .pvs-m {    padding-top: .5rem;   padding-bottom: .5rem; }
-  .pvm-m {    padding-top: 1rem;    padding-bottom: 1rem; }
-  .pvl-m {    padding-top: 2rem;    padding-bottom: 2rem; }
-  .pvxl-m {   padding-top: 4rem;    padding-bottom: 4rem; }
-  .pvxxl-m {  padding-top: 8rem;    padding-bottom: 8rem; }
-  .pvxxxl-m { padding-top: 16rem;   padding-bottom: 16rem; }
+  .pv0-m {
+    padding-top: var(--spacing-none);
+    padding-bottom: var(--spacing-none);
+  }
+  .pv1-m {
+    padding-top: var(--spacing-extra-small);
+    padding-bottom: var(--spacing-extra-small);
+  }
+  .pv2-m {
+    padding-top: var(--spacing-small);
+    padding-bottom: var(--spacing-small);
+  }
+  .pv3-m {
+    padding-top: var(--spacing-medium);
+    padding-bottom: var(--spacing-medium);
+  }
+  .pv4-m {
+    padding-top: var(--spacing-large);
+    padding-bottom: var(--spacing-large);
+  }
+  .pv5-m {
+    padding-top: var(--spacing-extra-large);
+    padding-bottom: var(--spacing-extra-large);
+  }
+  .pv6-m {
+    padding-top: var(--spacing-extra-extra-large);
+    padding-bottom: var(--spacing-extra-extra-large);
+  }
+  .pv7-m {
+    padding-top: var(--spacing-extra-extra-extra-large);
+    padding-bottom: var(--spacing-extra-extra-extra-large);
+  }
 
-  .phn-m {    padding-left: 0;      padding-right: 0; }
-  .pvxs-m {   padding-left: .25rem; padding-right: .25rem; }
-  .phs-m {    padding-left: .5rem;  padding-right: .5rem; }
-  .phm-m {    padding-left: 1rem;   padding-right: 1rem; }
-  .phl-m {    padding-left: 2rem;   padding-right: 2rem; }
-  .phxl-m {   padding-left: 4rem;   padding-right: 4rem; }
-  .phxxl-m {  padding-left: 8rem;   padding-right: 8rem; }
-  .phxxxl-m { padding-left: 16rem;  padding-right: 16rem; }
+  .ph0-m {
+    padding-left: var(--spacing-none);
+    padding-right: var(--spacing-none);
+  }
+  .pv1-m {
+    padding-left: var(--spacing-extra-small);
+    padding-right: var(--spacing-extra-small);
+  }
+  .ph2-m {
+    padding-left: var(--spacing-small);
+    padding-right: var(--spacing-small);
+  }
+  .ph3-m {
+    padding-left: var(--spacing-medium);
+    padding-right: var(--spacing-medium);
+  }
+  .ph4-m {
+    padding-left: var(--spacing-large);
+    padding-right: var(--spacing-large);
+  }
+  .ph5-m {
+    padding-left: var(--spacing-extra-large);
+    padding-right: var(--spacing-extra-large);
+  }
+  .ph6-m {
+    padding-left: var(--spacing-extra-extra-large);
+    padding-right: var(--spacing-extra-extra-large);
+  }
+  .ph7-m {
+    padding-left: var(--spacing-extra-extra-extra-large);
+    padding-right: var(--spacing-extra-extra-extra-large);
+  }
 
-  .man-m  {   margin: 0; }
-  .maxs-m {   margin: .25rem; }
-  .mas-m  {   margin: .5rem; }
-  .mam-m  {   margin: 1rem; }
-  .mal-m  {   margin: 2rem; }
-  .maxl-m  {  margin: 4rem; }
-  .maxxl-m {  margin: 8rem; }
-  .maxxxl-m { margin: 16rem; }
+  .ma0-m  {  margin: var(--spacing-none); }
+  .ma1-m {  margin: var(--spacing-extra-small); }
+  .ma2-m  {  margin: var(--spacing-small); }
+  .ma3-m  {  margin: var(--spacing-medium); }
+  .ma4-m  {  margin: var(--spacing-large); }
+  .ma5-m  {  margin: var(--spacing-extra-large); }
+  .ma6-m {  margin: var(--spacing-extra-extra-large); }
+  .ma7-m { margin: var(--spacing-extra-extra-extra-large); }
 
-  .mln-m  {   margin-left: 0; }
-  .mlxs-m {   margin-left: .25rem; }
-  .mls-m  {   margin-left: .5rem; }
-  .mlm-m  {   margin-left: 1rem; }
-  .mll-m  {   margin-left: 2rem; }
-  .mlxl-m  {  margin-left: 4rem; }
-  .mlxxl-m {  margin-left: 8rem; }
-  .mlxxxl-m { margin-left: 16rem; }
+  .ml0-m  {  margin-left: var(--spacing-none); }
+  .ml1-m {  margin-left: var(--spacing-extra-small); }
+  .ml2-m  {  margin-left: var(--spacing-small); }
+  .ml3-m  {  margin-left: var(--spacing-medium); }
+  .ml4-m  {  margin-left: var(--spacing-large); }
+  .ml5-m  {  margin-left: var(--spacing-extra-large); }
+  .ml6-m {  margin-left: var(--spacing-extra-extra-large); }
+  .ml7-m { margin-left: var(--spacing-extra-extra-extra-large); }
 
-  .mrn-m  {   margin-right: 0; }
-  .mrxs-m {   margin-right: .25rem; }
-  .mrs-m  {   margin-right: .5rem; }
-  .mrm-m  {   margin-right: 1rem; }
-  .mrl-m  {   margin-right: 2rem; }
-  .mrxl-m  {  margin-right: 4rem; }
-  .mrxxl-m {  margin-right: 8rem; }
-  .mrxxxl-m { margin-right: 16rem; }
+  .mr0-m  {  margin-right: var(--spacing-none); }
+  .mr1-m {  margin-right: var(--spacing-extra-small); }
+  .mr2-m  {  margin-right: var(--spacing-small); }
+  .mr3-m  {  margin-right: var(--spacing-medium); }
+  .mr4-m  {  margin-right: var(--spacing-large); }
+  .mr5-m  {  margin-right: var(--spacing-extra-large); }
+  .mr6-m {  margin-right: var(--spacing-extra-extra-large); }
+  .mr7-m { margin-right: var(--spacing-extra-extra-extra-large); }
 
-  .mbn-m  {   margin-bottom: 0; }
-  .mbxs-m {   margin-bottom: .25rem; }
-  .mbs-m  {   margin-bottom: .5rem; }
-  .mbm-m  {   margin-bottom: 1rem; }
-  .mbl-m  {   margin-bottom: 2rem; }
-  .mbxl-m  {  margin-bottom: 4rem; }
-  .mbxxl-m {  margin-bottom: 8rem; }
-  .mbxxxl-m { margin-bottom: 16rem; }
+  .mb0-m  {  margin-bottom: var(--spacing-none); }
+  .mb1-m {  margin-bottom: var(--spacing-extra-small); }
+  .mb2-m  {  margin-bottom: var(--spacing-small); }
+  .mb3-m  {  margin-bottom: var(--spacing-medium); }
+  .mb4-m  {  margin-bottom: var(--spacing-large); }
+  .mb5-m  {  margin-bottom: var(--spacing-extra-large); }
+  .mb6-m {  margin-bottom: var(--spacing-extra-extra-large); }
+  .mb7-m { margin-bottom: var(--spacing-extra-extra-extra-large); }
 
-  .mtn-m  {   margin-top: 0; }
-  .mtxs-m {   margin-top: .25rem; }
-  .mts-m  {   margin-top: .5rem; }
-  .mtm-m  {   margin-top: 1rem; }
-  .mtl-m  {   margin-top: 2rem; }
-  .mtxl-m  {  margin-top: 4rem; }
-  .mtxxl-m {  margin-top: 8rem; }
-  .mtxxxl-m { margin-top: 16rem; }
+  .mt0-m  {  margin-top: var(--spacing-none); }
+  .mt1-m {  margin-top: var(--spacing-extra-small); }
+  .mt2-m  {  margin-top: var(--spacing-small); }
+  .mt3-m  {  margin-top: var(--spacing-medium); }
+  .mt4-m  {  margin-top: var(--spacing-large); }
+  .mt5-m  {  margin-top: var(--spacing-extra-large); }
+  .mt6-m {  margin-top: var(--spacing-extra-extra-large); }
+  .mt7-m { margin-top: var(--spacing-extra-extra-extra-large); }
 
-  .mvn-m {    margin-top: 0;      margin-bottom: 0rem; }
-  .mvxs-m {   margin-top: .25rem; margin-bottom: .25rem; }
-  .mvs-m {    margin-top: .5rem;  margin-bottom: .5rem; }
-  .mvm-m {    margin-top: 1rem;   margin-bottom: 1rem; }
-  .mvl-m {    margin-top: 2rem;   margin-bottom: 2rem; }
-  .mvxl-m {   margin-top: 4rem;   margin-bottom: 4rem; }
-  .mvxxl-m {  margin-top: 8rem;   margin-bottom: 8rem; }
-  .mvxxxl-m { margin-top: 16rem;  margin-bottom: 16rem; }
+  .mv0-m {
+    margin-top: var(--spacing-none);
+    margin-bottom: var(--spacing-none)rem;
+  }
+  .mv1-m {
+    margin-top: var(--spacing-extra-small);
+    margin-bottom: var(--spacing-extra-small);
+  }
+  .mv2-m {
+    margin-top: var(--spacing-small);
+    margin-bottom: var(--spacing-small);
+  }
+  .mv3-m {
+    margin-top: var(--spacing-medium);
+    margin-bottom: var(--spacing-medium);
+  }
+  .mv4-m {
+    margin-top: var(--spacing-large);
+    margin-bottom: var(--spacing-large);
+  }
+  .mv5-m {
+    margin-top: var(--spacing-extra-large);
+    margin-bottom: var(--spacing-extra-large);
+  }
+  .mv6-m {
+    margin-top: var(--spacing-extra-extra-large);
+    margin-bottom: var(--spacing-extra-extra-large);
+  }
+  .mv7-m {
+    margin-top: var(--spacing-extra-extra-extra-large);
+    margin-bottom: var(--spacing-extra-extra-extra-large);
+  }
 
-  .mhn-m {    margin-left: 0;      margin-right: 0; }
-  .mhxs-m {   margin-left: .25rem; margin-right: .25rem; }
-  .mhs-m {    margin-left: .5rem;  margin-right: .5rem; }
-  .mhm-m {    margin-left: 1rem;   margin-right: 1rem; }
-  .mhl-m {    margin-left: 2rem;   margin-right: 2rem; }
-  .mhxl-m {   margin-left: 4rem;   margin-right: 4rem; }
-  .mhxxl-m {  margin-left: 8rem;   margin-right: 8rem; }
-  .mhxxxl-m { margin-left: 16rem;  margin-right: 16rem; }
+  .mh0-m {
+    margin-left: var(--spacing-none);
+    margin-right: var(--spacing-none);
+  }
+  .mh1-m {
+    margin-left: var(--spacing-extra-small);
+    margin-right: var(--spacing-extra-small);
+  }
+  .mh2-m {
+    margin-left: var(--spacing-small);
+    margin-right: var(--spacing-small);
+  }
+  .mh3-m {
+    margin-left: var(--spacing-medium);
+    margin-right: var(--spacing-medium);
+  }
+  .mh4-m {
+    margin-left: var(--spacing-large);
+    margin-right: var(--spacing-large);
+  }
+  .mh5-m {
+    margin-left: var(--spacing-extra-large);
+    margin-right: var(--spacing-extra-large);
+  }
+  .mh6-m {
+    margin-left: var(--spacing-extra-extra-large);
+    margin-right: var(--spacing-extra-extra-large);
+  }
+  .mh7-m {
+    margin-left: var(--spacing-extra-extra-extra-large);
+    margin-right: var(--spacing-extra-extra-extra-large);
+  }
 
 }
 
 @media (--breakpoint-large) {
-  .pan-l  {   padding: 0; }
-  .paxs-l {   padding: .25rem; }
-  .pas-l  {   padding: .5rem; }
-  .pam-l  {   padding: 1rem; }
-  .pal-l  {   padding: 2rem; }
-  .paxl-l  {  padding: 4rem; }
-  .paxxl-l {  padding: 8rem; }
-  .paxxxl-l { padding: 16rem; }
+  .pa0-l  {  padding: var(--spacing-none); }
+  .pa1-l {  padding: var(--spacing-extra-small); }
+  .pa2-l  {  padding: var(--spacing-small); }
+  .pa3-l  {  padding: var(--spacing-medium); }
+  .pa4-l  {  padding: var(--spacing-large); }
+  .pa5-l  {  padding: var(--spacing-extra-large); }
+  .pa6-l {  padding: var(--spacing-extra-extra-large); }
+  .pa7-l { padding: var(--spacing-extra-extra-extra-large); }
 
-  .pln-l  {   padding-left: 0; }
-  .plxs-l {   padding-left: .25rem; }
-  .pls-l  {   padding-left: .5rem; }
-  .plm-l  {   padding-left: 1rem; }
-  .pll-l  {   padding-left: 2rem; }
-  .plxl-l  {  padding-left: 4rem; }
-  .plxxl-l {  padding-left: 8rem; }
-  .plxxxl-l { padding-left: 16rem; }
+  .pl0-l  {  padding-left: var(--spacing-none); }
+  .pl1-l {  padding-left: var(--spacing-extra-small); }
+  .pl2-l  {  padding-left: var(--spacing-small); }
+  .pl3-l  {  padding-left: var(--spacing-medium); }
+  .pl4-l  {  padding-left: var(--spacing-large); }
+  .pl5-l  {  padding-left: var(--spacing-extra-large); }
+  .pl6-l {  padding-left: var(--spacing-extra-extra-large); }
+  .pl7-l { padding-left: var(--spacing-extra-extra-extra-large); }
 
-  .prn-l  {   padding-right: 0; }
-  .prxs-l {   padding-right: .25rem; }
-  .prs-l  {   padding-right: .5rem; }
-  .prm-l  {   padding-right: 1rem; }
-  .prl-l  {   padding-right: 2rem; }
-  .prxl-l  {  padding-right: 4rem; }
-  .prxxl-l {  padding-right: 8rem; }
-  .prxxxl-l { padding-right: 16rem; }
+  .pr0-l  {  padding-right: var(--spacing-none); }
+  .pr1-l {  padding-right: var(--spacing-extra-small); }
+  .pr2-l  {  padding-right: var(--spacing-small); }
+  .pr3-l  {  padding-right: var(--spacing-medium); }
+  .pr4-l  {  padding-right: var(--spacing-large); }
+  .pr5-l  {  padding-right: var(--spacing-extra-large); }
+  .pr6-l {  padding-right: var(--spacing-extra-extra-large); }
+  .pr7-l { padding-right: var(--spacing-extra-extra-extra-large); }
 
-  .pbn-l  {   padding-bottom: 0; }
-  .pbxs-l {   padding-bottom: .25rem; }
-  .pbs-l  {   padding-bottom: .5rem; }
-  .pbm-l  {   padding-bottom: 1rem; }
-  .pbl-l  {   padding-bottom: 2rem; }
-  .pbxl-l  {  padding-bottom: 4rem; }
-  .pbxxl-l {  padding-bottom: 8rem; }
-  .pbxxxl-l { padding-bottom: 16rem; }
+  .pb0-l  {  padding-bottom: var(--spacing-none); }
+  .pb1-l {  padding-bottom: var(--spacing-extra-small); }
+  .pb2-l  {  padding-bottom: var(--spacing-small); }
+  .pb3-l  {  padding-bottom: var(--spacing-medium); }
+  .pb4-l  {  padding-bottom: var(--spacing-large); }
+  .pb5-l  {  padding-bottom: var(--spacing-extra-large); }
+  .pb6-l {  padding-bottom: var(--spacing-extra-extra-large); }
+  .pb7-l { padding-bottom: var(--spacing-extra-extra-extra-large); }
 
-  .ptn-l  {   padding-top: 0; }
-  .ptxs-l {   padding-top: .25rem; }
-  .pts-l  {   padding-top: .5rem; }
-  .ptm-l  {   padding-top: 1rem; }
-  .ptl-l  {   padding-top: 2rem; }
-  .ptxl-l  {  padding-top: 4rem; }
-  .ptxxl-l {  padding-top: 8rem; }
-  .ptxxxl-l { padding-top: 16rem; }
+  .pt0-l  {  padding-top: var(--spacing-none); }
+  .pt1-l {  padding-top: var(--spacing-extra-small); }
+  .pt2-l  {  padding-top: var(--spacing-small); }
+  .pt3-l  {  padding-top: var(--spacing-medium); }
+  .pt4-l  {  padding-top: var(--spacing-large); }
+  .pt5-l  {  padding-top: var(--spacing-extra-large); }
+  .pt6-l {  padding-top: var(--spacing-extra-extra-large); }
+  .pt7-l { padding-top: var(--spacing-extra-extra-extra-large); }
 
-  .pvn-l {    padding-top: 0;       padding-bottom: 0; }
-  .pvxs-l {   padding-top: .25rem;  padding-bottom: .25rem; }
-  .pvs-l {    padding-top: .5rem;   padding-bottom: .5rem; }
-  .pvm-l {    padding-top: 1rem;    padding-bottom: 1rem; }
-  .pvl-l {    padding-top: 2rem;    padding-bottom: 2rem; }
-  .pvxl-l {   padding-top: 4rem;    padding-bottom: 4rem; }
-  .pvxxl-l {  padding-top: 8rem;    padding-bottom: 8rem; }
-  .pvxxxl-l { padding-top: 16rem;   padding-bottom: 16rem; }
+  .pv0-l {
+    padding-top: var(--spacing-none);
+    padding-bottom: var(--spacing-none);
+  }
+  .pv1-l {
+    padding-top: var(--spacing-extra-small);
+    padding-bottom: var(--spacing-extra-small);
+  }
+  .pv2-l {
+    padding-top: var(--spacing-small);
+    padding-bottom: var(--spacing-small);
+  }
+  .pv3-l {
+    padding-top: var(--spacing-medium);
+    padding-bottom: var(--spacing-medium);
+  }
+  .pv4-l {
+    padding-top: var(--spacing-large);
+    padding-bottom: var(--spacing-large);
+  }
+  .pv5-l {
+    padding-top: var(--spacing-extra-large);
+    padding-bottom: var(--spacing-extra-large);
+  }
+  .pv6-l {
+    padding-top: var(--spacing-extra-extra-large);
+    padding-bottom: var(--spacing-extra-extra-large);
+  }
+  .pv7-l {
+    padding-top: var(--spacing-extra-extra-extra-large);
+    padding-bottom: var(--spacing-extra-extra-extra-large);
+  }
 
-  .phn-l {    padding-left: 0;      padding-right: 0; }
-  .pvxs-l {   padding-left: .25rem; padding-right: .25rem; }
-  .phs-l {    padding-left: .5rem;  padding-right: .5rem; }
-  .phm-l {    padding-left: 1rem;   padding-right: 1rem; }
-  .phl-l {    padding-left: 2rem;   padding-right: 2rem; }
-  .phxl-l {   padding-left: 4rem;   padding-right: 4rem; }
-  .phxxl-l {  padding-left: 8rem;   padding-right: 8rem; }
-  .phxxxl-l { padding-left: 16rem;  padding-right: 16rem; }
+  .ph0-l {
+    padding-left: var(--spacing-none);
+    padding-right: var(--spacing-none);
+  }
+  .ph1-l {
+    padding-left: var(--spacing-extra-small);
+    padding-right: var(--spacing-extra-small);
+  }
+  .ph2-l {
+    padding-left: var(--spacing-small);
+    padding-right: var(--spacing-small);
+  }
+  .ph3-l {
+    padding-left: var(--spacing-medium);
+    padding-right: var(--spacing-medium);
+  }
+  .ph4-l {
+    padding-left: var(--spacing-large);
+    padding-right: var(--spacing-large);
+  }
+  .ph5-l {
+    padding-left: var(--spacing-extra-large);
+    padding-right: var(--spacing-extra-large);
+  }
+  .ph6-l {
+    padding-left: var(--spacing-extra-extra-large);
+    padding-right: var(--spacing-extra-extra-large);
+  }
+  .ph7-l {
+    padding-left: var(--spacing-extra-extra-extra-large);
+    padding-right: var(--spacing-extra-extra-extra-large);
+  }
 
-  .man-l  {   margin: 0; }
-  .maxs-l {   margin: .25rem; }
-  .mas-l  {   margin: .5rem; }
-  .mam-l  {   margin: 1rem; }
-  .mal-l  {   margin: 2rem; }
-  .maxl-l  {  margin: 4rem; }
-  .maxxl-l {  margin: 8rem; }
-  .maxxxl-l { margin: 16rem; }
+  .ma0-l  {  margin: var(--spacing-none); }
+  .ma1-l {  margin: var(--spacing-extra-small); }
+  .ma2-l  {  margin: var(--spacing-small); }
+  .ma3-l  {  margin: var(--spacing-medium); }
+  .ma4-l  {  margin: var(--spacing-large); }
+  .ma5-l  {  margin: var(--spacing-extra-large); }
+  .ma6-l {  margin: var(--spacing-extra-extra-large); }
+  .ma7-l { margin: var(--spacing-extra-extra-extra-large); }
 
-  .mln-l  {   margin-left: 0; }
-  .mlxs-l {   margin-left: .25rem; }
-  .mls-l  {   margin-left: .5rem; }
-  .mlm-l  {   margin-left: 1rem; }
-  .mll-l  {   margin-left: 2rem; }
-  .mlxl-l  {  margin-left: 4rem; }
-  .mlxxl-l {  margin-left: 8rem; }
-  .mlxxxl-l { margin-left: 16rem; }
+  .mlo-l  {  margin-left: var(--spacing-none); }
+  .ml1-l {  margin-left: var(--spacing-extra-small); }
+  .ml2-l  {  margin-left: var(--spacing-small); }
+  .ml3-l  {  margin-left: var(--spacing-medium); }
+  .ml4-l  {  margin-left: var(--spacing-large); }
+  .ml5-l  {  margin-left: var(--spacing-extra-large); }
+  .ml6-l {  margin-left: var(--spacing-extra-extra-large); }
+  .ml7-l { margin-left: var(--spacing-extra-extra-extra-large); }
 
-  .mrn-l  {   margin-right: 0; }
-  .mrxs-l {   margin-right: .25rem; }
-  .mrs-l  {   margin-right: .5rem; }
-  .mrm-l  {   margin-right: 1rem; }
-  .mrl-l  {   margin-right: 2rem; }
-  .mrxl-l  {  margin-right: 4rem; }
-  .mrxxl-l {  margin-right: 8rem; }
-  .mrxxxl-l { margin-right: 16rem; }
+  .mr0-l  {  margin-right: var(--spacing-none); }
+  .mr1-l {  margin-right: var(--spacing-extra-small); }
+  .mr2-l  {  margin-right: var(--spacing-small); }
+  .mr3-l  {  margin-right: var(--spacing-medium); }
+  .mr4-l  {  margin-right: var(--spacing-large); }
+  .mr5-l  {  margin-right: var(--spacing-extra-large); }
+  .mr6-l {  margin-right: var(--spacing-extra-extra-large); }
+  .mr7-l { margin-right: var(--spacing-extra-extra-extra-large); }
 
-  .mbn-l  {   margin-bottom: 0; }
-  .mbxs-l {   margin-bottom: .25rem; }
-  .mbs-l  {   margin-bottom: .5rem; }
-  .mbm-l  {   margin-bottom: 1rem; }
-  .mbl-l  {   margin-bottom: 2rem; }
-  .mbxl-l  {  margin-bottom: 4rem; }
-  .mbxxl-l {  margin-bottom: 8rem; }
-  .mbxxxl-l { margin-bottom: 16rem; }
+  .mb0-l  {  margin-bottom: var(--spacing-none); }
+  .mb1-l {  margin-bottom: var(--spacing-extra-small); }
+  .mb2-l  {  margin-bottom: var(--spacing-small); }
+  .mb3-l  {  margin-bottom: var(--spacing-medium); }
+  .mb4-l  {  margin-bottom: var(--spacing-large); }
+  .mb5-l  {  margin-bottom: var(--spacing-extra-large); }
+  .mb6-l {  margin-bottom: var(--spacing-extra-extra-large); }
+  .mb7-l { margin-bottom: var(--spacing-extra-extra-extra-large); }
 
-  .mtn-l  {   margin-top: 0; }
-  .mtxs-l {   margin-top: .25rem; }
-  .mts-l  {   margin-top: .5rem; }
-  .mtm-l  {   margin-top: 1rem; }
-  .mtl-l  {   margin-top: 2rem; }
-  .mtxl-l  {  margin-top: 4rem; }
-  .mtxxl-l {  margin-top: 8rem; }
-  .mtxxxl-l { margin-top: 16rem; }
+  .mt0-l  {  margin-top: var(--spacing-none); }
+  .mt1-l {  margin-top: var(--spacing-extra-small); }
+  .mt2-l  {  margin-top: var(--spacing-small); }
+  .mt3-l  {  margin-top: var(--spacing-medium); }
+  .mt4-l  {  margin-top: var(--spacing-large); }
+  .mt5-l  {  margin-top: var(--spacing-extra-large); }
+  .mt6-l {  margin-top: var(--spacing-extra-extra-large); }
+  .mt7-l { margin-top: var(--spacing-extra-extra-extra-large); }
 
-  .mvn-l {    margin-top: 0;      margin-bottom: 0rem; }
-  .mvxs-l {   margin-top: .25rem; margin-bottom: .25rem; }
-  .mvs-l {    margin-top: .5rem;  margin-bottom: .5rem; }
-  .mvm-l {    margin-top: 1rem;   margin-bottom: 1rem; }
-  .mvl-l {    margin-top: 2rem;   margin-bottom: 2rem; }
-  .mvxl-l {   margin-top: 4rem;   margin-bottom: 4rem; }
-  .mvxxl-l {  margin-top: 8rem;   margin-bottom: 8rem; }
-  .mvxxxl-l { margin-top: 16rem;  margin-bottom: 16rem; }
+  .mv0-l {
+    margin-top: var(--spacing-none);
+    margin-bottom: var(--spacing-none)rem;
+  }
+  .mv1-l {
+    margin-top: var(--spacing-extra-small);
+    margin-bottom: var(--spacing-extra-small);
+  }
+  .mv2-l {
+    margin-top: var(--spacing-small);
+    margin-bottom: var(--spacing-small);
+  }
+  .mv3-l {
+    margin-top: var(--spacing-medium);
+    margin-bottom: var(--spacing-medium);
+  }
+  .mv4-l {
+    margin-top: var(--spacing-large);
+    margin-bottom: var(--spacing-large);
+  }
+  .mv5-l {
+    margin-top: var(--spacing-extra-large);
+    margin-bottom: var(--spacing-extra-large);
+  }
+  .mv6-l {
+    margin-top: var(--spacing-extra-extra-large);
+    margin-bottom: var(--spacing-extra-extra-large);
+  }
+  .mv7-l {
+    margin-top: var(--spacing-extra-extra-extra-large);
+    margin-bottom: var(--spacing-extra-extra-extra-large);
+  }
 
-  .mhn-l {    margin-left: 0;      margin-right: 0; }
-  .mhxs-l {   margin-left: .25rem; margin-right: .25rem; }
-  .mhs-l {    margin-left: .5rem;  margin-right: .5rem; }
-  .mhm-l {    margin-left: 1rem;   margin-right: 1rem; }
-  .mhl-l {    margin-left: 2rem;   margin-right: 2rem; }
-  .mhxl-l {   margin-left: 4rem;   margin-right: 4rem; }
-  .mhxxl-l {  margin-left: 8rem;   margin-right: 8rem; }
-  .mhxxxl-l { margin-left: 16rem;  margin-right: 16rem; }
+  .mh0-l {
+    margin-left: var(--spacing-none);
+    margin-right: var(--spacing-none);
+  }
+  .mh1-l {
+    margin-left: var(--spacing-extra-small);
+    margin-right: var(--spacing-extra-small);
+  }
+  .mh2-l {
+    margin-left: var(--spacing-small);
+    margin-right: var(--spacing-small);
+  }
+  .mh3-l {
+    margin-left: var(--spacing-medium);
+    margin-right: var(--spacing-medium);
+  }
+  .mh4-l {
+    margin-left: var(--spacing-large);
+    margin-right: var(--spacing-large);
+  }
+  .mh5-l {
+    margin-left: var(--spacing-extra-large);
+    margin-right: var(--spacing-extra-large);
+  }
+  .mh6-l {
+    margin-left: var(--spacing-extra-extra-large);
+    margin-right: var(--spacing-extra-extra-large);
+  }
+  .mh7-l {
+    margin-left: var(--spacing-extra-extra-extra-large);
+    margin-right: var(--spacing-extra-extra-extra-large);
+  }
 }
+
 
 </code>
 </pre>
       </section>
-      <div class="phm phl-ns ptl pbxl">
-  <h1 class="bold f2 ttu tracked">Docs</h1>
+      <div class="ph3 ph5-ns pt3 pb5">
   <section>
-    <h2 class="f3 semibold ttu tracked-mega">General</h2>
-    <a class="f3 bold dim link db blue pvxs" href="/docs/debug/" title="Debugging">Debugging</a>
-    <a class="f3 bold dim link db blue pvxs" href="/docs/general/images/" title="Images">Images</a>
-    <section class="cf w-100 mtm">
+    <h2 class="f6 fw7 ttu tracked">General</h2>
+    <a class="f4  fw6 dim link mid-gray db pv1" href="/docs/debug/" title="Debugging">Debugging</a>
+    <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/general/images/" title="Images">Images</a>
+    <section class="cf w-100 mt3">
       <article class="fn fl-ns w-100 w-25-l">
-        <h2 class="f3 semibold ttu tracked-mega" id="typography">Typography</h2>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/scale" title="Type">Type Scale</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/measure/garamond/" title="Measure">Measure</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/line-height" title="Line Height">Line Height / Leading</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/tracking" title="Tracking">Tracking</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/font-weight" title="Font Weights">Font Weights</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/font-family" title="Font Families">Font Families</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/vertical-align" title="Font Families">Vertical Align</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/text-align" title="Text Align">Text Align</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/text-transform" title="Text Transform">Text Transform</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/text-decoration" title="Text Decoration">Text Decoration</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/white-space" title="White Space">White Space</a>
+        <h2 class="f6 fw7 ttu tracked" id="typography">Typography</h2>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/scale" title="Type">Type Scale</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/measure/garamond/" title="Measure">Measure</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/line-height" title="Line Height">Line Height / Leading</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/tracking" title="Tracking">Tracking</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/font-weight" title="Font Weights">Font Weights</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/font-family" title="Font Families">Font Families</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/vertical-align" title="Font Families">Vertical Align</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/text-align" title="Text Align">Text Align</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/text-transform" title="Text Transform">Text Transform</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/text-decoration" title="Text Decoration">Text Decoration</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/white-space" title="White Space">White Space</a>
       </article>
       <article class="fn fl-ns w-100 w-25-l">
-        <h2 class="f3 semibold ttu tracked-mega" id="layout">Layout</h2>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/box-sizing" title="Box Sizing">Box Sizing</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/spacing" title="Spacing">Spacing</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/floats" title="Floats">Floats</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/clearfix" title="Clears">Clearfix</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/display" title="Display">Display</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/widths" title="Widths">Widths</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/max-widths" title="Max Widths">Max Widths</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/heights" title="Heights">Heights</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/position" title="Position">Position</a>
+        <h2 class="f6 fw7 ttu tracked" id="layout">Layout</h2>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/box-sizing" title="Box Sizing">Box Sizing</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/spacing" title="Spacing">Spacing</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/floats" title="Floats">Floats</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/clearfix" title="Clears">Clearfix</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/display" title="Display">Display</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/widths" title="Widths">Widths</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/max-widths" title="Max Widths">Max Widths</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/heights" title="Heights">Heights</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/position" title="Position">Position</a>
       </article>
       <article class="fn fl-ns w-100 w-25-l">
-        <h2 class="f3 semibold ttu tracked-mega">Theming</h2>
-        <a class="f3 bold dim link db blue pvxs" href="themes/hovers/" title="Hovers">Hovers</a>
-        <a class="f3 bold dim link db blue pvxs" href="themes/background-size/" title="Background Size">Background Size</a>
-        <a class="f3 bold dim link db blue pvxs" href="themes/borders/" title="Borders">Borders</a>
-        <a class="f3 bold dim link db blue pvxs" href="themes/border-radius/" title="Border Radius">Border Radius</a>
+        <h2 class="f6 fw7 ttu tracked">Theming</h2>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="themes/hovers/" title="Hovers">Hovers</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="themes/background-size/" title="Background Size">Background Size</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="themes/borders/" title="Borders">Borders</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="themes/border-radius/" title="Border Radius">Border Radius</a>
       </article>
     </section>
   </section>
 </div>
 
     </main>
-      <footer class="bg-white gray phm pvxl pvxxl-ns bt b--light-gray h-50">
-  <small class="f5 mw7 db center lh-copy">
+      <footer class="bg-near-white mid-gray ph3 ph5-ns pv5 pv6-ns bt b--light-gray">
+  <small class="f6 measure db lh-copy">
     A tachyon /ˈtæki.ɒn/ or tachyonic particle is a hypothetical particle
     that always moves faster than light.
-    <br class="dn db-ns">
     The word comes from the Greek:
+
     ταχύς or tachys, meaning "swift, quick, fast, rapid"
   </small>
+
+  <p>
+
+    <a class="black-70 link dim b" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
+      Join our Slack Channel
+    </a>
+  </p>
 </footer>
 
 

@@ -6,64 +6,55 @@
     <title>
       Borders / Themes / Docs / TACHYONS
     </title>
-    <meta name="author" content="@mrmrs">
+    <meta name="author" content="@mr3rs">
     <meta name="description" content="CSS">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/tachyons.css">
   </head>
   <body class="w-100 sans-serif">
-    <header class="bg-dark-gray white pbl">
-      <div class="bb b--mid-gray phm phl-ns pvl">
-        <h1 class="f4 ttu mtn heavy tracked"><a class="white link dim" href="/">Tachyons</a></h1>
-        <h2 class="f4 mvn semibold dib prxs"><a class="lightest-blue link dim" href="/docs/">Docs</a></h2>
-        <span class="thin white-40">/</span>
-        <h3 class="f4 mvn semibold dib prxs"><a class="lightest-blue link dim" href="/docs/#themes">Themes</a></h3>
-        <span class="thin white-40">/</span>
-        <h4 class="f4 mvn semibold dib">Borders</h4>
-        <div class="mtl">
-          <dl class="white-60 prm light dib mrm">
-            <dt class="db">Version</dt>
-            <dd class="f2 f1-ns b db pln mln">1.1.0</dd>
-          </dl>
-          <dl class="white-60 light dib mrm">
-            <dt class="db">Filesize</dt>
-            <dd class="f2 f1-ns b db pln mln">206 B</dd>
-          </dl>
-          <div class="cf">
-            <dl class="white-60 dib mrm mtn">
-              <dt class="db">Declarations </dt>
-              <dd class="db pln mln f2 f1-ns b">40</span></dd>
-            </dl>
-            <dl class="white-60 dib mrm">
-              <dt class="db prs">Selectors </dt>
-              <dd class="db pln mln f2 f1-ns b">20</dd>
-            </dl>
-            <dl class="white-60 dib mrm">
-              <dt class="db prs">Max. Specificity Score </dt>
-              <dd class="db pln mln f2 f1-ns b">10</dd>
-            </dl>
-            <dl class="white-60 dib mrm">
-              <dt class="db prs">Size of Avg. Rule </dt>
-              <dd class="db pln mln f2 f1-ns b">2</dd>
-            </dl>
-          </div>
+    <header class="w-100 pa3 ph5-ns bg-near-white">
+  <div class="dt w-100">
+    <div class="dtc v-mid tl w-50">
+      <a class="f5 f4-ns fw6 mt0 mb1 link white-80">
+        Tachyons
+      </a>
+      <a href="/" class="link dim dn">
+        <div class="mw2 dib v-mid mr2">
+          <img src="img/logo.jpg" class="db w-100 br-100">
         </div>
+      </a>
+      <div class="dib v-mid">
+        <small class="nowrap f6 mt2 mt3-ns pr2 black-50">v4.0.0-beta</small>
+        <small class="nowrap fw6 f6 f5-ns mt2 mt3-ns pl2 black-50 dn"><%= size %></small>
       </div>
-      <div class="phm phl-ns pvm">
-        <p class="measure f3 lh-copy">
-          There is a base border module that can be extended with the
-          border-width, border-color, border-style modules. By default you
-          don't need to set a border color. It will just inherit whatever the
-          text color is for that dom node. You can target any side to put a border
-          on ie. top, right, bottom, left.
-        </p>
-      </div>
-    </header>
+    </div>
+    <div class="dn dtc-l v-mid w-50 tr">
+      <a class="f6 b link dim dib mr2 black-70" href="#principles">Principles</a>
+      <a class="f6 b link dim dib mr2 black-70" href="#getting-started">Getting Started</a>
+      <a title="Tachyons on GitHub" href="http://github.com/mrmrs/tachyons/"
+         class="f6 b dim link black-70 mr1">
+        GitHub
+      </a>
+      <a title="Tachyons Npm Modules" href="#npm"
+         class="f6 b link black-70 tc dim ml1">
+        Npm
+      </a>
+    </div>
+  </div>
+  <nav class="pv2">
+    <a class="f6 fw6 link dim dib mr2 mid-gray" href="/docs/">Docs</a>
+    <a class="f6 fw6 link dim dib mr2 mid-gray" href="/docs/general">General</a>
+    <a class="f6 fw6 link dim dib mr2 mid-gray" href="/docs/typography">Typography</a>
+    <a class="f6 fw6 link dim dib mr2 mid-gray" href="/docs/layout">Layout</a>
+    <a class="f6 fw6 link dim dib mr2 mid-gray" href="/docs/themes">Themes</a>
+  </nav>
+</header>
+
     <main class="">
-<div class="phm phl-ns ptl pbxl">
+<div class="ph3 ph4-ns pt4 pb5">
   <h2 class="f3 bold">Examples</h2>
   <div>
-    <h3 class="f5 book ptl caps">Border Base</h3>
+    <h3 class="f5 book pt4 caps">Border Base</h3>
     <code class="ba pas f5 nowrap bg-near-white db mbs">
       1px solid border on all sides
     </code>
@@ -81,7 +72,7 @@
     </code>
   </div>
   <div>
-    <h3 class="f5 book ptl caps">Border Styles</h3>
+    <h3 class="f5 book pt4 caps">Border Styles</h3>
     <code class="ba bs-dotted pas f5 nowrap bg-near-white db mbs">
       Dotted
     </code>
@@ -90,7 +81,7 @@
     </code>
   </div>
   <div>
-    <h3 class="f5 book ptl caps">Border Widths - Solid</h3>
+    <h3 class="f5 book pt4 caps">Border Widths - Solid</h3>
     <code class="ba bw1 pas f5 nowrap bg-near-white db mbs">
       border-width: .125rem
     </code>
@@ -106,7 +97,7 @@
     <code class="ba bw5 pas f5 nowrap bg-near-white db mbs">
       border-width: 2rem
     </code>
-    <h3 class="f5 book ptl caps">Border Widths - Dotted</h3>
+    <h3 class="f5 book pt4 caps">Border Widths - Dotted</h3>
     <code class="ba bs-dotted bw1 pas f5 nowrap bg-near-white db mbs">
       border-width: .125rem
     </code>
@@ -116,35 +107,35 @@
     <code class="ba bs-dotted bw3 phs pvm f5 nowrap bg-near-white db mbm">
       border-width: .5rem
     </code>
-    <code class="ba bs-dotted bw4 phs pvl f5 nowrap bg-near-white db mbl">
+    <code class="ba bs-dotted bw4 phs pv4 f5 nowrap bg-near-white db mbl">
       border-width: 1rem
     </code>
-    <code class="ba bs-dotted bw5 phs pvl f5 nowrap bg-near-white db mbl">
+    <code class="ba bs-dotted bw5 phs pv4 f5 nowrap bg-near-white db mbl">
       border-width: 2rem
     </code>
   </div>
-  <div class="mtxl cf">
+  <div class="mt5 cf">
     <div class="dib mrl">
-      <h1 class="f4 ttu tracked semibold">Previous</h1>
-      <a href="/docs/themes/background-size/" class="link semibold blue dim">Background Size</a>
+      <h1 class="f4 ttu tracked fw6">Previous</h1>
+      <a href="/docs/themes/background-size/" class="link fw6 blue dim">Background Size</a>
     </div>
     <div class="dib">
-      <h1 class="f4 ttu tracked semibold">Next</h1>
-      <a href="/docs/themes/border-radius/" class="link semibold blue dim">Border Radius</a>
+      <h1 class="f4 ttu tracked fw6">Next</h1>
+      <a href="/docs/themes/border-radius/" class="link fw6 blue dim">Border Radius</a>
     </div>
   </div>
-  <div class="mtxl">
-    <h1 class="f4 ttu tracked semibold">Reference</h1>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border" class="link db semibold blue dim">MDN - Border</a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style" class="link db semibold blue dim">MDN - Border Style</a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-width" class="link db semibold blue dim">MDN - Border Width</a>
+  <div class="mt5">
+    <h1 class="f4 ttu tracked fw6">Reference</h1>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border" class="link db fw6 blue dim">MDN - Border</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style" class="link db fw6 blue dim">MDN - Border Style</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-width" class="link db fw6 blue dim">MDN - Border Width</a>
   </div>
 </div>
-<section class="bg-dark-gray white ptl pbxl">
-<header class="phm phl-ns ptl">
+<section class="bg-dark-gray white pt4 pb5">
+<header class="ph3 ph4-ns pt4">
         <kbd class="yellow">src/_borders.css</kbd>
 </header>
-<pre class="phm phl-ns">
+<pre class="ph3 ph4-ns">
 <code class="small">
 /*
 
@@ -236,10 +227,10 @@
 }
 </code>
 </pre>
-<header class="phm phl-ns ptl">
+<header class="ph3 ph4-ns pt4">
   <kbd class="yellow">src/_border-style.css</kbd>
 </header>
-<pre class="phm phl-ns">
+<pre class="ph3 ph4-ns">
 <code class="small">
 
 /*
@@ -284,60 +275,34 @@
 }
 </code>
 </pre>
-<header class="phm phl-ns ptl">
+<header class="ph3 ph4-ns pt4">
         <kbd class="yellow">src/_border-widths.css</kbd>
 </header>
-<pre class="phm phl-ns">
+<pre class="ph3 ph4-ns">
 <code class="small">
+@custom-media --breakpoint-not-small screen and (min-width: 48em);
+@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large screen and (min-width: 64em);
+
 /*
 
    BORDER BASE
 
-   Use border-base in combination with setting text color
-   or by using extensions from border-color module.
+   Legend
 
-   Examples:
-   To set a border of blue on all sides:
-   <div class="ba b--blue"></div>
-
-   To set a border on top of orange
-   <div class="bt b--orange"></div>
-
-   Base:
-    b = border
-
-   Modifiers:
-     n = none, no border-style or border-width
-     a = all
-     t = top
-     r = right
-     b = bottom
-     l = left
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
+   a = all
+   t = top
+   r = right
+   b = bottom
+   l = left
 
 */
 
-/* The extra `.bn` is required to boost the specificity, which is needed
- * sometimes if you are setting the border to 0. */
   .ba { border-style: solid; border-width: 1px; }
   .bt { border-top-style: solid; border-top-width: 1px; }
   .br { border-right-style: solid; border-right-width: 1px; }
   .bb { border-bottom-style: solid; border-bottom-width: 1px; }
   .bl { border-left-style: solid; border-left-width: 1px; }
-  .bn { border-style: solid; border-width: 0; }
-
-  .bda { border-style: dotted; border-width: 1px; }
-  .bdt { border-top-style: dotted; border-top-width: 1px; }
-  .bdr { border-right-style: dotted; border-right-width: 1px; }
-  .bdb { border-bottom-style: dotted; border-bottom-width: 1px; }
-  .bdl { border-left-style: dotted; border-left-width: 1px; }
-
-  .bhn { border-right-width: 0; border-left-width: 0; }
-  .bvn { border-top-width: 0; border-bottom-width: 0; }
 
 @media (--breakpoint-not-small) {
   .ba-ns { border-style: solid; border-width: 1px; }
@@ -345,13 +310,6 @@
   .br-ns { border-right-style: solid; border-right-width: 1px; }
   .bb-ns { border-bottom-style: solid; border-bottom-width: 1px; }
   .bl-ns { border-left-style: solid; border-left-width: 1px; }
-  .bda-ns { border-style: dotted; border-width: 1px; }
-  .bdt-ns { border-top-style: dotted; border-top-width: 1px; }
-  .bdr-ns { border-right-style: dotted; border-right-width: 1px; }
-  .bdb-ns { border-bottom-style: dotted; border-bottom-width: 1px; }
-  .bdl-ns { border-left-style: dotted; border-left-width: 1px; }
-  .bn-ns { border-style: solid; border-width: 0; }
-  .bhn-ns { border-right-width: 0; border-left-width: 0; }
 }
 
 @media (--breakpoint-medium) {
@@ -360,12 +318,6 @@
   .br-m { border-right-style: solid; border-right-width: 1px; }
   .bb-m { border-bottom-style: solid; border-bottom-width: 1px; }
   .bl-m { border-left-style: solid; border-left-width: 1px; }
-  .bda-m { border-style: dotted; border-width: 1px; }
-  .bdt-m { border-top-style: dotted; border-top-width: 1px; }
-  .bdr-m { border-right-style: dotted; border-right-width: 1px; }
-  .bdb-m { border-bottom-style: dotted; border-bottom-width: 1px; }
-  .bdl-m { border-left-style: dotted; border-left-width: 1px; }
-  .bn-m { border-style: solid; border-width: 0; }
 }
 
 @media (--breakpoint-large) {
@@ -374,70 +326,71 @@
   .br-l { border-right-style: solid; border-right-width: 1px; }
   .bb-l { border-bottom-style: solid; border-bottom-width: 1px; }
   .bl-l { border-left-style: solid; border-left-width: 1px; }
-  .bda-l { border-style: dotted; border-width: 1px; }
-  .bdt-l { border-top-style: dotted; border-top-width: 1px; }
-  .bdr-l { border-right-style: dotted; border-right-width: 1px; }
-  .bdb-l { border-bottom-style: dotted; border-bottom-width: 1px; }
-  .bdl-l { border-left-style: dotted; border-left-width: 1px; }
-  .bn-l { border-style: solid; border-width: 0; }
 }
+
 
 </code>
 </pre>
       </section>
-      <div class="phm phl-ns ptl pbxl">
-  <h1 class="bold f2 ttu tracked">Docs</h1>
+      <div class="ph3 ph5-ns pt3 pb5">
   <section>
-    <h2 class="f3 semibold ttu tracked-mega">General</h2>
-    <a class="f3 bold dim link db blue pvxs" href="/docs/debug/" title="Debugging">Debugging</a>
-    <a class="f3 bold dim link db blue pvxs" href="/docs/general/images/" title="Images">Images</a>
-    <section class="cf w-100 mtm">
+    <h2 class="f6 fw7 ttu tracked">General</h2>
+    <a class="f4  fw6 dim link mid-gray db pv1" href="/docs/debug/" title="Debugging">Debugging</a>
+    <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/general/images/" title="Images">Images</a>
+    <section class="cf w-100 mt3">
       <article class="fn fl-ns w-100 w-25-l">
-        <h2 class="f3 semibold ttu tracked-mega" id="typography">Typography</h2>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/scale" title="Type">Type Scale</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/measure/garamond/" title="Measure">Measure</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/line-height" title="Line Height">Line Height / Leading</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/tracking" title="Tracking">Tracking</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/font-weight" title="Font Weights">Font Weights</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/font-family" title="Font Families">Font Families</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/vertical-align" title="Font Families">Vertical Align</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/text-align" title="Text Align">Text Align</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/text-transform" title="Text Transform">Text Transform</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/text-decoration" title="Text Decoration">Text Decoration</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/white-space" title="White Space">White Space</a>
+        <h2 class="f6 fw7 ttu tracked" id="typography">Typography</h2>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/scale" title="Type">Type Scale</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/measure/garamond/" title="Measure">Measure</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/line-height" title="Line Height">Line Height / Leading</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/tracking" title="Tracking">Tracking</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/font-weight" title="Font Weights">Font Weights</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/font-family" title="Font Families">Font Families</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/vertical-align" title="Font Families">Vertical Align</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/text-align" title="Text Align">Text Align</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/text-transform" title="Text Transform">Text Transform</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/text-decoration" title="Text Decoration">Text Decoration</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/white-space" title="White Space">White Space</a>
       </article>
       <article class="fn fl-ns w-100 w-25-l">
-        <h2 class="f3 semibold ttu tracked-mega" id="layout">Layout</h2>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/box-sizing" title="Box Sizing">Box Sizing</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/spacing" title="Spacing">Spacing</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/floats" title="Floats">Floats</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/clearfix" title="Clears">Clearfix</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/display" title="Display">Display</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/widths" title="Widths">Widths</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/max-widths" title="Max Widths">Max Widths</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/heights" title="Heights">Heights</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/position" title="Position">Position</a>
+        <h2 class="f6 fw7 ttu tracked" id="layout">Layout</h2>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/box-sizing" title="Box Sizing">Box Sizing</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/spacing" title="Spacing">Spacing</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/floats" title="Floats">Floats</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/clearfix" title="Clears">Clearfix</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/display" title="Display">Display</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/widths" title="Widths">Widths</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/max-widths" title="Max Widths">Max Widths</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/heights" title="Heights">Heights</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/position" title="Position">Position</a>
       </article>
       <article class="fn fl-ns w-100 w-25-l">
-        <h2 class="f3 semibold ttu tracked-mega">Theming</h2>
-        <a class="f3 bold dim link db blue pvxs" href="themes/hovers/" title="Hovers">Hovers</a>
-        <a class="f3 bold dim link db blue pvxs" href="themes/background-size/" title="Background Size">Background Size</a>
-        <a class="f3 bold dim link db blue pvxs" href="themes/borders/" title="Borders">Borders</a>
-        <a class="f3 bold dim link db blue pvxs" href="themes/border-radius/" title="Border Radius">Border Radius</a>
+        <h2 class="f6 fw7 ttu tracked">Theming</h2>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="themes/hovers/" title="Hovers">Hovers</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="themes/background-size/" title="Background Size">Background Size</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="themes/borders/" title="Borders">Borders</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="themes/border-radius/" title="Border Radius">Border Radius</a>
       </article>
     </section>
   </section>
 </div>
 
     </main>
-      <footer class="bg-white gray phm pvxl pvxxl-ns bt b--light-gray h-50">
-  <small class="f5 mw7 db center lh-copy">
+      <footer class="bg-near-white mid-gray ph3 ph5-ns pv5 pv6-ns bt b--light-gray">
+  <small class="f6 measure db lh-copy">
     A tachyon /ˈtæki.ɒn/ or tachyonic particle is a hypothetical particle
     that always moves faster than light.
-    <br class="dn db-ns">
     The word comes from the Greek:
+
     ταχύς or tachys, meaning "swift, quick, fast, rapid"
   </small>
+
+  <p>
+
+    <a class="black-70 link dim b" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
+      Join our Slack Channel
+    </a>
+  </p>
 </footer>
 
 

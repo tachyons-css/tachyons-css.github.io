@@ -25,20 +25,20 @@
         <div class="mtl">
           <dl class="white-60 prm light dib mrm">
             <dt class="db">Version</dt>
-            <dd class="f2 f1-ns b db pln mln">1.1.0</dd>
+            <dd class="f2 f1-ns b db pln mln">2.1.0</dd>
           </dl>
           <dl class="white-60 light dib mrm">
             <dt class="db">Filesize</dt>
-            <dd class="f2 f1-ns b db pln mln">205 B</dd>
+            <dd class="f2 f1-ns b db pln mln">226 B</dd>
           </dl>
           <div class="cf">
             <dl class="white-60 dib mrm mtn">
               <dt class="db">Declarations </dt>
-              <dd class="db pln mln f2 f1-ns b">28</span></dd>
+              <dd class="db pln mln f2 f1-ns b">32</span></dd>
             </dl>
             <dl class="white-60 dib mrm">
               <dt class="db prs">Selectors </dt>
-              <dd class="db pln mln f2 f1-ns b">12</dd>
+              <dd class="db pln mln f2 f1-ns b">16</dd>
             </dl>
             <dl class="white-60 dib mrm">
               <dt class="db prs">Max. Specificity Score </dt>
@@ -46,7 +46,7 @@
             </dl>
             <dl class="white-60 dib mrm">
               <dt class="db prs">Size of Avg. Rule </dt>
-              <dd class="db pln mln f2 f1-ns b">2.3333333333333335</dd>
+              <dd class="db pln mln f2 f1-ns b">2</dd>
             </dl>
           </div>
         </div>
@@ -148,17 +148,28 @@
 </header>
 <pre class="phm phl-ns">
 <code class="small">
+@custom-media --breakpoint-not-small screen and (min-width: 48em);
+@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large screen and (min-width: 64em);
+
 /*
 
    TYPOGRAPHY
 
 */
 
-.measure  {
+/* Measure is limited to ~75 characters */
+.measure {
   max-width: 30em;
 }
 
-.indent   {
+/* Measure is limited to ~45 characters */
+.measure-narrow {
+  max-width: 20em;
+}
+
+/* Book paragraph style - paragraphs are indented with no vertical spacing. */
+.indent {
   text-indent: 1em;
   margin-top: 0;
   margin-bottom: 0;
@@ -172,11 +183,14 @@
   text-overflow: ellipsis;
 }
 
-@media (--breakpoint-not-small){
+@media (--breakpoint-not-small) {
   .measure-ns  {
     max-width: 30em;
   }
-  .indent-ns   {
+  .measure-narrow-ns {
+    max-width: 20em;
+  }
+  .indent-ns {
     text-indent: 1em;
     margin-top: 0;
     margin-bottom: 0;
@@ -189,8 +203,11 @@
 }
 
 @media (--breakpoint-medium) {
-  .measure-m  { max-width: 30em; }
-  .indent-m  {
+  .measure-m { max-width: 30em; }
+  .measure-narrow-m {
+    max-width: 20em;
+  }
+  .indent-m {
     text-indent: 1em;
     margin-top: 0;
     margin-bottom: 0;
@@ -203,8 +220,9 @@
 }
 
 @media (--breakpoint-large) {
-  .measure-l  { max-width: 30em; }
-  .indent-l  {
+  .measure-l { max-width: 30em; }
+  .measure-narrow-l { max-width: 20em; }
+  .indent-l {
     text-indent: 1em;
     margin-top: 0;
     margin-bottom: 0;

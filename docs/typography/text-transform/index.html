@@ -12,54 +12,47 @@
     <link rel="stylesheet" href="/css/tachyons.css">
   </head>
   <body class="w-100 sans-serif">
-    <header class="bg-dark-gray white pbl">
-      <div class="bb b--mid-gray phm phl-ns pvl">
-        <h1 class="f4 ttu mtn heavy tracked"><a class="white link dim" href="/">Tachyons</a></h1>
-        <h2 class="f4 mvn semibold dib prxs"><a class="lightest-blue link dim" href="/docs/">Docs</a></h2>
-        <span class="thin white-40">/</span>
-        <h3 class="f4 mvn semibold dib prxs"><a class="lightest-blue link dim" href="/docs/#typography">Typography</a></h3>
-        <span class="thin white-40">/</span>
-        <h4 class="f4 mvn semibold dib">Text Transform</h4>
-        <div class="mtl">
-          <dl class="white-60 prm light dib mrm">
-            <dt class="db">Version</dt>
-            <dd class="f2 f1-ns b db pln mln">2.1.0</dd>
-          </dl>
-          <dl class="white-60 light dib mrm">
-            <dt class="db">Filesize</dt>
-            <dd class="f2 f1-ns b db pln mln">210 B</dd>
-          </dl>
-          <div class="cf">
-            <dl class="white-60 dib mrm mtn">
-              <dt class="db">Declarations </dt>
-              <dd class="db pln mln f2 f1-ns b">24</span></dd>
-            </dl>
-            <dl class="white-60 dib mrm">
-              <dt class="db prs">Selectors </dt>
-              <dd class="db pln mln f2 f1-ns b">20</dd>
-            </dl>
-            <dl class="white-60 dib mrm">
-              <dt class="db prs">Max. Specificity Score </dt>
-              <dd class="db pln mln f2 f1-ns b">10</dd>
-            </dl>
-            <dl class="white-60 dib mrm">
-              <dt class="db prs">Size of Avg. Rule </dt>
-              <dd class="db pln mln f2 f1-ns b">1.2</dd>
-            </dl>
-          </div>
+
+    <header class="w-100 pa3 ph5-ns bg-near-white">
+  <div class="dt w-100">
+    <div class="dtc v-mid tl w-50">
+      <a class="f5 f4-ns fw6 mt0 mb1 link white-80">
+        Tachyons
+      </a>
+      <a href="/" class="link dim dn">
+        <div class="mw2 dib v-mid mr2">
+          <img src="img/logo.jpg" class="db w-100 br-100">
         </div>
+      </a>
+      <div class="dib v-mid">
+        <small class="nowrap f6 mt2 mt3-ns pr2 black-50">v4.0.0-beta</small>
+        <small class="nowrap fw6 f6 f5-ns mt2 mt3-ns pl2 black-50 dn"><%= size %></small>
       </div>
-      <div class="phm phl-ns pvm">
-        <p class="measure f3 lh-copy">
-          Use these classes to set the capitalization of text.
-        </p>
-        <p class="measure f4 lh-copy">
-          If you use the uppercase class, don't forget to combine it with tracking to make the text more readable.
-        </p>
-      </div>
-    </header>
+    </div>
+    <div class="dn dtc-l v-mid w-50 tr">
+      <a class="f6 b link dim dib mr2 black-70" href="#principles">Principles</a>
+      <a class="f6 b link dim dib mr2 black-70" href="#getting-started">Getting Started</a>
+      <a title="Tachyons on GitHub" href="http://github.com/mrmrs/tachyons/"
+         class="f6 b dim link black-70 mr1">
+        GitHub
+      </a>
+      <a title="Tachyons Npm Modules" href="#npm"
+         class="f6 b link black-70 tc dim ml1">
+        Npm
+      </a>
+    </div>
+  </div>
+  <nav class="pv2">
+    <a class="f6 fw6 link dim dib mr2 mid-gray" href="/docs/">Docs</a>
+    <a class="f6 fw6 link dim dib mr2 mid-gray" href="/docs/general">General</a>
+    <a class="f6 fw6 link dim dib mr2 mid-gray" href="/docs/typography">Typography</a>
+    <a class="f6 fw6 link dim dib mr2 mid-gray" href="/docs/layout">Layout</a>
+    <a class="f6 fw6 link dim dib mr2 mid-gray" href="/docs/themes">Themes</a>
+  </nav>
+</header>
+
     <main class="">
-<div class="phm phl-ns ptl pbxl">
+<div class="ph3 ph4-ns pt4 pb5">
   <h2 class="f3 bold">Examples</h2>
   <h3 class="book ttu mbn">uppercase</h3>
 <code class="code">.ttu </code>
@@ -73,12 +66,16 @@
   <h3 class="book caps mbn">Uppercase with tracking</h3>
 <code class="code">.caps</code>
 </div>
-      <section class="bg-dark-gray white ptl pbxl">
-<header class="phm phl-ns ptl">
+      <section class="bg-dark-gray white pt4 pb5">
+<header class="ph3 ph4-ns pt4">
         <kbd class="yellow">src/_text-transform.css</kbd>
 </header>
-<pre class="phm phl-ns">
+<pre class="ph3 ph4-ns">
 <code class="small">
+@custom-media --breakpoint-not-small screen and (min-width: 48em);
+@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large screen and (min-width: 64em);
+
 /*
 
    TEXT TRANSFORM
@@ -87,102 +84,92 @@
 
 .ttc { text-transform: capitalize; }
 .ttl { text-transform: lowercase; }
-.ttn { text-transform: none; }
 .ttu { text-transform: uppercase; }
-.caps {
-  text-transform: uppercase;
-  letter-spacing: .15em;
-}
+.ttn { text-transform: none; }
 
 @media (--breakpoint-not-small) {
   .ttc-ns { text-transform: capitalize; }
   .ttl-ns { text-transform: lowercase; }
-  .ttn-ns { text-transform: none; }
   .ttu-ns { text-transform: uppercase; }
-  .caps-ns {
-    text-transform: uppercase;
-    letter-spacing: .15em;
-  }
+  .ttn-ns { text-transform: none; }
 }
 
 @media (--breakpoint-medium) {
   .ttc-m { text-transform: capitalize; }
   .ttl-m { text-transform: lowercase; }
-  .ttn-m { text-transform: none; }
   .ttu-m { text-transform: uppercase; }
-  .caps-m {
-    text-transform: uppercase;
-    letter-spacing: .15em;
-  }
+  .ttn-m { text-transform: none; }
 }
 
 @media (--breakpoint-large) {
   .ttc-l { text-transform: capitalize; }
   .ttl-l { text-transform: lowercase; }
-  .ttn-l { text-transform: none; }
   .ttu-l { text-transform: uppercase; }
-  .caps-l {
-    text-transform: uppercase;
-    letter-spacing: .15em;
-  }
+  .ttn-l { text-transform: none; }
 }
 
 </code>
 </pre>
       </section>
-      <div class="phm phl-ns ptl pbxl">
-  <h1 class="bold f2 ttu tracked">Docs</h1>
+      <div class="ph3 ph5-ns pt3 pb5">
   <section>
-    <h2 class="f3 semibold ttu tracked-mega">General</h2>
-    <a class="f3 bold dim link db blue pvxs" href="/docs/debug/" title="Debugging">Debugging</a>
-    <a class="f3 bold dim link db blue pvxs" href="/docs/general/images/" title="Images">Images</a>
-    <section class="cf w-100 mtm">
+    <h2 class="f6 fw7 ttu tracked">General</h2>
+    <a class="f4  fw6 dim link mid-gray db pv1" href="/docs/debug/" title="Debugging">Debugging</a>
+    <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/general/images/" title="Images">Images</a>
+    <section class="cf w-100 mt3">
       <article class="fn fl-ns w-100 w-25-l">
-        <h2 class="f3 semibold ttu tracked-mega" id="typography">Typography</h2>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/scale" title="Type">Type Scale</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/measure/garamond/" title="Measure">Measure</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/line-height" title="Line Height">Line Height / Leading</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/tracking" title="Tracking">Tracking</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/font-weight" title="Font Weights">Font Weights</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/font-family" title="Font Families">Font Families</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/vertical-align" title="Font Families">Vertical Align</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/text-align" title="Text Align">Text Align</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/text-transform" title="Text Transform">Text Transform</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/text-decoration" title="Text Decoration">Text Decoration</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/typography/white-space" title="White Space">White Space</a>
+        <h2 class="f6 fw7 ttu tracked" id="typography">Typography</h2>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/scale" title="Type">Type Scale</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/measure/garamond/" title="Measure">Measure</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/line-height" title="Line Height">Line Height / Leading</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/tracking" title="Tracking">Tracking</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/font-weight" title="Font Weights">Font Weights</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/font-family" title="Font Families">Font Families</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/vertical-align" title="Font Families">Vertical Align</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/text-align" title="Text Align">Text Align</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/text-transform" title="Text Transform">Text Transform</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/text-decoration" title="Text Decoration">Text Decoration</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/white-space" title="White Space">White Space</a>
       </article>
       <article class="fn fl-ns w-100 w-25-l">
-        <h2 class="f3 semibold ttu tracked-mega" id="layout">Layout</h2>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/box-sizing" title="Box Sizing">Box Sizing</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/spacing" title="Spacing">Spacing</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/floats" title="Floats">Floats</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/clearfix" title="Clears">Clearfix</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/display" title="Display">Display</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/widths" title="Widths">Widths</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/max-widths" title="Max Widths">Max Widths</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/heights" title="Heights">Heights</a>
-        <a class="f3 bold dim link db blue pvxs" href="/docs/layout/position" title="Position">Position</a>
+        <h2 class="f6 fw7 ttu tracked" id="layout">Layout</h2>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/box-sizing" title="Box Sizing">Box Sizing</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/spacing" title="Spacing">Spacing</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/floats" title="Floats">Floats</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/clearfix" title="Clears">Clearfix</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/display" title="Display">Display</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/widths" title="Widths">Widths</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/max-widths" title="Max Widths">Max Widths</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/heights" title="Heights">Heights</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/position" title="Position">Position</a>
       </article>
       <article class="fn fl-ns w-100 w-25-l">
-        <h2 class="f3 semibold ttu tracked-mega">Theming</h2>
-        <a class="f3 bold dim link db blue pvxs" href="themes/hovers/" title="Hovers">Hovers</a>
-        <a class="f3 bold dim link db blue pvxs" href="themes/background-size/" title="Background Size">Background Size</a>
-        <a class="f3 bold dim link db blue pvxs" href="themes/borders/" title="Borders">Borders</a>
-        <a class="f3 bold dim link db blue pvxs" href="themes/border-radius/" title="Border Radius">Border Radius</a>
+        <h2 class="f6 fw7 ttu tracked">Theming</h2>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="themes/hovers/" title="Hovers">Hovers</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="themes/background-size/" title="Background Size">Background Size</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="themes/borders/" title="Borders">Borders</a>
+        <a class="f4 fw6 dim link mid-gray db pv1" href="themes/border-radius/" title="Border Radius">Border Radius</a>
       </article>
     </section>
   </section>
 </div>
 
     </main>
-      <footer class="bg-white gray phm pvxl pvxxl-ns bt b--light-gray h-50">
-  <small class="f5 mw7 db center lh-copy">
+      <footer class="bg-near-white mid-gray ph3 ph5-ns pv5 pv6-ns bt b--light-gray">
+  <small class="f6 measure db lh-copy">
     A tachyon /ˈtæki.ɒn/ or tachyonic particle is a hypothetical particle
     that always moves faster than light.
-    <br class="dn db-ns">
     The word comes from the Greek:
+
     ταχύς or tachys, meaning "swift, quick, fast, rapid"
   </small>
+
+  <p>
+
+    <a class="black-70 link dim b" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
+      Join our Slack Channel
+    </a>
+  </p>
 </footer>
 
 
