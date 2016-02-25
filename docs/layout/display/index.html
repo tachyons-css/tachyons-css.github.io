@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>
-      Display / Layout / Docs / TACHYONS
+      tachyons-display / Layout / Docs / TACHYONS
     </title>
-    <meta name="author" content="@mr3rs">
-    <meta name="description" content="CSS">
+    <meta name="author" content="@mrmrs">
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/tachyons.css">
+    <link rel="stylesheet" href="/css/tachyons.min.css">
   </head>
   <body class="w-100 sans-serif">
 
@@ -42,7 +42,7 @@
 </header>
 
     <main class="">
-      <article class="bg-near-white bt b--black-10 ph3 pt3 ph5-ns">
+      <article class="bg-near-white bt b--black-10 pa3 ph5-ns">
         <h4 class="f4 mv0 fw6 dib mr4">tachyons-display</h4>
         <span class="f4 b dib pl0 ml0 mr4">v3.0.3</span>
         <span class="f4 b dib pl0 ml0 mr4">238 B</span>
@@ -64,15 +64,26 @@
               <dd class="db pl0 ml0 f4 f2-ns b">1</dd>
             </dl>
         </div>
+        <p class="measure f3 lh-copy">
+          Single purpose classes for setting the display of an element at any breakpoint.
+        </p>
+        <blockquote class="i measure f4 lh-copy mh0">
+          The display property defines box’s display type, which consists of the two basic qualities of how an element generates boxes:
+          the inner display type, which defines the kind of formatting context it generates, dictating how its descendant boxes are laid out.
+          the outer display type, which dictates how the box participates in its parent formatting context.
+          <footer class="f6">
+             - <a href="https://www.w3.org/TR/css-display-3/#the-display-properties" class="link dim black-70 i">CSS3 Display Module Spec</a>
+          </footer>
+        </blockquote>
       </article>
 <div class="ph3 ph5-ns pt4 pb5">
   <h2 class="f3 bold">Examples</h2>
   <h3 class="f5 book pt4 caps">Display Block</h3>
   <p>Block will inherently set width to 100% of its parent element. It will also cause a line break, even if the declared width doesn't take up the full width of the parent.</p>
-  <div class="db bg-black-10 mbs">
+  <div class="db bg-black-10 mb2">
     block
   </div>
-  <div class="db bg-black-10 mbs mw4">
+  <div class="db bg-black-10 mb2 mw4">
     block
   </div>
 
@@ -84,16 +95,16 @@
     width: 25% to four elements they will not just render as a 4 column layout by
     default.
   </p>
-  <div class="dib bg-black-10 mbs">
+  <div class="dib bg-black-10 mb2">
     display: inline-block
   </div>
-  <div class="dib bg-black-10 mbs">
+  <div class="dib bg-black-10 mb2">
     display: inline-block
   </div>
-  <div class="dib bg-black-10 mbs">
+  <div class="dib bg-black-10 mb2">
     display: inline-block
   </div>
-  <div class="dib bg-black-10 mbs">
+  <div class="dib bg-black-10 mb2">
     display: inline-block
   </div>
 
@@ -101,16 +112,16 @@
   <p class="measure">
     Set content inline. Inline doesn't respect height or width values. It does not render white space between elements.
   </p>
-  <div class="di bg-black-10 mbs">
+  <div class="di bg-black-10 mb2">
     display: inline
   </div>
-  <div class="di bg-black-10 mbs">
+  <div class="di bg-black-10 mb2">
     display: inline
   </div>
-  <div class="di bg-black-10 mbs">
+  <div class="di bg-black-10 mb2">
     display: inline
   </div>
-  <div class="di bg-black-10 mbs">
+  <div class="di bg-black-10 mb2">
     display: inline
   </div>
 
@@ -120,7 +131,7 @@
     without table markup. This can be useful for vertically aligning content
     or for auto-calculating a variable amount of table cells.
   </p>
-  <div class="dt bg-black-10 mbs">
+  <div class="dt bg-black-10 mb2">
     <div class="dtc v-mid paxs bg-black-10">display</div>
     <div class="dtc v-mid paxs bg-black-20">table</div>
     <div class="dtc v-mid paxs bg-black-10">will automatically</div>
