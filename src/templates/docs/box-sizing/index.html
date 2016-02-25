@@ -7,14 +7,14 @@
       <%= name %> / Layout / Docs / TACHYONS
     </title>
     <meta name="author" content="@mrmrs">
-    <meta name="description" content="Functional CSS for humans">
+    <meta name="description" content="Tachyons is a css framework for rapidly building well-designed, responsive, and performant UI.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/tachyons.min.css">
   </head>
   <body class="w-100 sans-serif">
     <%= siteHeader %>
     <main class="">
-      <article class="bg-near-white bt b--black-10 ph3 pt3 ph5-ns">
+      <article class="bg-near-white bt b--black-10 ph3 pv3 ph5-ns">
         <h4 class="f4 mv0 fw6 dib mr4"><%= name %></h4>
         <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
         <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
@@ -36,6 +36,22 @@
               <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
             </dl>
         </div>
+        <p class="measure f4 lh-copy">
+          The box model has been known to trip up a few people. This module should make things a bit easier.
+        </p>
+        <p class="measure f5 lh-copy">
+          While many people make fun of Microsoft's 'Internet Explorer' browser - the one thing that most css authors
+          agree on is that it's the most favorable box model. Fortunately the box-sizing property is well supported
+          now so we can fix the atrocity that is the box model that chrome, firefox, safari, and others have implemented in modern browsers.
+        </p>
+        <p class="measure f5 lh-copy">
+          While the * { box-sizing: border-box; } hack has become quite popular - not all elements (think form inputs)
+          benefit from this box model. This module only applies the border-box model to certain elements as listed below.
+          There is also a .border-box class you can apply to elements as needed.
+        </p>
+        <p class="measure f5 lh-copy">
+          The benefit of border-box as opposed to content-box (which is the default per the css spec) is that when you declare a width, that is the width of the element, regardless of how much border or padding you add to the element.
+        </p>
       </article>
 <div class="ph3 ph5-ns pt4 pb5">
   <h2 class="f3 bold">Examples</h2>
