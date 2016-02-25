@@ -4,7 +4,11 @@
   "description": "Documentation for Tachyons -- a performant, mobile-first, and 100% responsive modular css framework.",
   "main": "index.html",
   "scripts": {
-    "start": "node build.js && superstatic"
+    "start": "node build.js",
+    "css": "tachyons src/css/tachyons.css > css/tachyons.css && tachyons src/css/tachyons.css --minify > css/tachyons.min.css && tachyons src/css/tachyons.css --generate-docs --package=../../package.json > readme.md",
+    "doc": "bash script.sh",
+    "doc:watch": "watch 'npm run doc' src/templates/",
+    "doc:lib": "watch 'npm run doc' lib"
   },
   "repository": {
     "type": "git",
@@ -56,8 +60,9 @@
     "tachyons-borders": "^2.0.2",
     "tachyons-box-sizing": "^3.1.0",
     "tachyons-clears": "^2.0.3",
-    "tachyons-coordinates": "^2.2.0",
+    "tachyons-cli": "^0.3.3",
     "tachyons-colors": "^5.1.0",
+    "tachyons-coordinates": "^2.2.0",
     "tachyons-debug": "^1.0.0",
     "tachyons-display": "^3.0.3",
     "tachyons-floats": "^2.0.3",
@@ -89,7 +94,7 @@
     "tachyons-white-space": "^2.0.3",
     "tachyons-widths": "^4.0.1",
     "titleize": "^1.0.0",
-    "watch": "^0.16.0"
+    "watch": "^0.17.1"
   },
   "contributors": [
     {
