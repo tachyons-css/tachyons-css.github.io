@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>
-      Floats / Layout / Docs / TACHYONS
+      <%= name %> / Layout / Docs / TACHYONS
     </title>
-    <meta name="author" content="@mr3rs">
+    <meta name="author" content="@mrmrs">
     <meta name="description" content="CSS">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/tachyons.css">
@@ -15,7 +15,7 @@
 
     <%= siteHeader %>
     <main class="">
-      <article class="bg-near-white bt b--black-10 ph3 pt3 ph5-ns">
+      <article class="bg-near-white bt b--black-10 pa3 ph5-ns">
         <h4 class="f4 mv0 fw6 dib mr4"><%= name %></h4>
         <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
         <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
@@ -37,6 +37,19 @@
               <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
             </dl>
         </div>
+        <p class="measure f3 lh-copy">
+          Single purpose classes for setting the display of an element at any breakpoint.
+        </p>
+        <p class="measure f4 lh-copy">
+          Floats may be set on any element, but it will only affect elements
+          that aren't absolutely positioned. When you float an element
+          you inherintly set it's display to block.
+        </p>
+        <p class="measure f4 lh-copy">
+          There are only three values that can be declared for float: left, right, or none.
+          These three base classes are very easy to memorize: fl, fr, fn.
+          Combine float left/right with width utilities to create fluid multi-column layouts.
+        </p>
       </article>
 <div class="ph3 ph5-ns pt4 pb5">
   <h2 class="f3 bold">Examples</h2>
