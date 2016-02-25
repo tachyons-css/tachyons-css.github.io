@@ -16,42 +16,55 @@
     <header class="w-100 pa3 ph5-ns bg-near-white">
   <div class="dt w-100">
     <div class="dtc v-mid tl w-50">
-      <a class="f5 f4-ns fw6 mt0 mb1 link black-50">
+      <a href="/" class="dib f5 f4-ns fw6 mt0 mb1 link black-50 dim" title="Home">
         Tachyons
-      </a>
-      <a href="/" class="link dim dn">
-        <div class="mw2 dib v-mid mr2">
-          <img src="img/logo.jpg" class="db w-100 br-100">
+        <div class="dib">
+          <small class="nowrap f6 mt2 mt3-ns pr2 black-50 fw2">v4.0.2-beta</small>
         </div>
       </a>
-      <div class="dib v-mid">
-        <small class="nowrap f6 mt2 mt3-ns pr2 black-50">v4.0.0-beta</small>
-        <small class="nowrap fw6 f6 f5-ns mt2 mt3-ns pl2 black-50 dn"><%= size %></small>
-      </div>
     </div>
-    <div class="dn dtc-l v-mid w-50 tr">
-      <a class="f6 b link dim dib mr2 black-70" href="#principles">Principles</a>
-      <a class="f6 b link dim dib mr2 black-70" href="#getting-started">Getting Started</a>
+    <div class="db dtc v-mid w-100 tr">
+
+      <a title="Documentation" href="/docs/"
+         class="f6 b dim link black-50 mr1 mr3-m mr4-l dib">
+        Docs
+      </a>
       <a title="Tachyons on GitHub" href="http://github.com/mrmrs/tachyons/"
-         class="f6 b dim link black-70 mr1">
+         class="f6 b dim link black-50 mr1 mr3-m mr4-l dib">
         GitHub
       </a>
-      <a title="Tachyons Npm Modules" href="#npm"
-         class="f6 b link black-70 tc dim ml1">
+      <a title="Tachyons Npm Modules" href="/#npm"
+         class="f6 b link black-50 dim dib">
         Npm
       </a>
     </div>
   </div>
-  <nav class="pv2">
-    <a class="f6 fw6 link dim dib mr2 mid-gray" href="/docs/">Docs</a>
-    <a class="f6 fw6 link dim dib mr2 mid-gray" href="/docs/general">General</a>
-    <a class="f6 fw6 link dim dib mr2 mid-gray" href="/docs/typography">Typography</a>
-    <a class="f6 fw6 link dim dib mr2 mid-gray" href="/docs/layout">Layout</a>
-    <a class="f6 fw6 link dim dib mr2 mid-gray" href="/docs/themes">Themes</a>
-  </nav>
 </header>
 
     <main class="">
+      <article class="bg-near-white bt b--black-10 ph3 pt3 ph5-ns">
+        <h4 class="f4 mv0 fw6 dib mr4">tachyons-display</h4>
+        <span class="f4 b dib pl0 ml0 mr4">v3.0.3</span>
+        <span class="f4 b dib pl0 ml0 mr4">238 B</span>
+        <div>
+            <dl class="dib mr4 mt0">
+              <dt class="f6 db">Declarations </dt>
+              <dd class="db pl0 ml0 f4 f2-ns b">36</span></dd>
+            </dl>
+            <dl class="dib mr4">
+              <dt class="f6 db pr2">Selectors </dt>
+              <dd class="db pl0 ml0 f4 f2-ns b">36</dd>
+            </dl>
+            <dl class="dib mr4">
+              <dt class="f6 db pr2">Max. Specificity Score </dt>
+              <dd class="db pl0 ml0 f4 f2-ns b">10</dd>
+            </dl>
+            <dl class="dib mr4">
+              <dt class="f6 db pr2">Size of Avg. Rule </dt>
+              <dd class="db pl0 ml0 f4 f2-ns b">1</dd>
+            </dl>
+        </div>
+      </article>
 <div class="ph3 ph5-ns pt4 pb5">
   <h2 class="f3 bold">Examples</h2>
   <h3 class="f5 book pt4 caps">Display Block</h3>
@@ -133,12 +146,12 @@
     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" class="link fw6 blue dim">MDN - Box Sizing</a>
   </div>
 </div>
-      <section class="bg-dark-gray white pt4 pb5">
+      <section class="bg-near-white black-70 pt4 pb5">
 <header class="ph3 ph5-ns pt4">
         <kbd class="yellow">src/_display.css</kbd>
 </header>
 <pre class="ph3 ph5-ns">
-<code class="small">
+<code class="code" style="font-size: .75rem;">
 @custom-media --breakpoint-not-small screen and (min-width: 48em);
 @custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
 @custom-media --breakpoint-large screen and (min-width: 64em);
@@ -221,74 +234,92 @@
       <div class="ph3 ph5-ns pt3 pb5">
   <section>
     <h2 class="f6 fw7 ttu tracked">General</h2>
-    <a class="f4  fw6 dim link mid-gray db pv1" href="/docs/debug/" title="Debugging">Debugging</a>
-    <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/general/images/" title="Images">Images</a>
+    <a class="f5  fw4 dim link mid-gray db pv1" href="/docs/debug/" title="Debugging">Debugging</a>
+    <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/general/images/" title="Images">Images</a>
     <section class="cf w-100 mt3">
       <article class="fn fl-ns w-100 w-25-l">
         <h2 class="f6 fw7 ttu tracked" id="typography">Typography</h2>
-        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/scale" title="Type">Type Scale</a>
-        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/measure/garamond/" title="Measure">Measure</a>
-        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/line-height" title="Line Height">Line Height / Leading</a>
-        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/tracking" title="Tracking">Tracking</a>
-        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/font-weight" title="Font Weights">Font Weights</a>
-        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/font-family" title="Font Families">Font Families</a>
-        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/vertical-align" title="Font Families">Vertical Align</a>
-        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/text-align" title="Text Align">Text Align</a>
-        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/text-transform" title="Text Transform">Text Transform</a>
-        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/text-decoration" title="Text Decoration">Text Decoration</a>
-        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/typography/white-space" title="White Space">White Space</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/scale" title="Type">Type Scale</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/measure/garamond/" title="Measure">Measure</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/line-height" title="Line Height">Line Height / Leading</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/tracking" title="Tracking">Tracking</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/font-weight" title="Font Weights">Font Weights</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/font-family" title="Font Families">Font Families</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/vertical-align" title="Font Families">Vertical Align</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/text-align" title="Text Align">Text Align</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/text-transform" title="Text Transform">Text Transform</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/text-decoration" title="Text Decoration">Text Decoration</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/white-space" title="White Space">White Space</a>
       </article>
       <article class="fn fl-ns w-100 w-25-l">
         <h2 class="f6 fw7 ttu tracked" id="layout">Layout</h2>
-        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/box-sizing" title="Box Sizing">Box Sizing</a>
-        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/spacing" title="Spacing">Spacing</a>
-        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/floats" title="Floats">Floats</a>
-        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/clearfix" title="Clears">Clearfix</a>
-        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/display" title="Display">Display</a>
-        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/widths" title="Widths">Widths</a>
-        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/max-widths" title="Max Widths">Max Widths</a>
-        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/heights" title="Heights">Heights</a>
-        <a class="f4 fw6 dim link mid-gray db pv1" href="/docs/layout/position" title="Position">Position</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/box-sizing" title="Box Sizing">Box Sizing</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/spacing" title="Spacing">Spacing</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/floats" title="Floats">Floats</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/clearfix" title="Clears">Clearfix</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/display" title="Display">Display</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/widths" title="Widths">Widths</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/max-widths" title="Max Widths">Max Widths</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/heights" title="Heights">Heights</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/position" title="Position">Position</a>
       </article>
       <article class="fn fl-ns w-100 w-25-l">
         <h2 class="f6 fw7 ttu tracked">Theming</h2>
-        <a class="f4 fw6 dim link mid-gray db pv1" href="themes/hovers/" title="Hovers">Hovers</a>
-        <a class="f4 fw6 dim link mid-gray db pv1" href="themes/background-size/" title="Background Size">Background Size</a>
-        <a class="f4 fw6 dim link mid-gray db pv1" href="themes/borders/" title="Borders">Borders</a>
-        <a class="f4 fw6 dim link mid-gray db pv1" href="themes/border-radius/" title="Border Radius">Border Radius</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/themes/hovers/" title="Hovers">Hovers</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/themes/background-size/" title="Background Size">Background Size</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/themes/borders/" title="Borders">Borders</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/themes/border-radius/" title="Border Radius">Border Radius</a>
       </article>
     </section>
   </section>
 </div>
 
     </main>
-      <footer class="bg-near-white mid-gray ph3 ph5-ns pv5 pv6-ns bt b--light-gray">
-  <small class="f6 measure db lh-copy">
+    <footer class="bg-near-white mid-gray ph3 ph5-ns pv5 pv6-ns bt b--light-gray">
+  <a href="https://twitter.com/intent/tweet?text=Tachyons: Functional CSS for Humans.&url=http://tachyons.io" target="_blank" class="dn mb3 twitter bg-white link dim br2 ph2 pb1 pt0 lh-solid" style="background-color: #55acee;">
+    <svg class="geomicon dib v-mid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="#fff">
+      <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
+    </svg>
+    <span class="dib v-mid white fw6" style="font-size: 12px;">Tweet</span>
+  </a>
+  <article>
+    <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+    <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+  </article>
+
+  <p>
+    <a class="black-70 link dim b dib mr3" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
+      Join our Slack Channel
+    </a>
+    <a class="black-70 link dim b dib mr3" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
+      Open an Issue
+    </a>
+    <a class="black-70 link dim b dib mr3" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
+      GitHub
+    </a>
+  </p>
+  <p class="measure copy lh-copy">
+    Have a question? Need help? Feel free to open an issue on GitHub or ask a question in our slack channel. We're here to try and help make designing in the browser fun.
+  </p>
+  <small class="f6 measure db lh-copy mt5">
     A tachyon /ˈtæki.ɒn/ or tachyonic particle is a hypothetical particle
     that always moves faster than light.
     The word comes from the Greek:
 
     ταχύς or tachys, meaning "swift, quick, fast, rapid"
   </small>
-
-  <p>
-
-    <a class="black-70 link dim b" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
-      Join our Slack Channel
-    </a>
-  </p>
 </footer>
 
-
-    <script>
+        <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-55773803-1', 'auto');
 ga('send', 'pageview');
 
     </script>
+
   </body>
 </html>
