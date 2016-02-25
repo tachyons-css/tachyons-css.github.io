@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>
-      TACHYONS - Form follows function
+      TACHYONS - CSS Toolkit
     </title>
     <meta name="author" content="@mrmrs">
     <meta name="description" content="Simple CSS">
@@ -12,524 +12,552 @@
     <link rel="stylesheet" href="css/tachyons.min.css">
   </head>
   <body class="w-100 sans-serif">
-    <div class="dt pvxl pvxxl-ns mid-gray white-80">
-      <header class="tc dtc w-100 v-mid">
-        <div class="tc mb3 mbn-ns">
-          <h1 class="f3 f2-m mega-ns b db-ns mrs mrn-ns mbn ttu tracked mtn">
-            Tachyons
-          </h1>
-          <p class="f5 f3-ns dib db-ns fw1 phs mtn mbn mbl-ns aqua">
-            CSS for designing faster than the speed of light<br>
-          </p>
-          <p>
-            <small class="ws-nowrap f5 f4-ns mts mtm-ns prs">v<%= version %></small>
-            <small class="ws-nowrap b f5 f4-ns mts mtm-ns pls"><%= size %></small>
-          </p>
-        </div>
-        <div class="pvm mtl">
-          <a title="Tachyons" href="http://github.com/mrmrs/tachyons/"
-             class="f4 link white-70 b--white-30 tc br2 bw1 pas pam-ns ba dim mrxs">
-            View on Github ▸
-          </a>
-          <a title="Tachyons" href="/docs/"
-             class="f4 link white-70 b--white-30 tc br2 bw1 pas pam-ns ba dim mlxs">
-
-            Read the Docs ▸
-          </a>
-        </div>
-      </header>
-    </div>
-    <main>
-      <section class="bt b--black-10 bg-black-0125 dt h-100 navy pvxl pvxxl-ns">
-          <div class="mw7 center phm phl-ns tl tl-ns">
-            <h1 class="f4 ttu tracked semibold">Principles</h1>
-            <section class="list pln lh-copy mtn">
-              <article class="pvs">
-                <h2 class="f3 semibold mbn">Everything should be 100% responsive</h2>
-                <p class="f4 f3-ns measure lh-copy mtn mtn">
+    <%= siteHeader %>
+    <main class="w-100">
+      <section class="bt b--black-10 bg-black-0125 w-100 pv5 pv6-ns">
+<article class="ph3 ph5-ns">
+  <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+  <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+</article>
+          <article class="ph3 ph5-ns mb4 mb5-ns">
+            <h1>Getting Started</h1>
+            <p class="measure lh-copy">
+              Copy the line of code below and paste it in the head of the html file(s) you want to include tachyons in.
+            </p>
+<pre class="pre black-70"><code class="code f6 dib pa2 bg-near-white" style="font-size: 14px;">&lt;link rel="stylesheet" href="https://s3-us-west-1.amazonaws.com/tachyons-css/4.0.1-beta/tachyons.min.css"&gt;</code></pre>
+<p class="mt4"><b>or</b> install via npm</p>
+<pre class="pre black-70"><code class="code f6 dib pa2 bg-near-white" style="font-size: 14px;">npm install --save-dev tachyons</code></pre>
+<p class="mt4"><b>or</b> grab all the source files and build+develop locally</p>
+<pre class="pre black-70"><code class="code f6 dib pa2 bg-near-white" style="font-size: 14px;">git clone git@github.com:tachyons-css/tachyons.git
+cd tachyons
+npm install &amp;&amp; npm build
+</code></pre>
+          </article>
+          <div class="ph3 ph5-ns tl tl-ns">
+            <h1 class="f4 ttu tracked fw4">Principles</h1>
+            <section class="list pln lh-copy mt0">
+              <article class="pv2">
+                <h2 class="f4 f3-ns fw6 mb0">Everything should be 100% responsive</h2>
+                <p class="f5 f4-ns measure lh-copy mt0">
                   Your website should work regardless of a users
                   device or screensize. Don't break the functionality of HTML
                   with CSS.
                 </p>
               </article>
-              <article class="pvs">
-                <h2 class="f3 semibold mbn">Everything should be readable on any device</h2>
-                <p class="f4 f3-ns measure lh-copy mtn mtn">
-                  Just because it's readable to you on your laptop, doesn't
-                  mean it is readable by your users on their device. Make sure your type is big.
-                  Make sure your contrast is high.
+              <article class="pv2">
+                <h2 class="f4 f3-ns fw6 mb0">Everything should always be readable</h2>
+                <p class="f5 f4-ns measure lh-copy mt0">
+                  No matter the lighting, or the device, font-sizes should be large enough and contrast should be high enough.
                 </p>
               </article>
-              <article class="pvs">
-                <h2 class="f3 semibold mbn">Everything should be as performant as possible</h2>
-                <p class="f4 f3-ns measure lh-copy mtn">
+              <article class="pv2">
+                <h2 class="f4 f3-ns fw6 mb0">Everything should be as performant as possible</h2>
+                <p class="f5 f4-ns measure lh-copy mt0">
                   Code isn't for making a developers life easier. It's for
                   improving the lives of our users. If it's not doing that, why
                   write it. A developer's time is not precious. A user's time is.
                 </p>
               </article>
-              <article class="pvs">
-                <h2 class="f3 semibold mbn">Designing in the browser should be easy</h2>
-                <p class="f4 f3-ns measure lh-copy mtn">
-                If a computer can do it, you shouldn't have to.</p>
-              </article>
-              <article class="pvs">
-                <h2 class="f3 semibold mbn">
-                  Doing one thing extremely well promotes reusability
-                </h2>
-                <p class="f4 f3-ns measure lh-copy mtn">
-                  Single purpose classes that are easy to grock.
+              <article class="pv2">
+                <h2 class="f4 f3-ns fw6 mb0">Designing in the browser should be easy</h2>
+                <p class="f5 f4-ns measure lh-copy mt0">
+                  If a computer can do it, you shouldn't have to.
                 </p>
               </article>
-              <article class="pvs">
-                <h2 class="f3 semibold mbn">
+              <article class="pv2">
+                <h2 class="f4 f3-ns fw6 mb0">
+                  Doing one thing extremely well promotes reusability
+                </h2>
+                <p class="f5 f4-ns measure lh-copy mt0">
+                  Single purpose classes that are easy to remember and won't add weight to the cascade. Spend less time debugging and more time building.
+                </p>
+              </article>
+              <article class="pv2">
+                <h2 class="f4 f3-ns fw6 mb0">
                   Modules > Monoliths
                 </h2>
-                <p class="f4 f3-ns measure lh-copy mtn">
+                <p class="f5 f4-ns measure lh-copy mt0">
                   Tachyons isn't a monolithic framework. It's a collection of <%= modulesCount %> self contained modules
                   that can be mixed and matched or used independently. Pick what you want, leave the rest.
                 </p>
               </article>
             </section>
-            <h1 class="f4 ttu semibold mtx tracked">Features</h1>
-            <section class="list pln lh-copy mtn">
-              <article class="pvs">
-                <h2 class="f3 semibold mbn mvn">
-                  Built on Rework
+            <h1 class="f4 ttu fw4 mtx tracked">Features</h1>
+            <section class="list pln lh-copy mt0">
+              <article class="pv2">
+                <h2 class="f4 f3-ns fw6 mb0 mv0">
+                  Runs on Postcss
                 </h2>
-                <p class="mvn f4 f3-ns lh-copy measure">
+                <p class="mv0 f5 f4-ns lh-copy measure">
                   A flexible plugin framework for preprocessing css.
-                  <a href="https://github.com/reworkcss/rework" class="link
-                    blue dim small db">View on Github</a>
+                  <a href="https://github.com/postcss/postcss" class="link
+                    dim f6 db mid-gray">View on Github</a>
                 </p>
                 </article>
-                <article class="pvs">
-                  <h2 class="f3 semibold mbn">Mobile-first css architecture </h2>
-                  <p class="f4 f3-ns measure lh-copy mtn">
+                <article class="pv2">
+                  <h2 class="f4 f3-ns fw6 mb0">Mobile-first css architecture </h2>
+                  <p class="f5 f4-ns measure lh-copy mt0">
                     Base classes are mobile by default. Can be overridden by
                     namespaced classes targeting larger breakpoints.
                   </p>
                 </article>
-                <article class="pvs">
+                <article class="pv2">
 
-                <h2 class="f3 semibold mbn mvn">
+                <h2 class="f4 f3-ns fw6 mb0 mvn">
                   Default colors for rapid theming
                 </h2>
-                <p class="f4 f3-ns measure lh-copy mtn">
+                <p class="f5 f4-ns measure lh-copy mt0">
                   Who cares about colors. Unless you're painting a bikeshed.
                 </p>
 
                 </article>
-                <article class="pvs">
-                  <h2 class="f3 semibold mbn">
+                <article class="pv2">
+                  <h2 class="f4 f3-ns fw6 mb0">
                     CSS layout debugging utilities.
                   </h2>
-                  <p class="f4 f3-ns measure lh-copy mtn">
+                  <p class="f5 f4-ns measure lh-copy mt0">
                     Small css modules for debugging stacking and layout issues.
                     Can easily be turned on or off during development.
                   </p>
                 </article>
-              <article class="pvs">
-                <h2 class="f3 semibold mbn">
+              <article class="pv2">
+                <h2 class="f4 f3-ns fw6 mb0">
                   Composable classes
                 </h2>
-                <p class="f4 f3-ns measure lh-copy mtn">
+                <p class="f5 f4-ns measure lh-copy mt0">
                   Construct anything from complex layouts to responsive components with a series of
                   single purpose classes.
                 </p>
               </article>
-              <article class="pvs">
-                <h2 class="f3 semibold mbn mvn">Ratio-based scale design systems</h2>
-                <p class="f4 f3-ns measure lh-copy mtn">
+              <article class="pv2">
+                <h2 class="f4 f3-ns fw6 mb0 mvn">Ratio-based scale design systems</h2>
+                <p class="f5 f4-ns f3-ns measure lh-copy mt0">
                   Powers of two. Starting at .25
                 </p>
               </article>
-              <article class="pvs">
-                <h2 class="f3 semibold mbn">
-                  Easy to customize and extend
+              <article class="pv2">
+                <h2 class="f4 f3-ns fw6 mb0">
+                  Easy to customize or extend
                 </h2>
-                <p class="f4 f3-ns measure lh-copy mtn">
-                  Take what you need. Leave the rest. Small and flat css
-                  modules make it easy to grab only what you need without
-                  needing to figure out dependencies.
+                <p class="f5 f4-ns measure lh-copy mt0">
+                  Tachyons is meant to be edited and customized to meet the needs of your product. It's just css. It isn't precious.
+                  Don't be afraid to add new modules, media queries, breakpoints, or values to existing modules.
                 </p>
                 </article>
-              <article class="pvs">
-                <h2 class="f3 semibold mbn">Responsive Grid</h2>
-                <p class="f4 f3-ns measure lh-copy mtn">
+              <article class="pv2">
+                <h2 class="f4 f3-ns fw6 mb0">Responsive Grid</h2>
+                <p class="f5 f4-ns measure lh-copy mt0">
                   Infinitely nestable. Fully fluid. Extremely light-weight.
                 </p>
-              </article>
-              <article class="pvs">
-                <h2 class="f3 semibold mbn">Gulp based build system</h2>
-                <p class="f4 f3-ns measure lh-copy mtn">Minification, auto-prefixing,  and so much more.</p>
               </article>
             </section>
           </div>
         </div>
       </section>
-      <section class="bg-white dt h-100 navy pvxl pvxxl-ns bb bt b--light-gray" id="testimonials">
-        <div class="mw7 center phm phl-ns tl tl-ns">
-          <h1 class="book ttu tracked">Testimonials</h1>
-          <blockquote class="mln">
-            <p class="f4 f3-ns measure lh-copy">
-              "It seems silly at first to write code that looks like inline HTML
-              styling but Tachyons works. Instead of wasting time hunting down
-              and dealing with CSS overrides, I now spend time iterating on the
-              design... which is what we're supposed to be doing in the first
-              place :)"
-            </p>
-            <footer>
-              <p>
-                <span class="bold">Jason Li</span> - <i>Illustrator &amp; Designer</i>
+      <section class="bg-white pv5 pv6-ns bb bt b--light-gray" id="testimonials">
+        <div class="ph3 ph5-ns">
+          <h1 class="f5 fw6 ttu tracked">Testimonials</h1>
+          <div class="cf w-100">
+            <blockquote class="fl w-100 w-50-ns mh0 pr0 pr3-ns border-box">
+              <p class="f6 f5-ns measure lh-copy pr1 pr0-l">
+                After I embraced the “lots of little classes” way of styling, my anger at CSS
+                almost completely went away and I was much more easily able to style and modify
+                a design... you really have to try it.
               </p>
-            </footer>
-          </blockquote>
-          <blockquote class="mln">
-            <p class="f4 f3-ns measure lh-copy">
-              "CSS frameworks shouldn't be one-size-fits-all. Tachyons nails it
-              with its modular approach, eliminating bloat from day one."
-            </p>
-            <footer>
-              <p>
-                <span class="bold">Philip Ardeljan</span> - <i>Designer</i>
+              <footer>
+                <p>
+                  <span class="b">Dave Copeland</span> - <i>Software Engineer</i>
+                </p>
+              </footer>
+            </blockquote>
+            <blockquote class="fl w-100 w-50-ns mh0 mb2 mb5-ns pl0 pl3-ns border-box">
+              <p class="f6 f5-ns measure lh-copy">
+                  It turns out composing utilities together like that is a really nice way to style things.
+                  Adam Morse has taken this to its logical conclusion with Tachyons...
               </p>
-            </footer>
-          </blockquote>
+              <footer>
+                <p>
+                  <span class="b">Ben Smithett</span> - <i>Developer</i>
+                </p>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="cf w-100">
+            <blockquote class="fl w-100 w-50-ns mh0 mb2 mb5-ns pr0 pr3-ns border-box">
+              <p class="f6 f5-ns measure lh-copy">
+                It seems silly at first to write code that looks like inline HTML
+                styling but Tachyons works. Instead of wasting time hunting down
+                and dealing with CSS overrides, I now spend time iterating on the
+                design... which is what we're supposed to be doing in the first
+                place :)
+              </p>
+              <footer>
+                <p>
+                  <span class="b">Jason Li</span> - <i>Illustrator &amp; Designer</i>
+                </p>
+              </footer>
+            </blockquote>
+            <blockquote class="fl w-100 w-50-ns mh0 pl0 pl3-ns border-box">
+              <p class="f6 f5-ns measure lh-copy pl1 pl0-l">
+I’ve found extremely low-level “frameworks” like BassCSS and Tachyons useful recently. They let you do the whole “just add and remove classes to create elements” thing but also don’t lock you into the constraints and issues of higher level frameworks like Bootstrap.
+              </p>
+              <footer>
+                <p>
+                  <span class="b">Cole Peters</span> - <i>Designer</i>
+                </p>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="cf w-100">
+            <blockquote class="fl w-100 w-50-ns mh0 mb2 mb5-ns pr0 pr3-ns border-box">
+              <p class="f6 f5-ns measure lh-copy">
+                CSS frameworks shouldn't be one-size-fits-all. Tachyons nails it
+                with its modular approach, eliminating bloat from day one.
+              </p>
+              <footer>
+                <p>
+                  <span class="b">Philip Ardeljan</span> - <i>Designer</i>
+                </p>
+              </footer>
+            </blockquote>
+            <blockquote class="fl w-100 w-50-ns mh0 mb2 mb5-ns pl0 pl3-ns border-box">
+              <p class="f6 f5-ns measure lh-copy">
+                Tachyons nails everything you need from a CSS framework.
+                Development goes faster, designs are more consistent, and best of
+                all it’s a ton of fun to play with.
+              </p>
+              <footer>
+                <p>
+                  <span class="b">Lachlan Campbell </span> - <i>Designer / Developer</i>
+                </p>
+              </footer>
+            </blockquote>
+          </div>
         </div>
       </section>
-      <section class="bg-white dt h-100 navy pvxl pvxxl-ns" id="npm">
-          <div class="mw7 center phm phl-ns tl tl-ns">
-          <h3 class="f4 ttu semibold"><a href="#npm" class="link black">Tachyons on NPM</a></h3>
-        <p class="f4 f3-ns lh-copy mtn mbl measure">
-          Tachyons is just a series of css modules. They are available on npm and github so that you can
-          mix and match to suit your project's needs. Since tachyons module architecture optimizes for gzip compression
-          most of them are extremely small (well under a kilobyte) so you
-          can start using them without adding bloat to your css.
-        </p>
-        <code class="db mbl ba b--light-blue bg-lightest-blue small phs pvxs">npm install --save-dev tachyons-module-name</code>
+      <section class="bg-white dt h-100 navy pv5 pv6-ns" id="npm">
+          <div class="mw7 center ph3 ph5-ns tl tl-ns">
+          <h3 class="f5 fw6 ttu tracked"><a href="#npm" class="link mid-gray">Tachyons on NPM</a></h3>
+          <p class="f4 f3-ns lh-copy mt0 mb4 measure">
+            Tachyons is just a series of css modules. They are available on npm and github so that you can
+            mix and match to suit your project's needs. Since tachyons module architecture optimizes for gzip compression
+            most of them are extremely small (well under a kilobyte) so you
+            can start using them without adding bloat to your css.
+          </p>
+        <code class="db mb4 ba f6 ph2 pv3">npm install --save-dev tachyons-module-name</code>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-background-size">tachyons-background-size </a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-background-size">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-background-size">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= backgroundSizeVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= backgroundSizeVersion %></span>
             <span class="dark-gray"><%= backgroundSizeSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-base">tachyons-base</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-base">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-base">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= baseVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= baseVersion %></span>
             <span class="dark-gray"><%= baseSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-border-colors">tachyons-border-colors</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-border-colors">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-border-colors">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= borderColorsVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= borderColorsVersion %></span>
             <span class="dark-gray"><%= borderColorsSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-border-radius">tachyons-border-radius</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-border-radius">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-border-radius">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= borderRadiusVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= borderRadiusVersion %></span>
             <span class="dark-gray"><%= borderRadiusSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-border-style">tachyons-border-style</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-border-style">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-border-style">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= borderStyleVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= borderStyleVersion %></span>
             <span class="dark-gray"><%= borderStyleSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-border-widths">tachyons-border-widths</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-border-widths">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-border-widths">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= borderWidthsVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= borderWidthsVersion %></span>
             <span class="dark-gray"><%= borderWidthsSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-borders">tachyons-borders</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-borders">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-borders">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= bordersVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= bordersVersion %></span>
             <span class="dark-gray"><%= bordersSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-box-sizing">tachyons-box-sizing</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-box-sizing">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-box-sizing">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= boxSizingVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= boxSizingVersion %></span>
             <span class="dark-gray"><%= boxSizingSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-clears">tachyons-clears</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-clears">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-clears">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= clearsVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= clearsVersion %></span>
             <span class="dark-gray"><%= clearsSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-colors">tachyons-colors</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-colors">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-colors">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= colorsVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= colorsVersion %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-debug">tachyons-debug</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-debug">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-debug">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= debugVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= debugVersion %></span>
             <span class="dark-gray"><%= debugSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-display">tachyons-display</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-display">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-display">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= displayVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= displayVersion %></span>
             <span class="dark-gray"><%= displaySize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-floats">tachyons-floats</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-floats">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-floats">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= floatsVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= floatsVersion %></span>
             <span class="dark-gray"><%= floatsSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-font-family">tachyons-font-family</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-font-family">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-font-family">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= fontFamilyVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= fontFamilyVersion %></span>
             <span class="dark-gray"><%= fontFamilySize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-font-style">tachyons-font-style</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-font-style">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-font-style">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= fontStyleVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= fontStyleVersion %></span>
             <span class="dark-gray"><%= fontStyleSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-font-weight">tachyons-font-weight</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-font-weight">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-font-weight">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= fontWeightVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= fontWeightVersion %></span>
             <span class="dark-gray"><%= fontWeightSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-forms">tachyons-forms</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-forms">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-forms">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= formsVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= formsVersion %></span>
             <span class="dark-gray"><%= formsSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-heights">tachyons-heights</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-heights">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-heights">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= heightsVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= heightsVersion %></span>
             <span class="dark-gray"><%= heightsSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-images">tachyons-images</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-images">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-images">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= imagesVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= imagesVersion %></span>
             <span class="dark-gray"><%= imagesSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-letter-spacing">tachyons-letter-spacing</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-letter-spacing">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-letter-spacing">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= letterSpacingVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= letterSpacingVersion %></span>
             <span class="dark-gray"><%= letterSpacingSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-line-height">tachyons-line-height</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-line-height">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-line-height">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= lineHeightVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= lineHeightVersion %></span>
             <span class="dark-gray"><%= lineHeightSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-links">tachyons-links</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-links">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-links">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= linksVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= linksVersion %></span>
             <span class="dark-gray"><%= linksSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-lists">tachyons-lists</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-lists">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-lists">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= listsVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= listsVersion %></span>
             <span class="dark-gray"><%= listsSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-max-widths">tachyons-max-widths</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-max-widths">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-max-widths">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= maxWidthsVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= maxWidthsVersion %></span>
             <span class="dark-gray"><%= maxWidthsSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-overflow">tachyons-overflow</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-overflow">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-overflow">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= overflowVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= overflowVersion %></span>
             <span class="dark-gray"><%= overflowSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-position">tachyons-position</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-position">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-position">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= positionVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= positionVersion %></span>
             <span class="dark-gray"><%= positionSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-queries">tachyons-queries</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-queries">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-queries">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= queriesVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= queriesVersion %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-skins">tachyons-skins</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-skins">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-skins">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= skinsVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= skinsVersion %></span>
             <span class="dark-gray"><%= skinsSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-spacing">tachyons-spacing</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-spacing">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-spacing">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= spacingVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= spacingVersion %></span>
             <span class="dark-gray"><%= spacingSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-text-align">tachyons-text-align</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-text-align">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-text-align">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= textAlignVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= textAlignVersion %></span>
             <span class="dark-gray"><%= textAlignSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-text-decoration">tachyons-text-decoration</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-text-decoration">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-text-decoration">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= textDecorationVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= textDecorationVersion %></span>
             <span class="dark-gray"><%= textDecorationSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-text-transform">tachyons-text-transform</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-text-transform">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-text-transform">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= textTransformVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= textTransformVersion %></span>
             <span class="dark-gray"><%= textTransformSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-type-scale">tachyons-type-scale</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-type-scale">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-type-scale">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= typographyVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= typographyVersion %></span>
             <span class="dark-gray"><%= typographySize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-typography">tachyons-typography</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-typography">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-typography">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= typographyVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= typographyVersion %></span>
             <span class="dark-gray"><%= typographySize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-utilities">tachyons-utilities</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-utilities">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-utilities">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= utilitiesVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= utilitiesVersion %></span>
             <span class="dark-gray"><%= utilitiesSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-vertical-align">tachyons-vertical-align</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-vertical-align">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-vertical-align">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= verticalAlignVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= verticalAlignVersion %></span>
             <span class="dark-gray"><%= verticalAlignSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-visibility">tachyons-visibility</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-visibility">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-visibility">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= visibilityVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= visibilityVersion %></span>
             <span class="dark-gray"><%= visibilitySize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-white-space">tachyons-white-space</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-white-space">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-white-space">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= whiteSpaceVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= whiteSpaceVersion %></span>
             <span class="dark-gray"><%= whiteSpaceSize %></span>
           </div>
         </div>
         <div class="mb3">
           <a class="f3 link dim dark-gray b" href="http://npmjs.com/package/tachyons-widths">tachyons-widths</a>
-          <a class="link dim dark-gray small" href="http://github.com/mrmrs/tachyons-widths">View on GitHub</a>
+          <a class="link dim dark-gray f6" href="http://github.com/mrmrs/tachyons-widths">View on GitHub</a>
           <div>
-            <span class="dark-gray semibold prs">v<%= widthsVersion %></span>
+            <span class="dark-gray fw4 pr2">v<%= widthsVersion %></span>
             <span class="dark-gray"><%= widthsSize %></span>
           </div>
         </div>
       </section>
     </main>
-    <footer class="bg-white gray phm pvxl pvxxl-ns bt b--light-gray h-50">
-      <small class="f5 mw7 db center lh-copy">
-        A tachyon /ˈtæki.ɒn/ or tachyonic particle is a hypothetical particle
-        that always moves faster than light.
-        <br class="dn db-ns">
-        The word comes from the Greek:
-        ταχύς or tachys, meaning "swift, quick, fast, rapid"
-      </small>
-    </footer>
-
+    <%= siteFooter %>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
