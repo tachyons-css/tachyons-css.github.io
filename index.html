@@ -15,39 +15,51 @@
     <header class="w-100 pa3 ph5-ns bg-near-white">
   <div class="dt w-100">
     <div class="dtc v-mid tl w-50">
-      <a href="/" class="f5 f4-ns fw6 mt0 mb1 link black-50" title="Home">
+      <a href="/" class="dib f5 f4-ns fw6 mt0 mb1 link black-50 dim" title="Home">
         Tachyons
         <div class="dib">
-          <small class="nowrap f6 mt2 mt3-ns pr2 black-50">v4.0.1-beta</small>
+          <small class="nowrap f6 mt2 mt3-ns pr2 black-50 fw2">v4.0.2-beta</small>
         </div>
       </a>
     </div>
-    <div class="db dtc-l v-mid w-100 w-50-l tr">
+    <div class="db dtc v-mid w-100 tr">
+
       <a title="Documentation" href="/docs/"
-         class="f6 b dim link black-50 mr1 mr3-m mr4-l">
+         class="f6 b dim link black-50 mr1 mr3-m mr4-l dib">
         Docs
       </a>
       <a title="Tachyons on GitHub" href="http://github.com/mrmrs/tachyons/"
-         class="f6 b dim link black-50 mr1 mr3-m mr4-l">
+         class="f6 b dim link black-50 mr1 mr3-m mr4-l dib">
         GitHub
       </a>
       <a title="Tachyons Npm Modules" href="/#npm"
-         class="f6 b link black-50 tc dim">
+         class="f6 b link black-50 dim dib">
         Npm
       </a>
     </div>
   </div>
-  <nav class="pv2 dn">
-    <a class="f6 fw6 link dim dib mr3 mid-gray" href="/docs/">Docs</a>
-    <a class="f6 fw6 link dim dib mr3 mid-gray" href="/docs/general">General</a>
-    <a class="f6 fw6 link dim dib mr3 mid-gray" href="/docs/typography">Typography</a>
-    <a class="f6 fw6 link dim dib mr2 mid-gray" href="/docs/layout">Layout</a>
-    <a class="f6 fw6 link dim dib mr2 mid-gray" href="/docs/themes">Themes</a>
-  </nav>
 </header>
 
     <main class="w-100">
-      <section class="bt b--black-10 bg-black-0125 dt w-100 pv5 pv6-ns">
+      <section class="bt b--black-10 bg-black-0125 w-100 pv5 pv6-ns">
+<article class="ph3 ph5-ns">
+  <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+  <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+</article>
+          <article class="ph3 ph5-ns mb4 mb5-ns">
+            <h1>Getting Started</h1>
+            <p class="measure lh-copy">
+              Copy the line of code below and paste it in the head of the html file(s) you want to include tachyons in.
+            </p>
+<pre class="pre black-70"><code class="code f6 dib pa2 bg-near-white" style="font-size: 14px;">&lt;link rel="stylesheet" href="https://s3-us-west-1.amazonaws.com/tachyons-css/4.0.1-beta/tachyons.min.css"&gt;</code></pre>
+<p class="mt4"><b>or</b> install via npm</p>
+<pre class="pre black-70"><code class="code f6 dib pa2 bg-near-white" style="font-size: 14px;">npm install --save-dev tachyons</code></pre>
+<p class="mt4"><b>or</b> grab all the source files and build+develop locally</p>
+<pre class="pre black-70"><code class="code f6 dib pa2 bg-near-white" style="font-size: 14px;">git clone git@github.com:tachyons-css/tachyons.git
+cd tachyons
+npm install &amp;&amp; npm build
+</code></pre>
+          </article>
           <div class="ph3 ph5-ns tl tl-ns">
             <h1 class="f4 ttu tracked fw4">Principles</h1>
             <section class="list pln lh-copy mt0">
@@ -173,7 +185,7 @@
         <div class="ph3 ph5-ns">
           <h1 class="f5 fw6 ttu tracked">Testimonials</h1>
           <div class="cf w-100">
-            <blockquote class="fl w-100 w-50-ns mh0">
+            <blockquote class="fl w-100 w-50-ns mh0 pr0 pr3-ns border-box">
               <p class="f6 f5-ns measure lh-copy pr1 pr0-l">
                 After I embraced the “lots of little classes” way of styling, my anger at CSS
                 almost completely went away and I was much more easily able to style and modify
@@ -185,29 +197,34 @@
                 </p>
               </footer>
             </blockquote>
-            <blockquote class="fl w-100 w-50-ns mh0">
-              <p class="f6 f5-ns measure lh-copy pl1 pl0-l">
-                CSS libraries like Brent Jackson’s <a href="http://basscss.com" class="link dim mid-gray">BassCSS</a> and Adam Morse’s Tachyons are the bastions of this approach to CSS, and it’s easy to see why.
+            <blockquote class="fl w-100 w-50-ns mh0 mb2 mb5-ns pl0 pl3-ns border-box">
+              <p class="f6 f5-ns measure lh-copy">
+                  It turns out composing utilities together like that is a really nice way to style things.
+                  Adam Morse has taken this to its logical conclusion with Tachyons...
               </p>
               <footer>
                 <p>
-                  <span class="b">Cole Peters</span> - <i>Designer</i>
+                  <span class="b">Ben Smithett</span> - <i>Developer</i>
                 </p>
               </footer>
             </blockquote>
           </div>
-          <blockquote class="mh0 mb2 mb5-ns">
-            <p class="f6 f5-ns measure lh-copy">
-                It turns out composing utilities together like that is a really nice way to style things.
-                Adam Morse has taken this to its logical conclusion with Tachyons...
-            </p>
-            <footer>
-              <p>
-                <span class="b">Ben Smithett</span> - <i>Developer</i>
+          <div class="cf w-100">
+            <blockquote class="fl w-100 w-50-ns mh0 mb2 mb5-ns pr0 pr3-ns border-box">
+              <p class="f6 f5-ns measure lh-copy">
+                It seems silly at first to write code that looks like inline HTML
+                styling but Tachyons works. Instead of wasting time hunting down
+                and dealing with CSS overrides, I now spend time iterating on the
+                design... which is what we're supposed to be doing in the first
+                place :)
               </p>
-            </footer>
-          </blockquote>
-            <blockquote class="fl w-100 w-50-ns mh0">
+              <footer>
+                <p>
+                  <span class="b">Jason Li</span> - <i>Illustrator &amp; Designer</i>
+                </p>
+              </footer>
+            </blockquote>
+            <blockquote class="fl w-100 w-50-ns mh0 pl0 pl3-ns border-box">
               <p class="f6 f5-ns measure lh-copy pl1 pl0-l">
 I’ve found extremely low-level “frameworks” like BassCSS and Tachyons useful recently. They let you do the whole “just add and remove classes to create elements” thing but also don’t lock you into the constraints and issues of higher level frameworks like Bootstrap.
               </p>
@@ -217,45 +234,33 @@ I’ve found extremely low-level “frameworks” like BassCSS and Tachyons usef
                 </p>
               </footer>
             </blockquote>
-          <blockquote class="mh0 mb2 mb5-ns">
-            <p class="f6 f5-ns measure lh-copy">
-              It seems silly at first to write code that looks like inline HTML
-              styling but Tachyons works. Instead of wasting time hunting down
-              and dealing with CSS overrides, I now spend time iterating on the
-              design... which is what we're supposed to be doing in the first
-              place :)
-            </p>
-            <footer>
-              <p>
-                <span class="b">Jason Li</span> - <i>Illustrator &amp; Designer</i>
+          </div>
+          <div class="cf w-100">
+            <blockquote class="fl w-100 w-50-ns mh0 mb2 mb5-ns pr0 pr3-ns border-box">
+              <p class="f6 f5-ns measure lh-copy">
+                CSS frameworks shouldn't be one-size-fits-all. Tachyons nails it
+                with its modular approach, eliminating bloat from day one.
               </p>
-            </footer>
-          </blockquote>
-          <blockquote class="ml0 mb2 mb5-ns">
-            <p class="f6 f5-ns measure lh-copy">
-              CSS frameworks shouldn't be one-size-fits-all. Tachyons nails it
-              with its modular approach, eliminating bloat from day one.
-            </p>
-            <footer>
-              <p>
-                <span class="b">Philip Ardeljan</span> - <i>Designer</i>
+              <footer>
+                <p>
+                  <span class="b">Philip Ardeljan</span> - <i>Designer</i>
+                </p>
+              </footer>
+            </blockquote>
+            <blockquote class="fl w-100 w-50-ns mh0 mb2 mb5-ns pl0 pl3-ns border-box">
+              <p class="f6 f5-ns measure lh-copy">
+                Tachyons nails everything you need from a CSS framework.
+                Development goes faster, designs are more consistent, and best of
+                all it’s a ton of fun to play with.
               </p>
-            </footer>
-          </blockquote>
-          <blockquote class="ml0 mb2 mb4-ns">
-            <p class="f6 f5-ns measure lh-copy">
-              Tachyons nails everything you need from a CSS framework.
-              Development goes faster, designs are more consistent, and best of
-              all it’s a ton of fun to play with.
-            </p>
-            <footer>
-              <p>
-                <span class="b">Lachlan Campbell </span> - <i>Designer / Developer</i>
-              </p>
-            </footer>
-          </blockquote>
+              <footer>
+                <p>
+                  <span class="b">Lachlan Campbell </span> - <i>Designer / Developer</i>
+                </p>
+              </footer>
+            </blockquote>
+          </div>
         </div>
-      </div>
       </section>
       <section class="bg-white dt h-100 navy pv5 pv6-ns" id="npm">
           <div class="mw7 center ph3 ph5-ns tl tl-ns">
@@ -580,9 +585,18 @@ I’ve found extremely low-level “frameworks” like BassCSS and Tachyons usef
       </section>
     </main>
     <footer class="bg-near-white mid-gray ph3 ph5-ns pv5 pv6-ns bt b--light-gray">
+  <a href="https://twitter.com/intent/tweet?text=Tachyons: Functional CSS for Humans.&url=http://tachyons.io" target="_blank" class="dn mb3 twitter bg-white link dim br2 ph2 pb1 pt0 lh-solid" style="background-color: #55acee;">
+    <svg class="geomicon dib v-mid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="#fff">
+      <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
+    </svg>
+    <span class="dib v-mid white fw6" style="font-size: 12px;">Tweet</span>
+  </a>
+  <article>
+    <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+    <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+  </article>
 
   <p>
-
     <a class="black-70 link dim b dib mr3" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
       Join our Slack Channel
     </a>
