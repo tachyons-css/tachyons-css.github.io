@@ -1,5 +1,3 @@
-var componentsBuild = require('./src/components-build')
-var tableOfStylesBuild = require('./src/table-of-styles-build')
-
-componentsBuild()
-tableOfStylesBuild()
+require('./src/components-build')()
+require('./src/table-of-styles-build')()
+require('./src/home-build')()
