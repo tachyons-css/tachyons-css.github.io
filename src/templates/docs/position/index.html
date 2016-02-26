@@ -37,6 +37,16 @@
               <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
             </dl>
         </div>
+        <p class="measure f4 f3-ns lh-copy">
+          Elements default to a position of static. Tachyons provides utilities for setting position to be relative or absolute. Absolute elements are absolutely positioned inside of a relative element. You can use absolute positioning to stretch elements making sure they fill the width and height of a relative container. Relatively positioned elements offer the ability to offset the position of an element without affecting the position of any elements around it. This module should be used in conjunction with the coordinates module which is used to give working examples on this page.
+        </p>
+        <p class="measure f5 f4-ns lh-copy">
+          CSS also provides fixed and sticky options for position but as I
+          don't find them useful from a design standpoint I have not included
+          them here. If you do find them useful you could easily extend the
+          position module to include these options. It should be noted that
+          sticky is not well supported at the moment. If the provided coordinates don't suit your needs the module is easy to extend to add any values you might need. I don't provide negative values - but those can be used in both relative and absolutely positioned elements.
+        </p>
       </article>
 <div class="ph3 ph5-ns pt4 pb5">
   <h2 class="f3 bold">Examples</h2>
