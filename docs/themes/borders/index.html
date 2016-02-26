@@ -74,63 +74,63 @@
 <div class="ph3 ph5-ns pt4 pb5">
   <h2 class="f3 bold">Examples</h2>
   <div>
-    <h3 class="f5 book pt4 caps">Border Base</h3>
-    <code class="ba pas f5 nowrap bg-near-white db mbs">
+    <h3 class="f5 fw4 pt4 caps">Border Base</h3>
+    <code class="ba pa2 f5 nowrap bg-near-white db mb2">
       1px solid border on all sides
     </code>
-    <code class="bt pas f5 nowrap bg-near-white db mbs">
+    <code class="bt pa2 f5 nowrap bg-near-white db mb2">
       1px solid border on top
     </code>
-    <code class="br pas f5 nowrap bg-near-white db mbs">
+    <code class="br pa2 f5 nowrap bg-near-white db mb2">
       1px solid border on the right
     </code>
-    <code class="bb pas f5 nowrap bg-near-white db mbs">
+    <code class="bb pa2 f5 nowrap bg-near-white db mb2">
       1px solid border on the bottom
     </code>
-    <code class="bl pas f5 nowrap bg-near-white db mbs">
+    <code class="bl pa2 f5 nowrap bg-near-white db mb2">
       1px solid border on the bottom
     </code>
   </div>
   <div>
-    <h3 class="f5 book pt4 caps">Border Styles</h3>
-    <code class="ba bs-dotted pas f5 nowrap bg-near-white db mbs">
+    <h3 class="f5 fw4 pt4 caps">Border Styles</h3>
+    <code class="ba b--dotted pa2 f5 nowrap bg-near-white db mb2">
       Dotted
     </code>
-    <code class="ba pas f5 nowrap bg-near-white db mbs">
+    <code class="ba pa2 f5 nowrap bg-near-white db mb2">
       Solid
     </code>
   </div>
   <div>
-    <h3 class="f5 book pt4 caps">Border Widths - Solid</h3>
-    <code class="ba bw1 pas f5 nowrap bg-near-white db mbs">
+    <h3 class="f5 fw4 pt4 caps">Border Widths - Solid</h3>
+    <code class="ba bw1 pa2 f5 nowrap bg-near-white db mb2">
       border-width: .125rem
     </code>
-    <code class="ba bw2 pas f5 nowrap bg-near-white db mbs">
+    <code class="ba bw2 pa2 f5 nowrap bg-near-white db mb2">
       border-width: .25rem
     </code>
-    <code class="ba bw3 pas f5 nowrap bg-near-white db mbs">
+    <code class="ba bw3 pa2 f5 nowrap bg-near-white db mb2">
       border-width: .5rem
     </code>
-    <code class="ba bw4 pas f5 nowrap bg-near-white db mbs">
+    <code class="ba bw4 pa2 f5 nowrap bg-near-white db mb2">
       border-width: 1rem
     </code>
-    <code class="ba bw5 pas f5 nowrap bg-near-white db mbs">
+    <code class="ba bw5 pa2 f5 nowrap bg-near-white db mb2">
       border-width: 2rem
     </code>
-    <h3 class="f5 book pt4 caps">Border Widths - Dotted</h3>
-    <code class="ba bs-dotted bw1 pas f5 nowrap bg-near-white db mbs">
+    <h3 class="f5 fw4 pt4 caps">Border Widths - Dotted</h3>
+    <code class="ba b--dotted bw1 pa2 f5 nowrap bg-near-white db mb2">
       border-width: .125rem
     </code>
-    <code class="ba bs-dotted bw2 pas f5 nowrap bg-near-white db mbm">
+    <code class="ba b0-dotted bw2 pa2 f5 nowrap bg-near-white db mb3">
       border-width: .25rem
     </code>
-    <code class="ba bs-dotted bw3 phs pvm f5 nowrap bg-near-white db mbm">
+    <code class="ba b--dotted bw3 ph2 pv3 f5 nowrap bg-near-white db mb3">
       border-width: .5rem
     </code>
-    <code class="ba bs-dotted bw4 phs pv4 f5 nowrap bg-near-white db mbl">
+    <code class="ba b--dotted bw4 ph2 pv4 f5 nowrap bg-near-white db mb4">
       border-width: 1rem
     </code>
-    <code class="ba bs-dotted bw5 phs pv4 f5 nowrap bg-near-white db mbl">
+    <code class="ba b--dotted bw5 ph2 pv4 f5 nowrap bg-near-white db mb4">
       border-width: 2rem
     </code>
   </div>
@@ -252,6 +252,9 @@
 </header>
 <pre class="ph3 ph5-ns">
 <code class="small">
+@custom-media --breakpoint-not-small screen and (min-width: 48em);
+@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large screen and (min-width: 64em);
 
 /*
 
@@ -263,6 +266,7 @@
    Modifiers:
      none   = none
      dotted = dotted
+     dashed = dashed
      solid  = solid
 
    Media Query Extensions:
@@ -272,26 +276,30 @@
 
  */
 
-.bs-none {   border-style: none; }
-.bs-dotted { border-style: dotted; }
-.bs-solid {  border-style: solid; }
+.b--none {   border-style: none; }
+.b--dotted { border-style: dotted; }
+.b--dashed { border-style: dashed; }
+.b--solid {  border-style: solid; }
 
 @media (--breakpoint-not-small) {
-  .bs-none-ns {   border-style: none; }
-  .bs-dotted-ns { border-style: dotted; }
-  .bs-solid-ns {  border-style: solid; }
+  .b--none-ns {   border-style: none; }
+  .b--dotted-ns { border-style: dotted; }
+  .b--dashed-ns { border-style: dashed; }
+  .b--solid-ns {  border-style: solid; }
 }
 
 @media (--breakpoint-medium) {
-  .bs-none-m {   border-style: none; }
-  .bs-dotted-m { border-style: dotted; }
-  .bs-solid-m {  border-style: solid; }
+  .b--none-m {   border-style: none; }
+  .b--dotted-m { border-style: dotted; }
+  .b--dashed-m { border-style: dashed; }
+  .b--solid-m {  border-style: solid; }
 }
 
 @media (--breakpoint-large) {
-  .bs-none-l {   border-style: none; }
-  .bs-dotted-l { border-style: dotted; }
-  .bs-solid-l {  border-style: solid; }
+  .b--none-l {   border-style: none; }
+  .b--dotted-l { border-style: dotted; }
+  .b--dashed-l { border-style: dashed; }
+  .b--solid-l {  border-style: solid; }
 }
 </code>
 </pre>
