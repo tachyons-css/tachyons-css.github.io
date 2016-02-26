@@ -4,17 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>
-      Spacing / Layout / Docs / TACHYONS
+      <%= name %> / Layout / Docs / TACHYONS
     </title>
     <meta name="author" content="@mrmrs">
     <meta name="description" content="Documentation on using the spacing module which provides utilities for the setting of margin and padding on elements.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/tachyons.css">
+    <link rel="stylesheet" href="/css/tachyons.min.css">
   </head>
   <body class="w-100 sans-serif">
     <%= siteHeader %>
     <main class="">
-      <article class="bg-near-white bt b--black-10 ph3 pt3 ph5-ns">
+      <article class="bg-near-white bt b--black-10 pa3 ph5-ns">
         <h4 class="f4 mv0 fw6 dib mr4"><%= name %></h4>
         <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
         <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
@@ -36,16 +36,25 @@
               <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
             </dl>
         </div>
+        <p class="measure f4 f3-ns lh-copy">
+          Spacing comes in two flavors. Depending on borders and background colors, the difference between padding and margin can be invisible to the naked eye of the user. But to a developer, they serve different roles. Most codebases lack a ratio based scale and instead are littered with values that are just magic numbers. This is bad.
+        </p>
+        <p class="measure f5 f4-ns lh-copy">
+          Good design, is based in math. Certain patterns and ratios are so prevelant in nature and music that they can't be denied as elegant design solutions. Even in the 18th century, pages in books were designed with ratios. In the 21st century, we have gotten away from this on the web, often times using magic numbers to match a 'spec' that has been produced in a graphics program such as photoshop, illustrator, or sketch. While these programs are useful for sketching ideas, they aren't reflective of how the web works across device sizes or how things get drawn to the screen.
+        </p>
+        <p class="measure f5 f4-ns lh-copy">
+Tachyons features a spacing scale based on powers of two that starts at .25rem (for most devices this will be the equivalent of 4px). Since tachyons uses rem units with px as a fallback, if a user has declared a different base font-size for their device, your spacing will scale based on a defined ratio that has stood the test of time. As powers of two will always produce integers, there will be no problems with sub pixel rendering across browsers. Computers aren't that great at math and so decimals lead to inconsistencies across platforms. Inconsistencies should be avoided where possible. You'll find that when using a well thought out scale - things just line up. It works, with little effort, regardless of your design knowledge or sensibilities.
+        </p>
       </article>
 <div class="ph3 ph5-ns pt4 pb5">
   <h2 class="f3 bold">Examples</h2>
   <h3 class="f5 book pt4 ttu tracked">Padding All</h3>
-  <p>pa1, pas, pam, pal, pa5, pa6, pa7</p>
+  <p>pa1, pa2, pa3, pa4, pa5, pa6, pa7</p>
   <div><div class="pan mb2 dib bg-black white">pan</div></div>
   <div><div class="pa1 mb2 dib bg-black white">pa1</div></div>
-  <div><div class="pas mb2 dib bg-black white">pas</div></div>
-  <div><div class="pam mb2 dib bg-black white">pam</div></div>
-  <div><div class="pal mb2 dib bg-black white">pal</div></div>
+  <div><div class="pa2 mb2 dib bg-black white">pa2</div></div>
+  <div><div class="pa3 mb2 dib bg-black white">pa3</div></div>
+  <div><div class="pa4 mb2 dib bg-black white">pa4</div></div>
   <div><div class="pa5 mb2 dib bg-black white">pa5</div></div>
   <div><div class="pa6 mb2 dib bg-black white">pa6</div></div>
   <div><div class="pa7 mb2 dib bg-black white">pa7</div></div>
@@ -142,14 +151,14 @@
   <div class="bg-black-70"><div class="ml6 dib bg-black white"> ml6</div></div>
   <div class="bg-black-80"><div class="ml7 dib bg-black white"> ml7</div></div>
   <h3 class="f5 book pt4 ttu tracked">Margin Right</h3>
-  <div class="bg-black-10"><div class="mr0 dib bg-black white">mr0</div><div class="dib pas bg-black"></div></div>
-  <div class="bg-black-20"><div class="mr1 dib bg-black white">mr1 </div><div class="dib pas bg-black"></div></div>
-  <div class="bg-black-30"><div class="mrs dib bg-black white"> mrs</div><div class="dib pas bg-black"></div></div>
-  <div class="bg-black-40"><div class="mr3 dib bg-black white"> mr3</div><div class="dib pas bg-black"></div></div>
-  <div class="bg-black-50"><div class="mr4 dib bg-black white"> mr4</div><div class="dib pas bg-black"></div></div>
-  <div class="bg-black-60"><div class="mr5 dib bg-black white"> mr5</div><div class="dib pas bg-black"></div></div>
-  <div class="bg-black-70"><div class="mr6 dib bg-black white"> mr6</div><div class="dib pas bg-black"></div></div>
-  <div class="bg-black-80"><div class="mr7 dib bg-black white"> mr7</div><div class="dib pas bg-black"></div></div>
+  <div class="bg-black-10"><div class="mr0 dib bg-black white">mr0</div><div class="dib pa2 bg-black"></div></div>
+  <div class="bg-black-20"><div class="mr1 dib bg-black white">mr1 </div><div class="dib pa2 bg-black"></div></div>
+  <div class="bg-black-30"><div class="mrs dib bg-black white"> mrs</div><div class="dib pa2 bg-black"></div></div>
+  <div class="bg-black-40"><div class="mr3 dib bg-black white"> mr3</div><div class="dib pa2 bg-black"></div></div>
+  <div class="bg-black-50"><div class="mr4 dib bg-black white"> mr4</div><div class="dib pa2 bg-black"></div></div>
+  <div class="bg-black-60"><div class="mr5 dib bg-black white"> mr5</div><div class="dib pa2 bg-black"></div></div>
+  <div class="bg-black-70"><div class="mr6 dib bg-black white"> mr6</div><div class="dib pa2 bg-black"></div></div>
+  <div class="bg-black-80"><div class="mr7 dib bg-black white"> mr7</div><div class="dib pa2 bg-black"></div></div>
   <h3 class="f5 book pt4 ttu tracked">Margin Top</h3>
   <div class="bg-black-10"><div class="mt0 dib bg-black white">mt0</div></div>
   <div class="bg-black-20"><div class="mt1 dib bg-black white">mt1 </div></div>

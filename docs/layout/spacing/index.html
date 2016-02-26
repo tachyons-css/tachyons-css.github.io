@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>
-      Spacing / Layout / Docs / TACHYONS
+      spacing / Layout / Docs / TACHYONS
     </title>
     <meta name="author" content="@mrmrs">
     <meta name="description" content="Documentation on using the spacing module which provides utilities for the setting of margin and padding on elements.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/tachyons.css">
+    <link rel="stylesheet" href="/css/tachyons.min.css">
   </head>
   <body class="w-100 sans-serif">
     <header class="w-100 pa3 ph5-ns bg-near-white">
@@ -41,7 +41,7 @@
 </header>
 
     <main class="">
-      <article class="bg-near-white bt b--black-10 ph3 pt3 ph5-ns">
+      <article class="bg-near-white bt b--black-10 pa3 ph5-ns">
         <h4 class="f4 mv0 fw6 dib mr4">spacing</h4>
         <span class="f4 b dib pl0 ml0 mr4">v5.0.0</span>
         <span class="f4 b dib pl0 ml0 mr4">1.7 KB</span>
@@ -63,6 +63,15 @@
               <dd class="db pl0 ml0 f4 f2-ns b">1.2825112107623318</dd>
             </dl>
         </div>
+        <p class="measure f3 lh-copy">
+          Spacing comes in two flavors. Depending on borders and background colors, the difference between padding and margin can be invisible to the naked eye of the user. But to a developer, they serve different roles. Most codebases lack a ratio based scale and instead are littered with values that are just magic numbers. This is bad.
+        </p>
+        <p class="measure f4 lh-copy">
+          Good design, is based in math. Certain patterns and ratios are so prevelant in nature and music that they can't be denied as elegant design solutions. Even in the 18th century, pages in books were designed with ratios. In the 21st century, we have gotten away from this on the web, often times using magic numbers to match a 'spec' that has been produced in a graphics program such as photoshop, illustrator, or sketch. While these programs are useful for sketching ideas, they aren't reflective of how the web works across device sizes or how things get drawn to the screen.
+        </p>
+        <p class="measure f4 lh-copy">
+Tachyons features a spacing scale based on powers of two that starts at .25rem (for most devices this will be the equivalent of 4px). Since tachyons uses rem units with px as a fallback, if a user has declared a different base font-size for their device, your spacing will scale based on a defined ratio that has stood the test of time. As powers of two will always produce integers, there will be no problems with sub pixel rendering across browsers. Computers aren't that great at math and so decimals lead to inconsistencies across platforms. Inconsistencies should be avoided where possible. You'll find that when using a well thought out scale - things just line up. It works, with little effort, regardless of your design knowledge or sensibilities.
+        </p>
       </article>
 <div class="ph3 ph5-ns pt4 pb5">
   <h2 class="f3 bold">Examples</h2>
