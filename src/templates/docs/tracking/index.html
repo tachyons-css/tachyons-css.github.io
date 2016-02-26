@@ -4,18 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>
-      Tracking / Typography / Docs / TACHYONS
+      <%= name %> / Typography / Docs / TACHYONS
     </title>
-    <meta name="author" content="@mr3rs">
+    <meta name="author" content="@mrmrs">
     <meta name="description" content="CSS">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/tachyons.css">
+    <link rel="stylesheet" href="/css/tachyons.min.css">
   </head>
   <body class="w-100 sans-serif">
 
     <%= siteHeader %>
     <main class="">
-      <article class="bg-near-white bt b--black-10 ph3 pt3 ph5-ns">
+      <article class="bg-near-white bt b--black-10 pa3 ph5-ns">
         <h4 class="f4 mv0 fw6 dib mr4"><%= name %></h4>
         <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
         <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
@@ -37,18 +37,28 @@
               <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
             </dl>
         </div>
+        <p class="measure f4 f3-ns lh-copy">
+          Letter-spacing is the consistent white-space between letters in a piece of text.
+          In typography, letter-spacing is commonly known as tracking.
+          Text that is set to uppercase should be tracked to improve readability.
+          <i class="db mv2">Lowercase text should never be tracked.</i>
+          For some larger text, depending on the typeface, a negative tracking might be desirable.
+        </p>
+        <p class="measure f5 f4-ns lh-copy">
+          There are three classes to set tracking on uppercased text: tracked, tracked-tight, tracked-mega.
+        </p>
       </article>
 <div class="ph3 ph5-ns pt4 pb5">
   <h2 class="f3 bold">Examples</h2>
 
-  <h3 class="f5 book sans-serif pt4 caps black-100">Default</h3>
-  <h4 class="f1 ttu bold mtn">Title Example</h4>
-  <h3 class="f5 book sans-serif pt4 caps black-100">Tracked</h3>
-  <h4 class="f1 ttu tracked bold mtn">Title Example</h4>
-  <h3 class="f5 book sans-serif pt4 caps black-100">Mega Tracked</h3>
-  <h4 class="f1 ttu tracked-mega bold mtn">Title Example</h4>
-  <h3 class="f5 book sans-serif pt4 caps black-100">Tightly Tracked</h3>
-  <h4 class="mega ttu tracked-tight bold mtn">Title Example</h4>
+  <h3 class="f5 fw4 sans-serif pt4 caps black-100">Default</h3>
+  <h4 class="f1 ttu bold mt0">Title Example</h4>
+  <h3 class="f5 fw4 sans-serif pt4 caps black-100">Tracked</h3>
+  <h4 class="f1 ttu tracked bold mt0">Title Example</h4>
+  <h3 class="f5 fw4 sans-serif pt4 caps black-100">Mega Tracked</h3>
+  <h4 class="f1 ttu tracked-mega bold mt0">Title Example</h4>
+  <h3 class="f5 fw4 sans-serif pt4 caps black-100">Tightly Tracked</h3>
+  <h4 class="f-headline ttu tracked-tight bold mt0">Title Example</h4>
   <div class="mt5 cf">
     <div class="dib mr4">
       <h1 class="f4 ttu tracked fw6">Previous</h1>
