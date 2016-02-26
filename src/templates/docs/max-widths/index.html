@@ -37,6 +37,48 @@
               <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
             </dl>
         </div>
+        <p class="measure f4 f3-ns lh-copy">
+          The max-widths module contains both a ten-step scale based on powers of two
+          as well as a series of percentage values that can prove useful. Max widths can be combined with widths
+          to ensure that your content doesn't get too wide on larger monitors. Max-widths can also help keep embedded media
+          within the canvas. As they are fluid across ranges of screen widths, max-widths are extremely useful when trying to keep a design
+responsive.
+        </p>
+        <p class="measure f5 f4-ns lh-copy">
+          Class name structure is as follows:
+<pre>
+Base:
+  mw = width
+
+Modifiers
+  1  = 1st step in width scale
+  2  = 2nd step in width scale
+  3  = 3rd step in width scale
+  4  = 4th step in width scale
+  5  = 5th step in width scale
+  6  = 6th step in width scale
+  7  = 7th step in width scale
+  8  = 8th step in width scale
+  9  = 9th step in width scale
+  10 = 10th step in width scale
+
+  -25   = literal value 10%
+  -50   = literal value 20%
+  -75   = literal value 25%
+  -100  = literal value 33%
+
+  -none  = none
+  -max   = max-content
+  -min   = min-content
+  -fit   = fit-content
+  -fill  = fill-available
+
+Media Query Extensions:
+  -ns = not-small
+  -m  = medium
+  -l  = large
+</pre>
+        </p>
       </article>
 <div class="ph3 ph5-ns pt4 pb5">
   <h2 class="f3 bold">Examples</h2>

@@ -4,15 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>
-      Clearfix / Layout / Docs / TACHYONS
+      tachyons-clears / Layout / Docs / TACHYONS
     </title>
-    <meta name="author" content="@mr3rs">
-    <meta name="description" content="CSS">
+    <meta name="author" content="@mrmrs">
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/tachyons.css">
+    <link rel="stylesheet" href="/css/tachyons.min.css">
   </head>
   <body class="w-100 sans-serif">
-
     <header class="w-100 pa3 ph5-ns bg-near-white">
   <div class="dt w-100">
     <div class="dtc v-mid tl w-50">
@@ -42,7 +41,7 @@
 </header>
 
     <main class="">
-      <article class="bg-near-white bt b--black-10 ph3 pt3 ph5-ns">
+      <article class="bg-near-white bt b--black-10 pa3 ph5-ns">
         <h4 class="f4 mv0 fw6 dib mr4">tachyons-clears</h4>
         <span class="f4 b dib pl0 ml0 mr4">v2.0.3</span>
         <span class="f4 b dib pl0 ml0 mr4">92 B</span>
@@ -64,11 +63,16 @@
               <dd class="db pl0 ml0 f4 f2-ns b">1.3333333333333333</dd>
             </dl>
         </div>
+        <p class="measure f4 f3-ns lh-copy">
+          When floats are used for layouts - they need a clearfix solution. This helps prevent
+          layout problems caused by the elements being removed from the block context of the
+          surrounding elements.
+        </p>
       </article>
 <div class="ph3 ph5-ns pt4 pb5">
-  <h2 class="f3 bold">Examples</h2>
+  <h2 class="f3 b">Examples</h2>
   <h3 class="f4">Cleared Floats</h3>
-  <p>
+  <p class="measure lh-copy">
     This example shows two floated elements wrapped in an element with a 4px solid red border.
     In the top version where the floats are cleared, the red element wraps around the elements.
     In the second example - the parent element is collapsed and the two floated elements sit outside of it.
