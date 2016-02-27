@@ -30,7 +30,6 @@
 @import './_font-weight';
 @import './_forms';
 @import './_heights';
-@import './_images';
 @import './_letter-spacing';
 @import './_line-height';
 @import './_links';
@@ -52,7 +51,6 @@
 @import './_vertical-align';
 @import './_hovers';
 @import './_styles';
-@import './_gradients';
 
 
 @import './_debug_children';
