@@ -4,7 +4,7 @@ Documentation for Tachyons -- a performant, mobile-first, and 100% responsive mo
 
 #### Stats
 
-12116 | 1377 | 1526
+12166 | 1400 | 1561
 ---|---|---
 bytes | selectors | declarations
 
@@ -367,7 +367,8 @@ input[type="email"], input[type="url"], input[type="password"], .border-box { bo
 .bl { border-left-style: solid; border-left-width: 1px; }
 /*
 
-   Tachyons Colors
+   Tachyons
+   COLOR VARIABLES
 
    Grayscale
    - Solids
@@ -436,7 +437,7 @@ input[type="email"], input[type="url"], input[type="password"], .border-box { bo
      -l  = large
 
 */
-.brn { border-radius: 0; }
+.br0 { border-radius: 0; }
 .br1 { border-radius: .125rem; }
 .br2 { border-radius: .25rem; }
 .br3 { border-radius: .5rem; }
@@ -507,21 +508,26 @@ input[type="email"], input[type="url"], input[type="password"], .border-box { bo
 
 */
 .top-0 { top: 0; }
-.left-0 { left: 0; }
 .right-0 { right: 0; }
 .bottom-0 { bottom: 0; }
+.left-0 { left: 0; }
 .top-1 { top: 1rem; }
-.left-1 { left: 1rem; }
 .right-1 { right: 1rem; }
 .bottom-1 { bottom: 1rem; }
+.left-1 { left: 1rem; }
 .top-2 { top: 2rem; }
-.left-2 { left: 2rem; }
 .right-2 { right: 2rem; }
 .bottom-2 { bottom: 2rem; }
-.top-4 { top: 4rem; }
-.left-4 { left: 4rem; }
-.right-4 { right: 4rem; }
-.bottom-4 { bottom: 4rem; }
+.left-2 { left: 2rem; }
+.top--1 { top: -1rem; }
+.right--1 { right: -1rem; }
+.bottom--1 { bottom: -1rem; }
+.left--1 { left: -1rem; }
+.top--2 { top: -2rem; }
+.right--2 { right: -2rem; }
+.bottom--2 { bottom: -2rem; }
+.left--2 { left: -2rem; }
+.pos-abs--fill { top: 0; right: 0; bottom: 0; left: 0; }
 /*
 
    CLEARS
@@ -563,8 +569,10 @@ input[type="email"], input[type="url"], input[type="password"], .border-box { bo
 .dit { display: inline-table; }
 .dt { display: table; }
 .dtc { display: table-cell; }
-.dtcol { display: table-column; }
-.dtcolg { display: table-column-group; }
+.dt-row { display: table-row; }
+.dt-row-group { display: table-row-group; }
+.dt-column { display: table-column; }
+.dt-column-group { display: table-column-group; }
 /* Media Query Variables */
 /*
 
@@ -662,13 +670,6 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /* String Properties */
 .h-at { height: auto; }
 .h-i { height: inherit; }
-/*
-
-   IMAGES
-
-*/
-/* Responsive images! */
-img { max-width: 100%; }
 /*
 
    LETTER SPACING
@@ -919,6 +920,7 @@ img { max-width: 100%; }
 .bg-hover-near-white:hover { background-color: #f4f4f4; }
 .bg-hover-white:hover { background-color: #fff; }
 /* Variables */
+/* Spacing Scale - based on a ratio of 1:2 */
 /* Media Queries */
 /*
    SPACING
@@ -939,14 +941,14 @@ img { max-width: 100%; }
    b = bottom
    l = left
 
-   n = none
-   1 = extra small
-   s = small
-   m = medium
-   l = large
-   x = extra
-   5 = extra large
-   xxx = extra extra large
+   0 = none
+   1 = 1st step in spacing scale
+   2 = 2nd step in spacing scale
+   3 = 3rd step in spacing scale
+   4 = 4th step in spacing scale
+   5 = 5th step in spacing scale
+   6 = 6th step in spacing scale
+   7 = 7th step in spacing scale
 
 */
 .pa0 { padding: 0; }
@@ -1195,16 +1197,6 @@ img { max-width: 100%; }
 */
 /*
 
-   GRADIENTS
-
-
-*/
-.gradient-blue { background-image: linear-gradient( #4570B0, #0081C2 ); }
-.gradient-blue-reversed { background-image: linear-gradient( #0081C2, #4570B0 ); }
-.gradient-light-blue { background-image: linear-gradient( #76D3FE, #008AE0 ); }
-.gradient-light-blue-reversed { background-image: linear-gradient( #008AE0, #76D3FE ); }
-/*
-
   DEBUG CHILDREN
 
   Just add the debug class to any element to see outlines on its
@@ -1222,7 +1214,7 @@ img { max-width: 100%; }
  .br-ns { border-right-style: solid; border-right-width: 1px; }
  .bb-ns { border-bottom-style: solid; border-bottom-width: 1px; }
  .bl-ns { border-left-style: solid; border-left-width: 1px; }
- .brn-ns { border-radius: 0; }
+ .br0-ns { border-radius: 0; }
  .br1-ns { border-radius: .125rem; }
  .br2-ns { border-radius: .25rem; }
  .br3-ns { border-radius: .5rem; }
@@ -1250,10 +1242,15 @@ img { max-width: 100%; }
  .left-2-ns { left: 2rem; }
  .right-2-ns { right: 2rem; }
  .bottom-2-ns { bottom: 2rem; }
- .top-4-ns { top: 4rem; }
- .left-4-ns { left: 4rem; }
- .right-4-ns { right: 4rem; }
- .bottom-4-ns { bottom: 4rem; }
+ .top--1-ns { top: -1rem; }
+ .right--1-ns { right: -1rem; }
+ .bottom--1-ns { bottom: -1rem; }
+ .left--1-ns { left: -1rem; }
+ .top--2-ns { top: -2rem; }
+ .right--2-ns { right: -2rem; }
+ .bottom--2-ns { bottom: -2rem; }
+ .left--2-ns { left: -2rem; }
+ .pos-abs--fill-ns { top: 0; right: 0; bottom: 0; left: 0; }
  .dn-ns { display: none; }
  .di-ns { display: inline; }
  .db-ns { display: block; }
@@ -1261,8 +1258,10 @@ img { max-width: 100%; }
  .dit-ns { display: inline-table; }
  .dt-ns { display: table; }
  .dtc-ns { display: table-cell; }
- .dtcol-ns { display: table-column; }
- .dtcolg-ns { display: table-column-group; }
+ .dt-row-ns { display: table-row; }
+ .dt-row-group-ns { display: table-row-group; }
+ .dt-column-ns { display: table-column; }
+ .dt-column-group-ns { display: table-column-group; }
  .fl-ns { float: left; display: inline; }
  .fr-ns { float: right; display: inline; }
  .fn-ns { float: none !important; }
@@ -1494,7 +1493,7 @@ img { max-width: 100%; }
  .br-m { border-right-style: solid; border-right-width: 1px; }
  .bb-m { border-bottom-style: solid; border-bottom-width: 1px; }
  .bl-m { border-left-style: solid; border-left-width: 1px; }
- .brn-m { border-radius: 0; }
+ .br0-m { border-radius: 0; }
  .br1-m { border-radius: .125rem; }
  .br2-m { border-radius: .25rem; }
  .br3-m { border-radius: .5rem; }
@@ -1522,10 +1521,15 @@ img { max-width: 100%; }
  .left-2-m { left: 2rem; }
  .right-2-m { right: 2rem; }
  .bottom-2-m { bottom: 2rem; }
- .top-4-m { top: 4rem; }
- .left-4-m { left: 4rem; }
- .right-4-m { right: 4rem; }
- .bottom-4-m { bottom: 4rem; }
+ .top--1-m { top: -1rem; }
+ .right--1-m { right: -1rem; }
+ .bottom--1-m { bottom: -1rem; }
+ .left--1-m { left: -1rem; }
+ .top--2-m { top: -2rem; }
+ .right--2-m { right: -2rem; }
+ .bottom--2-m { bottom: -2rem; }
+ .left--2-m { left: -2rem; }
+ .pos-abs--fill-m { top: 0; right: 0; bottom: 0; left: 0; }
  .dn-m { display: none; }
  .di-m { display: inline; }
  .db-m { display: block; }
@@ -1533,8 +1537,10 @@ img { max-width: 100%; }
  .dit-m { display: inline-table; }
  .dt-m { display: table; }
  .dtc-m { display: table-cell; }
- .dtcol-m { display: table-column; }
- .dtcolg-m { display: table-column-group; }
+ .dt-row-m { display: table-row; }
+ .dt-row-group-m { display: table-row-group; }
+ .dt-column-m { display: table-column; }
+ .dt-column-group-m { display: table-column-group; }
  .fl-m { float: left; display: inline; }
  .fr-m { float: right; display: inline; }
  .fn-m { float: none; }
@@ -1767,7 +1773,7 @@ img { max-width: 100%; }
  .br-l { border-right-style: solid; border-right-width: 1px; }
  .bb-l { border-bottom-style: solid; border-bottom-width: 1px; }
  .bl-l { border-left-style: solid; border-left-width: 1px; }
- .brn-l { border-radius: 0; }
+ .br0-l { border-radius: 0; }
  .br1-l { border-radius: .125rem; }
  .br2-l { border-radius: .25rem; }
  .br3-l { border-radius: .5rem; }
@@ -1795,10 +1801,15 @@ img { max-width: 100%; }
  .left-2-l { left: 2rem; }
  .right-2-l { right: 2rem; }
  .bottom-2-l { bottom: 2rem; }
- .top-4-l { top: 4rem; }
- .left-4-l { left: 4rem; }
- .right-4-l { right: 4rem; }
- .bottom-4-l { bottom: 4rem; }
+ .top--1-l { top: -1rem; }
+ .right--1-l { right: -1rem; }
+ .bottom--1-l { bottom: -1rem; }
+ .left--1-l { left: -1rem; }
+ .top--2-l { top: -2rem; }
+ .right--2-l { right: -2rem; }
+ .bottom--2-l { bottom: -2rem; }
+ .left--2-l { left: -2rem; }
+ .pos-abs--fill-l { top: 0; right: 0; bottom: 0; left: 0; }
  .dn-l { display: none; }
  .di-l { display: inline; }
  .db-l { display: block; }
@@ -1806,8 +1817,10 @@ img { max-width: 100%; }
  .dit-l { display: inline-table; }
  .dt-l { display: table; }
  .dtc-l { display: table-cell; }
- .dtcol-l { display: table-column; }
- .dtcolg-l { display: table-column-group; }
+ .dt-row-l { display: table-row; }
+ .dt-row-group-l { display: table-row-group; }
+ .dt-column-l { display: table-column; }
+ .dt-column-group-l { display: table-column-group; }
  .fl-l { float: left; display: inline; }
  .fr-l { float: right; display: inline; }
  .fn-l { float: none; }
@@ -1949,7 +1962,7 @@ img { max-width: 100%; }
  .ma5-l { margin: 4rem; }
  .ma6-l { margin: 8rem; }
  .ma7-l { margin: 16rem; }
- .mlo-l { margin-left: 0; }
+ .ml0-l { margin-left: 0; }
  .ml1-l { margin-left: .25rem; }
  .ml2-l { margin-left: .5rem; }
  .ml3-l { margin-left: 1rem; }
