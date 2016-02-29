@@ -20,6 +20,7 @@ repos=(
   "lib/measure.js"
   "lib/position.js"
   "lib/spacing.js"
+  "lib/colors.js"
   "lib/text-align.js"
   "lib/text-decoration.js"
   "lib/text-transform.js"
