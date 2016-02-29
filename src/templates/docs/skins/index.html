@@ -57,12 +57,16 @@
     <% combos.map(renderCombo) %>
   </ul>
   <% function renderCombo(combo) { %>
-    <li class="fl w-100 w-50-m w-20-l pa3">
-      <div class=""
+    <li class="fl w-100 w-50-m w-25-l"
       style="color:<%= combo.pairing %>;background-color:<%= combo.hex %>">
-        <span class="f4 f2-ns b">Aa</span>
-      </div>
-      <div class="">
+      <div class="pa4">
+        <span class="f4 f1-ns b">Aa</span>
+        <p class="lh-copy measure f6">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+          no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
         <code class="f6 db"><%= combo.pairing %></code>
         <code class="f6 db"><%= combo.hex %></code>
         <%= combo.contrast.toFixed(2) %>
