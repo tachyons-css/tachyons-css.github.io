@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>
+      Font Style / Typography / Docs / TACHYONS
+    </title>
+    <meta name="author" content="@mrmrs">
+    <meta name="description" content="CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/tachyons.min.css">
+  </head>
+  <body class="w-100 sans-serif">
+    <header class="w-100 pa3 ph5-ns bg-near-white">
+  <div class="dt w-100">
+    <div class="dtc v-mid tl w-50">
+      <a href="/" class="dib f5 f4-ns fw6 mt0 mb1 link black-50 dim" title="Home">
+        Tachyons
+        <div class="dib">
+          <small class="nowrap f6 mt2 mt3-ns pr2 black-50 fw2">v4.0.0-beta-3</small>
+        </div>
+      </a>
+    </div>
+    <div class="db dtc v-mid w-100 tr">
+
+      <a title="Documentation" href="/docs/"
+         class="f6 b dim link black-50 mr1 mr3-m mr4-l dib">
+        Docs
+      </a>
+      <a title="Tachyons on GitHub" href="http://github.com/mrmrs/tachyons/"
+         class="f6 b dim link black-50 mr1 mr3-m mr4-l dib">
+        GitHub
+      </a>
+      <a title="Tachyons Npm Modules" href="/#npm"
+         class="f6 b link black-50 dim dib">
+        Npm
+      </a>
+    </div>
+  </div>
+</header>
+
+    <main class="">
+      <article class="bg-near-white bt b--black-10 pa3 ph5-ns">
+        <h4 class="f4 mv0 fw6 dib mr4">tachyons-font-style</h4>
+        <span class="f4 b dib pl0 ml0 mr4">v3.0.0</span>
+        <span class="f4 b dib pl0 ml0 mr4">132 B</span>
+        <div>
+            <dl class="dib mr4 mt0">
+              <dt class="f6 db">Declarations </dt>
+              <dd class="db pl0 ml0 f4 f2-ns b">8</span></dd>
+            </dl>
+            <dl class="dib mr4">
+              <dt class="f6 db pr2">Selectors </dt>
+              <dd class="db pl0 ml0 f4 f2-ns b">8</dd>
+            </dl>
+            <dl class="dib mr4">
+              <dt class="f6 db pr2">Max. Specificity Score </dt>
+              <dd class="db pl0 ml0 f4 f2-ns b">10</dd>
+            </dl>
+            <dl class="dib mr4">
+              <dt class="f6 db pr2">Size of Avg. Rule </dt>
+              <dd class="db pl0 ml0 f4 f2-ns b">1</dd>
+            </dl>
+        </div>
+        <p class="measure f4 f3-ns lh-copy">
+          Single purpose classes to set the font-style of any element at any breakpoint.
+        </p>
+        <p class="measure f5 f4-ns lh-copy">
+          Italics can be used to empshasie on a piece of content. Some common uses of
+          italics include: titles, vehicle names, letters of the alphabet, scientific terms, and quotes.
+        </p>
+      </article>
+<div class="ph3 ph5-ns pt4 pb5">
+  <h2 class="f3 bold">Examples</h2>
+  <code class="f6">
+    &lt;p class="i"&gt;&lt;/p&gt;
+  </code>
+  <p class="i mb4">
+    Readers want what is important to be clearly laid out; they will not read
+    what is too troublesome.
+  </p>
+  <code class="f6">
+    &lt;p class="fs-normal"&gt;&lt;/p&gt;
+  </code>
+  <p class="fs-normal">
+    A quote from Jan Tschichold about typography.
+  </p>
+  <div class="mt5 cf">
+    <div class="dib mr4">
+      <h1 class="f4 ttu tracked fw6">Previous</h1>
+      <a href="/docs/typography/tracking/" class="link fw6 blue dim">Tracking</a>
+    </div>
+    <div class="dib">
+      <h1 class="f4 ttu tracked fw6">Next</h1>
+      <a href="/docs/typography/font-family/" class="link fw6 blue dim">Font Family</a>
+    </div>
+  </div>
+  <div class="mt5">
+    <h1 class="f4 ttu tracked fw6">Reference</h1>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight" class="link fw6 blue dim">MDN - Font Weight</a>
+  </div>
+</div>
+      <section class="bg-near-white black-70 pt4 pb5">
+      <header class="ph3 ph5-ns pt4">
+              <kbd class="yellow">src/_font-weights.css</kbd>
+      </header>
+<pre class="ph3 ph5-ns">
+<code class="code" style="font-size: .75rem;">
+@custom-media --breakpoint-not-small screen and (min-width: 48em);
+@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large screen and (min-width: 64em);
+
+/*
+
+   FONT STYLE
+
+*/
+
+.i       { font-style: italic; }
+.fsn     { font-style: normal; }
+
+@media (--breakpoint-not-small) {
+  .i-ns       { font-style: italic; }
+  .fsn-ns     { font-style: normal; }
+}
+
+@media (--breakpoint-medium) {
+  .i-m       { font-style: italic; }
+  .fsn-m     { font-style: normal; }
+}
+
+@media (--breakpoint-large) {
+  .i-l       { font-style: italic; }
+  .fsn-l     { font-style: normal; }
+}
+
+</code>
+</pre>
+      </section>
+      <div class="ph3 ph5-ns pt3 pb5">
+  <section>
+    <h2 class="f6 fw7 ttu tracked">General</h2>
+    <a class="f5  fw4 dim link mid-gray db pv1" href="/docs/debug/" title="Debugging">Debugging</a>
+    <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/general/images/" title="Images">Images</a>
+    <section class="cf w-100 mt3">
+      <article class="fn fl-ns w-100 w-25-l">
+        <h2 class="f6 fw7 ttu tracked" id="typography">Typography</h2>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/scale" title="Type">Type Scale</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/measure/garamond/" title="Measure">Measure</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/line-height" title="Line Height">Line Height / Leading</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/tracking" title="Tracking">Tracking</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/font-weight" title="Font Weights">Font Weights</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/font-family" title="Font Families">Font Families</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/vertical-align" title="Font Families">Vertical Align</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/text-align" title="Text Align">Text Align</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/text-transform" title="Text Transform">Text Transform</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/text-decoration" title="Text Decoration">Text Decoration</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/white-space" title="White Space">White Space</a>
+      </article>
+      <article class="fn fl-ns w-100 w-25-l">
+        <h2 class="f6 fw7 ttu tracked" id="layout">Layout</h2>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/box-sizing" title="Box Sizing">Box Sizing</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/spacing" title="Spacing">Spacing</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/floats" title="Floats">Floats</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/clearfix" title="Clears">Clearfix</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/display" title="Display">Display</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/widths" title="Widths">Widths</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/max-widths" title="Max Widths">Max Widths</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/heights" title="Heights">Heights</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/position" title="Position">Position</a>
+      </article>
+      <article class="fn fl-ns w-100 w-25-l">
+        <h2 class="f6 fw7 ttu tracked">Theming</h2>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/themes/hovers/" title="Hovers">Hovers</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/themes/background-size/" title="Background Size">Background Size</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/themes/borders/" title="Borders">Borders</a>
+        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/themes/border-radius/" title="Border Radius">Border Radius</a>
+      </article>
+    </section>
+  </section>
+</div>
+
+    </main>
+    <footer class="bg-near-white mid-gray ph3 ph5-ns pv5 pv6-ns bt b--light-gray">
+  <a href="https://twitter.com/intent/tweet?text=Tachyons: Functional CSS for Humans.&url=http://tachyons.io" target="_blank" class="dn mb3 twitter bg-white link dim br2 ph2 pb1 pt0 lh-solid" style="background-color: #55acee;">
+    <svg class="geomicon dib v-mid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="#fff">
+      <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
+    </svg>
+    <span class="dib v-mid white fw6" style="font-size: 12px;">Tweet</span>
+  </a>
+  <article>
+    <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+    <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+  </article>
+
+  <p>
+    <a class="black-70 link dim b dib mr3" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
+      Join our Slack Channel
+    </a>
+    <a class="black-70 link dim b dib mr3" href="https://github.com/tachyons-css/tachyons/issues" title="File a bug, request a feature, ask a question!">
+      Open an Issue
+    </a>
+    <a class="black-70 link dim b dib mr3" href="https://github.com/tachyons-css" title="Tachyons-css on GitHub">
+      GitHub
+    </a>
+  </p>
+  <p class="measure copy lh-copy">
+    Have a question? Need help? Feel free to open an issue on GitHub or ask a
+    question in our slack channel. We're here to try and help make designing in
+    the browser fun.
+  </p>
+  <small class="f6 measure db lh-copy mt5">
+    A tachyon /ˈtæki.ɒn/ or tachyonic particle is a hypothetical particle
+    that always moves faster than light.
+    The word comes from the Greek:
+    <br> <br>
+    ταχύς or tachys, meaning "swift, quick, fast, rapid"
+  </small>
+</footer>
+
+        <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-55773803-1', 'auto');
+ga('send', 'pageview');
+
+    </script>
+
+  </body>
+</html>
