@@ -63,120 +63,122 @@ npm install &amp;&amp; npm build
           <div class="ph3 ph5-ns tl tl-ns">
             <h1 class="f4 ttu tracked fw4">Principles</h1>
             <section class="list pln lh-copy mt0">
-              <article class="pv2">
-                <h2 class="f4 f3-ns fw6 mb0">Everything should be 100% responsive</h2>
-                <p class="f5 f4-ns measure lh-copy mt0">
-                  Your website should work regardless of a users
-                  device or screensize. Don't break the functionality of HTML
-                  with CSS.
-                </p>
-              </article>
-              <article class="pv2">
-                <h2 class="f4 f3-ns fw6 mb0">Everything should always be readable</h2>
-                <p class="f5 f4-ns measure lh-copy mt0">
-                  No matter the lighting, or the device, font-sizes should be large enough and contrast should be high enough.
-                </p>
-              </article>
-              <article class="pv2">
-                <h2 class="f4 f3-ns fw6 mb0">Everything should be as performant as possible</h2>
-                <p class="f5 f4-ns measure lh-copy mt0">
-                  Code isn't for making a developers life easier. It's for
-                  improving the lives of our users. If it's not doing that, why
-                  write it. A developer's time is not precious. A user's time is.
-                </p>
-              </article>
-              <article class="pv2">
-                <h2 class="f4 f3-ns fw6 mb0">Designing in the browser should be easy</h2>
-                <p class="f5 f4-ns measure lh-copy mt0">
-                  If a computer can do it, you shouldn't have to.
-                </p>
-              </article>
-              <article class="pv2">
+              <div class="cf">
+                <article class="pv2 fl w-100 w-50-ns pr0 pr2-ns">
+                  <h2 class="f4 f3-ns fw6 mb0">Responsive</h2>
+                  <p class="f5 measure lh-copy mt0">
+                    Everything should be 100% responsive. Your website should work regardless of a users
+                    device or screensize. Don't break the functionality of HTML with CSS.
+                  </p>
+                </article>
+                <article class="pv2 fl w-100 w-50-ns pl0 pl2-ns">
+                  <h2 class="f4 f3-ns fw6 mb0">Readable</h2>
+                  <p class="f5 measure lh-copy mt0">
+                    No matter the lighting, or the device, font-sizes should be
+                    large enough and contrast should be high enough.
+                  </p>
+                </article>
+              </div>
+              <div class="cf">
+                <article class="pv2 fl w-100 w-50-ns pr0 pr2-ns">
+                  <h2 class="f4 f3-ns fw6 mb0">Performant</h2>
+                  <p class="f5 measure lh-copy mt0">
+                    Code isn't for making a developers life easier. It's for
+                    improving the lives of our users. If it's not doing that, why
+                    write it. A developer's time is not precious. A user's time is.
+                    Code should be optimized for performance.
+                  </p>
+                </article>
+                <article class="pv2 fl w-100 w-50-ns pl0 pl2-ns">
+                  <h2 class="f4 f3-ns fw6 mb0">Easy</h2>
+                  <p class="f5 measure lh-copy mt0">
+                    Designing in the browser should be easy.
+                    If a computer can do it, you shouldn't have to.
+                  </p>
+                </article>
+             </div>
+              <div class="cf">
+              <article class="pv2 fl w-100 w-50-ns pr0 pr2-ns">
                 <h2 class="f4 f3-ns fw6 mb0">
-                  Doing one thing extremely well promotes reusability
+                  Reusable
                 </h2>
-                <p class="f5 f4-ns measure lh-copy mt0">
-                  Single purpose classes that are easy to remember and won't add weight to the cascade. Spend less time debugging and more time building.
+                <p class="f5 measure lh-copy mt0">
+                  Doing one thing well, promotes reusability and reduces redundancy in a codebase.
                 </p>
               </article>
-              <article class="pv2">
+              <article class="pv2 fl w-100 w-50-ns pl0 pl2-ns">
                 <h2 class="f4 f3-ns fw6 mb0">
-                  Modules > Monoliths
+                  Modular
                 </h2>
-                <p class="f5 f4-ns measure lh-copy mt0">
-                  Tachyons isn't a monolithic framework. It's a collection of 0 self contained modules
-                  that can be mixed and matched or used independently. Pick what you want, leave the rest.
+                <p class="f5 measure lh-copy mt0">
+                  Modules &gt; Monoliths
+                  Tachyons isn't a monolithic framework. It's a collection of self contained modules
+                  that can be mixed and matched or used independently. Use what you want, leave what you don't.
                 </p>
               </article>
+             </div>
+              <div class="cf">
             </section>
             <h1 class="f4 ttu fw4 mtx tracked">Features</h1>
-            <section class="list pln lh-copy mt0">
-              <article class="pv2">
+            <section class="list pl0 lh-copy mt0 cf">
+              <article class="pv2 fl w-100 w-50-ns pr0 pr2-ns">
                 <h2 class="f4 f3-ns fw6 mb0 mv0">
-                  Runs on Postcss
+                  Runs on <a href="https://github.com/postcss/postcss" class="link dim near-black">Postcss</a>
                 </h2>
-                <p class="mv0 f5 f4-ns lh-copy measure">
-                  A flexible plugin framework for preprocessing css.
-                  <a href="https://github.com/postcss/postcss" class="link
+                <p class="mv0 f5 lh-copy measure">
+                  A flexible plugin framework for post-processing css.
+                  <a href="https://github.com/postcss/postcss" class="link dn
                     dim f6 db mid-gray">View on Github</a>
                 </p>
                 </article>
-                <article class="pv2">
-                  <h2 class="f4 f3-ns fw6 mb0">Mobile-first css architecture </h2>
-                  <p class="f5 f4-ns measure lh-copy mt0">
+                <article class="pv2 fl w-100 w-50-ns pl0 pl2-ns">
+                  <h2 class="f4 f3-ns fw6 mv0">Mobile-first architecture </h2>
+                  <p class="f5 measure lh-copy mt0">
                     Base classes are mobile by default. Can be overridden by
                     namespaced classes targeting larger breakpoints.
                   </p>
                 </article>
-                <article class="pv2">
-
-                <h2 class="f4 f3-ns fw6 mb0 mvn">
-                  Default colors for rapid theming
-                </h2>
-                <p class="f5 f4-ns measure lh-copy mt0">
-                  Who cares about colors. Unless you're painting a bikeshed.
-                </p>
-
-                </article>
-                <article class="pv2">
-                  <h2 class="f4 f3-ns fw6 mb0">
-                    CSS layout debugging utilities.
+                <article class="pv2 fl w-100 w-50-ns pr0 pr2-ns">
+                  <h2 class="f4 f3-ns fw6 mv0">
+                    Layout debugging
                   </h2>
-                  <p class="f5 f4-ns measure lh-copy mt0">
+                  <p class="f5 measure lh-copy mt0">
                     Small css modules for debugging stacking and layout issues.
                     Can easily be turned on or off during development.
                   </p>
                 </article>
-              <article class="pv2">
-                <h2 class="f4 f3-ns fw6 mb0">
+              <article class="pv2 fl w-100 w-50-ns pl0 pl2-ns">
+                <h2 class="f4 f3-ns fw6 mv0">
                   Composable classes
                 </h2>
-                <p class="f5 f4-ns measure lh-copy mt0">
+                <p class="f5 measure lh-copy mt0">
                   Construct anything from complex layouts to responsive components with a series of
                   single purpose classes.
                 </p>
               </article>
-              <article class="pv2">
-                <h2 class="f4 f3-ns fw6 mb0 mvn">Ratio-based scale design systems</h2>
-                <p class="f5 f4-ns f3-ns measure lh-copy mt0">
-                  Powers of two. Starting at .25
+              <article class="pv2 fl w-100 w-50-ns pr0 pr2-ns">
+                <h2 class="f4 f3-ns fw6 mv0">Cohesive design system</h2>
+                <p class="f5 measure lh-copy mt0">
+                  Scale based on the powers of two. Starting at .25
                 </p>
               </article>
-              <article class="pv2">
-                <h2 class="f4 f3-ns fw6 mb0">
-                  Easy to customize or extend
-                </h2>
-                <p class="f5 f4-ns measure lh-copy mt0">
-                  Tachyons is meant to be edited and customized to meet the needs of your product. It's just css. It isn't precious.
-                  Don't be afraid to add new modules, media queries, breakpoints, or values to existing modules.
-                </p>
-                </article>
-              <article class="pv2">
-                <h2 class="f4 f3-ns fw6 mb0">Responsive Grid</h2>
-                <p class="f5 f4-ns measure lh-copy mt0">
+              <article class="pv2 fl w-100 w-50-ns pl0 pl2-ns">
+                <h2 class="f4 f3-ns fw6 mv0">Responsive Grid</h2>
+                <p class="f5 measure lh-copy mt0">
                   Infinitely nestable. Fully fluid. Extremely light-weight.
                 </p>
               </article>
+              <article class="pv2 fl w-100 w-50-ns pr0 pr2-ns">
+                <h2 class="f4 f3-ns fw6 mv0">
+                  Customize, or extend
+                </h2>
+                <p class="f5 measure lh-copy mt0">
+                  Tachyons is meant to be edited and customized to meet the
+                  needs of your product. It's just css. It isn't precious.
+                  Don't be afraid to change: class names, media queries,
+                  breakpoints, or values.
+                </p>
+                </article>
             </section>
           </div>
         </div>
@@ -186,7 +188,7 @@ npm install &amp;&amp; npm build
           <h1 class="f5 fw6 ttu tracked">Testimonials</h1>
           <div class="cf w-100">
             <blockquote class="fl w-100 w-50-ns mh0 pr0 pr3-ns border-box">
-              <p class="f6 f5-ns measure lh-copy pr1 pr0-l">
+              <p class="f6 f5-ns measure lh-copy pr1 pr0-l i">
                 After I embraced the “lots of little classes” way of styling, my anger at CSS
                 almost completely went away and I was much more easily able to style and modify
                 a design... you really have to try it.
@@ -198,7 +200,7 @@ npm install &amp;&amp; npm build
               </footer>
             </blockquote>
             <blockquote class="fl w-100 w-50-ns mh0 mb2 mb5-ns pl0 pl3-ns border-box">
-              <p class="f6 f5-ns measure lh-copy">
+              <p class="f6 f5-ns measure lh-copy i">
                   It turns out composing utilities together like that is a really nice way to style things.
                   Adam Morse has taken this to its logical conclusion with Tachyons...
               </p>
@@ -211,7 +213,7 @@ npm install &amp;&amp; npm build
           </div>
           <div class="cf w-100">
             <blockquote class="fl w-100 w-50-ns mh0 mb2 mb5-ns pr0 pr3-ns border-box">
-              <p class="f6 f5-ns measure lh-copy">
+              <p class="f6 f5-ns measure lh-copy i">
                 It seems silly at first to write code that looks like inline HTML
                 styling but Tachyons works. Instead of wasting time hunting down
                 and dealing with CSS overrides, I now spend time iterating on the
@@ -225,7 +227,7 @@ npm install &amp;&amp; npm build
               </footer>
             </blockquote>
             <blockquote class="fl w-100 w-50-ns mh0 pl0 pl3-ns border-box">
-              <p class="f6 f5-ns measure lh-copy pl1 pl0-l">
+              <p class="f6 f5-ns measure lh-copy pl1 pl0-l i">
 I’ve found extremely low-level “frameworks” like BassCSS and Tachyons useful recently. They let you do the whole “just add and remove classes to create elements” thing but also don’t lock you into the constraints and issues of higher level frameworks like Bootstrap.
               </p>
               <footer>
@@ -237,7 +239,7 @@ I’ve found extremely low-level “frameworks” like BassCSS and Tachyons usef
           </div>
           <div class="cf w-100">
             <blockquote class="fl w-100 w-50-ns mh0 mb2 mb5-ns pr0 pr3-ns border-box">
-              <p class="f6 f5-ns measure lh-copy">
+              <p class="f6 f5-ns measure lh-copy i">
                 CSS frameworks shouldn't be one-size-fits-all. Tachyons nails it
                 with its modular approach, eliminating bloat from day one.
               </p>
@@ -248,7 +250,7 @@ I’ve found extremely low-level “frameworks” like BassCSS and Tachyons usef
               </footer>
             </blockquote>
             <blockquote class="fl w-100 w-50-ns mh0 mb2 mb5-ns pl0 pl3-ns border-box">
-              <p class="f6 f5-ns measure lh-copy">
+              <p class="f6 f5-ns measure lh-copy i">
                 Tachyons nails everything you need from a CSS framework.
                 Development goes faster, designs are more consistent, and best of
                 all it’s a ton of fun to play with.
@@ -262,7 +264,7 @@ I’ve found extremely low-level “frameworks” like BassCSS and Tachyons usef
           </div>
           <div class="cf w-100">
             <blockquote class="fl w-100 w-50-ns mh0 mb2 mb5-ns pr0 pr3-ns border-box">
-              <p class="f6 f5-ns measure lh-copy">
+              <p class="f6 f5-ns measure lh-copy i">
                 I never understood how people did font ratios and table layouts nicely with CSS until @mrmrs showed me the light.
               </p>
               <footer>
@@ -272,7 +274,7 @@ I’ve found extremely low-level “frameworks” like BassCSS and Tachyons usef
               </footer>
             </blockquote>
             <blockquote class="fl w-100 w-50-ns pl0 Pl3-ns mh0 border-box">
-              <p class="f6 f5-ns i measure lh-copy pr1 pr0-l">
+              <p class="f6 f5-ns i measure lh-copy pr1 pr0-l i">
                 Tachyons enabled the aboutLife team to more easily reason
                 about, debug, and change visual styles all while thinking
                 _less_ about CSS. We’re able to achieve our desired
@@ -280,7 +282,7 @@ I’ve found extremely low-level “frameworks” like BassCSS and Tachyons usef
               </p>
               <footer>
                 <p>
-                  <span class="b">Parsha</span> - <i>Software Engineer</i>
+                  <span class="b">Parsha Pourkhomami</span> - <i>Software Engineer</i>
                 </p>
               </footer>
             </blockquote>
@@ -291,13 +293,14 @@ I’ve found extremely low-level “frameworks” like BassCSS and Tachyons usef
         <div class="fl w-100">
           <div class="">
           <h3 class="f5 fw6 ttu tracked"><a href="#npm" class="link mid-gray">Tachyons on NPM</a></h3>
-          <p class="f4 f3-ns lh-copy mt0 mb4 measure">
-            Tachyons is just a series of css modules. They are available on npm and github so that you can
-            mix and match to suit your project's needs. Since tachyons module architecture optimizes for gzip compression
+          <p class="f5 f3-ns lh-copy mt0 mb4 measure">
+            The main tachyons repo is just a group of of encapsulated css modules available on npm and github.
+            You can grab the entire toolkit, or just a few selected modules.
+            Mix and match them to suit your project's specific needs. Since tachyons modules are very focused on doing one thing well,
             most of them are extremely small (well under a kilobyte) so you
-            can start using them without adding bloat to your css.
+            can start using some or all of them without adding bloat to your css.
           </p>
-        <code class="db mb4 ba b--light-gray f6 ph2 pv3" style="background-color: #d1ffff;">npm install --save-dev tachyons-module-name</code>
+        <code class="dib mb4 ba b--light-gray f6 ph2 pv3" style="background-color: #d1ffff;">npm install --save-dev tachyons-module-name</code>
         </div>
         <div class=" mb3 fl w-100 w-50-m w-33-l">
           <a class="db f4 link mb1 dim near-black  b" href="http://npmjs.com/package/tachyons-background-size">tachyons-background-size </a>
