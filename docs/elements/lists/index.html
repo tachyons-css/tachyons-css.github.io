@@ -4,15 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>
-      White Space / Typography / Docs / TACHYONS
+      tachyons-lists / General / Docs / TACHYONS
     </title>
-    <meta name="author" content="@mr3rs">
+    <meta name="author" content="@mrmrs">
     <meta name="description" content="CSS">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/tachyons.css">
+    <link rel="stylesheet" href="/css/tachyons.min.css">
   </head>
   <body class="w-100 sans-serif">
-
     <header class="w-100 pa3 ph5-ns bg-near-white">
   <div class="dt w-100">
     <div class="dtc v-mid tl w-50">
@@ -43,17 +42,17 @@
 
     <main class="">
       <article class="bg-near-white bt b--black-10 pa3 ph5-ns">
-        <h4 class="f4 mv0 fw6 dib mr4">tachyons-white-space</h4>
+        <h4 class="f4 mv0 fw6 dib mr4">tachyons-lists</h4>
         <span class="f4 b dib pl0 ml0 mr4">v2.0.3</span>
-        <span class="f4 b dib pl0 ml0 mr4">154 B</span>
+        <span class="f4 b dib pl0 ml0 mr4">46 B</span>
         <div>
             <dl class="dib mr4 mt0">
               <dt class="f6 db">Declarations </dt>
-              <dd class="db pl0 ml0 f4 f2-ns b">12</span></dd>
+              <dd class="db pl0 ml0 f4 f2-ns b">1</span></dd>
             </dl>
             <dl class="dib mr4">
               <dt class="f6 db pr2">Selectors </dt>
-              <dd class="db pl0 ml0 f4 f2-ns b">12</dd>
+              <dd class="db pl0 ml0 f4 f2-ns b">1</dd>
             </dl>
             <dl class="dib mr4">
               <dt class="f6 db pr2">Max. Specificity Score </dt>
@@ -65,125 +64,52 @@
             </dl>
         </div>
         <p class="measure f4 f3-ns lh-copy">
-          White space in css is used to control how whitespace is rendered. Creative, I know.
-        </p>
-        <p class="measure f5 f4-ns lh-copy">
-          <b>Normal</b> supresses white space characters and breaks lines based on the width of the element
-or the placement of a br tag.<br>
-          <b>Nowrap</b> will keep all text on one line - often used in conjunction with truncation or a scrollbar. This can be useful
-for displaying unix style commands where indicating everything is on one line is important for clarity.<br>
-          <b>Pre</b> will preserve all whitespace and linebreaks. This is useful for displaying code or poetry. Simulates the rendering of the pre tag.
+          Tachyons has some basic list styling utilities for removing or tweaking default list styles.
         </p>
       </article>
 <div class="ph3 ph5-ns pt4 pb5">
-  <h2 class="f4 bold">Examples</h2>
-<p class="f5 f4-ns measure lh-copy">This text is formatted the same way in the source and printed three times, with the only difference being which white-space class is attached.</p>
-  <h3 class="f5 book pt4 code">.ws-normal</h3>
-  <p class="ws-normal measure">
-
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-
-      tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-
-        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-
-    no sea
-      takimata
-    sanctus est
-
-              Lorem
-
-    ipsum dolor sit amet.
-
-  </p>
-  <h3 class="f5 book pt4 code">.nowrap</h3>
-  <p class="nowrap measure">
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-
-      tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-
-        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-
-    no sea
-      takimata
-    sanctus est
-
-              Lorem
-
-    ipsum dolor sit amet.
-
-  </p>
-  <h3 class="f5 book pt4 code">.pre</h3>
-  <p class="pre measure">
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-
-      tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-
-        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-
-    no sea
-      takimata
-    sanctus est
-
-              Lorem
-
-    ipsum dolor sit amet.
-
-  </p>
+  <h2 class="f3 bold">Examples</h2>
+  <ul>
+    <li>Apples</li>
+    <li>Oranges</li>
+    <li>Banana</li>
+    <li>Golf balls</li>
+  </ul>
+  <ul class="list-reset pl0">
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+    <li>Four</li>
+  </ul>
   <div class="mt5 cf">
     <div class="dib mr4">
       <h1 class="f4 ttu tracked fw6">Previous</h1>
-      <a href="/docs/typography/text-decoration/" class="link fw6 blue dim">Text Decoration</a>
+      <a href="/docs/layout/position/" class="link fw6 blue dim">Position</a>
     </div>
-    <div class="dib mr4">
+    <div class="dib">
       <h1 class="f4 ttu tracked fw6">Next</h1>
-      <a href="/docs/layout/box-sizing/" class="link fw6 blue dim">Box Sizing</a>
+      <a href="/docs/themes/background-size/" class="link fw6 blue dim">Background Size</a>
     </div>
   </div>
   <div class="mt5">
     <h1 class="f4 ttu tracked fw6">Reference</h1>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/white-space" class="link fw6 blue dim">MDN - White Space</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/%3Ahover" class="link db fw6 blue dim">MDN - Hover</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/%3Afocus" class="link db fw6 blue dim">MDN - Focus</a>
   </div>
 </div>
       <section class="bg-near-white black-70 pt4 pb5">
 <header class="ph3 ph5-ns pt4">
-        <kbd class="yellow">src/_white-space.css</kbd>
+        <kbd class="yellow">src/_lists.css</kbd>
 </header>
 <pre class="ph3 ph5-ns">
 <code class="code" style="font-size: .75rem;">
-@custom-media --breakpoint-not-small screen and (min-width: 48em);
-@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
-@custom-media --breakpoint-large screen and (min-width: 64em);
-
 /*
 
-   WHITE SPACE
+   LISTS
 
 */
 
-
-.ws-normal { white-space: normal; }
-.nowrap { white-space: nowrap; }
-.pre { white-space: pre; }
-
-@media (--breakpoint-not-small) {
-  .ws-normal-ns { white-space: normal; }
-  .nowrap-ns { white-space: nowrap; }
-  .pre-ns { white-space: pre; }
-}
-
-@media (--breakpoint-medium) {
-  .ws-normal-m { white-space: normal; }
-  .nowrap-m { white-space: nowrap; }
-  .pre-m { white-space: pre; }
-}
-
-@media (--breakpoint-large) {
-  .ws-normal-l { white-space: normal; }
-  .nowrap-l { white-space: nowrap; }
-  .pre-l { white-space: pre; }
-}
-
+.list {         list-style-type: none; }
 
 </code>
 </pre>
