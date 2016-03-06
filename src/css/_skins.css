@@ -115,10 +115,6 @@
 .near-white {    color: var(--near-white); }
 .white {         color: var(--white); }
 
-.blue { color: var(--blue); }
-.bg-blue { background-color: var(--blue); }
-
-
 /* Background colors */
 
 .bg-black {         background-color: var(--black); }
