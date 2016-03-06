@@ -225,6 +225,7 @@ var size = filesize(gzip.sync(fs.readFileSync('css/tachyons.min.css', 'utf8')))
 var template = fs.readFileSync('./src/templates/index.html', 'utf8')
 var siteFooter = fs.readFileSync('./src/templates/footer.html', 'utf8')
 var siteHeader = fs.readFileSync('./src/templates/header.html', 'utf8')
+var head = fs.readFileSync('./src/templates/head.html', 'utf8')
 var navDocs = fs.readFileSync('./src/templates/nav_docs.html', 'utf8')
 
 var tpl = _.template(template)
@@ -234,6 +235,7 @@ var html = tpl({
   modulesCount: filesCount,
   siteFooter: siteFooter,
   siteHeader: siteHeader,
+  head: head,
   backgroundSizeVersion: backgroundSize.version,
   backgroundSizeSize: backgroundSizeSize,
   baseVersion: base.version,
