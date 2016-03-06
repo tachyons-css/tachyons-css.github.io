@@ -4,7 +4,7 @@ Documentation for Tachyons -- a performant, mobile-first, and 100% responsive mo
 
 #### Stats
 
-12244 | 1412 | 1573
+12264 | 1414 | 1575
 ---|---|---
 bytes | selectors | declarations
 
@@ -880,6 +880,8 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .light-gray { color: #eee; }
 .near-white { color: #f4f4f4; }
 .white { color: #fff; }
+.blue { color: #0074D9; }
+.bg-blue { background-color: #0074D9; }
 /* Background colors */
 .bg-black { background-color: #111; }
 .bg-near-black { background-color: #111; }

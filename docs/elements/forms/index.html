@@ -4,14 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>
-      tachyons-clears / Layout / Docs / TACHYONS
+      Forms / Themes / Docs / TACHYONS
     </title>
     <meta name="author" content="@mrmrs">
-    <meta name="description" content="">
+    <meta name="description" content="CSS">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/tachyons.min.css">
+    <link rel="stylesheet" href="/css/tachyons.css">
   </head>
   <body class="w-100 sans-serif">
+
     <header class="w-100 pa3 ph5-ns bg-near-white">
   <div class="dt w-100">
     <div class="dtc v-mid tl w-50">
@@ -42,9 +43,9 @@
 
     <main class="">
       <article class="bg-near-white bt b--black-10 pa3 ph5-ns">
-        <h4 class="f4 mv0 fw6 dib mr4">tachyons-clears</h4>
-        <span class="f4 b dib pl0 ml0 mr4">v2.0.3</span>
-        <span class="f4 b dib pl0 ml0 mr4">92 B</span>
+        <h4 class="f4 mv0 fw6 dib mr4">tachyons-forms</h4>
+        <span class="f4 b dib pl0 ml0 mr4">v2.0.1</span>
+        <span class="f4 b dib pl0 ml0 mr4">94 B</span>
         <div>
             <dl class="dib mr4 mt0">
               <dt class="f6 db">Declarations </dt>
@@ -52,76 +53,70 @@
             </dl>
             <dl class="dib mr4">
               <dt class="f6 db pr2">Selectors </dt>
-              <dd class="db pl0 ml0 f4 f2-ns b">4</dd>
+              <dd class="db pl0 ml0 f4 f2-ns b">2</dd>
             </dl>
             <dl class="dib mr4">
               <dt class="f6 db pr2">Max. Specificity Score </dt>
-              <dd class="db pl0 ml0 f4 f2-ns b">11</dd>
+              <dd class="db pl0 ml0 f4 f2-ns b">10</dd>
             </dl>
             <dl class="dib mr4">
               <dt class="f6 db pr2">Size of Avg. Rule </dt>
-              <dd class="db pl0 ml0 f4 f2-ns b">1.3333333333333333</dd>
+              <dd class="db pl0 ml0 f4 f2-ns b">2</dd>
             </dl>
         </div>
         <p class="measure f4 f3-ns lh-copy">
-          When floats are used for layouts - they need a clearfix solution. This helps prevent
-          layout problems caused by the elements being removed from the block context of the
-          surrounding elements.
+          Tachyons has some basic form control resets to remove default styles for mobile devices.
         </p>
       </article>
 <div class="ph3 ph5-ns pt4 pb5">
-  <h2 class="f3 b">Examples</h2>
-  <h3 class="f4">Cleared Floats</h3>
-  <p class="measure lh-copy">
-    This example shows two floated elements wrapped in an element with a 4px solid red border.
-    In the top version where the floats are cleared, the red element wraps around the elements.
-    In the second example - the parent element is collapsed and the two floated elements sit outside of it.
-    It should be noted you don't have to clear floated elements that are inside another floated element.
-  </p>
-  <div class="cf" style="outline: 8px solid red;">
-    <div class="fl w-50 pv4" style="background: rgba(0,20,120,.6)"></div>
-    <div class="fl w-50 pv4" style="background: rgba(0,50,80,.6)"></div>
-  </div>
-  <h3 class="f4">UnCleared Floats</h3>
-  <div style="outline: 8px solid red;">
-    <div class="fl w-50 pv4" style="background: rgba(0,20,120,.6)"></div>
-    <div class="fl w-50 pv4" style="background: rgba(0,50,80,.6)"></div>
-  </div>
+  <h2 class="f3 bold">Examples</h2>
+<form>
 
+  <code class="f6 db">.input-reset</code>
+  <input type="text" name="" value="" id="" class="input-reset">
+
+  <code class="f6 db">.input-reset br2 pa2 ba b--light-gray</code>
+  <input type="text" name="" value="" id="" class="input-reset br2 ba b--light-gray pa2">
+
+</form>
   <div class="mt5 cf">
     <div class="dib mr4">
       <h1 class="f4 ttu tracked fw6">Previous</h1>
-      <a href="/docs/layout/floats/" class="link fw6 blue dim">Floats</a>
+      <a href="/docs/layout/position/" class="link fw6 blue dim">Position</a>
     </div>
     <div class="dib">
       <h1 class="f4 ttu tracked fw6">Next</h1>
-      <a href="/docs/layout/display/" class="link fw6 blue dim">Display</a>
+      <a href="/docs/themes/background-size/" class="link fw6 blue dim">Background Size</a>
     </div>
   </div>
   <div class="mt5">
     <h1 class="f4 ttu tracked fw6">Reference</h1>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clears" class="link fw6 blue dim">MDN - Clears</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/%3Ahover" class="link db fw6 blue dim">MDN - Hover</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/%3Afocus" class="link db fw6 blue dim">MDN - Focus</a>
   </div>
 </div>
       <section class="bg-near-white black-70 pt4 pb5">
 <header class="ph3 ph5-ns pt4">
-        <kbd class="yellow">src/_clearfix.css</kbd>
+        <kbd class="yellow">src/_links.css</kbd>
 </header>
 <pre class="ph3 ph5-ns">
 <code class="code" style="font-size: .75rem;">
 /*
 
-   CLEARS
+   FORMS
 
 */
 
-/* Nicolas Gallaghers Clearfix solution
-   Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.input-reset {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
 
-.cf:before,
-.cf:after { content: " "; display: table; }
-.cf:after { clear: both; }
-.cf {       *zoom: 1; }
+.input-invisible {
+  outline: 0;
+  border: 0;
+}
+
 
 </code>
 </pre>
@@ -175,7 +170,7 @@
 </div>
 
     </main>
-      <footer class="bg-near-white mid-gray ph3 ph5-ns pv5 pv6-ns bt b--light-gray">
+    <footer class="bg-near-white mid-gray ph3 ph5-ns pv5 pv6-ns bt b--light-gray">
   <a href="https://twitter.com/intent/tweet?text=Tachyons: Functional CSS for Humans.&url=http://tachyons.io" target="_blank" class="dn mb3 twitter bg-white link dim br2 ph2 pb1 pt0 lh-solid" style="background-color: #55acee;">
     <svg class="geomicon dib v-mid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="#fff">
       <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
@@ -222,7 +217,6 @@ ga('create', 'UA-55773803-1', 'auto');
 ga('send', 'pageview');
 
     </script>
-
 
   </body>
 </html>

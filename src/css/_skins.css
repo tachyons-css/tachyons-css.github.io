@@ -46,6 +46,8 @@
   --near-white: #f4f4f4;
   --white: #fff;
 
+  --blue: #0074D9;
+
 }
 
 
@@ -112,6 +114,9 @@
 .light-gray {    color: var(--light-gray); }
 .near-white {    color: var(--near-white); }
 .white {         color: var(--white); }
+
+.blue { color: var(--blue); }
+.bg-blue { background-color: var(--blue); }
 
 
 /* Background colors */
