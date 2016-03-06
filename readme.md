@@ -4,7 +4,7 @@ Documentation for Tachyons -- a performant, mobile-first, and 100% responsive mo
 
 #### Stats
 
-12244 | 1412 | 1573
+12343 | 1424 | 1585
 ---|---|---
 bytes | selectors | declarations
 
@@ -1110,8 +1110,8 @@ code, .code { font-family: Consolas, monaco, monospace; }
 
 */
 /* For Hero Titles */
-.f-6-ns, .f-headline { font-size: 6rem; }
-.f-5-ns, .f-subheadline { font-size: 5rem; }
+.f-6, .f-headline { font-size: 6rem; }
+.f-5, .f-subheadline { font-size: 5rem; }
 /* Type Scale */
 .f1 { font-size: 3rem; }
 .f2 { font-size: 2.25rem; }
@@ -1205,6 +1205,14 @@ code, .code { font-family: Consolas, monaco, monospace; }
 */
 .hide-child .child { opacity: 0; transition: opacity .15s ease-in; }
 .hide-child:hover  .child, .hide-child:focus  .child, .hide-child:active .child { opacity: 1; transition: opacity .15s ease-in; }
+/*
+
+  WORD BREAK
+
+*/
+.wb-normal { word-break: normal; }
+.word-wrap { word-break: break-all; }
+.word-nowrap { word-break: keep-all; }
 /*
 
   STYLES
@@ -1501,6 +1509,9 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .v-mid-ns { vertical-align: middle; }
  .v-top-ns { vertical-align: top; }
  .v-btm-ns { vertical-align: bottom; }
+ .wb-normal-ns { word-break: normal; }
+ .word-wrap-ns { word-break: break-all; }
+ .word-nowrap-ns { word-break: keep-all; }
 }
 @media screen and (min-width: 48em) and (max-width: 64em) {
  .bg-cv-m { background-size: cover; }
@@ -1781,6 +1792,9 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .v-mid-m { vertical-align: middle; }
  .v-top-m { vertical-align: top; }
  .v-btm-m { vertical-align: bottom; }
+ .wb-normal-m { word-break: normal; }
+ .word-wrap-m { word-break: break-all; }
+ .word-nowrap-m { word-break: keep-all; }
 }
 @media screen and (min-width: 64em) {
  .bg-cv-l { background-size: cover; }
@@ -2061,6 +2075,9 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .v-mid-l { vertical-align: middle; }
  .v-top-l { vertical-align: top; }
  .v-btm-l { vertical-align: bottom; }
+ .wb-normal-l { word-break: normal; }
+ .word-wrap-l { word-break: break-all; }
+ .word-nowrap-l { word-break: keep-all; }
 }
 ```
 
