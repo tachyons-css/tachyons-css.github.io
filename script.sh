@@ -1,5 +1,5 @@
 repos=(
-  "home.js"
+  "src/home-build.js"
   "lib/docs.js"
   "lib/background-size.js"
   "lib/border-radius.js"
