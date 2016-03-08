@@ -44,6 +44,9 @@ module.exports = function () {
       frontMatter.componentHtml = componentHtml
       frontMatter.content = fmParsed.body
       frontMatter.escapedHtml = escapeHtml(fmParsed.body)
+      frontMatter.footer = fs.readFileSync('src/templates/footer.html', 'utf8')
+      frontMatter.analytics = fs.readFileSync('src/templates/ga.html', 'utf8')
+      frontMatter.head = fs.readFileSync('src/templates/head.html', 'utf8')
 
       var moduleSrcs = {}
       var getModules = postcss.plugin('get-modules', function () {

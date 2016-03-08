@@ -1,67 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <title>TACHYONS - <%= title %></title>
-<meta name="author" content="@mrmrs">
 <meta name="description" content="Tachyons Component">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/css/tachyons.min.css">
+  <%= head %>
 </head>
 <body class="w-100 sans-serif <%= bodyClass %>">
 <main>
   <%= content %>
-  <h4>Stats</h4>
-  <pre>
-<%= stats.gzipSize %> | <%= stats.selectors.total %> | <%= stats.declarations.total %>
----|---|---
-bytes | selectors | declarations
+  <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70" style="background: #fafafa;">
+  <h2 class="f5">Module CSS Stats</h2>
+  <dl class="dib mr4">
+    <dt class="db f6">Size (Gzipped)</dt>
+    <dd class="ml0 b f3 f2-ns"><%= stats.gzipSize %></dd>
+  </dl>
+  <dl class="dib mr4">
+    <dt class="db f6">Selectors</dt>
+    <dd class="ml0 b f3 f2-ns"><%= stats.selectors.total %></dd>
+  </dl>
+  <dl class="dib">
+    <dt class="db f6">Declarations</dt>
+    <dd class="ml0 b f3 f2-ns"><%= stats.declarations.total %></dd>
+  </dl>
+
+
+  <h2 class="f5">HTML</h2>
+
+<pre class="pa3 ba br2 b--black-05">
+<%= escapedHtml %>
+</pre>
+  <h4>CSS</h4>
+  <pre class="pa3 ba br2 b--black-05">
+    <%= componentCss %>
   </pre>
 
-  <h1>HTML used</h1>
-  <pre>
-    <%= escapedHtml %>
-  </pre>
-  <h1>Classes used</h1>
-  <ul class="list pl0 lh-copy">
-    <% classes.map(renderClass) %>
-  </ul>
-
-  <h1>Referenced modules</h1>
-  <ul class="list pl0 lh-copy">
+  <h2 class="f5 mt5">Modules</h2>
+  <ul class="list pl0 cf lh-copy mw7">
     <% modules.map(renderModule) %>
   </ul>
+
+
+  <% function renderModule(module) { %>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/<%= module %>"><%= module %></a></li>
+  <% } %>
+
+
+  <h4 class="mt5">Install these modules via npm</h4>
+  <code>npm i --save <%= modules.join(' ') %></code>
+  </section>
+</main>
 
   <% function renderClass(klass) { %>
     <li><%= klass %></li>
   <% } %>
 
-  <% function renderModule(module) { %>
-    <li><a href="https://github.com/tachyons-css/<%= module %>"><%= module %></a></li>
-  <% } %>
-
-  <ul>
-    <% modules.map(renderModule) %>
-  </ul>
-
-  <h4>CSS</h4>
-  <pre>
-    <%= componentCss %>
-  </pre>
-
-  <h4>Install via npm</h4>
-  <code>npm i --save <%= modules.join(' ') %></code>
-</main>
-
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-55773803-1', 'auto');
-ga('send', 'pageview');
-</script>
+  <%= footer %>
+  <%= analytics %>
 </body>
 </html>
 
