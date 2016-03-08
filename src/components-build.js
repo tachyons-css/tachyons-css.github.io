@@ -5,6 +5,7 @@ var mkdirp = require('mkdirp')
 var glob = require('glob')
 var titleize = require('titleize')
 var fm = require('json-front-matter')
+var escapeHtml = require('escape-html')
 var rmHtmlExt = require('remove-html-extension')
 var getClasses = require('get-classes-from-html')
 var postcss = require('postcss')
@@ -42,6 +43,7 @@ module.exports = function () {
       })
       frontMatter.componentHtml = componentHtml
       frontMatter.content = fmParsed.body
+      frontMatter.escapedHtml = escapeHtml(fmParsed.body)
 
       var moduleSrcs = {}
       var getModules = postcss.plugin('get-modules', function () {
