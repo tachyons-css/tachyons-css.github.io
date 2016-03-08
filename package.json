@@ -17,6 +17,7 @@
     "url": "https://github.com/tachyons-css/tachyons-css.github.io/issues"
   },
   "dependencies": {
+    "escape-html": "^1.0.3",
     "tachyons-background-size": "^3.0.2",
     "tachyons-base": "^1.2.2",
     "tachyons-border-colors": "^4.0.4",
