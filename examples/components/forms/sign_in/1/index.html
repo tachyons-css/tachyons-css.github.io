@@ -5,268 +5,559 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <title>TACHYONS - Forms Sign In 1</title>
 <meta name="author" content="@mrmrs">
-<meta name="description" content="Sign In Component">
+<meta name="description" content="Tachyons Component">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/css/tachyons.min.css">
 </head>
-<body class="wi-100 sans-serif bg-dark-purple">
+<body class="w-100 sans-serif bg-black">
 <main>
-  <form action="index_submit" method="get" accept-charset="utf-8" class="pvl mvxl">
-  <fieldset class="center mw6-ns phm phl-ns bn">
-    <legend class="bold ttu tracked-mega plm pln-ns pvm f3-ns lightest-purple dn">Sign In</legend>
+  <form action="index_submit" method="get" accept-charset="utf-8" class="pv4 mv5">
+  <fieldset class="center mw6-ns ph3 ph4-ns bn">
+    <legend class="bold ttu tracked-mega pl3 pl0-ns pv3 f3-ns lightest-purple dn">Sign In</legend>
     <div class="mtm">
-      <label class="small mbs plm pln-ns ttu tracked-mega db" for="Username">Username</label>
-      <input class="f3 semibold input-text plm pvm db ba white-80 b--white-20 w-100 bg-white-05 bg-white-10-focus" type="text" name="Username" value="" id="Username" >
+      <label class="f6 mb2 pl3 pl0-ns ttu tracked-mega db" for="Username">Username</label>
+      <input class="f3 fw6 input-reset pl3 pv3 db ba white-80 b--white-20 w-100 bg-white-05 bg-white-10-focus" type="text" name="Username" value="" id="Username" >
     </div>
     <div class="mtl">
-      <label class="small mbs plm pln-ns ttu tracked-mega db" for="Username">Password</label>
-      <input class="f3 semibold input-text plm pvm db ba b--white-20 w-100 white-60 bg-white-05 bg-white-10-focus" type="password" name="password" value="" id="password" >
+      <label class="f6 mb2 pl3 pl0-ns ttu tracked-mega db" for="Username">Password</label>
+      <input class="f3 fw6 input-reset pl3 pv3 db ba b--white-20 w-100 white-60 bg-white-05 bg-white-10-focus" type="password" name="password" value="" id="password" >
     </div>
     <div class="mtl dt">
       <div class="dtc w-50 wi-25-ns v-mid">
-        <input class="input-text bg-white-05 lightest-purple pam brs semibold ba b--white-20 ttu tracked-mega bg-white-10-focus" type="submit" value="Sign In">
+        <input class="input-reset bg-white-05 lightest-purple pa3 brs fw6 ba b--white-20 ttu tracked-mega bg-white-10-focus" type="submit" value="Sign In">
       </div>
       <div class="dtc w-50 wi-75-ns v-mid">
-          <a class="link dim db lightest-purple pvxs" href="#">Sign Up</a>
-          <a class="link dim db lightest-purple pvxs" href="#">Forgot Password?</a>
+          <a class="link dim db lightest-purple pv1" href="#">Sign Up</a>
+          <a class="link dim db lightest-purple pv1" href="#">Forgot Password?</a>
       </div>
 
     </div>
   </fieldset>
 </form>
 
-<!--
-  !!! Don't include the component data for now
+  <h4>Stats</h4>
+  <pre>
+1089 | 120 | 151
+---|---|---
+bytes | selectors | declarations
+  </pre>
+
+  <h1>Classes used</h1>
+  <ul class="list pl0 lh-copy">
+    
+    <li>.pv4</li>
+  
+    <li>.mv5</li>
+  
+    <li>.center</li>
+  
+    <li>.mw6-ns</li>
+  
+    <li>.ph3</li>
+  
+    <li>.ph4-ns</li>
+  
+    <li>.bn</li>
+  
+    <li>.bold</li>
+  
+    <li>.ttu</li>
+  
+    <li>.tracked-mega</li>
+  
+    <li>.pl3</li>
+  
+    <li>.pl0-ns</li>
+  
+    <li>.pv3</li>
+  
+    <li>.f3-ns</li>
+  
+    <li>.lightest-purple</li>
+  
+    <li>.dn</li>
+  
+    <li>.mtm</li>
+  
+    <li>.f6</li>
+  
+    <li>.mb2</li>
+  
+    <li>.pl3</li>
+  
+    <li>.pl0-ns</li>
+  
+    <li>.ttu</li>
+  
+    <li>.tracked-mega</li>
+  
+    <li>.db</li>
+  
+    <li>.f3</li>
+  
+    <li>.fw6</li>
+  
+    <li>.input-reset</li>
+  
+    <li>.pl3</li>
+  
+    <li>.pv3</li>
+  
+    <li>.db</li>
+  
+    <li>.ba</li>
+  
+    <li>.white-80</li>
+  
+    <li>.b--white-20</li>
+  
+    <li>.w-100</li>
+  
+    <li>.bg-white-05</li>
+  
+    <li>.bg-white-10-focus</li>
+  
+    <li>.mtl</li>
+  
+    <li>.f6</li>
+  
+    <li>.mb2</li>
+  
+    <li>.pl3</li>
+  
+    <li>.pl0-ns</li>
+  
+    <li>.ttu</li>
+  
+    <li>.tracked-mega</li>
+  
+    <li>.db</li>
+  
+    <li>.f3</li>
+  
+    <li>.fw6</li>
+  
+    <li>.input-reset</li>
+  
+    <li>.pl3</li>
+  
+    <li>.pv3</li>
+  
+    <li>.db</li>
+  
+    <li>.ba</li>
+  
+    <li>.b--white-20</li>
+  
+    <li>.w-100</li>
+  
+    <li>.white-60</li>
+  
+    <li>.bg-white-05</li>
+  
+    <li>.bg-white-10-focus</li>
+  
+    <li>.mtl</li>
+  
+    <li>.dt</li>
+  
+    <li>.dtc</li>
+  
+    <li>.w-50</li>
+  
+    <li>.wi-25-ns</li>
+  
+    <li>.v-mid</li>
+  
+    <li>.input-reset</li>
+  
+    <li>.bg-white-05</li>
+  
+    <li>.lightest-purple</li>
+  
+    <li>.pa3</li>
+  
+    <li>.brs</li>
+  
+    <li>.fw6</li>
+  
+    <li>.ba</li>
+  
+    <li>.b--white-20</li>
+  
+    <li>.ttu</li>
+  
+    <li>.tracked-mega</li>
+  
+    <li>.bg-white-10-focus</li>
+  
+    <li>.dtc</li>
+  
+    <li>.w-50</li>
+  
+    <li>.wi-75-ns</li>
+  
+    <li>.v-mid</li>
+  
+    <li>.link</li>
+  
+    <li>.dim</li>
+  
+    <li>.db</li>
+  
+    <li>.lightest-purple</li>
+  
+    <li>.pv1</li>
+  
+    <li>.link</li>
+  
+    <li>.dim</li>
+  
+    <li>.db</li>
+  
+    <li>.lightest-purple</li>
+  
+    <li>.pv1</li>
+  
+  </ul>
+
+  <h1>Referenced modules</h1>
+  <ul class="list pl0 lh-copy">
+    
+    <li><a href="https://github.com/tachyons-css/tachyons-borders">tachyons-borders</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-border-colors">tachyons-border-colors</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-display">tachyons-display</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-font-weight">tachyons-font-weight</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-forms">tachyons-forms</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-letter-spacing">tachyons-letter-spacing</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-links">tachyons-links</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-widths">tachyons-widths</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-skins">tachyons-skins</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-spacing">tachyons-spacing</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-text-transform">tachyons-text-transform</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-type-scale">tachyons-type-scale</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-utilities">tachyons-utilities</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-vertical-align">tachyons-vertical-align</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-hovers">tachyons-hovers</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-max-widths">tachyons-max-widths</a></li>
+  
+  </ul>
+
+  
+
+  
 
   <ul>
     
-  <li>.pvl</li>
-
-  <li>.mvxl</li>
-
-  <li>.center</li>
-
-  <li>.mw6-ns</li>
-
-  <li>.phm</li>
-
-  <li>.phl-ns</li>
-
-  <li>.bn</li>
-
-  <li>.bold</li>
-
-  <li>.ttu</li>
-
-  <li>.tracked-mega</li>
-
-  <li>.plm</li>
-
-  <li>.pln-ns</li>
-
-  <li>.pvm</li>
-
-  <li>.f3-ns</li>
-
-  <li>.lightest-purple</li>
-
-  <li>.dn</li>
-
-  <li>.mtm</li>
-
-  <li>.small</li>
-
-  <li>.mbs</li>
-
-  <li>.plm</li>
-
-  <li>.pln-ns</li>
-
-  <li>.ttu</li>
-
-  <li>.tracked-mega</li>
-
-  <li>.db</li>
-
-  <li>.f3</li>
-
-  <li>.semibold</li>
-
-  <li>.input-text</li>
-
-  <li>.plm</li>
-
-  <li>.pvm</li>
-
-  <li>.db</li>
-
-  <li>.ba</li>
-
-  <li>.white-80</li>
-
-  <li>.b--white-20</li>
-
-  <li>.w-100</li>
-
-  <li>.bg-white-05</li>
-
-  <li>.bg-white-10-focus</li>
-
-  <li>.mtl</li>
-
-  <li>.small</li>
-
-  <li>.mbs</li>
-
-  <li>.plm</li>
-
-  <li>.pln-ns</li>
-
-  <li>.ttu</li>
-
-  <li>.tracked-mega</li>
-
-  <li>.db</li>
-
-  <li>.f3</li>
-
-  <li>.semibold</li>
-
-  <li>.input-text</li>
-
-  <li>.plm</li>
-
-  <li>.pvm</li>
-
-  <li>.db</li>
-
-  <li>.ba</li>
-
-  <li>.b--white-20</li>
-
-  <li>.w-100</li>
-
-  <li>.white-60</li>
-
-  <li>.bg-white-05</li>
-
-  <li>.bg-white-10-focus</li>
-
-  <li>.mtl</li>
-
-  <li>.dt</li>
-
-  <li>.dtc</li>
-
-  <li>.w-50</li>
-
-  <li>.wi-25-ns</li>
-
-  <li>.v-mid</li>
-
-  <li>.input-text</li>
-
-  <li>.bg-white-05</li>
-
-  <li>.lightest-purple</li>
-
-  <li>.pam</li>
-
-  <li>.brs</li>
-
-  <li>.semibold</li>
-
-  <li>.ba</li>
-
-  <li>.b--white-20</li>
-
-  <li>.ttu</li>
-
-  <li>.tracked-mega</li>
-
-  <li>.bg-white-10-focus</li>
-
-  <li>.dtc</li>
-
-  <li>.w-50</li>
-
-  <li>.wi-75-ns</li>
-
-  <li>.v-mid</li>
-
-  <li>.link</li>
-
-  <li>.dim</li>
-
-  <li>.db</li>
-
-  <li>.lightest-purple</li>
-
-  <li>.pvxs</li>
-
-  <li>.link</li>
-
-  <li>.dim</li>
-
-  <li>.db</li>
-
-  <li>.lightest-purple</li>
-
-  <li>.pvxs</li>
-
+    <li><a href="https://github.com/tachyons-css/tachyons-borders">tachyons-borders</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-border-colors">tachyons-border-colors</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-display">tachyons-display</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-font-weight">tachyons-font-weight</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-forms">tachyons-forms</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-letter-spacing">tachyons-letter-spacing</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-links">tachyons-links</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-widths">tachyons-widths</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-skins">tachyons-skins</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-spacing">tachyons-spacing</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-text-transform">tachyons-text-transform</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-type-scale">tachyons-type-scale</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-utilities">tachyons-utilities</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-vertical-align">tachyons-vertical-align</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-hovers">tachyons-hovers</a></li>
+  
+    <li><a href="https://github.com/tachyons-css/tachyons-max-widths">tachyons-max-widths</a></li>
+  
   </ul>
 
-  <ul>
-    
-  <li>tachyons-borders</li>
+  <h4>CSS</h4>
+  <pre>
+    /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
-  <li>tachyons-border-colors</li>
+  .ba{ border-style:solid; border-width:1px; }
+.b--white-20{   border-color:rgba(255,255,255,.2); }
 
-  <li>tachyons-display</li>
+.dn{     display:none; }
+.db{     display:block; }
+.dt{     display:table; }
+.dtc{    display:table-cell; }
+.dt-row{    display:table-row; }
+.dt-row-group{    display:table-row-group; }
+.dt-column{  display:table-column; }
+.dt-column-group{ display:table-column-group; }
+.fw6{ font-weight:600; }
 
-  <li>tachyons-font-weight</li>
+.input-reset{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+}
+.tracked-mega{ letter-spacing:.32em; }
 
-  <li>tachyons-forms</li>
+.link{
+  text-decoration:none;
+  transition:color .15s ease-in;
+}
 
-  <li>tachyons-letter-spacing</li>
+.link:link,
+.link:visited{
+  transition:color .15s ease-in;
+}
+.link:hover{
+  transition:color .15s ease-in;
+}
+.link:active{
+  transition:color .15s ease-in;
+}
+.link:focus{
+  transition:color .15s ease-in;
+}
+.w-50{  width:50%; }
+.w-100{ width:100%; }
+.white-80{         color:rgba(255,255,255,.8); }
+.white-60{         color:rgba(255,255,255,.6); }
+.pa3{ padding:1rem; }
+.pl3{ padding-left:1rem; }
+.pv1{
+  padding-top:.25rem;
+  padding-bottom:.25rem;
+}
+.pv3{
+  padding-top:1rem;
+  padding-bottom:1rem;
+}
+.pv4{
+  padding-top:2rem;
+  padding-bottom:2rem;
+}
 
-  <li>tachyons-links</li>
+.ph3{
+  padding-left:1rem;
+  padding-right:1rem;
+}
+.mb2{  margin-bottom:.5rem; }
+.mv5{
+  margin-top:4rem;
+  margin-bottom:4rem;
+}
+.ttu{ text-transform:uppercase; }
+.f3{ font-size:1.5rem; }
+.f6{ font-size:.875rem; }
 
-  <li>tachyons-widths</li>
+.center{
+  margin-right:auto;
+  margin-left:auto;
+}
+.v-mid{ vertical-align:middle; }
+.dim{ 
+  opacity:1; 
+  transition:opacity .15s ease-in; 
+}
+.dim:hover,
+.dim:focus{ 
+  opacity:.5; 
+  transition:opacity .15s ease-in; 
+}
+.dim:active{
+  opacity:.8; transition:opacity .15s ease-out; 
+}
+@media screen and (min-width: 48em){
 
-  <li>tachyons-skins</li>
+ .ba-ns{ border-style:solid; border-width:1px; }
 
-  <li>tachyons-spacing</li>
+ .dn-ns{ display:none; }
 
-  <li>tachyons-text-transform</li>
+ .db-ns{ display:block; }
 
-  <li>tachyons-type-scale</li>
+ .dt-ns{ display:table; }
 
-  <li>tachyons-utilities</li>
+ .dtc-ns{ display:table-cell; }
 
-  <li>tachyons-vertical-align</li>
+ .dt-row-ns{ display:table-row; }
 
-  <li>tachyons-hovers</li>
+ .dt-row-group-ns{ display:table-row-group; }
 
-  <li>tachyons-max-widths</li>
+ .dt-column-ns{ display:table-column; }
 
-  </ul>
+ .dt-column-group-ns{ display:table-column-group; }
+
+ .fw6-ns{ font-weight:600; }
+
+ .tracked-mega-ns{ letter-spacing:.32em; }
+
+ .mw6-ns{ max-width:32rem; }
+
+ .w-50-ns{ width:50%; }
+
+ .w-100-ns{ width:100%; }
+
+ .pa3-ns{ padding:1rem; }
+
+ .pl0-ns{ padding-left:0; }
+
+ .pl3-ns{ padding-left:1rem; }
+
+ .pv1-ns{ padding-top:.25rem; padding-bottom:.25rem; }
+
+ .pv3-ns{ padding-top:1rem; padding-bottom:1rem; }
+
+ .pv4-ns{ padding-top:2rem; padding-bottom:2rem; }
+
+ .pv1-ns{ padding-left:.25rem; padding-right:.25rem; }
+
+ .ph3-ns{ padding-left:1rem; padding-right:1rem; }
+
+ .ph4-ns{ padding-left:2rem; padding-right:2rem; }
+
+ .mb2-ns{ margin-bottom:.5rem; }
+
+ .mv5-ns{ margin-top:4rem; margin-bottom:4rem; }
+
+ .ttu-ns{ text-transform:uppercase; }
+
+ .f3-ns{ font-size:1.5rem; }
+
+ .f6-ns{ font-size:.875rem; }
+
+ .v-mid-ns{ vertical-align:middle; } }
+@media screen and (min-width: 48em) and (max-width: 64em){
+
+ .ba-m{ border-style:solid; border-width:1px; }
+
+ .dn-m{ display:none; }
+
+ .db-m{ display:block; }
+
+ .dt-m{ display:table; }
+
+ .dtc-m{ display:table-cell; }
+
+ .dt-row-m{ display:table-row; }
+
+ .dt-row-group-m{ display:table-row-group; }
+
+ .dt-column-m{ display:table-column; }
+
+ .dt-column-group-m{ display:table-column-group; }
+
+ .fw6-m{ font-weight:600; }
+
+ .tracked-mega-m{ letter-spacing:.32em; }
+
+ .w-50-m{ width:50%; }
+
+ .w-100-m{ width:100%; }
+
+ .pa3-m{ padding:1rem; }
+
+ .pl3-m{ padding-left:1rem; }
+
+ .pv1-m{ padding-top:.25rem; padding-bottom:.25rem; }
+
+ .pv3-m{ padding-top:1rem; padding-bottom:1rem; }
+
+ .pv4-m{ padding-top:2rem; padding-bottom:2rem; }
+
+ .pv1-m{ padding-left:.25rem; padding-right:.25rem; }
+
+ .ph3-m{ padding-left:1rem; padding-right:1rem; }
+
+ .mb2-m{ margin-bottom:.5rem; }
+
+ .mv5-m{ margin-top:4rem; margin-bottom:4rem; }
+
+ .ttu-m{ text-transform:uppercase; }
+
+ .f3-m{ font-size:1.5rem; }
+
+ .f6-m{ font-size:.875rem; }
+
+ .v-mid-m{ vertical-align:middle; } }
+@media screen and (min-width: 64em){
+
+ .ba-l{ border-style:solid; border-width:1px; }
+
+ .dn-l{ display:none; }
+
+ .db-l{ display:block; }
+
+ .dt-l{ display:table; }
+
+ .dtc-l{ display:table-cell; }
+
+ .dt-row-l{ display:table-row; }
+
+ .dt-row-group-l{ display:table-row-group; }
+
+ .dt-column-l{ display:table-column; }
+
+ .dt-column-group-l{ display:table-column-group; }
+
+ .fw6-l{ font-weight:600; }
+
+ .tracked-mega-l{ letter-spacing:.32em; }
+
+ .w-50-l{ width:50%; }
+
+ .w-100-l{ width:100%; }
+
+ .pa3-l{ padding:1rem; }
+
+ .pl3-l{ padding-left:1rem; }
+
+ .pv1-l{ padding-top:.25rem; padding-bottom:.25rem; }
+
+ .pv3-l{ padding-top:1rem; padding-bottom:1rem; }
+
+ .pv4-l{ padding-top:2rem; padding-bottom:2rem; }
+
+ .ph3-l{ padding-left:1rem; padding-right:1rem; }
+
+ .mb2-l{ margin-bottom:.5rem; }
+
+ .mv5-l{ margin-top:4rem; margin-bottom:4rem; }
+
+ .ttu-l{ text-transform:uppercase; }
+
+ .f3-l{ font-size:1.5rem; }
+
+ .f6-l{ font-size:.875rem; }
+
+ .v-mid-l{ vertical-align:middle; } }
+
+  </pre>
+
+  <h4>Install via npm</h4>
+  <code>npm i --save tachyons-borders tachyons-border-colors tachyons-display tachyons-font-weight tachyons-forms tachyons-letter-spacing tachyons-links tachyons-widths tachyons-skins tachyons-spacing tachyons-text-transform tachyons-type-scale tachyons-utilities tachyons-vertical-align tachyons-hovers tachyons-max-widths</code>
 </main>
 
-
-
-
--->
-
-<footer class="bg-white gray phm pvxl pvxxl-ns bt b--light-gray h-50">
-  <small class="f5 mw7 db center lh-copy">
-    A tachyon /ˈtæki.ɒn/ or tachyonic particle is a hypothetical particle
-    that always moves faster than light.
-    <br class="dn db-ns">
-    The word comes from the Greek:
-    ταχύς or tachys, meaning "swift, quick, fast, rapid"
-  </small>
-</footer>
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
