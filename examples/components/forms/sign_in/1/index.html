@@ -5,265 +5,292 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <title>TACHYONS - Forms Sign In 1</title>
 <meta name="author" content="@mrmrs">
-<meta name="description" content="Sign In Component">
+<meta name="description" content="Tachyons Component">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/css/tachyons.min.css">
 </head>
-<body class="wi-100 sans-serif bg-dark-purple">
+<body class="w-100 sans-serif bg-black">
 <main>
-  <form action="index_submit" method="get" accept-charset="utf-8" class="pvl mvxl">
-  <fieldset class="center mw6-ns phm phl-ns bn">
-    <legend class="bold ttu tracked-mega plm pln-ns pvm f3-ns lightest-purple dn">Sign In</legend>
+  <form action="index_submit" method="get" accept-charset="utf-8" class="pv4 mv5">
+  <fieldset class="center mw6-ns ph3 ph4-ns bn">
+    <legend class="bold ttu tracked-mega pl3 pl0-ns pv3 f3-ns lightest-purple dn">Sign In</legend>
     <div class="mtm">
-      <label class="small mbs plm pln-ns ttu tracked-mega db" for="Username">Username</label>
-      <input class="f3 semibold input-text plm pvm db ba white-80 b--white-20 w-100 bg-white-05 bg-white-10-focus" type="text" name="Username" value="" id="Username" >
+      <label class="f6 mb2 pl3 pl0-ns ttu tracked-mega db" for="Username">Username</label>
+      <input class="f3 fw6 input-reset pl3 pv3 db ba white-80 b--white-20 w-100 bg-white-05 bg-white-10-focus" type="text" name="Username" value="" id="Username" >
     </div>
     <div class="mtl">
-      <label class="small mbs plm pln-ns ttu tracked-mega db" for="Username">Password</label>
-      <input class="f3 semibold input-text plm pvm db ba b--white-20 w-100 white-60 bg-white-05 bg-white-10-focus" type="password" name="password" value="" id="password" >
+      <label class="f6 mb2 pl3 pl0-ns ttu tracked-mega db" for="Username">Password</label>
+      <input class="f3 fw6 input-reset pl3 pv3 db ba b--white-20 w-100 white-60 bg-white-05 bg-white-10-focus" type="password" name="password" value="" id="password" >
     </div>
     <div class="mtl dt">
       <div class="dtc w-50 wi-25-ns v-mid">
-        <input class="input-text bg-white-05 lightest-purple pam brs semibold ba b--white-20 ttu tracked-mega bg-white-10-focus" type="submit" value="Sign In">
+        <input class="input-reset bg-white-05 lightest-purple pa3 brs fw6 ba b--white-20 ttu tracked-mega bg-white-10-focus" type="submit" value="Sign In">
       </div>
       <div class="dtc w-50 wi-75-ns v-mid">
-          <a class="link dim db lightest-purple pvxs" href="#">Sign Up</a>
-          <a class="link dim db lightest-purple pvxs" href="#">Forgot Password?</a>
+          <a class="link dim db lightest-purple pv1" href="#">Sign Up</a>
+          <a class="link dim db lightest-purple pv1" href="#">Forgot Password?</a>
       </div>
 
     </div>
   </fieldset>
 </form>
 
-<!--
-  !!! Don't include the component data for now
-
-  <ul>
-    
-  <li>.pvl</li>
-
-  <li>.mvxl</li>
-
-  <li>.center</li>
-
-  <li>.mw6-ns</li>
-
-  <li>.phm</li>
-
-  <li>.phl-ns</li>
-
-  <li>.bn</li>
-
-  <li>.bold</li>
-
-  <li>.ttu</li>
-
-  <li>.tracked-mega</li>
-
-  <li>.plm</li>
-
-  <li>.pln-ns</li>
-
-  <li>.pvm</li>
-
-  <li>.f3-ns</li>
-
-  <li>.lightest-purple</li>
-
-  <li>.dn</li>
-
-  <li>.mtm</li>
-
-  <li>.small</li>
-
-  <li>.mbs</li>
-
-  <li>.plm</li>
-
-  <li>.pln-ns</li>
-
-  <li>.ttu</li>
-
-  <li>.tracked-mega</li>
-
-  <li>.db</li>
-
-  <li>.f3</li>
-
-  <li>.semibold</li>
-
-  <li>.input-text</li>
-
-  <li>.plm</li>
-
-  <li>.pvm</li>
-
-  <li>.db</li>
-
-  <li>.ba</li>
-
-  <li>.white-80</li>
-
-  <li>.b--white-20</li>
-
-  <li>.w-100</li>
-
-  <li>.bg-white-05</li>
-
-  <li>.bg-white-10-focus</li>
-
-  <li>.mtl</li>
-
-  <li>.small</li>
-
-  <li>.mbs</li>
-
-  <li>.plm</li>
-
-  <li>.pln-ns</li>
-
-  <li>.ttu</li>
-
-  <li>.tracked-mega</li>
-
-  <li>.db</li>
-
-  <li>.f3</li>
-
-  <li>.semibold</li>
-
-  <li>.input-text</li>
-
-  <li>.plm</li>
-
-  <li>.pvm</li>
-
-  <li>.db</li>
-
-  <li>.ba</li>
-
-  <li>.b--white-20</li>
-
-  <li>.w-100</li>
-
-  <li>.white-60</li>
-
-  <li>.bg-white-05</li>
-
-  <li>.bg-white-10-focus</li>
-
-  <li>.mtl</li>
-
-  <li>.dt</li>
-
-  <li>.dtc</li>
-
-  <li>.w-50</li>
-
-  <li>.wi-25-ns</li>
-
-  <li>.v-mid</li>
-
-  <li>.input-text</li>
-
-  <li>.bg-white-05</li>
-
-  <li>.lightest-purple</li>
-
-  <li>.pam</li>
-
-  <li>.brs</li>
-
-  <li>.semibold</li>
-
-  <li>.ba</li>
-
-  <li>.b--white-20</li>
-
-  <li>.ttu</li>
-
-  <li>.tracked-mega</li>
-
-  <li>.bg-white-10-focus</li>
-
-  <li>.dtc</li>
-
-  <li>.w-50</li>
-
-  <li>.wi-75-ns</li>
-
-  <li>.v-mid</li>
-
-  <li>.link</li>
-
-  <li>.dim</li>
-
-  <li>.db</li>
-
-  <li>.lightest-purple</li>
-
-  <li>.pvxs</li>
-
-  <li>.link</li>
-
-  <li>.dim</li>
-
-  <li>.db</li>
-
-  <li>.lightest-purple</li>
-
-  <li>.pvxs</li>
-
-  </ul>
-
-  <ul>
-    
-  <li>tachyons-borders</li>
-
-  <li>tachyons-border-colors</li>
-
-  <li>tachyons-display</li>
-
-  <li>tachyons-font-weight</li>
-
-  <li>tachyons-forms</li>
-
-  <li>tachyons-letter-spacing</li>
-
-  <li>tachyons-links</li>
-
-  <li>tachyons-widths</li>
-
-  <li>tachyons-skins</li>
-
-  <li>tachyons-spacing</li>
-
-  <li>tachyons-text-transform</li>
-
-  <li>tachyons-type-scale</li>
-
-  <li>tachyons-utilities</li>
-
-  <li>tachyons-vertical-align</li>
-
-  <li>tachyons-hovers</li>
-
-  <li>tachyons-max-widths</li>
-
-  </ul>
+  <footer class="ph3 ph5-ns bg-near-white">
+    <h1>Classes used</h1>
+    <ul class="list pl0 lh-copy">
+      
+    <li>.pv4</li>
+  
+    <li>.mv5</li>
+  
+    <li>.center</li>
+  
+    <li>.mw6-ns</li>
+  
+    <li>.ph3</li>
+  
+    <li>.ph4-ns</li>
+  
+    <li>.bn</li>
+  
+    <li>.bold</li>
+  
+    <li>.ttu</li>
+  
+    <li>.tracked-mega</li>
+  
+    <li>.pl3</li>
+  
+    <li>.pl0-ns</li>
+  
+    <li>.pv3</li>
+  
+    <li>.f3-ns</li>
+  
+    <li>.lightest-purple</li>
+  
+    <li>.dn</li>
+  
+    <li>.mtm</li>
+  
+    <li>.f6</li>
+  
+    <li>.mb2</li>
+  
+    <li>.pl3</li>
+  
+    <li>.pl0-ns</li>
+  
+    <li>.ttu</li>
+  
+    <li>.tracked-mega</li>
+  
+    <li>.db</li>
+  
+    <li>.f3</li>
+  
+    <li>.fw6</li>
+  
+    <li>.input-reset</li>
+  
+    <li>.pl3</li>
+  
+    <li>.pv3</li>
+  
+    <li>.db</li>
+  
+    <li>.ba</li>
+  
+    <li>.white-80</li>
+  
+    <li>.b--white-20</li>
+  
+    <li>.w-100</li>
+  
+    <li>.bg-white-05</li>
+  
+    <li>.bg-white-10-focus</li>
+  
+    <li>.mtl</li>
+  
+    <li>.f6</li>
+  
+    <li>.mb2</li>
+  
+    <li>.pl3</li>
+  
+    <li>.pl0-ns</li>
+  
+    <li>.ttu</li>
+  
+    <li>.tracked-mega</li>
+  
+    <li>.db</li>
+  
+    <li>.f3</li>
+  
+    <li>.fw6</li>
+  
+    <li>.input-reset</li>
+  
+    <li>.pl3</li>
+  
+    <li>.pv3</li>
+  
+    <li>.db</li>
+  
+    <li>.ba</li>
+  
+    <li>.b--white-20</li>
+  
+    <li>.w-100</li>
+  
+    <li>.white-60</li>
+  
+    <li>.bg-white-05</li>
+  
+    <li>.bg-white-10-focus</li>
+  
+    <li>.mtl</li>
+  
+    <li>.dt</li>
+  
+    <li>.dtc</li>
+  
+    <li>.w-50</li>
+  
+    <li>.wi-25-ns</li>
+  
+    <li>.v-mid</li>
+  
+    <li>.input-reset</li>
+  
+    <li>.bg-white-05</li>
+  
+    <li>.lightest-purple</li>
+  
+    <li>.pa3</li>
+  
+    <li>.brs</li>
+  
+    <li>.fw6</li>
+  
+    <li>.ba</li>
+  
+    <li>.b--white-20</li>
+  
+    <li>.ttu</li>
+  
+    <li>.tracked-mega</li>
+  
+    <li>.bg-white-10-focus</li>
+  
+    <li>.dtc</li>
+  
+    <li>.w-50</li>
+  
+    <li>.wi-75-ns</li>
+  
+    <li>.v-mid</li>
+  
+    <li>.link</li>
+  
+    <li>.dim</li>
+  
+    <li>.db</li>
+  
+    <li>.lightest-purple</li>
+  
+    <li>.pv1</li>
+  
+    <li>.link</li>
+  
+    <li>.dim</li>
+  
+    <li>.db</li>
+  
+    <li>.lightest-purple</li>
+  
+    <li>.pv1</li>
+  
+    </ul>
+
+    <h1>Referenced modules</h1>
+    <ul class="list pl0 lh-copy">
+      
+    <li>tachyons-borders</li>
+  
+    <li>tachyons-border-colors</li>
+  
+    <li>tachyons-display</li>
+  
+    <li>tachyons-font-weight</li>
+  
+    <li>tachyons-forms</li>
+  
+    <li>tachyons-letter-spacing</li>
+  
+    <li>tachyons-links</li>
+  
+    <li>tachyons-widths</li>
+  
+    <li>tachyons-skins</li>
+  
+    <li>tachyons-spacing</li>
+  
+    <li>tachyons-text-transform</li>
+  
+    <li>tachyons-type-scale</li>
+  
+    <li>tachyons-utilities</li>
+  
+    <li>tachyons-vertical-align</li>
+  
+    <li>tachyons-hovers</li>
+  
+    <li>tachyons-max-widths</li>
+  
+    </ul>
+  
+
+  
+</footer>
 </main>
 
 
+<footer class="bg-near-white mid-gray ph3 ph5-ns pv5 pv6-ns bt b--light-gray">
+  <a href="https://twitter.com/intent/tweet?text=Tachyons: Functional CSS for Humans.&url=http://tachyons.io" target="_blank" class="dn mb3 twitter bg-white link dim br2 ph2 pb1 pt0 lh-solid" style="background-color: #55acee;">
+    <svg class="geomicon dib v-mid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="#fff">
+      <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
+    </svg>
+    <span class="dib v-mid white fw6" style="font-size: 12px;">Tweet</span>
+  </a>
+  <article>
+    <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+    <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+  </article>
 
-
--->
-
-<footer class="bg-white gray phm pvxl pvxxl-ns bt b--light-gray h-50">
-  <small class="f5 mw7 db center lh-copy">
+  <p>
+    <a class="black-70 link dim b dib mr3" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
+      Join our Slack Channel
+    </a>
+    <a class="black-70 link dim b dib mr3" href="https://github.com/tachyons-css/tachyons/issues" title="File a bug, request a feature, ask a question!">
+      Open an Issue
+    </a>
+    <a class="black-70 link dim b dib mr3" href="https://github.com/tachyons-css" title="Tachyons-css on GitHub">
+      GitHub
+    </a>
+  </p>
+  <p class="measure copy lh-copy">
+    Have a question? Need help? Feel free to open an issue on GitHub or ask a
+    question in our slack channel. We're here to try and help make designing in
+    the browser fun.
+  </p>
+  <small class="f6 measure db lh-copy mt5">
     A tachyon /ˈtæki.ɒn/ or tachyonic particle is a hypothetical particle
     that always moves faster than light.
-    <br class="dn db-ns">
     The word comes from the Greek:
+    <br> <br>
     ταχύς or tachys, meaning "swift, quick, fast, rapid"
   </small>
 </footer>
