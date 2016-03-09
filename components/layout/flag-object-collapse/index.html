@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TACHYONS - Layout Flag Object Collapse</title>
+<meta name="description" content="Tachyons Component">
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="author" content="@mrmrs">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/tachyons.min.css">
+<style>
+  .blue { color: #0074D9; }
+  .bg-blue { background-color: #0074D9; }
+</style>
+
+</head>
+<body class="w-100 sans-serif bg-white">
+<main>
+  <div class="dt mw6 center pt0 pb5 pv5-m pv6-ns">
+  <div class="db dtc-ns v-mid-ns">
+    <img src="/img/super-wide.jpg" alt="A bright blue sky" class="w-100 mw7 w5-ns" />
+  </div>
+  <div class="db dtc-ns v-mid ph2 pr0-ns pl3-ns">
+    <p class="lh-copy">
+      For desktop, this text is vertically aligned middle, no matter what the height of the image is.
+      On mobile, this is a paragraph below an image.
+    </p>
+  </div>
+</div>
+
+  <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70" style="background: #fafafa;">
+  <h2 class="f5">Module CSS Stats</h2>
+  <dl class="dib mr4">
+    <dt class="db f6">Size (Gzipped)</dt>
+    <dd class="ml0 b f3 f2-ns">614</dd>
+  </dl>
+  <dl class="dib mr4">
+    <dt class="db f6">Selectors</dt>
+    <dd class="ml0 b f3 f2-ns">66</dd>
+  </dl>
+  <dl class="dib">
+    <dt class="db f6">Declarations</dt>
+    <dd class="ml0 b f3 f2-ns">73</dd>
+  </dl>
+
+
+  <h2 class="f5">HTML</h2>
+
+<pre class="pa3 ba br2 b--black-05">
+&lt;div class=&quot;dt mw6 center pt0 pb5 pv5-m pv6-ns&quot;&gt;
+  &lt;div class=&quot;db dtc-ns v-mid-ns&quot;&gt;
+    &lt;img src=&quot;/img/super-wide.jpg&quot; alt=&quot;A bright blue sky&quot; class=&quot;w-100 mw7 w5-ns&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;db dtc-ns v-mid ph2 pr0-ns pl3-ns&quot;&gt;
+    &lt;p class=&quot;lh-copy&quot;&gt;
+      For desktop, this text is vertically aligned middle, no matter what the height of the image is.
+      On mobile, this is a paragraph below an image.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</pre>
+  <h4>CSS</h4>
+  <pre class="pa3 ba br2 b--black-05">
+    /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+.db{     display:block; }
+.dt{     display:table; }
+.dtc{    display:table-cell; }
+.dt-row{    display:table-row; }
+.dt-row-group{    display:table-row-group; }
+.dt-column{  display:table-column; }
+.dt-column-group{ display:table-column-group; }
+.lh-copy{ line-height:1.6; }
+.mw6{  max-width:32rem; }
+.mw7{  max-width:48rem; }
+.w-100{ width:100%; }
+.pb5{ padding-bottom:4rem; }
+
+.pt0{ padding-top:0; }
+
+.ph2{
+  padding-left:.5rem;
+  padding-right:.5rem;
+}
+
+.center{
+  margin-right:auto;
+  margin-left:auto;
+}
+.v-mid{ vertical-align:middle; }
+@media screen and (min-width: 48em){
+     .db-ns{     display:block; }
+     .dt-ns{     display:table; }
+     .dtc-ns{     display:table-cell; }
+     .dt-row-ns{     display:table-row; }
+     .dt-row-group-ns{     display:table-row-group; }
+     .dt-column-ns{     display:table-column; }
+     .dt-column-group-ns{     display:table-column-group; }
+     .lh-copy-ns{     line-height:1.6; }
+     .mw6-ns{     max-width:32rem; }
+     .mw7-ns{     max-width:48rem; }
+     .w5-ns{     width:16rem; }
+     .w-100-ns{     width:100%; }
+     .pl3-ns{     padding-left:1rem; }
+     .pr0-ns{     padding-right:0; }
+     .pb5-ns{     padding-bottom:4rem; }
+     .pt0-ns{     padding-top:0; }
+     .pv6-ns{     padding-top:8rem;     padding-bottom:8rem; }
+     .ph2-ns{     padding-left:.5rem;     padding-right:.5rem; }
+     .v-mid-ns{     vertical-align:middle; } }
+@media screen and (min-width: 48em) and (max-width: 64em){
+     .db-m{     display:block; }
+     .dt-m{     display:table; }
+     .dtc-m{     display:table-cell; }
+     .dt-row-m{     display:table-row; }
+     .dt-row-group-m{     display:table-row-group; }
+     .dt-column-m{     display:table-column; }
+     .dt-column-group-m{     display:table-column-group; }
+     .lh-copy-m{     line-height:1.6; }
+     .mw6-m{     max-width:32rem; }
+     .mw7-m{     max-width:48rem; }
+     .w-100-m{     width:100%; }
+     .pb5-m{     padding-bottom:4rem; }
+     .pt0-m{     padding-top:0; }
+     .pv5-m{     padding-top:4rem;     padding-bottom:4rem; }
+     .ph2-m{     padding-left:.5rem;     padding-right:.5rem; }
+     .v-mid-m{     vertical-align:middle; } }
+@media screen and (min-width: 64em){
+     .db-l{     display:block; }
+     .dt-l{     display:table; }
+     .dtc-l{     display:table-cell; }
+     .dt-row-l{     display:table-row; }
+     .dt-row-group-l{     display:table-row-group; }
+     .dt-column-l{     display:table-column; }
+     .dt-column-group-l{     display:table-column-group; }
+     .lh-copy-l{     line-height:1.6; }
+     .mw6-l{     max-width:32rem; }
+     .mw7-l{     max-width:48rem; }
+     .w-100-l{     width:100%; }
+     .pb5-l{     padding-bottom:4rem; }
+     .pt0-l{     padding-top:0; }
+     .ph2-l{     padding-left:.5rem;     padding-right:.5rem; }
+     .v-mid-l{     vertical-align:middle; } }
+
+  </pre>
+
+  <h2 class="f5 mt5">Modules</h2>
+  <ul class="list pl0 cf lh-copy mw7">
+    
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-display">tachyons-display</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-line-height">tachyons-line-height</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-max-widths">tachyons-max-widths</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-widths">tachyons-widths</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-spacing">tachyons-spacing</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-utilities">tachyons-utilities</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-vertical-align">tachyons-vertical-align</a></li>
+  
+  </ul>
+
+
+  
+
+
+  <h4 class="mt5">Install these modules via npm</h4>
+  <code>npm i --save tachyons-display tachyons-line-height tachyons-max-widths tachyons-widths tachyons-spacing tachyons-utilities tachyons-vertical-align</code>
+  </section>
+</main>
+
+  
+
+  <footer class="bg-near-white mid-gray ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+  <a href="https://twitter.com/intent/tweet?text=Tachyons: Functional CSS for Humans.&url=http://tachyons.io" target="_blank" class="dn mb3 twitter bg-white link dim br2 ph2 pb1 pt0 lh-solid" style="background-color: #55acee;">
+    <svg class="geomicon dib v-mid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="#fff">
+      <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
+    </svg>
+    <span class="dib v-mid white fw6" style="font-size: 12px;">Tweet</span>
+  </a>
+  <article>
+    <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+    <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+  </article>
+
+  <p>
+    <a class="black-70 link dim b dib mr3" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
+      Join our Slack Channel
+    </a>
+    <a class="black-70 link dim b dib mr3" href="https://github.com/tachyons-css/tachyons/issues" title="File a bug, request a feature, ask a question!">
+      Open an Issue
+    </a>
+    <a class="black-70 link dim b dib mr3" href="https://github.com/tachyons-css" title="Tachyons-css on GitHub">
+      GitHub
+    </a>
+  </p>
+  <p class="measure copy lh-copy">
+    Have a question? Need help? Feel free to open an issue on GitHub or ask a
+    question in our slack channel. We're here to try and help make designing in
+    the browser fun.
+  </p>
+  <small class="f6 measure db lh-copy mt5">
+    A tachyon /ˈtæki.ɒn/ or tachyonic particle is a hypothetical particle
+    that always moves faster than light.
+    The word comes from the Greek:
+    <br> <br>
+    ταχύς or tachys, meaning "swift, quick, fast, rapid"
+  </small>
+</footer>
+
+      <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-55773803-1', 'auto');
+ga('send', 'pageview');
+
+    </script>
+
+</body>
+</html>
+
+
