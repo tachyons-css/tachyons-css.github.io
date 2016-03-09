@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TACHYONS - Nav Large Title Link List</title>
+<meta name="description" content="Tachyons Component">
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="author" content="@mrmrs">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/tachyons.min.css">
+<style>
+  .blue { color: #0074D9; }
+  .bg-blue { background-color: #0074D9; }
+</style>
+
+</head>
+<body class="w-100 sans-serif bg-white">
+<main>
+  <nav class="pa3 pa4-ns">
+  <a class="link dim black b f1 f-headline-ns tc db mb3 mb4-ns" href="#" title="Home">Site Name</a>
+  <div class="tc pb3">
+    <a class="link dim gray f6 f5-ns dib mr3" href="#" title="Home">Home</a>
+    <a class="link dim gray f6 f5-ns dib mr3" href="#" title="About">About</a>
+    <a class="link dim gray f6 f5-ns dib mr3" href="#" title="Store">Store</a>
+    <a class="link dim gray f6 f5-ns dib" href="#" title="Contact">Contact</a>
+  </div>
+</nav>
+
+  <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70" style="background: #fafafa;">
+  <h2 class="f5">Module CSS Stats</h2>
+  <dl class="dib mr4">
+    <dt class="db f6">Size (Gzipped)</dt>
+    <dd class="ml0 b f3 f2-ns">1925</dd>
+  </dl>
+  <dl class="dib mr4">
+    <dt class="db f6">Selectors</dt>
+    <dd class="ml0 b f3 f2-ns">266</dd>
+  </dl>
+  <dl class="dib">
+    <dt class="db f6">Declarations</dt>
+    <dd class="ml0 b f3 f2-ns">288</dd>
+  </dl>
+
+
+  <h2 class="f5">HTML</h2>
+
+<pre class="pa3 ba br2 b--black-05">
+&lt;nav class=&quot;pa3 pa4-ns&quot;&gt;
+  &lt;a class=&quot;link dim black b f1 f-headline-ns tc db mb3 mb4-ns&quot; href=&quot;#&quot; title=&quot;Home&quot;&gt;Site Name&lt;/a&gt;
+  &lt;div class=&quot;tc pb3&quot;&gt;
+    &lt;a class=&quot;link dim gray f6 f5-ns dib mr3&quot; href=&quot;#&quot; title=&quot;Home&quot;&gt;Home&lt;/a&gt;
+    &lt;a class=&quot;link dim gray f6 f5-ns dib mr3&quot; href=&quot;#&quot; title=&quot;About&quot;&gt;About&lt;/a&gt;
+    &lt;a class=&quot;link dim gray f6 f5-ns dib mr3&quot; href=&quot;#&quot; title=&quot;Store&quot;&gt;Store&lt;/a&gt;
+    &lt;a class=&quot;link dim gray f6 f5-ns dib&quot; href=&quot;#&quot; title=&quot;Contact&quot;&gt;Contact&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+</pre>
+  <h4>CSS</h4>
+  <pre class="pa3 ba br2 b--black-05">
+    /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+.border-box{
+  box-sizing:border-box;
+}
+
+  .bg-cv{               background-size:cover; }
+  .bg-cn{               background-size:contain; }
+
+  .ba{ border-style:solid; border-width:1px; }
+  .bt{ border-top-style:solid; border-top-width:1px; }
+  .br{ border-right-style:solid; border-right-width:1px; }
+  .bb{ border-bottom-style:solid; border-bottom-width:1px; }
+  .bl{ border-left-style:solid; border-left-width:1px; }
+
+.b--black{        border-color:#111; }
+.b--near-black{   border-color:#111; }
+.b--dark-gray{    border-color:#333; }
+.b--mid-gray{     border-color:#555; }
+.b--gray{         border-color:#777; }
+.b--silver{       border-color:#999; }
+.b--light-silver{ border-color:#aaa; }
+.b--light-gray{   border-color:#eee; }
+.b--near-white{   border-color:#f4f4f4; }
+.b--white{        border-color:#fff; }
+
+.b--white-90{   border-color:rgba(255,255,255,.9); }
+.b--white-80{   border-color:rgba(255,255,255,.8); }
+.b--white-70{   border-color:rgba(255,255,255,.7); }
+.b--white-60{   border-color:rgba(255,255,255,.6); }
+.b--white-50{   border-color:rgba(255,255,255,.5); }
+.b--white-40{   border-color:rgba(255,255,255,.4); }
+.b--white-30{   border-color:rgba(255,255,255,.3); }
+.b--white-20{   border-color:rgba(255,255,255,.2); }
+.b--white-10{   border-color:rgba(255,255,255,.1); }
+.b--white-05{   border-color:rgba(255,255,255,.05); }
+.b--white-025{   border-color:rgba(255,255,255,.025); }
+.b--white-0125{   border-color:rgba(255,255,255,.0125); }
+
+.b--black-90{   border-color:rgba(0,0,0,.9); }
+.b--black-80{   border-color:rgba(0,0,0,.8); }
+.b--black-70{   border-color:rgba(0,0,0,.7); }
+.b--black-60{   border-color:rgba(0,0,0,.6); }
+.b--black-50{   border-color:rgba(0,0,0,.5); }
+.b--black-40{   border-color:rgba(0,0,0,.4); }
+.b--black-30{   border-color:rgba(0,0,0,.3); }
+.b--black-20{   border-color:rgba(0,0,0,.2); }
+.b--black-10{   border-color:rgba(0,0,0,.1); }
+.b--black-05{   border-color:rgba(0,0,0,.05); }
+.b--black-025{   border-color:rgba(0,0,0,.025); }
+.b--black-0125{   border-color:rgba(0,0,0,.0125); }
+
+.b--transparent{ border-color:transprent; }
+
+  .br0{        border-radius:0; }
+  .br1{        border-radius:.125rem; }
+  .br2{        border-radius:.25rem; }
+  .br3{        border-radius:.5rem; }
+  .br4{        border-radius:1rem; }
+  .br-100{     border-radius:100%; }
+
+.b--none{   border-style:none; }
+.b--dotted{ border-style:dotted; }
+.b--dashed{ border-style:dashed; }
+.b--solid{  border-style:solid; }
+
+.bw0{ border-width:0; }
+.bw1{ border-width:.125rem; }
+.bw2{ border-width:.25rem; }
+.bw3{ border-width:.5rem; }
+.bw4{ border-width:1rem; }
+.bw5{ border-width:2rem; }
+.bottom-0{ bottom:0; }
+.bottom-1{ bottom:1rem; }
+.bottom-2{ bottom:2rem; }
+.bottom--1{ bottom:-1rem; }
+.bottom--2{ bottom:-2rem; }
+.db{     display:block; }
+.dib{    display:inline-block; }
+
+.bodoni{
+  font-family:"Bodoni MT",
+                serif;
+}
+.b{ font-weight:bold; }
+
+.link{
+  text-decoration:none;
+  transition:color .15s ease-in;
+}
+
+.link:link,
+.link:visited{
+  transition:color .15s ease-in;
+}
+.link:hover{
+  transition:color .15s ease-in;
+}
+.link:active{
+  transition:color .15s ease-in;
+}
+.link:focus{
+  transition:color .15s ease-in;
+}
+
+.black-90{         color:rgba(0,0,0,.9); }
+.black-80{         color:rgba(0,0,0,.8); }
+.black-70{         color:rgba(0,0,0,.7); }
+.black-60{         color:rgba(0,0,0,.6); }
+.black-50{         color:rgba(0,0,0,.5); }
+.black-40{         color:rgba(0,0,0,.4); }
+.black-30{         color:rgba(0,0,0,.3); }
+.black-20{         color:rgba(0,0,0,.2); }
+.black-10{         color:rgba(0,0,0,.1); }
+.black-05{         color:rgba(0,0,0,.05); }
+
+.bg-black-90{         background-color:rgba(0,0,0,.9); }
+.bg-black-80{         background-color:rgba(0,0,0,.8); }
+.bg-black-70{         background-color:rgba(0,0,0,.7); }
+.bg-black-60{         background-color:rgba(0,0,0,.6); }
+.bg-black-50{         background-color:rgba(0,0,0,.5); }
+.bg-black-40{         background-color:rgba(0,0,0,.4); }
+.bg-black-30{         background-color:rgba(0,0,0,.3); }
+.bg-black-20{         background-color:rgba(0,0,0,.2); }
+.bg-black-10{         background-color:rgba(0,0,0,.1); }
+.bg-black-05{         background-color:rgba(0,0,0,.05); }
+
+.bg-white-90{        background-color:rgba(255,255,255,.9); }
+.bg-white-80{        background-color:rgba(255,255,255,.8); }
+.bg-white-70{        background-color:rgba(255,255,255,.7); }
+.bg-white-60{        background-color:rgba(255,255,255,.6); }
+.bg-white-50{        background-color:rgba(255,255,255,.5); }
+.bg-white-40{        background-color:rgba(255,255,255,.4); }
+.bg-white-30{        background-color:rgba(255,255,255,.3); }
+.bg-white-20{        background-color:rgba(255,255,255,.2); }
+.bg-white-10{        background-color:rgba(255,255,255,.1); }
+
+.black{         color:#111; }
+.gray{          color:#777; }
+
+.bg-black{         background-color:#111; }
+.bg-near-black{         background-color:#111; }
+.bg-dark-gray{     background-color:#333; }
+.bg-mid-gray{      background-color:#555; }
+.bg-gray{          background-color:#777; }
+.bg-silver{       background-color:#999; }
+.bg-light-silver{  background-color:#aaa; }
+.bg-light-gray{    background-color:#eee; }
+.bg-near-white{    background-color:#f4f4f4; }
+.bg-white{         background-color:#fff; }
+
+.bg-focus-black:focus{ background-color:#111; }
+.bg-focus-near-black:focus{ background-color:#111; }
+.bg-focus-dark-gray:focus{ background-color:#333; }
+.bg-focus-mid-gray:focus{ background-color:#555; }
+.bg-focus-gray:focus{ background-color:#777; }
+.bg-focus-silver:focus{ background-color:#999; }
+.bg-focus-light-silver:focus{ background-color:#aaa; }
+.bg-focus-moon-gray:focus{ background-color:#ccc; }
+.bg-focus-light-gray:focus{ background-color:#eee; }
+.bg-focus-near-white:focus{ background-color:#f4f4f4; }
+.bg-focus-white:focus{ background-color:#fff; }
+
+.bg-hover-black:hover{ background-color:#111; }
+.bg-hover-near-black:hover{ background-color:#111; }
+.bg-hover-dark-gray:hover{ background-color:#333; }
+.bg-hover-mid-gray:hover{ background-color:#555; }
+.bg-hover-gray:hover{ background-color:#777; }
+.bg-hover-silver:hover{ background-color:#999; }
+.bg-hover-light-silver:hover{ background-color:#aaa; }
+.bg-hover-moon-gray:hover{ background-color:#ccc; }
+.bg-hover-light-gray:hover{ background-color:#eee; }
+.bg-hover-near-white:hover{ background-color:#f4f4f4; }
+.bg-hover-white:hover{ background-color:#fff; }
+.pa3{ padding:1rem; }
+.pb3{ padding-bottom:1rem; }
+.mr3{  margin-right:1rem; }
+.mb3{  margin-bottom:1rem; }
+.tc{ text-align:center; }
+.f1{ font-size:3rem; }
+.f6{ font-size:.875rem; }
+.dim{ 
+  opacity:1; 
+  transition:opacity .15s ease-in; 
+}
+.dim:hover,
+.dim:focus{ 
+  opacity:.5; 
+  transition:opacity .15s ease-in; 
+}
+.dim:active{
+  opacity:.8; transition:opacity .15s ease-out; 
+}
+@media screen and (min-width: 48em){
+
+  .bg-cv-ns{
+    background-size:cover;
+  }
+
+  .bg-cn-ns{
+    background-size:contain;
+  }
+
+  .ba-ns{
+    border-style:solid;
+    border-width:1px;
+  }
+
+  .bt-ns{
+    border-top-style:solid;
+    border-top-width:1px;
+  }
+
+  .br-ns{
+    border-right-style:solid;
+    border-right-width:1px;
+  }
+
+  .bb-ns{
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+  }
+
+  .bl-ns{
+    border-left-style:solid;
+    border-left-width:1px;
+  }
+
+  .br0-ns{
+    border-radius:0;
+  }
+
+  .br1-ns{
+    border-radius:.125rem;
+  }
+
+  .br2-ns{
+    border-radius:.25rem;
+  }
+
+  .br3-ns{
+    border-radius:.5rem;
+  }
+
+  .br4-ns{
+    border-radius:1rem;
+  }
+
+  .br-100-ns{
+    border-radius:100%;
+  }
+
+  .b--none-ns{
+    border-style:none;
+  }
+
+  .b--dotted-ns{
+    border-style:dotted;
+  }
+
+  .b--dashed-ns{
+    border-style:dashed;
+  }
+
+  .b--solid-ns{
+    border-style:solid;
+  }
+
+  .bw0-ns{
+    border-width:0;
+  }
+
+  .bw1-ns{
+    border-width:.125rem;
+  }
+
+  .bw2-ns{
+    border-width:.25rem;
+  }
+
+  .bw3-ns{
+    border-width:.5rem;
+  }
+
+  .bw4-ns{
+    border-width:1rem;
+  }
+
+  .bw5-ns{
+    border-width:2rem;
+  }
+
+  .bottom-0-ns{
+    bottom:0;
+  }
+
+  .bottom-1-ns{
+    bottom:1rem;
+  }
+
+  .bottom-2-ns{
+    bottom:2rem;
+  }
+
+  .bottom--1-ns{
+    bottom:-1rem;
+  }
+
+  .bottom--2-ns{
+    bottom:-2rem;
+  }
+
+  .db-ns{
+    display:block;
+  }
+
+  .dib-ns{
+    display:inline-block;
+  }
+
+  .b-ns{
+    font-weight:bold;
+  }
+
+  .pa3-ns{
+    padding:1rem;
+  }
+
+  .pa4-ns{
+    padding:2rem;
+  }
+
+  .pb3-ns{
+    padding-bottom:1rem;
+  }
+
+  .mr3-ns{
+    margin-right:1rem;
+  }
+
+  .mb3-ns{
+    margin-bottom:1rem;
+  }
+
+  .mb4-ns{
+    margin-bottom:2rem;
+  }
+
+  .tc-ns{
+    text-align:center;
+  }
+
+  .f-headline-ns{
+    font-size:6rem;
+  }
+
+  .f1-ns{
+    font-size:3rem;
+  }
+
+  .f5-ns{
+    font-size:1rem;
+  }
+
+  .f6-ns{
+    font-size:.875rem;
+  }
+}
+@media screen and (min-width: 48em) and (max-width: 64em){
+
+  .bg-cv-m{
+    background-size:cover;
+  }
+
+  .bg-cn-m{
+    background-size:contain;
+  }
+
+  .ba-m{
+    border-style:solid;
+    border-width:1px;
+  }
+
+  .bt-m{
+    border-top-style:solid;
+    border-top-width:1px;
+  }
+
+  .br-m{
+    border-right-style:solid;
+    border-right-width:1px;
+  }
+
+  .bb-m{
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+  }
+
+  .bl-m{
+    border-left-style:solid;
+    border-left-width:1px;
+  }
+
+  .br0-m{
+    border-radius:0;
+  }
+
+  .br1-m{
+    border-radius:.125rem;
+  }
+
+  .br2-m{
+    border-radius:.25rem;
+  }
+
+  .br3-m{
+    border-radius:.5rem;
+  }
+
+  .br4-m{
+    border-radius:1rem;
+  }
+
+  .br-100-m{
+    border-radius:100%;
+  }
+
+  .b--none-m{
+    border-style:none;
+  }
+
+  .b--dotted-m{
+    border-style:dotted;
+  }
+
+  .b--dashed-m{
+    border-style:dashed;
+  }
+
+  .b--solid-m{
+    border-style:solid;
+  }
+
+  .bw0-m{
+    border-width:0;
+  }
+
+  .bw1-m{
+    border-width:.125rem;
+  }
+
+  .bw2-m{
+    border-width:.25rem;
+  }
+
+  .bw3-m{
+    border-width:.5rem;
+  }
+
+  .bw4-m{
+    border-width:1rem;
+  }
+
+  .bw5-m{
+    border-width:2rem;
+  }
+
+  .bottom-0-m{
+    bottom:0;
+  }
+
+  .bottom-1-m{
+    bottom:1rem;
+  }
+
+  .bottom-2-m{
+    bottom:2rem;
+  }
+
+  .bottom--1-m{
+    bottom:-1rem;
+  }
+
+  .bottom--2-m{
+    bottom:-2rem;
+  }
+
+  .db-m{
+    display:block;
+  }
+
+  .dib-m{
+    display:inline-block;
+  }
+
+  .b-m{
+    font-weight:bold;
+  }
+
+  .pa3-m{
+    padding:1rem;
+  }
+
+  .pb3-m{
+    padding-bottom:1rem;
+  }
+
+  .mr3-m{
+    margin-right:1rem;
+  }
+
+  .mb3-m{
+    margin-bottom:1rem;
+  }
+
+  .tc-m{
+    text-align:center;
+  }
+
+  .f1-m{
+    font-size:3rem;
+  }
+
+  .f6-m{
+    font-size:.875rem;
+  }
+}
+@media screen and (min-width: 64em){
+
+  .bg-cv-l{
+    background-size:cover;
+  }
+
+  .bg-cn-l{
+    background-size:contain;
+  }
+
+  .ba-l{
+    border-style:solid;
+    border-width:1px;
+  }
+
+  .bt-l{
+    border-top-style:solid;
+    border-top-width:1px;
+  }
+
+  .br-l{
+    border-right-style:solid;
+    border-right-width:1px;
+  }
+
+  .bb-l{
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+  }
+
+  .bl-l{
+    border-left-style:solid;
+    border-left-width:1px;
+  }
+
+  .br0-l{
+    border-radius:0;
+  }
+
+  .br1-l{
+    border-radius:.125rem;
+  }
+
+  .br2-l{
+    border-radius:.25rem;
+  }
+
+  .br3-l{
+    border-radius:.5rem;
+  }
+
+  .br4-l{
+    border-radius:1rem;
+  }
+
+  .br-100-l{
+    border-radius:100%;
+  }
+
+  .b--none-l{
+    border-style:none;
+  }
+
+  .b--dotted-l{
+    border-style:dotted;
+  }
+
+  .b--dashed-l{
+    border-style:dashed;
+  }
+
+  .b--solid-l{
+    border-style:solid;
+  }
+
+  .bw0-l{
+    border-width:0;
+  }
+
+  .bw1-l{
+    border-width:.125rem;
+  }
+
+  .bw2-l{
+    border-width:.25rem;
+  }
+
+  .bw3-l{
+    border-width:.5rem;
+  }
+
+  .bw4-l{
+    border-width:1rem;
+  }
+
+  .bw5-l{
+    border-width:2rem;
+  }
+
+  .bottom-0-l{
+    bottom:0;
+  }
+
+  .bottom-1-l{
+    bottom:1rem;
+  }
+
+  .bottom-2-l{
+    bottom:2rem;
+  }
+
+  .bottom--1-l{
+    bottom:-1rem;
+  }
+
+  .bottom--2-l{
+    bottom:-2rem;
+  }
+
+  .db-l{
+    display:block;
+  }
+
+  .dib-l{
+    display:inline-block;
+  }
+
+  .b-l{
+    font-weight:bold;
+  }
+
+  .pa3-l{
+    padding:1rem;
+  }
+
+  .pb3-l{
+    padding-bottom:1rem;
+  }
+
+  .mr3-l{
+    margin-right:1rem;
+  }
+
+  .mb3-l{
+    margin-bottom:1rem;
+  }
+
+  .tc-l{
+    text-align:center;
+  }
+
+  .f1-l{
+    font-size:3rem;
+  }
+
+  .f6-l{
+    font-size:.875rem;
+  }
+}
+
+  </pre>
+
+  <h2 class="f5 mt5">Modules</h2>
+  <ul class="list pl0 cf lh-copy mw7">
+    
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-box-sizing">tachyons-box-sizing</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-background-size">tachyons-background-size</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-borders">tachyons-borders</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-colors">tachyons-border-colors</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-radius">tachyons-border-radius</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-style">tachyons-border-style</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-widths">tachyons-border-widths</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-coordinates">tachyons-coordinates</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-display">tachyons-display</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-font-family">tachyons-font-family</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-font-weight">tachyons-font-weight</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-links">tachyons-links</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-skins">tachyons-skins</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-spacing">tachyons-spacing</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-text-align">tachyons-text-align</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-type-scale">tachyons-type-scale</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-hovers">tachyons-hovers</a></li>
+  
+  </ul>
+
+
+  
+
+
+  <h4 class="mt5">Install these modules via npm</h4>
+  <code>npm i --save tachyons-box-sizing tachyons-background-size tachyons-borders tachyons-border-colors tachyons-border-radius tachyons-border-style tachyons-border-widths tachyons-coordinates tachyons-display tachyons-font-family tachyons-font-weight tachyons-links tachyons-skins tachyons-spacing tachyons-text-align tachyons-type-scale tachyons-hovers</code>
+  </section>
+</main>
+
+  
+
+  <footer class="bg-near-white mid-gray ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+  <a href="https://twitter.com/intent/tweet?text=Tachyons: Functional CSS for Humans.&url=http://tachyons.io" target="_blank" class="dn mb3 twitter bg-white link dim br2 ph2 pb1 pt0 lh-solid" style="background-color: #55acee;">
+    <svg class="geomicon dib v-mid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="#fff">
+      <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
+    </svg>
+    <span class="dib v-mid white fw6" style="font-size: 12px;">Tweet</span>
+  </a>
+  <article>
+    <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+    <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+  </article>
+
+  <p>
+    <a class="black-70 link dim b dib mr3" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
+      Join our Slack Channel
+    </a>
+    <a class="black-70 link dim b dib mr3" href="https://github.com/tachyons-css/tachyons/issues" title="File a bug, request a feature, ask a question!">
+      Open an Issue
+    </a>
+    <a class="black-70 link dim b dib mr3" href="https://github.com/tachyons-css" title="Tachyons-css on GitHub">
+      GitHub
+    </a>
+  </p>
+  <p class="measure copy lh-copy">
+    Have a question? Need help? Feel free to open an issue on GitHub or ask a
+    question in our slack channel. We're here to try and help make designing in
+    the browser fun.
+  </p>
+  <small class="f6 measure db lh-copy mt5">
+    A tachyon /ˈtæki.ɒn/ or tachyonic particle is a hypothetical particle
+    that always moves faster than light.
+    The word comes from the Greek:
+    <br> <br>
+    ταχύς or tachys, meaning "swift, quick, fast, rapid"
+  </small>
+</footer>
+
+      <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-55773803-1', 'auto');
+ga('send', 'pageview');
+
+    </script>
+
+</body>
+</html>
+
+
