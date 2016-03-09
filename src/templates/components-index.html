@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TACHYONS - <%= title %></title>
+<meta name="description" content="Tachyons Components">
+  <%= head %>
+</head>
+<body class="w-100 sans-serif">
+<main>
+
+  <% Object.keys(componentsForNav).map(function(category) { %>
+    <%= category %><br>
+    <% componentsForNav[category].map(function(componentForNav) { %>
+      <a href="<%= componentForNav.href %>"><%= componentForNav.name %></a><br>
+    <% }) %>
+  <% }) %>
+</main>
+
+  <%= footer %>
+  <%= analytics %>
+</body>
+</html>
+
+
