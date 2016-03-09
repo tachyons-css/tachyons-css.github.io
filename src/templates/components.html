@@ -47,18 +47,24 @@
   <h4 class="mt5">Install these modules via npm</h4>
   <code>npm i --save <%= modules.join(' ') %></code>
   </section>
+  <section class="ph3 ph5-ns bt b--black-10 mt5 pv4">
+    <h1 class="f6 b ttu">Other Components</h1>
+
+  <% Object.keys(componentsForNav).map(function(category) { %>
+    <div>
+      <h2 class="f5 mb2 ttc mid-gray"><%= category %></h2>
+      <% componentsForNav[category].map(function(componentForNav) { %>
+        <a class="f5 dib mr3 blue link dim fw6" href="<%= componentForNav.href %>"><%= componentForNav.name %></a>
+      <% }) %>
+    </div>
+  <% }) %>
+  </section>
 </main>
 
   <% function renderClass(klass) { %>
     <li><%= klass %></li>
   <% } %>
 
-  <% Object.keys(componentsForNav).map(function(category) { %>
-    <%= category %><br>
-    <% componentsForNav[category].map(function(componentForNav) { %>
-      <a href="<%= componentForNav.href %>"><%= componentForNav.name %></a><br>
-    <% }) %>
-  <% }) %>
 
   <%= footer %>
   <%= analytics %>
