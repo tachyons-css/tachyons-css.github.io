@@ -32,13 +32,14 @@ module.exports = function () {
         if (moduleName === 'normalize') { return }
 
         var newRow = '<tr>' +
-          '<td>' + rule.selector + '</td>' +
-          '<td>' +
+          '<td class="bb b--black-10 pv3">' +'<pre class="f5">' + rule.selector + '</pre>'+'</td>' +
+          '<td class="bb b--black-10 pv3">' + '<pre class=f5">' +
             rule.nodes.map(function (decl) {
-              return '<pre>' + decl.prop + ':' + decl.value
+              return  decl.prop + ':' + decl.value
             }).join('<br>') +
+          '</pre>' +
           '</td>' +
-          '<td><a href="https://github.com/tachyons-css/tachyons-' + moduleName +'">' + moduleName + '</a></td>' +
+          '<td class="bb b--black-05 pv2"><a class="link blue dim f6" href="https://github.com/tachyons-css/tachyons-' + moduleName +'">' + moduleName + '</a></td>' +
         '</tr>'
 
         tableData += newRow
