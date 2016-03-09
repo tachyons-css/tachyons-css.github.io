@@ -76,6 +76,8 @@
     "glob": "^5.0.15",
     "gzip-size": "^3.0.0",
     "immutable-css": "^0.1.0",
+    "is-blank": "^1.1.0",
+    "is-css-root": "^1.0.1",
     "json-front-matter": "^1.0.0",
     "lodash": "^3.10.0",
     "mkdirp": "^0.5.1",
