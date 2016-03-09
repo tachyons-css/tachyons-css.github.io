@@ -44,7 +44,6 @@
     <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/<%= module %>"><%= module %></a></li>
   <% } %>
 
-
   <h4 class="mt5">Install these modules via npm</h4>
   <code>npm i --save <%= modules.join(' ') %></code>
   </section>
@@ -53,6 +52,13 @@
   <% function renderClass(klass) { %>
     <li><%= klass %></li>
   <% } %>
+
+  <% Object.keys(componentsForNav).map(function(category) { %>
+    <%= category %><br>
+    <% componentsForNav[category].map(function(componentForNav) { %>
+      <a href="<%= componentForNav.href %>"><%= componentForNav.name %></a><br>
+    <% }) %>
+  <% }) %>
 
   <%= footer %>
   <%= analytics %>
