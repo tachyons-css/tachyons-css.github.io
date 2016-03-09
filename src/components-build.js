@@ -13,11 +13,12 @@ var select = require('postcss-select')
 var atImport = require('postcss-import')
 var conditionals = require('postcss-conditionals')
 var removeComments = require('postcss-discard-comments')
+var perfectionist = require('perfectionist')
+var removeEmpty = require('postcss-discard-empty')
 var cssVariables = require('postcss-css-variables')
 var customMedia = require('postcss-custom-media')
 var mqPacker = require('css-mqpacker')
 var cssstats = require('cssstats')
-var perfectionist = require('perfectionist')
 
 var tachyonsCss = fs.readFileSync('src/css/tachyons.css', 'utf8')
 var footer = fs.readFileSync('src/templates/footer.html', 'utf8')
@@ -88,7 +89,7 @@ module.exports = function () {
 
       frontMatter.componentCss = postcss([
         atImport(), cssVariables(), conditionals(), customMedia(), select(frontMatter.classes),
-        removeComments({ removeAll: true }), mqPacker(), getModules(), perfectionist()
+        removeComments({ removeAll: true }), mqPacker(), removeEmpty(), getModules(), perfectionist()
       ]).process(tachyonsCss, {
         from: 'src/css/tachyons.css'
       }).css
