@@ -9,6 +9,22 @@
 <main>
   <%= content %>
   <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70" style="background: #fafafa;">
+  <h1 class="f4 mt0"><%= title %></h1>
+
+<div class="cf">
+<div class="fl w-100 w-75-ns pr0 pr2-ns">
+<h2 class="f5">HTML</h2>
+<pre class="pa3 ba br2 b--black-05">
+<%= escapedHtml %>
+</pre>
+</div>
+<div class="fl w-100 w-25-ns pl0 pl2-ns">
+<h2 class="f5">CSS</h2>
+<pre class="pa3 ba br2 b--black-05"><%= componentCss %>
+</pre>
+</div>
+</div>
+
   <h2 class="f5">Module CSS Stats</h2>
   <dl class="dib mr4">
     <dt class="db f6">Size (Gzipped)</dt>
@@ -23,16 +39,6 @@
     <dd class="ml0 b f3 f2-ns"><%= stats.declarations.total %></dd>
   </dl>
 
-
-  <h2 class="f5">HTML</h2>
-
-<pre class="pa3 ba br2 b--black-05">
-<%= escapedHtml %>
-</pre>
-  <h4>CSS</h4>
-  <pre class="pa3 ba br2 b--black-05"><%= componentCss %>
-  </pre>
-
   <h2 class="f5 mt5">Modules</h2>
   <ul class="list pl0 cf lh-copy mw7">
     <% modules.map(renderModule) %>
@@ -43,10 +49,10 @@
     <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/<%= module %>"><%= module %></a></li>
   <% } %>
 
-  <h4 class="mt5">Install these modules via npm</h4>
+
+  <h4 class="mt5">Install via npm <small class="fw2 f6 db">Only installs the needed tachyons-modules for this component</small></h4>
   <code>npm i --save <%= modules.join(' ') %></code>
-  </section>
-  <section class="ph3 ph5-ns bt b--black-10 mt5 pv4">
+  <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 
   <% Object.keys(componentsForNav).map(function(category) { %>
@@ -57,6 +63,7 @@
       <% }) %>
     </div>
   <% }) %>
+  </section>
   </section>
 </main>
 

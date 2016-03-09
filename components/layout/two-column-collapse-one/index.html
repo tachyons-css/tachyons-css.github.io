@@ -28,23 +28,11 @@
 </article>
 
   <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70" style="background: #fafafa;">
-  <h2 class="f5">Module CSS Stats</h2>
-  <dl class="dib mr4">
-    <dt class="db f6">Size (Gzipped)</dt>
-    <dd class="ml0 b f3 f2-ns">204</dd>
-  </dl>
-  <dl class="dib mr4">
-    <dt class="db f6">Selectors</dt>
-    <dd class="ml0 b f3 f2-ns">7</dd>
-  </dl>
-  <dl class="dib">
-    <dt class="db f6">Declarations</dt>
-    <dd class="ml0 b f3 f2-ns">8</dd>
-  </dl>
+  <h1 class="f4 mt0">Layout Two Column Collapse One</h1>
 
-
-  <h2 class="f5">HTML</h2>
-
+<div class="cf">
+<div class="fl w-100 w-75-ns pr0 pr2-ns">
+<h2 class="f5">HTML</h2>
 <pre class="pa3 ba br2 b--black-05">
 &lt;article class=&quot;cf&quot;&gt;
   &lt;div class=&quot;fl w-100 w-50-ns bg-near-white tc&quot;&gt;
@@ -58,8 +46,10 @@
 &lt;/article&gt;
 
 </pre>
-  <h4>CSS</h4>
-  <pre class="pa3 ba br2 b--black-05">.cf {
+</div>
+<div class="fl w-100 w-25-ns pl0 pl2-ns">
+<h2 class="f5">CSS</h2>
+<pre class="pa3 ba br2 b--black-05">.cf {
     *zoom: 1;
 }
 
@@ -90,7 +80,23 @@
     }
 }
 
-  </pre>
+</pre>
+</div>
+</div>
+
+  <h2 class="f5">Module CSS Stats</h2>
+  <dl class="dib mr4">
+    <dt class="db f6">Size (Gzipped)</dt>
+    <dd class="ml0 b f3 f2-ns">204</dd>
+  </dl>
+  <dl class="dib mr4">
+    <dt class="db f6">Selectors</dt>
+    <dd class="ml0 b f3 f2-ns">7</dd>
+  </dl>
+  <dl class="dib">
+    <dt class="db f6">Declarations</dt>
+    <dd class="ml0 b f3 f2-ns">8</dd>
+  </dl>
 
   <h2 class="f5 mt5">Modules</h2>
   <ul class="list pl0 cf lh-copy mw7">
@@ -110,10 +116,10 @@
 
   
 
-  <h4 class="mt5">Install these modules via npm</h4>
+
+  <h4 class="mt5">Install via npm <small class="fw2 f6 db">Only installs the needed tachyons-modules for this component</small></h4>
   <code>npm i --save tachyons-clearfix tachyons-floats tachyons-widths tachyons-skins tachyons-text-align</code>
-  </section>
-  <section class="ph3 ph5-ns bt b--black-10 mt5 pv4">
+  <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 
   
@@ -148,6 +154,7 @@
       
     </div>
   
+  </section>
   </section>
 </main>
 
