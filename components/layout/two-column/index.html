@@ -31,7 +31,7 @@
   <h2 class="f5">Module CSS Stats</h2>
   <dl class="dib mr4">
     <dt class="db f6">Size (Gzipped)</dt>
-    <dd class="ml0 b f3 f2-ns">330</dd>
+    <dd class="ml0 b f3 f2-ns">294</dd>
   </dl>
   <dl class="dib mr4">
     <dt class="db f6">Selectors</dt>
@@ -59,42 +59,84 @@
 
 </pre>
   <h4>CSS</h4>
-  <pre class="pa3 ba br2 b--black-05">
-    /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+  <pre class="pa3 ba br2 b--black-05">.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
 
-.cf:before,
-.cf:after{ content:" "; display:table; }
-.cf:after{ clear:both; }
-.cf{       *zoom:1; }
+.cf:after {
+    clear: both;
+}
 
+.cf {
+    *zoom: 1;
+}
 
+.fl {
+    float: left;
+    display: inline;
+}
 
-.fl{ float:left;  display:inline; }
-.w-50{  width:50%; }
-.bg-light-gray{    background-color:#eee; }
-.bg-near-white{    background-color:#f4f4f4; }
-.tc{ text-align:center; }
-@media screen and (min-width: 48em){
+.w-50 {
+    width: 50%;
+}
 
- .fl-ns{ float:left; display:inline; }
+.bg-light-gray {
+    background-color: #eee;
+}
 
- .w-50-ns{ width:50%; }
+.bg-near-white {
+    background-color: #f4f4f4;
+}
 
- .tc-ns{ text-align:center; } }
-@media screen and (min-width: 48em) and (max-width: 64em){
+.tc {
+    text-align: center;
+}
 
- .fl-m{ float:left; display:inline; }
+@media screen and (min-width: 48em) {
+    .fl-ns {
+        float: left;
+        display: inline;
+    }
 
- .w-50-m{ width:50%; }
+    .w-50-ns {
+        width: 50%;
+    }
 
- .tc-m{ text-align:center; } }
-@media screen and (min-width: 64em){
+    .tc-ns {
+        text-align: center;
+    }
+}
 
- .fl-l{ float:left; display:inline; }
+@media screen and (min-width: 48em) and (max-width: 64em) {
+    .fl-m {
+        float: left;
+        display: inline;
+    }
 
- .w-50-l{ width:50%; }
+    .w-50-m {
+        width: 50%;
+    }
 
- .tc-l{ text-align:center; } }
+    .tc-m {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .fl-l {
+        float: left;
+        display: inline;
+    }
+
+    .w-50-l {
+        width: 50%;
+    }
+
+    .tc-l {
+        text-align: center;
+    }
+}
 
   </pre>
 
@@ -129,13 +171,6 @@
         <a class="f5 dib mr3 blue link dim fw6" href="/components/articles/title-text-image/index.html">Articles Title Text Image</a>
       
         <a class="f5 dib mr3 blue link dim fw6" href="/components/articles/title-text/index.html">Articles Title Text</a>
-      
-    </div>
-  
-    <div>
-      <h2 class="f5 mb2 ttc mid-gray">grids</h2>
-      
-        <a class="f5 dib mr3 blue link dim fw6" href="/components/grids/two-column/index.html">Grids Two Column</a>
       
     </div>
   

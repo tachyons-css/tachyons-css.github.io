@@ -17,8 +17,12 @@ var cssVariables = require('postcss-css-variables')
 var customMedia = require('postcss-custom-media')
 var mqPacker = require('css-mqpacker')
 var cssstats = require('cssstats')
+var perfectionist = require('perfectionist')
 
 var tachyonsCss = fs.readFileSync('src/css/tachyons.css', 'utf8')
+var footer = fs.readFileSync('src/templates/footer.html', 'utf8')
+var analytics = fs.readFileSync('src/templates/ga.html', 'utf8')
+var head = fs.readFileSync('src/templates/head.html', 'utf8')
 
 module.exports = function () {
   glob('src/components/**/*.html', {}, function (err, components) {
@@ -28,6 +32,7 @@ module.exports = function () {
     }
 
     var template = fs.readFileSync('src/templates/components.html', 'utf8')
+    var indexTemplate = fs.readFileSync('src/templates/components-index.html', 'utf8')
 
     var componentsForNav = {}
     components.map(function (component) {
@@ -40,6 +45,17 @@ module.exports = function () {
         name: getTitle(component)
       })
     })
+
+    var compiledPage = _.template(indexTemplate)({
+      componentsForNav: componentsForNav,
+      title: 'Components',
+      analytics: analytics,
+      footer: footer,
+      head: head
+    })
+
+    mkdirp.sync('components')
+    fs.writeFileSync('components/index.html', compiledPage)
 
     components.forEach(function (component) {
       var newDir = rmHtmlExt(component.replace('src/', ''))
@@ -56,9 +72,9 @@ module.exports = function () {
       frontMatter.componentHtml = componentHtml
       frontMatter.content = fmParsed.body
       frontMatter.escapedHtml = escapeHtml(fmParsed.body)
-      frontMatter.footer = fs.readFileSync('src/templates/footer.html', 'utf8')
-      frontMatter.analytics = fs.readFileSync('src/templates/ga.html', 'utf8')
-      frontMatter.head = fs.readFileSync('src/templates/head.html', 'utf8')
+      frontMatter.footer = footer
+      frontMatter.analytics = analytics
+      frontMatter.head = head
       frontMatter.componentsForNav = componentsForNav
 
       var moduleSrcs = {}
@@ -72,7 +88,7 @@ module.exports = function () {
 
       frontMatter.componentCss = postcss([
         atImport(), cssVariables(), conditionals(), customMedia(), select(frontMatter.classes),
-        removeComments(), mqPacker(), getModules()
+        removeComments({ removeAll: true }), mqPacker(), getModules(), perfectionist()
       ]).process(tachyonsCss, {
         from: 'src/css/tachyons.css'
       }).css
