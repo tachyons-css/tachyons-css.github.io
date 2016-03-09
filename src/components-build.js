@@ -24,6 +24,7 @@ var tachyonsCss = fs.readFileSync('src/css/tachyons.css', 'utf8')
 var footer = fs.readFileSync('src/templates/footer.html', 'utf8')
 var analytics = fs.readFileSync('src/templates/ga.html', 'utf8')
 var head = fs.readFileSync('src/templates/head.html', 'utf8')
+var highlight = fs.readFileSync('src/templates/highlight.html', 'utf8')
 
 module.exports = function () {
   glob('src/components/**/*.html', {}, function (err, components) {
@@ -43,7 +44,7 @@ module.exports = function () {
       componentsForNav[category] = componentsForNav[category] || []
       componentsForNav[category].push({
         href: component.replace('src', '').replace('.html', '') + '/index.html',
-        name: getTitle(component)
+        name: getTitle(component.split('/')[3])
       })
     })
 
@@ -76,6 +77,7 @@ module.exports = function () {
       frontMatter.footer = footer
       frontMatter.analytics = analytics
       frontMatter.head = head
+      frontMatter.highlight = highlight
       frontMatter.componentsForNav = componentsForNav
 
       var moduleSrcs = {}

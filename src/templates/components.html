@@ -15,13 +15,13 @@
 <div class="fl w-100 w-75-ns pr0 pr2-ns">
 <h2 class="f5">HTML</h2>
 <p class="f5 black-70"></p>
-<pre class="pa3 ba br2 b--black-05 h5">
+<pre class="pa3 ba br2 b--black-05 h5" id="html">
 <%= escapedHtml %>
 </pre>
 </div>
 <div class="fl w-100 w-25-ns pl0 pl2-ns">
 <h2 class="f5">CSS</h2>
-<pre class="pa3 ba br2 b--black-05 h5"><%= componentCss %>
+<pre class="pa3 ba br2 b--black-05 h5" id="css"><%= componentCss %>
 </pre>
 </div>
 </div>
@@ -75,7 +75,7 @@
     <li><%= klass %></li>
   <% } %>
 
-
+	<%= highlight %>
   <%= footer %>
   <%= analytics %>
 </body>
