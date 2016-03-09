@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>TACHYONS - Grids Two Column</title>
+<title>TACHYONS - Layout Two Column</title>
 <meta name="description" content="Tachyons Component">
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -17,15 +17,21 @@
 <body class="w-100 sans-serif bg-white">
 <main>
   <article class="cf">
-  <div class="fl w-50 bg-near-white pa4">First Column</div>
-  <div class="fl w-50 bg-light-gray pa4">Second Column</div>
+  <div class="fl w-50 bg-near-white tc">
+    <h1>Column One</h1>
+  </div>
+  <div class="fl w-50 bg-light-gray tc">
+    <h1>Column Two</h1>
+  </div>
+
+  </div>
 </article>
 
   <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70" style="background: #fafafa;">
   <h2 class="f5">Module CSS Stats</h2>
   <dl class="dib mr4">
     <dt class="db f6">Size (Gzipped)</dt>
-    <dd class="ml0 b f3 f2-ns">328</dd>
+    <dd class="ml0 b f3 f2-ns">330</dd>
   </dl>
   <dl class="dib mr4">
     <dt class="db f6">Selectors</dt>
@@ -41,8 +47,14 @@
 
 <pre class="pa3 ba br2 b--black-05">
 &lt;article class=&quot;cf&quot;&gt;
-  &lt;div class=&quot;fl w-50 bg-near-white pa4&quot;&gt;First Column&lt;/div&gt;
-  &lt;div class=&quot;fl w-50 bg-light-gray pa4&quot;&gt;Second Column&lt;/div&gt;
+  &lt;div class=&quot;fl w-50 bg-near-white tc&quot;&gt;
+    &lt;h1&gt;Column One&lt;/h1&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;fl w-50 bg-light-gray tc&quot;&gt;
+    &lt;h1&gt;Column Two&lt;/h1&gt;
+  &lt;/div&gt;
+
+  &lt;/div&gt;
 &lt;/article&gt;
 
 </pre>
@@ -61,28 +73,28 @@
 .w-50{  width:50%; }
 .bg-light-gray{    background-color:#eee; }
 .bg-near-white{    background-color:#f4f4f4; }
-.pa4{ padding:2rem; }
+.tc{ text-align:center; }
 @media screen and (min-width: 48em){
 
  .fl-ns{ float:left; display:inline; }
 
  .w-50-ns{ width:50%; }
 
- .pa4-ns{ padding:2rem; } }
+ .tc-ns{ text-align:center; } }
 @media screen and (min-width: 48em) and (max-width: 64em){
 
  .fl-m{ float:left; display:inline; }
 
  .w-50-m{ width:50%; }
 
- .pa4-m{ padding:2rem; } }
+ .tc-m{ text-align:center; } }
 @media screen and (min-width: 64em){
 
  .fl-l{ float:left; display:inline; }
 
  .w-50-l{ width:50%; }
 
- .pa4-l{ padding:2rem; } }
+ .tc-l{ text-align:center; } }
 
   </pre>
 
@@ -97,7 +109,7 @@
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-skins">tachyons-skins</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-spacing">tachyons-spacing</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f6 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-text-align">tachyons-text-align</a></li>
   
   </ul>
 
@@ -105,7 +117,7 @@
   
 
   <h4 class="mt5">Install these modules via npm</h4>
-  <code>npm i --save tachyons-clearfix tachyons-floats tachyons-widths tachyons-skins tachyons-spacing</code>
+  <code>npm i --save tachyons-clearfix tachyons-floats tachyons-widths tachyons-skins tachyons-text-align</code>
   </section>
   <section class="ph3 ph5-ns bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
