@@ -30,7 +30,7 @@ module.exports = function () {
     var template = fs.readFileSync('src/templates/components.html', 'utf8')
 
     components.forEach(function (component) {
-      var newDir = rmHtmlExt(component.replace('src/', 'examples/'))
+      var newDir = rmHtmlExt(component.replace('src/', ''))
       var newFile = newDir + '/index.html'
       var componentHtml = fs.readFileSync(component, 'utf8')
 
