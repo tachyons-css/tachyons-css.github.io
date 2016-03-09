@@ -29,6 +29,18 @@ module.exports = function () {
 
     var template = fs.readFileSync('src/templates/components.html', 'utf8')
 
+    var componentsForNav = {}
+    components.map(function (component) {
+      var componentTokens = component.replace('src/components/', '').split('/')
+      var category = componentTokens[0]
+
+      componentsForNav[category] = componentsForNav[category] || []
+      componentsForNav[category].push({
+        href: component.replace('src', '').replace('.html', '') + '/index.html',
+        name: getTitle(component)
+      })
+    })
+
     components.forEach(function (component) {
       var newDir = rmHtmlExt(component.replace('src/', ''))
       var newFile = newDir + '/index.html'
@@ -47,6 +59,7 @@ module.exports = function () {
       frontMatter.footer = fs.readFileSync('src/templates/footer.html', 'utf8')
       frontMatter.analytics = fs.readFileSync('src/templates/ga.html', 'utf8')
       frontMatter.head = fs.readFileSync('src/templates/head.html', 'utf8')
+      frontMatter.componentsForNav = componentsForNav
 
       var moduleSrcs = {}
       var getModules = postcss.plugin('get-modules', function () {
