@@ -35,7 +35,7 @@
 <div class="fl w-100 w-75-ns pr0 pr2-ns">
 <h2 class="f5">HTML</h2>
 <p class="f5 black-70"></p>
-<pre class="pa3 ba br2 b--black-05 h5">
+<pre class="pa3 ba br2 b--black-05 h5" id="html">
 &lt;div class=&quot;dt mw6 center pt0 pb5 pv5-m pv6-ns&quot;&gt;
   &lt;div class=&quot;db dtc-ns v-mid-ns&quot;&gt;
     &lt;img src=&quot;/img/super-wide.jpg&quot; alt=&quot;A bright blue sky&quot; class=&quot;w-100 mw7 w5-ns&quot; /&gt;
@@ -52,7 +52,7 @@
 </div>
 <div class="fl w-100 w-25-ns pl0 pl2-ns">
 <h2 class="f5">CSS</h2>
-<pre class="pa3 ba br2 b--black-05 h5">.db {
+<pre class="pa3 ba br2 b--black-05 h5" id="css">.db {
     display: block;
 }
 
@@ -185,31 +185,31 @@
     <div>
       <h2 class="f5 mb2 ttc mid-gray">articles</h2>
       
-        <a class="f5 dib mr3 blue link dim fw6" href="/components/articles/title-text-image/index.html">Articles Title Text Image</a>
+        <a class="f5 dib mr3 blue link dim fw6" href="/components/articles/title-text-image/index.html">Title Text Image</a>
       
-        <a class="f5 dib mr3 blue link dim fw6" href="/components/articles/title-text/index.html">Articles Title Text</a>
+        <a class="f5 dib mr3 blue link dim fw6" href="/components/articles/title-text/index.html">Title Text</a>
       
     </div>
   
     <div>
       <h2 class="f5 mb2 ttc mid-gray">layout</h2>
       
-        <a class="f5 dib mr3 blue link dim fw6" href="/components/layout/flag-object-collapse/index.html">Layout Flag Object Collapse</a>
+        <a class="f5 dib mr3 blue link dim fw6" href="/components/layout/flag-object-collapse/index.html">Flag Object Collapse</a>
       
-        <a class="f5 dib mr3 blue link dim fw6" href="/components/layout/flag-object/index.html">Layout Flag Object</a>
+        <a class="f5 dib mr3 blue link dim fw6" href="/components/layout/flag-object/index.html">Flag Object</a>
       
-        <a class="f5 dib mr3 blue link dim fw6" href="/components/layout/two-column-collapse-one/index.html">Layout Two Column Collapse One</a>
+        <a class="f5 dib mr3 blue link dim fw6" href="/components/layout/two-column-collapse-one/index.html">Two Column Collapse One</a>
       
-        <a class="f5 dib mr3 blue link dim fw6" href="/components/layout/two-column/index.html">Layout Two Column</a>
+        <a class="f5 dib mr3 blue link dim fw6" href="/components/layout/two-column/index.html">Two Column</a>
       
     </div>
   
     <div>
       <h2 class="f5 mb2 ttc mid-gray">nav</h2>
       
-        <a class="f5 dib mr3 blue link dim fw6" href="/components/nav/large-title-link-list/index.html">Nav Large Title Link List</a>
+        <a class="f5 dib mr3 blue link dim fw6" href="/components/nav/large-title-link-list/index.html">Large Title Link List</a>
       
-        <a class="f5 dib mr3 blue link dim fw6" href="/components/nav/title-link-list/index.html">Nav Title Link List</a>
+        <a class="f5 dib mr3 blue link dim fw6" href="/components/nav/title-link-list/index.html">Title Link List</a>
       
     </div>
   
@@ -219,6 +219,112 @@
 
   
 
+	<script src="/js/highlight.min.js"></script>
+<script>
+  hljs.highlightBlock(document.querySelector('#css'))
+  hljs.highlightBlock(document.querySelector('#html'))
+</script>
+<style>
+/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #333;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-type,
+.hljs-class .hljs-title {
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: #009926;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #990073;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #0086b3;
+}
+
+.hljs-meta {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+</style>
 
   <footer class="bg-near-white mid-gray ph3 ph5-ns pv5 pv6-ns bt b--black-10">
   <a href="https://twitter.com/intent/tweet?text=Tachyons: Functional CSS for Humans.&url=http://tachyons.io" target="_blank" class="dn mb3 twitter bg-white link dim br2 ph2 pb1 pt0 lh-solid" style="background-color: #55acee;">
