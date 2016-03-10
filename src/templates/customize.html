@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TACHYONS - <%= title %></title>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<meta name="description" content="Tachyons Customization">
+  <%= head %>
+</head>
+<body class="w-100 sans-serif">
+  <main>
+    <% cssModules.map(function(module) { %>
+      <div data-css="<%= module.css %>">
+        <label>
+          <input type="checkbox" checked value="<%= module.name %>" />
+          <a href="https://github.com/tachyons-css/tachyons-<%= module.name %>">tachyons-<%= module.name %></a>
+        </label>
+      </div>
+    <% }) %>
+    <a href="#!" id="customize">Customize</a>
+  </main>
+
+  <%= footer %>
+  <%= analytics %>
+  <script>
+    $(document).ready(function () {
+      $('#customize').on('click', function () {
+        var css = ''
+        $('input:checked').each(function () {
+          css += $(this).closest('[data-css]').data('css')
+        })
+        console.log(css)
+      })
+    })
+  </script>
+</body>
+</html>
