@@ -44,7 +44,7 @@ module.exports = function () {
       componentsForNav[category] = componentsForNav[category] || []
       componentsForNav[category].push({
         href: component.replace('src', '').replace('.html', '') + '/index.html',
-        name: getTitle(component.split('/')[3])
+        name: getName(component)
       })
     })
 
@@ -68,6 +68,7 @@ module.exports = function () {
       var frontMatter = fmParsed.attributes || {}
       frontMatter.bodyClass = frontMatter.bodyClass || ''
       frontMatter.title = frontMatter.title || getTitle(component)
+      frontMatter.name = frontMatter.name || getName(component)
       frontMatter.classes = getClasses(fmParsed.body).map(function(klass) {
         return '.' + klass
       })
@@ -113,4 +114,8 @@ module.exports = function () {
 function getTitle(component) {
   var title = rmHtmlExt(component).replace('src/components/', '').replace(/(\/|_|-)/g, ' ')
   return titleize(title)
+}
+
+function getName(component) {
+  return titleize(getTitle(component.split('/')[3]))
 }
