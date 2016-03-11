@@ -24,6 +24,7 @@ var tachyonsCss = fs.readFileSync('src/css/tachyons.css', 'utf8')
 var footer = fs.readFileSync('src/templates/footer.html', 'utf8')
 var analytics = fs.readFileSync('src/templates/ga.html', 'utf8')
 var head = fs.readFileSync('src/templates/head.html', 'utf8')
+var header = fs.readFileSync('src/templates/header.html', 'utf8')
 var highlight = fs.readFileSync('src/templates/highlight.html', 'utf8')
 
 module.exports = function () {
@@ -53,7 +54,8 @@ module.exports = function () {
       title: 'Components',
       analytics: analytics,
       footer: footer,
-      head: head
+      head: head,
+      header: header,
     })
 
     mkdirp.sync('components')

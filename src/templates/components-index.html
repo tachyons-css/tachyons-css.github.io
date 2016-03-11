@@ -6,14 +6,16 @@
   <%= head %>
 </head>
 <body class="w-100 sans-serif">
+  <%= header %>
 <main>
-
-  <% Object.keys(componentsForNav).map(function(category) { %>
-    <%= category %><br>
-    <% componentsForNav[category].map(function(componentForNav) { %>
-      <a href="<%= componentForNav.href %>"><%= componentForNav.name %></a><br>
+  <section class="pa3 pa5-ns">
+    <% Object.keys(componentsForNav).map(function(category) { %>
+      <h1 class="f6 b ttu tracked mt4"><%= category %></h1>
+      <% componentsForNav[category].map(function(componentForNav) { %>
+        <a class="dib mr3 mb2 blue link dim" href="<%= componentForNav.href %>"><%= componentForNav.name %></a>
+      <% }) %>
     <% }) %>
-  <% }) %>
+  </section>
 </main>
 
   <%= footer %>
