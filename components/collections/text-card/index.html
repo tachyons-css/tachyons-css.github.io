@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>TACHYONS - Nav Title Link List</title>
+<title>TACHYONS - Collections Text Card</title>
 <meta name="description" content="Tachyons Component">
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -16,75 +16,123 @@
 </head>
 <body class="w-100 sans-serif bg-white">
 <main>
-  <nav class="pa3 pa4-ns">
-  <a class="link dim black b f6 f5-ns dib mr3" href="#" title="Home">Site Name</a>
-  <a class="link dim gray    f6 f5-ns dib mr3" href="#" title="Home">Home</a>
-  <a class="link dim gray    f6 f5-ns dib mr3" href="#" title="About">About</a>
-  <a class="link dim gray    f6 f5-ns dib mr3" href="#" title="Store">Store</a>
-  <a class="link dim gray    f6 f5-ns dib" href="#" title="Contact">Contact</a>
-</nav>
+  <article class="center mw5 mw6-ns br3 hidden ba b--black-10 mv4">
+  <h1 class="f4 bg-near-white br3 br--top black-60 mv0 pv2 ph3">Title of card</h1>
+  <div class="pa3 bt b--black-10">
+    <p class="f6 f5-ns lh-copy measure">
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+      tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+      vero eos et accusam et justo duo dolores et ea rebum.
+    </p>
+  </div>
+</article>
 
   <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70" style="background: #fafafa;">
-  <h1 class="f4 f3-ns mt4">Title Link List</h1>
+  <h1 class="f4 f3-ns mt4">Text Card</h1>
 
 <div class="cf">
 <div class="fl w-100 w-75-ns pr0 pr2-ns">
 <h2 class="f5">HTML</h2>
 <p class="f5 black-70"></p>
 <pre class="pa3 ba br2 b--black-05 h5" id="html">
-&lt;nav class=&quot;pa3 pa4-ns&quot;&gt;
-  &lt;a class=&quot;link dim black b f6 f5-ns dib mr3&quot; href=&quot;#&quot; title=&quot;Home&quot;&gt;Site Name&lt;/a&gt;
-  &lt;a class=&quot;link dim gray    f6 f5-ns dib mr3&quot; href=&quot;#&quot; title=&quot;Home&quot;&gt;Home&lt;/a&gt;
-  &lt;a class=&quot;link dim gray    f6 f5-ns dib mr3&quot; href=&quot;#&quot; title=&quot;About&quot;&gt;About&lt;/a&gt;
-  &lt;a class=&quot;link dim gray    f6 f5-ns dib mr3&quot; href=&quot;#&quot; title=&quot;Store&quot;&gt;Store&lt;/a&gt;
-  &lt;a class=&quot;link dim gray    f6 f5-ns dib&quot; href=&quot;#&quot; title=&quot;Contact&quot;&gt;Contact&lt;/a&gt;
-&lt;/nav&gt;
+&lt;article class=&quot;center mw5 mw6-ns br3 hidden ba b--black-10 mv4&quot;&gt;
+  &lt;h1 class=&quot;f4 bg-near-white br3 br--top black-60 mv0 pv2 ph3&quot;&gt;Title of card&lt;/h1&gt;
+  &lt;div class=&quot;pa3 bt b--black-10&quot;&gt;
+    &lt;p class=&quot;f6 f5-ns lh-copy measure&quot;&gt;
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+      tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+      vero eos et accusam et justo duo dolores et ea rebum.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
 
 </pre>
 </div>
 <div class="fl w-100 w-25-ns pl0 pl2-ns">
 <h2 class="f5">CSS</h2>
-<pre class="pa3 ba br2 b--black-05 h5" id="css">.dib {
-    display: inline-block;
+<pre class="pa3 ba br2 b--black-05 h5" id="css">.ba {
+    border-style: solid;
+    border-width: 1px;
 }
 
-.b {
-    font-weight: bold;
+.bt {
+    border-top-style: solid;
+    border-top-width: 1px;
 }
 
-.link {
-    text-decoration: none;
-    transition: color .15s ease-in;
+.b--black-10 {
+    border-color: rgba(0, 0, 0, .1);
 }
 
-.black {
-    color: #111;
+.br3 {
+    border-radius: .5rem;
 }
 
-.gray {
-    color: #777;
+.br--top {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.lh-copy {
+    line-height: 1.6;
+}
+
+.mw5 {
+    max-width: 16rem;
+}
+
+.black-60 {
+    color: rgba(0, 0, 0, .6);
+}
+
+.bg-near-white {
+    background-color: #f4f4f4;
 }
 
 .pa3 {
     padding: 1rem;
 }
 
-.mr3 {
-    margin-right: 1rem;
+.pv2 {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.ph3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.mv0 {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
+.mv4 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.f4 {
+    font-size: 1.25rem;
 }
 
 .f6 {
     font-size: .875rem;
 }
 
-.dim {
-    opacity: 1;
-    transition: opacity .15s ease-in;
+.measure {
+    max-width: 30em;
+}
+
+.center {
+    margin-right: auto;
+    margin-left: auto;
 }
 
 @media screen and (min-width: 48em) {
-    .pa4-ns {
-        padding: 2rem;
+    .mw6-ns {
+        max-width: 32rem;
     }
 
     .f5-ns {
@@ -100,11 +148,15 @@
     <h2 class="f5 mt4">Modules referenced</h2>
     <ul class="list pl0 cf lh-copy mw7">
       
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-display">tachyons-display</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-borders">tachyons-borders</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-font-weight">tachyons-font-weight</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-colors">tachyons-border-colors</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-links">tachyons-links</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-radius">tachyons-border-radius</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-line-height">tachyons-line-height</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-max-widths">tachyons-max-widths</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-skins">tachyons-skins</a></li>
   
@@ -112,7 +164,9 @@
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-type-scale">tachyons-type-scale</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-hovers">tachyons-hovers</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-typography">tachyons-typography</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-utilities">tachyons-utilities</a></li>
   
     </ul>
   </div>
@@ -120,15 +174,15 @@
     <h2 class="f5 mb3 mt4">CSS Stats for this Component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Size (Gzipped)</dt>
-      <dd class="ml0 b f3 f2-ns">258</dd>
+      <dd class="ml0 b f3 f2-ns">386</dd>
     </dl>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Selectors</dt>
-      <dd class="ml0 b f3 f2-ns">11</dd>
+      <dd class="ml0 b f3 f2-ns">20</dd>
     </dl>
     <dl class="dib mt0">
       <dt class="db f6">Declarations</dt>
-      <dd class="ml0 b f3 f2-ns">13</dd>
+      <dd class="ml0 b f3 f2-ns">28</dd>
     </dl>
   </div>
 </div>
@@ -137,7 +191,7 @@
 
 
   <h4 class="mt5">Install via npm <small class="fw2 f6 db mt1">Only installs the needed tachyons-modules for this component</small></h4>
-  <code class="f6">npm i --save tachyons-display tachyons-font-weight tachyons-links tachyons-skins tachyons-spacing tachyons-type-scale tachyons-hovers</code>
+  <code class="f6">npm i --save tachyons-borders tachyons-border-colors tachyons-border-radius tachyons-line-height tachyons-max-widths tachyons-skins tachyons-spacing tachyons-type-scale tachyons-typography tachyons-utilities</code>
   <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 
