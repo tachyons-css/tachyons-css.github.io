@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>TACHYONS - Headers Circle Avatar Title Subtitle</title>
+<title>TACHYONS - Nav Logo Links Inline</title>
 <meta name="description" content="Tachyons Component">
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -16,104 +16,130 @@
 </head>
 <body class="w-100 sans-serif bg-white">
 <main>
-  <header class="tc pv4 pv5-ns">
-  <img src="/img/logo.jpg" class="br-100 pa1 ba b--black-10 h3 w3">
-  <h1 class="f5 f4-ns fw6 mid-gray">Jasper Whitehouse</h1>
-  <h2 class="f6 gray fw2 ttu tracked">Los Angeles</h2>
-</header>
+  <nav class="dt w-100 border-box pa3 ph5-ns">
+  <a class="dtc v-mid mid-gray link dim w-25" href="#" title="Home">
+    <img src="/img/logo.jpg" class="dib w2 h2 br-100" alt="Site Name">
+  </a>
+  <div class="dtc v-mid w-75 tr">
+    <a class="link dim dark-gray f6 f5-ns dib mr3 mr4-ns" href="#" title="About">Services</a>
+    <a class="link dim dark-gray f6 f5-ns dib mr3 mr4-ns" href="#" title="Store">Blog</a>
+    <a class="link dim dark-gray f6 f5-ns dib" href="#" title="Contact">Join Us</a>
+  </div>
+</nav>
 
   <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70" style="background: #fafafa;">
-  <h1 class="f4 f3-ns mt4">Circle Avatar Title Subtitle</h1>
+  <h1 class="f4 f3-ns mt4">Logo Links Inline</h1>
 
 <div class="cf">
 <div class="fl w-100 w-75-ns pr0 pr2-ns">
 <h2 class="f5">HTML</h2>
 <p class="f5 black-70"></p>
 <pre class="pa3 ba br2 b--black-05 h5" id="html">
-&lt;header class=&quot;tc pv4 pv5-ns&quot;&gt;
-  &lt;img src=&quot;/img/logo.jpg&quot; class=&quot;br-100 pa1 ba b--black-10 h3 w3&quot;&gt;
-  &lt;h1 class=&quot;f5 f4-ns fw6 mid-gray&quot;&gt;Jasper Whitehouse&lt;/h1&gt;
-  &lt;h2 class=&quot;f6 gray fw2 ttu tracked&quot;&gt;Los Angeles&lt;/h2&gt;
-&lt;/header&gt;
+&lt;nav class=&quot;dt w-100 border-box pa3 ph5-ns&quot;&gt;
+  &lt;a class=&quot;dtc v-mid mid-gray link dim w-25&quot; href=&quot;#&quot; title=&quot;Home&quot;&gt;
+    &lt;img src=&quot;/img/logo.jpg&quot; class=&quot;dib w2 h2 br-100&quot; alt=&quot;Site Name&quot;&gt;
+  &lt;/a&gt;
+  &lt;div class=&quot;dtc v-mid w-75 tr&quot;&gt;
+    &lt;a class=&quot;link dim dark-gray f6 f5-ns dib mr3 mr4-ns&quot; href=&quot;#&quot; title=&quot;About&quot;&gt;Services&lt;/a&gt;
+    &lt;a class=&quot;link dim dark-gray f6 f5-ns dib mr3 mr4-ns&quot; href=&quot;#&quot; title=&quot;Store&quot;&gt;Blog&lt;/a&gt;
+    &lt;a class=&quot;link dim dark-gray f6 f5-ns dib&quot; href=&quot;#&quot; title=&quot;Contact&quot;&gt;Join Us&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
 
 </pre>
 </div>
 <div class="fl w-100 w-25-ns pl0 pl2-ns">
 <h2 class="f5">CSS</h2>
-<pre class="pa3 ba br2 b--black-05 h5" id="css">.ba {
-    border-style: solid;
-    border-width: 1px;
-}
-
-.b--black-10 {
-    border-color: rgba(0, 0, 0, .1);
+<pre class="pa3 ba br2 b--black-05 h5" id="css">.border-box {
+    box-sizing: border-box;
 }
 
 .br-100 {
     border-radius: 100%;
 }
 
-.fw2 {
-    font-weight: 200;
+.dib {
+    display: inline-block;
 }
 
-.fw6 {
-    font-weight: 600;
+.dt {
+    display: table;
 }
 
-.h3 {
-    height: 4rem;
+.dtc {
+    display: table-cell;
 }
 
-.tracked {
-    letter-spacing: .16em;
+.h2 {
+    height: 2rem;
 }
 
-.w3 {
-    width: 4rem;
+.link {
+    text-decoration: none;
+    transition: color .15s ease-in;
+}
+
+.w2 {
+    width: 2rem;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.dark-gray {
+    color: #333;
 }
 
 .mid-gray {
     color: #555;
 }
 
-.gray {
-    color: #777;
+.pa3 {
+    padding: 1rem;
 }
 
-.pa1 {
-    padding: .25rem;
+.mr3 {
+    margin-right: 1rem;
 }
 
-.pv4 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.tc {
-    text-align: center;
-}
-
-.ttu {
-    text-transform: uppercase;
-}
-
-.f5 {
-    font-size: 1rem;
+.tr {
+    text-align: right;
 }
 
 .f6 {
     font-size: .875rem;
 }
 
+.v-mid {
+    vertical-align: middle;
+}
+
+.dim {
+    opacity: 1;
+    transition: opacity .15s ease-in;
+}
+
 @media screen and (min-width: 48em) {
-    .pv5-ns {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
+    .ph5-ns {
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
 
-    .f4-ns {
-        font-size: 1.25rem;
+    .mr4-ns {
+        margin-right: 2rem;
+    }
+
+    .f5-ns {
+        font-size: 1rem;
     }
 }
 
@@ -125,17 +151,15 @@
     <h2 class="f5 mt4">Modules referenced</h2>
     <ul class="list pl0 cf lh-copy mw7">
       
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-borders">tachyons-borders</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-colors">tachyons-border-colors</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-box-sizing">tachyons-box-sizing</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-radius">tachyons-border-radius</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-font-weight">tachyons-font-weight</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-display">tachyons-display</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-heights">tachyons-heights</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-letter-spacing">tachyons-letter-spacing</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-links">tachyons-links</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-widths">tachyons-widths</a></li>
   
@@ -145,9 +169,11 @@
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-text-align">tachyons-text-align</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-text-transform">tachyons-text-transform</a></li>
-  
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-type-scale">tachyons-type-scale</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-vertical-align">tachyons-vertical-align</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-hovers">tachyons-hovers</a></li>
   
     </ul>
   </div>
@@ -155,15 +181,15 @@
     <h2 class="f5 mb3 mt4">CSS Stats for this Component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Size (Gzipped)</dt>
-      <dd class="ml0 b f3 f2-ns">343</dd>
+      <dd class="ml0 b f3 f2-ns">381</dd>
     </dl>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Selectors</dt>
-      <dd class="ml0 b f3 f2-ns">18</dd>
+      <dd class="ml0 b f3 f2-ns">22</dd>
     </dl>
     <dl class="dib mt0">
       <dt class="db f6">Declarations</dt>
-      <dd class="ml0 b f3 f2-ns">21</dd>
+      <dd class="ml0 b f3 f2-ns">25</dd>
     </dl>
   </div>
 </div>
@@ -172,7 +198,7 @@
 
 
   <h4 class="mt5">Install via npm <small class="fw2 f6 db mt1">Only installs the needed tachyons-modules for this component</small></h4>
-  <code class="f6">npm i --save tachyons-borders tachyons-border-colors tachyons-border-radius tachyons-font-weight tachyons-heights tachyons-letter-spacing tachyons-widths tachyons-skins tachyons-spacing tachyons-text-align tachyons-text-transform tachyons-type-scale</code>
+  <code class="f6">npm i --save tachyons-box-sizing tachyons-border-radius tachyons-display tachyons-heights tachyons-links tachyons-widths tachyons-skins tachyons-spacing tachyons-text-align tachyons-type-scale tachyons-vertical-align tachyons-hovers</code>
   <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 

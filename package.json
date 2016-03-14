@@ -6,6 +6,7 @@
   "scripts": {
     "start": "npm run css && node build.js",
     "css": "tachyons src/css/tachyons.css > css/tachyons.css && tachyons src/css/tachyons.css --minify > css/tachyons.min.css",
+    "components:watch": "watch 'node build.js' src/components/*",
     "doc": "bash script.sh",
     "doc:watch": "watch 'npm run doc' src/templates/",
     "doc:lib": "watch 'npm run doc' lib"

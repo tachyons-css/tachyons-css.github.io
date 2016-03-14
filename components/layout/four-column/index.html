@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>TACHYONS - Headers Circle Avatar Title Subtitle</title>
+<title>TACHYONS - Layout Four Column</title>
 <meta name="description" content="Tachyons Component">
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -16,105 +16,72 @@
 </head>
 <body class="w-100 sans-serif bg-white">
 <main>
-  <header class="tc pv4 pv5-ns">
-  <img src="/img/logo.jpg" class="br-100 pa1 ba b--black-10 h3 w3">
-  <h1 class="f5 f4-ns fw6 mid-gray">Jasper Whitehouse</h1>
-  <h2 class="f6 gray fw2 ttu tracked">Los Angeles</h2>
-</header>
+  <div class="cf">
+  <div class="fl w-25 tc pv5 bg-black-05">
+    1
+  </div>
+  <div class="fl w-25 tc pv5 bg-black-025">
+    2
+  </div>
+  <div class="fl w-25 tc pv5 bg-black-05">
+    3
+  </div>
+  <div class="fl w-25 tc pv5 bg-black-025">
+    4
+  </div>
+</div>
 
   <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70" style="background: #fafafa;">
-  <h1 class="f4 f3-ns mt4">Circle Avatar Title Subtitle</h1>
+  <h1 class="f4 f3-ns mt4">Four Column</h1>
 
 <div class="cf">
 <div class="fl w-100 w-75-ns pr0 pr2-ns">
 <h2 class="f5">HTML</h2>
 <p class="f5 black-70"></p>
 <pre class="pa3 ba br2 b--black-05 h5" id="html">
-&lt;header class=&quot;tc pv4 pv5-ns&quot;&gt;
-  &lt;img src=&quot;/img/logo.jpg&quot; class=&quot;br-100 pa1 ba b--black-10 h3 w3&quot;&gt;
-  &lt;h1 class=&quot;f5 f4-ns fw6 mid-gray&quot;&gt;Jasper Whitehouse&lt;/h1&gt;
-  &lt;h2 class=&quot;f6 gray fw2 ttu tracked&quot;&gt;Los Angeles&lt;/h2&gt;
-&lt;/header&gt;
+&lt;div class=&quot;cf&quot;&gt;
+  &lt;div class=&quot;fl w-25 tc pv5 bg-black-05&quot;&gt;
+    1
+  &lt;/div&gt;
+  &lt;div class=&quot;fl w-25 tc pv5 bg-black-025&quot;&gt;
+    2
+  &lt;/div&gt;
+  &lt;div class=&quot;fl w-25 tc pv5 bg-black-05&quot;&gt;
+    3
+  &lt;/div&gt;
+  &lt;div class=&quot;fl w-25 tc pv5 bg-black-025&quot;&gt;
+    4
+  &lt;/div&gt;
+&lt;/div&gt;
 
 </pre>
 </div>
 <div class="fl w-100 w-25-ns pl0 pl2-ns">
 <h2 class="f5">CSS</h2>
-<pre class="pa3 ba br2 b--black-05 h5" id="css">.ba {
-    border-style: solid;
-    border-width: 1px;
+<pre class="pa3 ba br2 b--black-05 h5" id="css">.cf {
+    *zoom: 1;
 }
 
-.b--black-10 {
-    border-color: rgba(0, 0, 0, .1);
+.fl {
+    float: left;
+    display: inline;
 }
 
-.br-100 {
-    border-radius: 100%;
+.w-25 {
+    width: 25%;
 }
 
-.fw2 {
-    font-weight: 200;
+.bg-black-05 {
+    background-color: rgba(0, 0, 0, .05);
 }
 
-.fw6 {
-    font-weight: 600;
-}
-
-.h3 {
-    height: 4rem;
-}
-
-.tracked {
-    letter-spacing: .16em;
-}
-
-.w3 {
-    width: 4rem;
-}
-
-.mid-gray {
-    color: #555;
-}
-
-.gray {
-    color: #777;
-}
-
-.pa1 {
-    padding: .25rem;
-}
-
-.pv4 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+.pv5 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .tc {
     text-align: center;
-}
-
-.ttu {
-    text-transform: uppercase;
-}
-
-.f5 {
-    font-size: 1rem;
-}
-
-.f6 {
-    font-size: .875rem;
-}
-
-@media screen and (min-width: 48em) {
-    .pv5-ns {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-    }
-
-    .f4-ns {
-        font-size: 1.25rem;
-    }
 }
 
 </pre>
@@ -125,17 +92,9 @@
     <h2 class="f5 mt4">Modules referenced</h2>
     <ul class="list pl0 cf lh-copy mw7">
       
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-borders">tachyons-borders</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-clearfix">tachyons-clearfix</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-colors">tachyons-border-colors</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-radius">tachyons-border-radius</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-font-weight">tachyons-font-weight</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-heights">tachyons-heights</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-letter-spacing">tachyons-letter-spacing</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-floats">tachyons-floats</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-widths">tachyons-widths</a></li>
   
@@ -145,25 +104,21 @@
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-text-align">tachyons-text-align</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-text-transform">tachyons-text-transform</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-type-scale">tachyons-type-scale</a></li>
-  
     </ul>
   </div>
   <div class="fl w-100 w-50-ns pl0 pl4-ns">
     <h2 class="f5 mb3 mt4">CSS Stats for this Component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Size (Gzipped)</dt>
-      <dd class="ml0 b f3 f2-ns">343</dd>
+      <dd class="ml0 b f3 f2-ns">178</dd>
     </dl>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Selectors</dt>
-      <dd class="ml0 b f3 f2-ns">18</dd>
+      <dd class="ml0 b f3 f2-ns">6</dd>
     </dl>
     <dl class="dib mt0">
       <dt class="db f6">Declarations</dt>
-      <dd class="ml0 b f3 f2-ns">21</dd>
+      <dd class="ml0 b f3 f2-ns">8</dd>
     </dl>
   </div>
 </div>
@@ -172,7 +127,7 @@
 
 
   <h4 class="mt5">Install via npm <small class="fw2 f6 db mt1">Only installs the needed tachyons-modules for this component</small></h4>
-  <code class="f6">npm i --save tachyons-borders tachyons-border-colors tachyons-border-radius tachyons-font-weight tachyons-heights tachyons-letter-spacing tachyons-widths tachyons-skins tachyons-spacing tachyons-text-align tachyons-text-transform tachyons-type-scale</code>
+  <code class="f6">npm i --save tachyons-clearfix tachyons-floats tachyons-widths tachyons-skins tachyons-spacing tachyons-text-align</code>
   <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 

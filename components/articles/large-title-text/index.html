@@ -17,7 +17,8 @@
 <body class="w-100 sans-serif bg-white">
 <main>
   <article class="pa3 pa5-ns">
-  <h1 class="f2 f-subheadline-ns">9.5.1 If the text will be read on the screen, design it for that medium.</h1>
+  <h1 class="f2 f-subheadline-ns mb4">9.5.1 If the text will be read on the screen, design it for that medium.</h1>
+  <p class="gray f6 mb4 ttu tracked">By Robert Bringhurst</p>
   <p class="f4 f3-ns measure lh-copy">
     Like a forest or a garden or a field, an honest page of letters can absorb --
     and will repay -- as much attention as it is given. Much type now, however, is
@@ -63,7 +64,8 @@
 <p class="f5 black-70"></p>
 <pre class="pa3 ba br2 b--black-05 h5" id="html">
 &lt;article class=&quot;pa3 pa5-ns&quot;&gt;
-  &lt;h1 class=&quot;f2 f-subheadline-ns&quot;&gt;9.5.1 If the text will be read on the screen, design it for that medium.&lt;/h1&gt;
+  &lt;h1 class=&quot;f2 f-subheadline-ns mb4&quot;&gt;9.5.1 If the text will be read on the screen, design it for that medium.&lt;/h1&gt;
+  &lt;p class=&quot;gray f6 mb4 ttu tracked&quot;&gt;By Robert Bringhurst&lt;/p&gt;
   &lt;p class=&quot;f4 f3-ns measure lh-copy&quot;&gt;
     Like a forest or a garden or a field, an honest page of letters can absorb --
     and will repay -- as much attention as it is given. Much type now, however, is
@@ -104,12 +106,28 @@
 </div>
 <div class="fl w-100 w-25-ns pl0 pl2-ns">
 <h2 class="f5">CSS</h2>
-<pre class="pa3 ba br2 b--black-05 h5" id="css">.lh-copy {
+<pre class="pa3 ba br2 b--black-05 h5" id="css">.tracked {
+    letter-spacing: .16em;
+}
+
+.lh-copy {
     line-height: 1.6;
+}
+
+.gray {
+    color: #777;
 }
 
 .pa3 {
     padding: 1rem;
+}
+
+.mb4 {
+    margin-bottom: 2rem;
+}
+
+.ttu {
+    text-transform: uppercase;
 }
 
 .f2 {
@@ -118,6 +136,10 @@
 
 .f4 {
     font-size: 1.25rem;
+}
+
+.f6 {
+    font-size: .875rem;
 }
 
 .measure {
@@ -146,9 +168,15 @@
     <h2 class="f5 mt4">Modules referenced</h2>
     <ul class="list pl0 cf lh-copy mw7">
       
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-letter-spacing">tachyons-letter-spacing</a></li>
+  
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-line-height">tachyons-line-height</a></li>
   
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-skins">tachyons-skins</a></li>
+  
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-spacing">tachyons-spacing</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-text-transform">tachyons-text-transform</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-type-scale">tachyons-type-scale</a></li>
   
@@ -160,15 +188,15 @@
     <h2 class="f5 mb3 mt4">CSS Stats for this Component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Size (Gzipped)</dt>
-      <dd class="ml0 b f3 f2-ns">190</dd>
+      <dd class="ml0 b f3 f2-ns">268</dd>
     </dl>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Selectors</dt>
-      <dd class="ml0 b f3 f2-ns">8</dd>
+      <dd class="ml0 b f3 f2-ns">13</dd>
     </dl>
     <dl class="dib mt0">
       <dt class="db f6">Declarations</dt>
-      <dd class="ml0 b f3 f2-ns">8</dd>
+      <dd class="ml0 b f3 f2-ns">13</dd>
     </dl>
   </div>
 </div>
@@ -177,7 +205,7 @@
 
 
   <h4 class="mt5">Install via npm <small class="fw2 f6 db mt1">Only installs the needed tachyons-modules for this component</small></h4>
-  <code class="f6">npm i --save tachyons-line-height tachyons-spacing tachyons-type-scale tachyons-typography</code>
+  <code class="f6">npm i --save tachyons-letter-spacing tachyons-line-height tachyons-skins tachyons-spacing tachyons-text-transform tachyons-type-scale tachyons-typography</code>
   <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 
@@ -186,6 +214,8 @@
       <h2 class="f5 mb2 ttc mid-gray">articles</h2>
       
         <a class="f5 dib mr3 blue link dim fw6" href="/components/articles/large-title-text/index.html">Large Title Text</a>
+      
+        <a class="f5 dib mr3 blue link dim fw6" href="/components/articles/left-title/index.html">Left Title</a>
       
         <a class="f5 dib mr3 blue link dim fw6" href="/components/articles/title-text-image/index.html">Title Text Image</a>
       
@@ -225,6 +255,8 @@
       
         <a class="f5 dib mr3 blue link dim fw6" href="/components/layout/four-column-collapse-two/index.html">Four Column Collapse Two</a>
       
+        <a class="f5 dib mr3 blue link dim fw6" href="/components/layout/four-column/index.html">Four Column</a>
+      
         <a class="f5 dib mr3 blue link dim fw6" href="/components/layout/two-column-collapse-one/index.html">Two Column Collapse One</a>
       
         <a class="f5 dib mr3 blue link dim fw6" href="/components/layout/two-column/index.html">Two Column</a>
@@ -250,6 +282,12 @@
       <h2 class="f5 mb2 ttc mid-gray">nav</h2>
       
         <a class="f5 dib mr3 blue link dim fw6" href="/components/nav/large-title-link-list/index.html">Large Title Link List</a>
+      
+        <a class="f5 dib mr3 blue link dim fw6" href="/components/nav/list-overflow/index.html">List Overflow</a>
+      
+        <a class="f5 dib mr3 blue link dim fw6" href="/components/nav/logo-links-inline-collapse/index.html">Logo Links Inline Collapse</a>
+      
+        <a class="f5 dib mr3 blue link dim fw6" href="/components/nav/logo-links-inline/index.html">Logo Links Inline</a>
       
         <a class="f5 dib mr3 blue link dim fw6" href="/components/nav/title-link-list/index.html">Title Link List</a>
       

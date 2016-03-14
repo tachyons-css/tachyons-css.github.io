@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>TACHYONS - Headers Circle Avatar Title Subtitle</title>
+<title>TACHYONS - Articles Left Title</title>
 <meta name="description" content="Tachyons Component">
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -16,104 +16,127 @@
 </head>
 <body class="w-100 sans-serif bg-white">
 <main>
-  <header class="tc pv4 pv5-ns">
-  <img src="/img/logo.jpg" class="br-100 pa1 ba b--black-10 h3 w3">
-  <h1 class="f5 f4-ns fw6 mid-gray">Jasper Whitehouse</h1>
-  <h2 class="f6 gray fw2 ttu tracked">Los Angeles</h2>
-</header>
+  <article class="cf ph3 ph5-ns pv5">
+  <header class="fn fl-ns w-50-ns pr3-ns">
+    <h1 class="mb3 mt0">This is an Article Title with a really really really long title.</h1>
+    <time class="f6 ttu tracked gray">November 12, 2009</time>
+  </header>
+  <div class="fn fl-ns w-50-ns">
+    <p class="lh-copy measure mt0">
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+      tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+      vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+      no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    </p>
+    <p class="lh-copy measure">
+      Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+      aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+      duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata o
+      sanctus est Lorem ipsum dolor sit amet.
+    </p>
+  </div>
+</article>
 
   <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70" style="background: #fafafa;">
-  <h1 class="f4 f3-ns mt4">Circle Avatar Title Subtitle</h1>
+  <h1 class="f4 f3-ns mt4">Left Title</h1>
 
 <div class="cf">
 <div class="fl w-100 w-75-ns pr0 pr2-ns">
 <h2 class="f5">HTML</h2>
 <p class="f5 black-70"></p>
 <pre class="pa3 ba br2 b--black-05 h5" id="html">
-&lt;header class=&quot;tc pv4 pv5-ns&quot;&gt;
-  &lt;img src=&quot;/img/logo.jpg&quot; class=&quot;br-100 pa1 ba b--black-10 h3 w3&quot;&gt;
-  &lt;h1 class=&quot;f5 f4-ns fw6 mid-gray&quot;&gt;Jasper Whitehouse&lt;/h1&gt;
-  &lt;h2 class=&quot;f6 gray fw2 ttu tracked&quot;&gt;Los Angeles&lt;/h2&gt;
-&lt;/header&gt;
+&lt;article class=&quot;cf ph3 ph5-ns pv5&quot;&gt;
+  &lt;header class=&quot;fn fl-ns w-50-ns pr3-ns&quot;&gt;
+    &lt;h1 class=&quot;mb3 mt0&quot;&gt;This is an Article Title with a really really really long title.&lt;/h1&gt;
+    &lt;time class=&quot;f6 ttu tracked gray&quot;&gt;November 12, 2009&lt;/time&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;fn fl-ns w-50-ns&quot;&gt;
+    &lt;p class=&quot;lh-copy measure mt0&quot;&gt;
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+      tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+      vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+      no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    &lt;/p&gt;
+    &lt;p class=&quot;lh-copy measure&quot;&gt;
+      Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+      aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+      duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata o
+      sanctus est Lorem ipsum dolor sit amet.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
 
 </pre>
 </div>
 <div class="fl w-100 w-25-ns pl0 pl2-ns">
 <h2 class="f5">CSS</h2>
-<pre class="pa3 ba br2 b--black-05 h5" id="css">.ba {
-    border-style: solid;
-    border-width: 1px;
+<pre class="pa3 ba br2 b--black-05 h5" id="css">.cf {
+    *zoom: 1;
 }
 
-.b--black-10 {
-    border-color: rgba(0, 0, 0, .1);
-}
-
-.br-100 {
-    border-radius: 100%;
-}
-
-.fw2 {
-    font-weight: 200;
-}
-
-.fw6 {
-    font-weight: 600;
-}
-
-.h3 {
-    height: 4rem;
+.fn {
+    float: none;
 }
 
 .tracked {
     letter-spacing: .16em;
 }
 
-.w3 {
-    width: 4rem;
-}
-
-.mid-gray {
-    color: #555;
+.lh-copy {
+    line-height: 1.6;
 }
 
 .gray {
     color: #777;
 }
 
-.pa1 {
-    padding: .25rem;
+.pv5 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
-.pv4 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+.ph3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-.tc {
-    text-align: center;
+.mb3 {
+    margin-bottom: 1rem;
+}
+
+.mt0 {
+    margin-top: 0;
 }
 
 .ttu {
     text-transform: uppercase;
 }
 
-.f5 {
-    font-size: 1rem;
-}
-
 .f6 {
     font-size: .875rem;
 }
 
+.measure {
+    max-width: 30em;
+}
+
 @media screen and (min-width: 48em) {
-    .pv5-ns {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
+    .fl-ns {
+        float: left;
+        display: inline;
     }
 
-    .f4-ns {
-        font-size: 1.25rem;
+    .w-50-ns {
+        width: 50%;
+    }
+
+    .pr3-ns {
+        padding-right: 1rem;
+    }
+
+    .ph5-ns {
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
 }
 
@@ -125,29 +148,25 @@
     <h2 class="f5 mt4">Modules referenced</h2>
     <ul class="list pl0 cf lh-copy mw7">
       
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-borders">tachyons-borders</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-clearfix">tachyons-clearfix</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-colors">tachyons-border-colors</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-radius">tachyons-border-radius</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-font-weight">tachyons-font-weight</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-heights">tachyons-heights</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-floats">tachyons-floats</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-letter-spacing">tachyons-letter-spacing</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-widths">tachyons-widths</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-line-height">tachyons-line-height</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-skins">tachyons-skins</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-spacing">tachyons-spacing</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-text-align">tachyons-text-align</a></li>
-  
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-text-transform">tachyons-text-transform</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-type-scale">tachyons-type-scale</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-typography">tachyons-typography</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-widths">tachyons-widths</a></li>
   
     </ul>
   </div>
@@ -155,15 +174,15 @@
     <h2 class="f5 mb3 mt4">CSS Stats for this Component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Size (Gzipped)</dt>
-      <dd class="ml0 b f3 f2-ns">343</dd>
+      <dd class="ml0 b f3 f2-ns">329</dd>
     </dl>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Selectors</dt>
-      <dd class="ml0 b f3 f2-ns">18</dd>
+      <dd class="ml0 b f3 f2-ns">16</dd>
     </dl>
     <dl class="dib mt0">
       <dt class="db f6">Declarations</dt>
-      <dd class="ml0 b f3 f2-ns">21</dd>
+      <dd class="ml0 b f3 f2-ns">20</dd>
     </dl>
   </div>
 </div>
@@ -172,7 +191,7 @@
 
 
   <h4 class="mt5">Install via npm <small class="fw2 f6 db mt1">Only installs the needed tachyons-modules for this component</small></h4>
-  <code class="f6">npm i --save tachyons-borders tachyons-border-colors tachyons-border-radius tachyons-font-weight tachyons-heights tachyons-letter-spacing tachyons-widths tachyons-skins tachyons-spacing tachyons-text-align tachyons-text-transform tachyons-type-scale</code>
+  <code class="f6">npm i --save tachyons-clearfix tachyons-floats tachyons-letter-spacing tachyons-line-height tachyons-skins tachyons-spacing tachyons-text-transform tachyons-type-scale tachyons-typography tachyons-widths</code>
   <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 
