@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>TACHYONS - Layout Flag Object</title>
+<title>TACHYONS - Collections News Card</title>
 <meta name="description" content="Tachyons Component">
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -14,64 +14,109 @@
 </style>
 
 </head>
-<body class="w-100 sans-serif bg-white">
+<body class="w-100 sans-serif bg-near-white">
 <main>
-  <div class="dt mw6 center ppv4 pv5-m pv6-ns">
-  <div class="dtc v-mid">
-    <img src="/img/super-wide.jpg" alt="A bright blue sky" class="mw5" />
+  <article class="bg-white center mw5 ba b--black-10 mv4">
+  <div class="pv2 ph3">
+     <h1 class="f6 ttu tracked">Daily News Co.</h1>
   </div>
-  <div class="dtc v-mid pl3">
-    <p class="lh-copy">
-      This text is vertically aligned middle, no matter what the height of the image is.
-    </p>
+  <img src="/img/cat-720.jpg" class="w-100 db" alt="Cat yawning">
+  <div class="pa3">
+    <a href="#" class="link dim lh-title">15 things every cat owner should know</a>
+    <small class="gray db pv2">AMP - <time>6 hours ago</time></small>
   </div>
-</div>
+</article>
 
   <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70" style="background: #fafafa;">
-  <h1 class="f4 f3-ns mt4">Flag Object</h1>
+  <h1 class="f4 f3-ns mt4">News Card</h1>
 
 <div class="cf">
 <div class="fl w-100 w-75-ns pr0 pr2-ns">
 <h2 class="f5">HTML</h2>
 <p class="f5 black-70"></p>
 <pre class="pa3 ba br2 b--black-05 h5" id="html">
-&lt;div class=&quot;dt mw6 center ppv4 pv5-m pv6-ns&quot;&gt;
-  &lt;div class=&quot;dtc v-mid&quot;&gt;
-    &lt;img src=&quot;/img/super-wide.jpg&quot; alt=&quot;A bright blue sky&quot; class=&quot;mw5&quot; /&gt;
+&lt;article class=&quot;bg-white center mw5 ba b--black-10 mv4&quot;&gt;
+  &lt;div class=&quot;pv2 ph3&quot;&gt;
+     &lt;h1 class=&quot;f6 ttu tracked&quot;&gt;Daily News Co.&lt;/h1&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;dtc v-mid pl3&quot;&gt;
-    &lt;p class=&quot;lh-copy&quot;&gt;
-      This text is vertically aligned middle, no matter what the height of the image is.
-    &lt;/p&gt;
+  &lt;img src=&quot;/img/cat-720.jpg&quot; class=&quot;w-100 db&quot; alt=&quot;Cat yawning&quot;&gt;
+  &lt;div class=&quot;pa3&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;link dim lh-title&quot;&gt;15 things every cat owner should know&lt;/a&gt;
+    &lt;small class=&quot;gray db pv2&quot;&gt;AMP - &lt;time&gt;6 hours ago&lt;/time&gt;&lt;/small&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+&lt;/article&gt;
 
 </pre>
 </div>
 <div class="fl w-100 w-25-ns pl0 pl2-ns">
 <h2 class="f5">CSS</h2>
-<pre class="pa3 ba br2 b--black-05 h5" id="css">.dt {
-    display: table;
+<pre class="pa3 ba br2 b--black-05 h5" id="css">.ba {
+    border-style: solid;
+    border-width: 1px;
 }
 
-.dtc {
-    display: table-cell;
+.b--black-10 {
+    border-color: rgba(0, 0, 0, .1);
 }
 
-.lh-copy {
-    line-height: 1.6;
+.db {
+    display: block;
+}
+
+.tracked {
+    letter-spacing: .16em;
+}
+
+.lh-title {
+    line-height: 1.3;
+}
+
+.link {
+    text-decoration: none;
+    transition: color .15s ease-in;
 }
 
 .mw5 {
     max-width: 16rem;
 }
 
-.mw6 {
-    max-width: 32rem;
+.w-100 {
+    width: 100%;
 }
 
-.pl3 {
+.gray {
+    color: #777;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.pa3 {
+    padding: 1rem;
+}
+
+.pv2 {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.ph3 {
     padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.mv4 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.ttu {
+    text-transform: uppercase;
+}
+
+.f6 {
+    font-size: .875rem;
 }
 
 .center {
@@ -79,22 +124,9 @@
     margin-left: auto;
 }
 
-.v-mid {
-    vertical-align: middle;
-}
-
-@media screen and (min-width: 48em) {
-    .pv6-ns {
-        padding-top: 8rem;
-        padding-bottom: 8rem;
-    }
-}
-
-@media screen and (min-width: 48em) and (max-width: 64em) {
-    .pv5-m {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-    }
+.dim {
+    opacity: 1;
+    transition: opacity .15s ease-in;
 }
 
 </pre>
@@ -105,32 +137,48 @@
     <h2 class="f5 mb3 mt4">CSS Stats for this Component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Size (Gzipped)</dt>
-      <dd class="ml0 b f3 f2-ns">247</dd>
+      <dd class="ml0 b f3 f2-ns">387</dd>
     </dl>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Selectors</dt>
-      <dd class="ml0 b f3 f2-ns">10</dd>
+      <dd class="ml0 b f3 f2-ns">18</dd>
     </dl>
     <dl class="dib mt0">
       <dt class="db f6">Declarations</dt>
-      <dd class="ml0 b f3 f2-ns">13</dd>
+      <dd class="ml0 b f3 f2-ns">25</dd>
     </dl>
   </div>
   <div class="fl w-100">
     <h2 class="f5 mt4">Modules referenced</h2>
     <ul class="list pl0 cf lh-copy mw7">
       
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-borders">tachyons-borders</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-colors">tachyons-border-colors</a></li>
+  
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-display">tachyons-display</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-letter-spacing">tachyons-letter-spacing</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-line-height">tachyons-line-height</a></li>
   
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-links">tachyons-links</a></li>
+  
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-max-widths">tachyons-max-widths</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-widths">tachyons-widths</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-skins">tachyons-skins</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-spacing">tachyons-spacing</a></li>
   
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-text-transform">tachyons-text-transform</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-type-scale">tachyons-type-scale</a></li>
+  
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-utilities">tachyons-utilities</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-vertical-align">tachyons-vertical-align</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-hovers">tachyons-hovers</a></li>
   
     </ul>
   </div>
@@ -140,7 +188,7 @@
 
 
   <h4 class="mt5">Install via npm <small class="fw2 f6 db mt1">Only installs the needed tachyons-modules for this component</small></h4>
-  <code class="f6">npm i --save tachyons-display tachyons-line-height tachyons-max-widths tachyons-spacing tachyons-utilities tachyons-vertical-align</code>
+  <code class="f6">npm i --save tachyons-borders tachyons-border-colors tachyons-display tachyons-letter-spacing tachyons-line-height tachyons-links tachyons-max-widths tachyons-widths tachyons-skins tachyons-spacing tachyons-text-transform tachyons-type-scale tachyons-utilities tachyons-hovers</code>
   <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 
