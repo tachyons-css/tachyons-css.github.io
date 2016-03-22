@@ -26,13 +26,7 @@
 </div>
 </div>
 <div class="cf">
-  <div class="fl w-100 w-50-ns">
-    <h2 class="f5 mt4">Modules referenced</h2>
-    <ul class="list pl0 cf lh-copy mw7">
-      <% modules.map(renderModule) %>
-    </ul>
-  </div>
-  <div class="fl w-100 w-50-ns pl0 pl4-ns">
+  <div class="fl w-100">
     <h2 class="f5 mb3 mt4">CSS Stats for this Component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Size (Gzipped)</dt>
@@ -46,6 +40,12 @@
       <dt class="db f6">Declarations</dt>
       <dd class="ml0 b f3 f2-ns"><%= stats.declarations.total %></dd>
     </dl>
+  </div>
+  <div class="fl w-100">
+    <h2 class="f5 mt4">Modules referenced</h2>
+    <ul class="list pl0 cf lh-copy mw7">
+      <% modules.map(renderModule) %>
+    </ul>
   </div>
 </div>
 
