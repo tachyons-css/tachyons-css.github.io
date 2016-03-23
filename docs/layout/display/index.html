@@ -17,34 +17,29 @@
 
   </head>
   <body class="w-100 sans-serif">
-
     <header class="w-100 pa3 ph5-ns bg-near-white">
   <div class="dt w-100">
     <div class="dtc v-mid tl w-50">
-      <a href="/" class="dib f5 f4-ns fw6 mt0 mb1 link black-50 dim" title="Home">
+      <a href="/" class="dib f5 f4-ns fw6 mt0 mb1 link black-70 dim" title="Home">
         Tachyons
         <div class="dib">
-          <small class="nowrap f6 mt2 mt3-ns pr2 black-50 fw2">v4.0.0-beta.7</small>
+          <small class="nowrap f6 mt2 mt3-ns pr2 black-70 fw2">v4.0.0-beta.12</small>
         </div>
       </a>
     </div>
     <div class="db dtc v-mid w-100 tr">
 
       <a title="Documentation" href="/docs/"
-         class="f6 b dim link black-50 mr1 mr3-m mr4-l dib">
+         class="f6 fw6 dim link black-70 mr1 mr3-m mr4-l dib">
         Docs
       </a>
       <a title="Components" href="/components/"
-         class="f6 b dim link black-50 mr1 mr3-m mr4-l dib">
+         class="f6 fw6 dim link black-70 mr1 mr3-m mr4-l dib">
         Components
       </a>
       <a title="Tachyons on GitHub" href="http://github.com/mrmrs/tachyons/"
-         class="f6 b dim link black-50 mr1 mr3-m mr4-l dib">
+         class="f6 fw6 dim link black-70 mr1 mr3-m mr4-l dn dib-ns">
         GitHub
-      </a>
-      <a title="Tachyons Npm Modules" href="/#npm"
-         class="f6 b link black-50 dim dib">
-        Npm
       </a>
     </div>
   </div>
@@ -56,22 +51,22 @@
         <span class="f4 b dib pl0 ml0 mr4">v3.0.3</span>
         <span class="f4 b dib pl0 ml0 mr4">238 B</span>
         <div>
-            <dl class="dib mr4 mt0">
-              <dt class="f6 db">Declarations </dt>
-              <dd class="db pl0 ml0 f4 f2-ns b">36</span></dd>
-            </dl>
-            <dl class="dib mr4">
-              <dt class="f6 db pr2">Selectors </dt>
-              <dd class="db pl0 ml0 f4 f2-ns b">36</dd>
-            </dl>
-            <dl class="dib mr4">
-              <dt class="f6 db pr2">Max. Specificity Score </dt>
-              <dd class="db pl0 ml0 f4 f2-ns b">10</dd>
-            </dl>
-            <dl class="dib mr4">
-              <dt class="f6 db pr2">Size of Avg. Rule </dt>
-              <dd class="db pl0 ml0 f4 f2-ns b">1</dd>
-            </dl>
+          <dl class="dib mr4 mt0">
+            <dt class="f6 db">Declarations </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b">36</dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Selectors </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b">36</dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Max. Specificity Score </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b">10</dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Size of Avg. Rule </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b">1</dd>
+          </dl>
         </div>
         <p class="measure f3 lh-copy">
           Single purpose classes for setting the display of an element at any breakpoint.
@@ -85,114 +80,114 @@
           </footer>
         </blockquote>
       </article>
-<div class="ph3 ph5-ns pt4 pb5">
-  <h2 class="f3 bold">Examples</h2>
-  <h3 class="f5 book pt4 caps">Display Block</h3>
-  <code class="f6 db">.db { display: block; }</code>
-  <code class="f6">
-    &lt;span class="db"&gt;&lt;/span&gt;
-  </code>
-  <p>Block will inherently set width to 100% of its parent element. It will also cause a line break, even if the declared width doesn't take up the full width of the parent.</p>
-  <div class="db bg-black-10 mb2">
-    block
-  </div>
-  <div class="db bg-black-10 mb2 mw4">
-    block
-  </div>
+      <div class="ph3 ph5-ns pt4 pb5">
+        <h2 class="f3 bold">Examples</h2>
+        <h3 class="f5 book pt4 caps">Display Block</h3>
+        <code class="f6 db">.db { display: block; }</code>
+        <code class="f6">
+          &lt;span class="db"&gt;&lt;/span&gt;
+        </code>
+        <p>Block will inherently set width to 100% of its parent element. It will also cause a line break, even if the declared width doesn't take up the full width of the parent.</p>
+        <div class="db bg-black-10 mb2">
+          block
+        </div>
+        <div class="db bg-black-10 mb2 mw4">
+          block
+        </div>
 
-  <h3 class="f5 book pt4 caps">Display Inline-Block</h3>
-  <code class="f6 db">.dib { display: inline-block; }</code>
-  <code class="f6">
-    &lt;span class="dib"&gt;&lt;/span&gt;
-  </code>
-  <p class="measure">
-    Inline-block will wrap around content inline. It also allows you to set
-    height and width properties on the element, which display inline does not allow
-    you to do. It does render the white-space inbeween elements, so if you set
-    width: 25% to four elements they will not just render as a 4 column layout by
-    default.
-  </p>
-  <div class="dib bg-black-10 mb2">
-    display: inline-block
-  </div>
-  <div class="dib bg-black-10 mb2">
-    display: inline-block
-  </div>
-  <div class="dib bg-black-10 mb2">
-    display: inline-block
-  </div>
-  <div class="dib bg-black-10 mb2">
-    display: inline-block
-  </div>
+        <h3 class="f5 book pt4 caps">Display Inline-Block</h3>
+        <code class="f6 db">.dib { display: inline-block; }</code>
+        <code class="f6">
+          &lt;span class="dib"&gt;&lt;/span&gt;
+        </code>
+        <p class="measure">
+          Inline-block will wrap around content inline. It also allows you to set
+          height and width properties on the element, which display inline does not allow
+          you to do. It does render the white-space inbeween elements, so if you set
+          width: 25% to four elements they will not just render as a 4 column layout by
+          default.
+        </p>
+        <div class="dib bg-black-10 mb2">
+          display: inline-block
+        </div>
+        <div class="dib bg-black-10 mb2">
+          display: inline-block
+        </div>
+        <div class="dib bg-black-10 mb2">
+          display: inline-block
+        </div>
+        <div class="dib bg-black-10 mb2">
+          display: inline-block
+        </div>
 
-  <h3 class="f5 book pt4 caps">Display Inline</h3>
-  <code class="f6 db">.di { display: inline; }</code>
-  <code class="f6">
-    &lt;div class="di"&gt;&lt;/div&gt;
-  </code>
-  <p class="measure">
-    Set content inline. Inline doesn't respect height or width values. It does not render white space between elements.
-  </p>
-  <div class="di bg-black-10 mb2">
-    display: inline
-  </div>
-  <div class="di bg-black-10 mb2">
-    display: inline
-  </div>
-  <div class="di bg-black-10 mb2">
-    display: inline
-  </div>
-  <div class="di bg-black-10 mb2">
-    display: inline
-  </div>
+        <h3 class="f5 book pt4 caps">Display Inline</h3>
+        <code class="f6 db">.di { display: inline; }</code>
+        <code class="f6">
+          &lt;div class="di"&gt;&lt;/div&gt;
+        </code>
+        <p class="measure">
+          Set content inline. Inline doesn't respect height or width values. It does not render white space between elements.
+        </p>
+        <div class="di bg-black-10 mb2">
+          display: inline
+        </div>
+        <div class="di bg-black-10 mb2">
+          display: inline
+        </div>
+        <div class="di bg-black-10 mb2">
+          display: inline
+        </div>
+        <div class="di bg-black-10 mb2">
+          display: inline
+        </div>
 
-  <h3 class="f5 book pt4 caps">Display Table</h3>
-  <code class="f6 db">.dt { display: table; } <br> .dtc { display: table-cell; } </code>
-  <code class="f6">
-    &lt;div class="dt"&gt;<br>
-    &nbsp;&nbsp;  &lt;div class="dtc"&gt;&lt;/div&gt;<br>
-    &nbsp;&nbsp;  &lt;div class="dtc"&gt;&lt;/div&gt;<br>
-    &lt;/div&gt;
-  </code>
-  <p class="measure">
-    Display table can be combined with display table-cell to render a table
-    without table markup. This can be useful for vertically aligning content
-    or for auto-calculating a variable amount of table cells.
-  </p>
-  <div class="dt bg-black-10 mb2 w-100">
-    <div class="dtc v-mid pa1 bg-black-10">display</div>
-    <div class="dtc v-mid pa1 bg-black-20">table</div>
-    <div class="dtc v-mid pa1 bg-black-10">will automatically</div>
-    <div class="dtc v-mid pa1 bg-black-20">compute cell width</div>
-  </div>
-  <h3 class="f5 book pt4 caps">Display None</h3>
-  <code class="f6 db">.dn { display: none; }</code>
-  <code class="f6">
-    &lt;div class="dn"&gt;&lt;/div&gt;
-  </code>
-  <p class="measure">
-    You can set the display of any element to none by tacking on the <code class="code">dn</code> class.
-  </p>
+        <h3 class="f5 book pt4 caps">Display Table</h3>
+        <code class="f6 db">.dt { display: table; } <br> .dtc { display: table-cell; } </code>
+        <code class="f6">
+          &lt;div class="dt"&gt;<br>
+          &nbsp;&nbsp;  &lt;div class="dtc"&gt;&lt;/div&gt;<br>
+          &nbsp;&nbsp;  &lt;div class="dtc"&gt;&lt;/div&gt;<br>
+          &lt;/div&gt;
+        </code>
+        <p class="measure">
+          Display table can be combined with display table-cell to render a table
+          without table markup. This can be useful for vertically aligning content
+          or for auto-calculating a variable amount of table cells.
+        </p>
+        <div class="dt bg-black-10 mb2 w-100">
+          <div class="dtc v-mid pa1 bg-black-10">display</div>
+          <div class="dtc v-mid pa1 bg-black-20">table</div>
+          <div class="dtc v-mid pa1 bg-black-10">will automatically</div>
+          <div class="dtc v-mid pa1 bg-black-20">compute cell width</div>
+        </div>
+        <h3 class="f5 book pt4 caps">Display None</h3>
+        <code class="f6 db">.dn { display: none; }</code>
+        <code class="f6">
+          &lt;div class="dn"&gt;&lt;/div&gt;
+        </code>
+        <p class="measure">
+          You can set the display of any element to none by tacking on the <code class="code">dn</code> class.
+        </p>
 
-  <div class="mt5 cf">
-    <div class="dib mr4">
-      <h1 class="f4 ttu tracked fw6">Previous</h1>
-      <a href="/docs/layout/floats/" class="link fw6 blue dim">Floats</a>
-    </div>
-    <div class="dib">
-      <h1 class="f4 ttu tracked fw6">Next</h1>
-      <a href="/docs/layout/widths/" class="link fw6 blue dim">Widths</a>
-    </div>
-  </div>
-  <div class="mt5">
-    <h1 class="f4 ttu tracked fw6">Reference</h1>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" class="link fw6 blue dim">MDN - Box Sizing</a>
-  </div>
-</div>
+        <div class="mt5 cf">
+          <div class="dib mr4">
+            <h1 class="f4 ttu tracked fw6">Previous</h1>
+            <a href="/docs/layout/clearfix/" class="link fw6 blue dim">Clearfix</a>
+          </div>
+          <div class="dib">
+            <h1 class="f4 ttu tracked fw6">Next</h1>
+            <a href="/docs/layout/widths/" class="link fw6 blue dim">Widths</a>
+          </div>
+        </div>
+        <div class="mt5">
+          <h1 class="f4 ttu tracked fw6">Reference</h1>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" class="link fw6 blue dim">MDN - Box Sizing</a>
+        </div>
+      </div>
       <section class="bg-near-white black-70 pt4 pb5">
-<header class="ph3 ph5-ns pt4">
-        <kbd class="yellow">src/_display.css</kbd>
-</header>
+        <header class="ph3 ph5-ns pt4">
+          <kbd class="yellow">src/_display.css</kbd>
+        </header>
 <pre class="ph3 ph5-ns">
 <code class="code" style="font-size: .75rem;">
 @custom-media --breakpoint-not-small screen and (min-width: 48em);
@@ -338,22 +333,32 @@
     </svg>
     <span class="dib v-mid white fw6" style="font-size: 12px;">Tweet</span>
   </a>
+  <div class="mb4">
+    <a class="black-70 link dim b dib mr3" href="/" title="Home">
+      Home
+    </a>
+    <a class="black-70 link dim b dib mr3" href="/docs" title="Docs">
+      Docs
+    </a>
+    <a class="black-70 link dim b dib mr3" href="/components/" title="Components">
+      Components
+    </a>
+  </div>
   <article>
     <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
     <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
   </article>
-
-  <p>
-    <a class="black-70 link dim b dib mr3" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
+  <div class="mt4">
+    <a class="black-70 link dim b dib mr3 pv2" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
       Join our Slack Channel
     </a>
-    <a class="black-70 link dim b dib mr3" href="https://github.com/tachyons-css/tachyons/issues" title="File a bug, request a feature, ask a question!">
+    <a class="black-70 link dim b dib mr3 pv2" href="https://github.com/tachyons-css/tachyons/issues" title="File a bug, request a feature, ask a question!">
       Open an Issue
     </a>
-    <a class="black-70 link dim b dib mr3" href="https://github.com/tachyons-css" title="Tachyons-css on GitHub">
+    <a class="black-70 link dim b dib mr3 pv2" href="https://github.com/tachyons-css" title="Tachyons-css on GitHub">
       GitHub
     </a>
-  </p>
+  </div>
   <p class="measure copy lh-copy">
     Have a question? Need help? Feel free to open an issue on GitHub or ask a
     question in our slack channel. We're here to try and help make designing in
