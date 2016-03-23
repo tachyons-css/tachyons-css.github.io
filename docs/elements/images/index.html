@@ -17,34 +17,29 @@
 
   </head>
   <body class="w-100 sans-serif">
-
     <header class="w-100 pa3 ph5-ns bg-near-white">
   <div class="dt w-100">
     <div class="dtc v-mid tl w-50">
-      <a href="/" class="dib f5 f4-ns fw6 mt0 mb1 link black-50 dim" title="Home">
+      <a href="/" class="dib f5 f4-ns fw6 mt0 mb1 link black-70 dim" title="Home">
         Tachyons
         <div class="dib">
-          <small class="nowrap f6 mt2 mt3-ns pr2 black-50 fw2">v4.0.0-beta.7</small>
+          <small class="nowrap f6 mt2 mt3-ns pr2 black-70 fw2">v4.0.0-beta.12</small>
         </div>
       </a>
     </div>
     <div class="db dtc v-mid w-100 tr">
 
       <a title="Documentation" href="/docs/"
-         class="f6 b dim link black-50 mr1 mr3-m mr4-l dib">
+         class="f6 fw6 dim link black-70 mr1 mr3-m mr4-l dib">
         Docs
       </a>
       <a title="Components" href="/components/"
-         class="f6 b dim link black-50 mr1 mr3-m mr4-l dib">
+         class="f6 fw6 dim link black-70 mr1 mr3-m mr4-l dib">
         Components
       </a>
       <a title="Tachyons on GitHub" href="http://github.com/mrmrs/tachyons/"
-         class="f6 b dim link black-50 mr1 mr3-m mr4-l dib">
+         class="f6 fw6 dim link black-70 mr1 mr3-m mr4-l dn dib-ns">
         GitHub
-      </a>
-      <a title="Tachyons Npm Modules" href="/#npm"
-         class="f6 b link black-50 dim dib">
-        Npm
       </a>
     </div>
   </div>
@@ -54,34 +49,35 @@
       <article class="bg-near-white bt b--black-10 pa3 ph5-ns">
         <h4 class="f4 mv0 fw6 dib mr4">images</h4>
       </article>
-<div class="ph3 ph5-ns pt4 pb5">
-  <h2 class="f3 bold">Examples</h2>
-  <h3 class="f5 book pt4 caps">Image</h3>
-  <p class="measure lh-copy f5 f4-ns">
-    This photo is more than 3000 pixels wide. The width is set to 100% to ensure it doesn't bleed off the viewport and always fills its container. In some situations, this will make the image stretch to be larger than it's actual width. To avoid the image stretching past it's width, set max-width instead.
-  </p>
-  <code class="f6 db mv3">&lt;img src="/img/over-canvas.jpg" class="w-100"&gt;</code>
-  <img src="/img/over-canvas.jpg" class="w-100">
-  <p class="f5 f4-ns lh-copy measure mt4">The image below is 720 pixels wide, it will fill it's container until the container is wider than 720 pixels.
-
-  <code class="f6 db mv3">&lt;img src="/img/under-canvas.jpg" class="mw-100"&gt;</code>
-  <img src="/img/under-canvas.jpg" class="db mw-100">
-  <div class="mt5 cf">
-    <div class="dib mr4">
-      <h1 class="f4 ttu tracked fw6">Previous</h1>
-      <a href="/docs/debug/" class="link fw6 blue dim">Debug</a>
-    </div>
-    <div class="dib">
-      <h1 class="f4 ttu tracked fw6">Next</h1>
-      <a href="/docs/typography/scale/" class="link fw6 blue dim">Type Scale</a>
-    </div>
-  </div>
-  <div class="mt5">
-    <h1 class="f4 ttu tracked fw6">Reference</h1>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" class="db link fw6 blue dim">MDN - Images HTML</a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/image" class="db link fw6 blue dim">MDN - Images CSS</a>
-  </div>
-</div>
+      <div class="ph3 ph5-ns pt4 pb5">
+        <h2 class="f3 bold">Examples</h2>
+        <h3 class="f5 book pt4 caps">Image</h3>
+        <p class="measure lh-copy f5 f4-ns">
+          This photo is more than 3000 pixels wide. The width is set to 100% to ensure it doesn't bleed off the viewport and always fills its container. In some situations, this will make the image stretch to be larger than it's actual width. To avoid the image stretching past it's width, set max-width instead.
+        </p>
+        <code class="f6 db mv3">&lt;img src="/img/over-canvas.jpg" class="w-100"&gt;</code>
+        <img src="/img/over-canvas.jpg" class="w-100">
+        <p class="f5 f4-ns lh-copy measure mt4">
+          The image below is 720 pixels wide, it will fill it's container until the container is wider than 720 pixels.
+        </p>
+        <code class="f6 db mv3">&lt;img src="/img/under-canvas.jpg" class="mw-100"&gt;</code>
+        <img src="/img/under-canvas.jpg" class="db mw-100">
+        <div class="mt5 cf">
+          <div class="dib mr4">
+            <h1 class="f4 ttu tracked fw6">Previous</h1>
+            <a href="/docs/themes/border-radius/" class="link fw6 blue dim">Border Radius</a>
+          </div>
+          <div class="dib">
+            <h1 class="f4 ttu tracked fw6">Next</h1>
+            <a href="/docs/elements/links/" class="link fw6 blue dim">Links</a>
+          </div>
+        </div>
+        <div class="mt5">
+          <h1 class="f4 ttu tracked fw6">Reference</h1>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" class="db link fw6 blue dim">MDN - Images HTML</a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/image" class="db link fw6 blue dim">MDN - Images CSS</a>
+        </div>
+      </div>
       <div class="ph3 ph5-ns pt3 pb5">
   <section>
     <h2 class="f6 fw7 ttu tracked">Elements</h2>
@@ -138,22 +134,32 @@
     </svg>
     <span class="dib v-mid white fw6" style="font-size: 12px;">Tweet</span>
   </a>
+  <div class="mb4">
+    <a class="black-70 link dim b dib mr3" href="/" title="Home">
+      Home
+    </a>
+    <a class="black-70 link dim b dib mr3" href="/docs" title="Docs">
+      Docs
+    </a>
+    <a class="black-70 link dim b dib mr3" href="/components/" title="Components">
+      Components
+    </a>
+  </div>
   <article>
     <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
     <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
   </article>
-
-  <p>
-    <a class="black-70 link dim b dib mr3" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
+  <div class="mt4">
+    <a class="black-70 link dim b dib mr3 pv2" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
       Join our Slack Channel
     </a>
-    <a class="black-70 link dim b dib mr3" href="https://github.com/tachyons-css/tachyons/issues" title="File a bug, request a feature, ask a question!">
+    <a class="black-70 link dim b dib mr3 pv2" href="https://github.com/tachyons-css/tachyons/issues" title="File a bug, request a feature, ask a question!">
       Open an Issue
     </a>
-    <a class="black-70 link dim b dib mr3" href="https://github.com/tachyons-css" title="Tachyons-css on GitHub">
+    <a class="black-70 link dim b dib mr3 pv2" href="https://github.com/tachyons-css" title="Tachyons-css on GitHub">
       GitHub
     </a>
-  </p>
+  </div>
   <p class="measure copy lh-copy">
     Have a question? Need help? Feel free to open an issue on GitHub or ask a
     question in our slack channel. We're here to try and help make designing in

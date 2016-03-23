@@ -5,7 +5,6 @@
       tachyons-background-size / Theming / Docs / TACHYONS
     </title>
     <meta name="description" content="Documentation for setting background-size on elements with the tachyons-background-size css module.">
-
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="author" content="@mrmrs">
@@ -16,63 +15,58 @@
   .bg-blue { background-color: #0074D9; }
 </style>
 
-
   </head>
   <body class="w-100 sans-serif">
     <header class="w-100 pa3 ph5-ns bg-near-white">
   <div class="dt w-100">
     <div class="dtc v-mid tl w-50">
-      <a href="/" class="dib f5 f4-ns fw6 mt0 mb1 link black-50 dim" title="Home">
+      <a href="/" class="dib f5 f4-ns fw6 mt0 mb1 link black-70 dim" title="Home">
         Tachyons
         <div class="dib">
-          <small class="nowrap f6 mt2 mt3-ns pr2 black-50 fw2">v4.0.0-beta.7</small>
+          <small class="nowrap f6 mt2 mt3-ns pr2 black-70 fw2">v4.0.0-beta.12</small>
         </div>
       </a>
     </div>
     <div class="db dtc v-mid w-100 tr">
 
       <a title="Documentation" href="/docs/"
-         class="f6 b dim link black-50 mr1 mr3-m mr4-l dib">
+         class="f6 fw6 dim link black-70 mr1 mr3-m mr4-l dib">
         Docs
       </a>
       <a title="Components" href="/components/"
-         class="f6 b dim link black-50 mr1 mr3-m mr4-l dib">
+         class="f6 fw6 dim link black-70 mr1 mr3-m mr4-l dib">
         Components
       </a>
       <a title="Tachyons on GitHub" href="http://github.com/mrmrs/tachyons/"
-         class="f6 b dim link black-50 mr1 mr3-m mr4-l dib">
+         class="f6 fw6 dim link black-70 mr1 mr3-m mr4-l dn dib-ns">
         GitHub
-      </a>
-      <a title="Tachyons Npm Modules" href="/#npm"
-         class="f6 b link black-50 dim dib">
-        Npm
       </a>
     </div>
   </div>
 </header>
 
-    <main class="">
+    <main>
       <article class="bg-near-white bt b--black-10 ph3 pt3 ph5-ns">
         <h4 class="f4 mv0 fw6 dib mr4">tachyons-background-size</h4>
         <span class="f4 b dib pl0 ml0 mr4">v3.0.2</span>
         <span class="f4 b dib pl0 ml0 mr4">139 B</span>
         <div>
-            <dl class="dib mr4 mt0">
-              <dt class="f6 db">Declarations </dt>
-              <dd class="db pl0 ml0 f4 f2-ns b">8</span></dd>
-            </dl>
-            <dl class="dib mr4">
-              <dt class="f6 db pr2">Selectors </dt>
-              <dd class="db pl0 ml0 f4 f2-ns b">8</dd>
-            </dl>
-            <dl class="dib mr4">
-              <dt class="f6 db pr2">Max. Specificity Score </dt>
-              <dd class="db pl0 ml0 f4 f2-ns b">10</dd>
-            </dl>
-            <dl class="dib mr4">
-              <dt class="f6 db pr2">Size of Avg. Rule </dt>
-              <dd class="db pl0 ml0 f4 f2-ns b">1</dd>
-            </dl>
+          <dl class="dib mr4 mt0">
+            <dt class="f6 db">Declarations </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b">8</dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Selectors </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b">8</dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Max. Specificity Score </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b">10</dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Size of Avg. Rule </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b">1</dd>
+          </dl>
         </div>
         <p class="measure f6 f5-ns lh-copy pb4 mt0">
           Background-size affects how background images fill their containing elements.
@@ -80,38 +74,36 @@
           setting contain or cover.
         </p>
       </article>
-<div class="ph3 ph5-ns pt4 pb5">
-  <h2 class="f3 mb4">Examples</h2>
-  <code class="f6 fw4 dib">.bg-cn { background-size: contain }</code>
-  <p class="measure lh-copy mt0"><code>contain</code> will make sure that the entire image is displayed within the element, regardless of the elements dimensions.</p>
-  <div style="background-image: url(http://placekitten.com/g/500/500);background-repeat: no-repeat;outline: 1px solid black;" class="bg-cn h4 w-50">
-
-  </div>
-  <code class="f6 fw4 mt5 dib">.bg-cv { background-size: cover }</code>
-  <p class="measure lh-copy mt0"><code>cover</code> will make sure the entire element is covered - but won't guarantee that the entire image will be shown.</p>
-  <div style="background-image: url(http://placekitten.com/g/500/500); outline: 1px solid black;" class="bg-cv h4 w-50">
-
-  </div>
-  <div class="mt5 cf">
-    <div class="dib mr4">
-      <h1 class="f4 ttu tracked fw6">Previous</h1>
-      <a href="/docs/themes/hovers/" class="link fw6 blue dim">Hovers</a>
-    </div>
-    <div class="dib">
-      <h1 class="f4 ttu tracked fw6">Next</h1>
-      <a href="/docs/themes/borders" class="link fw6 blue dim">Borders</a>
-    </div>
-  </div>
-  <div class="mt5">
-    <h1 class="f4 ttu tracked fw6">Reference</h1>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-size" class="link fw6 blue dim">MDN - Background Size</a>
-  </div>
-</div>
+      <div class="ph3 ph5-ns pt4 pb5">
+        <h2 class="f3 mb4">Examples</h2>
+        <code class="f6 fw4 dib">.bg-cn { background-size: contain }</code>
+        <p class="measure lh-copy mt0"><code>contain</code> will make sure that the entire image is displayed within the element, regardless of the elements dimensions.</p>
+        <div style="background-image: url(http://placekitten.com/g/500/500);background-repeat: no-repeat;outline: 1px solid black;" class="bg-cn h4 w-50">
+        </div>
+        <code class="f6 fw4 mt5 dib">.bg-cv { background-size: cover }</code>
+        <p class="measure lh-copy mt0"><code>cover</code> will make sure the entire element is covered - but won't guarantee that the entire image will be shown.</p>
+        <div style="background-image: url(http://placekitten.com/g/500/500); outline: 1px solid black;" class="bg-cv h4 w-50">
+        </div>
+        <div class="mt5 cf">
+          <div class="dib mr4">
+            <h1 class="f4 ttu tracked fw6">Previous</h1>
+            <a href="/docs/themes/hovers/" class="link fw6 blue dim">Hovers</a>
+          </div>
+          <div class="dib">
+            <h1 class="f4 ttu tracked fw6">Next</h1>
+            <a href="/docs/themes/borders" class="link fw6 blue dim">Borders</a>
+          </div>
+        </div>
+        <div class="mt5">
+          <h1 class="f4 ttu tracked fw6">Reference</h1>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-size" class="link fw6 blue dim">MDN - Background Size</a>
+        </div>
+      </div>
       <section class="bg-near-white black-70 pt4 pb5">
-<header class="ph3 ph5-ns pt4">
-        <kbd class="yellow">src/_background-size.css</kbd>
-</header>
-<pre class="ph3 ph5-ns pre">
+        <header class="ph3 ph5-ns pt4">
+          <kbd class="yellow">src/_background-size.css</kbd>
+        </header>
+<pre class="ph3 ph5-ns">
 <code class="code" style="font-size: .75rem;">
 @custom-media --breakpoint-not-small screen and (min-width: 48em);
 @custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
@@ -212,22 +204,32 @@
     </svg>
     <span class="dib v-mid white fw6" style="font-size: 12px;">Tweet</span>
   </a>
+  <div class="mb4">
+    <a class="black-70 link dim b dib mr3" href="/" title="Home">
+      Home
+    </a>
+    <a class="black-70 link dim b dib mr3" href="/docs" title="Docs">
+      Docs
+    </a>
+    <a class="black-70 link dim b dib mr3" href="/components/" title="Components">
+      Components
+    </a>
+  </div>
   <article>
     <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
     <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
   </article>
-
-  <p>
-    <a class="black-70 link dim b dib mr3" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
+  <div class="mt4">
+    <a class="black-70 link dim b dib mr3 pv2" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
       Join our Slack Channel
     </a>
-    <a class="black-70 link dim b dib mr3" href="https://github.com/tachyons-css/tachyons/issues" title="File a bug, request a feature, ask a question!">
+    <a class="black-70 link dim b dib mr3 pv2" href="https://github.com/tachyons-css/tachyons/issues" title="File a bug, request a feature, ask a question!">
       Open an Issue
     </a>
-    <a class="black-70 link dim b dib mr3" href="https://github.com/tachyons-css" title="Tachyons-css on GitHub">
+    <a class="black-70 link dim b dib mr3 pv2" href="https://github.com/tachyons-css" title="Tachyons-css on GitHub">
       GitHub
     </a>
-  </p>
+  </div>
   <p class="measure copy lh-copy">
     Have a question? Need help? Feel free to open an issue on GitHub or ask a
     question in our slack channel. We're here to try and help make designing in

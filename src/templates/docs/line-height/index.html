@@ -8,7 +8,6 @@
     <%= head  %>
   </head>
   <body class="w-100 sans-serif">
-
     <%= siteHeader %>
     <main class="">
       <article class="bg-near-white bt b--black-10 pa3 ph5-ns">
@@ -16,22 +15,22 @@
         <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
         <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
         <div>
-            <dl class="dib mr4 mt0">
-              <dt class="f6 db">Declarations </dt>
-              <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.declarations.total %></span></dd>
-            </dl>
-            <dl class="dib mr4">
-              <dt class="f6 db pr2">Selectors </dt>
-              <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.total %></dd>
-            </dl>
-            <dl class="dib mr4">
-              <dt class="f6 db pr2">Max. Specificity Score </dt>
-              <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.specificity.max %></dd>
-            </dl>
-            <dl class="dib mr4">
-              <dt class="f6 db pr2">Size of Avg. Rule </dt>
-              <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
-            </dl>
+          <dl class="dib mr4 mt0">
+            <dt class="f6 db">Declarations </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.declarations.total %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Selectors </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.total %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Max. Specificity Score </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.specificity.max %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Size of Avg. Rule </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
+          </dl>
         </div>
         <p class="measure f3 lh-copy">
           <b class="bold">line-height</b> is a css property<br><br>
@@ -47,53 +46,53 @@
           set of values can help make your text a little easier to digest.
         </p>
       </article>
-<div class="ph3 ph5-ns pt4 pb5">
-  <h2 class="f3 bold">Examples</h2>
-  <h3 class="f5 book ptxl ttu">No applied line-height (default)</h3>
-  <p class="measure">
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-    no sea takimata sanctus est Lorem ipsum dolor sit amet.
-  </p>
-  <h3 class="f5 book ptxl ttu">Prose Leading (1.6)</h3>
-  <p class="measure lh-copy">
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-    no sea takimata sanctus est Lorem ipsum dolor sit amet.
-  </p>
-  <h3 class="f5 book ptxl ttu">No Applied Title Leading (Default)</h3>
-  <p class="measure ttu mega fw6 mtn">
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-  </p>
-  <h3 class="f5 book ptxl ttu">Title Leading (1.3)</h3>
-  <p class="measure lh-title ttu mega fw6 mtn">
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-  </p>
-  <h3 class="f5 book ptxl ttu">Solid Leading (1)</h3>
-  <p class="measure lh-solid ttu mega fw6 mtn">
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-  </p>
-  <div class="mt5 cf">
-    <div class="dib mr4">
-      <h1 class="f4 ttu tracked fw6">Previous</h1>
-      <a href="/docs/typography/measure/" class="link fw6 blue dim">Measure</a>
-    </div>
-    <div class="dib">
-      <h1 class="f4 ttu tracked fw6">Next</h1>
-      <a href="/docs/typography/tracking/" class="link fw6 blue dim">Tracking</a>
-    </div>
-  </div>
-  <div class="mt5">
-    <h1 class="f4 ttu tracked fw6">Reference</h1>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/line-height" class="link fw6 blue dim">MDN - Line Height</a>
-  </div>
-</div>
+      <div class="ph3 ph5-ns pt4 pb5">
+        <h2 class="f3 bold">Examples</h2>
+        <h3 class="f5 book ptxl ttu">No applied line-height (default)</h3>
+        <p class="measure">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+          no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <h3 class="f5 book ptxl ttu">Prose Leading (1.6)</h3>
+        <p class="measure lh-copy">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+          no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <h3 class="f5 book ptxl ttu">No Applied Title Leading (Default)</h3>
+        <p class="measure ttu mega fw6 mtn">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+        </p>
+        <h3 class="f5 book ptxl ttu">Title Leading (1.3)</h3>
+        <p class="measure lh-title ttu mega fw6 mtn">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+        </p>
+        <h3 class="f5 book ptxl ttu">Solid Leading (1)</h3>
+        <p class="measure lh-solid ttu mega fw6 mtn">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+        </p>
+        <div class="mt5 cf">
+          <div class="dib mr4">
+            <h1 class="f4 ttu tracked fw6">Previous</h1>
+            <a href="/docs/typography/measure/" class="link fw6 blue dim">Measure</a>
+          </div>
+          <div class="dib">
+            <h1 class="f4 ttu tracked fw6">Next</h1>
+            <a href="/docs/typography/tracking/" class="link fw6 blue dim">Tracking</a>
+          </div>
+        </div>
+        <div class="mt5">
+          <h1 class="f4 ttu tracked fw6">Reference</h1>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/line-height" class="link fw6 blue dim">MDN - Line Height</a>
+        </div>
+      </div>
       <section class="bg-near-white black-70 pt4 pb5">
-<header class="ph3 ph5-ns pt4">
-        <kbd class="yellow">src/_line-height.css</kbd>
-</header>
+        <header class="ph3 ph5-ns pt4">
+          <kbd class="yellow">src/_line-height.css</kbd>
+        </header>
 <pre class="ph3 ph5-ns">
 <code class="code" style="font-size: .75rem;">
 <%= srcCSS %>
