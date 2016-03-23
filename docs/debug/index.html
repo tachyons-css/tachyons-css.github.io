@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>
       Debugging / Docs / TACHYONS
     </title>
-    <meta name="author" content="@mrmrs">
     <meta name="description" content="CSS">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/tachyons.min.css">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="author" content="@mrmrs">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/tachyons.min.css">
+<style>
+  .blue { color: #0074D9; }
+  .bg-blue { background-color: #0074D9; }
+</style>
+
   </head>
   <body class="w-100 sans-serif">
     <header class="w-100 pa3 ph5-ns bg-near-white">
   <div class="dt w-100">
     <div class="dtc v-mid tl w-50">
-      <a href="/" class="dib f5 f4-ns fw6 mt0 mb1 link black-50 dim" title="Home">
+      <a href="/" class="dib f5 f4-ns fw6 mt0 mb1 link black-70 dim" title="Home">
         Tachyons
         <div class="dib">
-          <small class="nowrap f6 mt2 mt3-ns pr2 black-50 fw2">v4.0.0-beta-3</small>
+          <small class="nowrap f6 mt2 mt3-ns pr2 black-70 fw2">v4.0.0-beta.12</small>
         </div>
       </a>
     </div>
     <div class="db dtc v-mid w-100 tr">
 
       <a title="Documentation" href="/docs/"
-         class="f6 b dim link black-50 mr1 mr3-m mr4-l dib">
+         class="f6 fw6 dim link black-70 mr1 mr3-m mr4-l dib">
         Docs
       </a>
-      <a title="Tachyons on GitHub" href="http://github.com/mrmrs/tachyons/"
-         class="f6 b dim link black-50 mr1 mr3-m mr4-l dib">
-        GitHub
+      <a title="Components" href="/components/"
+         class="f6 fw6 dim link black-70 mr1 mr3-m mr4-l dib">
+        Components
       </a>
-      <a title="Tachyons Npm Modules" href="/#npm"
-         class="f6 b link black-50 dim dib">
-        Npm
+      <a title="Tachyons on GitHub" href="http://github.com/mrmrs/tachyons/"
+         class="f6 fw6 dim link black-70 mr1 mr3-m mr4-l dn dib-ns">
+        GitHub
       </a>
     </div>
   </div>
@@ -43,25 +48,25 @@
     <main>
       <article class="bg-near-white bt b--black-10 pa3 ph5-ns">
         <h4 class="f4 mv0 fw6 dib mr4">tachyons-debug</h4>
-        <span class="f4 b dib pl0 ml0 mr4">v1.1.1</span>
+        <span class="f4 b dib pl0 ml0 mr4">v1.1.2</span>
         <span class="f4 b dib pl0 ml0 mr4">902 B</span>
         <div>
-            <dl class="dib mr4 mt0">
-              <dt class="f6 db">Declarations </dt>
-              <dd class="db pl0 ml0 f4 f2-ns b">98</span></dd>
-            </dl>
-            <dl class="dib mr4">
-              <dt class="f6 db pr2">Selectors </dt>
-              <dd class="db pl0 ml0 f4 f2-ns b">99</dd>
-            </dl>
-            <dl class="dib mr4">
-              <dt class="f6 db pr2">Max. Specificity Score </dt>
-              <dd class="db pl0 ml0 f4 f2-ns b">1</dd>
-            </dl>
-            <dl class="dib mr4">
-              <dt class="f6 db pr2">Size of Avg. Rule </dt>
-              <dd class="db pl0 ml0 f4 f2-ns b">1</dd>
-            </dl>
+          <dl class="dib mr4 mt0">
+            <dt class="f6 db">Declarations </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b">98</dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Selectors </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b">99</dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Max. Specificity Score </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b">1</dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Size of Avg. Rule </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b">1</dd>
+          </dl>
         </div>
         <p class="measure f4 f3-ns lh-copy">
           Tachyons comes with two convenient modules to help debug layout issues you might be having.
@@ -86,233 +91,234 @@
           To use it, uncomment out that line and then run <code>node run build</code> from the root of the project.
         </p>
       </article>
-    <main class="">
-<div class="ph3 ph5-ns pt4 pb5">
-  <h2 class="f3 b">Examples</h2>
-  <h3 class="f5 fw4 pt4 caps">Debug Children</h3>
-  <div class="debug">
-    <p class="measure i">
-      Note how in the below example there is white space rendered in between the
-      elements because they are set to inline-block
-    </p>
-    <div class="dib w-25">This element is set to inline-block and width: 25% </div>
-    <div class="dib w-25">This element is set to inline-block and width: 25% </div>
-    <div class="dib w-25">This element is set to inline-block and width: 25% </div>
-    <div class="dib w-25">This element is set to inline-block and width: 25% </div>
-    <article class="cf mt4 w-100">
-      <div class="fl w-100">
-        <p class="i w-100">
-          Note how in the below example the elements are flush with no
-          white-space rendered between the elements.
+      <div class="ph3 ph5-ns pt4 pb5">
+        <h2 class="f3 b">Examples</h2>
+        <h3 class="f5 fw4 pt4 caps">Debug Children</h3>
+        <div class="debug">
+          <p class="measure i">
+            Note how in the below example there is white space rendered in between the
+            elements because they are set to inline-block
+          </p>
+          <div class="dib w-25">This element is set to inline-block and width: 25% </div>
+          <div class="dib w-25">This element is set to inline-block and width: 25% </div>
+          <div class="dib w-25">This element is set to inline-block and width: 25% </div>
+          <div class="dib w-25">This element is set to inline-block and width: 25% </div>
+          <article class="cf mt4 w-100">
+            <div class="fl w-100">
+              <p class="i w-100">
+                Note how in the below example the elements are flush with no
+                white-space rendered between the elements.
+              </p>
+            </div>
+            <div class="fl w-25">
+              This is a floated element set to width: 25%
+            </div>
+            <div class="fl w-25">
+              This is a floated element set to width: 25%
+            </div>
+            <div class="fl w-25">
+              This is a floated element set to width: 25%
+            </div>
+            <div class="fl w-25">
+              This is a floated element set to width: 25%
+            </div>
+          </article>
+          <form action="index_submit" method="get" accept-charset="utf-8" class="mt4">
+            <fieldset id="this_is_a_form_legend" class="">
+              <legend>This is a form legend</legend>
+              <label for="">This is a label</label><input type="text" name="" value="" id="">
+            </fieldset>
+            <p><input type="submit" value="Continue →"></p>
+          </form>
+        </div>
+        <h3 class="f5 book pt4 caps">Debug All</h3>
+        <p class="lh-copy measure">
+          The largest difference here between the two methods is that every element on the page is
+          outlined in a different color.
         </p>
+        <style type="text/css" media="screen">
+          /*
+
+          DEBUG
+
+          */
+
+
+          .debug-all body {        outline: 1px solid  #2980B9!important; }
+          .debug-all article {     outline: 1px solid  #3498DB!important; }
+          .debug-all nav {         outline: 1px solid  #0088C3!important; }
+          .debug-all aside {       outline: 1px solid  #33A0CE!important; }
+          .debug-all section {     outline: 1px solid  #66B8DA!important; }
+          .debug-all header {      outline: 1px solid  #99CFE7!important; }
+          .debug-all footer {      outline: 1px solid  #CCE7F3!important; }
+          .debug-all h1 {          outline: 1px solid  #162544!important; }
+          .debug-all h2 {          outline: 1px solid  #314E6E!important; }
+          .debug-all h3 {          outline: 1px solid  #3E5E85!important; }
+          .debug-all h4 {          outline: 1px solid  #449BAF!important; }
+          .debug-all h5 {          outline: 1px solid  #C7D1CB!important; }
+          .debug-all h6 {          outline: 1px solid  #4371D0!important; }
+          .debug-all main {        outline: 1px solid  #2F4F90!important; }
+          .debug-all address {     outline: 1px solid  #1A2C51!important; }
+          .debug-all div {         outline: 1px solid  #036CDB!important; }
+          .debug-all p {           outline: 1px solid  #AC050B!important; }
+          .debug-all hr {          outline: 1px solid  #FF063F!important; }
+          .debug-all pre {         outline: 1px solid  #850440!important; }
+          .debug-all blockquote {  outline: 1px solid  #F1B8E7!important; }
+          .debug-all ol {          outline: 1px solid  #FF050C!important; }
+          .debug-all ul {          outline: 1px solid  #D90416!important; }
+          .debug-all li {          outline: 1px solid  #D90416!important; }
+          .debug-all dl {          outline: 1px solid  #FD3427!important; }
+          .debug-all dt {          outline: 1px solid  #FF0043!important; }
+          .debug-all dd {          outline: 1px solid  #E80174!important; }
+          .debug-all figure {      outline: 1px solid  #FF00BB!important; }
+          .debug-all figcaption {  outline: 1px solid  #BF0032!important; }
+          .debug-all table {       outline: 1px solid  #00CC99!important; }
+          .debug-all caption {     outline: 1px solid  #37FFC4!important; }
+          .debug-all thead {       outline: 1px solid  #98DACA!important; }
+          .debug-all tbody {       outline: 1px solid  #64A7A0!important; }
+          .debug-all tfoot {       outline: 1px solid  #22746B!important; }
+          .debug-all tr {          outline: 1px solid  #86C0B2!important; }
+          .debug-all th {          outline: 1px solid  #A1E7D6!important; }
+          .debug-all td {          outline: 1px solid  #3F5A54!important; }
+          .debug-all col {         outline: 1px solid  #6C9A8F!important; }
+          .debug-all colgroup {    outline: 1px solid  #6C9A9D!important; }
+          .debug-all button {      outline: 1px solid  #DA8301!important; }
+          .debug-all datalist {    outline: 1px solid  #C06000!important; }
+          .debug-all fieldset {    outline: 1px solid  #D95100!important; }
+          .debug-all form {        outline: 1px solid  #D23600!important; }
+          .debug-all input {       outline: 1px solid  #FCA600!important; }
+          .debug-all keygen {      outline: 1px solid  #B31E00!important; }
+          .debug-all label {       outline: 1px solid  #EE8900!important; }
+          .debug-all legend {      outline: 1px solid  #DE6D00!important; }
+          .debug-all meter {       outline: 1px solid  #E8630C!important; }
+          .debug-all optgroup {    outline: 1px solid  #B33600!important; }
+          .debug-all option {      outline: 1px solid  #FF8A00!important; }
+          .debug-all output {      outline: 1px solid  #FF9619!important; }
+          .debug-all progress {    outline: 1px solid  #E57C00!important; }
+          .debug-all select {      outline: 1px solid  #E26E0F!important; }
+          .debug-all textarea {    outline: 1px solid  #CC5400!important; }
+          .debug-all details {     outline: 1px solid  #33848F!important; }
+          .debug-all summary {     outline: 1px solid  #60A1A6!important; }
+          .debug-all command {     outline: 1px solid  #438DA1!important; }
+          .debug-all menu {        outline: 1px solid  #449DA6!important; }
+          .debug-all del {         outline: 1px solid  #BF0000!important; }
+          .debug-all ins {         outline: 1px solid  #400000!important; }
+          .debug-all img     {     outline: 1px solid #22746B!important; }
+          .debug-all iframe  {     outline: 1px solid #64A7A0!important; }
+          .debug-all embed   {     outline: 1px solid #98DACA!important; }
+          .debug-all object  {     outline: 1px solid #00CC99!important; }
+          .debug-all param   {     outline: 1px solid #37FFC4!important; }
+          .debug-all video   {     outline: 1px solid #6EE866!important; }
+          .debug-all audio   {     outline: 1px solid #027353!important; }
+          .debug-all source  {     outline: 1px solid #012426!important; }
+          .debug-all canvas  {     outline: 1px solid #A2F570!important; }
+          .debug-all track   {     outline: 1px solid #59A600!important; }
+          .debug-all map     {     outline: 1px solid #7BE500!important; }
+          .debug-all area    {     outline: 1px solid #305900!important; }
+          .debug-all a {           outline: 1px solid #FF62AB!important; }
+          .debug-all em {          outline: 1px solid #800B41!important; }
+          .debug-all strong {      outline: 1px solid #FF1583!important; }
+          .debug-all i {           outline: 1px solid #803156!important; }
+          .debug-all b {           outline: 1px solid #CC1169!important; }
+          .debug-all u {           outline: 1px solid #FF0430!important; }
+          .debug-all s {           outline: 1px solid #F805E3!important; }
+          .debug-all small {       outline: 1px solid #D107B2!important; }
+          .debug-all abbr {        outline: 1px solid #4A0263!important; }
+          .debug-all q {           outline: 1px solid #240018!important; }
+          .debug-all cite {        outline: 1px solid #64003C!important; }
+          .debug-all dfn {         outline: 1px solid #B4005A!important; }
+          .debug-all sub {         outline: 1px solid #DBA0C8!important; }
+          .debug-all sup {         outline: 1px solid #CC0256!important; }
+          .debug-all time {        outline: 1px solid #D6606D!important; }
+          .debug-all code {        outline: 1px solid #E04251!important; }
+          .debug-all kbd {         outline: 1px solid #5E001F!important; }
+          .debug-all samp {        outline: 1px solid #9C0033!important; }
+          .debug-all var {         outline: 1px solid #D90047!important; }
+          .debug-all mark {        outline: 1px solid #FF0053!important; }
+          .debug-all bdi {         outline: 1px solid #BF3668!important; }
+          .debug-all bdo {         outline: 1px solid #6F1400!important; }
+          .debug-all ruby {        outline: 1px solid #FF7B93!important; }
+          .debug-all rt {          outline: 1px solid #FF2F54!important; }
+          .debug-all rp {          outline: 1px solid #803E49!important; }
+          .debug-all span {        outline: 1px solid #CC2643!important; }
+          .debug-all br {          outline: 1px solid #DB687D!important; }
+          .debug-all wbr {         outline: 1px solid #DB175B!important; }
+        </style>
+        <div class="debug-all">
+          <p class="measure i">
+            Note how in the below example there is white space rendered in between the
+            elements because they are set to inline-block
+          </p>
+          <div class="dib w-25">This element is set to inline-block and width: 25% </div>
+          <div class="dib w-25">This element is set to inline-block and width: 25% </div>
+          <div class="dib w-25">This element is set to inline-block and width: 25% </div>
+          <div class="dib w-25">This element is set to inline-block and width: 25% </div>
+          <article class="cf mt4 w-100">
+            <div class="fl w-100">
+              <p class="i w-100">
+                Note how in the below example the elements are flush with no
+                white-space rendered between the elements.
+              </p>
+            </div>
+            <div class="fl w-25">
+              This is a floated element set to width: 25%
+            </div>
+            <div class="fl w-25">
+              This is a floated element set to width: 25%
+            </div>
+            <div class="fl w-25">
+              This is a floated element set to width: 25%
+            </div>
+            <div class="fl w-25">
+              This is a floated element set to width: 25%
+            </div>
+          </article>
+          <form action="index_submit" method="get" accept-charset="utf-8" class="mt4">
+            <fieldset id="this_is_a_form_legend" class="">
+              <legend>This is a form legend</legend>
+              <label for="">This is a label</label><input type="text" name="" value="" id="">
+            </fieldset>
+            <p><input type="submit" value="Continue →"></p>
+          </form>
+        </div>
+        <div class="mt5 cf">
+          <div class="dib mr4">
+            <h1 class="f4 ttu tracked fw6">Previous</h1>
+            <a href="/docs/typography/white-space/" class="link fw6 blue dim">White Space</a>
+          </div>
+          <div class="dib">
+            <h1 class="f4 ttu tracked fw6">Next</h1>
+            <a href="/docs/layout/box-sizing/" class="link fw6 blue dim">Box Sizing</a>
+          </div>
+        </div>
+        <div class="mt5">
+          <h1 class="f4 ttu tracked fw6">Reference</h1>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/outline" class="db link fw6 blue dim">MDN - Outline</a>
+        </div>
       </div>
-      <div class="fl w-25">
-        This is a floated element set to width: 25%
-      </div>
-      <div class="fl w-25">
-        This is a floated element set to width: 25%
-      </div>
-      <div class="fl w-25">
-        This is a floated element set to width: 25%
-      </div>
-      <div class="fl w-25">
-        This is a floated element set to width: 25%
-      </div>
-    </article>
-    <form action="index_submit" method="get" accept-charset="utf-8" class="mt4">
-      <fieldset id="this_is_a_form_legend" class="">
-        <legend>This is a form legend</legend>
-        <label for="">This is a label</label><input type="text" name="" value="" id="">
-      </fieldset>
-      <p><input type="submit" value="Continue →"></p>
-    </form>
-  </div>
-  <h3 class="f5 book pt4 caps">Debug All</h3>
-<p class="lh-copy measure">
-  The largest difference here between the two methods is that every element on the page is
- outlined in a different color.
-</p>
-<style type="text/css" media="screen">
+      <section class="bg-near-white black-70 pt4 pv4">
+        <header class="ph3 ph5-ns pt4">
+          <kbd class="yellow">src/_debug-children.css</kbd>
+        </header>
+<pre class="ph3 ph5-ns">
+<code class="code" style="font-size: .75rem;">
 /*
 
-   DEBUG
+  DEBUG CHILDREN
 
 */
 
-
-.debug-all body {        outline: 1px solid  #2980B9!important; }
-.debug-all article {     outline: 1px solid  #3498DB!important; }
-.debug-all nav {         outline: 1px solid  #0088C3!important; }
-.debug-all aside {       outline: 1px solid  #33A0CE!important; }
-.debug-all section {     outline: 1px solid  #66B8DA!important; }
-.debug-all header {      outline: 1px solid  #99CFE7!important; }
-.debug-all footer {      outline: 1px solid  #CCE7F3!important; }
-.debug-all h1 {          outline: 1px solid  #162544!important; }
-.debug-all h2 {          outline: 1px solid  #314E6E!important; }
-.debug-all h3 {          outline: 1px solid  #3E5E85!important; }
-.debug-all h4 {          outline: 1px solid  #449BAF!important; }
-.debug-all h5 {          outline: 1px solid  #C7D1CB!important; }
-.debug-all h6 {          outline: 1px solid  #4371D0!important; }
-.debug-all main {        outline: 1px solid  #2F4F90!important; }
-.debug-all address {     outline: 1px solid  #1A2C51!important; }
-.debug-all div {         outline: 1px solid  #036CDB!important; }
-.debug-all p {           outline: 1px solid  #AC050B!important; }
-.debug-all hr {          outline: 1px solid  #FF063F!important; }
-.debug-all pre {         outline: 1px solid  #850440!important; }
-.debug-all blockquote {  outline: 1px solid  #F1B8E7!important; }
-.debug-all ol {          outline: 1px solid  #FF050C!important; }
-.debug-all ul {          outline: 1px solid  #D90416!important; }
-.debug-all li {          outline: 1px solid  #D90416!important; }
-.debug-all dl {          outline: 1px solid  #FD3427!important; }
-.debug-all dt {          outline: 1px solid  #FF0043!important; }
-.debug-all dd {          outline: 1px solid  #E80174!important; }
-.debug-all figure {      outline: 1px solid  #FF00BB!important; }
-.debug-all figcaption {  outline: 1px solid  #BF0032!important; }
-.debug-all table {       outline: 1px solid  #00CC99!important; }
-.debug-all caption {     outline: 1px solid  #37FFC4!important; }
-.debug-all thead {       outline: 1px solid  #98DACA!important; }
-.debug-all tbody {       outline: 1px solid  #64A7A0!important; }
-.debug-all tfoot {       outline: 1px solid  #22746B!important; }
-.debug-all tr {          outline: 1px solid  #86C0B2!important; }
-.debug-all th {          outline: 1px solid  #A1E7D6!important; }
-.debug-all td {          outline: 1px solid  #3F5A54!important; }
-.debug-all col {         outline: 1px solid  #6C9A8F!important; }
-.debug-all colgroup {    outline: 1px solid  #6C9A9D!important; }
-.debug-all button {      outline: 1px solid  #DA8301!important; }
-.debug-all datalist {    outline: 1px solid  #C06000!important; }
-.debug-all fieldset {    outline: 1px solid  #D95100!important; }
-.debug-all form {        outline: 1px solid  #D23600!important; }
-.debug-all input {       outline: 1px solid  #FCA600!important; }
-.debug-all keygen {      outline: 1px solid  #B31E00!important; }
-.debug-all label {       outline: 1px solid  #EE8900!important; }
-.debug-all legend {      outline: 1px solid  #DE6D00!important; }
-.debug-all meter {       outline: 1px solid  #E8630C!important; }
-.debug-all optgroup {    outline: 1px solid  #B33600!important; }
-.debug-all option {      outline: 1px solid  #FF8A00!important; }
-.debug-all output {      outline: 1px solid  #FF9619!important; }
-.debug-all progress {    outline: 1px solid  #E57C00!important; }
-.debug-all select {      outline: 1px solid  #E26E0F!important; }
-.debug-all textarea {    outline: 1px solid  #CC5400!important; }
-.debug-all details {     outline: 1px solid  #33848F!important; }
-.debug-all summary {     outline: 1px solid  #60A1A6!important; }
-.debug-all command {     outline: 1px solid  #438DA1!important; }
-.debug-all menu {        outline: 1px solid  #449DA6!important; }
-.debug-all del {         outline: 1px solid  #BF0000!important; }
-.debug-all ins {         outline: 1px solid  #400000!important; }
-.debug-all img     {     outline: 1px solid #22746B!important; }
-.debug-all iframe  {     outline: 1px solid #64A7A0!important; }
-.debug-all embed   {     outline: 1px solid #98DACA!important; }
-.debug-all object  {     outline: 1px solid #00CC99!important; }
-.debug-all param   {     outline: 1px solid #37FFC4!important; }
-.debug-all video   {     outline: 1px solid #6EE866!important; }
-.debug-all audio   {     outline: 1px solid #027353!important; }
-.debug-all source  {     outline: 1px solid #012426!important; }
-.debug-all canvas  {     outline: 1px solid #A2F570!important; }
-.debug-all track   {     outline: 1px solid #59A600!important; }
-.debug-all map     {     outline: 1px solid #7BE500!important; }
-.debug-all area    {     outline: 1px solid #305900!important; }
-.debug-all a {           outline: 1px solid #FF62AB!important; }
-.debug-all em {          outline: 1px solid #800B41!important; }
-.debug-all strong {      outline: 1px solid #FF1583!important; }
-.debug-all i {           outline: 1px solid #803156!important; }
-.debug-all b {           outline: 1px solid #CC1169!important; }
-.debug-all u {           outline: 1px solid #FF0430!important; }
-.debug-all s {           outline: 1px solid #F805E3!important; }
-.debug-all small {       outline: 1px solid #D107B2!important; }
-.debug-all abbr {        outline: 1px solid #4A0263!important; }
-.debug-all q {           outline: 1px solid #240018!important; }
-.debug-all cite {        outline: 1px solid #64003C!important; }
-.debug-all dfn {         outline: 1px solid #B4005A!important; }
-.debug-all sub {         outline: 1px solid #DBA0C8!important; }
-.debug-all sup {         outline: 1px solid #CC0256!important; }
-.debug-all time {        outline: 1px solid #D6606D!important; }
-.debug-all code {        outline: 1px solid #E04251!important; }
-.debug-all kbd {         outline: 1px solid #5E001F!important; }
-.debug-all samp {        outline: 1px solid #9C0033!important; }
-.debug-all var {         outline: 1px solid #D90047!important; }
-.debug-all mark {        outline: 1px solid #FF0053!important; }
-.debug-all bdi {         outline: 1px solid #BF3668!important; }
-.debug-all bdo {         outline: 1px solid #6F1400!important; }
-.debug-all ruby {        outline: 1px solid #FF7B93!important; }
-.debug-all rt {          outline: 1px solid #FF2F54!important; }
-.debug-all rp {          outline: 1px solid #803E49!important; }
-.debug-all span {        outline: 1px solid #CC2643!important; }
-.debug-all br {          outline: 1px solid #DB687D!important; }
-.debug-all wbr {         outline: 1px solid #DB175B!important; }
-
-</style>
-  <div class="debug-all">
-    <p class="measure i">
-      Note how in the below example there is white space rendered in between the
-      elements because they are set to inline-block
-    </p>
-    <div class="dib w-25">This element is set to inline-block and width: 25% </div>
-    <div class="dib w-25">This element is set to inline-block and width: 25% </div>
-    <div class="dib w-25">This element is set to inline-block and width: 25% </div>
-    <div class="dib w-25">This element is set to inline-block and width: 25% </div>
-    <article class="cf mt4 w-100">
-      <div class="fl w-100">
-        <p class="i w-100">
-          Note how in the below example the elements are flush with no
-          white-space rendered between the elements.
-        </p>
-      </div>
-      <div class="fl w-25">
-        This is a floated element set to width: 25%
-      </div>
-      <div class="fl w-25">
-        This is a floated element set to width: 25%
-      </div>
-      <div class="fl w-25">
-        This is a floated element set to width: 25%
-      </div>
-      <div class="fl w-25">
-        This is a floated element set to width: 25%
-      </div>
-    </article>
-    <form action="index_submit" method="get" accept-charset="utf-8" class="mt4">
-      <fieldset id="this_is_a_form_legend" class="">
-        <legend>This is a form legend</legend>
-        <label for="">This is a label</label><input type="text" name="" value="" id="">
-      </fieldset>
-      <p><input type="submit" value="Continue →"></p>
-    </form>
-  </div>
-<article class="mt5 cf">
-  <div class="dib">
-    <h1 class="f4 ttu tracked fw6">Next</h1>
-    <a href="/docs/general/images/" class="link fw6 blue dim">Images</a>
-  </div>
-  <div class="mt5">
-    <h1 class="f4 ttu tracked fw6">Reference</h1>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/outline" class="db link fw6 blue dim">MDN - Outline</a>
-  </div>
-</article>
-</div>
-      <section class="bg-near-white black-70 pt4 pv4">
-<header class="ph3 ph5-ns pt4">
-        <kbd class="yellow">src/_debug-children.css</kbd>
-</header>
-<pre class="ph3 ph5-ns">
-<code class="f6" style="font-size: .75rem;">
-  /*
-
-    DEBUG CHILDREN
-
-  */
-
-  .debug * { outline: 1px solid gold; }
-
+.debug * { outline: 1px solid gold; }
 </code>
 </pre>
       </section>
       <section class="bg-near-white black-70 pbxl">
-<header class="ph3 ph5-ns">
-        <kbd class="yellow">src/_debug.css</kbd>
-</header>
-<pre class="ph3 ph5-ns">
-<code class="f6" style="font-size: .75rem;">
-  
+        <header class="ph3 ph5-ns">
+          <kbd class="yellow">src/_debug.css</kbd>
+        </header>
+        <pre class="ph3 ph5-ns">
+          <code class="code" style="font-size: .75rem;">
+            
 body {        outline: 1px solid  #2980B9!important; }
 article {     outline: 1px solid  #3498DB!important; }
 nav {         outline: 1px solid  #0088C3!important; }
@@ -433,76 +439,91 @@ br {          outline: 1px solid #DB687D!important; }
 wbr {         outline: 1px solid #DB175B!important; }
 
 
-</code>
-</pre>
+          </code>
+        </pre>
       </section>
       <div class="ph3 ph5-ns pt3 pb5">
   <section>
-    <h2 class="f6 fw7 ttu tracked">General</h2>
-    <a class="f5  fw4 dim link mid-gray db pv1" href="/docs/debug/" title="Debugging">Debugging</a>
-    <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/general/images/" title="Images">Images</a>
+    <h2 class="f6 fw7 ttu tracked">Elements</h2>
+    <a class="f5 fw4 dim link blue db pv1" href="/docs/elements/images/" title="Images">Images</a>
+    <a class="f5 fw4 dim link blue db pv1" href="/docs/elements/links/" title="Images">Links</a>
+    <a class="f5 fw4 dim link blue db pv1" href="/docs/elements/lists/" title="Images">Lists</a>
+    <a class="f5 fw4 dim link blue db pv1 dn" href="/docs/elements/forms/" title="Images">Forms</a>
     <section class="cf w-100 mt3">
       <article class="fn fl-ns w-100 w-25-l">
         <h2 class="f6 fw7 ttu tracked" id="typography">Typography</h2>
-        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/scale" title="Type">Type Scale</a>
-        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/measure/garamond/" title="Measure">Measure</a>
-        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/line-height" title="Line Height">Line Height / Leading</a>
-        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/tracking" title="Tracking">Tracking</a>
-        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/font-weight" title="Font Weights">Font Weights</a>
-        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/font-family" title="Font Families">Font Families</a>
-        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/vertical-align" title="Font Families">Vertical Align</a>
-        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/text-align" title="Text Align">Text Align</a>
-        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/text-transform" title="Text Transform">Text Transform</a>
-        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/text-decoration" title="Text Decoration">Text Decoration</a>
-        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/typography/white-space" title="White Space">White Space</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/scale" title="Type">Type Scale</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/measure/" title="Measure">Measure</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/line-height" title="Line Height">Line Height / Leading</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/tracking" title="Tracking">Tracking</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-weight" title="Font Weights">Font Weights</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-family" title="Font Families">Font Families</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-style" title="Font Families">Font Style</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/vertical-align" title="Font Families">Vertical Align</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/text-align" title="Text Align">Text Align</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/text-transform" title="Text Transform">Text Transform</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/text-decoration" title="Text Decoration">Text Decoration</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/white-space" title="White Space">White Space</a>
       </article>
       <article class="fn fl-ns w-100 w-25-l">
         <h2 class="f6 fw7 ttu tracked" id="layout">Layout</h2>
-        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/box-sizing" title="Box Sizing">Box Sizing</a>
-        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/spacing" title="Spacing">Spacing</a>
-        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/floats" title="Floats">Floats</a>
-        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/clearfix" title="Clears">Clearfix</a>
-        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/display" title="Display">Display</a>
-        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/widths" title="Widths">Widths</a>
-        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/max-widths" title="Max Widths">Max Widths</a>
-        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/heights" title="Heights">Heights</a>
-        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/layout/position" title="Position">Position</a>
+        <a class="f5  fw4 dim link blue db pv1" href="/docs/debug/" title="Debugging">Debugging</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/box-sizing" title="Box Sizing">Box Sizing</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/spacing" title="Spacing">Spacing</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/floats" title="Floats">Floats</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/clearfix" title="Clears">Clearfix</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/display" title="Display">Display</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/widths" title="Widths">Widths</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/max-widths" title="Max Widths">Max Widths</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/heights" title="Heights">Heights</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/position" title="Position">Position</a>
       </article>
       <article class="fn fl-ns w-100 w-25-l">
         <h2 class="f6 fw7 ttu tracked">Theming</h2>
-        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/themes/hovers/" title="Hovers">Hovers</a>
-        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/themes/background-size/" title="Background Size">Background Size</a>
-        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/themes/borders/" title="Borders">Borders</a>
-        <a class="f5 fw4 dim link mid-gray db pv1" href="/docs/themes/border-radius/" title="Border Radius">Border Radius</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/themes/skins/" title="Hovers">Skins</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/themes/hovers/" title="Hovers">Hovers</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/themes/background-size/" title="Background Size">Background Size</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/themes/borders/" title="Borders">Borders</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/themes/border-radius/" title="Border Radius">Border Radius</a>
       </article>
     </section>
   </section>
 </div>
 
     </main>
-    <footer class="bg-near-white mid-gray ph3 ph5-ns pv5 pv6-ns bt b--light-gray">
+    <footer class="bg-near-white mid-gray ph3 ph5-ns pv5 pv6-ns bt b--black-10">
   <a href="https://twitter.com/intent/tweet?text=Tachyons: Functional CSS for Humans.&url=http://tachyons.io" target="_blank" class="dn mb3 twitter bg-white link dim br2 ph2 pb1 pt0 lh-solid" style="background-color: #55acee;">
     <svg class="geomicon dib v-mid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="#fff">
       <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
     </svg>
     <span class="dib v-mid white fw6" style="font-size: 12px;">Tweet</span>
   </a>
+  <div class="mb4">
+    <a class="black-70 link dim b dib mr3" href="/" title="Home">
+      Home
+    </a>
+    <a class="black-70 link dim b dib mr3" href="/docs" title="Docs">
+      Docs
+    </a>
+    <a class="black-70 link dim b dib mr3" href="/components/" title="Components">
+      Components
+    </a>
+  </div>
   <article>
     <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
     <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
   </article>
-
-  <p>
-    <a class="black-70 link dim b dib mr3" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
+  <div class="mt4">
+    <a class="black-70 link dim b dib mr3 pv2" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
       Join our Slack Channel
     </a>
-    <a class="black-70 link dim b dib mr3" href="https://github.com/tachyons-css/tachyons/issues" title="File a bug, request a feature, ask a question!">
+    <a class="black-70 link dim b dib mr3 pv2" href="https://github.com/tachyons-css/tachyons/issues" title="File a bug, request a feature, ask a question!">
       Open an Issue
     </a>
-    <a class="black-70 link dim b dib mr3" href="https://github.com/tachyons-css" title="Tachyons-css on GitHub">
+    <a class="black-70 link dim b dib mr3 pv2" href="https://github.com/tachyons-css" title="Tachyons-css on GitHub">
       GitHub
     </a>
-  </p>
+  </div>
   <p class="measure copy lh-copy">
     Have a question? Need help? Feel free to open an issue on GitHub or ask a
     question in our slack channel. We're here to try and help make designing in
@@ -527,7 +548,6 @@ ga('create', 'UA-55773803-1', 'auto');
 ga('send', 'pageview');
 
     </script>
-
 
   </body>
 </html>
