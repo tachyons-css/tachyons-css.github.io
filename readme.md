@@ -5,7 +5,7 @@ Documentation for Tachyons — a performant, mobile-first, and 100% responsive m
 ## Installation and Usage
 
 ```
-git clone https://github.com/tachyons-css/tachyons-css.github.io && cd $_
+git clone https://github.com/tachyons-css/tachyons-css.github.io && cd tachyons-css.github.io
 npm i && npm start
 ```
 
