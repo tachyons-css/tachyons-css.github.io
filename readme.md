@@ -1,6 +1,6 @@
 # Tachyons Documentation
 
-Documentation for Tachyons -- a performant, mobile-first, and 100% responsive modular css framework.
+Documentation for Tachyons — a performant, mobile-first, and 100% responsive modular CSS framework.
 
 ## Installation and Usage
 
