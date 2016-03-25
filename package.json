@@ -127,6 +127,11 @@
     {
       "name": "john otander",
       "url": "http://johnotander.com"
+    },
+    {
+      "name": "lachlan campbell",
+      "url": "http://lachlanjc.me",
+      "email": "lachlan.campbell@icloud.com"
     }
   ]
 }

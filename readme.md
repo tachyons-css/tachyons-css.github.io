@@ -19,6 +19,7 @@ Component documentation is part of the build script, and can be run with `$npm r
 
 * [mrmrs](http://mrmrs.io)
 * [johno](http://johnotander.com)
+* [lachlanjc](http://lachlanjc.me)
 
 ## License
 
