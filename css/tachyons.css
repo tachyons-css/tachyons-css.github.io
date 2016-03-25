@@ -1234,7 +1234,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .dt-column-group-ns { display: table-column-group; }
  .fl-ns { float: left; display: inline; }
  .fr-ns { float: right; display: inline; }
- .fn-ns { float: none !important; }
+ .fn-ns { float: none; }
  .i-ns { font-style: italic; }
  .fsn-ns { font-style: normal; }
  .normal-ns { font-weight: normal; }
