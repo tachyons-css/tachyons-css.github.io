@@ -1,11 +1,11 @@
 # Tachyons Documentation
 
-Documentation for Tachyons -- a performant, mobile-first, and 100% responsive modular css framework.
+Documentation for Tachyons — a performant, mobile-first, and 100% responsive modular CSS framework.
 
 ## Installation and Usage
 
 ```
-git clone https://github.com/tachyons-css/tachyons-css.github.io && cd $_
+git clone https://github.com/tachyons-css/tachyons-css.github.io && cd tachyons-css.github.io
 npm i && npm start
 ```
 
