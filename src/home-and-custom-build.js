@@ -5,36 +5,43 @@ var camelize = require('camelize')
 var cssstats = require('cssstats')
 var tachyonsModules = require('tachyons-modules')
 
-var pkgs = []
-var modulesCount = 0
 
 module.exports = function () {
+  var homePagePkgs = []
+  var customBuildPkgs = []
+  var modulesCount = 0
   tachyonsModules().then(function (moduleList) {
     // TODO: Missing tachyons-skins
     moduleList = moduleList
-    moduleCount = moduleList.length
 
     moduleList.forEach(function (module) {
       var pkg = require(module.name + '/package.json')
       var css = fs.readFileSync('node_modules/' + module.name + '/css/' + module.name + '.min.css', 'utf8')
       var stats = cssstats(css)
       var size = filesize(stats.gzipSize)
-      pkgs.push({
+      homePagePkgs.push({
         pkg: pkg,
         stats: stats,
         size: size
       })
+
+      customBuildPkgs.push({
+        name: pkg.name,
+        version: pkg.version,
+        size: size,
+        css: css
+      })
     })
 
-    return renderHomePage(pkgs)
+    return render(homePagePkgs, customBuildPkgs, moduleList.length)
   }).catch(function (e) {
-    console.log('Home Page Build Failed:')
+    console.log('Rendering Failed:')
     console.log(e)
     throw e
   })
 }
 
-function renderHomePage (modules) {
+function render (indexModules, customModules, modulesCount) {
   var tachyons = require('../package.json')
 
   var css = fs.readFileSync('./css/tachyons.css', 'utf8')
@@ -47,18 +54,29 @@ function renderHomePage (modules) {
   var head = fs.readFileSync('./src/templates/head.html', 'utf8')
   var siteFooter = fs.readFileSync('./src/templates/footer.html', 'utf8')
   var siteHeader = fs.readFileSync('./src/templates/header.html', 'utf8')
+  var custom = fs.readFileSync('./src/templates/custom.html', 'utf8')
 
   var tpl = _.template(template)
-  var html = tpl({
+  var index = tpl({
     size: size,
     version: tachyons.version,
     modulesCount: modulesCount,
     siteFooter: siteFooter,
     siteHeader: siteHeader,
     head: head,
-    modules: modules
+    modules: indexModules
   })
 
-  fs.writeFileSync('./index.html', html)
+  var custom_tpl = _.template(custom)
+  var custom_build = custom_tpl({
+    siteFooter: siteFooter,
+    siteHeader: siteHeader,
+    head: head,
+    modules: customModules
+  })
+
+
+  fs.writeFileSync('./index.html', index)
+  fs.writeFileSync('./custom/index.html', custom_build)
   console.log(size)
 }
