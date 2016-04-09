@@ -47,6 +47,7 @@ function renderHomePage (modules) {
   var head = fs.readFileSync('./src/templates/head.html', 'utf8')
   var siteFooter = fs.readFileSync('./src/templates/footer.html', 'utf8')
   var siteHeader = fs.readFileSync('./src/templates/header.html', 'utf8')
+  var ga = fs.readFileSync('./src/templates/ga.html', 'utf8')
 
   var tpl = _.template(template)
   var html = tpl({
@@ -56,7 +57,8 @@ function renderHomePage (modules) {
     siteFooter: siteFooter,
     siteHeader: siteHeader,
     head: head,
-    modules: modules
+    modules: modules,
+    ga: ga
   })
 
   fs.writeFileSync('./index.html', html)
