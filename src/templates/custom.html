@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      TACHYONS - Custom Build
+    </title>
+    <meta name="description" content="Simple CSS">
+    <%= head %>
+  </head>
+  <body class="w-100 sans-serif">
+    <%= siteHeader %>
+    <style>.bn { border-style: solid; border-width: 0}</style>
+    <main class="w-100">
+      <section class="ph3 ph5-ns bg-white cf pt5 pt6-ns pb4 pb5-ns" id="npm">
+        <div class="fl w-100">
+          <div class="">
+            <h1>Select the Modules You Need</h1>
+            <p class="f5 f3-ns lh-copy mt0 mb4 measure">
+              The main tachyons repo is just a group of of encapsulated css modules available on npm and github.
+              You can grab the entire toolkit, or just a few selected modules.
+              Mix and match them to suit your project's specific needs. Since tachyons modules are very focused on doing one thing well,
+              most of them are extremely small (well under a kilobyte) so you
+              can start using some or all of them without adding bloat to your css.
+            </p>
+          </div>
+        </div>
+        <% modules.map(renderModule) %>
+
+        <% function renderModule (module) { %>
+          <div class="mb3 fl w-100 w-50-m w-33-l">
+            <a class="db f4 link mb1 dim near-black b pkg" data-package="<%= module.name %>" data-css="<%= module.css %>" href=""><%= module.name %></a>
+            <div>
+              <span class="fw4 pr2">v<%= module.version %></span>
+              <span><%= module.size %></span>
+            </div>
+          </div>
+        <% } %>
+      </section>
+      <div class="ph3 ph5-ns mb5">
+        <button class="submit db f2 link mb3 dim near-black b bg-white bn pa0" href="" disabled>Select Modules</button>
+        <a href="" class="download dn f2 link mb3 dim near-black b">Right click here and select Save As...</a>
+        <button class="reset dn f4 link mb3 dim near-black b bg-white bn">Reset Selection</button>
+      </div>
+    </main>
+    <%= siteFooter %>
+
+    <script src="/node_modules/lodash/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/cash/1.0.0/cash.min.js"></script>
+    <script src="/js/custom.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-55773803-1', 'auto');
+ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>
