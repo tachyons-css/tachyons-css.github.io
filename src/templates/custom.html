@@ -2,44 +2,52 @@
 <html lang="en">
   <head>
     <title>
-      TACHYONS - Custom Build
+      TACHYONS - Customizer
     </title>
     <meta name="description" content="Simple CSS">
     <%= head %>
+    <style>
+      .bn { border-style: solid; border-width: 0}
+      .bg-blue { background-color: #0074D9; }
+      .blue { color: #0074D9; }
+      .blue-hover:hover { color: #0074D9; }
+    </style>
   </head>
   <body class="w-100 sans-serif">
     <%= siteHeader %>
-    <style>.bn { border-style: solid; border-width: 0}</style>
     <main class="w-100">
-      <section class="ph3 ph5-ns bg-white cf pt5 pt6-ns pb4 pb5-ns" id="npm">
+      <section class="ph3 ph5-ns bg-white cf pt3 pb4" id="npm">
         <div class="fl w-100">
           <div class="">
-            <h1>Select the Modules You Need</h1>
-            <p class="f5 f3-ns lh-copy mt0 mb4 measure">
-              The main tachyons repo is just a group of of encapsulated css modules available on npm and github.
-              You can grab the entire toolkit, or just a few selected modules.
-              Mix and match them to suit your project's specific needs. Since tachyons modules are very focused on doing one thing well,
-              most of them are extremely small (well under a kilobyte) so you
-              can start using some or all of them without adding bloat to your css.
+            <h1>Tachyons Customizer</h1>
+            <p class="f5 lh-copy mt0 mb4 measure">
+              Select what you need. Leave the rest.
             </p>
           </div>
         </div>
         <% modules.map(renderModule) %>
-
         <% function renderModule (module) { %>
           <div class="mb3 fl w-100 w-50-m w-33-l">
-            <a class="db f4 link mb1 dim near-black b pkg" data-package="<%= module.name %>" data-css="<%= module.css %>" href=""><%= module.name %></a>
-            <div>
-              <span class="fw4 pr2">v<%= module.version %></span>
-              <span><%= module.size %></span>
-            </div>
+            <a
+              class="dib f5 link mb1 near-black blue-hover b pkg"
+              data-package="<%= module.name %>"
+              data-css="<%= module.css %>">
+                <%= module.name %>
+                <span class="fw4 pl2 f6 dark-gray">v<%= module.version %></span>
+            </a>
           </div>
         <% } %>
       </section>
       <div class="ph3 ph5-ns mb5">
-        <button class="submit db f2 link mb3 dim near-black b bg-white bn pa0" href="" disabled>Select Modules</button>
-        <a href="" class="download dn f2 link mb3 dim near-black b">Right click here and select Save As...</a>
-        <button class="reset dn f4 link mb3 dim near-black b bg-white bn">Reset Selection</button>
+        <div>
+          <button class="submit dib f5 pv2 ph3 br1 link mb3 dim bg-blue white bn pa0" href="" disabled>Select Modules</button>
+          <a href="" class="download dn f5 link mb3 br1 pv2 ph3 dim bg-dark-gray white">
+            Download
+          </a>
+        </div>
+        <button class="reset dn f6 link underline blue mb3 dim bg-white bn">
+          Clear Selections
+        </button>
       </div>
     </main>
     <%= siteFooter %>

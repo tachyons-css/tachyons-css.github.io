@@ -40,6 +40,7 @@
 
     buildUrl = URL.createObjectURL(new Blob([file], {type: 'text/css'}))
     showDownload = true;
+    showSubmit = false;
     updateView()
   }
 
@@ -68,23 +69,23 @@
     if(numModules === 0) {
       pkgs.each(function(p) {
         var pkg = $(p)
-        pkg.parent().removeClass('o-40')
+        pkg.removeClass('blue')
       })
-      submit.text('Select Modules To Build')
+      submit.text('Select Modules')
       submit.attr('disabled', true)
     } else {
       pkgs.each(function(p) {
         var pkg = $(p)
-        applyConditionalClass(pkg.parent(), selectedModules[pkg.attr('data-package')], 'o-40');
+        applyConditionalClass(pkg, selectedModules[pkg.attr('data-package')], 'blue');
       })
-      submit.text('Build ' + numModules + ' Modules')
+      submit.text('Compile Selected Modules')
       submit.removeAttr('disabled')
     }
 
     applyConditionalClass(submit, showSubmit, 'db')
     applyConditionalClass(submit, !showSubmit, 'dn')
 
-    applyConditionalClass(download, showDownload, 'db')
+    applyConditionalClass(download, showDownload, 'dib')
     applyConditionalClass(download, !showDownload, 'dn')
 
     applyConditionalClass(reset, showReset, 'db')
