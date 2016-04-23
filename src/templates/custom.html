@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      TACHYONS - Customizer
+    </title>
+    <meta name="description" content="Simple CSS">
+    <%= head %>
+    <style>
+      .bn { border-style: solid; border-width: 0}
+      .bg-blue { background-color: #0074D9; }
+      .blue { color: #0074D9; }
+      .blue-hover:hover { color: #0074D9; }
+    </style>
+  </head>
+  <body class="w-100 sans-serif">
+    <%= siteHeader %>
+    <main class="w-100">
+      <section class="ph3 ph5-ns bg-white cf pt3 pb4" id="npm">
+        <div class="fl w-100">
+          <div class="">
+            <h1>Tachyons Customizer</h1>
+            <p class="f5 lh-copy mt0 mb4 measure">
+              Select what you need. Leave the rest.
+            </p>
+          </div>
+        </div>
+        <% modules.map(renderModule) %>
+        <% function renderModule (module) { %>
+          <div class="mb3 fl w-100 w-50-m w-33-l">
+            <a
+              class="dib f5 link mb1 near-black blue-hover b pkg"
+              data-package="<%= module.name %>"
+              data-css="<%= module.css %>">
+                <%= module.name %>
+                <span class="fw4 pl2 f6 dark-gray">v<%= module.version %></span>
+            </a>
+          </div>
+        <% } %>
+      </section>
+      <div class="ph3 ph5-ns mb5">
+        <div>
+          <button class="submit dib f5 pv2 ph3 br1 link mb3 dim bg-blue white bn pa0" href="" disabled>Select Modules</button>
+          <a href="" class="download dn f5 link mb3 br1 pv2 ph3 dim bg-dark-gray white">
+            Download
+          </a>
+        </div>
+        <button class="reset dn f6 link underline blue mb3 dim bg-white bn">
+          Clear Selections
+        </button>
+      </div>
+    </main>
+    <%= siteFooter %>
+
+    <script src="/node_modules/lodash/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/cash/1.0.0/cash.min.js"></script>
+    <script src="/js/custom.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-55773803-1', 'auto');
+ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>
