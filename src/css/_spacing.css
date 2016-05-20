@@ -22,7 +22,7 @@
    SPACING
 
    An eight step powers of two scale ranging from 0 to 16rem.
-   Namespaces are composab4e and thus high4y grockab4e - check the legend below
+   Namespaces are composable and thus highly grockable - check the legend below
 
    Legend:
 
@@ -215,7 +215,7 @@
 
 .mv0   {
   margin-top: var(--spacing-none);
-  margin-bottom: var(--spacing-none)rem;
+  margin-bottom: var(--spacing-none);
 }
 .mv1  {
   margin-top: var(--spacing-extra-small);
@@ -249,6 +249,10 @@
 .mh0   {
   margin-left: var(--spacing-none);
   margin-right: var(--spacing-none);
+}
+.mh1   {
+  margin-left: var(--spacing-extra-small);
+  margin-right: var(--spacing-extra-small);
 }
 .mh2   {
   margin-left: var(--spacing-small);
@@ -357,7 +361,7 @@
     padding-left: var(--spacing-none);
     padding-right: var(--spacing-none);
   }
-  .pv1-ns {
+  .ph1-ns {
     padding-left: var(--spacing-extra-small);
     padding-right: var(--spacing-extra-small);
   }
@@ -433,7 +437,7 @@
 
   .mv0-ns   {
     margin-top: var(--spacing-none);
-    margin-bottom: var(--spacing-none)rem;
+    margin-bottom: var(--spacing-none);
   }
   .mv1-ns  {
     margin-top: var(--spacing-extra-small);
@@ -464,34 +468,38 @@
     margin-bottom: var(--spacing-extra-extra-extra-large);
   }
 
-   .mh0-ns   {
-     margin-left: var(--spacing-none);
-     margin-right: var(--spacing-none);
-   }
-   .mh2-ns   {
-     margin-left: var(--spacing-small);
-     margin-right: var(--spacing-small);
-   }
-   .mh3-ns   {
-     margin-left: var(--spacing-medium);
-     margin-right: var(--spacing-medium);
-   }
-   .mh4-ns   {
-     margin-left: var(--spacing-large);
-     margin-right: var(--spacing-large);
-   }
-   .mh5-ns   {
-     margin-left: var(--spacing-extra-large);
-     margin-right: var(--spacing-extra-large);
-   }
-   .mh6-ns  {
-     margin-left: var(--spacing-extra-extra-large);
-     margin-right: var(--spacing-extra-extra-large);
-   }
-   .mh7-ns  {
-     margin-left: var(--spacing-extra-extra-extra-large);
-     margin-right: var(--spacing-extra-extra-extra-large);
-   }
+  .mh0-ns   {
+    margin-left: var(--spacing-none);
+    margin-right: var(--spacing-none);
+  }
+  .mh1-ns   {
+    margin-left: var(--spacing-extra-small);
+    margin-right: var(--spacing-extra-small);
+  }
+  .mh2-ns   {
+    margin-left: var(--spacing-small);
+    margin-right: var(--spacing-small);
+  }
+  .mh3-ns   {
+    margin-left: var(--spacing-medium);
+    margin-right: var(--spacing-medium);
+  }
+  .mh4-ns   {
+    margin-left: var(--spacing-large);
+    margin-right: var(--spacing-large);
+  }
+  .mh5-ns   {
+    margin-left: var(--spacing-extra-large);
+    margin-right: var(--spacing-extra-large);
+  }
+  .mh6-ns  {
+    margin-left: var(--spacing-extra-extra-large);
+    margin-right: var(--spacing-extra-extra-large);
+  }
+  .mh7-ns  {
+    margin-left: var(--spacing-extra-extra-extra-large);
+    margin-right: var(--spacing-extra-extra-extra-large);
+  }
 
 }
 
@@ -578,7 +586,7 @@
     padding-left: var(--spacing-none);
     padding-right: var(--spacing-none);
   }
-  .pv1-m {
+  .ph1-m {
     padding-left: var(--spacing-extra-small);
     padding-right: var(--spacing-extra-small);
   }
@@ -654,7 +662,7 @@
 
   .mv0-m {
     margin-top: var(--spacing-none);
-    margin-bottom: var(--spacing-none)rem;
+    margin-bottom: var(--spacing-none);
   }
   .mv1-m {
     margin-top: var(--spacing-extra-small);
@@ -879,7 +887,7 @@
 
   .mv0-l {
     margin-top: var(--spacing-none);
-    margin-bottom: var(--spacing-none)rem;
+    margin-bottom: var(--spacing-none);
   }
   .mv1-l {
     margin-top: var(--spacing-extra-small);
