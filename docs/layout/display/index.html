@@ -45,16 +45,16 @@
     <main class="">
       <article class="bg-near-white bt b--black-10 pa3 ph5-ns">
         <h4 class="f4 mv0 fw6 dib mr4">tachyons-display</h4>
-        <span class="f4 b dib pl0 ml0 mr4">v4.1.0</span>
-        <span class="f4 b dib pl0 ml0 mr4">307 B</span>
+        <span class="f4 b dib pl0 ml0 mr4">v3.0.3</span>
+        <span class="f4 b dib pl0 ml0 mr4">238 B</span>
         <div>
           <dl class="dib mr4 mt0">
             <dt class="f6 db">Declarations </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b">52</dd>
+            <dd class="db pl0 ml0 f4 f2-ns b">36</dd>
           </dl>
           <dl class="dib mr4">
             <dt class="f6 db pr2">Selectors </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b">48</dd>
+            <dd class="db pl0 ml0 f4 f2-ns b">36</dd>
           </dl>
           <dl class="dib mr4">
             <dt class="f6 db pr2">Max. Specificity Score </dt>
@@ -62,7 +62,7 @@
           </dl>
           <dl class="dib mr4">
             <dt class="f6 db pr2">Size of Avg. Rule </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b">1.0833333333333333</dd>
+            <dd class="db pl0 ml0 f4 f2-ns b">1</dd>
           </dl>
         </div>
         <p class="measure f3 lh-copy">
@@ -216,58 +216,82 @@
 
 */
 
-.dn {     display: none; }
-.di {     display: inline; }
-.db {     display: block; }
-.dib {    display: inline-block; }
-.dit {    display: inline-table; }
-.dt {     display: table; }
-.dtc {    display: table-cell; }
-.dt-row {    display: table-row; }
+.dn {              display: none; }
+.di {              display: inline; }
+.db {              display: block; }
+.dib {             display: inline-block; }
+.dit {             display: inline-table; }
+.dt {              display: table; }
+.dtc {             display: table-cell; }
+.dt-row {          display: table-row; }
 .dt-row-group {    display: table-row-group; }
-.dt-column {  display: table-column; }
+.dt-column {       display: table-column; }
 .dt-column-group { display: table-column-group; }
 
+/*
+  This will set table to full width and then
+  all cells will be equal width
+*/
+.dt--fixed {
+  table-layout: fixed;
+  width: 100%;
+}
+
 @media (--breakpoint-not-small) {
-  .dn-ns {     display: none; }
-  .di-ns {     display: inline; }
-  .db-ns {     display: block; }
-  .dib-ns {    display: inline-block; }
-  .dit-ns {    display: inline-table; }
-  .dt-ns {     display: table; }
-  .dtc-ns {    display: table-cell; }
-  .dt-row-ns {    display: table-row; }
+  .dn-ns {              display: none; }
+  .di-ns {              display: inline; }
+  .db-ns {              display: block; }
+  .dib-ns {             display: inline-block; }
+  .dit-ns {             display: inline-table; }
+  .dt-ns {              display: table; }
+  .dtc-ns {             display: table-cell; }
+  .dt-row-ns {          display: table-row; }
   .dt-row-group-ns {    display: table-row-group; }
-  .dt-column-ns {  display: table-column; }
+  .dt-column-ns {       display: table-column; }
   .dt-column-group-ns { display: table-column-group; }
+
+  .dt--fixed-ns {
+    table-layout: fixed;
+    width: 100%;
+  }
 }
 
 @media (--breakpoint-medium) {
-  .dn-m {     display: none; }
-  .di-m {     display: inline; }
-  .db-m {     display: block; }
-  .dib-m {    display: inline-block; }
-  .dit-m {    display: inline-table; }
-  .dt-m {     display: table; }
-  .dtc-m {    display: table-cell; }
-  .dt-row-m {    display: table-row; }
+  .dn-m {              display: none; }
+  .di-m {              display: inline; }
+  .db-m {              display: block; }
+  .dib-m {             display: inline-block; }
+  .dit-m {             display: inline-table; }
+  .dt-m {              display: table; }
+  .dtc-m {             display: table-cell; }
+  .dt-row-m {          display: table-row; }
   .dt-row-group-m {    display: table-row-group; }
-  .dt-column-m {  display: table-column; }
+  .dt-column-m {       display: table-column; }
   .dt-column-group-m { display: table-column-group; }
+
+  .dt--fixed-m {
+    table-layout: fixed;
+    width: 100%;
+  }
 }
 
 @media (--breakpoint-large) {
-  .dn-l {     display: none; }
-  .di-l {     display: inline; }
-  .db-l {     display: block; }
-  .dib-l {    display: inline-block; }
-  .dit-l {    display: inline-table; }
-  .dt-l {     display: table; }
-  .dtc-l {    display: table-cell; }
-  .dt-row-l {    display: table-row; }
+  .dn-l {              display: none; }
+  .di-l {              display: inline; }
+  .db-l {              display: block; }
+  .dib-l {             display: inline-block; }
+  .dit-l {             display: inline-table; }
+  .dt-l {              display: table; }
+  .dtc-l {             display: table-cell; }
+  .dt-row-l {          display: table-row; }
   .dt-row-group-l {    display: table-row-group; }
-  .dt-column-l {  display: table-column; }
+  .dt-column-l {       display: table-column; }
   .dt-column-group-l { display: table-column-group; }
+
+  .dt--fixed-l {
+    table-layout: fixed;
+    width: 100%;
+  }
 }
 
 

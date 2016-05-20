@@ -45,16 +45,16 @@
     <main>
       <article class="bg-near-white bt b--black-10 pa3 ph5-ns">
         <h4 class="f4 mv0 fw6 dib mr4">tachyons-typography</h4>
-        <span class="f4 b dib pl0 ml0 mr4">v2.2.0</span>
-        <span class="f4 b dib pl0 ml0 mr4">245 B</span>
+        <span class="f4 b dib pl0 ml0 mr4">v2.1.1</span>
+        <span class="f4 b dib pl0 ml0 mr4">226 B</span>
         <div>
           <dl class="dib mr4 mt0">
             <dt class="f6 db">Declarations </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b">36</dd>
+            <dd class="db pl0 ml0 f4 f2-ns b">32</dd>
           </dl>
           <dl class="dib mr4">
             <dt class="f6 db pr2">Selectors </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b">20</dd>
+            <dd class="db pl0 ml0 f4 f2-ns b">16</dd>
           </dl>
           <dl class="dib mr4">
             <dt class="f6 db pr2">Max. Specificity Score </dt>
@@ -62,7 +62,7 @@
           </dl>
           <dl class="dib mr4">
             <dt class="f6 db pr2">Size of Avg. Rule </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b">1.8</dd>
+            <dd class="db pl0 ml0 f4 f2-ns b">2</dd>
           </dl>
         </div>
         <p class="measure f4 f3-ns lh-copy">
@@ -261,9 +261,16 @@
 
 */
 
-/* Measure is limited to ~75 characters */
+
+
+/* Measure is limited to ~66 characters */
 .measure {
   max-width: 30em;
+}
+
+/* Measure is limited to ~80 characters */
+.measure-wide {
+  max-width: 34em;
 }
 
 /* Measure is limited to ~45 characters */
@@ -290,6 +297,9 @@
   .measure-ns  {
     max-width: 30em;
   }
+  .measure-wide-ns {
+    max-width: 34em;
+  }
   .measure-narrow-ns {
     max-width: 20em;
   }
@@ -306,7 +316,12 @@
 }
 
 @media (--breakpoint-medium) {
-  .measure-m { max-width: 30em; }
+  .measure-m {
+    max-width: 30em;
+  }
+  .measure-wide-m {
+    max-width: 34em;
+  }
   .measure-narrow-m {
     max-width: 20em;
   }
@@ -323,8 +338,15 @@
 }
 
 @media (--breakpoint-large) {
-  .measure-l { max-width: 30em; }
-  .measure-narrow-l { max-width: 20em; }
+  .measure-l {
+    max-width: 30em;
+  }
+  .measure-wide-l {
+    max-width: 34em;
+  }
+  .measure-narrow-l {
+    max-width: 20em;
+  }
   .indent-l {
     text-indent: 1em;
     margin-top: 0;

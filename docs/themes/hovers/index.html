@@ -45,16 +45,16 @@
     <main class="">
       <article class="bg-near-white bt b--black-10 pa3 ph5-ns">
         <h4 class="f4 mv0 fw6 dib mr4">tachyons-hovers</h4>
-        <span class="f4 b dib pl0 ml0 mr4">v2.1.0</span>
-        <span class="f4 b dib pl0 ml0 mr4">175 B</span>
+        <span class="f4 b dib pl0 ml0 mr4">v2.0.5</span>
+        <span class="f4 b dib pl0 ml0 mr4">149 B</span>
         <div>
           <dl class="dib mr4 mt0">
             <dt class="f6 db">Declarations </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b">10</dd>
+            <dd class="db pl0 ml0 f4 f2-ns b">9</dd>
           </dl>
           <dl class="dib mr4">
             <dt class="f6 db pr2">Selectors </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b">13</dd>
+            <dd class="db pl0 ml0 f4 f2-ns b">11</dd>
           </dl>
           <dl class="dib mr4">
             <dt class="f6 db pr2">Max. Specificity Score </dt>
@@ -62,7 +62,7 @@
           </dl>
           <dl class="dib mr4">
             <dt class="f6 db pr2">Size of Avg. Rule </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b">1.4285714285714286</dd>
+            <dd class="db pl0 ml0 f4 f2-ns b">1.5</dd>
           </dl>
         </div>
         <p class="measure f3 lh-copy">
@@ -125,22 +125,22 @@
 
 */
 
-/* 
-  
+/*
+
   Dim element on hover by adding the dim class.
 
 */
-.dim { 
-  opacity: 1; 
-  transition: opacity .15s ease-in; 
+.dim {
+  opacity: 1;
+  transition: opacity .15s ease-in;
 }
 .dim:hover,
-.dim:focus { 
-  opacity: .5; 
-  transition: opacity .15s ease-in; 
+.dim:focus {
+  opacity: .5;
+  transition: opacity .15s ease-in;
 }
 .dim:active {
-  opacity: .8; transition: opacity .15s ease-out; 
+  opacity: .8; transition: opacity .15s ease-out;
 }
 
 /*
@@ -167,6 +167,11 @@
 .hide-child:active .child {
   opacity: 1;
   transition: opacity .15s ease-in;
+}
+
+.underline-hover:hover,
+.underline-hover:focus {
+  text-decoration: underline;
 }
 
 
