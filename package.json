@@ -62,7 +62,8 @@
     "tachyons-visibility": "^1.0.4",
     "tachyons-white-space": "^3.0.1",
     "tachyons-widths": "^4.0.2",
-    "tachyons-word-break": "^1.0.1"
+    "tachyons-word-break": "^1.0.1",
+    "tachyons-z-index": "^1.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
