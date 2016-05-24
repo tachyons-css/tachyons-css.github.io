@@ -42,38 +42,38 @@ module.exports = function () {
     atImport(), removeComments(), getTrs()
   ]).process(tachyonsCss, {
     from: 'src/css/tachyons.css'
-  }).css
+  }).then(function () {
+    var tableData = Object.keys(properties).sort().map(
+      function (property) {
+        var newRow = '<tr>' +
+          '<td class="bb b--black-10 pv3">' + '<pre class="f5">' + property + '</pre>'+'</td>' +
+          '<td class="bb b--black-10 pv3">' + '<pre class=f5">' +
+            Object.keys(properties[property].selectors).sort().map(function (selector) {
+              return  selector + ': ' + properties[property].selectors[selector]
+            }).join('<br>') +
+            '</pre>' +
+          '</td>' +
+          '<td class="bb b--black-05 pv2">' +
+            Object.keys(properties[property].modules).map(function (moduleName) {
+              return '<a class="link blue dim f6" href="https://github.com/tachyons-css/tachyons-' + moduleName +'">' + moduleName + '</a>'
+            }).join('<br>') +
+          '</td>' +
+          '</tr>'
+        return newRow
+      })
+      .join('\n')
 
-  var tableData = Object.keys(properties).sort().map(
-    function (property) {
-      var newRow = '<tr>' +
-        '<td class="bb b--black-10 pv3">' + '<pre class="f5">' + property + '</pre>'+'</td>' +
-        '<td class="bb b--black-10 pv3">' + '<pre class=f5">' +
-          Object.keys(properties[property].selectors).sort().map(function (selector) {
-            return  selector + ': ' + properties[property].selectors[selector]
-          }).join('<br>') +
-          '</pre>' +
-        '</td>' +
-        '<td class="bb b--black-05 pv2">' +
-          Object.keys(properties[property].modules).map(function (moduleName) {
-            return '<a class="link blue dim f6" href="https://github.com/tachyons-css/tachyons-' + moduleName +'">' + moduleName + '</a>'
-          }).join('<br>') +
-        '</td>' +
-        '</tr>'
-      return newRow
+    var compiledPage = _.template(template)({
+      name: 'Table of Properties',
+      tableData: tableData,
+      navDocs: navDocs,
+      siteFooter: siteFooter,
+      googleAnalytics: googleAnalytics,
+      head: head,
+      siteHeader: siteHeader
     })
-    .join('\n')
 
-  var compiledPage = _.template(template)({
-    name: 'Table of Properties',
-    tableData: tableData,
-    navDocs: navDocs,
-    siteFooter: siteFooter,
-    googleAnalytics: googleAnalytics,
-    head: head,
-    siteHeader: siteHeader
+    mkdirp.sync('docs/table-of-properties')
+    fs.writeFileSync('docs/table-of-properties/index.html', compiledPage)
   })
-
-  mkdirp.sync('docs/table-of-properties')
-  fs.writeFileSync('docs/table-of-properties/index.html', compiledPage)
 }

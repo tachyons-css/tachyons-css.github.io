@@ -51,18 +51,18 @@ module.exports = function () {
     atImport(), removeComments(), getTrs()
   ]).process(tachyonsCss, {
     from: 'src/css/tachyons.css'
-  }).css
+  }).then(function () {
+    var compiledPage = _.template(template)({
+      name: 'Table of Styles',
+      tableData: tableData,
+      navDocs: navDocs,
+      siteFooter: siteFooter,
+      googleAnalytics: googleAnalytics,
+      head: head,
+      siteHeader: siteHeader
+    })
 
-  var compiledPage = _.template(template)({
-    name: 'Table of Styles',
-    tableData: tableData,
-    navDocs: navDocs,
-    siteFooter: siteFooter,
-    googleAnalytics: googleAnalytics,
-    head: head,
-    siteHeader: siteHeader
+    mkdirp.sync('docs/table-of-styles')
+    fs.writeFileSync('docs/table-of-styles/index.html', compiledPage)
   })
-
-  mkdirp.sync('docs/table-of-styles')
-  fs.writeFileSync('docs/table-of-styles/index.html', compiledPage)
 }

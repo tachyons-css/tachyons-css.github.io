@@ -97,18 +97,18 @@ module.exports = function () {
         removeComments({ removeAll: true }), mqPacker(), removeEmpty(), getModules(), perfectionist()
       ]).process(tachyonsCss, {
         from: 'src/css/tachyons.css'
-      }).css
+      }).then(function () {
+        frontMatter.stats = cssstats(frontMatter.componentCss)
 
-      frontMatter.stats = cssstats(frontMatter.componentCss)
+        // TODO: Update me once src/ uses the npm modules
+        frontMatter.modules = Object.keys(moduleSrcs).map(function (module) {
+          return 'tachyons-' + module.split('/_')[1].replace('.css', '')
+        })
 
-      // TODO: Update me once src/ uses the npm modules
-      frontMatter.modules = Object.keys(moduleSrcs).map(function (module) {
-        return 'tachyons-' + module.split('/_')[1].replace('.css', '')
+        var compiledPage = _.template(template)(frontMatter)
+        mkdirp.sync(newDir)
+        fs.writeFileSync(newFile, compiledPage)
       })
-
-      var compiledPage = _.template(template)(frontMatter)
-      mkdirp.sync(newDir)
-      fs.writeFileSync(newFile, compiledPage)
     })
   })
 }
