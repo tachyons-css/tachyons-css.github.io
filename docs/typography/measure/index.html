@@ -253,7 +253,7 @@
           <a href="http://webtypography.net/2.1.2" class="link fw6 blue dim">Choose a Comfortable Measure</a>
         </div>
       </div>
-      <section class="bg-near-white black-70 pt4 pb5">
+      <section class="bg-near-white black-70 pt4 pb5 overflow-container">
       <header class="ph3 ph5-ns pt4">
         <kbd class="yellow">src/_typography.css</kbd>
       </header>
@@ -293,7 +293,11 @@
   margin-bottom: 0;
 }
 
-/* Combine this class with a width to truncate text */
+.small-caps {
+  font-variant: small-caps;
+}
+
+/* Combine this class with a width to truncate text (or just leave as is to truncate at width of containing element. */
 
 .truncate {
   white-space: nowrap;
@@ -315,6 +319,9 @@
     text-indent: 1em;
     margin-top: 0;
     margin-bottom: 0;
+  }
+  .small-caps-ns {
+    font-variant: small-caps;
   }
   .truncate-ns {
     white-space: nowrap;
@@ -338,6 +345,9 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+  .small-caps-m {
+    font-variant: small-caps;
+  }
   .truncate-m {
     white-space: nowrap;
     overflow: hidden;
@@ -359,6 +369,9 @@
     text-indent: 1em;
     margin-top: 0;
     margin-bottom: 0;
+  }
+  .small-caps-l {
+    font-variant: small-caps;
   }
   .truncate-l {
     white-space: nowrap;

@@ -92,15 +92,19 @@
         </p>
         <h3 class="f5 book pt4 caps">Dim Card</h3>
         <p>
-          <a href="#" class="link black mw5 db dim pas ba b--gray br2">
-            <img src="http://placekitten.com/g/600/300" alt="KITTTTTTTY" class="db mbxs" />
+          <a href="#" class="link black mw5 db dim pa2 ba b--black-20 br2">
+            <img src="http://placekitten.com/g/600/300" alt="KITTTTTTTY" class="db mb2 mw-100" />
             <span class="db">Dim any element and its children</span>
           </a>
         </p>
         <h3 class="f5 book pt4 caps">Reveal Children on Hover</h3>
-          <a href="#" class="link black mw5 dt hide-child ba b--gray br2" style="background-size: cover; background: transparent url(http://placekitten.com/g/700/300) no-repeat;">
-            <span class="white b dtc v-mid child bg-black-40 ph4 pv5">Reveal children elements on hover</span>
+          <a href="#" class="link black mw5 dt hide-child ba b--black-20 br2" style="background: transparent url(http://placekitten.com/g/700/300) no-repeat center center;background-size: cover; ">
+            <span class="white b dtc v-mid w-100 h-100 child bg-black-40 ph4 pv5">Reveal children elements on hover</span>
           </a>
+        <h3 class="f5 book pt4 caps">Add pointer on hover</h3>
+          <div href="#" class="link dim black mw5 dt hide-child ba b--black-20 pa4 br2 pointer">
+              Add pointer on hover to element.
+          </div>
         <div class="mt5 cf">
           <div class="dib mr4">
             <h1 class="f4 ttu tracked fw6">Previous</h1>
@@ -117,7 +121,7 @@
           <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/%3Afocus" class="link db fw6 blue dim">MDN - Focus</a>
         </div>
       </div>
-      <section class="bg-near-white black-70 pt4 pb5">
+      <section class="bg-near-white black-70 pt4 pb5 overflow-container">
         <header class="ph3 ph5-ns pt4">
           <kbd class="yellow">src/_hovers.css</kbd>
         </header>
@@ -153,7 +157,7 @@
 
 /*
 
-  Hide child on hover:
+  Hide child & reveal on hover:
 
   Put the hide-child class on a parent element and any nested element with the
   child class will be hidden and displayed on hover or focus.
@@ -180,6 +184,31 @@
 .underline-hover:hover,
 .underline-hover:focus {
   text-decoration: underline;
+}
+
+/* Can combine this with overflow-hidden to make background images grow on hover
+ * even if you are using background-size: cover */
+
+.grow {
+  transition: transform .2s;
+}
+
+.grow:hover {
+  transform: scale(1.05);
+}
+
+.grow-large {
+  transition: transform .2s;
+}
+
+.grow-large:hover {
+  transform: scale(1.2);
+}
+
+/* Add pointer on hover */
+
+.pointer:hover {
+  cursor: pointer;
 }
 
 
