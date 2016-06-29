@@ -180,7 +180,8 @@ npm install &amp;&amp; npm build
                   <p class="fl w-100 w-50-ns mh0 mt0 pr0 pr3-ns  measure i lh-copy">
                     <b>
                       Here’s why I think designing systems with tools/frameworks like <a href="//tachyons.io">Tachyons</a>
-                      is a Good Idea™.</b>
+                      is a Good Idea™.
+                    </b>
                     Design Systems break as they scale (either scaling org or
                     scaling product) because new components/variants of a
                     component are introduced.  Those variants sometimes (read: often) go
@@ -313,9 +314,9 @@ npm install &amp;&amp; npm build
           <div class="">
             <h1><a href="#npm" class="link near-black">NPM</a></h1>
             <p class="f5 f3-ns lh-copy mt0 mb4 measure">
-              The main tachyons repo is just a group of of encapsulated css modules available on npm and github.
-              You can grab the entire toolkit, or just a few selected modules.
-              Mix and match them to suit your project's specific needs. Since tachyons modules are very focused on doing one thing well,
+              The main tachyons repo is just a collection of encapsulated css modules available on npm and github.
+              You can grab the entire toolkit, or a few selected modules.
+              Mix and match them to suit your project's needs. Since tachyons modules are very focused on doing one thing well,
               most of them are extremely small (well under a kilobyte) so you
               can start using some or all of them without adding bloat to your css.
             </p>
@@ -325,13 +326,13 @@ npm install &amp;&amp; npm build
         <% modules.map(renderModule) %>
 
         <% function renderModule (module) { %>
-        <div class="mb3 fl w-100 w-50-m w-33-l">
-          <a class="db f4 link mb1 dim near-black b" href="http://npmjs.com/package/<%= module.pkg.name %>"><%= module.pkg.name %></a>
-          <div>
-            <span class="fw4 pr2">v<%= module.pkg.version %></span>
-            <span><%= module.size %></span>
-            <a class="link dim near-black dib ml2 f6" href="http://github.com/tachyons-css/<%= module.pkg.name %>">View on GitHub</a>
-          </div>
+        <div class="mb3 mb4-ns fl w-100 w-50-m w-33-l">
+          <a class="db f5 link mb1 dim near-black b" title="View <%= module.pkg.name %> on GitHub"
+            href="//github.com/tachyons-css/<%= module.pkg.name %>">
+            <%= module.pkg.name %>
+          </a>
+          <code class="f6 di fw4 pr2">v<%= module.pkg.version %></code>
+          <code class="f6 di black-60"><%= module.size %></code>
         </div>
         <% } %>
       </section>
