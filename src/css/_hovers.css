@@ -28,7 +28,7 @@
 
 /*
 
-  Hide child on hover:
+  Hide child & reveal on hover:
 
   Put the hide-child class on a parent element and any nested element with the
   child class will be hidden and displayed on hover or focus.
@@ -55,5 +55,30 @@
 .underline-hover:hover,
 .underline-hover:focus {
   text-decoration: underline;
+}
+
+/* Can combine this with overflow-hidden to make background images grow on hover
+ * even if you are using background-size: cover */
+
+.grow {
+  transition: transform .2s;
+}
+
+.grow:hover {
+  transform: scale(1.05);
+}
+
+.grow-large {
+  transition: transform .2s;
+}
+
+.grow-large:hover {
+  transform: scale(1.2);
+}
+
+/* Add pointer on hover */
+
+.pointer:hover {
+  cursor: pointer;
 }
 
