@@ -1,4 +1,8 @@
 require('./src/components-build')()
+console.log('components build complete')
 require('./src/table-of-styles-build')()
+console.log('table of styles build complete')
 require('./src/table-of-properties-build')()
+console.log('table of properties build complete')
 require('./src/home-build')()
+console.log('home build complete')

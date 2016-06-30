@@ -92,12 +92,14 @@ module.exports = function () {
         }
       })
 
-      frontMatter.componentCss = postcss([
+      postcss([
         atImport(), cssVariables(), conditionals(), customMedia(), select(frontMatter.classes),
         removeComments({ removeAll: true }), mqPacker(), removeEmpty(), getModules(), perfectionist()
       ]).process(tachyonsCss, {
         from: 'src/css/tachyons.css'
-      }).then(function () {
+      }).then(function (result) {
+        console.log('component css selection complete for', component)
+        frontMatter.componentCss = result.css
         frontMatter.stats = cssstats(frontMatter.componentCss)
 
         // TODO: Update me once src/ uses the npm modules
@@ -106,9 +108,11 @@ module.exports = function () {
         })
 
         var compiledPage = _.template(template)(frontMatter)
+        console.log('creating new dir', newDir)
         mkdirp.sync(newDir)
         fs.writeFileSync(newFile, compiledPage)
-      })
+        console.log('finished component build for', component)
+      }).catch(function (e) { console.log(e) })
     })
   })
 }
