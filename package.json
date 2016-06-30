@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "tachyons-background-size": "^3.0.3",
+    "tachyons-box-shadow": "^1.1.0",
     "tachyons-base": "^1.2.3",
     "tachyons-border-colors": "^4.0.5",
     "tachyons-border-radius": "^4.1.2",

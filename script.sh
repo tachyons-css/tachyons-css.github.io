@@ -5,6 +5,7 @@ repos=(
   "src/modules/border-radius.js"
   "src/modules/borders.js"
   "src/modules/box-sizing.js"
+  "src/modules/box-shadow.js"
   "src/modules/clearfix.js"
   "src/modules/debug.js"
   "src/modules/display.js"
