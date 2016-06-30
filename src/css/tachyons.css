@@ -8,6 +8,7 @@
 
 /* Modules */
 @import './_box-sizing';
+@import './_box-shadow';
 @import './_background-size';
 @import './_borders';
 @import './_border-colors';
