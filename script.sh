@@ -28,6 +28,7 @@ repos=(
   "src/modules/spacing.js"
   "src/modules/colors.js"
   "src/modules/text-align.js"
+  "src/modules/tables.js"
   "src/modules/text-decoration.js"
   "src/modules/text-transform.js"
   "src/modules/type-scale.js"

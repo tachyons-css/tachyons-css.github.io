@@ -2,15 +2,16 @@
 <html lang="en">
   <head>
     <title>
-      Hovers / Themes / Docs / TACHYONS
+      Tables / Elements / Docs / TACHYONS
     </title>
     <meta name="description" content="CSS">
     <%= head  %>
   </head>
   <body class="w-100 sans-serif">
+
     <%= siteHeader %>
     <main class="">
-      <article class="bg-near-white bt b--black-10 pa3 ph5-ns">
+      <article class="bg-near-white bt b--black-10 pv2 ph3 ph5-ns">
         <h4 class="f4 mv0 fw6 dib mr4"><%= name %></h4>
         <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
         <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
@@ -32,51 +33,42 @@
             <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
           </dl>
         </div>
-        <p class="measure f3 lh-copy">
-          There are several classes for adding hover effects to elements.
-          Hover effects can be used to give visual affordance to the user that an element can be interacted with.
+        <p class="measure f4 f3-ns lh-copy">
+          Tachyons has some basic utilities for styling forms that are easy to customize and extend.
         </p>
       </article>
       <div class="ph3 ph5-ns pt4 pb5">
         <h2 class="f3 bold">Examples</h2>
-        <h3 class="f5 book pt4 ttu fw6">Dim Text</h3>
-        <p>
-          <a href="#" class="f3 b db dim link pv1 black">This link will dim on hover</a>
-          <a href="#" class="f3 b db dim link pv1 black-80">This link will dim on hover</a>
-          <a href="#" class="f3 b db dim link pv1 black-60">This link will dim on hover</a>
-        </p>
-        <h3 class="f5 book pt4 ttu fw6">Dim Card</h3>
-        <p>
-          <a href="#" class="link black mw5 db dim pa2 ba b--black-20 br2">
-            <img src="http://placekitten.com/g/600/300" alt="KITTTTTTTY" class="db mb2 mw-100" />
-            <span class="db">Dim any element and its children</span>
-          </a>
-        </p>
-        <h3 class="f5 book pt4 ttu fw6">Reveal Children on Hover</h3>
-          <a href="#" class="link black mw5 dt hide-child ba b--black-20 br2" style="background: transparent url(http://placekitten.com/g/700/300) no-repeat center center;background-size: cover; ">
-            <span class="white b dtc v-mid w-100 h-100 child bg-black-40 ph4 pv5">Reveal children elements on hover</span>
-          </a>
-        <h3 class="f5 book pt4 ttu fw6">Add pointer on hover</h3>
-          <div href="#" class="link dim black mw5 dt hide-child ba b--black-20 pa4 br2 pointer">
-              Add pointer on hover to element.
-          </div>
-        <h3 class="f5 book pt4 ttu fw6">Grow on Hover</h3>
-        <a class="w5 mw5 dt grow link" href="#" style="background: black url(/img/1.jpg); background-size: cover;">
-          <span class="white-90 f5 f3-ns b ttu dtc v-mid w-100 h-100 pa3 pa5-ns br2">
-            Portfolio Project #11
-          </span>
-        </a>
+<h4 class="mb4">Striped - Light Gray</h4>
+<table class="collapse ba br2 b--black-10 pv2 ph3">
+  <tr class="striped--light-gray "><th class="pv2 ph3 tl f6 fw6 ttu">Name</th><th class="tr f6 ttu fw6 pv2 ph3">Rating</th></tr>
+  <tr class="striped--light-gray "><td class="pv2 ph3">Jurassic Park</td><td class="pv2 ph3">5 stars</td></tr>
+  <tr class="striped--light-gray "><td class="pv2 ph3">Back to the Future</td><td class="pv2 ph3">5 stars</td></tr>
+  <tr class="striped--light-gray "><td class="pv2 ph3">Primer</td><td class="pv2 ph3">5 stars</td></tr>
+  <tr class="striped--light-gray "><td class="pv2 ph3">Sunshine</td><td class="pv2 ph3">5 stars</td></tr>
+  <tr class="striped--light-gray "><td class="pv2 ph3">Moon</td><td class="pv2 ph3">5 stars</td></tr>
+</table>
+<h4 class="mt5">Striped - Near white</h4>
+<table class="collapse ba br2 b--black-10 pv2 ph3 mt4">
+  <tr class="striped--near-white "><th class="pv2 ph3 tl f6 fw6 ttu">Name</th><th class="tr f6 ttu fw6 pv2 ph3">Rating</th></tr>
+  <tr class="striped--near-white "><td class="pv2 ph3">Jurassic Park</td><td class="pv2 ph3">5 stars</td></tr>
+  <tr class="striped--near-white "><td class="pv2 ph3">Back to the Future</td><td class="pv2 ph3">5 stars</td></tr>
+  <tr class="striped--near-white "><td class="pv2 ph3">Primer</td><td class="pv2 ph3">5 stars</td></tr>
+  <tr class="striped--near-white "><td class="pv2 ph3">Sunshine</td><td class="pv2 ph3">5 stars</td></tr>
+  <tr class="striped--near-white "><td class="pv2 ph3">Moon</td><td class="pv2 ph3">5 stars</td></tr>
+</table>
+
         <div class="mt5 cf">
           <div class="dib mr4">
             <h1 class="f4 ttu tracked fw6">Previous</h1>
-            <a href="/docs/themes/skins/" class="link fw6 blue dim">Skins</a>
+            <a href="/docs/elements/forms/" class="link fw6 blue dim">Forms</a>
           </div>
           <div class="dib">
             <h1 class="f4 ttu tracked fw6">Next</h1>
-            <a href="/docs/themes/background-size/" class="link fw6 blue dim">Background Size</a>
+            <a href="/docs/typography/scale/" class="link fw6 blue dim">Type Scale</a>
           </div>
         </div>
-        <div class="mt5 lh-copy">
+        <div class="mt5 dn">
           <h1 class="f4 ttu tracked fw6">Reference</h1>
           <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/%3Ahover" class="link db fw6 blue dim">MDN - Hover</a>
           <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/%3Afocus" class="link db fw6 blue dim">MDN - Focus</a>
@@ -84,7 +76,7 @@
       </div>
       <section class="bg-near-white black-70 pt4 pb5 overflow-container">
         <header class="ph3 ph5-ns pt4">
-          <kbd class="yellow">src/_hovers.css</kbd>
+          <kbd class="yellow">src/_tables.css</kbd>
         </header>
 <pre class="ph3 ph5-ns">
 <code class="code" style="font-size: .75rem;">
