@@ -1157,9 +1157,9 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /* Can combine this with overflow-hidden to make background images grow on hover
  * even if you are using background-size: cover */
 .grow { transition: transform .2s; }
-.grow:hover { transform: scale( 1.05 ); }
+.grow:hover { transition: transform .2s; transform: scale( 1.05 ); }
 .grow-large { transition: transform .2s; }
-.grow-large:hover { transform: scale( 1.2 ); }
+.grow-large:hover { transform: scale( 1.2 ); transition: transform .2s; }
 /* Add pointer on hover */
 .pointer:hover { cursor: pointer; }
 /*
