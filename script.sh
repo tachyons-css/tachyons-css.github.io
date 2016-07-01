@@ -25,6 +25,7 @@ repos=(
   "src/modules/position.js"
   "src/modules/links.js"
   "src/modules/lists.js"
+  "src/modules/opacity.js"
   "src/modules/spacing.js"
   "src/modules/colors.js"
   "src/modules/text-align.js"
