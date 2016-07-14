@@ -26,15 +26,15 @@
     "tachyons-border-style": "^3.0.2",
     "tachyons-border-widths": "^2.0.2",
     "tachyons-borders": "^2.1.0",
-    "tachyons-box-sizing": "^3.1.2",
     "tachyons-box-shadow": "^1.1.0",
+    "tachyons-box-sizing": "^3.1.2",
     "tachyons-clears": "^2.2.0",
     "tachyons-colors": "^5.1.2",
     "tachyons-coordinates": "^3.0.1",
     "tachyons-debug": "^1.1.2",
     "tachyons-display": "^4.1.0",
-    "tachyons-floats": "^2.0.4",
     "tachyons-flexbox": "^1.0.0",
+    "tachyons-floats": "^2.0.4",
     "tachyons-font-family": "^4.2.0",
     "tachyons-font-style": "^3.0.2",
     "tachyons-font-weight": "^4.0.4",
@@ -64,7 +64,8 @@
     "tachyons-visibility": "^1.0.4",
     "tachyons-white-space": "^3.0.2",
     "tachyons-widths": "^4.0.2",
-    "tachyons-word-break": "1.0.1"
+    "tachyons-word-break": "1.0.1",
+    "tachyons-z-index": "^1.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
@@ -106,7 +107,7 @@
     "tachyons": "^4.0.0-beta.27",
     "tachyons-cli": "^0.6.0",
     "tachyons-flexbox": "^1.0.0",
-    "tachyons-modules": "^1.1.4",
+    "tachyons-modules": "^1.1.5",
     "tachyons-queries": "^0.3.1",
     "titleize": "^1.0.0",
     "watch": "^0.18.0"
