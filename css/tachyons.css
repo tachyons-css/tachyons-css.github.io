@@ -1,11 +1,12 @@
-/* TACHYONS v4.0.0-beta.34| github.com/tachyons-css/tachyons */
+/* TACHYONS v4.0.4| github.com/tachyons-css/tachyons */
 /* External Library Includes */
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
- * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-html { font-family: sans-serif; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */ }
+html { font-family: sans-serif; /* 1 */ line-height: 1.15; /* 2 */ -ms-text-size-adjust: 100%; /* 3 */ -webkit-text-size-adjust: 100%; /* 3 */ }
 /**
  * Remove the margin in all browsers (opinionated).
  */
@@ -78,7 +79,7 @@ h1 { font-size: 2em; margin: 0.67em 0; }
 /**
  * Add the correct background and color in IE 9-.
  */
-mark { color: #000; }
+mark { background-color: #ff0; color: #000; }
 /**
  * Add the correct font size in all browsers.
  */
@@ -122,7 +123,7 @@ hr { box-sizing: content-box; /* 1 */ height: 0; /* 1 */ overflow: visible; /* 2
  * 1. Change font properties to `inherit` in all browsers (opinionated).
  * 2. Remove the margin in Firefox and Safari.
  */
-button, input, select, textarea { font: inherit; /* 1 */ margin: 0; /* 2 */ }
+button, input, optgroup, select, textarea { font: inherit; /* 1 */ margin: 0; /* 2 */ }
 /**
  * Restore the font weight unset by the previous rule.
  */
@@ -198,16 +199,6 @@ textarea { overflow: auto; }
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button { -webkit-appearance: button; /* 1 */ font: inherit; /* 2 */ }
-/* Variables */
-/*
-
-   Tachyons
-   COLOR VARIABLES
-
-   Grayscale
-   - Solids
-   - Transparencies
-*/
 /* Modules */
 /*
   Box Sizing
@@ -218,29 +209,7 @@ input[type="number"], input[type="password"], input[type="tel"],
 input[type="text"], input[type="url"], .border-box { box-sizing: border-box; }
 /*
 
-  BOX-SHADOW
-
-  Media Query Extensions:
-   -ns = not-small
-   -m  = medium
-   -l  = large
-
- */
-.shadow-1 { box-shadow: 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 ); }
-.shadow-2 { box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ); }
-.shadow-3 { box-shadow: 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 ); }
-.shadow-4 { box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 ); }
-.shadow-5 { box-shadow: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 ); }
-/*
-
    BACKGROUND SIZE
-
-   Base:
-    bg = background-size
-
-   Modifiers:
-    -cv = cover
-    -cn = contain
 
    Media Query Extensions:
      -ns = not-small
@@ -252,8 +221,8 @@ input[type="text"], input[type="url"], .border-box { box-sizing: border-box; }
   Often used in combination with background image set as an inline style
   on an html element.
 */
-.bg-cv { background-size: cover; }
-.bg-cn { background-size: contain; }
+.cover { background-size: cover; }
+.contain { background-size: contain; }
 /*
 
    BORDER BASE
@@ -321,6 +290,29 @@ input[type="text"], input[type="url"], .border-box { box-sizing: border-box; }
 .b--black-05 { border-color: rgba( 0, 0, 0, .05 ); }
 .b--black-025 { border-color: rgba( 0, 0, 0, .025 ); }
 .b--black-0125 { border-color: rgba( 0, 0, 0, .0125 ); }
+.b--dark-red { border-color: #f00008; }
+.b--red { border-color: #ff3223; }
+.b--orange { border-color: #f3a801; }
+.b--gold { border-color: #f2c800; }
+.b--yellow { border-color: #ffde37; }
+.b--purple { border-color: #7d5da9; }
+.b--light-purple { border-color: #8d4f92; }
+.b--hot-pink { border-color: #d62288; }
+.b--dark-pink { border-color: #c64774; }
+.b--pink { border-color: #f49cc8; }
+.b--dark-green { border-color: #006C71; }
+.b--green { border-color: #41D69F; }
+.b--navy { border-color: #001b44; }
+.b--dark-blue { border-color: #00449e; }
+.b--blue { border-color: #357edd; }
+.b--light-blue { border-color: #96ccff; }
+.b--lightest-blue { border-color: #cdecff; }
+.b--washed-blue { border-color: #f6fffe; }
+.b--washed-green { border-color: #e8fdf5; }
+.b--washed-yellow { border-color: #fff8d5; }
+.b--light-pink { border-color: #efa4b8; }
+.b--light-yellow { border-color: #f3dd70; }
+.b--light-red { border-color: #ffd3c0; }
 .b--transparent { border-color: transparent; }
 /*
 
@@ -352,6 +344,8 @@ input[type="text"], input[type="url"], .border-box { box-sizing: border-box; }
 .br-100 { border-radius: 100%; }
 .br--bottom { border-top-left-radius: 0; border-top-right-radius: 0; }
 .br--top { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+.br--right { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+.br--left { border-top-right-radius: 0; border-bottom-right-radius: 0; }
 /*
 
    BORDER STYLES
@@ -371,10 +365,10 @@ input[type="text"], input[type="url"], .border-box { box-sizing: border-box; }
      -l  = large
 
  */
-.b--none { border-style: none; }
 .b--dotted { border-style: dotted; }
 .b--dashed { border-style: dashed; }
 .b--solid { border-style: solid; }
+.b--none { border-style: none; }
 /*
 
    BORDER WIDTHS
@@ -402,6 +396,25 @@ input[type="text"], input[type="url"], .border-box { box-sizing: border-box; }
 .bw3 { border-width: .5rem; }
 .bw4 { border-width: 1rem; }
 .bw5 { border-width: 2rem; }
+.bt-0 { border-top-width: 0; }
+.br-0 { border-right-width: 0; }
+.bb-0 { border-bottom-width: 0; }
+.bl-0 { border-left-width: 0; }
+/*
+
+  BOX-SHADOW
+
+  Media Query Extensions:
+   -ns = not-small
+   -m  = medium
+   -l  = large
+
+ */
+.shadow-1 { box-shadow: 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 ); }
+.shadow-2 { box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ); }
+.shadow-3 { box-shadow: 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 ); }
+.shadow-4 { box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 ); }
+.shadow-5 { box-shadow: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 ); }
 /*
 
    CODE
@@ -557,8 +570,8 @@ FLEXBOX
      -l  = large
 
 */
-.fl { float: left; display: inline; }
-.fr { float: right; display: inline; }
+.fl { float: left; _display: inline; }
+.fr { float: right; _display: inline; }
 .fn { float: none; }
 /*
 
@@ -574,12 +587,14 @@ FLEXBOX
 code, .code { font-family: Consolas, monaco, monospace; }
 /* Sans-Serif Typefaces */
 .helvetica { font-family: 'helvetica neue', helvetica, sans-serif; }
+.avenir { font-family: 'avenir next', avenir, sans-serif; }
 /* Serif Typefaces */
 .georgia { font-family: georgia, serif; }
 .times { font-family: times, serif; }
 .bodoni { font-family: "Bodoni MT", serif; }
 .calisto { font-family: "Calisto MT", serif; }
 .garamond { font-family: garamond, serif; }
+.baskerville { font-family: garamond, serif; }
 /*
 
    FONT STYLE
@@ -633,9 +648,9 @@ code, .code { font-family: Consolas, monaco, monospace; }
    LETTER SPACING
 
 */
-.tracked { letter-spacing: .16em; }
+.tracked { letter-spacing: .1em; }
 .tracked-tight { letter-spacing: -.05em; }
-.tracked-mega { letter-spacing: .32em; }
+.tracked-mega { letter-spacing: .25em; }
 /*
 
    LINE HEIGHT / LEADING
@@ -1204,10 +1219,6 @@ code, .code { font-family: Consolas, monaco, monospace; }
 
 */
 .v-base { vertical-align: baseline; }
-.v-sub { vertical-align: sub; }
-.v-sup { vertical-align: super; }
-.v-txt-top { vertical-align: text-top; }
-.v-txt-btm { vertical-align: text-bottom; }
 .v-mid { vertical-align: middle; }
 .v-top { vertical-align: top; }
 .v-btm { vertical-align: bottom; }
@@ -1245,9 +1256,9 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /* Can combine this with overflow-hidden to make background images grow on hover
  * even if you are using background-size: cover */
 .grow { transition: transform .2s; }
-.grow:hover { transition: transform .2s; transform: scale( 1.05 ); }
+.grow:hover { transform: scale( 1.05 ); }
 .grow-large { transition: transform .2s; }
-.grow-large:hover { transform: scale( 1.2 ); transition: transform .2s; }
+.grow-large:hover { transform: scale( 1.2 ); }
 /* Add pointer on hover */
 .pointer:hover { cursor: pointer; }
 /*
@@ -1257,9 +1268,18 @@ code, .code { font-family: Consolas, monaco, monospace; }
   Add custom styles here.
 
 */
-/* Import media queries at end as this will allow you to customize them
+/* Import media queries and variables at end as this will allow you to customize them
  * and override what is currently declared in each module.
  */
+/*
+
+   Tachyons
+   COLOR VARIABLES
+
+   Grayscale
+   - Solids
+   - Transparencies
+*/
 /*
 
   CUSTOM MEDIA QUERIES
@@ -1309,13 +1329,8 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /* Uncomment out this line and rebuild if you want to debug your layout.*/
 /* @import './_debug'; */
 @media screen and (min-width: 30em) {
- .shadow-1-ns { box-shadow: 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 ); }
- .shadow-2-ns { box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ); }
- .shadow-3-ns { box-shadow: 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 ); }
- .shadow-4-ns { box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 ); }
- .shadow-5-ns { box-shadow: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 ); }
- .bg-cv-ns { background-size: cover; }
- .bg-cn-ns { background-size: contain; }
+ .cover-ns { background-size: cover; }
+ .contain-ns { background-size: contain; }
  .ba-ns { border-style: solid; border-width: 1px; }
  .bt-ns { border-top-style: solid; border-top-width: 1px; }
  .br-ns { border-right-style: solid; border-right-width: 1px; }
@@ -1330,16 +1345,27 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .br-100-ns { border-radius: 100%; }
  .br--bottom-ns { border-top-left-radius: 0; border-top-right-radius: 0; }
  .br--top-ns { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
- .b--none-ns { border-style: none; }
+ .br--right-ns { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+ .br--left-ns { border-top-right-radius: 0; border-bottom-right-radius: 0; }
  .b--dotted-ns { border-style: dotted; }
  .b--dashed-ns { border-style: dashed; }
  .b--solid-ns { border-style: solid; }
+ .b--none-ns { border-style: none; }
  .bw0-ns { border-width: 0; }
  .bw1-ns { border-width: .125rem; }
  .bw2-ns { border-width: .25rem; }
  .bw3-ns { border-width: .5rem; }
  .bw4-ns { border-width: 1rem; }
  .bw5-ns { border-width: 2rem; }
+ .bt-0-ns { border-top-width: 0; }
+ .br-0-ns { border-right-width: 0; }
+ .bb-0-ns { border-bottom-width: 0; }
+ .bl-0-ns { border-left-width: 0; }
+ .shadow-1-ns { box-shadow: 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 ); }
+ .shadow-2-ns { box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ); }
+ .shadow-3-ns { box-shadow: 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 ); }
+ .shadow-4-ns { box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 ); }
+ .shadow-5-ns { box-shadow: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 ); }
  .top-0-ns { top: 0; }
  .left-0-ns { left: 0; }
  .right-0-ns { right: 0; }
@@ -1440,9 +1466,9 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .h-100-ns { height: 100%; }
  .h-auto-ns { height: auto; }
  .h-inherit-ns { height: inherit; }
- .tracked-ns { letter-spacing: .16em; }
+ .tracked-ns { letter-spacing: .1em; }
  .tracked-tight-ns { letter-spacing: -.05em; }
- .tracked-mega-ns { letter-spacing: .32em; }
+ .tracked-mega-ns { letter-spacing: .25em; }
  .lh-solid-ns { line-height: 1; }
  .lh-title-ns { line-height: 1.3; }
  .lh-copy-ns { line-height: 1.6; }
@@ -1631,22 +1657,13 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .nowrap-ns { white-space: nowrap; }
  .pre-ns { white-space: pre; }
  .v-base-ns { vertical-align: baseline; }
- .v-sub-ns { vertical-align: sub; }
- .v-sup-ns { vertical-align: super; }
- .v-txt-top-ns { vertical-align: text-top; }
- .v-txt-btm-ns { vertical-align: text-bottom; }
  .v-mid-ns { vertical-align: middle; }
  .v-top-ns { vertical-align: top; }
  .v-btm-ns { vertical-align: bottom; }
 }
 @media screen and (min-width: 30em) and (max-width: 60em) {
- .shadow-1-m { box-shadow: 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 ); }
- .shadow-2-m { box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ); }
- .shadow-3-m { box-shadow: 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 ); }
- .shadow-4-m { box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 ); }
- .shadow-5-m { box-shadow: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 ); }
- .bg-cv-m { background-size: cover; }
- .bg-cn-m { background-size: contain; }
+ .cover-m { background-size: cover; }
+ .contain-m { background-size: contain; }
  .ba-m { border-style: solid; border-width: 1px; }
  .bt-m { border-top-style: solid; border-top-width: 1px; }
  .br-m { border-right-style: solid; border-right-width: 1px; }
@@ -1661,16 +1678,27 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .br-100-m { border-radius: 100%; }
  .br--bottom-m { border-top-left-radius: 0; border-top-right-radius: 0; }
  .br--top-m { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
- .b--none-m { border-style: none; }
+ .br--right-m { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+ .br--left-m { border-top-right-radius: 0; border-bottom-right-radius: 0; }
  .b--dotted-m { border-style: dotted; }
  .b--dashed-m { border-style: dashed; }
  .b--solid-m { border-style: solid; }
+ .b--none-m { border-style: none; }
  .bw0-m { border-width: 0; }
  .bw1-m { border-width: .125rem; }
  .bw2-m { border-width: .25rem; }
  .bw3-m { border-width: .5rem; }
  .bw4-m { border-width: 1rem; }
  .bw5-m { border-width: 2rem; }
+ .bt-0-m { border-top-width: 0; }
+ .br-0-m { border-right-width: 0; }
+ .bb-0-m { border-bottom-width: 0; }
+ .bl-0-m { border-left-width: 0; }
+ .shadow-1-m { box-shadow: 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 ); }
+ .shadow-2-m { box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ); }
+ .shadow-3-m { box-shadow: 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 ); }
+ .shadow-4-m { box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 ); }
+ .shadow-5-m { box-shadow: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 ); }
  .top-0-m { top: 0; }
  .left-0-m { left: 0; }
  .right-0-m { right: 0; }
@@ -1771,9 +1799,9 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .h-100-m { height: 100%; }
  .h-auto-m { height: auto; }
  .h-inherit-m { height: inherit; }
- .tracked-m { letter-spacing: .16em; }
+ .tracked-m { letter-spacing: .1em; }
  .tracked-tight-m { letter-spacing: -.05em; }
- .tracked-mega-m { letter-spacing: .32em; }
+ .tracked-mega-m { letter-spacing: .25em; }
  .lh-solid-m { line-height: 1; }
  .lh-title-m { line-height: 1.3; }
  .lh-copy-m { line-height: 1.6; }
@@ -1962,22 +1990,13 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .nowrap-m { white-space: nowrap; }
  .pre-m { white-space: pre; }
  .v-base-m { vertical-align: baseline; }
- .v-sub-m { vertical-align: sub; }
- .v-sup-m { vertical-align: super; }
- .v-txt-top-m { vertical-align: text-top; }
- .v-txt-btm-m { vertical-align: text-bottom; }
  .v-mid-m { vertical-align: middle; }
  .v-top-m { vertical-align: top; }
  .v-btm-m { vertical-align: bottom; }
 }
 @media screen and (min-width: 60em) {
- .shadow-1-l { box-shadow: 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 ); }
- .shadow-2-l { box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ); }
- .shadow-3-l { box-shadow: 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 ); }
- .shadow-4-l { box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 ); }
- .shadow-5-l { box-shadow: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 ); }
- .bg-cv-l { background-size: cover; }
- .bg-cn-l { background-size: contain; }
+ .cover-l { background-size: cover; }
+ .contain-l { background-size: contain; }
  .ba-l { border-style: solid; border-width: 1px; }
  .bt-l { border-top-style: solid; border-top-width: 1px; }
  .br-l { border-right-style: solid; border-right-width: 1px; }
@@ -1992,16 +2011,27 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .br-100-l { border-radius: 100%; }
  .br--bottom-l { border-radius-top-left: 0; border-radius-top-right: 0; }
  .br--top-l { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
- .b--none-l { border-style: none; }
+ .br--right-l { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+ .br--left-l { border-top-right-radius: 0; border-bottom-right-radius: 0; }
  .b--dotted-l { border-style: dotted; }
  .b--dashed-l { border-style: dashed; }
  .b--solid-l { border-style: solid; }
+ .b--none-l { border-style: none; }
  .bw0-l { border-width: 0; }
  .bw1-l { border-width: .125rem; }
  .bw2-l { border-width: .25rem; }
  .bw3-l { border-width: .5rem; }
  .bw4-l { border-width: 1rem; }
  .bw5-l { border-width: 2rem; }
+ .bt-0-l { border-top-width: 0; }
+ .br-0-l { border-right-width: 0; }
+ .bb-0-l { border-bottom-width: 0; }
+ .bl-0-l { border-left-width: 0; }
+ .shadow-1-l { box-shadow: 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 ); }
+ .shadow-2-l { box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ); }
+ .shadow-3-l { box-shadow: 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 ); }
+ .shadow-4-l { box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 ); }
+ .shadow-5-l { box-shadow: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 ); }
  .top-0-l { top: 0; }
  .left-0-l { left: 0; }
  .right-0-l { right: 0; }
@@ -2102,9 +2132,9 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .h-100-l { height: 100%; }
  .h-auto-l { height: auto; }
  .h-inherit-l { height: inherit; }
- .tracked-l { letter-spacing: .16em; }
+ .tracked-l { letter-spacing: .1em; }
  .tracked-tight-l { letter-spacing: -.05em; }
- .tracked-mega-l { letter-spacing: .32em; }
+ .tracked-mega-l { letter-spacing: .25em; }
  .lh-solid-l { line-height: 1; }
  .lh-title-l { line-height: 1.3; }
  .lh-copy-l { line-height: 1.6; }
@@ -2293,10 +2323,6 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .nowrap-l { white-space: nowrap; }
  .pre-l { white-space: pre; }
  .v-base-l { vertical-align: baseline; }
- .v-sub-l { vertical-align: sub; }
- .v-sup-l { vertical-align: super; }
- .v-txt-top-l { vertical-align: text-top; }
- .v-txt-btm-l { vertical-align: text-bottom; }
  .v-mid-l { vertical-align: middle; }
  .v-top-l { vertical-align: top; }
  .v-btm-l { vertical-align: bottom; }

@@ -65,7 +65,6 @@
 }
 
 .grow:hover {
-  transition: transform .2s;
   transform: scale(1.05);
 }
 
@@ -75,7 +74,6 @@
 
 .grow-large:hover {
   transform: scale(1.2);
-  transition: transform .2s;
 }
 
 /* Add pointer on hover */
