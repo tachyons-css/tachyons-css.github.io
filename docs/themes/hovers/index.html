@@ -53,16 +53,16 @@
     <main class="">
       <article class="bg-near-white bt b--black-10 pa3 ph5-ns">
         <h4 class="f4 mv0 fw6 dib mr4">tachyons-hovers</h4>
-        <span class="f4 b dib pl0 ml0 mr4">v2.3.2</span>
-        <span class="f4 b dib pl0 ml0 mr4">234 B</span>
+        <span class="f4 b dib pl0 ml0 mr4">v2.4.0</span>
+        <span class="f4 b dib pl0 ml0 mr4">273 B</span>
         <div>
           <dl class="dib mr4 mt0">
             <dt class="f6 db">Declarations </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b">15</dd>
+            <dd class="db pl0 ml0 f4 f2-ns b">16</dd>
           </dl>
           <dl class="dib mr4">
             <dt class="f6 db pr2">Selectors </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b">18</dd>
+            <dd class="db pl0 ml0 f4 f2-ns b">22</dd>
           </dl>
           <dl class="dib mr4">
             <dt class="f6 db pr2">Max. Specificity Score </dt>
@@ -70,7 +70,7 @@
           </dl>
           <dl class="dib mr4">
             <dt class="f6 db pr2">Size of Avg. Rule </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b">1.25</dd>
+            <dd class="db pl0 ml0 f4 f2-ns b">1.2307692307692308</dd>
           </dl>
         </div>
         <p class="measure f3 lh-copy">
@@ -195,7 +195,8 @@
   transition: transform .2s;
 }
 
-.grow:hover {
+.grow:hover,
+.grow:focus {
   transform: scale(1.05);
 }
 
@@ -203,7 +204,8 @@
   transition: transform .2s;
 }
 
-.grow-large:hover {
+.grow-large:hover,
+.grow-large:focus {
   transform: scale(1.2);
 }
 
@@ -211,6 +213,13 @@
 
 .pointer:hover {
   cursor: pointer;
+}
+
+/* Add shadow on hover */
+
+.shadow-hover:hover,
+.shadow-hover:focus {
+  box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 );
 }
 
 
