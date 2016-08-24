@@ -9,29 +9,29 @@
   </head>
   <body class="w-100 sans-serif">
     <%= siteHeader %>
-    <main class="w-100 bt b--black-10">
-      <section class="bt b--black-10 bg-black-0125 w-100">
-<article class="pb4 pb5-ns" style="background-color: #1b418d;">
-      <header class="ph3 ph5-ns w-100 bg-transparent pv3 mb5 bb b--black-20 overflow-auto">
+    <main class="w-100 bt b--black-10 bg-washed-blue">
+      <section class="bg-black-0125 w-100">
+<article class="pb4 pb5-ns">
+      <header class="ph3 ph5-ns w-100 bg-transparent pv3 mb5 bb b--black-10 overflow-auto">
 <div class="nowrap">
         <a title="Getting Started" href="#getting-started"
-            class="pb2-ns f6 fw6 dim link white-80 mr2 mr3-m mr4-l dib">
+            class="pb2-ns f6 fw6 dim link black-70 mr2 mr3-m mr4-l dib">
           Getting Started
         </a>
         <a title="Principles" href="#principles"
-            class="pb2-ns f6 fw6 dim link white-80 mr1 mr3-m mr4-l dib">
+            class="pb2-ns f6 fw6 dim link black-70 mr1 mr3-m mr4-l dib">
           Principles
         </a>
         <a title="Features" href="#features"
-            class="pb2-ns f6 fw6 dim link white-80 mr1 mr3-m mr4-l dib">
+            class="pb2-ns f6 fw6 dim link black-70 mr1 mr3-m mr4-l dib">
           Features
         </a>
         <a title="Testimonials" href="#testimonials"
-            class="pb2-ns f6 fw6 dim link white-80 mr1 mr3-m mr4-l dib">
+            class="pb2-ns f6 fw6 dim link black-70 mr1 mr3-m mr4-l dib">
           Testimonials
         </a>
         <a title="Modules List" href="#modules"
-            class="pb2-ns f6 fw6 dim link white-80 mr1 mr3-m mr4-l dib">
+            class="pb2-ns f6 fw6 dim link black-70 mr1 mr3-m mr4-l dib">
           Modules
         </a>
 </div>
@@ -41,11 +41,11 @@
   <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
   <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
   </div>
-  <div class="pb3 pt4 white-80 fl-l w-50-l">
-    <h1 class="f4 f1-ns lh-title measure mtn">
+  <div class="pb3 pb4-ns pt4 pt5-ns black-70 fl-l w-50-l">
+    <h1 class="f4 fw6 f1-ns lh-title measure mt0">
       Built for designing.
     </h1>
-    <p class="f5 f4-ns fw6 b measure lh-copy">
+    <p class="f5 f4-ns fw4 b measure lh-copy">
       Create fast loading, highly readable, and
       100% responsive interfaces with as little css as possible.
     </p>
@@ -57,31 +57,30 @@
     </p>
   </div>
   <div class="fl-l w-50-l tl tc-ns pt4 pt5-ns">
-    <a class="dib ba b--black-20 bg-black-05 f5 small-caps ph4 pv3 link br2 white grow" href="https://raw.githubusercontent.com/tachyons-css/tachyons/master/css/tachyons.min.css">Download Tachyons</a>
-<div class="tc-ns mt2">
-<code class="f6 di white-60 mono">v4.1.0</code>
-</div>
+    <a class="dib ba b--black-20 bg-white-05 f5 ph4 pv3 link br2 black-70 grow" href="https://raw.githubusercontent.com/tachyons-css/tachyons/master/css/tachyons.min.css">Download
+<code class="f6 di black-60 mono">v4.1.0</code>
+</a>
 
 
   </div>
 </div>
       </article>
-          <article class="bt b--black-10 white-80 ph3 ph5-ns pv4 pv5-ns" style="background-color: #1b418d;" id="getting-started">
+          <article class="bt b--black-10 bg-washed-green black-70 ph3 ph5-ns pv4 pv5-ns" id="getting-started">
             <h1 class="mtn f4 ttu tracked">Getting Started</h1>
             <p class="f5 measure lh-copy">
               Copy the line of code below and paste it in the head of the html file(s) you want to include tachyons in.
             </p>
-<pre class="pre white-70" style="overflow: auto"><code class="code f6 dib pa2 bg-black-20" style="font-size: 14px;">&lt;link rel="stylesheet" href="https://npmcdn.com/tachyons@4.1.0/css/tachyons.min.css"/&gt;</code></pre>
+<pre class="pre black-70" style="overflow: auto"><code class="code f6 dib pa2 bg-black-70 washed-green" style="font-size: 14px;">&lt;link rel="stylesheet" href="https://npmcdn.com/tachyons@<%= version %>/css/tachyons.min.css"/&gt;</code></pre>
 <p class="mt4"><b>or</b> install via npm</p>
-<pre class="pre white-70" style="overflow: auto"><code class="code f6 dib pa2 bg-black-20" style="font-size: 14px;">npm install --save-dev tachyons@4.1.0</code></pre>
+<pre class="pre black-70" style="overflow: auto"><code class="code f6 dib pa2 bg-black-70 washed-green" style="font-size: 14px;">npm install --save-dev tachyons@<%= version %></code></pre>
 <p class="mt4"><b>or</b> grab all the source files and build+develop locally</p>
-<pre class="pre white-70" style="overflow: auto"><code class="code f6 dib pa2 bg-black-20" style="font-size: 14px;">git clone git@github.com:tachyons-css/tachyons.git
+<pre class="pre" style="overflow: auto"><code class="code f6 dib pa2 bg-black-70 washed-green" style="font-size: 14px;">git clone git@github.com:tachyons-css/tachyons.git
 cd tachyons
-npm install &amp;&amp; npm build
+npm install &amp;&amp; npm start
 </code></pre>
-  <section class="bt b--white-10 pv5 mt5 cf">
-    <div class="fl-ns w-100 w-50-ns">
-      <h3 class="mtn f3 ttu tracked mt0">Start a New Project</h3>
+  <section class="bt b--black-10 pv5 mt5 cf">
+    <div class="fl-ns w-100 w-50-ns pr3-ns">
+      <h3 class="mtn f3 mt0">Start a New Project</h3>
       <p class="f4 measure lh-copy mb4 mt0">
         Get setup and running with this ~7 minute screencast. Download the
         project and learn how to customize the tachyons source files and
@@ -95,19 +94,19 @@ npm install &amp;&amp; npm build
     </div>
   </section>
           </article>
-          <div class="ph3 ph5-ns tl tl-ns bt b--light-gray pv3 pv5-ns" id="principles">
+          <div class="ph3 ph5-ns tl tl-ns bt b--black-10 pv3 pv5-ns bg-lightest-blue navy" id="principles">
             <h1 class="f5 ttu tracked fw6">Principles</h1>
             <section class="list pln lh-copy mt0">
               <div class="cf">
                 <article class="pv2 w-100 ">
-                  <h2 class="f4 f1-m f-headline-l fw6 mb0">Responsive</h2>
+                  <h2 class="f4 f1-l  fw6 mb0">Responsive</h2>
                   <p class="f5 f3-ns measure lh-copy mt0">
                     Everything should be 100% responsive. Your website should work regardless of a users
                     device or screensize.
                   </p>
                 </article>
                 <article class="pv2 fl w-100 pl0 ">
-                  <h2 class="f4 f1-m f-headline-l fw6 mb0">Readable</h2>
+                  <h2 class="f4 f1-l  fw6 mb0">Readable</h2>
                   <p class="f5 f3-ns measure lh-copy mt0">
                     No matter the lighting, or the device, font-sizes should be
                     large enough and contrast should be high enough for your
@@ -117,13 +116,13 @@ npm install &amp;&amp; npm build
               </div>
               <div class="cf">
                 <article class="pv2 fl w-100 ">
-                  <h2 class="f4 f1-m f-headline-l fw6 mb0">Performant</h2>
+                  <h2 class="f4 f1-l  fw6 mb0">Performant</h2>
                   <p class="f5 f3-ns measure lh-copy mt0">
                     Code should be optimized for performance.
                   </p>
                 </article>
                 <article class="pv2 fl w-100 pl0 ">
-                  <h2 class="f4 f1-m f-headline-l fw6 mb0">
+                  <h2 class="f4 f1-l  fw6 mb0">
                     Modular
                   </h2>
                   <p class="f5 f3-ns measure lh-copy mt0">
@@ -135,7 +134,7 @@ npm install &amp;&amp; npm build
               </div>
               <div class="cf">
                 <article class="pv2 fl w-100 ">
-                  <h2 class="f4 f1-m f-headline-l fw6 mb0">
+                  <h2 class="f4 f1-l fw6 mb0">
                     Reusable
                   </h2>
                   <p class="f5 f3-ns measure lh-copy mt0">
@@ -143,7 +142,7 @@ npm install &amp;&amp; npm build
                   </p>
                 </article>
                 <article class="pv2 fl w-100 pl0 ">
-                  <h2 class="f4 f1-m f-headline-l fw6 mb0">Easy</h2>
+                  <h2 class="f4 f1-l fw6 mb0">Easy</h2>
                   <p class="f5 f3-ns measure lh-copy mt0">
                     Designing in the browser should be easy.
                     If a computer can do it, you shouldn't have to.
@@ -151,10 +150,11 @@ npm install &amp;&amp; npm build
                 </article>
               </div>
             </section>
-            <section class="cf" id="features">
+          </div>
+            <section class="cf ph3 ph5-ns pb5 bg-yellow black-70" id="features">
               <h1 class="fl w-100 mt5 f5 ttu tracked fw6">Features</h1>
                 <article class="pv2 fl w-100 ">
-                  <h2 class="f4 f1-ns fw6 mb0">Open source component library</h2>
+                  <h2 class="f4 f1-ns fw6 mb2">Open source component library</h2>
                   <p class="f5 f4-ns measure lh-copy mt0">
                     There is a <a href="/components/" class="black dim"title="Tachyons components">growing library of open source components</a> written in static html that are easy
                     to use as is, customize with your own theme, or port to a templating language.
@@ -162,13 +162,13 @@ npm install &amp;&amp; npm build
                 </article>
               <div class="cf">
                 <article class="pv2 fl w-100 w-50-l pr0 pr2-l">
-                  <h2 class="f4 f2-ns fw6 mb0">Lightweight</h2>
+                  <h2 class="f4 f2-ns fw6 mb2">Lightweight</h2>
                   <p class="f5 measure lh-copy mt0">
                     Less than 9.5kb minified and gzipped.
                   </p>
                 </article>
                 <article class="pv2 fl w-100 w-50-l pl0 pl2-l">
-                  <h2 class="f4 f2-ns fw6 mb0">Documentation</h2>
+                  <h2 class="f4 f2-ns fw6 mb2">Documentation</h2>
                   <p class="f5 measure lh-copy mt0">
                     Each module is carefully documented. From stats about the size of the module,
                     to how each css class will render to the screen.
@@ -177,7 +177,7 @@ npm install &amp;&amp; npm build
               </div>
               <div class="cf">
                 <article class="pv2 fl w-100 w-50-l pr0 pr2-l">
-                  <h2 class="f4 f2-ns fw6 mb0">Shallow Cascade</h2>
+                  <h2 class="f4 f2-ns fw6 mb2">Shallow Cascade</h2>
                   <p class="f5 measure lh-copy mt0">
                     Don't let the cascade slow you down. When you apply a class
                     to an element, there is nothing in the cascade to override
@@ -187,7 +187,7 @@ npm install &amp;&amp; npm build
                   </p>
                 </article>
                 <article class="pv2 fl w-100 w-50-l pl0 pl2-l">
-                  <h2 class="f4 f2-ns fw6 mb0">Low Specificty</h2>
+                  <h2 class="f4 f2-ns fw6 mb2">Low Specificty</h2>
                   <p class="f5 measure lh-copy mt0">
                     The majority of Tachyons selectors have a specificity of
                     10. Tachyons won't override your existing styles. So feel
@@ -197,13 +197,13 @@ npm install &amp;&amp; npm build
               </div>
               <div class="cf">
                 <article class="pv2 fl w-100 w-50-l pr0 pr2-l">
-                  <h2 class="f4 f2-ns fw6 mb0">Accessible Color Palette</h2>
+                  <h2 class="f4 f2-ns fw6 mb2">Accessible Color Palette</h2>
                   <p class="f5 measure lh-copy mt0">
                     Over 280 accessible color combinations.
                   </p>
                 </article>
                 <article class="pv2 fl w-100 w-50-l pl0 pl2-l">
-                  <h2 class="f4 f2-ns fw6 mb0">Mobile-first architecture </h2>
+                  <h2 class="f4 f2-ns fw6 mb2">Mobile-first architecture </h2>
                   <p class="f5 measure lh-copy mt0">
                     Base classes are mobile by default. Can be overridden by
                     namespaced classes targeting larger breakpoints.
@@ -212,7 +212,7 @@ npm install &amp;&amp; npm build
               </div>
               <div class="cf">
                 <article class="pv2 fl w-100 w-50-l pr0 prl-ns">
-                  <h2 class="f4 f2-ns fw6 mb0">
+                  <h2 class="f4 f2-ns fw6 mb2">
                     Layout debugging
                   </h2>
                   <p class="f5 measure lh-copy mt0">
@@ -221,7 +221,7 @@ npm install &amp;&amp; npm build
                   </p>
                 </article>
                 <article class="pv2 fl w-100 w-50-l pl0 pl2-l">
-                  <h2 class="f4 f2-ns fw6 mb0">
+                  <h2 class="f4 f2-ns fw6 mb2">
                     Composable classes
                   </h2>
                   <p class="f5 measure lh-copy mt0">
@@ -232,13 +232,13 @@ npm install &amp;&amp; npm build
               </div>
               <div class="cf">
                 <article class="pv2 fl w-100 w-50-l pr0 pr2-l">
-                  <h2 class="f4 f2-ns fw6 mb0">Cohesive design system</h2>
+                  <h2 class="f4 f2-ns fw6 mb2">Cohesive design system</h2>
                   <p class="f5 measure lh-copy mt0">
                     Scale based on the powers of two. Starting at .25
                   </p>
                 </article>
                 <article class="pv2 fl w-100 w-50-l pl0 pl2-l">
-                  <h2 class="f4 f2-ns fw6 mb0">Responsive Grid</h2>
+                  <h2 class="f4 f2-ns fw6 mb2">Responsive Grid</h2>
                   <p class="f5 measure lh-copy mt0">
                     Infinitely nestable. Fully fluid. Extremely light-weight.
                   </p>
@@ -246,7 +246,7 @@ npm install &amp;&amp; npm build
               </div>
               <div class="cf">
                 <article class="pv2 fl w-100 w-50-l pr0 pr2-l">
-                  <h2 class="f4 f2-ns fw6 mb0">
+                  <h2 class="f4 f2-ns fw6 mb2">
                     Runs on <a href="https://github.com/postcss/postcss" class="link dim near-black">Postcss</a>
                   </h2>
                   <p class="mv0 f5 lh-copy measure">
@@ -256,7 +256,7 @@ npm install &amp;&amp; npm build
                   </p>
                 </article>
                 <article class="pv2 fl w-100 w-50-l pl0 pl2-l">
-                  <h2 class="f4 f2-ns fw6 mb0">
+                  <h2 class="f4 f2-ns fw6 mb2">
                     Easy to Customize and extend
                   </h2>
                   <p class="f5 measure lh-copy mt0">
@@ -268,41 +268,61 @@ npm install &amp;&amp; npm build
                 </article>
               </div>
             </section>
-          </div>
         </div>
       </section>
-      <section class="bg-white pv5 pv6-ns bb bt b--light-gray" id="testimonials">
+      <section class="bg-white black-70">
+        <div class="ph3 ph5-ns pv6">
+          <h3 class="f6 fw6 mt0 mb4 tc ttu tracked">Used by people at</h3>
+          <div class="dt dt--fixed mw8 center">
+          <div class="dtc pa2 pa3-l"><img class="br2 db w-100" src="//logo.clearbit.com/californiasunday.com?size=256"></div>
+          <div class="dtc pa2 pa3-l"><img class="br2 db w-100" src="//logo.clearbit.com/amazon.com?size=256"></div>
+          <div class="dtc pa2 pa3-l"><img class="br2 db w-100" src="//logo.clearbit.com/ibm.com?size=256"></div>
+          <div class="dtc pa2 pa3-l"><img class="br2 db w-100" src="//logo.clearbit.com/tesla.com?size=256"></div>
+          <div class="dtc pa2 pa3-l"><img class="br2 db w-100" src="//logo.clearbit.com/airbnb.com?size=256"></div>
+          <div class="dtc pa2 pa3-l"><img class="br2 db w-100" src="//logo.clearbit.com/facebook.com?size=256"></div>
+          <div class="dtc pa2 pa3-l"><img class="br2 db w-100" src="//logo.clearbit.com/salesforce.com?size=256"></div>
+          <div class="dtc pa2 pa3-l"><img class="br2 db w-100" src="//logo.clearbit.com/bluebottlecoffee.com?size=256"></div>
+          <div class="dtc pa2 pa3-l"><img class="br2 db w-100" src="//logo.clearbit.com/ted.com?size=256"></div>
+        </div>
+        </div>
+      </section>
+      <section class="bg-green black-80 pv5 pv6-ns bb bt b--black-10" id="testimonials">
         <div class="ph3 ph5-ns">
-          <h1 class="f5 fw6 ttu tracke">Testimonials</h1>
+          <h3 class="f5 fw6 ttu tracke">Testimonials</h3>
           <div class="cf w-100">
-            <blockquote class="fl w-100 mh0 pa3 pa4-l mb2 mb5-ns border-box bg-near-white">
-              <p class="fl w-100 w-50-l mh0 mt0 pr0 pr3-l measure i lh-copy">
-                <b>
-                  Here’s why I think designing systems with tools/frameworks like <a href="//tachyons.io">Tachyons</a>
-                  is a Good Idea™.
-                </b>
-                Design Systems break as they scale (either scaling org or
-                scaling product) because new components/variants of a
-                component are introduced.  Those variants sometimes (read: often) go
-                undocumented, leading to duplication when that component/variant is needed (and
-                created) again.  Even when the component is documented, documenting effectively
-                often means dozens/hundreds of instances to capture all states/variants.
+            <blockquote class="fl w-100 mh0 mb2 mb5-ns border-box pb5 bw1 bn bb-ns b--black-50">
+              <p class="f4 f2-m mt0 db fl w-100 f-subheadline-l lh-copy lh-title-l measure mb4 fw6">
+               Here’s why I think designing systems with tools/frameworks like Tachyons
+                is a Good Idea™.
               </p>
-              <p class="fl w-100 w-50-l mh0 mt0 pl0 pl3-l  measure i lh-copy">
-                Systems like Tachyons et al approach this problem by instead documenting and
-                limiting *properties* of components.  (I like to think of this as “subatomic”
-                design.) You then create components by composing subatomic components
-                (properties).  Rather than creating a component and its variants, you simply
-                have a comprehensive list of “ingredient” subatomic components.  Those
-                subatomic components can be combined in thousands of ways to create hundreds of
-                components.  The properties of those components are numerous, but constrained
-                to a set of acceptable values (our subatomic components).
+              <p class="fl w-100 w-50-l mh0 mt0 pr0 pr3-l measure lh-copy">
+                Design Systems break as they scale (either scaling org or
+                scaling product) because new components/variants of a component
+                are introduced.  Those variants sometimes (read: often) go
+                undocumented, leading to duplication when that
+                component/variant is needed (and created) again.  Even when the
+                component is documented, documenting effectively often means
+                dozens/hundreds of instances to capture all states/variants.
+                Systems like Tachyons et al. approach this problem by instead
+                documenting and limiting *properties* of components.  (I like
+                to think of this as “subatomic” design.)
+              </p>
+              <p class="fl w-100 w-50-l mh0 mt0 pl0 pl3-l measure  lh-copy">
+                You then create
+                components by composing subatomic components (properties).
+                Rather than creating a component and its variants, you simply
+                have a comprehensive list of “ingredient” subatomic components.
+                Those subatomic components can be combined in thousands of ways
+                to create hundreds of components.  The properties of those
+                components are numerous, but constrained to a set of acceptable
+                values (our subatomic components).”
               </p>
 
-              <footer class="fl w-100">
-                <p>
-                  <span class="b">Daniel Eden</span> - <i>Designer / Engineer at Facebook</i>
-                </p>
+              <footer class="fl w-100 mt2">
+                <cite class="f5 f4-m f3-l fs-normal">
+                  <span class="fw6">Daniel Eden</span>
+                  <span class="db f5">Designer / Engineer at Facebook</span>
+                </cite>
               </footer>
 
             </blockquote>
@@ -406,39 +426,6 @@ npm install &amp;&amp; npm build
               </footer>
             </blockquote>
           </div>
-        </div>
-      </section>
-      <section class="ph3 ph5-ns bg-white cf pv5 pv6-ns" id="modules">
-        <div class="fl w-100">
-          <div class="">
-            <h1 class="f5 fw6 ttu tracked"><a href="#npm" class="link near-black">Module List</a></h1>
-            <p class="f5 f3-ns lh-copy mt0 mb4 measure">
-              The main tachyons repo is a collection of encapsulated css modules available on npm and github.
-              You can grab the entire toolkit, or a few selected modules.
-              Mix and match them to suit your project's needs. Since tachyons modules are very focused on doing one thing well,
-              most of them are extremely small (well under a kilobyte) so you
-              can start using some or all of them without adding bloat to your css.
-            </p>
-          </div>
-          <code class="dib mb4 ba b--light-gray f6 ph2 pv3" style="background-color: #d1ffff;">npm install --save-dev tachyons-module-name</code>
-        </div>
-        <% modules.map(renderModule) %>
-
-        <% function renderModule (module) { %>
-        <div class="mb3 mb4-ns fl w-100 w-50-m w-33-l">
-          <a class="db f5 link mb1 dim near-black b" title="View <%= module.pkg.name %> on GitHub"
-            href="//github.com/tachyons-css/<%= module.pkg.name %>">
-            <%= module.pkg.name %>
-          </a>
-          <code class="f6 di fw4 pr2">v<%= module.pkg.version %></code>
-          <code class="f6 di black-60"><%= module.size %></code>
-        </div>
-        <% } %>
-        <div class="fl w-100 lh-copy">
-          <h1 class="f5 fw6 ttu tracked"><a href="#related-projects" class="link near-black">Related Projects</a></h1>
-          <a class="db link f5 f4-ns dim black-70 fw6" href="https://github.com/fab1an/react-native-tachyons">react native tachyons</a>
-          <a class="db link f5 f4-ns dim black-70 fw6" href="https://github.com/tachyons-css/tachyons-webpack">tachyons webpack</a>
-          <a class="db link f5 f4-ns dim black-70 fw6" href="http://basscss.com">BassCss</a>
         </div>
       </section>
     </main>

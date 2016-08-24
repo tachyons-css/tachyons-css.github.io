@@ -46,8 +46,8 @@ module.exports = function () {
     var tableData = Object.keys(properties).sort().map(
       function (property) {
         var newRow = '<tr>' +
-          '<td class="bb b--black-10 pv3">' + '<pre class="f5">' + property + '</pre>'+'</td>' +
-          '<td class="bb b--black-10 pv3">' + '<pre class=f5">' +
+          '<td class="bb b--black-05 pv3">' + '<pre class="f6 f5-l">' + property + '</pre>'+'</td>' +
+          '<td class="bb b--black-05 pv3">' + '<pre class="f6 f5-l">' +
             Object.keys(properties[property].selectors).sort().map(function (selector) {
               return  selector + ': ' + properties[property].selectors[selector]
             }).join('<br>') +
@@ -55,7 +55,7 @@ module.exports = function () {
           '</td>' +
           '<td class="bb b--black-05 pv2">' +
             Object.keys(properties[property].modules).map(function (moduleName) {
-              return '<a class="link blue dim f6" href="https://github.com/tachyons-css/tachyons-' + moduleName +'">' + moduleName + '</a>'
+              return '<a class="link blue dim f6 f5-l" href="https://github.com/tachyons-css/tachyons-' + moduleName +'">' + moduleName + '</a>'
             }).join('<br>') +
           '</td>' +
           '</tr>'

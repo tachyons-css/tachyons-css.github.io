@@ -1,6 +1,6 @@
 {
   "name": "tachyons-css.github.io",
-  "version": "4.0.0-beta",
+  "version": "4.1.1",
   "description": "Documentation for Tachyons -- a performant, mobile-first, and 100% responsive modular css framework.",
   "main": "index.html",
   "scripts": {
@@ -8,6 +8,7 @@
     "css": "tachyons src/css/tachyons.css > css/tachyons.css && tachyons src/css/tachyons.css --minify > css/tachyons.min.css",
     "components:watch": "watch 'node build.js' src/components/*",
     "home:watch": "watch 'node build-home.js' src/templates/",
+    "build:watch": "watch 'node build.js' src/templates/",
     "doc": "bash script.sh",
     "doc:watch": "watch 'npm run doc' src/templates/",
     "doc:lib": "watch 'npm run doc' lib",
