@@ -1,5 +1,5 @@
-require('./src/components-build')()
-console.log('components build complete')
+//require('./src/components-build')()
+//console.log('components build complete')
 require('./src/table-of-styles-build')()
 console.log('table of styles build complete')
 require('./src/table-of-properties-build')()

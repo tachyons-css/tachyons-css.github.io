@@ -25,12 +25,12 @@
 
   </head>
   <body class="w-100 sans-serif">
-    <header class="w-100 dt pa3 ph5-ns bg-near-white">
+    <header class="w-100 dt pa3 ph5-ns bg-washed-blue">
   <div class="dtc v-mid tl w-50">
     <a href="/" class="dib f5 f4-ns fw6 mt0 mb1 link black-70 dim" title="Home">
       Tachyons
       <div class="dib">
-        <small class="nowrap f6 mt2 mt3-ns pr2 black-70 fw2">v4.0.4</small>
+        <small class="nowrap f6 mt2 mt3-ns pr2 black-70 fw2">v4.1.1</small>
       </div>
     </a>
   </div>
@@ -43,7 +43,7 @@
         class="f6 fw6 dim link black-70 mr1 mr3-m mr4-l dib">
       Components
     </a>
-    <a title="Tachyons on GitHub" href="http://github.com/mrmrs/tachyons/"
+    <a title="Tachyons on GitHub" href="http://github.com/tachyons-css/tachyons/"
         class="f6 fw6 dim link black-70 mr1 mr3-m mr4-l dn dib-l">
       GitHub
     </a>
@@ -51,10 +51,10 @@
 </header>
 
     <main>
-      <article class="bg-near-white bt b--black-10 pa3 ph5-ns">
+      <article class="bg-washed-blue bt b--black-10 pa3 ph5-ns">
         <h4 class="f4 mv0 fw6 dib mr4">tachyons-border-radius</h4>
-        <span class="f4 b dib pl0 ml0 mr4">v4.2.0</span>
-        <span class="f4 b dib pl0 ml0 mr4">320 B</span>
+        <span class="f4 b dib pl0 ml0 mr4">v5.0.0</span>
+        <span class="f4 b dib pl0 ml0 mr4">318 B</span>
         <div>
           <dl class="dib mr4 mt0">
             <dt class="f6 db">Declarations </dt>
@@ -82,21 +82,21 @@
       <div class="ph3 ph5-ns pt4 pb5">
         <h2 class="f3">Examples</h2>
         <h3 class="f5 pt4">Border Radius</h3>
-        <div class="mb3 ph2 pv4 ba b--black-10 bg-near-white br0 w3 h3 dib">
+        <div class="mb3 ph2 pv4 ba b--black-10 bg-washed-blue br0 w3 h3 dib">
           <code class="f6">.br0</code>
         </div>
-        <div class="mb3 ph2 pv4 ba b--black-10 bg-near-white br1 w3 h3 dib">
+        <div class="mb3 ph2 pv4 ba b--black-10 bg-washed-blue br1 w3 h3 dib">
           <code class="f6">.br1</code>
         </div>
-        <div class="mb3 ph2 pv4 ba b--black-10 bg-near-white br2 w3 h3 dib">
+        <div class="mb3 ph2 pv4 ba b--black-10 bg-washed-blue br2 w3 h3 dib">
           <code class="f6">.br2</code>
         </div>
-        <div class="mb3 ph2 pv4 ba b--black-10 bg-near-white br3 w3 h3 dib">
+        <div class="mb3 ph2 pv4 ba b--black-10 bg-washed-blue br3 w3 h3 dib">
           <code class="f6">.br4</code>
         </div>
         <h3 class="fw4">Combine .br-100 with a fixed height and width to make a circle</h3>
         <div class="dt w4">
-          <div class="f6 bg-near-white ba b--black-10 br-100 tc dtc h4 v-mid pa2">
+          <div class="f6 bg-washed-blue ba b--black-10 br-100 tc dtc h4 v-mid pa2">
             <code class="f6">.br-100</code>
           </div>
         </div>
@@ -115,16 +115,12 @@
           <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius" class="link fw6 blue dim">MDN - Border Radius</a>
         </div>
       </div>
-      <section class="bg-near-white black-70 pt4 pb5 overflow-container">
+      <section class="bg-washed-blue black-70 pt4 pb5 overflow-container">
         <header class="ph3 ph5-ns pt4">
           <kbd>src/_border-radius.css</kbd>
         </header>
 <pre class="ph3 ph5-ns">
 <code class="code" style="font-size: .75rem;">
-@custom-media --breakpoint-not-small screen and (min-width: 48em);
-@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
-@custom-media --breakpoint-large screen and (min-width: 64em);
-
 /*
 
    BORDER RADIUS
@@ -162,6 +158,14 @@
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
   }
+  .br--right {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .br--left {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+  }
 
 @media (--breakpoint-not-small) {
   .br0-ns {     border-radius: 0; }
@@ -176,6 +180,14 @@
   }
   .br--top-ns {
       border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+  }
+  .br--right-ns {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .br--left-ns {
+      border-top-right-radius: 0;
       border-bottom-right-radius: 0;
   }
 }
@@ -195,6 +207,14 @@
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
   }
+  .br--right-m {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .br--left-m {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+  }
 }
 
 @media (--breakpoint-large) {
@@ -212,19 +232,33 @@
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
   }
+  .br--right-l {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .br--left-l {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+  }
 }
 
 </code>
 </pre>
       </section>
-      <div class="ph3 ph5-ns pt3 pb5">
-  <section>
-    <h2 class="f6 fw7 ttu tracked">Elements</h2>
-    <a class="f5 fw4 dim link blue db pv1" href="/docs/elements/images/" title="View images documentation">Images</a>
-    <a class="f5 fw4 dim link blue db pv1" href="/docs/elements/links/" title="View links documentation">Links</a>
-    <a class="f5 fw4 dim link blue db pv1" href="/docs/elements/lists/" title="View lists documentation">Lists</a>
-    <a class="f5 fw4 dim link blue db pv1 dn" href="/docs/elements/forms/" title="View forms documentation">Forms</a>
-    <a class="f5 fw4 dim link blue db pv1 dn" href="/docs/elements/tables/" title="View tables module documentation">Tables</a>
+      <div class="ph3 ph5-ns pb5">
+    <article  class="pb3">
+      <h2 class="f6 fw7 ttu tracked">Overview of Tachyons</h2>
+      <a class="f5 fw4 dim link blue db pv1" href="/docs/table-of-styles/" title="View a list of styles">Table of Styles</a>
+      <a class="f5 fw4 dim link blue db pv1" href="/docs/table-of-properties/" title="View a list of properties">Table of Properties</a>
+    </article>
+    <article>
+      <h2 class="f6 fw7 ttu tracked">Elements</h2>
+      <a class="f5 fw4 dim link blue db pv1" href="/docs/elements/images/" title="View images documentation">Images</a>
+      <a class="f5 fw4 dim link blue db pv1" href="/docs/elements/links/" title="View links documentation">Links</a>
+      <a class="f5 fw4 dim link blue db pv1" href="/docs/elements/lists/" title="View lists documentation">Lists</a>
+      <a class="f5 fw4 dim link blue db pv1 dn" href="/docs/elements/forms/" title="View forms documentation">Forms</a>
+      <a class="f5 fw4 dim link blue db pv1 dn" href="/docs/elements/tables/" title="View tables module documentation">Tables</a>
+    </article>
     <section class="cf w-100 mt3">
       <article class="fn fl-ns w-100 w-25-l">
         <h2 class="f6 fw7 ttu tracked" id="typography">Typography</h2>
@@ -265,12 +299,11 @@
         <a class="f5 fw4 dim link blue db pv1" href="/docs/themes/opacity/" title="Opacity Documentation">Opacity</a>
       </article>
     </section>
-  </section>
 </div>
 
     </main>
-    <footer class="bg-near-white mid-gray ph3 ph5-ns pv5 pv6-ns bt b--black-10">
-  <a href="https://twitter.com/intent/tweet?text=Tachyons: Functional CSS for Humans.&url=http://tachyons.io" target="_blank" class="dn mb3 twitter bg-white link dim br2 ph2 pb1 pt0 lh-solid" style="background-color: #55acee;">
+    <footer class="bg-washed-blue black-70 ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+  <a href="https://twitter.com/intent/tweet?text=Tachyons: Functional CSS for Humans.&url=http://tachyons.io" target="_blank" class="dn mb3 twitter bg-white-50 link dim br2 ph2 pb1 pt0 lh-solid" style="background-color: #55acee;">
     <svg class="geomicon dib v-mid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="#fff">
       <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
     </svg>
@@ -292,10 +325,10 @@
     <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
   </article>
   <div class="mt4">
-    <a class="ba b--black-20 bg-white black-70 link br2 dim b dib mr3 pv2 ph3" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
+    <a class="ba black-70 link br2 dim b dib mr3 mb3 pv2 ph3" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
       Join our Slack Channel
     </a>
-    <a class="ba b--black-20 bg-white br2 black-70 link dim b dib pv2 ph3" href="https://github.com/tachyons-css/tachyons/issues" title="File a bug, request a feature, ask a question!">
+    <a class="ba br2 black-70 link dim b dib pv2 ph3  mb3" href="https://github.com/tachyons-css/tachyons/issues" title="File a bug, request a feature, ask a question!">
       Open an Issue
     </a>
   </div>

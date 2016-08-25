@@ -3,38 +3,33 @@ var fs = require('fs')
 var filesize = require('filesize')
 var camelize = require('camelize')
 var cssstats = require('cssstats')
-var tachyonsModules = require('tachyons-modules')
+//var tachyonsModules = require('tachyons-modules')
 
-var pkgs = []
-var modulesCount = 0
+//var pkgs = []
+//var modulesCount = 0
 
 module.exports = function () {
-  tachyonsModules().then(function (moduleList) {
+  //  tachyonsModules().then(function (moduleList) {
     // TODO: Missing tachyons-skins
-    moduleList = moduleList
-    moduleCount = moduleList.length
+    // moduleList = moduleList
+    // moduleCount = moduleList.length
 
-    moduleList.forEach(function (module) {
-      var pkg = require(module.name + '/package.json')
-      var css = fs.readFileSync('node_modules/' + module.name + '/css/' + module.name + '.min.css', 'utf8')
-      var stats = cssstats(css)
-      var size = filesize(stats.gzipSize)
-      pkgs.push({
-        pkg: pkg,
-        stats: stats,
-        size: size
-      })
-    })
+    // moduleList.forEach(function (module) {
+    //   var pkg = require(module.name + '/package.json')
+    //   var css = fs.readFileSync('node_modules/' + module.name + '/css/' + module.name + '.min.css', 'utf8')
+    //   var stats = cssstats(css)
+    //   var size = filesize(stats.gzipSize)
+    //   pkgs.push({
+    //     pkg: pkg,
+    //     stats: stats,
+    //     size: size
+    //   })
+    // })
 
-    return renderHomePage(pkgs)
-  }).catch(function (e) {
-    console.log('Home Page Build Failed:')
-    console.log(e)
-    throw e
-  })
+  return renderHomePage()
 }
 
-function renderHomePage (modules) {
+function renderHomePage () {
   var tachyons = require('../package.json')
 
   var css = fs.readFileSync('./css/tachyons.css', 'utf8')
@@ -52,11 +47,11 @@ function renderHomePage (modules) {
   var html = tpl({
     size: size,
     version: tachyons.version,
-    modulesCount: modulesCount,
+    //    modulesCount: modulesCount,
     siteFooter: siteFooter,
     siteHeader: siteHeader,
     head: head,
-    modules: modules
+    //modules: modules
   })
 
   fs.writeFileSync('./index.html', html)

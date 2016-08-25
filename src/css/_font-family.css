@@ -39,11 +39,22 @@ code, .code {
                monospace;
 }
 
+.courier {
+  font-family: 'Courier Next',
+               courier,
+               monospace;
+}
+
 
 /* Sans-Serif Typefaces */
 
 .helvetica {
   font-family: 'helvetica neue', helvetica,
+               sans-serif;
+}
+
+.avenir {
+  font-family: 'avenir next', avenir,
                sans-serif;
 }
 
@@ -72,6 +83,11 @@ code, .code {
 
 .garamond {
   font-family: garamond,
+               serif;
+}
+
+.baskerville {
+  font-family: baskerville,
                serif;
 }
 

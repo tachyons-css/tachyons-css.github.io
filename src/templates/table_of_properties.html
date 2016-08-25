@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>
-      <%= name %> / Theming / Docs / TACHYONS
+      <%= name %> / Docs / TACHYONS
     </title>
     <meta name="description" content="An index of all CSS property names.">
 
@@ -11,19 +11,41 @@
   </head>
   <body class="w-100 sans-serif">
     <%= siteHeader  %>
-    <main>
-      <table class="mw8 center mt4 f5">
+    <main class="bg-washed-blue bt b--black-10">
+      <header class="pb4 mb4">
+      <div class="w-100 pa3 ph5-ns mb5 bb b--black-10 overflow-auto">
+      <div class="nowrap">
+        <a title="Table of Properties" href="/docs/table-of-properties/"
+            class="pb2-ns f6 fw6 link o-50 blue mr2 mr3-m mr4-l dib">
+          Tables of Properties
+        </a>
+        <a title="Table of Styles" href="/docs/table-of-styles/"
+            class="pb2-ns f6 fw6 link dim blue mr1 mr3-m mr4-l dib">
+            Table of Styles
+        </a>
+      </div>
+    </div>
+    <div class="ph3 ph5-ns">
+        <h3 class="ttu tracked f4">Table of Properties</h3>
+        <p class="measure lh-copy f5">
+          Here is a list of each property in Tachyons.
+        </p>
+      </div>
+      </header>
+      <div class="ph3 ph5-ns overflow-auto">
+      <table class="collapse">
         <thead>
           <tr>
-            <th class="tl">Properties</th>
-            <th class="tl">Selectors</th>
-            <th class="tl">Modules</th>
+            <th class="tl fw6 tracked ttu f6">Properties</th>
+            <th class="tl fw6 tracked ttu f6">Selectors</th>
+            <th class="tl fw6 tracked ttu f6 ">Modules</th>
           </tr>
         </thead>
         <tbody>
           <%= tableData %>
         </tbody>
       </table>
+    </div>
     </main>
     <%= siteFooter  %>
     <%= googleAnalytics  %>
