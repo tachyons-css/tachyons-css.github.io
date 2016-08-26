@@ -12,7 +12,7 @@ var moduleObj = cssstats(moduleCss)
 var moduleSize = filesize(moduleObj.gzipSize)
 var moduleName = module.name
 
-var srcCSS = fs.readFileSync('./src/css/_widths.css', 'utf8')
+var srccss = fs.readFileSync('./src/css/_widths.css', 'utf8')
 var navDocs = fs.readFileSync('./src/templates/nav_docs.html', 'utf8')
 var siteFooter = fs.readFileSync('./src/templates/footer.html', 'utf8')
 var siteHeader = fs.readFileSync('./src/templates/header.html', 'utf8')
@@ -27,7 +27,7 @@ var html = tpl({
   moduleVersion: module.version,
   moduleSize: moduleSize,
   moduleObj: moduleObj,
-  srcCSS: srcCSS,
+  srccss: srccss,
   name: moduleName,
   navDocs: navDocs,
   siteFooter: siteFooter,
