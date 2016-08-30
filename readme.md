@@ -1,6 +1,6 @@
 # Tachyons Documentation
 
-Documentation for Tachyons — a performant, mobile-first, and 100% responsive modular CSS framework.
+Documentation for Tachyons — a performant, mobile-first, and 100% responsive modular css framework.
 
 ## Installation and Usage
 
@@ -12,7 +12,7 @@ npm i && npm start
 There are other scripts available to ease development, too. See the `"scripts"` section in the `package.json`.
 
 The `index.html`, `components`, and `docs` directories are built files. Their source can be found in the `src/` directory.
-CSS documentation is created using a bash script called `script.sh` and can be run with `$ npm run doc`.
+css documentation is created using a bash script called `script.sh` and can be run with `$ npm run doc`.
 Component documentation is part of the build script, and can be run with `$npm run build`.
 
 ## Authors
