@@ -8,20 +8,19 @@
 <body class="w-100 sans-serif <%= bodyClass %>">
 <main>
   <%= content %>
-  <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70" style="background: #fafafa;">
+  <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70 bg-washed-blue">
   <h1 class="f4 f3-ns mt4"><%= name %></h1>
-
 <div class="cf">
 <div class="fl w-100 w-75-ns pr0 pr2-ns">
 <h2 class="f5">HTML</h2>
 <p class="f5 black-70"></p>
-<pre class="pa3 ba br2 b--black-05 h5" id="html">
+<pre class="pa3 ba br2 b--black-10 h5 bg-white-20" id="html">
 <%= escapedHtml %>
 </pre>
 </div>
 <div class="fl w-100 w-25-ns pl0 pl2-ns">
 <h2 class="f5">css</h2>
-<pre class="pa3 ba br2 b--black-05 h5" id="css"><%= componentCss %>
+<pre class="pa3 ba br2 b--black-10 h5" id="css"><%= componentCss %>
 </pre>
 </div>
 </div>
