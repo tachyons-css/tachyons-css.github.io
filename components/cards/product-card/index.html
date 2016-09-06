@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>TACHYONS - Articles Title Text</title>
+<title>TACHYONS - Cards Product Card</title>
 <meta name="description" content="Tachyons Component">
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -24,64 +24,170 @@
 </head>
 <body class="w-100 sans-serif bg-white">
 <main>
-  <article class="pa3 pa5-ns">
-  <h1 class="">Title</h1>
-  <p class="measure lh-copy">
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-    no sea takimata sanctus est Lorem ipsum dolor sit amet.
-  </p>
-  <p class="measure lh-copy">
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-    no sea takimata sanctus est Lorem ipsum dolor sit amet.
-  </p>
+  <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center">
+  <img src="http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="kitty">
+  <div class="pa2 ph3-ns pb3-ns">
+    <div class="dt w-100 mt1">
+      <div class="dtc">
+        <h1 class="f5 f4-ns mv0">Cat</h1>
+      </div>
+      <div class="dtc tr">
+        <h2 class="f5 mv0">$1,000</h2>
+      </div>
+    </div>
+    <p class="f6 lh-copy measure mt2 mid-gray">
+      If it fits, i sits burrow under covers. Destroy couch leave hair everywhere,
+      and touch water with paw then recoil in horror.
+    </p>
+  </div>
 </article>
 
   <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70 bg-washed-blue">
-  <h1 class="f4 f3-ns mt4">Title Text</h1>
+  <h1 class="f4 f3-ns mt4">Product Card</h1>
 <div class="cf">
 <div class="fl w-100 w-75-ns pr0 pr2-ns">
 <h2 class="f5">HTML</h2>
 <p class="f5 black-70"></p>
 <pre class="pa3 ba br2 b--black-10 h5 bg-white-20" id="html">
-&lt;article class=&quot;pa3 pa5-ns&quot;&gt;
-  &lt;h1 class=&quot;&quot;&gt;Title&lt;/h1&gt;
-  &lt;p class=&quot;measure lh-copy&quot;&gt;
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-    no sea takimata sanctus est Lorem ipsum dolor sit amet.
-  &lt;/p&gt;
-  &lt;p class=&quot;measure lh-copy&quot;&gt;
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-    no sea takimata sanctus est Lorem ipsum dolor sit amet.
-  &lt;/p&gt;
+&lt;article class=&quot;br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center&quot;&gt;
+  &lt;img src=&quot;http://placekitten.com/g/600/300&quot; class=&quot;db w-100 br2 br--top&quot; alt=&quot;kitty&quot;&gt;
+  &lt;div class=&quot;pa2 ph3-ns pb3-ns&quot;&gt;
+    &lt;div class=&quot;dt w-100 mt1&quot;&gt;
+      &lt;div class=&quot;dtc&quot;&gt;
+        &lt;h1 class=&quot;f5 f4-ns mv0&quot;&gt;Cat&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;dtc tr&quot;&gt;
+        &lt;h2 class=&quot;f5 mv0&quot;&gt;$1,000&lt;/h2&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;f6 lh-copy measure mt2 mid-gray&quot;&gt;
+      If it fits, i sits burrow under covers. Destroy couch leave hair everywhere,
+      and touch water with paw then recoil in horror.
+    &lt;/p&gt;
+  &lt;/div&gt;
 &lt;/article&gt;
 
 </pre>
 </div>
 <div class="fl w-100 w-25-ns pl0 pl2-ns">
 <h2 class="f5">css</h2>
-<pre class="pa3 ba br2 b--black-10 h5" id="css">.lh-copy {
+<pre class="pa3 ba br2 b--black-10 h5" id="css">.ba {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.b--black-10 {
+    border-color: rgba(0, 0, 0, .1);
+}
+
+.br2 {
+    border-radius: .25rem;
+}
+
+.br--top {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.db {
+    display: block;
+}
+
+.dt {
+    display: table;
+}
+
+.dtc {
+    display: table-cell;
+}
+
+.lh-copy {
     line-height: 1.5;
 }
 
-.pa3 {
-    padding: 1rem;
+.mw5 {
+    max-width: 16rem;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.dark-gray {
+    color: #333;
+}
+
+.mid-gray {
+    color: #555;
+}
+
+.pa2 {
+    padding: .5rem;
+}
+
+.mt1 {
+    margin-top: .25rem;
+}
+
+.mt2 {
+    margin-top: .5rem;
+}
+
+.mv0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.mv4 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.tr {
+    text-align: right;
+}
+
+.f5 {
+    font-size: 1rem;
+}
+
+.f6 {
+    font-size: .875rem;
 }
 
 .measure {
     max-width: 30em;
 }
 
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
 @media screen and (min-width: 30em) {
-    .pa5-ns {
-        padding: 4rem;
+    .pb3-ns {
+        padding-bottom: 1rem;
+    }
+
+    .ph3-ns {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .f4-ns {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+    .w-50-m {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .w-25-l {
+        width: 25%;
     }
 }
 
@@ -93,27 +199,47 @@
     <h2 class="f5 mb3 mt4">Css stats for this component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Gzipped Size</dt>
-      <dd class="ml0 b f3 f2-ns">140<small class="f6">B</small>
+      <dd class="ml0 b f3 f2-ns">455<small class="f6">B</small>
       </dd>
     </dl>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Selectors</dt>
-      <dd class="ml0 b f3 f2-ns">4</dd>
+      <dd class="ml0 b f3 f2-ns">27</dd>
     </dl>
     <dl class="dib mt0">
       <dt class="db f6">Declarations</dt>
-      <dd class="ml0 b f3 f2-ns">4</dd>
+      <dd class="ml0 b f3 f2-ns">33</dd>
     </dl>
   </div>
   <div class="fl w-100">
     <h2 class="f5 mt4">Modules referenced</h2>
     <ul class="list pl0 cf lh-copy mw7">
       
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-borders">tachyons-borders</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-colors">tachyons-border-colors</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-radius">tachyons-border-radius</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-display">tachyons-display</a></li>
+  
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-line-height">tachyons-line-height</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-max-widths">tachyons-max-widths</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-widths">tachyons-widths</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-skins">tachyons-skins</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-spacing">tachyons-spacing</a></li>
   
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-text-align">tachyons-text-align</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-type-scale">tachyons-type-scale</a></li>
+  
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-typography">tachyons-typography</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-utilities">tachyons-utilities</a></li>
   
     </ul>
   </div>
@@ -123,7 +249,7 @@
 
 
   <h4 class="mt5">Install via npm <small class="fw2 f6 db mt1">Only installs the needed tachyons-modules for this component</small></h4>
-  <code class="f6">npm i --save tachyons-line-height tachyons-spacing tachyons-typography</code>
+  <code class="f6">npm i --save tachyons-borders tachyons-border-colors tachyons-border-radius tachyons-display tachyons-line-height tachyons-max-widths tachyons-widths tachyons-skins tachyons-spacing tachyons-text-align tachyons-type-scale tachyons-typography tachyons-utilities</code>
   <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>TACHYONS - Articles Title Text</title>
+<title>TACHYONS - Cards Profile Card Title Subtitle</title>
 <meta name="description" content="Tachyons Component">
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -22,66 +22,125 @@
 </style>
 
 </head>
-<body class="w-100 sans-serif bg-white">
+<body class="w-100 sans-serif bg-near-white">
 <main>
-  <article class="pa3 pa5-ns">
-  <h1 class="">Title</h1>
-  <p class="measure lh-copy">
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-    no sea takimata sanctus est Lorem ipsum dolor sit amet.
-  </p>
-  <p class="measure lh-copy">
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-    no sea takimata sanctus est Lorem ipsum dolor sit amet.
-  </p>
+  <article class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
+  <div class="tc">
+    <img src="/img/avatar_1.jpg" class="br-100 h4 w4 dib ba b--black-05 pa2" title="Kitty staring at you">
+    <h1 class="f3 mb2">Mimi W.</h1>
+    <h2 class="f5 fw4 gray mt0">CCO (Chief Cat Officer)</h2>
+  </div>
 </article>
 
   <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70 bg-washed-blue">
-  <h1 class="f4 f3-ns mt4">Title Text</h1>
+  <h1 class="f4 f3-ns mt4">Profile Card Title Subtitle</h1>
 <div class="cf">
 <div class="fl w-100 w-75-ns pr0 pr2-ns">
 <h2 class="f5">HTML</h2>
 <p class="f5 black-70"></p>
 <pre class="pa3 ba br2 b--black-10 h5 bg-white-20" id="html">
-&lt;article class=&quot;pa3 pa5-ns&quot;&gt;
-  &lt;h1 class=&quot;&quot;&gt;Title&lt;/h1&gt;
-  &lt;p class=&quot;measure lh-copy&quot;&gt;
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-    no sea takimata sanctus est Lorem ipsum dolor sit amet.
-  &lt;/p&gt;
-  &lt;p class=&quot;measure lh-copy&quot;&gt;
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-    no sea takimata sanctus est Lorem ipsum dolor sit amet.
-  &lt;/p&gt;
+&lt;article class=&quot;mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10&quot;&gt;
+  &lt;div class=&quot;tc&quot;&gt;
+    &lt;img src=&quot;/img/avatar_1.jpg&quot; class=&quot;br-100 h4 w4 dib ba b--black-05 pa2&quot; title=&quot;Kitty staring at you&quot;&gt;
+    &lt;h1 class=&quot;f3 mb2&quot;&gt;Mimi W.&lt;/h1&gt;
+    &lt;h2 class=&quot;f5 fw4 gray mt0&quot;&gt;CCO (Chief Cat Officer)&lt;/h2&gt;
+  &lt;/div&gt;
 &lt;/article&gt;
 
 </pre>
 </div>
 <div class="fl w-100 w-25-ns pl0 pl2-ns">
 <h2 class="f5">css</h2>
-<pre class="pa3 ba br2 b--black-10 h5" id="css">.lh-copy {
-    line-height: 1.5;
+<pre class="pa3 ba br2 b--black-10 h5" id="css">.ba {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.b--black-10 {
+    border-color: rgba(0, 0, 0, .1);
+}
+
+.b--black-05 {
+    border-color: rgba(0, 0, 0, .05);
+}
+
+.br3 {
+    border-radius: .5rem;
+}
+
+.br-100 {
+    border-radius: 100%;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.fw4 {
+    font-weight: 400;
+}
+
+.h4 {
+    height: 8rem;
+}
+
+.mw5 {
+    max-width: 16rem;
+}
+
+.w4 {
+    width: 8rem;
+}
+
+.gray {
+    color: #777;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.pa2 {
+    padding: .5rem;
 }
 
 .pa3 {
     padding: 1rem;
 }
 
-.measure {
-    max-width: 30em;
+.mb2 {
+    margin-bottom: .5rem;
+}
+
+.mt0 {
+    margin-top: 0;
+}
+
+.mv3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tc {
+    text-align: center;
+}
+
+.f3 {
+    font-size: 1.5rem;
+}
+
+.f5 {
+    font-size: 1rem;
+}
+
+.center {
+    margin-right: auto;
+    margin-left: auto;
 }
 
 @media screen and (min-width: 30em) {
-    .pa5-ns {
-        padding: 4rem;
+    .pa4-ns {
+        padding: 2rem;
     }
 }
 
@@ -93,27 +152,47 @@
     <h2 class="f5 mb3 mt4">Css stats for this component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Gzipped Size</dt>
-      <dd class="ml0 b f3 f2-ns">140<small class="f6">B</small>
+      <dd class="ml0 b f3 f2-ns">370<small class="f6">B</small>
       </dd>
     </dl>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Selectors</dt>
-      <dd class="ml0 b f3 f2-ns">4</dd>
+      <dd class="ml0 b f3 f2-ns">22</dd>
     </dl>
     <dl class="dib mt0">
       <dt class="db f6">Declarations</dt>
-      <dd class="ml0 b f3 f2-ns">4</dd>
+      <dd class="ml0 b f3 f2-ns">25</dd>
     </dl>
   </div>
   <div class="fl w-100">
     <h2 class="f5 mt4">Modules referenced</h2>
     <ul class="list pl0 cf lh-copy mw7">
       
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-line-height">tachyons-line-height</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-borders">tachyons-borders</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-colors">tachyons-border-colors</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-radius">tachyons-border-radius</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-display">tachyons-display</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-font-weight">tachyons-font-weight</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-heights">tachyons-heights</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-max-widths">tachyons-max-widths</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-widths">tachyons-widths</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-skins">tachyons-skins</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-spacing">tachyons-spacing</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-typography">tachyons-typography</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-text-align">tachyons-text-align</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-type-scale">tachyons-type-scale</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-utilities">tachyons-utilities</a></li>
   
     </ul>
   </div>
@@ -123,7 +202,7 @@
 
 
   <h4 class="mt5">Install via npm <small class="fw2 f6 db mt1">Only installs the needed tachyons-modules for this component</small></h4>
-  <code class="f6">npm i --save tachyons-line-height tachyons-spacing tachyons-typography</code>
+  <code class="f6">npm i --save tachyons-borders tachyons-border-colors tachyons-border-radius tachyons-display tachyons-font-weight tachyons-heights tachyons-max-widths tachyons-widths tachyons-skins tachyons-spacing tachyons-text-align tachyons-type-scale tachyons-utilities</code>
   <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 

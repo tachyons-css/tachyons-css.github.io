@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>TACHYONS - Articles Title Text</title>
+<title>TACHYONS - Cards News Card</title>
 <meta name="description" content="Tachyons Component">
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -22,67 +22,144 @@
 </style>
 
 </head>
-<body class="w-100 sans-serif bg-white">
+<body class="w-100 sans-serif bg-near-white">
 <main>
-  <article class="pa3 pa5-ns">
-  <h1 class="">Title</h1>
-  <p class="measure lh-copy">
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-    no sea takimata sanctus est Lorem ipsum dolor sit amet.
-  </p>
-  <p class="measure lh-copy">
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-    no sea takimata sanctus est Lorem ipsum dolor sit amet.
-  </p>
+  <article class="bg-white center mw5 ba b--black-10 mv4">
+  <div class="pv2 ph3">
+     <h1 class="f6 ttu tracked">Daily News Co.</h1>
+  </div>
+  <img src="/img/cat-720.jpg" class="w-100 db" alt="Cat yawning">
+  <div class="pa3">
+    <a href="#" class="link dim lh-title">15 things every cat owner should know</a>
+    <small class="gray db pv2">AMP - <time>6 hours ago</time></small>
+  </div>
 </article>
 
   <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70 bg-washed-blue">
-  <h1 class="f4 f3-ns mt4">Title Text</h1>
+  <h1 class="f4 f3-ns mt4">News Card</h1>
 <div class="cf">
 <div class="fl w-100 w-75-ns pr0 pr2-ns">
 <h2 class="f5">HTML</h2>
 <p class="f5 black-70"></p>
 <pre class="pa3 ba br2 b--black-10 h5 bg-white-20" id="html">
-&lt;article class=&quot;pa3 pa5-ns&quot;&gt;
-  &lt;h1 class=&quot;&quot;&gt;Title&lt;/h1&gt;
-  &lt;p class=&quot;measure lh-copy&quot;&gt;
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-    no sea takimata sanctus est Lorem ipsum dolor sit amet.
-  &lt;/p&gt;
-  &lt;p class=&quot;measure lh-copy&quot;&gt;
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-    no sea takimata sanctus est Lorem ipsum dolor sit amet.
-  &lt;/p&gt;
+&lt;article class=&quot;bg-white center mw5 ba b--black-10 mv4&quot;&gt;
+  &lt;div class=&quot;pv2 ph3&quot;&gt;
+     &lt;h1 class=&quot;f6 ttu tracked&quot;&gt;Daily News Co.&lt;/h1&gt;
+  &lt;/div&gt;
+  &lt;img src=&quot;/img/cat-720.jpg&quot; class=&quot;w-100 db&quot; alt=&quot;Cat yawning&quot;&gt;
+  &lt;div class=&quot;pa3&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;link dim lh-title&quot;&gt;15 things every cat owner should know&lt;/a&gt;
+    &lt;small class=&quot;gray db pv2&quot;&gt;AMP - &lt;time&gt;6 hours ago&lt;/time&gt;&lt;/small&gt;
+  &lt;/div&gt;
 &lt;/article&gt;
 
 </pre>
 </div>
 <div class="fl w-100 w-25-ns pl0 pl2-ns">
 <h2 class="f5">css</h2>
-<pre class="pa3 ba br2 b--black-10 h5" id="css">.lh-copy {
-    line-height: 1.5;
+<pre class="pa3 ba br2 b--black-10 h5" id="css">.ba {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.b--black-10 {
+    border-color: rgba(0, 0, 0, .1);
+}
+
+.db {
+    display: block;
+}
+
+.tracked {
+    letter-spacing: .1em;
+}
+
+.lh-title {
+    line-height: 1.25;
+}
+
+.link {
+    text-decoration: none;
+    transition: color .15s ease-in;
+}
+
+.link:link, .link:visited {
+    transition: color .15s ease-in;
+}
+
+.link:hover {
+    transition: color .15s ease-in;
+}
+
+.link:active {
+    transition: color .15s ease-in;
+}
+
+.link:focus {
+    transition: color .15s ease-in;
+}
+
+.mw5 {
+    max-width: 16rem;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.gray {
+    color: #777;
+}
+
+.bg-white {
+    background-color: #fff;
 }
 
 .pa3 {
     padding: 1rem;
 }
 
-.measure {
-    max-width: 30em;
+.pv2 {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }
 
-@media screen and (min-width: 30em) {
-    .pa5-ns {
-        padding: 4rem;
-    }
+.ph3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.mv4 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.ttu {
+    text-transform: uppercase;
+}
+
+.f6 {
+    font-size: .875rem;
+}
+
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.dim {
+    opacity: 1;
+    transition: opacity .15s ease-in;
+}
+
+.dim:hover, .dim:focus {
+    opacity: .5;
+    transition: opacity .15s ease-in;
+}
+
+.dim:active {
+    opacity: .8;
+    transition: opacity .15s ease-out;
 }
 
 </pre>
@@ -93,27 +170,49 @@
     <h2 class="f5 mb3 mt4">Css stats for this component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Gzipped Size</dt>
-      <dd class="ml0 b f3 f2-ns">140<small class="f6">B</small>
+      <dd class="ml0 b f3 f2-ns">454<small class="f6">B</small>
       </dd>
     </dl>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Selectors</dt>
-      <dd class="ml0 b f3 f2-ns">4</dd>
+      <dd class="ml0 b f3 f2-ns">26</dd>
     </dl>
     <dl class="dib mt0">
       <dt class="db f6">Declarations</dt>
-      <dd class="ml0 b f3 f2-ns">4</dd>
+      <dd class="ml0 b f3 f2-ns">33</dd>
     </dl>
   </div>
   <div class="fl w-100">
     <h2 class="f5 mt4">Modules referenced</h2>
     <ul class="list pl0 cf lh-copy mw7">
       
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-borders">tachyons-borders</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-colors">tachyons-border-colors</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-display">tachyons-display</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-letter-spacing">tachyons-letter-spacing</a></li>
+  
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-line-height">tachyons-line-height</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-links">tachyons-links</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-max-widths">tachyons-max-widths</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-widths">tachyons-widths</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-skins">tachyons-skins</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-spacing">tachyons-spacing</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-typography">tachyons-typography</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-text-transform">tachyons-text-transform</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-type-scale">tachyons-type-scale</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-utilities">tachyons-utilities</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-hovers">tachyons-hovers</a></li>
   
     </ul>
   </div>
@@ -123,7 +222,7 @@
 
 
   <h4 class="mt5">Install via npm <small class="fw2 f6 db mt1">Only installs the needed tachyons-modules for this component</small></h4>
-  <code class="f6">npm i --save tachyons-line-height tachyons-spacing tachyons-typography</code>
+  <code class="f6">npm i --save tachyons-borders tachyons-border-colors tachyons-display tachyons-letter-spacing tachyons-line-height tachyons-links tachyons-max-widths tachyons-widths tachyons-skins tachyons-spacing tachyons-text-transform tachyons-type-scale tachyons-utilities tachyons-hovers</code>
   <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 
