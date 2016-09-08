@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <title>
-      tachyons-box-sizing / Layout / Docs / TACHYONS
+      Grid Debug / Docs / TACHYONS
     </title>
-    <meta name="description" content="Tachyons is a css framework for rapidly building well-designed, responsive, and performant UI.">
+    <meta name="description" content="css">
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="author" content="@mrmrs">
@@ -51,114 +51,130 @@
 </header>
 
     <main class="bg-washed-blue black-70">
-      <article class="bt b--black-10 ph3 pv3 ph5-ns">
-        <h4 class="f4 mv0 fw6 dib mr4">tachyons-box-sizing</h4>
-        <span class="f4 b dib pl0 ml0 mr4">v3.1.7</span>
-        <span class="f4 b dib pl0 ml0 mr4">162 B</span>
+      <article class="bt b--black-10 pa3 ph5-ns">
+        <h4 class="f4 mv0 fw6 dib mr4">tachyons-debug-grid</h4>
+        <span class="f4 b dib pl0 ml0 mr4">v1.0.0</span>
+        <span class="f4 b dib pl0 ml0 mr4">150 B</span>
         <div>
           <dl class="dib mr4 mt0">
             <dt class="f6 db">Declarations </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b">1</dd>
+            <dd class="db pl0 ml0 f4 f2-ns b">4</dd>
           </dl>
           <dl class="dib mr4">
             <dt class="f6 db pr2">Selectors </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b">27</dd>
+            <dd class="db pl0 ml0 f4 f2-ns b">4</dd>
           </dl>
           <dl class="dib mr4">
             <dt class="f6 db pr2">Max. Specificity Score </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b">11</dd>
+            <dd class="db pl0 ml0 f4 f2-ns b">10</dd>
           </dl>
           <dl class="dib mr4">
             <dt class="f6 db pr2">Size of Avg. Rule </dt>
             <dd class="db pl0 ml0 f4 f2-ns b">1</dd>
           </dl>
         </div>
-        <p class="measure f4 lh-copy">
-          The box model has been known to trip up a few people. This module should make things a bit easier.
+        <p class="measure f4 f3-ns lh-copy">
+          The debug grid module allows you to put a background grid on any
+element which can help you line elements up vertically and horizontally with
+eachother. Sometimes across large amounts of whitespace it can be tough to see
+if things are aligned. The background grid comes in both 8 and 16px columns.
         </p>
         <p class="measure f5 lh-copy">
-          While many people make fun of Microsoft's 'Internet Explorer' browser - the one thing that most css authors
-          agree on is that it's the most favorable box model. Fortunately the box-sizing property is well supported
-          now so we can fix the atrocity that is the box model that chrome, firefox, safari, and others have implemented in modern browsers.
-        </p>
-        <p class="measure f5 lh-copy">
-          While the * { box-sizing: border-box; } hack has become quite popular - not all elements (think form inputs)
-          benefit from this box model. This module only applies the border-box model to certain elements as listed below.
-          There is also a .border-box class you can apply to elements as needed.
-        </p>
-        <p class="measure f5 lh-copy">
-          The benefit of border-box as opposed to content-box (which is the default per the css spec) is that when you declare a width, that is the width of the element, regardless of how much border or padding you add to the element.
+          The debug module is commented out at the bottom of the
+          src/tachyons.css file. If you uncomment it a 1px outline will be
+          placed on every element on the page. Each element has a different
+          color outline.  The purpose of this is to help distinguish elements
+          that are close together by giving them different colors.  This has
+          been helpful at times when the outlines are overlapping by 1 or 2
+          pixels and it's hard to tell where one element ends and the other
+          begins.
         </p>
       </article>
-      <div class="ph3 ph5-ns pt4 pb5">
-        <h2 class="f3 bold">Examples</h2>
-        <h3 class="f5 book pt4 caps">Default Content Box</h3>
-        <div class="ph3 mw5 ba bw4 phxl pvm bg-lightest-red" style="box-sizing: content-box;">
-          This element has a thick border, a max-width class of mw5, and extra large horizontal padding and medium vertical padding.
+      <div class="ph3 ph5-ns pt4 pb5 bg-white">
+        <h2 class="f3 b">Examples</h2>
+        <h3 class="f5 fw4 pt4 ttu tracked">Grid at 8px</h3>
+        
+        <div class="debug-grid pa2 pa4-ns">
+          <h1 class="outline lh-solid f1 f-headline-l fw6 mt0 mb4">The Grid</h1>
+          <h2 class="outline lh-solid f2 f-subheadline-l fw4 mv0">&amp; the Graphic Designer</h1>
+          <p class="outline lh-copy measure f3">
+            For us Graphic Design is “organization of information.” There are other types of graphic design more concerned with illustration or of a narrative nature.
+          </p>
+          <p class="outline lh-copy measure f4">
+            Nothing could be more useful to reach our intention than the Grid. The grid represents the basic structure of our graphic design, it helps to
+            organize the content, it provides consistency, it gives an orderly look and it projects a level of intellectual elegance that we like to express.
+          </p>
+          <p class="outline lh-copy measure f5">
+            ahere are infinite kinds of grids, but just one - the most
+            appropriate - for any problem. Therefore, it becomes important to
+            know which kind of grid is the most appropriate. The basic
+            understanding is that the smaller the module of the grid the least
+            helpful it could be. We could say that an empty page is a page with
+            an infintesimal small grid. Therefore, it is equivalent to not
+            being there. Conversely a page with a coarse grid is a very
+            restricting grid offering too few alternatives. The secret is to
+            nd the proper kind of grid for the
+            job at hand.
+          </p>
         </div>
-        <h3 class="f5 book pt4 caps">Border Box</h3>
-        <div class="ph3 mw5 ba bw4 phxl pvm bg-lightest-red">
-          This element has a thick border, a max-width class of mw5, and extra large horizontal padding and medium vertical padding.
-        </div>
-        <h3 class="f5 book pt4 caps">Border Box with no padding or border</h3>
-        <div class="ph3 mw5 bg-lightest-red">
-          This element has no border, a max-width class of mw5 and no padding. Notice which example it has the same width as.
-        </div>
-        <div class="mt5 cf">
-          <div class="dib mr4">
-            <h1 class="f4 ttu tracked fw6">Previous</h1>
-            <a href="/docs/debug/" class="link fw6 blue dim">Debugging</a>
+        
+        <h3 class="f5 fw4 pt4 ttu tracked">Grid at 16px</h3>
+        <div class="debug-grid-16 pa2 pa4-ns">
+          <div class="f5 measure center outline pa4"> 
+            <img class="db w-100 o-30" src="http://mrmrs.io/photos/026.jpg">
+            <h1>Image Title</h1>
+            <p>Image description</p>
           </div>
-          <div class="dib">
-            <h1 class="f4 ttu tracked fw6">Next</h1>
-            <a href="/docs/layout/spacing/" class="link fw6 blue dim">Spacing</a>
-          </div>
-        </div>
-        <div class="mt5">
-          <h1 class="f4 ttu tracked fw6">Reference</h1>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing" class="link fw6 blue dim">MDN - Box Sizing</a>
+          <form action="debug_submit" method="get" accept-charset="utf-8" class="mt4 pv4 outline">
+            <fieldset class=" b--transparent pa3 ma0 pa0">
+              <legend class="f4 fw6">Sign up form</legend>
+              <div class="mb3 dib mr3">
+                <label class="db fw6 mb2">username</label>
+                <input type="text" value="" name="" class="input-reset outline bw0 b--transparent w-100 measure f5" />
+              </div>
+            <div class="mb3 dib">
+              <label class="db fw6 mb2">password</label>
+              <input type="text" value="" name="" class="input-reset outline bw0 b--transparent w-100 measure f5" />
+            </div>
+            <div class="mb3 db">
+              <label class="db fw6 mb2">location</label>
+              <input type="text" value="" name="" class="input-reset outline bw0 b--transparent w-100" />
+            </div>
+            </fieldset>
+          </form>
         </div>
       </div>
-      <section class="bg-washed-blue black-70 pt4 pb5 overflow-container">
+      <section class="bg-washed-blue black-70 pt4 pv4 overflow-container">
         <header class="ph3 ph5-ns pt4">
-          <kbd>src/_box-sizing.css</kbd>
+          <kbd>src/_debug-grid.css</kbd>
         </header>
 <pre class="ph3 ph5-ns">
 <code class="code" style="font-size: .75rem;">
-/*
-  Box Sizing
+            /*
+
+   DEBUG GRID
+
+   Can be useful for debugging layout issues
+   or helping to make sure things line up perfectly.
+   Just tack one of these classes onto a parent element.
+
 */
 
-html,
-body,
-div,
-article,
-section,
-main,
-footer,
-header,
-form,
-fieldset,
-pre,
-code,
-p,
-ul,
-ol,
-li,
-dl,
-dt,
-dd,
-textarea,
-input[type="email"],
-input[type="number"],
-input[type="password"],
-input[type="tel"],
-input[type="text"],
-input[type="url"],
-.border-box {
-  box-sizing: border-box;
+.debug-grid {
+  background:transparent url(http://tachyons.io/img/8-grid-blue-alpha.png) repeat top left;
 }
 
+.debug-grid-16 {
+  background:transparent url(http://tachyons.io/img/16-grid-blue-alpha.png) repeat top left;
+}
+
+.debug-grid-8-solid {
+  background:white url(http://tachyons.io/img/8-grid.jpg) repeat top left;
+}
+
+.debug-grid-16-solid {
+  background:white url(http://tachyons.io/img/16-grid.png) repeat top left;
+}
 
 </code>
 </pre>

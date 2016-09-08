@@ -8,6 +8,7 @@ repos=(
   "src/modules/box-shadow.js"
   "src/modules/clearfix.js"
   "src/modules/debug.js"
+  "src/modules/debug-grid.js"
   "src/modules/display.js"
   "src/modules/docs.js"
   "src/modules/floats.js"
