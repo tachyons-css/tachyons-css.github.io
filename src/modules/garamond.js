@@ -22,4 +22,4 @@ var html = tpl({
   siteHeader: siteHeader
 })
 
-fs.writeFileSync('./docs/font-family/garamond/index.html', html)
+fs.writeFileSync('./docs/typography/font-family/garamond/index.html', html)
