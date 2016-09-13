@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>TACHYONS - Lists Title Text</title>
+<title>TACHYONS - Layout Fixed Table Layout Grid Mixed Rows</title>
 <meta name="description" content="Tachyons Component">
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -24,196 +24,187 @@
 </head>
 <body class="w-100 sans-serif bg-white">
 <main>
-  <ul class="list pl0">
-  <li class="pa3 pa4-ns bb b--black-10">
-    <b class="db f3 mb1">alignment</b>
-    <span class="f5 db lh-copy measure">
-      The positioning of text within the page margins. Alignment can be flush left, flush right, justified, or centered. Flush left and flush right are sometimes referred to as left justified and right justified.</span>
-  </li>
-  <li class="pa3 pa4-ns bb b--black-10">
-    <b class="db f3 mb1">
-      ascender
-    </b>
-    <span class="f5 db lh-copy measure">
-      The part of lowercase letters (such as k, b, and d) that ascends above the
-      x-height of the other lowercase letters in a face.
-    </span>
-  </li>
-  <li class="pa3 pa4-ns bb b--black-10">
-    <b class="db f3 mb1">
-      baseline
-    </b>
-    <span class="f5 db lh-copy measure">
-      The imaginary line on which the majority of the characters in a typeface rest.
-    </span>
-  </li>
-  <li class="pa3 pa4-ns bb b--black-10">
-    <b class="db f3 mb1">
-      body text
-    </b>
-    <span class="f5 db lh-copy measure">
-      The paragraphs in a document that make up the bulk of its content. The body text should be set in an appropriate and easy-to-read face, typically at 10- or 12-point size.
-    </span>
-  </li>
-  <li class="pa3 pa4-ns bb b--black-10">
-    <b class="db f3 mb1">
-      boldface
-    </b>
-    <span class="f5 db lh-copy measure">
-      A typeface that has been enhanced by rendering it in darker, thicker strokes so that it will stand out on the page. Headlines that need emphasis should be boldface. Italics are preferable for emphasis in body text.
-    </span>
-  </li>
-  <li class="pa3 pa4-ns bb b--black-10">
-    <b class="db f3 mb1">
-      bullet
-    </b>
-    <span class="f5 db lh-copy measure">
-    A dot or other special character placed at the left of items in a list to show that they are individual, but related, points.
-    </span>
-  </li>
-  <li class="pa3 pa4-ns bb b--black-10">
-    <b class="db f3 mb1">
-cap height
-    </b>
-    <span class="f5 db lh-copy measure">
-    The height from the baseline to the top of the uppercase letters in a font. This may or may not be the same as the height of ascenders. Cap height is used in some systems to measure the type size.
-    </span>
-  </li>
-  <li class="pa3 pa4-ns">
-    <b class="db f3 mb1">
-      centered
-    </b>
-    <span class="f5 db lh-copy measure">
-    Text placed at an equal distance from the left and right margins. Headlines are often centered. It is generally not good to mix centered text with flush left or flush right text.
-    </span>
-  </li>
-</ul>
+  <div class="dt dt--fixed">
+  <div class="dt-row">
+    <div class="dtc tc pv4 bg-black-10">
+      1
+    </div>
+    <div class="dtc tc pv4 bg-black-05">
+      2
+    </div>
+    <div class="dtc tc pv4 bg-black-10">
+      3
+    </div>
+  </div>
+  <div class="dt-row">
+    <div class="dtc tc pv4 white bg-black">
+      1
+    </div>
+    <div class="dtc tc pv4 white bg-black-70">
+      2
+    </div>
+    <div class="dtc tc pv4 white bg-black">
+      3
+    </div>
+    <div class="dtc tc pv4 white bg-black-70">
+      4
+    </div>
+    <div class="dtc tc pv4 white bg-black">
+      5
+    </div>
+    <div class="dtc tc pv4 white bg-black-70">
+      6
+    </div>
+    <div class="dtc tc pv4 white bg-black">
+      7
+    </div>
+    <div class="dtc tc pv4 white bg-black-70">
+      8
+    </div>
+    <div class="dtc tc pv4 white bg-black">
+      9
+    </div>
+  </div>
+  <div class="dt-row">
+    <div class="dtc tc pv4 bg-black-10">
+      1
+    </div>
+    <div class="dtc tc pv4 bg-black-05">
+      2
+    </div>
+    <div class="dtc tc pv4 bg-black-10">
+      3
+    </div>
+    <div class="dtc tc pv4 bg-black-10">
+      4
+    </div>
+    <div class="dtc tc pv4 bg-black-05">
+      5
+    </div>
+    <div class="dtc tc pv4 bg-black-10">
+      6
+    </div>
+  </div>
+</div>
 
   <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70 bg-white">
-  <h1 class="f4 f3-ns mt4">Title Text</h1>
+  <h1 class="f4 f3-ns mt4">Fixed Table Layout Grid Mixed Rows</h1>
 <div class="cf">
 <div class="fl w-100 w-75-ns pr0 pr2-ns">
 <h2 class="f5">HTML</h2>
 <p class="f5 black-70"></p>
 <pre class="pa3 ba br2 b--black-10 h5 bg-white-20" id="html">
-&lt;ul class=&quot;list pl0&quot;&gt;
-  &lt;li class=&quot;pa3 pa4-ns bb b--black-10&quot;&gt;
-    &lt;b class=&quot;db f3 mb1&quot;&gt;alignment&lt;/b&gt;
-    &lt;span class=&quot;f5 db lh-copy measure&quot;&gt;
-      The positioning of text within the page margins. Alignment can be flush left, flush right, justified, or centered. Flush left and flush right are sometimes referred to as left justified and right justified.&lt;/span&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;pa3 pa4-ns bb b--black-10&quot;&gt;
-    &lt;b class=&quot;db f3 mb1&quot;&gt;
-      ascender
-    &lt;/b&gt;
-    &lt;span class=&quot;f5 db lh-copy measure&quot;&gt;
-      The part of lowercase letters (such as k, b, and d) that ascends above the
-      x-height of the other lowercase letters in a face.
-    &lt;/span&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;pa3 pa4-ns bb b--black-10&quot;&gt;
-    &lt;b class=&quot;db f3 mb1&quot;&gt;
-      baseline
-    &lt;/b&gt;
-    &lt;span class=&quot;f5 db lh-copy measure&quot;&gt;
-      The imaginary line on which the majority of the characters in a typeface rest.
-    &lt;/span&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;pa3 pa4-ns bb b--black-10&quot;&gt;
-    &lt;b class=&quot;db f3 mb1&quot;&gt;
-      body text
-    &lt;/b&gt;
-    &lt;span class=&quot;f5 db lh-copy measure&quot;&gt;
-      The paragraphs in a document that make up the bulk of its content. The body text should be set in an appropriate and easy-to-read face, typically at 10- or 12-point size.
-    &lt;/span&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;pa3 pa4-ns bb b--black-10&quot;&gt;
-    &lt;b class=&quot;db f3 mb1&quot;&gt;
-      boldface
-    &lt;/b&gt;
-    &lt;span class=&quot;f5 db lh-copy measure&quot;&gt;
-      A typeface that has been enhanced by rendering it in darker, thicker strokes so that it will stand out on the page. Headlines that need emphasis should be boldface. Italics are preferable for emphasis in body text.
-    &lt;/span&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;pa3 pa4-ns bb b--black-10&quot;&gt;
-    &lt;b class=&quot;db f3 mb1&quot;&gt;
-      bullet
-    &lt;/b&gt;
-    &lt;span class=&quot;f5 db lh-copy measure&quot;&gt;
-    A dot or other special character placed at the left of items in a list to show that they are individual, but related, points.
-    &lt;/span&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;pa3 pa4-ns bb b--black-10&quot;&gt;
-    &lt;b class=&quot;db f3 mb1&quot;&gt;
-cap height
-    &lt;/b&gt;
-    &lt;span class=&quot;f5 db lh-copy measure&quot;&gt;
-    The height from the baseline to the top of the uppercase letters in a font. This may or may not be the same as the height of ascenders. Cap height is used in some systems to measure the type size.
-    &lt;/span&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;pa3 pa4-ns&quot;&gt;
-    &lt;b class=&quot;db f3 mb1&quot;&gt;
-      centered
-    &lt;/b&gt;
-    &lt;span class=&quot;f5 db lh-copy measure&quot;&gt;
-    Text placed at an equal distance from the left and right margins. Headlines are often centered. It is generally not good to mix centered text with flush left or flush right text.
-    &lt;/span&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;div class=&quot;dt dt--fixed&quot;&gt;
+  &lt;div class=&quot;dt-row&quot;&gt;
+    &lt;div class=&quot;dtc tc pv4 bg-black-10&quot;&gt;
+      1
+    &lt;/div&gt;
+    &lt;div class=&quot;dtc tc pv4 bg-black-05&quot;&gt;
+      2
+    &lt;/div&gt;
+    &lt;div class=&quot;dtc tc pv4 bg-black-10&quot;&gt;
+      3
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;dt-row&quot;&gt;
+    &lt;div class=&quot;dtc tc pv4 white bg-black&quot;&gt;
+      1
+    &lt;/div&gt;
+    &lt;div class=&quot;dtc tc pv4 white bg-black-70&quot;&gt;
+      2
+    &lt;/div&gt;
+    &lt;div class=&quot;dtc tc pv4 white bg-black&quot;&gt;
+      3
+    &lt;/div&gt;
+    &lt;div class=&quot;dtc tc pv4 white bg-black-70&quot;&gt;
+      4
+    &lt;/div&gt;
+    &lt;div class=&quot;dtc tc pv4 white bg-black&quot;&gt;
+      5
+    &lt;/div&gt;
+    &lt;div class=&quot;dtc tc pv4 white bg-black-70&quot;&gt;
+      6
+    &lt;/div&gt;
+    &lt;div class=&quot;dtc tc pv4 white bg-black&quot;&gt;
+      7
+    &lt;/div&gt;
+    &lt;div class=&quot;dtc tc pv4 white bg-black-70&quot;&gt;
+      8
+    &lt;/div&gt;
+    &lt;div class=&quot;dtc tc pv4 white bg-black&quot;&gt;
+      9
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;dt-row&quot;&gt;
+    &lt;div class=&quot;dtc tc pv4 bg-black-10&quot;&gt;
+      1
+    &lt;/div&gt;
+    &lt;div class=&quot;dtc tc pv4 bg-black-05&quot;&gt;
+      2
+    &lt;/div&gt;
+    &lt;div class=&quot;dtc tc pv4 bg-black-10&quot;&gt;
+      3
+    &lt;/div&gt;
+    &lt;div class=&quot;dtc tc pv4 bg-black-10&quot;&gt;
+      4
+    &lt;/div&gt;
+    &lt;div class=&quot;dtc tc pv4 bg-black-05&quot;&gt;
+      5
+    &lt;/div&gt;
+    &lt;div class=&quot;dtc tc pv4 bg-black-10&quot;&gt;
+      6
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 
 </pre>
 </div>
 <div class="fl w-100 w-25-ns pl0 pl2-ns">
 <h2 class="f5">css</h2>
-<pre class="pa3 ba br2 b--black-10 h5" id="css">.bb {
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
+<pre class="pa3 ba br2 b--black-10 h5" id="css">.dt {
+    display: table;
 }
 
-.b--black-10 {
-    border-color: rgba(0, 0, 0, .1);
+.dtc {
+    display: table-cell;
 }
 
-.db {
-    display: block;
+.dt-row {
+    display: table-row;
 }
 
-.lh-copy {
-    line-height: 1.5;
+.dt--fixed {
+    table-layout: fixed;
+    width: 100%;
 }
 
-.list {
-    list-style-type: none;
+.white {
+    color: #fff;
 }
 
-.pa3 {
-    padding: 1rem;
+.bg-black-70 {
+    background-color: rgba(0, 0, 0, .7);
 }
 
-.pl0 {
-    padding-left: 0;
+.bg-black-10 {
+    background-color: rgba(0, 0, 0, .1);
 }
 
-.mb1 {
-    margin-bottom: .25rem;
+.bg-black-05 {
+    background-color: rgba(0, 0, 0, .05);
 }
 
-.f3 {
-    font-size: 1.5rem;
+.bg-black {
+    background-color: #000;
 }
 
-.f5 {
-    font-size: 1rem;
+.pv4 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
-.measure {
-    max-width: 30em;
-}
-
-@media screen and (min-width: 30em) {
-    .pa4-ns {
-        padding: 2rem;
-    }
+.tc {
+    text-align: center;
 }
 
 </pre>
@@ -224,12 +215,12 @@ cap height
     <h2 class="f5 mb3 mt4">Css stats for this component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Gzipped Size</dt>
-      <dd class="ml0 b f3 f2-ns">267<small class="f6">B</small>
+      <dd class="ml0 b f3 f2-ns">217<small class="f6">B</small>
       </dd>
     </dl>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Selectors</dt>
-      <dd class="ml0 b f3 f2-ns">12</dd>
+      <dd class="ml0 b f3 f2-ns">11</dd>
     </dl>
     <dl class="dib mt0">
       <dt class="db f6">Declarations</dt>
@@ -240,21 +231,13 @@ cap height
     <h2 class="f5 mt4">Modules referenced</h2>
     <ul class="list pl0 cf lh-copy mw7">
       
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-borders">tachyons-borders</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-colors">tachyons-border-colors</a></li>
-  
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-display">tachyons-display</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-line-height">tachyons-line-height</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-lists">tachyons-lists</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-skins">tachyons-skins</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-spacing">tachyons-spacing</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-type-scale">tachyons-type-scale</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-typography">tachyons-typography</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-text-align">tachyons-text-align</a></li>
   
     </ul>
   </div>
@@ -264,7 +247,7 @@ cap height
 
 
   <h4 class="mt5">Install via npm <small class="fw2 f6 db mt1">Only installs the needed tachyons-modules for this component</small></h4>
-  <code class="f6">npm i --save tachyons-borders tachyons-border-colors tachyons-display tachyons-line-height tachyons-lists tachyons-spacing tachyons-type-scale tachyons-typography</code>
+  <code class="f6">npm i --save tachyons-display tachyons-skins tachyons-spacing tachyons-text-align</code>
   <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 
