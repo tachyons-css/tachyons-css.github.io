@@ -13,6 +13,7 @@ repos=(
   "src/modules/docs.js"
   "src/modules/floats.js"
   "src/modules/font-family.js"
+  "src/modules/garamond.js"
   "src/modules/font-style.js"
   "src/modules/font-weight.js"
   "src/modules/forms.js"
