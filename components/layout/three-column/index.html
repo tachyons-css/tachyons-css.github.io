@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>TACHYONS - Layout Flag Object Collapse</title>
+<title>TACHYONS - Layout Three Column</title>
 <meta name="description" content="Tachyons Component">
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -24,34 +24,34 @@
 </head>
 <body class="w-100 sans-serif bg-white">
 <main>
-  <div class="dt mw6 center pt0 pb5 pv5-m pv6-ns">
-  <div class="db dtc-ns v-mid-ns">
-    <img src="/img/super-wide.jpg" alt="A bright blue sky" class="w-100 mw7 w5-ns" />
+  <div class="dt dt--fixed">
+  <div class="dtc tc pv4 bg-black-10">
+    1
   </div>
-  <div class="db dtc-ns v-mid ph2 pr0-ns pl3-ns">
-    <p class="lh-copy">
-      For desktop, this text is vertically aligned middle, no matter what the height of the image is.
-      On mobile, this is a paragraph below an image.
-    </p>
+  <div class="dtc tc pv4 bg-black-05">
+    2
+  </div>
+  <div class="dtc tc pv4 bg-black-10">
+    3
   </div>
 </div>
 
   <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70 bg-white">
-  <h1 class="f4 f3-ns mt4">Flag Object Collapse</h1>
+  <h1 class="f4 f3-ns mt4">Three Column</h1>
 <div class="cf">
 <div class="fl w-100 w-75-ns pr0 pr2-ns">
 <h2 class="f5">HTML</h2>
 <p class="f5 black-70"></p>
 <pre class="pa3 ba br2 b--black-10 h5 bg-white-20" id="html">
-&lt;div class=&quot;dt mw6 center pt0 pb5 pv5-m pv6-ns&quot;&gt;
-  &lt;div class=&quot;db dtc-ns v-mid-ns&quot;&gt;
-    &lt;img src=&quot;/img/super-wide.jpg&quot; alt=&quot;A bright blue sky&quot; class=&quot;w-100 mw7 w5-ns&quot; /&gt;
+&lt;div class=&quot;dt dt--fixed&quot;&gt;
+  &lt;div class=&quot;dtc tc pv4 bg-black-10&quot;&gt;
+    1
   &lt;/div&gt;
-  &lt;div class=&quot;db dtc-ns v-mid ph2 pr0-ns pl3-ns&quot;&gt;
-    &lt;p class=&quot;lh-copy&quot;&gt;
-      For desktop, this text is vertically aligned middle, no matter what the height of the image is.
-      On mobile, this is a paragraph below an image.
-    &lt;/p&gt;
+  &lt;div class=&quot;dtc tc pv4 bg-black-05&quot;&gt;
+    2
+  &lt;/div&gt;
+  &lt;div class=&quot;dtc tc pv4 bg-black-10&quot;&gt;
+    3
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -59,84 +59,34 @@
 </div>
 <div class="fl w-100 w-25-ns pl0 pl2-ns">
 <h2 class="f5">css</h2>
-<pre class="pa3 ba br2 b--black-10 h5" id="css">.db {
-    display: block;
-}
-
-.dt {
+<pre class="pa3 ba br2 b--black-10 h5" id="css">.dt {
     display: table;
 }
 
-.lh-copy {
-    line-height: 1.5;
+.dtc {
+    display: table-cell;
 }
 
-.mw6 {
-    max-width: 32rem;
-}
-
-.mw7 {
-    max-width: 48rem;
-}
-
-.w-100 {
+.dt--fixed {
+    table-layout: fixed;
     width: 100%;
 }
 
-.pb5 {
-    padding-bottom: 4rem;
+.bg-black-10 {
+    background-color: rgba(0, 0, 0, .1);
 }
 
-.pt0 {
-    padding-top: 0;
+.bg-black-05 {
+    background-color: rgba(0, 0, 0, .05);
 }
 
-.ph2 {
-    padding-left: .5rem;
-    padding-right: .5rem;
+.pv4 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
-.center {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.v-mid {
-    vertical-align: middle;
-}
-
-@media screen and (min-width: 30em) {
-    .dtc-ns {
-        display: table-cell;
-    }
-
-    .w5-ns {
-        width: 16rem;
-    }
-
-    .pl3-ns {
-        padding-left: 1rem;
-    }
-
-    .pr0-ns {
-        padding-right: 0;
-    }
-
-    .pv6-ns {
-        padding-top: 8rem;
-        padding-bottom: 8rem;
-    }
-
-    .v-mid-ns {
-        vertical-align: middle;
-    }
-}
-
-@media screen and (min-width: 30em) and (max-width: 60em) {
-    .pv5-m {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-    }
+.tc {
+    text-align: center;
 }
 
 </pre>
@@ -147,16 +97,16 @@
     <h2 class="f5 mb3 mt4">Css stats for this component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Gzipped Size</dt>
-      <dd class="ml0 b f3 f2-ns">335<small class="f6">B</small>
+      <dd class="ml0 b f3 f2-ns">187<small class="f6">B</small>
       </dd>
     </dl>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Selectors</dt>
-      <dd class="ml0 b f3 f2-ns">18</dd>
+      <dd class="ml0 b f3 f2-ns">7</dd>
     </dl>
     <dl class="dib mt0">
       <dt class="db f6">Declarations</dt>
-      <dd class="ml0 b f3 f2-ns">22</dd>
+      <dd class="ml0 b f3 f2-ns">9</dd>
     </dl>
   </div>
   <div class="fl w-100">
@@ -165,17 +115,11 @@
       
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-display">tachyons-display</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-line-height">tachyons-line-height</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-max-widths">tachyons-max-widths</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-widths">tachyons-widths</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-skins">tachyons-skins</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-spacing">tachyons-spacing</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-utilities">tachyons-utilities</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-vertical-align">tachyons-vertical-align</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-text-align">tachyons-text-align</a></li>
   
     </ul>
   </div>
@@ -185,7 +129,7 @@
 
 
   <h4 class="mt5">Install via npm <small class="fw2 f6 db mt1">Only installs the needed tachyons-modules for this component</small></h4>
-  <code class="f6">npm i --save tachyons-display tachyons-line-height tachyons-max-widths tachyons-widths tachyons-spacing tachyons-utilities tachyons-vertical-align</code>
+  <code class="f6">npm i --save tachyons-display tachyons-skins tachyons-spacing tachyons-text-align</code>
   <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 
