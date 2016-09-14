@@ -8,12 +8,20 @@
 <body class="w-100 sans-serif">
   <%= header %>
 <main class="bg-white bt b--black-10">
-  <section class="pa3 pa5-ns">
+  <section class="pa3 pa4-ns">
     <% Object.keys(componentsForNav).map(function(category) { %>
-      <h1 class="f6 b ttu tracked mt4"><%= category %></h1>
+      <div class="ph4-ns">
+        <h1 class="f6 b ttu tracked"><%= category %></h1>
+      </div>
+      <div class="ph3-ns cf">
       <% componentsForNav[category].map(function(componentForNav) { %>
-        <a class="dib mr3 mb2 blue link dim" href="<%= componentForNav.href %>"><%= componentForNav.name %></a>
+      <div class="fl w-50 w-25-ns pa3">
+        <a class="grow db" href="<%= componentForNav.href %>" title="<%= componentForNav.name %>">
+          <iframe class="db w-100 outline black h4 h5-ns overflow-hidden pointer" src="<%= componentForNav.href %>" frameborder="0" allowfullscreen></iframe>
+        </a>
+      </div>
       <% }) %>
+    </div>
     <% }) %>
   </section>
 </main>
