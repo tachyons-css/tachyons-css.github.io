@@ -10,18 +10,17 @@
 </head>
 <body class="w-100 sans-serif">
   <%= header %>
-<main class="bg-white bt b--black-10">
-  <section class="pa3 pa4-ns">
+<main class="bg-white black-70 bt b--black-10">
+  <section class="pa4-ns">
     <% Object.keys(componentsForNav).map(function(category) { %>
-      <div class="ph4-ns">
+      <div class="ph3 ph4-ns">
         <h1 class="f6 b ttu tracked pb2 bb"><%= category %></h1>
       </div>
       <div class="ph3-ns cf mb4">
       <% componentsForNav[category].map(function(componentForNav) { %>
       <div class="fl w-50 w-25-ns pa3">
-        <div class="relative h4 h5-ns w-100 outline overflow-hidden pointer">
-          <iframe class="absolute absolute--fill" src="<%= componentForNav.href %>" frameborder="0" allowfullscreen></iframe>
-          <a class="absolute absolute--fill db pa3 b bg-transparent hover-bg-black border-box no-underline transparent hover-white" href="<%= componentForNav.href %>" title="<%= componentForNav.name %>">
+        <div class="h4 h5-ns w-100 outline overflow-hidden">
+          <a class="f5 f3-l b pointer db h-100 pa3 bg-white black-70 hover-bg-black hover-white border-box no-underline" href="<%= componentForNav.href %>" title="<%= componentForNav.name %>">
 <%= componentForNav.name %>
           </a>
         </div>
