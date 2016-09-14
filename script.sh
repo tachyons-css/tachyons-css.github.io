@@ -14,6 +14,8 @@ repos=(
   "src/modules/floats.js"
   "src/modules/font-family.js"
   "src/modules/garamond.js"
+  "src/modules/georgia.js"
+  "src/modules/helvetica.js"
   "src/modules/font-style.js"
   "src/modules/font-weight.js"
   "src/modules/forms.js"
