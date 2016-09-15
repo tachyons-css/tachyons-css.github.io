@@ -31,7 +31,7 @@
       <a href="/" class="dib f5 f4-ns fw6 mt0 mb1 link black-70 dim" title="Home">
         Tachyons
         <div class="dib">
-          <small class="nowrap f6 mt2 mt3-ns pr2 black-70 fw2">v4.3.1</small>
+          <small class="nowrap f6 mt2 mt3-ns pr2 black-70 fw2">v4.4.1</small>
         </div>
       </a>
     </div>
@@ -210,6 +210,7 @@ Media Query Extensions:
 /*
 
    WIDTHS
+   Docs: http://tachyons.io/docs/layout/widths/
 
    Base:
      w = width
@@ -233,6 +234,7 @@ Media Query Extensions:
      -80  = literal value 80%
      -100 = literal value 100%
 
+     -third = 100% / 3 (Not supported in opera mini or IE8)
      -auto  = string value auto
 
 
@@ -263,6 +265,7 @@ Media Query Extensions:
 .w-80 {  width:  80%; }
 .w-100 { width: 100%; }
 
+.w-third { width: calc(100% / 3); }
 .w-auto { width: auto; }
 
 @media (--breakpoint-not-small) {
@@ -282,6 +285,7 @@ Media Query Extensions:
   .w-75-ns { width:  75%; }
   .w-80-ns { width:  80%; }
   .w-100-ns { width: 100%; }
+  .w-third-ns { width: calc(100% / 3); }
   .w-auto-ns { width: auto; }
 }
 
@@ -302,6 +306,7 @@ Media Query Extensions:
   .w-75-m { width:  75%; }
   .w-80-m { width:  80%; }
   .w-100-m { width: 100%; }
+  .w-third-m { width: calc(100% / 3); }
   .w-auto-m {    width: auto; }
 }
 
@@ -322,6 +327,7 @@ Media Query Extensions:
   .w-75-l {    width:  75%; }
   .w-80-l {    width:  80%; }
   .w-100-l {   width: 100%; }
+  .w-third-l { width: calc(100% / 3); }
   .w-auto-l {    width: auto; }
 }
 

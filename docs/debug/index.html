@@ -31,7 +31,7 @@
       <a href="/" class="dib f5 f4-ns fw6 mt0 mb1 link black-70 dim" title="Home">
         Tachyons
         <div class="dib">
-          <small class="nowrap f6 mt2 mt3-ns pr2 black-70 fw2">v4.3.1</small>
+          <small class="nowrap f6 mt2 mt3-ns pr2 black-70 fw2">v4.4.1</small>
         </div>
       </a>
     </div>
@@ -325,7 +325,19 @@
         </header>
         <pre class="ph3 ph5-ns">
           <code class="code" style="font-size: .75rem;">
-            
+            /* 
+ 
+  DEBUG (PESTICIDE)
+  Docs: http://tachyons.io/docs/debug/
+
+  This is a partial you have to manually include in your
+  build file. It places a different colored outline on 
+  each element which can help you debug layout issues.
+  There is also a handy chrome extension that can 
+  be found at http://pesticide.io
+
+*/
+
 body {        outline: 1px solid  #2980B9!important; }
 article {     outline: 1px solid  #3498DB!important; }
 nav {         outline: 1px solid  #0088C3!important; }

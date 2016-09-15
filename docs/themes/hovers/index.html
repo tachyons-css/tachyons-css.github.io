@@ -31,7 +31,7 @@
       <a href="/" class="dib f5 f4-ns fw6 mt0 mb1 link black-70 dim" title="Home">
         Tachyons
         <div class="dib">
-          <small class="nowrap f6 mt2 mt3-ns pr2 black-70 fw2">v4.3.1</small>
+          <small class="nowrap f6 mt2 mt3-ns pr2 black-70 fw2">v4.4.1</small>
         </div>
       </a>
     </div>
@@ -55,16 +55,16 @@
     <main class="bg-white black-70">
       <article class="bt b--black-10 pa3 ph5-ns">
         <h4 class="f4 mv0 fw6 dib mr4">tachyons-hovers</h4>
-        <span class="f4 b dib pl0 ml0 mr4">v2.4.1</span>
-        <span class="f4 b dib pl0 ml0 mr4">273 B</span>
+        <span class="f4 b dib pl0 ml0 mr4">v2.4.2</span>
+        <span class="f4 b dib pl0 ml0 mr4">424 B</span>
         <div>
           <dl class="dib mr4 mt0">
             <dt class="f6 db">Declarations </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b">16</dd>
+            <dd class="db pl0 ml0 f4 f2-ns b">46</dd>
           </dl>
           <dl class="dib mr4">
             <dt class="f6 db pr2">Selectors </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b">22</dd>
+            <dd class="db pl0 ml0 f4 f2-ns b">25</dd>
           </dl>
           <dl class="dib mr4">
             <dt class="f6 db pr2">Max. Specificity Score </dt>
@@ -72,7 +72,7 @@
           </dl>
           <dl class="dib mr4">
             <dt class="f6 db pr2">Size of Avg. Rule </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b">1.2307692307692308</dd>
+            <dd class="db pl0 ml0 f4 f2-ns b">2.875</dd>
           </dl>
         </div>
         <p class="measure f3 lh-copy">
@@ -134,6 +134,7 @@
 /*
 
   HOVER EFFECTS
+  Docs: http://tachyons.io/docs/themes/hovers/
 
     - Dim
     - Hide Child
@@ -234,11 +235,22 @@
   cursor: pointer;
 }
 
-/* Add shadow on hover */
+/* 
+   Add shadow on hover.
 
-.shadow-hover:hover,
-.shadow-hover:focus {
+   Performant box-shadow animation pattern from 
+   http://tobiasahlin.com/blog/how-to-animate-box-shadow/ 
+*/
+
+.shadow-hover::after {
   box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 );
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.shadow-hover:hover::after,
+.shadow-hover:focus::after {
+  opacity: 1;
 }
 
 
