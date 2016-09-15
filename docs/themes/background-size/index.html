@@ -53,7 +53,7 @@
 </header>
 
     <main class="bg-white black-70">
-      <article class="bt b--black-10 ph3 pt3 ph5-ns">
+      <article class="bt b--black-20 ph3 pt3 ph5-ns">
         <h4 class="f4 mv0 fw6 dib mr4">tachyons-background-size</h4>
         <span class="f4 b dib pl0 ml0 mr4">v5.0.1</span>
         <span class="f4 b dib pl0 ml0 mr4">136 B</span>
@@ -81,37 +81,47 @@
           setting contain or cover.
         </p>
       </article>
-      <div class="ph3 ph5-ns pt4 pb5">
-        <h2 class="f3 mb4">Examples</h2>
-        <code class="f6 fw4 dib">.contain { background-size: contain }</code>
-        <p class="measure lh-copy mt0"><code>contain</code> will make sure that the entire image is displayed within the element, regardless of the elements dimensions.</p>
-        <div style="background-image: url(http://placekitten.com/g/500/500);background-repeat: no-repeat;outline: 1px solid black;" class="contain h4 w-50">
+      <div class="cf ph3 ph5-ns pt4 pb5 bt b--black-10">
+
+        <h2 class="fl w-100 f3 mb4">Examples</h2>
+        <div class="fl w-100 w-50-l pr4-l ">
+          <code class="f6 fw4 dib">.contain { background-size: contain }</code>
+          <p class="measure lh-copy mt3"><code>contain</code> will make sure that the entire image is displayed within the element, regardless of the elements dimensions.</p>
+          <div style="background-image: url(http://placekitten.com/g/500/500);background-repeat: no-repeat;outline: 1px solid black;" class="contain h4 w-100">
+          </div>
         </div>
-        <code class="f6 fw4 mt5 dib">.cover { background-size: cover }</code>
-        <p class="measure lh-copy mt0"><code>cover</code> will make sure the entire element is covered - but won't guarantee that the entire image will be shown.</p>
-        <div style="background-image: url(http://placekitten.com/g/500/500); outline: 1px solid black;" class="cover h4 w-50">
+        <div class="fl w-100 w-50-l pl3-l pt5 pt0-l">
+          <code class="f6 fw4 dib">.cover { background-size: cover }</code>
+          <p class="measure lh-copy mt3"><code>cover</code> will make sure the entire element is covered - but won't guarantee that the entire image will be shown.</p>
+          <div style="background-image: url(http://placekitten.com/g/500/500); outline: 1px solid black;" class="cover h4 w-100">
+          </div>
         </div>
-        <div class="mt5 cf">
+        <div class="mt5 fl w-100">
           <div class="dib mr4">
-            <h1 class="f4 ttu tracked fw6">Previous</h1>
+            <h1 class="f6 fw6">Previous</h1>
             <a href="/docs/themes/hovers/" class="link fw6 blue dim">Hovers</a>
           </div>
           <div class="dib">
-            <h1 class="f4 ttu tracked fw6">Next</h1>
+            <h1 class="f6 fw6">Next</h1>
             <a href="/docs/themes/borders" class="link fw6 blue dim">Borders</a>
           </div>
-        </div>
         <div class="mt5">
-          <h1 class="f4 ttu tracked fw6">Reference</h1>
+          <h4 class="f6 f5-ns fw6">Reference</h4>
           <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-size" class="link fw6 blue dim">MDN - Background Size</a>
         </div>
+        </div>
       </div>
-      <section class="bg-white black-70 pt4 pb5 overflow-container">
-        <header class="ph3 ph5-ns pt4">
-          <kbd>src/_background-size.css</kbd>
+      <section class="bg-white black-70 pb5">
+        <header class="ph3 ph5-ns">
+          <div class="bb b--black-20">
+            <h5 class="f6 fw6 dib mr2 mt0 mb2">Source Code</h5>
+            <kbd class="dib f6 code">src/_background-size.css</kbd>
+          </div>
         </header>
-<pre class="ph3 ph5-ns">
-<code class="code" style="font-size: .75rem;">
+        <div class="ph3 ph5-ns">
+          <div class="bb b--black-20 overflow-auto">
+<pre>
+<code class="code black-70" style="font-size: .75rem;">
 /*
 
    BACKGROUND SIZE
@@ -149,8 +159,10 @@
 
 </code>
 </pre>
-      </section>
-      <div class="ph3 ph5-ns pb5">
+        </div>
+      </div>
+    </section>
+    <div class="ph3 ph5-ns pb5">
     <article  class="pb3">
       <h2 class="f6 fw7 ttu tracked">Overview of Tachyons</h2>
       <a class="f5 fw4 dim link blue db pv1" href="/docs/table-of-styles/" title="View a list of styles">Table of Styles</a>
@@ -207,8 +219,8 @@
     </section>
 </div>
 
-    </main>
-    <footer class="bg-washed-blue black-70 ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+  </main>
+  <footer class="bg-washed-blue black-70 ph3 ph5-ns pv5 pv6-ns bt b--black-10">
   <div class="mw9 center">
   <div class="mb4">
     <a class="black-70 link dim b dib mr3" href="/" title="Home">
@@ -258,7 +270,7 @@
 </div>
 </footer>
 
-        <script>
+      <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -269,5 +281,5 @@ ga('send', 'pageview');
 
     </script>
 
-  </body>
+</body>
 </html>
