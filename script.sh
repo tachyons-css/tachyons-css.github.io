@@ -1,4 +1,4 @@
-repos=(
+pages=(
   "src/home-build.js"
   "src/modules/docs.js"
   "src/modules/background-size.js"
@@ -13,9 +13,6 @@ repos=(
   "src/modules/docs.js"
   "src/modules/floats.js"
   "src/modules/font-family.js"
-  "src/modules/garamond.js"
-  "src/modules/georgia.js"
-  "src/modules/helvetica.js"
   "src/modules/font-style.js"
   "src/modules/font-weight.js"
   "src/modules/forms.js"
@@ -43,7 +40,7 @@ repos=(
   "src/modules/widths.js"
 )
 
-for repo in "${repos[@]}"
+for repo in "${pages[@]}"
 do
-  node "${repo}"
+  node "${page}"
 done
