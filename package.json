@@ -1,6 +1,6 @@
 {
   "name": "tachyons-css.github.io",
-  "version": "4.3.1",
+  "version": "4.4.1",
   "description": "Documentation for Tachyons -- a performant, mobile-first, and 100% responsive modular css framework.",
   "main": "index.html",
   "scripts": {
@@ -70,7 +70,7 @@
     "tachyons-visibility": "^2.0.0",
     "tachyons-white-space": "^4.0.0",
     "tachyons-widths": "^5.0.0",
-    "tachyons-word-break": "3.0.0",
+    "tachyons-word-break": "3.0.1",
     "tachyons-z-index": "^1.0.3"
   },
   "devDependencies": {
@@ -113,11 +113,11 @@
     "tachyons": "^4.0.0-beta.27",
     "tachyons-cli": "^1.0.4",
     "tachyons-debug-grid": "^1.0.0",
-    "tachyons-flexbox": "^1.0.0",
+    "tachyons-flexbox": "^2.0.1",
     "tachyons-modules": "^1.1.8",
     "tachyons-queries": "^0.3.1",
     "titleize": "^1.0.0",
-    "watch": "^0.18.0"
+    "watch": "^0.19.2"
   },
   "contributors": [
     {
