@@ -5,7 +5,7 @@ module.exports = function(colors) {
 
   var combos = []
   // Get the Colorable array
-  var arr = colorable(colors, { threshold: 3.0 })
+  var arr = colorable(colors, { threshold: 7.0 })
 
   // Flatten the array and combine the foreground and background colors
   arr.forEach(function(color) {
