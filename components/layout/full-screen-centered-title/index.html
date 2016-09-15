@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>TACHYONS - Pages Swiss Cover Five Columns</title>
+<title>TACHYONS - Layout Full Screen Centered Title</title>
 <meta name="description" content="Tachyons Component">
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -22,225 +22,90 @@
 </style>
 
 </head>
-<body class="w-100 sans-serif bg-dark-gray white helvetica">
+<body class="w-100 sans-serif bg-white">
 <main>
-  <main class="cf pa3 pa4-m pa5-l mw9 center">
-  <div class="fr w-100 w-80-l">
-    <p class="f6">
-      Beitrage zut
-    </p>
-    <h1 class="f2 f1-l lh-title mt0 mb4 mb5-ns">
-      Kunst<br class="dn db-ns"> des 19. und 20.Jahrhunderts
-    </h1>
+  <article class="vh-100 dt w-100 bg-dark-pink">
+  <div class="dtc v-mid tc white ph3 ph4-l">
+    <h1 class="f6 f2-m f-subheadline-l fw6 tc">Vertically centering things in css is easy!</h1>
   </div>
-  <div class="f6 lh-copy fl w-100 mb4">
-    <div class="fl-ns w-100 w-20-l pr3-m pr5-l">
-      <p>
-        Jahrbuch <small class="fw6">1968/69</small>
-      </p> 
-    </div>
-    <div class="fl-ns w-50-m w-20-l pr3-m pr5-l">
-      <p>
-        Institut suisse pour l'étude de l'art
-      </p> 
-    </div>
-    <div class="fl-ns w-50-m w-20-l pr3-m pr5-l">
-      <p>
-        Schweizerisches<br class="dn db-l"> Institut für Kunstwissenschaft
-      </p> 
-    </div>
-    <div class="fl-ns w-50-m w-20-l pr3-m pr5-l">
-      <p>
-        Istituto svizzero di studi d'arte
-      </p>
-    </div>
-    <div class="fl-ns w-50-m w-20-l pr3-m pr5-l">
-      <p>
-        Swiss Institute for Art Research
-      </p>
-    </div>
-  </div>
-  <img src="http://mrmrs.io/photos/u/007.jpg" class="db" alt="iceland"/>
-</main>
+</article>
 
   <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70 bg-white">
-  <h1 class="f4 f3-ns mt4">Swiss Cover Five Columns</h1>
+  <h1 class="f4 f3-ns mt4">Full Screen Centered Title</h1>
 <div class="cf">
 <div class="fl w-100 w-75-ns pr0 pr2-ns">
 <h2 class="f5">HTML</h2>
 <p class="f5 black-70"></p>
 <pre class="pa3 ba br2 b--black-10 h5 bg-white-20" id="html">
-&lt;main class=&quot;cf pa3 pa4-m pa5-l mw9 center&quot;&gt;
-  &lt;div class=&quot;fr w-100 w-80-l&quot;&gt;
-    &lt;p class=&quot;f6&quot;&gt;
-      Beitrage zut
-    &lt;/p&gt;
-    &lt;h1 class=&quot;f2 f1-l lh-title mt0 mb4 mb5-ns&quot;&gt;
-      Kunst&lt;br class=&quot;dn db-ns&quot;&gt; des 19. und 20.Jahrhunderts
-    &lt;/h1&gt;
+&lt;article class=&quot;vh-100 dt w-100 bg-dark-pink&quot;&gt;
+  &lt;div class=&quot;dtc v-mid tc white ph3 ph4-l&quot;&gt;
+    &lt;h1 class=&quot;f6 f2-m f-subheadline-l fw6 tc&quot;&gt;Vertically centering things in css is easy!&lt;/h1&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;f6 lh-copy fl w-100 mb4&quot;&gt;
-    &lt;div class=&quot;fl-ns w-100 w-20-l pr3-m pr5-l&quot;&gt;
-      &lt;p&gt;
-        Jahrbuch &lt;small class=&quot;fw6&quot;&gt;1968/69&lt;/small&gt;
-      &lt;/p&gt; 
-    &lt;/div&gt;
-    &lt;div class=&quot;fl-ns w-50-m w-20-l pr3-m pr5-l&quot;&gt;
-      &lt;p&gt;
-        Institut suisse pour l&#39;étude de l&#39;art
-      &lt;/p&gt; 
-    &lt;/div&gt;
-    &lt;div class=&quot;fl-ns w-50-m w-20-l pr3-m pr5-l&quot;&gt;
-      &lt;p&gt;
-        Schweizerisches&lt;br class=&quot;dn db-l&quot;&gt; Institut für Kunstwissenschaft
-      &lt;/p&gt; 
-    &lt;/div&gt;
-    &lt;div class=&quot;fl-ns w-50-m w-20-l pr3-m pr5-l&quot;&gt;
-      &lt;p&gt;
-        Istituto svizzero di studi d&#39;arte
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;fl-ns w-50-m w-20-l pr3-m pr5-l&quot;&gt;
-      &lt;p&gt;
-        Swiss Institute for Art Research
-      &lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;img src=&quot;http://mrmrs.io/photos/u/007.jpg&quot; class=&quot;db&quot; alt=&quot;iceland&quot;/&gt;
-&lt;/main&gt;
+&lt;/article&gt;
 
 </pre>
 </div>
 <div class="fl w-100 w-25-ns pl0 pl2-ns">
 <h2 class="f5">css</h2>
-<pre class="pa3 ba br2 b--black-10 h5" id="css">.cf:before, .cf:after {
-    content: " ";
+<pre class="pa3 ba br2 b--black-10 h5" id="css">.dt {
     display: table;
 }
 
-.cf:after {
-    clear: both;
-}
-
-.cf {
-    *zoom: 1;
-}
-
-.dn {
-    display: none;
-}
-
-.db {
-    display: block;
-}
-
-.fl {
-    float: left;
-    _display: inline;
-}
-
-.fr {
-    float: right;
-    _display: inline;
+.dtc {
+    display: table-cell;
 }
 
 .fw6 {
     font-weight: 600;
 }
 
-.lh-title {
-    line-height: 1.25;
-}
-
-.lh-copy {
-    line-height: 1.5;
-}
-
-.mw9 {
-    max-width: 96rem;
+.vh-100 {
+    height: 100vh;
 }
 
 .w-100 {
     width: 100%;
 }
 
-.pa3 {
-    padding: 1rem;
+.white {
+    color: #fff;
 }
 
-.mb4 {
-    margin-bottom: 2rem;
+.bg-dark-pink {
+    background-color: #d5008f;
 }
 
-.mt0 {
-    margin-top: 0;
+.ph3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-.f2 {
-    font-size: 2.25rem;
+.tc {
+    text-align: center;
 }
 
 .f6 {
     font-size: .875rem;
 }
 
-.center {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-@media screen and (min-width: 30em) {
-    .db-ns {
-        display: block;
-    }
-
-    .fl-ns {
-        float: left;
-        display: inline;
-    }
-
-    .mb5-ns {
-        margin-bottom: 4rem;
-    }
+.v-mid {
+    vertical-align: middle;
 }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
-    .w-50-m {
-        width: 50%;
-    }
-
-    .pa4-m {
-        padding: 2rem;
-    }
-
-    .pr3-m {
-        padding-right: 1rem;
+    .f2-m {
+        font-size: 2.25rem;
     }
 }
 
 @media screen and (min-width: 60em) {
-    .db-l {
-        display: block;
+    .ph4-l {
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
-    .w-20-l {
-        width: 20%;
-    }
-
-    .w-80-l {
-        width: 80%;
-    }
-
-    .pa5-l {
-        padding: 4rem;
-    }
-
-    .pr5-l {
-        padding-right: 4rem;
-    }
-
-    .f1-l {
-        font-size: 3rem;
+    .f-subheadline-l {
+        font-size: 5rem;
     }
 }
 
@@ -252,41 +117,39 @@
     <h2 class="f5 mb3 mt4">Css stats for this component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Gzipped Size</dt>
-      <dd class="ml0 b f3 f2-ns">450<small class="f6">B</small>
+      <dd class="ml0 b f3 f2-ns">308<small class="f6">B</small>
       </dd>
     </dl>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Selectors</dt>
-      <dd class="ml0 b f3 f2-ns">31</dd>
+      <dd class="ml0 b f3 f2-ns">14</dd>
     </dl>
     <dl class="dib mt0">
       <dt class="db f6">Declarations</dt>
-      <dd class="ml0 b f3 f2-ns">35</dd>
+      <dd class="ml0 b f3 f2-ns">16</dd>
     </dl>
   </div>
   <div class="fl w-100">
     <h2 class="f5 mt4">Modules referenced</h2>
     <ul class="list pl0 cf lh-copy mw7">
       
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-clears">tachyons-clears</a></li>
-  
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-display">tachyons-display</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-floats">tachyons-floats</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-font-weight">tachyons-font-weight</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-line-height">tachyons-line-height</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-max-widths">tachyons-max-widths</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-heights">tachyons-heights</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-widths">tachyons-widths</a></li>
   
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-skins">tachyons-skins</a></li>
+  
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-spacing">tachyons-spacing</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-text-align">tachyons-text-align</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-type-scale">tachyons-type-scale</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-utilities">tachyons-utilities</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-vertical-align">tachyons-vertical-align</a></li>
   
     </ul>
   </div>
@@ -296,7 +159,7 @@
 
 
   <h4 class="mt5">Install via npm <small class="fw2 f6 db mt1">Only installs the needed tachyons-modules for this component</small></h4>
-  <code class="f6">npm i --save tachyons-clears tachyons-display tachyons-floats tachyons-font-weight tachyons-line-height tachyons-max-widths tachyons-widths tachyons-spacing tachyons-type-scale tachyons-utilities</code>
+  <code class="f6">npm i --save tachyons-display tachyons-font-weight tachyons-heights tachyons-widths tachyons-skins tachyons-spacing tachyons-text-align tachyons-type-scale tachyons-vertical-align</code>
   <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 
