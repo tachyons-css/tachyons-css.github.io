@@ -48,7 +48,19 @@
             <code class="f6"><%= color %></code>
           </li>
         <% } %>
-        <h2>Combinations</h2>
+        <h2>Accessible Combinations</h2>
+          <p class="lh-copy dib mr4">
+            <span class="db f6"><b>AA Large</b> (contrast ≥ 3.0)</span>
+            <span class="db f3-ns b"><%= combos.length %></span>
+          </p>
+          <p class="lh-copy dib mr4">
+            <span class="db f6"><b>AA</b> (contrast ≥ 4.5)</span>
+            <span class="db f3-ns b"><%= combosAA.length %></span>
+          </p>
+          <p class="lh-copy dib mr4">
+            <span class="db f6"><b>AAA</b> (contrast ≥ 7.0)</span>
+            <span class="db f3-ns b"><%= combosAAA.length %></span>
+          </p>
         <ul class="cf list pl0 ml0">
           <% combos.map(renderCombo) %>
         </ul>
