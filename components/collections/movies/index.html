@@ -211,6 +211,7 @@
 
 .link:focus {
     transition: color .15s ease-in;
+    outline: 1px dotted currentColor;
 }
 
 .w-50 {
@@ -229,11 +230,11 @@
     -moz-osx-font-smoothing: grayscale;
     backface-visibility: hidden;
     transform: translateZ(0);
-    transition: transform 0.25s ease-out;
+    transition: transform .25s ease-out;
 }
 
 .grow:hover, .grow:focus {
-    transform: scale(1.05);
+    transform: scale(15);
 }
 
 .grow:active {
@@ -254,7 +255,7 @@
     <h2 class="f5 mb3 mt4">Css stats for this component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Gzipped Size</dt>
-      <dd class="ml0 b f3 f2-ns">352<small class="f6">B</small>
+      <dd class="ml0 b f3 f2-ns">375<small class="f6">B</small>
       </dd>
     </dl>
     <dl class="dib mr4 mt0">
@@ -263,7 +264,7 @@
     </dl>
     <dl class="dib mt0">
       <dt class="db f6">Declarations</dt>
-      <dd class="ml0 b f3 f2-ns">18</dd>
+      <dd class="ml0 b f3 f2-ns">19</dd>
     </dl>
   </div>
   <div class="fl w-100">
