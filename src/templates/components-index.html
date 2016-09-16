@@ -11,9 +11,14 @@
 <body class="w-100 sans-serif">
   <%= header %>
 <main class="bg-white black-70 bt b--black-10">
+  <header class="ph3 ph5-ns pv2">
+    <% Object.keys(componentsForNav).map(function(category) { %>
+    <a class="f6 b dib mr3 mb3 pb1 link bb hover-blue black-70 capitalize" href="#<%= category%>"><%= category %></a>
+    <% }) %>
+  </header>
   <section class="pa4-ns">
     <% Object.keys(componentsForNav).map(function(category) { %>
-      <div class="ph3 ph4-ns">
+      <div class="ph3 ph4-ns" id="<%= category  %>">
         <h1 class="f6 b ttu tracked pb2 bb"><%= category %></h1>
       </div>
       <div class="ph3-ns cf mb4">
