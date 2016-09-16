@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>TACHYONS - Cards Profile Card</title>
+<title>TACHYONS - Forms Sign In</title>
 <meta name="description" content="Tachyons Component">
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -22,40 +22,62 @@
 </style>
 
 </head>
-<body class="w-100 sans-serif bg-near-white">
+<body class="w-100 sans-serif bg-white">
 <main>
-  <article class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
-  <div class="tc">
-    <img src="/img/avatar_1.jpg" class="br-100 h3 w3 dib" title="Kitty staring at you">
-    <h1 class="f4">Mimi Whitehouse</h1>
-    <hr class="mw3 bb bw1 b--black-10">
-  </div>
-  <p class="lh-copy measure center f6 black-70">
-    Quite affectionate and outgoing.
-    She loves to get chin scratches and will
-    roll around on the floor waiting for you give her more of them.
-  </p>
-</article>
+  <main class="pa4 black-80">
+  <form class="measure center">
+    <fieldset id="sign_up" class="ba b--transparent ph0 mh0">
+      <legend class="f4 fw6 ph0 mh0">Sign In</legend>
+      <div class="mt3">
+        <label class="db fw6 lh-copy f6" for="email-address">Email</label>
+        <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="email" name="email-address"  id="email-address">
+      </div>
+      <div class="mv3">
+        <label class="db fw6 lh-copy f6" for="password">Password</label>
+        <input class="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="password" name="password"  id="password">
+      </div>
+      <label class="pa0 ma0 lh-copy f6 pointer"><input type="checkbox"> Remember me</label>
+    </fieldset> 
+    <div class="">
+      <input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" type="submit" value="Sign in">
+    </div>
+    <div class="lh-copy mt3">
+      <a href="#0" class="f6 link dim black db">Sign up</a>
+      <a href="#0" class="f6 link dim black db">Forgot yor password?</a>
+    </div>
+  </form>
+</main>
 
   <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70 bg-white">
-  <h1 class="f4 f3-ns mt4">Profile Card</h1>
+  <h1 class="f4 f3-ns mt4">Sign In</h1>
 <div class="cf">
 <div class="fl w-100 w-75-ns pr0 pr2-ns">
 <h2 class="f5">HTML</h2>
 <p class="f5 black-70"></p>
 <pre class="pa3 ba br2 b--black-10 h5 bg-white-20" id="html">
-&lt;article class=&quot;mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10&quot;&gt;
-  &lt;div class=&quot;tc&quot;&gt;
-    &lt;img src=&quot;/img/avatar_1.jpg&quot; class=&quot;br-100 h3 w3 dib&quot; title=&quot;Kitty staring at you&quot;&gt;
-    &lt;h1 class=&quot;f4&quot;&gt;Mimi Whitehouse&lt;/h1&gt;
-    &lt;hr class=&quot;mw3 bb bw1 b--black-10&quot;&gt;
-  &lt;/div&gt;
-  &lt;p class=&quot;lh-copy measure center f6 black-70&quot;&gt;
-    Quite affectionate and outgoing.
-    She loves to get chin scratches and will
-    roll around on the floor waiting for you give her more of them.
-  &lt;/p&gt;
-&lt;/article&gt;
+&lt;main class=&quot;pa4 black-80&quot;&gt;
+  &lt;form class=&quot;measure center&quot;&gt;
+    &lt;fieldset id=&quot;sign_up&quot; class=&quot;ba b--transparent ph0 mh0&quot;&gt;
+      &lt;legend class=&quot;f4 fw6 ph0 mh0&quot;&gt;Sign In&lt;/legend&gt;
+      &lt;div class=&quot;mt3&quot;&gt;
+        &lt;label class=&quot;db fw6 lh-copy f6&quot; for=&quot;email-address&quot;&gt;Email&lt;/label&gt;
+        &lt;input class=&quot;pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100&quot; type=&quot;email&quot; name=&quot;email-address&quot;  id=&quot;email-address&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;mv3&quot;&gt;
+        &lt;label class=&quot;db fw6 lh-copy f6&quot; for=&quot;password&quot;&gt;Password&lt;/label&gt;
+        &lt;input class=&quot;b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100&quot; type=&quot;password&quot; name=&quot;password&quot;  id=&quot;password&quot;&gt;
+      &lt;/div&gt;
+      &lt;label class=&quot;pa0 ma0 lh-copy f6 pointer&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Remember me&lt;/label&gt;
+    &lt;/fieldset&gt; 
+    &lt;div class=&quot;&quot;&gt;
+      &lt;input class=&quot;b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib&quot; type=&quot;submit&quot; value=&quot;Sign in&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;lh-copy mt3&quot;&gt;
+      &lt;a href=&quot;#0&quot; class=&quot;f6 link dim black db&quot;&gt;Sign up&lt;/a&gt;
+      &lt;a href=&quot;#0&quot; class=&quot;f6 link dim black db&quot;&gt;Forgot yor password?&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+&lt;/main&gt;
 
 </pre>
 </div>
@@ -66,61 +88,131 @@
     border-width: 1px;
 }
 
-.bb {
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
+.b--black {
+    border-color: #000;
 }
 
-.b--black-10 {
-    border-color: rgba(0, 0, 0, .1);
+.b--transparent {
+    border-color: transparent;
 }
 
-.br3 {
-    border-radius: .5rem;
-}
-
-.br-100 {
-    border-radius: 100%;
-}
-
-.bw1 {
-    border-width: .125rem;
+.db {
+    display: block;
 }
 
 .dib {
     display: inline-block;
 }
 
-.h3 {
-    height: 4rem;
+.b {
+    font-weight: bold;
+}
+
+.fw6 {
+    font-weight: 600;
+}
+
+.input-reset {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+}
+
+.input-reset::-moz-focus-inner {
+    border: 0;
+    padding: 0;
 }
 
 .lh-copy {
     line-height: 1.5;
 }
 
-.mw3 {
-    max-width: 4rem;
+.link {
+    text-decoration: none;
+    transition: color .15s ease-in;
 }
 
-.mw5 {
-    max-width: 16rem;
+.link:link, .link:visited {
+    transition: color .15s ease-in;
 }
 
-.w3 {
-    width: 4rem;
+.link:hover {
+    transition: color .15s ease-in;
 }
 
-.black-70 {
-    color: rgba(0, 0, 0, .7);
+.link:active {
+    transition: color .15s ease-in;
 }
 
-.bg-white {
-    background-color: #fff;
+.link:focus {
+    transition: color .15s ease-in;
+    outline: 1px dotted currentColor;
 }
 
-.pa3 {
-    padding: 1rem;
+.w-100 {
+    width: 100%;
+}
+
+.black-80 {
+    color: rgba(0, 0, 0, .8);
+}
+
+.black {
+    color: #000;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.hover-white:hover {
+    color: #fff;
+}
+
+.hover-white:focus {
+    color: #fff;
+}
+
+.hover-bg-black:hover {
+    background-color: #000;
+}
+
+.hover-bg-black:focus {
+    background-color: #000;
+}
+
+.pa0 {
+    padding: 0;
+}
+
+.pa2 {
+    padding: .5rem;
+}
+
+.pa4 {
+    padding: 2rem;
+}
+
+.pv2 {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.ph0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.ph3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.ma0 {
+    margin: 0;
+}
+
+.mt3 {
+    margin-top: 1rem;
 }
 
 .mv3 {
@@ -128,8 +220,9 @@
     margin-bottom: 1rem;
 }
 
-.tc {
-    text-align: center;
+.mh0 {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .f4 {
@@ -149,10 +242,38 @@
     margin-left: auto;
 }
 
-@media screen and (min-width: 30em) {
-    .pa4-ns {
-        padding: 2rem;
-    }
+.dim {
+    opacity: 1;
+    transition: opacity .15s ease-in;
+}
+
+.dim:hover, .dim:focus {
+    opacity: .5;
+    transition: opacity .15s ease-in;
+}
+
+.dim:active {
+    opacity: .8;
+    transition: opacity .15s ease-out;
+}
+
+.grow {
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform .25s ease-out;
+}
+
+.grow:hover, .grow:focus {
+    transform: scale(15);
+}
+
+.grow:active {
+    transform: scale(.90);
+}
+
+.pointer:hover {
+    cursor: pointer;
 }
 
 </pre>
@@ -163,16 +284,16 @@
     <h2 class="f5 mb3 mt4">Css stats for this component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Gzipped Size</dt>
-      <dd class="ml0 b f3 f2-ns">379<small class="f6">B</small>
+      <dd class="ml0 b f3 f2-ns">704<small class="f6">B</small>
       </dd>
     </dl>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Selectors</dt>
-      <dd class="ml0 b f3 f2-ns">22</dd>
+      <dd class="ml0 b f3 f2-ns">47</dd>
     </dl>
     <dl class="dib mt0">
       <dt class="db f6">Declarations</dt>
-      <dd class="ml0 b f3 f2-ns">26</dd>
+      <dd class="ml0 b f3 f2-ns">61</dd>
     </dl>
   </div>
   <div class="fl w-100">
@@ -183,31 +304,31 @@
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-colors">tachyons-border-colors</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-radius">tachyons-border-radius</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-widths">tachyons-border-widths</a></li>
-  
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-display">tachyons-display</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-heights">tachyons-heights</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-font-weight">tachyons-font-weight</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-forms">tachyons-forms</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-line-height">tachyons-line-height</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-max-widths">tachyons-max-widths</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-links">tachyons-links</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-widths">tachyons-widths</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-skins">tachyons-skins</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-spacing">tachyons-spacing</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-skins-pseudo">tachyons-skins-pseudo</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-text-align">tachyons-text-align</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-spacing">tachyons-spacing</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-type-scale">tachyons-type-scale</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-typography">tachyons-typography</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-utilities">tachyons-utilities</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-hovers">tachyons-hovers</a></li>
   
     </ul>
   </div>
@@ -217,7 +338,7 @@
 
 
   <h4 class="mt5">Install via npm <small class="fw2 f6 db mt1">Only installs the needed tachyons-modules for this component</small></h4>
-  <code class="f6">npm i --save tachyons-borders tachyons-border-colors tachyons-border-radius tachyons-border-widths tachyons-display tachyons-heights tachyons-line-height tachyons-max-widths tachyons-widths tachyons-skins tachyons-spacing tachyons-text-align tachyons-type-scale tachyons-typography tachyons-utilities</code>
+  <code class="f6">npm i --save tachyons-borders tachyons-border-colors tachyons-display tachyons-font-weight tachyons-forms tachyons-line-height tachyons-links tachyons-widths tachyons-skins tachyons-skins-pseudo tachyons-spacing tachyons-type-scale tachyons-typography tachyons-utilities tachyons-hovers</code>
   <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 
