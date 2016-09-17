@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>
-      Tables / Elements / Docs / TACHYONS
+      Grid / Layout / Docs / TACHYONS
     </title>
     <meta name="description" content="css">
     <meta charset="utf-8">
@@ -25,7 +25,6 @@
 
   </head>
   <body class="w-100 sans-serif">
-
     <header class="w-100 pa3 ph5-ns bg-white">
   <div class="dt mw9 center w-100">
     <div class="dtc v-mid tl w-50">
@@ -54,115 +53,152 @@
 </header>
 
     <main class="bg-white black-70">
-      <article class="bt b--black-10 pv2 ph3 ph5-ns">
-        <h4 class="f4 mv0 fw6 dib mr4">tachyons-tables</h4>
-        <span class="f4 b dib pl0 ml0 mr4">v1.0.4</span>
-        <span class="f4 b dib pl0 ml0 mr4">142 B</span>
+      <article class="bt b--black-10 pa3 ph5-ns">
+        <h4 class="f4 mv0 fw6 dib mr4">Basic Grid</h4>
         <div>
-          <dl class="dib mr4 mt0">
-            <dt class="f6 db">Declarations </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b">6</dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Selectors </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b">4</dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Max. Specificity Score </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b">20</dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Size of Avg. Rule </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b">1.5</dd>
-          </dl>
+          <p class="measure f5 f4-ns  lh-copy">
+            You can combine dislay, float, padding, and widths to contstruct a
+            wide variedy of grids.  Here is a basic example of some options for
+            constructing a simple grid.
+          </p>
         </div>
-        <p class="measure f4 f3-ns lh-copy">
-          Tachyons has some basic utilities for styling forms that are easy to customize and extend.
-        </p>
       </article>
       <div class="ph3 ph5-ns pt4 pb5">
-        <h2 class="f3 bold">Examples</h2>
-<h4 class="mb4">Striped - Light Gray</h4>
-<table class="collapse ba br2 b--black-10 pv2 ph3">
-  <tr class="striped--light-gray "><th class="pv2 ph3 tl f6 fw6 ttu">Name</th><th class="tr f6 ttu fw6 pv2 ph3">Rating</th></tr>
-  <tr class="striped--light-gray "><td class="pv2 ph3">Jurassic Park</td><td class="pv2 ph3">5 stars</td></tr>
-  <tr class="striped--light-gray "><td class="pv2 ph3">Back to the Future</td><td class="pv2 ph3">5 stars</td></tr>
-  <tr class="striped--light-gray "><td class="pv2 ph3">Primer</td><td class="pv2 ph3">5 stars</td></tr>
-  <tr class="striped--light-gray "><td class="pv2 ph3">Sunshine</td><td class="pv2 ph3">5 stars</td></tr>
-  <tr class="striped--light-gray "><td class="pv2 ph3">Moon</td><td class="pv2 ph3">5 stars</td></tr>
-</table>
-<h4 class="mt5">Striped - Near white</h4>
-<table class="collapse ba br2 b--black-10 pv2 ph3 mt4">
-  <tr class="striped--near-white "><th class="pv2 ph3 tl f6 fw6 ttu">Name</th><th class="tr f6 ttu fw6 pv2 ph3">Rating</th></tr>
-  <tr class="striped--near-white "><td class="pv2 ph3">Jurassic Park</td><td class="pv2 ph3">5 stars</td></tr>
-  <tr class="striped--near-white "><td class="pv2 ph3">Back to the Future</td><td class="pv2 ph3">5 stars</td></tr>
-  <tr class="striped--near-white "><td class="pv2 ph3">Primer</td><td class="pv2 ph3">5 stars</td></tr>
-  <tr class="striped--near-white "><td class="pv2 ph3">Sunshine</td><td class="pv2 ph3">5 stars</td></tr>
-  <tr class="striped--near-white "><td class="pv2 ph3">Moon</td><td class="pv2 ph3">5 stars</td></tr>
-</table>
-
-        <div class="mt5 cf">
-          <div class="dib mr4">
-            <h1 class="f4 ttu tracked fw6">Previous</h1>
-            <a href="/docs/elements/forms/" class="link fw6 blue dim">Forms</a>
-          </div>
-          <div class="dib">
-            <h1 class="f4 ttu tracked fw6">Next</h1>
-            <a href="/docs/typography/scale/" class="link fw6 blue dim">Type Scale</a>
+        <h2 class="f3 b">Example</h2>
+      </div>
+      <section class="cf w-100 pv3 f6 ph3 ph4-ns">
+        <div class="mw9 center ph3-ns">
+          <div class="ph2-ns">
+            <div class="fl w-100 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-100 pa2</code></div>
+            </div>
+            <div class="fl w-90 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-90 pa2</code></div>
+            </div>
+            <div class="fl w-10 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-10 pa2</code></div>
+            </div>
+            <div class="fl w-80 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-80 pa2</code></div>
+            </div>
+            <div class="fl w-20 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-20 pa2</code></div>
+            </div>
+            <div class="fl w-75 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-75 pa2</code></div>
+            </div>
+            <div class="fl w-25 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-25 pa2</code></div>
+            </div>
+            <div class="fl w-70 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-70 pa2</code></div>
+            </div>
+            <div class="fl w-30 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-30 pa2</code></div>
+            </div>
+            <div class="fl w-60 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-60 pa2</code></div>
+            </div>
+            <div class="fl w-40 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-40 pa2</code></div>
+            </div>
+            <div class="fl w-50 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-50 pa2</code></div>
+            </div>
+            <div class="fl w-50 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-50 pa2</code></div>
+            </div>
+            <div class="fl w-third pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-third pa2</code></div>
+            </div>
+            <div class="fl w-third pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-third pa2</code></div>
+            </div>
+            <div class="fl w-third pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-third pa2</code></div>
+            </div>
+            <div class="fl w-third pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-third pa2</code></div>
+            </div>
+            <div class="fl w-two-thirds pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-two-third-s pa2</code></div>
+            </div>
+            <div class="fl w-25 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-25 pa2</code></div>
+            </div>
+            <div class="fl w-25 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-25 pa2</code></div>
+            </div>
+            <div class="fl w-25 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-25 pa2</code></div>
+            </div>
+            <div class="fl w-25 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-25 pa2</code></div>
+            </div>
+            <div class="fl w-20 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-20 pa2</code></div>
+            </div>
+            <div class="fl w-20 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-20 pa2</code></div>
+            </div>
+            <div class="fl w-20 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-20 pa2</code></div>
+            </div>
+            <div class="fl w-20 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-20 pa2</code></div>
+            </div>
+            <div class="fl w-20 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-20 pa2</code></div>
+            </div>
+            <div class="fl w-10 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-20 pa2</code></div>
+            </div>
+            <div class="fl w-10 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-10 pa2</code></div>
+            </div>
+            <div class="fl w-10 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-10 pa2</code></div>
+            </div>
+            <div class="fl w-10 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-10 pa2</code></div>
+            </div>
+            <div class="fl w-10 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-10 pa2</code></div>
+            </div>
+            <div class="fl w-10 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-10 pa2</code></div>
+            </div>
+            <div class="fl w-10 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-10 pa2</code></div>
+            </div>
+            <div class="fl w-10 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-10 pa2</code></div>
+            </div>
+            <div class="fl w-10 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-10 pa2</code></div>
+            </div>
+            <div class="fl w-10 pa2">
+              <div class="outline bg-white tc pv4"><code>fl w-10 pa2</code></div>
+            </div>
           </div>
         </div>
-        <div class="mt5 dn">
-          <h4 class="f6 f5-ns fw6">Reference</h4>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/%3Ahover" class="link db fw6 blue dim">MDN - Hover</a>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/%3Afocus" class="link db fw6 blue dim">MDN - Focus</a>
+      </section>
+      <div class="mt5 cf">
+        <div class="dib mr4">
+          <h1 class="f6 fw6">Previous</h1>
+          <a href="/docs/debug-grid/" class="link fw6 blue dim">Debug with a Grid</a>
+        </div>
+        <div class="dib">
+          <h1 class="f6 fw6">Next</h1>
+          <a href="/docs/layout/background-size/" class="link fw6 blue dim">Background Size</a>
         </div>
       </div>
-      <section class="bg-white black-70 pt4 pb5 overflow-container">
-        <header class="ph3 ph5-ns pt4">
-          <kbd>src/_tables.css</kbd>
-        </header>
-<pre class="ph3 ph5-ns">
-<code class="code" style="font-size: .75rem;">
-/*
-
-  TABLES
-  Docs: http://tachyons.io/docs/elements/tables/
-
-*/
-
-.collapse {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-.striped--light-silver:nth-child(odd) {
-  background-color: var(--light-silver);
-}
-
-.striped--moon-gray:nth-child(odd) {
-  background-color: var(--moon-gray);
-}
-
-.striped--light-gray:nth-child(odd) {
-  background-color: var(--light-gray);
-}
-
-.striped--near-white:nth-child(odd) {
-  background-color: var(--near-white);
-}
-
-.stripe-light:nth-child(odd) {
-  background-color: var(--white-10);
-}
-
-.stripe-dark:nth-child(odd) {
-  background-color: var(--black-10);
-}
-
-</code>
-</pre>
-      </section>
-      <div class="ph3 ph5-ns pb5">
+      <div class="mt5">
+        <h4 class="f6 f5-ns fw6">Reference</h4>
+        <a href="https://developer.mozilla.org/en/docs/Web/css/width" class="link fw6 blue dim">MDN - Width property</a>
+      </div>
+    </div>
+    <div class="ph3 ph5-ns pb5">
     <article  class="pb3">
       <h2 class="f6 fw7 ttu tracked">Overview of Tachyons</h2>
       <a class="f5 fw4 dim link blue db pv1" href="/docs/table-of-styles/" title="View a list of styles">Table of Styles</a>
@@ -220,8 +256,8 @@
     </section>
 </div>
 
-    </main>
-    <footer class="bg-washed-blue black-70 ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+  </main>
+  <footer class="bg-washed-blue black-70 ph3 ph5-ns pv5 pv6-ns bt b--black-10">
   <div class="mw9 center">
   <div class="mb4">
     <a class="black-70 link dim b dib mr3" href="/" title="Home">
@@ -271,7 +307,7 @@
 </div>
 </footer>
 
-        <script>
+      <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -282,5 +318,5 @@ ga('send', 'pageview');
 
     </script>
 
-  </body>
+</body>
 </html>
