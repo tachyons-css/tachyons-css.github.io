@@ -10,26 +10,22 @@
 </head>
 <body class="w-100 sans-serif">
   <%= header %>
-<main class="bg-white black-70 bt b--black-10">
-  <header class="ph3 ph5-ns pt3">
+<main class="bg-white black-70">
+  <header class="ph3 ph5-ns pt3 bb bt b--black-10">
     <% Object.keys(componentsForNav).map(function(category) { %>
-    <a class="f6 b dib mr3 mb3 pb1 link bb hover-blue black-70 capitalize" href="#<%= category%>"><%= category %></a>
+    <a class="f6 b dib mr3 mb3 pb1 link hover-blue black-70" href="#<%= category%>"><%= category %></a>
     <% }) %>
   </header>
   <section class="pa4-ns">
     <% Object.keys(componentsForNav).map(function(category) { %>
       <div class="ph3 ph4-ns" id="<%= category  %>">
-        <h1 class="f6 b ttu tracked pb2 bb"><%= category %></h1>
+        <h1 class="f6 b ttu tracked pb2 bb b--black-20 black-50"><%= category %></h1>
       </div>
-      <div class="ph3-ns cf mb4">
+      <div class="ph3-ns mb5">
       <% componentsForNav[category].map(function(componentForNav) { %>
-      <div class="fl w-50 w-25-l pa3">
-        <div class="h4 w-100 outline overflow-hidden">
-          <a class="f5 f4-l b pointer db h-100 pa3 bg-white black-70 hover-bg-black hover-white border-box no-underline" href="<%= componentForNav.href %>" title="<%= componentForNav.name %>">
+    <a class="f5 b pointer dib ph3 pv2 bg-white black-70 link underline-hover border-box" href="<%= componentForNav.href %>" title="<%= componentForNav.name %>">
 <%= componentForNav.name %>
           </a>
-        </div>
-      </div>
       <% }) %>
     </div>
     <% }) %>
