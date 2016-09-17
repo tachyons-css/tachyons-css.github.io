@@ -1,6 +1,6 @@
 {
   "name": "tachyons-css.github.io",
-  "version": "4.4.1",
+  "version": "4.5.0",
   "description": "Documentation for Tachyons -- a performant, mobile-first, and 100% responsive modular css framework.",
   "main": "index.html",
   "scripts": {
@@ -110,7 +110,7 @@
     "postcss-select": "^2.0.0",
     "remove-html-extension": "0.0.1",
     "s3": "^4.4.0",
-    "tachyons": "^4.0.0-beta.27",
+    "tachyons": "^4.5.0",
     "tachyons-cli": "^1.0.4",
     "tachyons-debug-grid": "^1.0.0",
     "tachyons-flexbox": "^2.0.1",
