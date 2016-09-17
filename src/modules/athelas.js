@@ -12,7 +12,7 @@ var head = fs.readFileSync('./src/templates/head.html', 'utf8')
 var googleAnalytics = fs.readFileSync('./src/templates/ga.html', 'utf8')
 
 
-var template = fs.readFileSync('./src/templates/docs/avenir/index.html', 'utf8')
+var template = fs.readFileSync('./src/templates/docs/athelas/index.html', 'utf8')
 var tpl = _.template(template)
 var html = tpl({
   navDocs: navDocs,
@@ -22,4 +22,4 @@ var html = tpl({
   siteHeader: siteHeader
 })
 
-fs.writeFileSync('./docs/typography/font-family/avenir/index.html', html)
+fs.writeFileSync('./docs/typography/font-family/athelas/index.html', html)
