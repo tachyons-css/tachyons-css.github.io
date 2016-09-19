@@ -9,6 +9,7 @@
     "components:watch": "watch 'node build.js' src/components/*",
     "home:watch": "watch 'node build-home.js' src/templates/",
     "build:watch": "watch 'node build.js' src/templates/",
+    "docs:links": "watch 'node src/modules/links.js' src/templates/docs/links/",
     "doc": "bash script.sh",
     "doc:watch": "watch 'npm run doc' src/templates/docs",
     "doc:lib": "watch 'npm run doc' lib",
