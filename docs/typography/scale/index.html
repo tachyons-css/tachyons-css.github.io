@@ -53,28 +53,24 @@
 </header>
 
     <main class="bg-white black-70">
-      <article class="bt b--black-10 pa3 ph5-ns">
-        <h4 class="f4 mv0 fw6 dib mr4">tachyons-type-scale</h4>
-        <span class="f4 b dib pl0 ml0 mr4">v6.0.1</span>
-        <span class="f4 b dib pl0 ml0 mr4">242 B</span>
-        <div>
-          <dl class="dib mr4 mt0">
-            <dt class="f6 db">Declarations </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b">32</dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Selectors </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b">40</dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Max. Specificity Score </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b">10</dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Size of Avg. Rule </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b">1</dd>
-          </dl>
+      <header class="ph3 ph5-ns w-100 pv3 mb4 mb5-ns bt bb b--black-10 overflow-auto">
+        <div class="nowrap mw9 center">
+        <a class="f6 fw6 dim link black pb2-ns mr2 mr3-m mr4-l" href="#0" title="Type">Type Scale</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/measure/" title="Measure">Measure</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/line-height" title="Line Height">Line Height / Leading</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/tracking" title="Tracking">Tracking</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/font-weight" title="Font Weights">Font Weights</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/font-style" title="Font Families">Font Style</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/vertical-align" title="Font Families">Vertical Align</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/text-align" title="Text Align">Text Align</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/text-transform" title="Text Transform">Text Transform</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/text-decoration" title="Text Decoration">Text Decoration</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/white-space" title="White Space">White Space</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/font-family" title="Font Families">Font Families</a>
         </div>
+      </header>
+      <article class="ph3 ph5-ns">
+        <h3 class="f6 ttu tracked mt0">Type Scale</h3>
         <p class="measure f4 f3-ns lh-copy">
           Often times, websites devote a non-trivial amount of css to setting
           font-size. They declare an unnecessary amount of different
@@ -92,13 +88,13 @@
         </p>
       </article>
       <div class="ph3 ph5-ns pt4 pb5">
-        <h2 class="f3 b mb4">Scale</h2>
-        <blockquote class="f5 gray measure lh-copy mh0 mb4">
+        <blockquote class="f5 gray measure lh-copy mh0 mb4 mb5-ns">
           <p class="i">
             "The simplest scale is a single note, and sticking with a single note draws more attention to other parameters, such as rhythm and inflection... In the sixteenth century, a series of common sizes developed among European typographers, and the series survived with little change and few additions for 400 years... This is the typographic equivalent of the diatonic scale."
           </p>
           <p class="dark-gray f6">Robert Bringhurst - <b>The Elements of Typographic Style</b></p>
         </blockquote>
+        <h2 class="f4 b mb4">Font sizes</h2>
         <div class="w-100 overflow-x-auto">
           <table>
             <tr>
@@ -123,48 +119,56 @@
             </tr>
           </table>
         </div>
-        <h2 class="f3 b mb5 mt5 mt6-ns">Examples</h2>
-        <code class="f6 gray">.f-headline 6rem</code>
+        <h2 class="f4 b mb5 mt5 mt6-ns">Examples</h2>
+<code class="f6 pre mb3 db">
+&lt;h1 class="f-headline lh-solid"&gt;Title&lt;/h1&gt;
+</code>
         <p class="f-headline b lh-solid oh measure mt0 mb5 nowrap ws-normal-ns overflow-hidden word-wrap">
-          Jelly-like above the high wire, six quaking pachyderms kept the climax
-          of the extravaganza in a dazzling state of flux.
+          A modular scale, like a musical scale, is a prearranged set of harmonious proportions.
         </p>
 
-        <code class="f6 db gray">.f-subheadline 5rem</code>
-        <p class="f-subheadline lh-solid b measure oh mt0 mb4 mb5-ns word-wrap">
-          Ebenezer unexpectedly bagged two tranquil aardvarks with his jiffy vacuum cleaner.
+<code class="f6 pre mb3 db">
+&lt;h1 class="f-subheadline lh-title"&gt;Title&lt;/h1&gt;
+</code>
+        <p class="f-subheadline lh-title b measure oh mt0 mb4 mb5-ns word-wrap">
+          A modular scale, like a musical scale, is a prearranged set of harmonious proportions.
         </p>
-        <code class="f6 db gray">.f1 3rem</code>
-        <p class="f1 b lh-solid mt0 mb4 mb5-ns measure word-wrap">
-          The public was amazed to view the quickness and dexterity of the juggler.
+<code class="f6 pre mb3 db">
+&lt;h1 class="f1 lh-title"&gt;Title&lt;/h1&gt;
+</code>
+        <p class="f1 b lh-title mt0 mb4 mb5-ns measure word-wrap">
+          A modular scale, like a musical scale, is a prearranged set of harmonious proportions.
         </p>
-        <code class="f6 db gray">.f2 2.25rem</code>
+<code class="f6 pre mb3 db">
+&lt;h1 class="f2 lh-copy"&gt;Title&lt;/h1&gt;
+</code>
         <p class="f2 lh-copy mt0 mb4 mb5-ns measure">
-          A quart jar of oil mixed with zinc oxide makes a very bright paint.
-          How razorback-jumping frogs can level six piqued gymnasts.
+          A modular scale, like a musical scale, is a prearranged set of harmonious proportions.
         </p>
-        <code class="f6 db gray">.f3 1.5rem</code>
+<code class="f6 pre mb3 db">
+&lt;h1 class="f3 lh-copy"&gt;Title&lt;/h1&gt;
+</code>
         <p class="f3 lh-copy mt0 mb4 mb5-ns measure">
-          The July sun caused a fragment of black pine wax to ooze on the velvet quilt.
-          We quickly seized the black axle and just saved it from going past him.
+          A modular scale, like a musical scale, is a prearranged set of harmonious proportions.
         </p>
+<code class="f6 pre mb3 db">
+&lt;h1 class="f4 lh-copy"&gt;Title&lt;/h1&gt;
+</code>
 
-        <code class="f6 db gray">.f4 1.25rem</code>
         <p class="f4 lh-copy mt0 mb4 mb5-ns measure">
-          We promptly judged antique ivory buckles for the next prize. Heavy
-          boxes perform quick waltzes and jigs.  Blowzy night-frumps vex'd Jack Q
+          A modular scale, like a musical scale, is a prearranged set of harmonious proportions.
         </p>
-        <code class="f6 db gray">.f5 1rem</code>
+<code class="f6 pre mb3 db">
+&lt;h1 class="f5 lh-copy"&gt;Title&lt;/h1&gt;
+</code>
         <p class="f5 lh-copy mt0 mb4 mb5-ns measure">
-          Jelly-like above the high wire, six quaking pachyderms kept the climax
-          of the extravaganza in a dazzling state of flux.
-          Jinxed wizards pluck ivy from the big quilt.
+          A modular scale, like a musical scale, is a prearranged set of harmonious proportions.
         </p>
-        <code class="f6 db gray">.f6 .875rem</code>
+<code class="f6 pre mb3 db">
+&lt;h1 class="f6 lh-copy"&gt;Title&lt;/h1&gt;
+</code>
         <p class="f6 lh-copy mt0 measure word-wrap">
-          Forsaking monastic tradition, twelve jovial friars gave up their vocation for a
-          questionable existence on the flying trapeze.  Amazingly few discotheques
-          provide jukeboxes.
+          A modular scale, like a musical scale, is a prearranged set of harmonious proportions.
         </p>
         <div class="mt5 cf">
           <div class="dib mr4">
@@ -181,9 +185,31 @@
           <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" class="link fw6 blue dim">MDN - Font-size</a>
         </div>
       </div>
-      <section class="bg-white black-70 pt4 pb5 overflow-container">
+      <section class="bg-white black-70 pv4 mb4 bt bb b--black-40 overflow-container">
         <header class="ph3 ph5-ns pt4">
-          <kbd>src/_type-scale.css</kbd>
+        <h4 class="f4 mv0 fw6 dib mr4">tachyons-type-scale</h4>
+        <span class="f4 b dib pl0 ml0 mr4">v6.0.1</span>
+        <span class="f4 b dib pl0 ml0 mr4">242 B</span>
+        <div>
+          <dl class="dib mr4 mt0">
+            <dt class="f6 db">Declarations </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b">32</dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Selectors </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b">40</dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Max. Specificity Score </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b">10</dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Size of Avg. Rule </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b">1</dd>
+          </dl>
+        </div>
+        <h4 class="f6">Source code</h4>
+        <kbd>src/_type-scale.css</kbd>
         </header>
 <pre class="ph3 ph5-ns">
 <code class="code" style="font-size: .75rem;">
