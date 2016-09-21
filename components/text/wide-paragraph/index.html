@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>TACHYONS - Text Small Narrow Paragraph</title>
+<title>TACHYONS - Text Wide Paragraph</title>
 <meta name="description" content="Tachyons Component">
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -24,30 +24,30 @@
 </head>
 <body class="w-100 sans-serif bg-white">
 <main>
-  <main class="pa3 pa5-ns">
-   <p class="f6 lh-copy measure-narrow">
+  <div class="pa3 pa5-ns">
+   <p class="f5 lh-copy measure-wide">
      Typography has one plain duty before it and that is to convey information
      in writing. No argument or consideration can absolve typography from this
      duty. A printed work which cannot be read becomes a product without
      purpose.
    </p>
-</main>
+</div>
 
   <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70 bg-white">
-  <h1 class="f4 f3-ns mt4">Small Narrow Paragraph</h1>
+  <h1 class="f4 f3-ns mt4">Wide Paragraph</h1>
 <div class="cf">
 <div class="fl w-100 w-75-ns pr0 pr2-ns">
 <h2 class="f5">HTML</h2>
 <p class="f5 black-70"></p>
 <pre class="pa3 ba br2 b--black-10 h5 bg-white-20" id="html">
-&lt;main class=&quot;pa3 pa5-ns&quot;&gt;
-   &lt;p class=&quot;f6 lh-copy measure-narrow&quot;&gt;
+&lt;div class=&quot;pa3 pa5-ns&quot;&gt;
+   &lt;p class=&quot;f5 lh-copy measure-wide&quot;&gt;
      Typography has one plain duty before it and that is to convey information
      in writing. No argument or consideration can absolve typography from this
      duty. A printed work which cannot be read becomes a product without
      purpose.
    &lt;/p&gt;
-&lt;/main&gt;
+&lt;/div&gt;
 
 </pre>
 </div>
@@ -61,12 +61,12 @@
     padding: 1rem;
 }
 
-.f6 {
-    font-size: .875rem;
+.f5 {
+    font-size: 1rem;
 }
 
-.measure-narrow {
-    max-width: 20em;
+.measure-wide {
+    max-width: 34em;
 }
 
 @media screen and (min-width: 30em) {
@@ -83,7 +83,7 @@
     <h2 class="f5 mb3 mt4">Css stats for this component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Gzipped Size</dt>
-      <dd class="ml0 b f3 f2-ns">164<small class="f6">B</small>
+      <dd class="ml0 b f3 f2-ns">156<small class="f6">B</small>
       </dd>
     </dl>
     <dl class="dib mr4 mt0">
