@@ -4,14 +4,69 @@
     <title>
       Text Align / Typography / Docs / TACHYONS
     </title>
-    <meta name="description" content="css">
+    <meta name="description" content="Documentation on how to adjust text-alignment with the Tachyons css framework.">
     <%= head  %>
   </head>
   <body class="w-100 sans-serif">
-
     <%= siteHeader %>
     <main class="bg-white black-70">
-      <article class="bt b--black-10 pa3 ph5-ns">
+      <header class="ph3 ph5-ns w-100 pv3 mb4 mb5-ns bt bb b--black-10 overflow-auto">
+        <div class="nowrap mw9 center">
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/scale/" title="Type">Type Scale</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/measure/" title="Measure">Measure</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/line-height/" title="Line Height">Line Height / Leading</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/tracking/" title="Tracking">Tracking</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/font-weight/" title="Font Weights">Font Weights</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/font-style/" title="Font style">Font Style</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/vertical-align/" title="Vertical Align">Vertical Align</a>
+        <a class="f6 fw6 dim link black pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/text-align/" title="Text Align">Text Align</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/text-transform" title="Text Transform">Text Transform</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/text-decoration" title="Text Decoration">Text Decoration</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/white-space" title="White Space">White Space</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/font-family" title="Font Families">Font Families</a>
+        </div>
+      </header>
+      <article class="pa3 ph5-ns">
+        <h3 class="f6 ttu tracked mt0">Text Align</h3>
+        <p class="measure f4 f3-ns lh-copy">
+          Designing for readability across infinite screen-sizes
+          often times requires setting elements to have different text-alignments across breakpoints.
+        </p>
+        <p class="measure f5 f4-ns lh-copy">
+          These are simple utilities for setting text-alignment to the left, right, or center of an element.
+        </p>
+      </article>
+      <div class="ph3 ph5-ns pt4 pb5">
+        <h3 class="f5 mb4 pb2 bb">Examples</h3>
+        <code class="f6">&lt;p class="tl"&gt;Aligned Left&lt;/p&gt;</code>
+        <p class="tl measure bg-black-10">
+          Aligned Left
+        </p>
+        <code class="f6">&lt;p class="tr"&gt;Aligned Right&lt;/p&gt;</code>
+        <p class="tr measure bg-black-10">
+          Aligned Right
+        </p>
+        <code class="f6">&lt;p class="tc"&gt;Aligned Center&lt;/p&gt;</code>
+        <p class="tc measure bg-black-10">
+          Aligned to the center
+        </p>
+        <div class="mt5 cf">
+          <div class="dib mr4">
+            <h4 class="f6 fw6">Previous</h4>
+            <a href="/docs/typography/vertical-align" class="link fw6 blue dim">Vertical Align</a>
+          </div>
+          <div class="dib">
+            <h4 class="f6 fw6">Next</h4>
+            <a href="/docs/typography/text-transform/" class="link fw6 blue dim">Text Transform</a>
+          </div>
+        </div>
+        <div class="mt5">
+          <h4 class="f6 fw6">Reference</h4>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align" class="link fw6 blue dim">MDN - Text Align</a>
+        </div>
+      </div>
+      <section class="bg-white bt bb b--black-40 black-70 pv4 mb5 overflow-container">
+      <header class="ph3 ph5-ns pt4">
         <h4 class="f4 mv0 fw6 dib mr4"><%= name %></h4>
         <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
         <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
@@ -33,45 +88,6 @@
             <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
           </dl>
         </div>
-        <p class="measure f4 f3-ns lh-copy">
-          Designing for readability across infinite screen-sizes
-          often times requires setting elements to have different text-alignments across breakpoints.
-        </p>
-        <p class="measure f5 f4-ns lh-copy">
-          These are simple utilities for setting text-alignment to the left, right, or center of an element.
-        </p>
-      </article>
-      <div class="ph3 ph5-ns pt4 pb5">
-        <h2 class="f3 b">Examples</h2>
-        <h3 class="f5 fw4 pt4 caps">Text Align Left</h3>
-        <p class="measure bg-black-10">
-          Aligned Left
-        </p>
-        <h3 class="f5 fw4 pt4 caps">Text Align Right</h3>
-        <p class="tr measure bg-black-10">
-          Aligned Right
-        </p>
-        <h3 class="f5 fw4 pt4 caps">Text Align Center</h3>
-        <p class="tc measure bg-black-10">
-          Aligned to the center
-        </p>
-        <div class="mt5 cf">
-          <div class="dib mr4">
-            <h4 class="f6 fw6">Previous</h4>
-            <a href="/docs/typography/vertical-align" class="link fw6 blue dim">Vertical Align</a>
-          </div>
-          <div class="dib">
-            <h4 class="f6 fw6">Next</h4>
-            <a href="/docs/typography/text-transform/" class="link fw6 blue dim">Text Transform</a>
-          </div>
-        </div>
-        <div class="mt5">
-          <h4 class="f6 fw6">Reference</h4>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align" class="link fw6 blue dim">MDN - Text Align</a>
-        </div>
-      </div>
-      <section class="bg-white black-70 pt4 pb5 overflow-container">
-      <header class="ph3 ph5-ns pt4">
         <kbd>src/_text-align.css</kbd>
       </header>
 <pre class="ph3 ph5-ns">

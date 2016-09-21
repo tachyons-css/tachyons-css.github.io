@@ -4,182 +4,222 @@
     <title>
        Measure / Typography / Docs / TACHYONS
     </title>
-    <meta name="description" content="Functional css for Humans">
+    <meta name="description" content="Documentation for the three ways you can set measure for better typography with Tachyons.">
     <%= head %>
   </head>
-  <body class="w-100">
+  <body class="w-100 sans-serif">
     <%= siteHeader %>
     <main class="bg-white black-70">
-      <article class="bt b--black-10 pa3 ph5-ns">
-        <h4 class="f4 mv0 fw6 dib mr4"><%= name %></h4>
-        <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
-        <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
-        <div>
-          <dl class="dib mr4 mt0">
-            <dt class="f6 db">Declarations </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.declarations.total %></dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Selectors </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.total %></dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Max. Specificity Score </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.specificity.max %></dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Size of Avg. Rule </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
-          </dl>
+      <header class="ph3 ph5-ns w-100 pv3 mb4 mb5-ns bt bb b--black-10 overflow-auto">
+        <div class="nowrap mw9 center">
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/scale/" title="Type">Type Scale</a>
+        <a class="f6 fw6 dim link black pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/measure/" title="Measure">Measure</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/line-height/" title="Line Height">Line Height / Leading</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/tracking/" title="Tracking">Tracking</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/font-weight/" title="Font Weights">Font Weights</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/font-style/" title="Font Families">Font Style</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/vertical-align/" title="Font Families">Vertical Align</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/text-align/" title="Text Align">Text Align</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/text-transform" title="Text Transform">Text Transform</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/text-decoration" title="Text Decoration">Text Decoration</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/white-space" title="White Space">White Space</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/font-family" title="Font Families">Font Families</a>
         </div>
-        <p class="measure f4 f3-ns lh-copy">
-          Measure refers to the length of a line of text.
+      </header>
+      <article class="pa3 ph5-ns">
+        <h3 class="f6 ttu tracked mt0">Measure</h3>
+        <p class="measure f4 lh-copy">
+          Measure refers to the length of a line of text. It is one of the most important aspects
+          of readability.
         </p>
-        <p class="measure f5 f4-ns lh-copy">
+        <p class="measure f5 f3-ns lh-copy athelas pl4-l bn bl-l bw2 b--black-40">
           "Anything from 45 to 75 characters is widely regarded as a satisfactory length of line for a single-column page...the 66-character line (counting both letters and spaces) is widely regarded as ideal. For multiple-column work, a better average is 40-50 characters."
-          <span class="db f5"><b>Robert Bringhurst</b> - <i>The Elements of Typographic Style</i></span>
+          <span class="db f5 mt4">Robert Bringhurst - <i>The Elements of Typographic Style</i></span>
         </p>
-        <p class="measure f5 f4-ns lh-copy">
-          Tachyons provides two classes for setting measure. For line lengths
-          around 66 characters use <code>.measure</code>, and for line-lengths around 45
-          characters use <code>.measure-narrow</code>
-        </p>
+        <p class="measure f5 lh-copy mt4 mt5-ns mb2">
+          Tachyons provides 3 classes for setting measure.
+        </p> 
+        <code class="pre f6 lh-copy mt0">
+.measure = line lengths ~66 characters
+.measure-narrow = line lengths ~45 characters
+.measure-wide = line lengths ~80 characters
+        </code>
       </article>
       <div class="ph3 ph5-ns">
-        <h1 class="f5 fw4 sans-serif pt5 ttu black"><b>6rem/96px</b> at <b>30em</b></h1>
-        <div class="w-100 overflow-x-scroll">
+        <h3 class="f5 mb4 pb2 bb">Examples</h3>
+        <h4 class="f6 ttu tracked fw6  mb0">6rem/96px at 30em</h4>
+<code class="pre f6">
+&lt;h3 class="f-headline measure"&gt;Title&lt;/h3&gt;
+</code>
+        <div class="w-100 overflow-auto">
           <p class="f-headline measure lh-title mt4">
-            Lorem ipsum <span class="dn di-ns">dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</span>
+            Designers create <span class="dn di-ns">hierarchy and contrast by playing with the scale of letterforms.</span>
           </p>
         </div>
-        <h1 class="f5 fw4 sans-serif pt5 ttu black"><b>5rem/80px</b> at <b>30em</b></h1>
+        <h4 class="f6 ttu tracked fw6 pt5 bt mt2 mb0">5rem/80px at 30em</h4>
+<code class="pre f6 mv0">
+&lt;h3 class="f-subheadline measure"&gt;Title&lt;/h3&gt;
+</code>
         <div class="w-100 overflow-x-scroll">
           <p class="f-subheadline measure lh-title mt4">
-            Lorem ipsum <span class="dn di=ns">dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</span>
+            Designers create <span class="dn di-ns">hierarchy and contrast by playing with the scale of letterforms.</span>
           </p>
         </div>
-        <h1 class="f5 fw4 sans-serif pt5 bt b--black-10 ttu black"> <b>3rem(48px)</b> at <b>30em</b></h1>
+        <h4 class="f6 ttu tracked fw6 pt5 bt mt2 mb0"> 3rem(48px) at 30em</h4>
+<code class="pre f6 mv0">
+&lt;h3 class="f1 measure"&gt;Title&lt;/h3&gt;
+</code>
         <div class="pb4 w-100 overflow-x-scroll">
           <p class="f1 measure lh-title mt4">
-            Lorem ipsum dolor sit <span class="dn di-ns">amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-            vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit amet.</span>
+            Designers create hierarchy and contrast <span class="dn di-ns">by playing with the scale of letterforms. Changes in scale help create visual contrast, movement, and depth as well as express hierarchies of importance.</span>
           </p>
         </div>
-        <h1 class="f6 pt5 mb4 bt b--black-10 ttu black"><b>2.25rem (36px)</b> at <b>30em</b></h1>
+        <h4 class="f6 ttu tracked fw6 pt5 bt mt2 mb0">2.25rem (36px) at 30em</h4>
+<code class="pre f6 mv0">
+&lt;h3 class="f2 measure"&gt;Title&lt;/h3&gt;
+</code>
         <div class="cf w-100 pb4">
           <div class="fl w-100">
             <p class="f2 measure lh-copy">
-              Climb leg sit by the fire. Scream at teh bath intrigued by the
-              shower, yet spot something, big eyes, big eyes, crouch, shake butt, prepare to
-              pounce yet swat at dog. <span class="dn di-ns">Then cats take over the world loves cheeseburgers or
-              cough
-                            claws in your leg. Hide from vacuum cleaner intently sniff hand
-              knock dish off table head butt cant eat out of my own dish chew foot, and stick
-              butt in face.</span>
+            Designers create hierarchy and contrast <span class="dn di-ns">by playing with the scale of letterforms. Changes in scale help create visual contrast, movement, and depth as well as express hierarchies of importance.</span>
             </p>
           </div>
         </div>
-        <h1 class="f6 fw4 sans-serif pt5 bt b--black-10 ttu black mb4"><b>1.5rem (24px)</b> at <b>30em</b></h1>
+        <h4 class="f6 ttu tracked fw6 pt5 bt mt2 mb0">1.5rem (24px) at 34em</h4>
+<code class="pre f6 mv0">
+&lt;h3 class="f3 measure-wide"&gt;Title&lt;/h3&gt;
+</code>
+            <p class="f3 measure-wide lh-copy">
+              Designers create hierarchy and contrast <span class="dn di-ns">by playing with the scale of letterforms. Changes in scale help create visual contrast, movement, and depth as well as express hierarchies of importance.</span>
+            </p>
+        <h4 class="f6 ttu tracked fw6 mt2 mb0">1.5rem (24px) at 30em</h4>
+<code class="pre f6 mv0">
+&lt;h3 class="f3 measure"&gt;Title&lt;/h3&gt;
+</code>
         <div class="cf w-100 pb4">
           <div class="fl w-100 pr0 pr4-l">
             <p class="f3 measure lh-copy">
-              <b>Lorem ipsum dolor</b> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-              tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-              vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-              no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              Designers create hierarchy and contrast <span class="dn di-ns">by playing with the scale of letterforms. Changes in scale help create visual contrast, movement, and depth as well as express hierarchies of importance.</span>
             </p>
           </div>
-          <h1 class="f6 fw4 sans-serif pt4 ttu black mb2"><b>1.5rem (24px)</b> at <b>20em</b></h1>
+          <h4 class="f6 ttu tracked fw6 pt5 bbt mt2 mb0">1.5rem (24px) at 20em</h4>
+<code class="pre f6 mv0">
+&lt;h3 class="f3 measure-narrow"&gt;Title&lt;/h3&gt;
+</code>
            <div class="dib f4 measure-narrow mr4">
               <p class="f3 lh-title">
-                <b>Lorem ipsum dolor</b> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-                vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            Designers create hierarchy and contrast. Changes in scale help create visual contrast, movement, and depth as well as express hierarchies of importance.
               </p>
            </div>
            <div class="dib f4 measure-narrow">
               <p class="f3 lh-title">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-                vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            Designers create hierarchy and contrast. Changes in scale help create visual contrast, movement, and depth as well as express hierarchies of importance.
               </p>
            </div>
         </div>
-        <h1 class="f6 fw4 sans-serif pt5 mb4 bt b--black-10 ttu black"><b>1.25rem/20px</b> at <b>30em</b></h1>
+        <h4 class="f6 ttu tracked fw6 pt5 bt mt2 mb0">1.25rem/20px at 34em</h4>
+<code class="pre f6 mv0">
+&lt;h3 class="f4 measure-wide"&gt;Title&lt;/h3&gt;
+</code>
+          <p class="f4 measure-wide lh-copy">
+            Designers create hierarchy and contrast. Changes in scale help create visual contrast, movement, and depth as well as express hierarchies of importance.
+          </p>
+        <h4 class="f6 ttu tracked fw6 pt4 mt2 mb0">1.25rem/20px at 30em</h4>
+<code class="pre f6 mv0">
+&lt;h3 class="f4 measure"&gt;Title&lt;/h3&gt;
+</code>
         <div class="pb4">
           <p class="f4 measure lh-copy">
+            Designers create hierarchy and contrast. Changes in scale help create visual contrast, movement, and depth as well as express hierarchies of importance.
+          </p>
+          <h4 class="f6 ttu tracked fw6 mt4 mb0">1.25rem (20px) at 20em</h4>
+<code class="pre f6 mv0">
+&lt;h3 class="f4 measure-narrow"&gt;Title&lt;/h3&gt;
+</code>
+           <div class="dib f4 measure-narrow mr5 v-top">
+              <p class="f4 lh-copy">
+                Scale is the size of design elements in comparison to other elements in a
+                layout as well as to the physical context of the work. Scale is relative. 12-pt
+                type displayed on a 32-inch monitor can look very small, while 12-pt type
+                printed on a book page can look flabby and overweight. 
+              </p>
+           </div>
+           <div class="dib f4 measure-narrow v-top">
+              <p class="f4 lh-copy">
+                Designers create hierarchy and contrast by playing with the scale of letterforms. Changes in
+                scale help create visual contrast, movement, and depth as well as express
+                hierarchies of importance. Scale is physical. People intuitively judge the size
+                of objects in relation to their own bodies and environments.
+              </p>
+           </div>
+        </div>
+        <h4 class="f6 ttu tracked fw6 pt5 bt mt2 mb0">1rem (16px) at 30em</h4>
+<code class="pre f6 mv0">
+&lt;h3 class="f5 measure"&gt;Title&lt;/h3&gt;
+</code>
+        <div class="pb4">
+          <p class="f5 measure lh-copy v-top">
+                Scale is the size of design elements in comparison to other elements in a
+                layout as well as to the physical context of the work. Scale is relative. 12-pt
+                type displayed on a 32-inch monitor can look very small, while 12-pt type
+                printed on a book page clook flabby and overweight. 
+          </p>
+          <h4 class="f6 ttu tracked fw6 mt4 mb0">1rem (16px) at 20em</h4>
+<code class="pre f6 mv0">
+&lt;h3 class="f5 measure-narrow"&gt;Title&lt;/h3&gt;
+</code>
+          <div class="dib f5 measure-narrow mr4 v-top">
+            <p class="f5 lh-copy">
+                Designers create hierarchy and contrast by playing with the scale of letterforms. Changes in
+                scale help create visual contrast, movement, and depth as well as express
+                hierarchies of importance. Scale is physical. People intuitively judge the size
+                of objects in relation to their own bodies and environments.
+            </p>
+          </div>
+          <div class="dib f5 measure-narrow v-top">
+             <p class="f5 lh-copy">
+               Scale is the size of design elements in comparison to other elements in a
+               layout as well as to the physical context of the work. Scale is relative. 12-pt
+               type displayed on a 32-inch monitor can look very small, while 12-pt type
+               printed on a book page can look flabby and overweight. 
+             </p>
+          </div>
+        </div>
+        <h4 class="f6 ttu tracked fw6 pt5 mt2 mb0 bt">.875rem (14px) at 34em</h4>
+<code class="pre f6 mv0">
+&lt;h3 class="f6 measure-wide"&gt;Title&lt;/h3&gt;
+</code>
+          <p class="f6 measure-wide lh-copy">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
             tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
             vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
             no sea takimata sanctus est Lorem ipsum dolor sit amet.
           </p>
-          <h1 class="f6 fw4 sans-serif pt3 ttu black mb4"><b>1.25rem (20px)</b> at <b>20em</b></h1>
-           <div class="dib f4 measure-narrow mr4">
-              <p class="f4 lh-title">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-                vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                no sea takimata sanctus est Lorem ipsum dolor sit amet.
-              </p>
-           </div>
-           <div class="dib f4 measure-narrow">
-              <p class="f4 lh-title">
-                <b>Lorem ipsum dolor</b> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-                vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                no sea takimata sanctus est Lorem ipsum dolor sit amet.
-              </p>
-           </div>
-        </div>
-        <h1 class="f6 sans-serif pt5 bt b--black-10 ttu black"><b>1rem (16px)</b> at <b>30em</b></h1>
-        <div class="pb4">
-          <p class="f5 measure lh-copy">
-            <b>Lorem ipsum dolor</b> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-            vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          </p>
-          <h1 class="f6 sans-serif pt3 ttu black"><b>1rem (16px)</b> at <b>20em</b></h1>
-          <div class="dib f5 measure-narrow mr4">
-             <p class="f5 lh-title">
-               <b>Lorem ipsum dolor</b> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-               tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-               vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-               no sea takimata sanctus est Lorem ipsum dolor sit amet.
-             </p>
-          </div>
-          <div class="dib f5 measure-narrow">
-             <p class="f5 lh-title">
-               <b>Lorem ipsum dolor</b> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-               tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-               vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-               no sea takimata sanctus est Lorem ipsum dolor sit amet.
-             </p>
-          </div>
-        </div>
-        <h1 class="f6 sans-serif pt5 bt b--black-10 ttu black"><b>.875rem (14px)</b> at <b>30em</b></h1>
+        <h4 class="f6 ttu tracked fw6 pt4 mt2 mb0">.875rem (14px) at 30em</h4>
+<code class="pre f6 mv0">
+&lt;h3 class="f6 measure"&gt;Title&lt;/h3&gt;
+</code>
         <div class="pb4">
           <p class="f6 measure lh-copy">
-            <b>Lorem ipsum dolor</b> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
             tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
             vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
             no sea takimata sanctus est Lorem ipsum dolor sit amet.
           </p>
-          <h1 class="f6 sans-serif pt3 ttu black"><b>.875rem (14px)</b> at <b>20em</b></h1>
-         <div class="dib f5 measure-narrow mr4">
-            <p class="f6 lh-title">
-              <b>Lorem ipsum dolor</b> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          <h4 class="f6 ttu tracked fw6 pt4 mt2 mb0">.875rem (14px) at 20em</h4>
+<code class="pre f6 mv0">
+&lt;h3 class="f6 measure-narrow"&gt;Title&lt;/h3&gt;
+</code>
+         <div class="dib f5 measure-narrow mr4 v-top">
+            <p class="f6 lh-copy">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
               tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
               vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
               no sea takimata sanctus est Lorem ipsum dolor sit amet.
             </p>
          </div>
-         <div class="dib f5 measure-narrow">
-            <p class="f6 lh-title">
+         <div class="dib f5 measure-narrow v-top">
+            <p class="f6 lh-copy">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
               tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
               vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
@@ -187,7 +227,7 @@
             </p>
          </div>
         </div>
-        <h1>Truncation</h1>
+        <h4 class="pt5 bt">Truncation</h4>
         <p>If you want to truncate text that exceeds past a certain width you can use the truncate class combined with a width</p>
         <code class="f6 bg-washed-blue pa1">&lt;p class="mw4 truncate"&gt;&lt;/p&gt;</code>
         <p class="mw4 truncate">
@@ -196,24 +236,45 @@
           vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
           no sea takimata sanctus est Lorem ipsum dolor sit amet.
         </p>
-        <div class="mt5 cf sans-serif">
-          <div class="dib mrl">
-            <h4 class="f6 fw6">Previous</h4>
+        <div class="mv4 pv4 bt bb b--black-10">
+          <div class="dib mr3 mr4-l">
+            <h4 class="f6 fw6 mv0">Previous</h4>
             <a href="/docs/typography/scale" class="link fw6 blue dim">Type-scale</a>
           </div>
-          <div class="dib">
-            <h4 class="f6 fw6">Next</h4>
+          <div class="dib mr5">
+            <h4 class="f6 fw6 mv0">Next</h4>
             <a href="/docs/typography/line-height/" class="link fw6 blue dim">Line-height</a>
           </div>
-        </div>
-        <div class="mt5 pb4 sans-serif">
-          <h4 class="f6 fw6">Reference</h4>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width" class="db link fw6 blue dim">MDN - width</a>
-          <a href="http://webtypography.net/2.1.2" class="link fw6 blue dim">Choose a Comfortable Measure</a>
+          <div class="dib">
+            <h4 class="f6 fw6 mv0">Reference</h4>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width" class="dib link fw6 blue dim mr3">MDN - width</a>
+            <a href="http://webtypography.net/2.1.2" class="link fw6 blue dib dim">Choose a Comfortable Measure</a>
+          </div>
         </div>
       </div>
       <section class="bg-white black-70 pt4 pb5 overflow-container">
       <header class="ph3 ph5-ns pt4">
+        <h4 class="f4 mv0 fw6 dib mr4 mt0"><%= name %></h4>
+        <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
+        <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
+        <div>
+          <dl class="dib mr4 mt0">
+            <dt class="f6 db">Declarations </dt>
+            <dd class="db pl0 ml0 f4 f3-ns b"><%= moduleObj.declarations.total %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Selectors </dt>
+            <dd class="db pl0 ml0 f4 f3-ns b"><%= moduleObj.selectors.total %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Max. Specificity Score </dt>
+            <dd class="db pl0 ml0 f4 f3-ns b"><%= moduleObj.selectors.specificity.max %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Size of Avg. Rule </dt>
+            <dd class="db pl0 ml0 f4 f3-ns b"><%= moduleObj.rules.size.average %></dd>
+          </dl>
+        </div>
         <kbd>src/_typography.css</kbd>
       </header>
 <pre class="ph3 ph5-ns">

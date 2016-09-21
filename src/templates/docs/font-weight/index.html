@@ -4,14 +4,107 @@
     <title>
       Font Weights / Typography / Docs / TACHYONS
     </title>
-    <meta name="description" content="css">
+    <meta name="description" content="Documentation on how to adjust font-weights with the Tachyons css framework.">
     <%= head  %>
   </head>
   <body class="w-100 sans-serif">
-
     <%= siteHeader %>
     <main class="bg-white black-70">
-      <article class="bt b--black-10 pa3 ph5-ns">
+      <header class="ph3 ph5-ns w-100 pv3 mb4 mb5-ns bt bb b--black-10 overflow-auto">
+        <div class="nowrap mw9 center">
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/scale/" title="Type">Type Scale</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/measure/" title="Measure">Measure</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/line-height/" title="Line Height">Line Height / Leading</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/tracking/" title="Tracking">Tracking</a>
+        <a class="f6 fw6 dim link black pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/font-weight/" title="Font Weights">Font Weights</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/font-style/" title="Font Families">Font Style</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/vertical-align/" title="Font Families">Vertical Align</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/text-align/" title="Text Align">Text Align</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/text-transform" title="Text Transform">Text Transform</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/text-decoration" title="Text Decoration">Text Decoration</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/white-space" title="White Space">White Space</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/font-family" title="Font Families">Font Families</a>
+        </div>
+      </header>
+      <article class="pa3 ph5-ns">
+        <h3 class="f6 ttu tracked mt0">Font Weight</h3>
+        <p class="measure f4 f3-ns lh-copy">
+          Single purpose classes to set the font-weight of any element at any breakpoint.
+        </p>
+        <p class="measure f5 f4-ns lh-copy">
+          Varying the font-weight of different pieces of text can help create
+          contrast between pieces of information. It can help call attention to a piece
+          of content, or help to make a smaller font-size a bit more readable. In
+          Elements of Typographic Style, Robert Bringhurst suggests we keep two things in
+          mind when playing with font-weight.
+          Use bold weights sparingly. Font-weight should decrease as font-size increases.
+        </p>
+      </article>
+      <div class="ph3 ph5-ns pt4 pb5">
+        <h3 class="f5 mb4 pb2 bb">Examples</h3>
+        <h3 class="f5 fw6 pt4">String Values</h3>
+          <code class="f6 db">
+            &lt;p class="normal"&gt;Font-weight: normal&lt;/p&gt;
+          </code>
+          <p class="f4 f3-ns normal pl3 pl4-ns bl bw2 b--black-10 mb5">Font-weight: normal</p>
+          <code class="f6 db">
+            &lt;p class="b"&gt;Font-weight: bold&lt;/p&gt;
+          </code>
+          <p class="f4 f3-ns b pl3 pl4-ns bl bw2 b--black-10 mb5">Font-weight: bold</p>
+          <h3 class="f5 fw6 mt4">Number values</h3>
+          <code class="f6 db">
+            &lt;p class="fw1"&gt;Font-weight: 100&lt;/p&gt;
+          </code>
+          <p class="f4 f3-ns fw2 pl3 pl4-ns bl bw2 b--black-10 mb5">Font-weight: 100</p>
+          <code class="f6 db">
+            &lt;p class="fw2"&gt;Font-weight: 200&lt;/p&gt;
+          </code>
+          <p class="f4 f3-ns fw2 pl3 pl4-ns bl bw2 b--black-10 mb5">Font-weight: 200</p>
+          <code class="f6 db">
+            &lt;p class="fw3"&gt;Font-weight: 300&lt;/p&gt;
+          </code>
+          <p class="f4 f3-ns fw3 pl3 pl4-ns bl bw2 b--black-10 mb5">Font-weight: 300</p>
+          <code class="f6 db">
+            &lt;p class="fw4"&gt;Font-weight: 400&lt;/p&gt;
+          </code>
+          <p class="f4 f3-ns fw4 pl3 pl4-ns bl bw2 b--black-10 mb5">Font-weight: 400</p>
+          <code class="f6 db">
+            &lt;p class="fw5"&gt;Font-weight: 500&lt;/p&gt;
+          </code>
+          <p class="f4 f3-ns fw5 pl3 pl4-ns bl bw2 b--black-10 mb5">Font-weight: 500</p>
+          <code class="f6 db">
+            &lt;p class="fw6"&gt;Font-weight: 600&lt;/p&gt;
+          </code>
+          <p class="f4 f3-ns fw6 pl3 pl4-ns bl bw2 b--black-10 mb5">Font-weight: 600</p>
+          <code class="f6 db">
+            &lt;p class="fw7"&gt;Font-weight: 700&lt;/p&gt;
+          </code>
+          <p class="f4 f3-ns fw7 pl3 pl4-ns bl bw2 b--black-10 mb5">Font-weight: 700</p>
+          <code class="f6 db">
+            &lt;p class="fw8"&gt;Font-weight: 800&lt;/p&gt;
+          </code>
+          <p class="f4 f3-ns fw8 pl3 pl4-ns bl bw2 b--black-10 mb5">Font-weight: 800</p>
+          <code class="f6 db">
+            &lt;p class="fw9"&gt;Font-weight: 900&lt;/p&gt;
+          </code>
+          <p class="f4 f3-ns fw9 pl3 pl4-ns bl bw2 b--black-10 mb5">Font-weight: 900</p>
+        <div class="mt5 cf">
+          <div class="dib mr4">
+            <h4 class="f6 fw6">Previous</h4>
+            <a href="/docs/typography/tracking/" class="link fw6 blue dim">Tracking</a>
+          </div>
+          <div class="dib">
+            <h4 class="f6 fw6">Next</h4>
+            <a href="/docs/typography/font-family/" class="link fw6 blue dim">Font Family</a>
+          </div>
+        </div>
+        <div class="mt5">
+          <h4 class="f6 fw6">Reference</h4>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight" class="link fw6 blue dim">MDN - Font Weight</a>
+        </div>
+      </div>
+      <section class="bg-white bt bb b--black-40 black-70 pt4 pb5 mb5 overflow-container">
+      <header class="ph3 ph5-ns pt4">
         <h4 class="f4 mv0 fw6 dib mr4"><%= name %></h4>
         <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
         <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
@@ -33,56 +126,6 @@
             <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
           </dl>
         </div>
-        <p class="measure f4 f3-ns lh-copy">
-          Single purpose classes to set the font-weight of any element at any breakpoint.
-        </p>
-        <p class="measure f5 f4-ns lh-copy">
-          Varying the font-weight of different pieces of text can help create
-          contrast between pieces of information. It can help call attention to a piece
-          of content, or help to make a smaller font-size a bit more readable. In
-          Elements of Typographic Style, Robert Bringhurst suggests we keep two things in
-          mind when playing with font-weight.
-          Use bold weights sparingly. Font-weight should decrease as font-size increases.
-        </p>
-      </article>
-      <div class="ph3 ph5-ns pt4 pb5">
-        <h2 class="f3 bold">Examples</h2>
-
-        <h3 class="f5 book sans-serif pt4 caps black-100">String Values</h3>
-        <div class="cf">
-          <div class="fl f5 f2-m f1-l normal v-mid tc"><span class="db bg-washed-blue pv3 ba b--white ph4">Aa <span class="db f6 fw4">normal</span></span></div>
-          <div class="fl f5 f2-m f1-l b v-mid tc"><span class="db bg-washed-blue pv3 ba b--white ph4">Aa <span class="db f6 fw4">b</span></span></div>
-        </div>
-        <h3 class="f5 book sans-serif pt4 caps black-100">Literal Number Values</h3>
-        <div class="dt w-100" style="table-layout: fixed;">
-          <div class="dtc f5 f2-m f1-l fw1 v-mid tc"><span class="db bg-washed-blue pv3 ba b--white">Aa <span class="db f6 fw4">100</span></span></div>
-          <div class="dtc f5 f2-m f1-l fw2 v-mid tc"><span class="db bg-washed-blue pv3 ba b--white">Aa <span class="db f6 fw4">200</span></span></div>
-          <div class="dtc f5 f2-m f1-l fw3 v-mid tc"><span class="db bg-washed-blue pv3 ba b--white">Aa <span class="db f6 fw4">300</span></span></div>
-          <div class="dtc f5 f2-m f1-l fw4 v-mid tc"><span class="db bg-washed-blue pv3 ba b--white">Aa <span class="db f6 fw4">400</span></span></div>
-          <div class="dtc f5 f2-m f1-l fw5 v-mid tc"><span class="db bg-washed-blue pv3 ba b--white">Aa <span class="db f6 fw4">500</span></span></div>
-          <div class="dtc f5 f2-m f1-l fw6 v-mid tc"><span class="db bg-washed-blue pv3 ba b--white">Aa <span class="db f6 fw4">600</span></span></div>
-          <div class="dtc f5 f2-m f1-l fw7 v-mid tc"><span class="db bg-washed-blue pv3 ba b--white">Aa <span class="db f6 fw4">700</span></span></div>
-          <div class="dtc f5 f2-m f1-l fw8 v-mid tc"><span class="db bg-washed-blue pv3 ba b--white">Aa <span class="db f6 fw4">800</span></span></div>
-          <div class="dtc f5 f2-m f1-l fw9 v-mid tc"><span class="db bg-washed-blue pv3 ba b--white">Aa <span class="db f6 fw4">900</span></span></div>
-        </div>
-
-        <div class="mt5 cf">
-          <div class="dib mr4">
-            <h4 class="f6 fw6">Previous</h4>
-            <a href="/docs/typography/tracking/" class="link fw6 blue dim">Tracking</a>
-          </div>
-          <div class="dib">
-            <h4 class="f6 fw6">Next</h4>
-            <a href="/docs/typography/font-family/" class="link fw6 blue dim">Font Family</a>
-          </div>
-        </div>
-        <div class="mt5">
-          <h4 class="f6 fw6">Reference</h4>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight" class="link fw6 blue dim">MDN - Font Weight</a>
-        </div>
-      </div>
-      <section class="bg-white black-70 pt4 pb5 overflow-container">
-      <header class="ph3 ph5-ns pt4">
         <kbd>src/_font-weights.css</kbd>
       </header>
 <pre class="ph3 ph5-ns">

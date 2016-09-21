@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Skins:pseudo / Themes / Docs / TACHYONS
+    </title>
+    <meta name="description" content="css">
+    <%= head  %>
+  </head>
+  <body class="w-100 sans-serif">
+    <%= siteHeader %>
+    <main class="bg-white black-70">
+      <article class="bt b--black-10 pa3 ph5-ns">
+        <h4 class="f4 mv0 fw6 dib mr4"><%= name %></h4>
+        <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
+        <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
+        <div>
+          <dl class="dib mr4 mt0">
+            <dt class="f6 db">Declarations </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.declarations.total %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Selectors </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.total %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Max. Specificity Score </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.specificity.max %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Size of Avg. Rule </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
+          </dl>
+        </div>
+        <p class="measure f4 f3-ns lh-copy">
+          You can use any color from the _colors.css file to style text and background colors for hover and focus states.
+        </p>
+      </article>
+      <div class="ph3 ph5-ns pt4 pb5">
+        <h2 class="f5 f4-ns fw6 bold">Examples</h2>
+        <h4 class="f5">Underline links and animate to color</h4>
+        <p class="lh-copy measure">
+           To keep the default underline, but animate the color transition, combine classes from skins and skins-pseudo.
+        </p>
+<div class="bl-ns bw2-ns b--black-05 pl3-ns">
+        <a href="#" class="link underline blue hover-orange">link text</a> 
+<code class="f6 db mt3 pre">
+  &lt;a href="#" class="link underline blue hover-orange"&gt;link text&lt;/a&gt; 
+</code>
+</div>
+        <div class="mt5 pv4 bt bb b--black-10">
+          <div class="dib mb4 mr5 v-top">
+            <h4 class="f6 fw6 mt0">Previous</h4>
+            <a href="/docs/elements/images/" class="link fw6 blue dim">Images</a>
+          </div>
+          <div class="dib mb4 mr5-m mr6-l v-top">
+            <h4 class="f6 fw6 mt0">Next</h4>
+            <a href="/docs/elements/lists/" class="link fw6 blue dim">Lists</a>
+          </div>
+          <div class="dib">
+            <h4 class="f6 fw6 mt0">Reference</h4>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/%3Ahover" class="link db dib-ns fw6 blue dim mr4-ns">MDN - Hover</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/%3Afocus" class="link db dib-ns fw6 blue dim">MDN - Focus</a>
+          </div>
+        </div>
+      </div>
+      <section class="bg-white black-70 pb5 overflow-container">
+      <header class="ph3 ph5-ns pt4">
+        <h4 class="fw6 f6 di pr3">Source code</h4> <kbd>src/_links.css</kbd>
+      </header>
+<pre class="ph3 ph5-ns">
+<code class="code" style="font-size: .75rem;">
+<%= srccss  %>
+</code>
+</pre>
+      </section>
+      <div class="bt b--black-10 pt4">
+        <%= navDocs %>
+      </div>
+    </main>
+    <%= siteFooter %>
+    <%= googleAnalytics  %>
+  </body>
+</html>
