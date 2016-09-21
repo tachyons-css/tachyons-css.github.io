@@ -44,9 +44,9 @@
       <div class="tc-l mt6 ph3">
         <h1 class="fw2 f1 white-90 mb0">This is your super impressive headline</h1>
         <h2 class="fw1 f3 white-80 mt3 mb4">Now a subheadline where explain your wonderful new startup even more</h2>
-        <a class="f6 link dib v-mid bg-blue white ba b--blue ph3 pv2" href="/">Call to Action</a>
+        <a class="f6 link grow dib v-mid bg-blue white ba b--blue ph3 pv2" href="/">Call to Action</a>
         <span class="dib v-mid ph3 white-70">or</span>
-        <a class="f6 link dib v-mid white ba b--white ph3 pv2" href="">Secondary call to action</a>
+        <a class="f6 link grow dib v-mid white ba b--white ph3 pv2" href="">Secondary call to action</a>
       </div>
     </div>
   </div> 
@@ -79,9 +79,9 @@
       &lt;div class=&quot;tc-l mt6 ph3&quot;&gt;
         &lt;h1 class=&quot;fw2 f1 white-90 mb0&quot;&gt;This is your super impressive headline&lt;/h1&gt;
         &lt;h2 class=&quot;fw1 f3 white-80 mt3 mb4&quot;&gt;Now a subheadline where explain your wonderful new startup even more&lt;/h2&gt;
-        &lt;a class=&quot;f6 link dib v-mid bg-blue white ba b--blue ph3 pv2&quot; href=&quot;/&quot;&gt;Call to Action&lt;/a&gt;
+        &lt;a class=&quot;f6 link grow dib v-mid bg-blue white ba b--blue ph3 pv2&quot; href=&quot;/&quot;&gt;Call to Action&lt;/a&gt;
         &lt;span class=&quot;dib v-mid ph3 white-70&quot;&gt;or&lt;/span&gt;
-        &lt;a class=&quot;f6 link dib v-mid white ba b--white ph3 pv2&quot; href=&quot;&quot;&gt;Secondary call to action&lt;/a&gt;
+        &lt;a class=&quot;f6 link grow dib v-mid white ba b--white ph3 pv2&quot; href=&quot;&quot;&gt;Secondary call to action&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt; 
@@ -309,6 +309,21 @@
     vertical-align: middle;
 }
 
+.grow {
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform .25s ease-out;
+}
+
+.grow:hover, .grow:focus {
+    transform: scale(15);
+}
+
+.grow:active {
+    transform: scale(.90);
+}
+
 .grow-large {
     -moz-osx-font-smoothing: grayscale;
     backface-visibility: hidden;
@@ -351,16 +366,16 @@
     <h2 class="f5 mb3 mt4">Css stats for this component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Gzipped Size</dt>
-      <dd class="ml0 b f3 f2-ns">936<small class="f6">B</small>
+      <dd class="ml0 b f3 f2-ns">962<small class="f6">B</small>
       </dd>
     </dl>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Selectors</dt>
-      <dd class="ml0 b f3 f2-ns">59</dd>
+      <dd class="ml0 b f3 f2-ns">63</dd>
     </dl>
     <dl class="dib mt0">
       <dt class="db f6">Declarations</dt>
-      <dd class="ml0 b f3 f2-ns">68</dd>
+      <dd class="ml0 b f3 f2-ns">74</dd>
     </dl>
   </div>
   <div class="fl w-100">
