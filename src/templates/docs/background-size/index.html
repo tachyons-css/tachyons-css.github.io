@@ -11,27 +11,6 @@
     <%= siteHeader  %>
     <main class="bg-white black-70">
       <article class="bt b--black-20 ph3 pt3 ph5-ns">
-        <h4 class="f4 mv0 fw6 dib mr4"><%= name %></h4>
-        <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
-        <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
-        <div>
-          <dl class="dib mr4 mt0">
-            <dt class="f6 db">Declarations </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.declarations.total %></dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Selectors </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.total %></dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Max. Specificity Score </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.specificity.max %></dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Size of Avg. Rule </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
-          </dl>
-        </div>
         <p class="measure f6 f5-ns lh-copy pb4 mt0">
           Background-size affects how background images fill their containing elements.
           While measurements can be declared explicitly to size an image, the ones that seem most reusable are
@@ -70,6 +49,27 @@
       </div>
       <section class="bg-white black-70 pb5">
         <header class="ph3 ph5-ns">
+        <h4 class="f4 mv0 fw6 dib mr4"><%= name %></h4>
+        <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
+        <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
+        <div>
+          <dl class="dib mr4 mt0">
+            <dt class="f6 db">Declarations </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.declarations.total %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Selectors </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.total %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Max. Specificity Score </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.specificity.max %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Size of Avg. Rule </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
+          </dl>
+        </div>
           <div class="bb b--black-20">
             <h5 class="f6 fw6 dib mr2 mt0 mb2">Source Code</h5>
             <kbd class="dib f6 code">src/_background-size.css</kbd>

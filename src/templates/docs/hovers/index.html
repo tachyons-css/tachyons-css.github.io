@@ -11,27 +11,6 @@
     <%= siteHeader %>
     <main class="bg-white black-70">
       <article class="bt b--black-10 pa3 ph5-ns">
-        <h4 class="f4 mv0 fw6 dib mr4"><%= name %></h4>
-        <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
-        <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
-        <div>
-          <dl class="dib mr4 mt0">
-            <dt class="f6 db">Declarations </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.declarations.total %></dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Selectors </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.total %></dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Max. Specificity Score </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.specificity.max %></dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Size of Avg. Rule </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
-          </dl>
-        </div>
         <p class="measure f3 lh-copy">
           There are several classes for adding hover effects to elements.
           Hover effects can be used to give visual affordance to the user that an element can be interacted with.
@@ -119,6 +98,27 @@
       </div>
       <section class="bg-white black-70 pb5">
         <header class="ph3 ph5-ns">
+        <h4 class="f4 mv0 fw6 dib mr4"><%= name %></h4>
+        <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
+        <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
+        <div>
+          <dl class="dib mr4 mt0">
+            <dt class="f6 db">Declarations </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.declarations.total %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Selectors </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.total %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Max. Specificity Score </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.specificity.max %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Size of Avg. Rule </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
+          </dl>
+        </div>
           <h4 class="mt0">Source code <kbd class="pl4 fw1">src/_hovers.css</kbd></h4>
         </header>
 <pre class="ph3 ph5-ns">

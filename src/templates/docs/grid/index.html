@@ -4,7 +4,7 @@
     <title>
       Grid / Layout / Docs / TACHYONS
     </title>
-    <meta name="description" content="css">
+    <meta name="description" content="Documentation on how to utilize the float based grid with Tachyons.">
     <%= head  %>
   </head>
   <body class="w-100 sans-serif">
@@ -20,8 +20,9 @@
           </p>
         </div>
       </article>
-      <div class="ph3 ph5-ns pt4 pb5">
-        <h2 class="f3 b">Example</h2>
+      <div class="ph3 ph5-ns">
+        <h3 class="f5 mb4 pb2 bb">Examples</h3>
+        <h4 class="f6 mb2">Fixed Columns</h4>
       </div>
       <section class="cf w-100 pv3 f6 ph3 ph4-ns">
         <div class="mw9 center ph3-ns">
@@ -78,7 +79,7 @@
               <div class="outline bg-white tc pv4"><code>fl w-third pa2</code></div>
             </div>
             <div class="fl w-two-thirds pa2">
-              <div class="outline bg-white tc pv4"><code>fl w-two-third-s pa2</code></div>
+              <div class="outline bg-white tc pv4"><code>fl w-two-thirds pa2</code></div>
             </div>
             <div class="fl w-25 pa2">
               <div class="outline bg-white tc pv4"><code>fl w-25 pa2</code></div>
@@ -140,17 +141,188 @@
           </div>
         </div>
       </section>
-      <div class="cf pa3 ph5-ns mv4 mv5-ns bt bb b--black-10">
+      <div class="ph3 ph5-ns pt5">
+        <h4 class="f6 mb2">Two Columns - Collapsing</h4>
+        <code class="f6 pre">
+&lt;div class="mw9 center ph3-ns"&gt;
+  &lt;div class="cf ph2-ns"&gt;
+    &lt;div class="fl w-100 w-50-ns pa2"&gt;
+      &lt;div class="outline bg-white pv4"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="fl w-100 w-50-ns pa2"&gt;
+      &lt;div class="outline bg-white pv4"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </code>
+      </div>
+      <section class="w-100 pv3 f6 ph3 ph4-ns">
+        <div class="mw9 center ph3-ns">
+          <div class="cf ph2-ns">
+            <div class="fl w-100 w-50-ns pa2">
+              <div class="outline bg-white tc pv4"></div>
+            </div>
+            <div class="fl w-100 w-50-ns pa2">
+              <div class="outline bg-white tc pv4"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="ph3 ph5-ns pt5">
+        <h4 class="f6 mb2">Three Columns - Collapse to Single</h4>
+        <code class="f6 pre">
+&lt;div class="mw9 center ph3-ns"&gt;
+  &lt;div class="cf ph2-ns"&gt;
+    &lt;div class="fl w-100 w-third-ns pa2"&gt;
+      &lt;div class="outline bg-white pv4"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="fl w-100 w-third-ns pa2"&gt;
+      &lt;div class="outline bg-white pv4"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="fl w-100 w-third-ns pa2"&gt;
+      &lt;div class="outline bg-white pv4"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </code>
+      </div>
+      <section class="w-100 pv3 f6 ph3 ph4-ns">
+        <div class="mw9 center ph3-ns">
+          <div class="cf ph2-ns">
+            <div class="fl w-100 w-third-ns pa2">
+              <div class="outline bg-white pv4"></div>
+            </div>
+            <div class="fl w-100 w-third-ns pa2">
+              <div class="outline bg-white pv4"></div>
+            </div>
+            <div class="fl w-100 w-third-ns pa2">
+              <div class="outline bg-white pv4"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="ph3 ph5-ns pt5">
+        <h4 class="f6 mb2">Three Columns - Collapse to Mixed</h4>
+        <code class="f6 pre">
+&lt;div class="mw9 center ph3-ns"&gt;
+  &lt;div class="cf ph2-ns"&gt;
+    &lt;div class="fl w-100 w-third-ns pa2"&gt;
+      &lt;div class="outline bg-white pv4"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="fl w-50 w-third-ns pa2"&gt;
+      &lt;div class="outline bg-white pv4"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="fl w-50 w-third-ns pa2"&gt;
+      &lt;div class="outline bg-white pv4"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </code>
+      </div>
+      <section class="w-100 pv3 f6 ph3 ph4-ns">
+        <div class="mw9 center ph3-ns">
+          <div class="cf ph2-ns">
+            <div class="fl w-100 w-third-ns pa2">
+              <div class="outline bg-white tc pv4"></div>
+            </div>
+            <div class="fl w-50 w-third-ns pa2">
+              <div class="outline bg-white tc pv4"></div>
+            </div>
+            <div class="fl w-50 w-third-ns pa2">
+              <div class="outline bg-white tc pv4"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="ph3 ph5-ns pt5">
+        <h4 class="f6 mb2">Four Columns - Collapse to single</h4>
+        <code class="f6 pre">
+&lt;div class="mw9 center ph3-ns"&gt;
+  &lt;div class="cf ph2-ns"&gt;
+    &lt;div class="fl w-100 w-25-ns pa2"&gt;
+      &lt;div class="outline bg-white pv4"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="fl w-100 w-25-ns pa2"&gt;
+      &lt;div class="outline bg-white pv4"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="fl w-100 w-25-ns pa2"&gt;
+      &lt;div class="outline bg-white pv4"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="fl w-100 w-25-ns pa2"&gt;
+      &lt;div class="outline bg-white pv4"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </code>
+      </div>
+      <section class="w-100 pv3 f6 ph3 ph4-ns">
+        <div class="mw9 center ph3-ns">
+          <div class="cf ph2-ns">
+            <div class="fl w-100 w-25-ns pa2">
+              <div class="outline bg-white pv4"></div>
+            </div>
+            <div class="fl w-100 w-25-ns pa2">
+              <div class="outline bg-white pv4"></div>
+            </div>
+            <div class="fl w-100 w-25-ns pa2">
+              <div class="outline bg-white pv4"></div>
+            </div>
+            <div class="fl w-100 w-25-ns pa2">
+              <div class="outline bg-white pv4"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="ph3 ph5-ns pt5">
+        <h4 class="f6 mb2">Four Columns - Collapse to Mixed</h4>
+        <code class="f6 pre">
+&lt;div class="mw9 center ph3-ns"&gt;
+  &lt;div class="cf ph2-ns"&gt;
+    &lt;div class="fl w-100 w-25-ns pa2"&gt;
+      &lt;div class="outline bg-white tc pv4"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="fl w-third w-25-ns pa2"&gt;
+      &lt;div class="outline bg-white tc pv4"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="fl w-third w-25-ns pa2"&gt;
+      &lt;div class="outline bg-white tc pv4"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="fl w-third w-25-ns pa2"&gt;
+      &lt;div class="outline bg-white tc pv4"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </code>
+      </div>
+      <section class="w-100 pv3 f6 ph3 ph4-ns">
+        <div class="mw9 center ph3-ns">
+          <div class="cf ph2-ns">
+            <div class="fl w-100 w-25-ns pa2">
+              <div class="outline bg-white tc pv4"></div>
+            </div>
+            <div class="fl w-third w-25-ns pa2">
+              <div class="outline bg-white tc pv4"></div>
+            </div>
+            <div class="fl w-third w-25-ns pa2">
+              <div class="outline bg-white tc pv4"></div>
+            </div>
+            <div class="fl w-third w-25-ns pa2">
+              <div class="outline bg-white tc pv4"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="cf pa3 ph5-ns pv4 mv4 mv5-ns bt bb b--black-10">
         <div class="dib mr4">
-          <h1 class="f6 fw6">Previous</h1>
+          <h4 class="f6 fw6 mt0">Previous</h4>
           <a href="/docs/debug-grid/" class="link fw6 blue dim">Debug with a Grid</a>
         </div>
         <div class="dib">
-          <h4 class="f6 fw6">Next</h4>
+          <h4 class="f6 fw6 mt0">Next</h4>
           <a href="/docs/layout/background-size/" class="link fw6 blue dim">Background Size</a>
         </div>
         <div class="mt4">
-          <h4 class="f6 fw6">Reference</h4>
+          <h4 class="f6 fw6 mt0">Reference</h4>
           <a href="https://developer.mozilla.org/en/docs/Web/css/width" class="link fw6 blue dim">MDN - Width property</a>
         </div>
       </div>
