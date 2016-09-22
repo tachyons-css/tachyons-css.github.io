@@ -21,7 +21,8 @@
     "doc:lib": "watch 'npm run doc' lib",
     "doc:images": "watch 'node src/modules/images.js' src/templates/docs/images",
     "doc:bgsize": "watch 'node src/modules/background-size.js' src/templates/docs/background-size",
-    "build:all": "node build.js && bash script.sh"
+    "build:all": "node build.js && bash script.sh",
+    "cson": "node src/components-cson-build.js"
   },
   "repository": "tachyons-css/tachyons-css.github.io",
   "author": "mrmrs",
