@@ -26,32 +26,44 @@
         <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/font-family" title="Font Families">Font Families</a>
         </div>
       </header>
-      <article class="ph3 ph5-ns">
-        <h3 class="f6 ttu tracked mt0">Type Scale</h3>
-        <p class="measure f4 f3-ns lh-copy">
-          Often times, websites devote a non-trivial amount of css to setting
-          font-size. They declare an unnecessary amount of different
-          font-sizes that upon inspection, don't come close to resembling a sane type scale.
-        </p>
-        <p class="measure f5 f4-ns lh-copy">
-          To create and design an easily readable interface, you don't need
-          more than 40 font-sizes. A simple ratio-based scale with 8 options should suffice.
-          Using the class extension namespaces you
-          can set the font-size for any particular breakpoint that you desire.
-        </p>
-        <p class="measure f5 f4-ns lh-copy">
-          Don't spend time constantly overriding font-sizes in your css.
-          If you don't like a default font-size for an element, use the utilities to quickly make the text larger or smaller until it looks just right.
-        </p>
-      </article>
-      <div class="ph3 ph5-ns pt4 pb5">
-        <blockquote class="f5 gray measure lh-copy mh0 mb4 mb5-ns">
-          <p class="i">
-            "The simplest scale is a single note, and sticking with a single note draws more attention to other parameters, such as rhythm and inflection... In the sixteenth century, a series of common sizes developed among European typographers, and the series survived with little change and few additions for 400 years... This is the typographic equivalent of the diatonic scale."
+
+      <article class="cf ph3 ph5-ns">
+        <div class="fl w-100 w-50-l pr4-l">
+          <h3 class="w-100 f6 ttu tracked mt0">Type Scale</h3>
+          <div class="outline black-10 mt3-ns">
+            <div class="aspect-ratio aspect-ratio--8x5">
+              <iframe class="aspect-ratio--object" src="https://player.vimeo.com/video/183819916" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="fl w-100 w-50-l pt4">
+          <p class="fl w-100 f5 f4-ns lh-copy mb3">
+            <span>Often times, websites devote a non-trivial amount of css to setting
+              font-size</span>. They declare an unnecessary amount of different
+            font-sizes that upon inspection, don't come close to resembling a sane type scale.
           </p>
-          <p class="dark-gray f6">Robert Bringhurst - <b>The Elements of Typographic Style</b></p>
-        </blockquote>
-        <h2 class="f5 b mb4">Font sizes</h2>
+          <p class="fl w-100 w-50-ns v-top f5 f6-ns lh-copy pr2-ns">
+            To create and design an easily readable interface, you don't need
+            more than 40 font-sizes. A simple ratio-based scale with 8
+            options should suffice.  Using the class extension namespaces you
+            can set the font-size for any particular breakpoint that you
+            desire.
+          </p>
+          <p class="fl w-100 w-50-ns measure measure-narrow-ns v-top f5 f6-ns lh-copy pl2-ns">
+            Don't spend time constantly overriding font-sizes in your css.
+            If you don't like a default font-size for an element, use the utilities to quickly make the text larger or smaller until it looks just right.
+          </p>
+        </div>
+      </article>
+      <div class="ph3 ph5-ns mt0-ns mb5-ns pt0-ns pb5">
+        <div class="mw9 center">
+          <blockquote class="f5 f4-m f2-l black-70 lh-copy mh0 pv4 ph3 bt bb bw1 b--black-05 mv4 mv5-ns db">
+            <p class="baskerville fw1 measure center">
+              "The simplest scale is a single note, and sticking with a single note draws more attention to other parameters, such as rhythm and inflection... In the sixteenth century, a series of common sizes developed among European typographers, and the series survived with little change and few additions for 400 years... This is the typographic equivalent of the diatonic scale."
+            </p>
+            <p class="dark-gray f5 f4-m f2-l center measure"><span class="f6">Robert Bringhurst - <b>The Elements of Typographic Style</b></span></p>
+          </blockquote>
+          <h2 class="f5 b mv4 mt5-ns">Font sizes</h2>
         <div class="w-100 overflow-x-auto">
           <table>
             <tr>
@@ -142,8 +154,12 @@
           <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" class="link fw6 blue dim">MDN - Font-size</a>
         </div>
       </div>
+    </div>
       <section class="bg-white black-70 pv4 mb4 bt bb b--black-40 overflow-container">
-        <header class="ph3 ph5-ns pt4">
+        <div class="ph3 ph5-ns pt4">
+          <div class="mw9 center">
+        <header>
+
         <h4 class="f4 mv0 fw6 dib mr4"><%= name %></h4>
         <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
         <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
@@ -168,11 +184,13 @@
         <h4 class="f6">Source code</h4>
         <kbd>src/_type-scale.css</kbd>
         </header>
-<pre class="ph3 ph5-ns">
+<pre>
 <code class="code" style="font-size: .75rem;">
 <%= srccss  %>
 </code>
 </pre>
+</div>
+</div>
       </section>
       <%= navDocs %>
     </main>
