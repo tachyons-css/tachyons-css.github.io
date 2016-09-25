@@ -1170,7 +1170,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
    it is focused or hovered over.
  
  */
-.focus-black:hover { color: #000; }
+.hover-black:hover { color: #000; }
 .hover-black:focus { color: #000; }
 .hover-near-black:hover { color: #111; }
 .hover-near-black:focus { color: #111; }
@@ -1199,7 +1199,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .hover-bg-dark-gray:hover { background-color: #333; }
 .hover-bg-dark-gray:focus { background-color: #333; }
 .hover-bg-dark-gray:focus { background-color: #555; }
-.focus-bg-mid-gray:hover { background-color: #555; }
+.hover-bg-mid-gray:hover { background-color: #555; }
 .hover-bg-gray:hover { background-color: #777; }
 .hover-bg-gray:focus { background-color: #777; }
 .hover-bg-silver:hover { background-color: #999; }
@@ -2045,7 +2045,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .w-90-ns { width: 90%; }
  .w-100-ns { width: 100%; }
  .w-third-ns { width: calc( 100% / 3 ); }
- .w-two-third-ns { width: calc( 100% / 1.5 ); }
+ .w-two-thirds-ns { width: calc( 100% / 1.5 ); }
  .w-auto-ns { width: auto; }
  .overflow-visible-ns { overflow: visible; }
  .overflow-hidden-ns { overflow: hidden; }
