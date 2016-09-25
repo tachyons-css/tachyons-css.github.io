@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Skins:pseudo / Themes / Docs / TACHYONS
+    </title>
+    <meta name="description" content="css">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="author" content="@mrmrs">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/tachyons.min.css">
+<style>
+  .blue { color: #0074D9; }
+  .bg-blue { background-color: #0074D9; }
+
+  .carbon-poweredby { width: 100%; font-size: 12px; float: left; }
+  .carbon-wrap { float: left; width: 100%; box-sizing: border-box; }
+  .carbon-img  { float: left; width: 50%;  box-sizing: border-box; }
+  .carbon-text  { float: left; width: 50%; padding-left: 16px; box-sizing: border-box; font-size: 12px; }
+
+  #carbonads a:link { text-decoration: none!important; color: #222!important; }
+
+</style>
+
+  </head>
+  <body class="w-100 sans-serif">
+    <header class="w-100 pa3 ph5-ns bg-white">
+  <div class="dt mw9 center w-100">
+    <div class="dtc v-mid tl w-50">
+      <a href="/" class="dib f5 f4-ns fw6 mt0 mb1 link black-70 dim" title="Home">
+        Tachyons
+        <div class="dib">
+          <small class="nowrap f6 mt2 mt3-ns pr2 black-70 fw2">v4.5.3</small>
+        </div>
+      </a>
+    </div>
+    <nav class="db dtc v-mid w-100 tr">
+      <a title="Documentation" href="/docs/"
+          class="f6 fw6 dim link black-70 mr1 mr3-m mr4-l dib">
+        Docs
+      </a>
+      <a title="Components" href="/components/"
+          class="f6 fw6 dim link black-70 mr1 mr3-m mr4-l dib">
+        Components
+      </a>
+      <a title="Tachyons on GitHub" href="http://github.com/tachyons-css/tachyons/"
+          class="f6 fw6 dim link black-70 mr1 mr3-m mr4-l dn dib-l">
+        GitHub
+      </a>
+    </nav>
+  </div>
+</header>
+
+    <main class="bg-white black-70">
+      <article class="bt b--black-10 pa3 ph5-ns">
+        <p class="measure f4 f3-ns lh-copy">
+          You can use any color from the _colors.css file to style text and background colors for hover and focus states.
+        </p>
+      </article>
+      <div class="ph3 ph5-ns pt4 pb5">
+        <h2 class="f5 f4-ns fw6 bold">Examples</h2>
+        <h4 class="f5">Underline links and animate to color</h4>
+        <p class="lh-copy measure">
+           To keep the default underline, but animate the color transition, combine classes from skins and skins-pseudo.
+        </p>
+<section>
+<h4 class="f6 fw6">Change text color on hover</h4>
+<article class="mt4">
+ <a href="#" class="link b blue hover-black">hover-black</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b blue hover-black"&gt;hover-black&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-near-black">hover-near-black</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-near-black"&gt;hover-near-black&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-dark-gray">hover-dark-gray</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-dark-gray"&gt;hover-dark-gray&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-mid-gray">hover-mid-gray</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-mid-gray"&gt;hover-mid-gray&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-gray">hover-gray</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-gray"&gt;hover-gray&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-silver">hover-silver</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-silver"&gt;hover-silver&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-light-silver">hover-light-silver</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-light-silver"&gt;hover-light-silver&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-moon-gray">hover-moon-gray</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-moon-gray"&gt;hover-moon-gray&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-light-gray">hover-light-gray</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-light-gray"&gt;hover-light-gray&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-near-white">hover-near-white</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-near-white"&gt;hover-near-white&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-white">hover-white</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-white"&gt;hover-white&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-transparent">hover-transparent</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-transparent"&gt;hover-transparent&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-dark-red">hover-dark-red</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-dark-red"&gt;hover-dark-red&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-red">hover-red</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-red"&gt;hover-red&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-light-red">hover-light-red</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-light-red"&gt;hover-light-red&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-orange">hover-orange</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-orange"&gt;hover-orange&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-gold">hover-gold</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-gold"&gt;hover-gold&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-yellow">hover-yellow</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-yellow"&gt;hover-yellow&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-light-yellow">hover-light-yellow</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-light-yellow"&gt;hover-light-yellow&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-purple">hover-purple</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-purple"&gt;hover-purple&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-light-purple">hover-light-purple</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-light-purple"&gt;hover-light-purple&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-dark-pink">hover-dark-pink</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-dark-pink"&gt;hover-dark-pink&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-hot-pink">hover-hot-pink</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-hot-pink"&gt;hover-hot-pink&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-pink">hover-pink</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-pink"&gt;hover-pink&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-light-pink">hover-light-pink</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-light-pink"&gt;hover-light-pink&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-dark-green">hover-dark-green</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-dark-green"&gt;hover-dark-green&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-green">hover-green</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-green"&gt;hover-green&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-light-green">hover-light-green</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-light-green"&gt;hover-light-green&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-navy">hover-navy</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-navy"&gt;hover-navy&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-dark-blue">hover-dark-blue</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-dark-blue"&gt;hover-dark-blue&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-blue">hover-blue</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-blue"&gt;hover-blue&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-light-blue">hover-light-blue</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-light-blue"&gt;hover-light-blue&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-lightest-blue">hover-lightest-blue</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-lightest-blue"&gt;hover-lightest-blue&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-washed-blue">hover-washed-blue</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-washed-blue"&gt;hover-washed-blue&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-washed-green">hover-washed-green</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-washed-green"&gt;hover-washed-green&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-washed-yellow">hover-washed-yellow</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-washed-yellow"&gt;hover-washed-yellow&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black hover-washed-red">hover-washed-red</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black hover-washed-red"&gt;hover-washed-red&lt;/a&gt;
+</code>
+</div>
+</article>
+</section>
+<section class="mt5">
+<h4 class="f6 fw6">Background color transition on hover</h4>
+<article class="mt4">
+ <a href="#" class="link b blue pv2 db bg-animate hover-bg-black">bg-animate hover-bg-black</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b blue pv2 db bg-animate hover-bg-black"&gt;bg-animate hover-bg-black&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-near-black">bg-animate hover-bg-near-black</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-near-black"&gt;bg-animate hover-bg-near-black&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-dark-gray">bg-animate hover-bg-dark-gray</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-dark-gray"&gt;bg-animate hover-bg-dark-gray&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-mid-gray">bg-animate hover-bg-mid-gray</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-mid-gray"&gt;bg-animate hover-bg-mid-gray&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-gray">bg-animate hover-bg-gray</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-gray"&gt;bg-animate hover-bg-gray&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-silver">bg-animate hover-bg-silver</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-silver"&gt;bg-animate hover-bg-silver&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-light-silver">bg-animate hover-bg-light-silver</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-light-silver"&gt;bg-animate hover-bg-light-silver&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-moon-gray">bg-animate hover-bg-moon-gray</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-moon-gray"&gt;bg-animate hover-bg-moon-gray&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-light-gray">bg-animate hover-bg-light-gray</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-light-gray"&gt;bg-animate hover-bg-light-gray&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-near-white">bg-animate hover-bg-near-white</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-near-white"&gt;bg-animate hover-bg-near-white&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-white">bg-animate hover-bg-white</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-white"&gt;bg-animate hover-bg-white&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-transparent">bg-animate hover-bg-transparent</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-transparent"&gt;bg-animate hover-bg-transparent&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-dark-red">bg-animate hover-bg-dark-red</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-dark-red"&gt;bg-animate hover-bg-dark-red&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-red">bg-animate hover-bg-red</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-red"&gt;bg-animate hover-bg-red&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-light-red">bg-animate hover-bg-light-red</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-light-red"&gt;bg-animate hover-bg-light-red&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-orange">bg-animate hover-bg-orange</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-orange"&gt;bg-animate hover-bg-orange&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-gold">bg-animate hover-bg-gold</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-gold"&gt;bg-animate hover-bg-gold&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-yellow">bg-animate hover-bg-yellow</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-yellow"&gt;bg-animate hover-bg-yellow&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-light-yellow">bg-animate hover-bg-light-yellow</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-light-yellow"&gt;bg-animate hover-bg-light-yellow&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-purple">bg-animate hover-bg-purple</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-purple"&gt;bg-animate hover-bg-purple&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-light-purple">bg-animate hover-bg-light-purple</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-light-purple"&gt;bg-animate hover-bg-light-purple&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-dark-pink">bg-animate hover-bg-dark-pink</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-dark-pink"&gt;bg-animate hover-bg-dark-pink&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-hot-pink">bg-animate hover-bg-hot-pink</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-hot-pink"&gt;bg-animate hover-bg-hot-pink&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-pink">bg-animate hover-bg-pink</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-pink"&gt;bg-animate hover-bg-pink&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-light-pink">bg-animate hover-bg-light-pink</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-light-pink"&gt;bg-animate hover-bg-light-pink&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-dark-green">bg-animate hover-bg-dark-green</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-dark-green"&gt;bg-animate hover-bg-dark-green&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-green">bg-animate hover-bg-green</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-green"&gt;bg-animate hover-bg-green&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-light-green">bg-animate hover-bg-light-green</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-light-green"&gt;bg-animate hover-bg-light-green&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-navy">bg-animate hover-bg-navy</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-navy"&gt;bg-animate hover-bg-navy&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-dark-blue">bg-animate hover-bg-dark-blue</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-dark-blue"&gt;bg-animate hover-bg-dark-blue&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-blue">bg-animate hover-bg-blue</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-blue"&gt;bg-animate hover-bg-blue&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-light-blue">bg-animate hover-bg-light-blue</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-light-blue"&gt;bg-animate hover-bg-light-blue&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-lightest-blue">bg-animate hover-bg-lightest-blue</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-lightest-blue"&gt;bg-animate hover-bg-lightest-blue&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-washed-blue">bg-animate hover-bg-washed-blue</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-washed-blue"&gt;bg-animate hover-bg-washed-blue&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-washed-green">bg-animate hover-bg-washed-green</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-washed-green"&gt;bg-animate hover-bg-washed-green&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-washed-yellow">bg-animate hover-bg-washed-yellow</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-washed-yellow"&gt;bg-animate hover-bg-washed-yellow&lt;/a&gt;
+</code>
+</div>
+</article>
+<article class="mt4">
+ <a href="#" class="link b black pv2 db bg-animate hover-bg-washed-red">bg-animate hover-bg-washed-red</a>
+ <div class="bl-ns bw2-ns b--black-05 pl3-ns">
+  <code class="f6 db">
+ &lt;a href="#" class="link b black pv2 db bg-animate hover-bg-washed-red"&gt;bg-animate hover-bg-washed-red&lt;/a&gt;
+</code>
+</div>
+</article>
+</section>
+        <div class="mt5 pv4 bt bb b--black-10">
+          <div class="dib mb4 mr5 v-top">
+            <h4 class="f6 fw6 mt0">Previous</h4>
+            <a href="/docs/skins/" class="link fw6 blue dim">Skins</a>
+          </div>
+          <div class="dib mb4 mr5 v-top">
+            <h4 class="f6 fw6 mt0">Next</h4>
+            <a href="/docs/themes/hovers/" class="link fw6 blue dim">Hovers</a>
+          </div>
+          <div class="dib mb4 v-top">
+            <h4 class="f6 fw6 mt0">Reference</h4>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/%3Ahover" class="link db dib-ns fw6 blue dim mr4-ns">MDN - Hover</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/%3Afocus" class="link db dib-ns fw6 blue dim">MDN - Focus</a>
+          </div>
+        </div>
+      </div>
+      <section class="bg-white black-70 bt bb b--black-40 pb5 mt5 overflow-container">
+      <header class="ph3 ph5-ns pt4">
+        <h4 class="f4 mv0 fw6 dib mr4">tachyons-skins-pseudo</h4>
+        <span class="f4 b dib pl0 ml0 mr4">v1.0.1</span>
+        <span class="f4 b dib pl0 ml0 mr4">857 B</span>
+        <div>
+          <dl class="dib mr4 mt0">
+            <dt class="f6 db">Declarations </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b">73</dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Selectors </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b">146</dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Max. Specificity Score </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b">20</dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Size of Avg. Rule </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b">1</dd>
+          </dl>
+        </div>
+        <h4 class="fw6 f6 di pr3">Source code</h4> <kbd>src/_skins-pseudo.css</kbd>
+      </header>
+<pre class="ph3 ph5-ns">
+<code class="code" style="font-size: .75rem;">
+/* 
+  
+   SKINS:PSEUDO
+
+   Customize the color of an element when
+   it is focused or hovered over.
+ 
+ */
+
+.hover-black:hover, 
+.hover-black:focus { color: var(--black); }
+.hover-near-black:hover, 
+.hover-near-black:focus { color: var(--near-black); }
+.hover-dark-gray:hover, 
+.hover-dark-gray:focus { color: var(--dark-gray); }
+.hover-mid-gray:hover, 
+.hover-mid-gray:focus { color: var(--mid-gray); }
+.hover-gray:hover, 
+.hover-gray:focus { color: var(--gray); }
+.hover-silver:hover, 
+.hover-silver:focus { color: var(--silver); }
+.hover-light-silver:hover, 
+.hover-light-silver:focus { color: var(--light-silver); }
+.hover-moon-gray:hover, 
+.hover-moon-gray:focus { color: var(--moon-gray); }
+.hover-light-gray:hover, 
+.hover-light-gray:focus { color: var(--light-gray); }
+.hover-near-white:hover, 
+.hover-near-white:focus { color: var(--near-white); }
+.hover-white:hover, 
+.hover-white:focus { color: var(--white); }
+
+.hover-bg-black:hover, 
+.hover-bg-black:focus { background-color: var(--black); }
+.hover-bg-near-black:hover, 
+.hover-bg-near-black:focus { background-color: var(--near-black); }
+.hover-bg-dark-gray:hover, 
+.hover-bg-dark-gray:focus { background-color: var(--dark-gray); }
+.hover-bg-dark-gray:focus, 
+.hover-bg-mid-gray:hover { background-color: var(--mid-gray); }
+.hover-bg-gray:hover, 
+.hover-bg-gray:focus { background-color: var(--gray); }
+.hover-bg-silver:hover, 
+.hover-bg-silver:focus { background-color: var(--silver); }
+.hover-bg-light-silver:hover, 
+.hover-bg-light-silver:focus { background-color: var(--light-silver); }
+.hover-bg-moon-gray:hover, 
+.hover-bg-moon-gray:focus { background-color: var(--moon-gray); }
+.hover-bg-light-gray:hover, 
+.hover-bg-light-gray:focus { background-color: var(--light-gray); }
+.hover-bg-near-white:hover, 
+.hover-bg-near-white:focus { background-color: var(--near-white); }
+.hover-bg-white:hover, 
+.hover-bg-white:focus { background-color: var(--white); }
+.hover-bg-transparent:hover, 
+.hover-bg-transparent:focus { background-color: var(--transparent); }
+
+.hover-dark-red:hover,
+.hover-dark-red:focus { color: var(--dark-red); }
+.hover-red:hover,
+.hover-red:focus { color: var(--red); }
+.hover-light-red:hover,
+.hover-light-red:focus { color: var(--light-red); }
+.hover-orange:hover,
+.hover-orange:focus { color: var(--orange); }
+.hover-gold:hover,
+.hover-gold:focus { color: var(--gold); }
+.hover-yellow:hover,
+.hover-yellow:focus { color: var(--yellow); }
+.hover-light-yellow:hover,
+.hover-light-yellow:focus { color: var(--light-yellow); }
+.hover-purple:hover,
+.hover-purple:focus { color: var(--purple); }
+.hover-light-purple:hover,
+.hover-light-purple:focus { color: var(--light-purple); }
+.hover-dark-pink:hover,
+.hover-dark-pink:focus { color: var(--dark-pink); }
+.hover-hot-pink:hover,
+.hover-hot-pink:focus { color: var(--hot-pink); }
+.hover-pink:hover,
+.hover-pink:focus { color: var(--pink); }
+.hover-light-pink:hover,
+.hover-light-pink:focus { color: var(--light-pink); }
+.hover-dark-green:hover,
+.hover-dark-green:focus { color: var(--dark-green); }
+.hover-green:hover,
+.hover-green:focus { color: var(--green); }
+.hover-light-green:hover,
+.hover-light-green:focus { color: var(--light-green); }
+.hover-navy:hover,
+.hover-navy:focus { color: var(--navy); }
+.hover-dark-blue:hover,
+.hover-dark-blue:focus { color: var(--dark-blue); }
+.hover-blue:hover,
+.hover-blue:focus { color: var(--blue); }
+.hover-light-blue:hover,
+.hover-light-blue:focus { color: var(--light-blue); }
+.hover-lightest-blue:hover,
+.hover-lightest-blue:focus { color: var(--lightest-blue); }
+.hover-washed-blue:hover,
+.hover-washed-blue:focus { color: var(--washed-blue); }
+.hover-washed-green:hover,
+.hover-washed-green:focus { color: var(--washed-green); }
+.hover-washed-yellow:hover,
+.hover-washed-yellow:focus { color: var(--washed-yellow); }
+.hover-washed-red:hover,
+.hover-washed-red:focus { color: var(--washed-red); }
+
+.hover-bg-dark-red:hover,
+.hover-bg-dark-red:focus { background-color: var(--dark-red); }
+.hover-bg-red:hover,
+.hover-bg-red:focus { background-color: var(--red); }
+.hover-bg-light-red:hover,
+.hover-bg-light-red:focus { background-color: var(--light-red); }
+.hover-bg-orange:hover,
+.hover-bg-orange:focus { background-color: var(--orange); }
+.hover-bg-gold:hover,
+.hover-bg-gold:focus { background-color: var(--gold); }
+.hover-bg-yellow:hover,
+.hover-bg-yellow:focus { background-color: var(--yellow); }
+.hover-bg-light-yellow:hover,
+.hover-bg-light-yellow:focus { background-color: var(--light-yellow); }
+.hover-bg-purple:hover,
+.hover-bg-purple:focus { background-color: var(--purple); }
+.hover-bg-light-purple:hover,
+.hover-bg-light-purple:focus { background-color: var(--light-purple); }
+.hover-bg-dark-pink:hover,
+.hover-bg-dark-pink:focus { background-color: var(--dark-pink); }
+.hover-bg-hot-pink:hover,
+.hover-bg-hot-pink:focus { background-color: var(--hot-pink); }
+.hover-bg-pink:hover,
+.hover-bg-pink:focus { background-color: var(--pink); }
+.hover-bg-light-pink:hover,
+.hover-bg-light-pink:focus { background-color: var(--light-pink); }
+.hover-bg-dark-green:hover,
+.hover-bg-dark-green:focus { background-color: var(--dark-green); }
+.hover-bg-green:hover,
+.hover-bg-green:focus { background-color: var(--green); }
+.hover-bg-light-green:hover,
+.hover-bg-light-green:focus { background-color: var(--light-green); }
+.hover-bg-navy:hover,
+.hover-bg-navy:focus { background-color: var(--navy); }
+.hover-bg-dark-blue:hover,
+.hover-bg-dark-blue:focus { background-color: var(--dark-blue); }
+.hover-bg-blue:hover,
+.hover-bg-blue:focus { background-color: var(--blue); }
+.hover-bg-light-blue:hover,
+.hover-bg-light-blue:focus { background-color: var(--light-blue); }
+.hover-bg-lightest-blue:hover,
+.hover-bg-lightest-blue:focus { background-color: var(--lightest-blue); }
+.hover-bg-washed-blue:hover,
+.hover-bg-washed-blue:focus { background-color: var(--washed-blue); }
+.hover-bg-washed-green:hover,
+.hover-bg-washed-green:focus { background-color: var(--washed-green); }
+.hover-bg-washed-yellow:hover,
+.hover-bg-washed-yellow:focus { background-color: var(--washed-yellow); }
+.hover-bg-washed-red:hover,
+.hover-bg-washed-red:focus { background-color: var(--washed-red); }
+
+
+</code>
+</pre>
+      </section>
+      <div class="bt b--black-10 pt4">
+        <div class="ph3 ph5-ns pb5">
+    <article  class="pb3">
+      <h2 class="f6 fw7 ttu tracked">Overview of Tachyons</h2>
+      <a class="f5 fw4 dim link blue db pv1" href="/docs/table-of-styles/" title="View a list of styles">Table of Styles</a>
+      <a class="f5 fw4 dim link blue db pv1" href="/docs/table-of-properties/" title="View a list of properties">Table of Properties</a>
+    </article>
+    <section class="cf w-100 mt3">
+      <article class="fn fl-ns w-100 w-25-l">
+        <h2 class="f6 fw7 ttu tracked" id="typography">Typography</h2>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/scale" title="Type">Type Scale</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/measure/" title="Measure">Measure</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/line-height" title="Line Height">Line Height / Leading</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/tracking" title="Tracking">Tracking</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-weight" title="Font Weights">Font Weights</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-style" title="Font Families">Font Style</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/vertical-align" title="Font Families">Vertical Align</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/text-align" title="Text Align">Text Align</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/text-transform" title="Text Transform">Text Transform</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/text-decoration" title="Text Decoration">Text Decoration</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/white-space" title="White Space">White Space</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-family" title="Font Families">Font Families</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-family/avenir" title="Font Families">Avenir Next</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-family/helvetica" title="Font Families">Helvetica</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-family/roboto" title="Font Families">Roboto</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-family/san-francisco" title="Font Families">San Francisco</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-family/system-sans-serif" title="Font Families">System Sans-Serif</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-family/athelas" title="Font Families">Athelas</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-family/baskerville" title="Font Families">Baskerville</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-family/garamond" title="Font Families">Garamond</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-family/georgia" title="Font Families">Georgia</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-family/system-serif" title="Font Families">System Serif</a>
+      </article>
+      <article class="fn fl-ns w-100 w-25-l">
+        <h2 class="f6 fw7 ttu tracked" id="layout">Layout</h2>
+        <a class="f5  fw4 dim link blue db pv1" href="/docs/debug/" title="Debugging Documentation">Debugging</a>
+        <a class="f5  fw4 dim link blue db pv1" href="/docs/debug-grid/" title="Debugging with background grids">Debug with a Grid</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/grid" title="Basic Grid">Basic Grid</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/box-sizing" title="Box Sizing Documentation">Box Sizing</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/spacing" title="Spacing Documentation">Spacing</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/floats" title="Floats Documentation">Floats</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/clearfix" title="Clears Documentation">Clearfix</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/display" title="Display Documentation">Display</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/widths" title="Widths Documentation">Widths</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/max-widths" title="Max Widths Documentation">Max Widths</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/heights" title="Heights Documentation">Heights</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/position" title="Position Documentation">Position</a>
+      </article>
+      <article class="fn fl-ns w-100 w-25-l">
+        <h2 class="f6 fw7 ttu tracked">Theming</h2>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/themes/skins/" title="Hovers Documentation">Skins</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/themes/hovers/" title="Hovers Documentation">Hovers</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/themes/background-size/" title="Background Size Documentation">Background Size</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/themes/borders/" title="Borders Documentation">Borders</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/themes/border-radius/" title="Border Radius Documentation">Border Radius</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/themes/box-shadow/" title="Box Shadow Documentation">Box Shadow</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/themes/opacity/" title="Opacity Documentation">Opacity</a>
+      </article>
+    <article class="fn fl-ns w-100 w-25-l">
+      <h2 class="f6 fw7 ttu tracked">Elements</h2>
+      <a class="f5 fw4 dim link blue db pv1" href="/docs/elements/images/" title="View images documentation">Images</a>
+      <a class="f5 fw4 dim link blue db pv1" href="/docs/elements/links/" title="View links documentation">Links</a>
+      <a class="f5 fw4 dim link blue db pv1" href="/docs/elements/lists/" title="View lists documentation">Lists</a>
+      <a class="f5 fw4 dim link blue db pv1 dn" href="/docs/elements/forms/" title="View forms documentation">Forms</a>
+      <a class="f5 fw4 dim link blue db pv1 dn" href="/docs/elements/tables/" title="View tables module documentation">Tables</a>
+    </article>
+    </section>
+</div>
+
+      </div>
+    </main>
+    <footer class="bg-white black-70 ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+  <div class="mw9 center">
+  <div class="mb5">
+    <a class="black-70 link dim b dib mr3" href="/" title="Home">
+      Home
+    </a>
+    <a class="black-70 link dim b dib mr3" href="/docs" title="Docs">
+      Docs
+    </a>
+    <a class="black-70 link dim b dib mr3" href="/components/" title="Components">
+      Components
+    </a>
+  </div>
+  <article class="v-top">
+    <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+    <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+  <a href="https://twitter.com/intent/tweet?text=Tachyons: A functional css toolkit for designing in the browser.&url=http://tachyons.io" class="twitter bg-white-50 link dib dim br2 ph2 pb1 lh-solid v-top" style="background-color: #55acee;">
+    <svg class="geomicon dib v-mid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="#fff">
+      <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
+    </svg>
+    <span class="dib v-mid white fw6" style="font-size: 12px;">Tweet</span>
+  </a>
+  </article>
+  <div class="mt4">
+    <a class="ba black-70 no-underline grow br2 b dib mr3 mb3 pv2 ph3" href="https://twitter.com/tachyons_css" title="Follow us on Twitter">
+      Follow us on Twitter
+    </a>
+    <a class="ba black-70 no-underline grow br2 b dib mr3 mb3 pv2 ph3" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
+      Join our Slack Channel
+    </a>
+    <a class="ba br2 black-70 no-underline grow b dib mb3 pv2 ph3" href="https://github.com/tachyons-css/tachyons/issues" title="File a bug, request a feature, ask a question!">
+      Open an Issue
+    </a>
+  </div>
+  <p class="f6 measure copy lh-copy">
+    Have a question? Need help? Feel free to open an issue on GitHub or ask a
+    question in our slack channel. We're here to try and help make designing in
+    the browser fun.
+  </p>
+  <div class="pt4 cf mw5">
+    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=tachyonsio" id="_carbonads_js"></script>
+  </div>
+  <small class="f6 measure db lh-copy mt5">
+    A tachyon /ˈtæki.ɒn/ or tachyonic particle is a hypothetical particle
+    that always moves faster than light.
+    The word comes from the Greek:
+    <br> <br>
+    ταχύς or tachys, meaning "swift, quick, fast, rapid"
+  </small>
+
+</div>
+</footer>
+
+        <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-55773803-1', 'auto');
+ga('send', 'pageview');
+
+    </script>
+
+  </body>
+</html>
