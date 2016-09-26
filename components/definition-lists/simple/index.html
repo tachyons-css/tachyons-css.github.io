@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>TACHYONS - Layout Aspect Ratio 4x3</title>
+<title>TACHYONS - Definition Lists Simple</title>
 <meta name="description" content="Tachyons Component">
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -24,74 +24,73 @@
 </head>
 <body class="w-100 sans-serif bg-white">
 <main>
-  <article class="mw5 mw6-ns center pt4">
-  <div class="aspect-ratio aspect-ratio--4x3 mb4">
-    <div class="aspect-ratio--object cover" style="background:url(http://mrmrs.io/photos/001.jpg) center;"></div>
-  </div>
-</article>
+  <dl class="lh-title pa4 mt0">
+  <dt class="f6 b">Favorite Song</dt>
+  <dd class="ml0">Devil Got My Woman - Skip James</dd>
+  <dt class="f6 b mt2">Favorite Movie</dt>
+  <dd class="ml0">Primer</dd>
+  <dt class="f6 b mt2">Favorite Artist</dt>
+  <dd class="ml0">Kanye West</dd>
+  <dt class="f6 b mt2">Favorite Food</dt>
+  <dd class="ml0">Cheese Pizza</dd>
+  <dt class="f6 b mt2">Least Favorite Flavor</dt>
+  <dd class="ml0">Cherry</dd>
+  <dt class="f6 b mt2">Favorite Hobby</dt>
+  <dd class="ml0">Eating Cheese Pizza</dd>
+</dl>
 
   <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70 bg-white">
-  <h1 class="f4 f3-ns mt4">Aspect Ratio 4x3</h1>
+  <h1 class="f4 f3-ns mt4">Simple</h1>
 <div class="cf">
 <div class="fl w-100 w-75-ns pr0 pr2-ns">
 <h2 class="f5">HTML</h2>
 <p class="f5 black-70"></p>
 <pre class="pa3 ba br2 b--black-10 h5 bg-white-20" id="html">
-&lt;article class=&quot;mw5 mw6-ns center pt4&quot;&gt;
-  &lt;div class=&quot;aspect-ratio aspect-ratio--4x3 mb4&quot;&gt;
-    &lt;div class=&quot;aspect-ratio--object cover&quot; style=&quot;background:url(http://mrmrs.io/photos/001.jpg) center;&quot;&gt;&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/article&gt;
+&lt;dl class=&quot;lh-title pa4 mt0&quot;&gt;
+  &lt;dt class=&quot;f6 b&quot;&gt;Favorite Song&lt;/dt&gt;
+  &lt;dd class=&quot;ml0&quot;&gt;Devil Got My Woman - Skip James&lt;/dd&gt;
+  &lt;dt class=&quot;f6 b mt2&quot;&gt;Favorite Movie&lt;/dt&gt;
+  &lt;dd class=&quot;ml0&quot;&gt;Primer&lt;/dd&gt;
+  &lt;dt class=&quot;f6 b mt2&quot;&gt;Favorite Artist&lt;/dt&gt;
+  &lt;dd class=&quot;ml0&quot;&gt;Kanye West&lt;/dd&gt;
+  &lt;dt class=&quot;f6 b mt2&quot;&gt;Favorite Food&lt;/dt&gt;
+  &lt;dd class=&quot;ml0&quot;&gt;Cheese Pizza&lt;/dd&gt;
+  &lt;dt class=&quot;f6 b mt2&quot;&gt;Least Favorite Flavor&lt;/dt&gt;
+  &lt;dd class=&quot;ml0&quot;&gt;Cherry&lt;/dd&gt;
+  &lt;dt class=&quot;f6 b mt2&quot;&gt;Favorite Hobby&lt;/dt&gt;
+  &lt;dd class=&quot;ml0&quot;&gt;Eating Cheese Pizza&lt;/dd&gt;
+&lt;/dl&gt;
 
 </pre>
 </div>
 <div class="fl w-100 w-25-ns pl0 pl2-ns">
 <h2 class="f5">css</h2>
-<pre class="pa3 ba br2 b--black-10 h5" id="css">.cover {
-    background-size: cover !important;
+<pre class="pa3 ba br2 b--black-10 h5" id="css">.b {
+    font-weight: bold;
 }
 
-.mw5 {
-    max-width: 16rem;
+.lh-title {
+    line-height: 1.25;
 }
 
-.pt4 {
-    padding-top: 2rem;
+.pa4 {
+    padding: 2rem;
 }
 
-.mb4 {
-    margin-bottom: 2rem;
+.ml0 {
+    margin-left: 0;
 }
 
-.aspect-ratio {
-    height: 0;
-    position: relative;
+.mt0 {
+    margin-top: 0;
 }
 
-.aspect-ratio--4x3 {
-    padding-bottom: 75%;
+.mt2 {
+    margin-top: .5rem;
 }
 
-.aspect-ratio--object {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-}
-
-.center {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-@media screen and (min-width: 30em) {
-    .mw6-ns {
-        max-width: 32rem;
-    }
+.f6 {
+    font-size: .875rem;
 }
 
 </pre>
@@ -102,29 +101,29 @@
     <h2 class="f5 mb3 mt4">Css stats for this component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Gzipped Size</dt>
-      <dd class="ml0 b f3 f2-ns">280<small class="f6">B</small>
+      <dd class="ml0 b f3 f2-ns">139<small class="f6">B</small>
       </dd>
     </dl>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Selectors</dt>
-      <dd class="ml0 b f3 f2-ns">9</dd>
+      <dd class="ml0 b f3 f2-ns">7</dd>
     </dl>
     <dl class="dib mt0">
       <dt class="db f6">Declarations</dt>
-      <dd class="ml0 b f3 f2-ns">18</dd>
+      <dd class="ml0 b f3 f2-ns">7</dd>
     </dl>
   </div>
   <div class="fl w-100">
     <h2 class="f5 mt4">Modules referenced</h2>
     <ul class="list pl0 cf lh-copy mw7">
       
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-background-size">tachyons-background-size</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-font-weight">tachyons-font-weight</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-max-widths">tachyons-max-widths</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-line-height">tachyons-line-height</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-spacing">tachyons-spacing</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-utilities">tachyons-utilities</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-type-scale">tachyons-type-scale</a></li>
   
     </ul>
   </div>
@@ -134,7 +133,7 @@
 
 
   <h4 class="mt5">Install via npm <small class="fw2 f6 db mt1">Only installs the needed tachyons-modules for this component</small></h4>
-  <code class="f6">npm i --save tachyons-background-size tachyons-max-widths tachyons-spacing tachyons-utilities</code>
+  <code class="f6">npm i --save tachyons-font-weight tachyons-line-height tachyons-spacing tachyons-type-scale</code>
   <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 
