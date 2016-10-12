@@ -5,20 +5,20 @@ var filesize = require('filesize')
 var cssstats = require('cssstats')
 
 
-var module = require('tachyons-skins-pseudos/package.json')
-var moduleCss = fs.readFileSync('node_modules/tachyons-skins-pseudos/css/tachyons-skins-pseudos.min.css', 'utf8')
+var module = require('tachyons-skins-pseudo/package.json')
+var moduleCss = fs.readFileSync('node_modules/tachyons-skins-pseudo/css/tachyons-skins-pseudo.min.css', 'utf8')
 var moduleObj = cssstats(moduleCss)
 var moduleSize = filesize(moduleObj.gzipSize)
 var moduleName = module.name
 
-var srccss = fs.readFileSync('./src/css/_skins-pseudos.css', 'utf8')
+var srccss = fs.readFileSync('./src/css/_skins-pseudo.css', 'utf8')
 var navDocs = fs.readFileSync('./src/templates/nav_docs.html', 'utf8')
 var siteFooter = fs.readFileSync('./src/templates/footer.html', 'utf8')
 var siteHeader = fs.readFileSync('./src/templates/header.html', 'utf8')
 var head = fs.readFileSync('./src/templates/head.html', 'utf8')
 var googleAnalytics = fs.readFileSync('./src/templates/ga.html', 'utf8')
 
-var template = fs.readFileSync('./src/templates/docs/skins-pseudos/index.html', 'utf8')
+var template = fs.readFileSync('./src/templates/docs/skins-pseudo/index.html', 'utf8')
 var tpl = _.template(template)
 var html = tpl({
   moduleVersion: module.version,
@@ -33,4 +33,4 @@ var html = tpl({
   siteHeader: siteHeader
 })
 
-fs.writeFileSync('./docs/themes/skins-pseudos/index.html', html)
+fs.writeFileSync('./docs/themes/skins-pseudo/index.html', html)
