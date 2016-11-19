@@ -8,6 +8,7 @@
     "css": "tachyons src/css/tachyons.css > css/tachyons.css && tachyons src/css/tachyons.css --minify > css/tachyons.min.css",
     "components:watch": "watch 'node build.js' src/components/*",
     "home:watch": "watch 'node build-home.js' src/templates/",
+    "gallery:watch": "watch 'node build' src/templates/",
     "build:watch": "watch 'node build.js' src/templates/",
     "docs:grid": "watch 'node src/modules/grid.js' src/templates/docs/grid/",
     "docs:links": "watch 'node src/modules/links.js' src/templates/docs/links/",
