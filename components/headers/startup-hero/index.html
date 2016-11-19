@@ -91,300 +91,58 @@
 </div>
 <div class="fl w-100 w-25-ns pl0 pl2-ns">
 <h2 class="f5">css</h2>
-<pre class="pa3 ba br2 b--black-10 h5" id="css">.border-box {
-    box-sizing: border-box;
-}
-
-.cover {
-    background-size: cover !important;
-}
-
-.bg-left {
-    background-repeat: no-repeat;
-    background-position: center left;
-}
-
-.ba {
-    border-style: solid;
-    border-width: 1px;
-}
-
-.b--white {
-    border-color: #fff;
-}
-
-.b--white-90 {
-    border-color: rgba(255, 255, 255, .9);
-}
-
-.b--blue {
-    border-color: #357edd;
-}
-
-.dn {
-    display: none;
-}
-
-.dib {
-    display: inline-block;
-}
-
-.dt {
-    display: table;
-}
-
-.dtc {
-    display: table-cell;
-}
-
-.sans-serif {
-    font-family: -apple-system,
-                 BlinkMacSystemFont,
-                 'avenir next',
-                 avenir,
-                 helvetica,
-                 'helvetica neue',
-                 ubuntu,
-                 roboto,
-                 noto,
-                 'segoe ui',
-                 arial,
-                 sans-serif;
-}
-
-.fw1 {
-    font-weight: 100;
-}
-
-.fw2 {
-    font-weight: 200;
-}
-
-.fw4 {
-    font-weight: 400;
-}
-
-.h2 {
-    height: 2rem;
-}
-
-.lh-title {
-    line-height: 1.25;
-}
-
-.link {
-    text-decoration: none;
-    transition: color .15s ease-in;
-}
-
-.link:link, .link:visited {
-    transition: color .15s ease-in;
-}
-
-.link:hover {
-    transition: color .15s ease-in;
-}
-
-.link:active {
-    transition: color .15s ease-in;
-}
-
-.link:focus {
-    transition: color .15s ease-in;
-    outline: 1px dotted currentColor;
-}
-
-.mw8 {
-    max-width: 64rem;
-}
-
-.w2 {
-    width: 2rem;
-}
-
-.w-100 {
-    width: 100%;
-}
-
-.white-90 {
-    color: rgba(255, 255, 255, .9);
-}
-
-.white-80 {
-    color: rgba(255, 255, 255, .8);
-}
-
-.white-70 {
-    color: rgba(255, 255, 255, .7);
-}
-
-.white {
-    color: #fff;
-}
-
-.bg-black-80 {
-    background-color: rgba(0, 0, 0, .8);
-}
-
-.bg-blue {
-    background-color: #357edd;
-}
-
-.hover-white:hover {
-    color: #fff;
-}
-
-.hover-white:focus {
-    color: #fff;
-}
-
-.pa1 {
-    padding: .25rem;
-}
-
-.pa3 {
-    padding: 1rem;
-}
-
-.pb5 {
-    padding-bottom: 4rem;
-}
-
-.pv2 {
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-}
-
-.ph3 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.ml2 {
-    margin-left: .5rem;
-}
-
-.mb0 {
-    margin-bottom: 0;
-}
-
-.mb3 {
-    margin-bottom: 1rem;
-}
-
-.mb4 {
-    margin-bottom: 2rem;
-}
-
-.mt3 {
-    margin-top: 1rem;
-}
-
-.mt4 {
-    margin-top: 2rem;
-}
-
-.no-underline {
-    text-decoration: none;
-}
-
-.tr {
-    text-align: right;
-}
-
-.f2 {
-    font-size: 2.25rem;
-}
-
-.f3 {
-    font-size: 1.5rem;
-}
-
-.f6 {
-    font-size: .875rem;
-}
-
-.center {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.v-mid {
-    vertical-align: middle;
-}
-
-.grow {
-    -moz-osx-font-smoothing: grayscale;
-    backface-visibility: hidden;
-    transform: translateZ(0);
-    transition: transform .25s ease-out;
-}
-
-.grow:hover, .grow:focus {
-    transform: scale(15);
-}
-
-.grow:active {
-    transform: scale(.90);
-}
-
-.grow-large {
-    -moz-osx-font-smoothing: grayscale;
-    backface-visibility: hidden;
-    transform: translateZ(0);
-    transition: transform .25s ease-in-out;
-}
-
-.grow-large:hover, .grow-large:focus {
-    transform: scale(1.2);
-}
-
-.grow-large:active {
-    transform: scale(.95);
-}
-
-@media screen and (min-width: 30em) {
-    .dib-ns {
-        display: inline-block;
-    }
-}
-
-@media screen and (min-width: 30em) and (max-width: 60em) {
-    .pb6-m {
-        padding-bottom: 8rem;
-    }
-
-    .mt5-m {
-        margin-top: 4rem;
-    }
-}
-
-@media screen and (min-width: 60em) {
-    .bg-center-l {
-        background-repeat: no-repeat;
-        background-position: center center;
-    }
-
-    .dib-l {
-        display: inline-block;
-    }
-
-    .pb7-l {
-        padding-bottom: 16rem;
-    }
-
-    .mt6-l {
-        margin-top: 8rem;
-    }
-
-    .tc-l {
-        text-align: center;
-    }
-
-    .f1-l {
-        font-size: 3rem;
-    }
-}
+<pre class="pa3 ba br2 b--black-10 h5" id="css">@import './_normalize';
+@import './_box-sizing';
+@import './_images';
+@import './_background-size';
+@import './_background-position';
+@import './_outlines';
+@import './_borders';
+@import './_border-colors';
+@import './_border-radius';
+@import './_border-style';
+@import './_border-widths';
+@import './_box-shadow';
+@import './_code';
+@import './_coordinates';
+@import './_clears';
+@import './_display';
+@import './_flexbox';
+@import './_floats';
+@import './_font-family';
+@import './_font-style';
+@import './_font-weight';
+@import './_forms';
+@import './_heights';
+@import './_letter-spacing';
+@import './_line-height';
+@import './_links';
+@import './_lists';
+@import './_max-widths';
+@import './_widths';
+@import './_overflow';
+@import './_position';
+@import './_opacity';
+@import './_skins';
+@import './_skins-pseudo';
+@import './_spacing';
+@import './_tables';
+@import './_text-decoration';
+@import './_text-align';
+@import './_text-transform';
+@import './_type-scale';
+@import './_typography';
+@import './_utilities';
+@import './_visibility';
+@import './_white-space';
+@import './_vertical-align';
+@import './_hovers';
+@import './_z-index';
+@import './_styles';
+@import './_colors';
+@import './_media-queries';
+@import './_debug-children';
+@import './_debug-grid';
 
 </pre>
 </div>
@@ -394,66 +152,22 @@
     <h2 class="f5 mb3 mt4">Css stats for this component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Gzipped Size</dt>
-      <dd class="ml0 b f3 f2-ns">1030<small class="f6">B</small>
+      <dd class="ml0 b f3 f2-ns">350<small class="f6">B</small>
       </dd>
     </dl>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Selectors</dt>
-      <dd class="ml0 b f3 f2-ns">69</dd>
+      <dd class="ml0 b f3 f2-ns">0</dd>
     </dl>
     <dl class="dib mt0">
       <dt class="db f6">Declarations</dt>
-      <dd class="ml0 b f3 f2-ns">80</dd>
+      <dd class="ml0 b f3 f2-ns">0</dd>
     </dl>
   </div>
   <div class="fl w-100">
     <h2 class="f5 mt4">Modules referenced</h2>
     <ul class="list pl0 cf lh-copy mw7">
       
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-box-sizing">tachyons-box-sizing</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-background-size">tachyons-background-size</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-background-position">tachyons-background-position</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-borders">tachyons-borders</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-colors">tachyons-border-colors</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-display">tachyons-display</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-font-family">tachyons-font-family</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-font-weight">tachyons-font-weight</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-heights">tachyons-heights</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-line-height">tachyons-line-height</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-links">tachyons-links</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-max-widths">tachyons-max-widths</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-widths">tachyons-widths</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-skins">tachyons-skins</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-skins-pseudo">tachyons-skins-pseudo</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-spacing">tachyons-spacing</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-text-decoration">tachyons-text-decoration</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-text-align">tachyons-text-align</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-type-scale">tachyons-type-scale</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-utilities">tachyons-utilities</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-vertical-align">tachyons-vertical-align</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-hovers">tachyons-hovers</a></li>
-  
     </ul>
   </div>
 </div>
@@ -462,7 +176,7 @@
 
 
   <h4 class="mt5">Install via npm <small class="fw2 f6 db mt1">Only installs the needed tachyons-modules for this component</small></h4>
-  <code class="f6">npm i --save tachyons-box-sizing tachyons-background-size tachyons-background-position tachyons-borders tachyons-border-colors tachyons-display tachyons-font-family tachyons-font-weight tachyons-heights tachyons-line-height tachyons-links tachyons-max-widths tachyons-widths tachyons-skins tachyons-skins-pseudo tachyons-spacing tachyons-text-decoration tachyons-text-align tachyons-type-scale tachyons-utilities tachyons-vertical-align tachyons-hovers</code>
+  <code class="f6">npm i --save </code>
   <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 
