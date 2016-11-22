@@ -47,58 +47,52 @@
 </div>
 <div class="fl w-100 w-25-ns pl0 pl2-ns">
 <h2 class="f5">css</h2>
-<pre class="pa3 ba br2 b--black-10 h5" id="css">@import './_normalize';
-@import './_box-sizing';
-@import './_images';
-@import './_background-size';
-@import './_background-position';
-@import './_outlines';
-@import './_borders';
-@import './_border-colors';
-@import './_border-radius';
-@import './_border-style';
-@import './_border-widths';
-@import './_box-shadow';
-@import './_code';
-@import './_coordinates';
-@import './_clears';
-@import './_display';
-@import './_flexbox';
-@import './_floats';
-@import './_font-family';
-@import './_font-style';
-@import './_font-weight';
-@import './_forms';
-@import './_heights';
-@import './_letter-spacing';
-@import './_line-height';
-@import './_links';
-@import './_lists';
-@import './_max-widths';
-@import './_widths';
-@import './_overflow';
-@import './_position';
-@import './_opacity';
-@import './_skins';
-@import './_skins-pseudo';
-@import './_spacing';
-@import './_tables';
-@import './_text-decoration';
-@import './_text-align';
-@import './_text-transform';
-@import './_type-scale';
-@import './_typography';
-@import './_utilities';
-@import './_visibility';
-@import './_white-space';
-@import './_vertical-align';
-@import './_hovers';
-@import './_z-index';
-@import './_styles';
-@import './_colors';
-@import './_media-queries';
-@import './_debug-children';
-@import './_debug-grid';
+<pre class="pa3 ba br2 b--black-10 h5" id="css">.cover {
+    background-size: cover !important;
+}
+
+.mw5 {
+    max-width: 16rem;
+}
+
+.pt4 {
+    padding-top: 2rem;
+}
+
+.mb4 {
+    margin-bottom: 2rem;
+}
+
+.aspect-ratio {
+    height: 0;
+    position: relative;
+}
+
+.aspect-ratio--3x4 {
+    padding-bottom: 133.33%;
+}
+
+.aspect-ratio--object {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (min-width: 30em) {
+    .mw6-ns {
+        max-width: 32rem;
+    }
+}
 
 </pre>
 </div>
@@ -108,22 +102,30 @@
     <h2 class="f5 mb3 mt4">Css stats for this component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Gzipped Size</dt>
-      <dd class="ml0 b f3 f2-ns">350<small class="f6">B</small>
+      <dd class="ml0 b f3 f2-ns">281<small class="f6">B</small>
       </dd>
     </dl>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Selectors</dt>
-      <dd class="ml0 b f3 f2-ns">0</dd>
+      <dd class="ml0 b f3 f2-ns">9</dd>
     </dl>
     <dl class="dib mt0">
       <dt class="db f6">Declarations</dt>
-      <dd class="ml0 b f3 f2-ns">0</dd>
+      <dd class="ml0 b f3 f2-ns">18</dd>
     </dl>
   </div>
   <div class="fl w-100">
     <h2 class="f5 mt4">Modules referenced</h2>
     <ul class="list pl0 cf lh-copy mw7">
       
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-background-size">tachyons-background-size</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-max-widths">tachyons-max-widths</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-spacing">tachyons-spacing</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-utilities">tachyons-utilities</a></li>
+  
     </ul>
   </div>
 </div>
@@ -132,7 +134,7 @@
 
 
   <h4 class="mt5">Install via npm <small class="fw2 f6 db mt1">Only installs the needed tachyons-modules for this component</small></h4>
-  <code class="f6">npm i --save </code>
+  <code class="f6">npm i --save tachyons-background-size tachyons-max-widths tachyons-spacing tachyons-utilities</code>
   <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 

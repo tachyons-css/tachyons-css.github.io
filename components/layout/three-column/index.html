@@ -59,50 +59,7 @@
 </div>
 <div class="fl w-100 w-25-ns pl0 pl2-ns">
 <h2 class="f5">css</h2>
-<pre class="pa3 ba br2 b--black-10 h5" id="css">@import './_normalize';
-@import './_box-sizing';
-@import './_images';
-@import './_background-size';
-@import './_background-position';
-@import './_outlines';
-@import './_borders';
-@import './_border-colors';
-@import './_border-radius';
-@import './_border-style';
-@import './_border-widths';
-@import './_box-shadow';
-@import './_code';
-@import './_letter-spacing';
-@import './_line-height';
-@import './_links';
-@import './_lists';
-@import './_max-widths';
-@import './_widths';
-@import './_overflow';
-@import './_position';
-@import './_opacity';
-@import './_skins';
-@import './_skins-pseudo';
-@import './_spacing';
-@import './_tables';
-@import './_text-decoration';
-@import './_text-align';
-@import './_text-transform';
-@import './_type-scale';
-@import './_typography';
-@import './_utilities';
-@import './_visibility';
-@import './_white-space';
-@import './_vertical-align';
-@import './_hovers';
-@import './_z-index';
-@import './_styles';
-@import './_colors';
-@import './_media-queries';
-@import './_debug-children';
-@import './_debug-grid';
-
-.dt {
+<pre class="pa3 ba br2 b--black-10 h5" id="css">.dt {
     display: table;
 }
 
@@ -115,6 +72,23 @@
     width: 100%;
 }
 
+.bg-black-10 {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.bg-black-05 {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.pv4 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.tc {
+    text-align: center;
+}
+
 </pre>
 </div>
 </div>
@@ -123,16 +97,16 @@
     <h2 class="f5 mb3 mt4">Css stats for this component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Gzipped Size</dt>
-      <dd class="ml0 b f3 f2-ns">363<small class="f6">B</small>
+      <dd class="ml0 b f3 f2-ns">187<small class="f6">B</small>
       </dd>
     </dl>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Selectors</dt>
-      <dd class="ml0 b f3 f2-ns">3</dd>
+      <dd class="ml0 b f3 f2-ns">7</dd>
     </dl>
     <dl class="dib mt0">
       <dt class="db f6">Declarations</dt>
-      <dd class="ml0 b f3 f2-ns">4</dd>
+      <dd class="ml0 b f3 f2-ns">9</dd>
     </dl>
   </div>
   <div class="fl w-100">
@@ -140,6 +114,12 @@
     <ul class="list pl0 cf lh-copy mw7">
       
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-display">tachyons-display</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-skins">tachyons-skins</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-spacing">tachyons-spacing</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-text-align">tachyons-text-align</a></li>
   
     </ul>
   </div>
@@ -149,7 +129,7 @@
 
 
   <h4 class="mt5">Install via npm <small class="fw2 f6 db mt1">Only installs the needed tachyons-modules for this component</small></h4>
-  <code class="f6">npm i --save tachyons-display</code>
+  <code class="f6">npm i --save tachyons-display tachyons-skins tachyons-spacing tachyons-text-align</code>
   <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 
