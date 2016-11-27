@@ -3,9 +3,9 @@ import React from 'react'
 import Head from './head'
 import Header from './header'
 
-export default ({ children }) => (
+export default ({ title, children }) => (
   <div>
-    <Head />
+    <Head title={title} />
     <Header />
     {children}
   </div>
