@@ -5,13 +5,16 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start" 
+    "start": "next start"
   },
   "repository": "tachyons-css/tachyons-css.github.io",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "compdoc": "0.0.1",
+    "globby": "^6.1.0",
+    "mkdirp": "^0.5.1",
     "next": "^1.1.2",
     "tachyons": "^4.5.5"
   }
