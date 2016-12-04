@@ -14,7 +14,7 @@
   <header class="ph3 ph5-ns pt3 bb bt b--black-10 mb4">
     <div class="mw9 center">
       <% Object.keys(componentsForNav).map(function(category) { %>
-        <a class="f6 b dib mr3 mb3 pb1 link hover-blue black-70 ttc" href="#<%= category%>"><%= category %></a>
+        <a class="f6 fw6 b dib mr3 mb3 pb1 link hover-blue black-70 ttc" href="#<%= category%>"><%= category %></a>
       <% }) %>
     </div>
   </header>
@@ -22,13 +22,13 @@
     <% Object.keys(componentsForNav).map(function(category) { %>
       <div class="ph3 ph5-ns" id="<%= category  %>">
         <div class="mw9 center">
-          <h1 class="f6 fw6 ttu tracked pb2 bb b--black-10 black-70"><%= category %></h1>
+          <h1 class="f6 fw6 pb2 bb b--black-10 black-70 ttc"><%= category %></h1>
         </div>
       </div>
       <div class="ph3 ph5-ns mb5">
         <div class="mw9 center">
           <% componentsForNav[category].map(function(componentForNav) { %>
-            <a class="f5 b pointer dib mr4 pv2 bg-white black-70 link underline-hover border-box" href="<%= componentForNav.href %>" title="<%= componentForNav.name %>">
+            <a class="f5 pointer dib mr4 pv2 bg-white black-70 link underline-hover border-box" href="<%= componentForNav.href %>" title="<%= componentForNav.name %>">
               <%= componentForNav.name %>
             </a>
           <% }) %>
