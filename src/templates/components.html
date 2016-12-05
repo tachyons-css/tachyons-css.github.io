@@ -61,9 +61,9 @@
 
   <% Object.keys(componentsForNav).map(function(category) { %>
     <div>
-      <h2 class="f5 mb2 ttc mid-gray"><%= category %></h2>
+      <h2 class="f6 fw6 mb2 ttc black-70"><%= category %></h2>
       <% componentsForNav[category].map(function(componentForNav) { %>
-        <a class="f5 dib mr3 mb2 blue link dim fw6" href="<%= componentForNav.href %>"><%= componentForNav.name %></a>
+        <a class="f6 f5-ns fw4 dib mr3 mb2 black-70 link hover-blue dim" href="<%= componentForNav.href %>"><%= componentForNav.name %></a>
       <% }) %>
     </div>
   <% }) %>
