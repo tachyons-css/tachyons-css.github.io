@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>TACHYONS - Nav Logo Links Inline Collapse</title>
+<title>TACHYONS - Articles Title Highlight Header Cover</title>
 <meta name="description" content="Tachyons Component">
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -24,180 +24,257 @@
 </head>
 <body class="w-100 sans-serif bg-white">
 <main>
-  <nav class="db dt-l w-100 border-box pa3 ph5-l">
-  <a class="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l" href="#" title="Home">
-    <img src="http://tachyons.io/img/logo.jpg" class="dib w2 h2 br-100" alt="Site Name">
-  </a>
-  <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
-    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="#" title="Home">Home</a>
-    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="#" title="How it Works">How it Works</a>
-    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="#" title="Blog">Blog</a>
-    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="#" title="Press">Press</a>
-    <a class="link dim dark-gray f6 f5-l dib" href="#" title="Contact">Contact</a>
+  <article>
+  <header class="bg-gold sans-serif">
+    <div class="mw9 center pa4 pt5-ns ph7-l">
+      <time class="f6 mb2 dib ttu tracked"><small>27 July, 2015</small></time>
+      <h3 class="f2 f1-m f-headline-l measure-narrow lh-title mv0">
+        <span class="bg-black-90 lh-copy white pa1 tracked-tight">
+          Too many tools and frameworks
+        </span>
+      </h3> 
+      <h4 class="f3 fw1 georgia i">The definitive guide to the javascript tooling landscape in 2015.</h4>
+      <h5 class="f6 ttu tracked black-80">By Adam Morse</h5>
+    </div>
+  </header>
+  <div class="pa4 ph7-l georgia mw9-l center">
+      <p class="f5 f3-ns lh-copy measure georgia">
+        Theodore Sturgeon was a science fiction author, critic, and the basis for Kurt Vonnegut's recurring character Kilgore Trout. He was prolific, authoring over 200 pieces himself and critiquing around 400 others.
+      </p>
+      <p class="f5 f3-ns lh-copy measure georgia">
+        In 1958 he published a piece in Venture proclaiming what he called "Sturgeon's Revelation"
+      </p>
+    <p class="f6 f5-ns lh-copy measure i pl4 bl bw1 b--gold mb4">
+      I repeat Sturgeon's Revelation, which was wrung out of me after twenty years of wearying defense of science fiction against attacks of people who used the worst examples of the field for ammunition, and whose conclusion was that ninety percent of SF is crud. Using the same standards that categorize 90% of science fiction as trash, crud, or crap, it can be argued that 90% of film, literature, consumer goods, etc. is crap. In other words, the claim (or fact) that 90% of science fiction is crap is ultimately uninformative, because science fiction conforms to the same trends of quality as all other artforms.
+    </p>
+    <p class="f5 f4-ns lh-copy measure mb4">
+    You don't have to bounce a tennis ball very far in San Francisco before it will hit two developers complaining about how many js tools/frameworks there are for development in 2015 and how much unneccessary complexity they add. Doing a search on twitter for 'too many js tools' or 'yet another js framework' returns... a lot of people lamenting the current state of affairs.
+  </p>
+
+    <p class="f5 f4-ns lh-copy measure">
+    This is most likely, the wrong conversation for us as a community, to be having. The presence of bad tools - shouldn't discourage us from wanting more tools or frameworks. There are more books published in a single day than I will ever be able to read in my lifetime. But this does not make me sad. Or overwhelm me. Mostly I think about how excited I am to read the best books that are being published. And this is where we should push the conversation. How do we build better tools? What does that look like?
+  </p>
   </div>
-</nav>
+</article>
 
   <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70 bg-white">
-  <h1 class="f4 f3-ns mt4">Logo Links Inline Collapse</h1>
+  <h1 class="f4 f3-ns mt4">Title Highlight Header Cover</h1>
 <div class="cf">
 <div class="fl w-100 w-75-ns pr0 pr2-ns">
 <h2 class="f5">HTML</h2>
 <p class="f5 black-70"></p>
 <pre class="pa3 ba br2 b--black-10 h5 bg-white-20" id="html">
-&lt;nav class=&quot;db dt-l w-100 border-box pa3 ph5-l&quot;&gt;
-  &lt;a class=&quot;db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l&quot; href=&quot;#&quot; title=&quot;Home&quot;&gt;
-    &lt;img src=&quot;http://tachyons.io/img/logo.jpg&quot; class=&quot;dib w2 h2 br-100&quot; alt=&quot;Site Name&quot;&gt;
-  &lt;/a&gt;
-  &lt;div class=&quot;db dtc-l v-mid w-100 w-75-l tc tr-l&quot;&gt;
-    &lt;a class=&quot;link dim dark-gray f6 f5-l dib mr3 mr4-l&quot; href=&quot;#&quot; title=&quot;Home&quot;&gt;Home&lt;/a&gt;
-    &lt;a class=&quot;link dim dark-gray f6 f5-l dib mr3 mr4-l&quot; href=&quot;#&quot; title=&quot;How it Works&quot;&gt;How it Works&lt;/a&gt;
-    &lt;a class=&quot;link dim dark-gray f6 f5-l dib mr3 mr4-l&quot; href=&quot;#&quot; title=&quot;Blog&quot;&gt;Blog&lt;/a&gt;
-    &lt;a class=&quot;link dim dark-gray f6 f5-l dib mr3 mr4-l&quot; href=&quot;#&quot; title=&quot;Press&quot;&gt;Press&lt;/a&gt;
-    &lt;a class=&quot;link dim dark-gray f6 f5-l dib&quot; href=&quot;#&quot; title=&quot;Contact&quot;&gt;Contact&lt;/a&gt;
+&lt;article&gt;
+  &lt;header class=&quot;bg-gold sans-serif&quot;&gt;
+    &lt;div class=&quot;mw9 center pa4 pt5-ns ph7-l&quot;&gt;
+      &lt;time class=&quot;f6 mb2 dib ttu tracked&quot;&gt;&lt;small&gt;27 July, 2015&lt;/small&gt;&lt;/time&gt;
+      &lt;h3 class=&quot;f2 f1-m f-headline-l measure-narrow lh-title mv0&quot;&gt;
+        &lt;span class=&quot;bg-black-90 lh-copy white pa1 tracked-tight&quot;&gt;
+          Too many tools and frameworks
+        &lt;/span&gt;
+      &lt;/h3&gt; 
+      &lt;h4 class=&quot;f3 fw1 georgia i&quot;&gt;The definitive guide to the javascript tooling landscape in 2015.&lt;/h4&gt;
+      &lt;h5 class=&quot;f6 ttu tracked black-80&quot;&gt;By Adam Morse&lt;/h5&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;pa4 ph7-l georgia mw9-l center&quot;&gt;
+      &lt;p class=&quot;f5 f3-ns lh-copy measure georgia&quot;&gt;
+        Theodore Sturgeon was a science fiction author, critic, and the basis for Kurt Vonnegut&#39;s recurring character Kilgore Trout. He was prolific, authoring over 200 pieces himself and critiquing around 400 others.
+      &lt;/p&gt;
+      &lt;p class=&quot;f5 f3-ns lh-copy measure georgia&quot;&gt;
+        In 1958 he published a piece in Venture proclaiming what he called &quot;Sturgeon&#39;s Revelation&quot;
+      &lt;/p&gt;
+    &lt;p class=&quot;f6 f5-ns lh-copy measure i pl4 bl bw1 b--gold mb4&quot;&gt;
+      I repeat Sturgeon&#39;s Revelation, which was wrung out of me after twenty years of wearying defense of science fiction against attacks of people who used the worst examples of the field for ammunition, and whose conclusion was that ninety percent of SF is crud. Using the same standards that categorize 90% of science fiction as trash, crud, or crap, it can be argued that 90% of film, literature, consumer goods, etc. is crap. In other words, the claim (or fact) that 90% of science fiction is crap is ultimately uninformative, because science fiction conforms to the same trends of quality as all other artforms.
+    &lt;/p&gt;
+    &lt;p class=&quot;f5 f4-ns lh-copy measure mb4&quot;&gt;
+    You don&#39;t have to bounce a tennis ball very far in San Francisco before it will hit two developers complaining about how many js tools/frameworks there are for development in 2015 and how much unneccessary complexity they add. Doing a search on twitter for &#39;too many js tools&#39; or &#39;yet another js framework&#39; returns... a lot of people lamenting the current state of affairs.
+  &lt;/p&gt;
+
+    &lt;p class=&quot;f5 f4-ns lh-copy measure&quot;&gt;
+    This is most likely, the wrong conversation for us as a community, to be having. The presence of bad tools - shouldn&#39;t discourage us from wanting more tools or frameworks. There are more books published in a single day than I will ever be able to read in my lifetime. But this does not make me sad. Or overwhelm me. Mostly I think about how excited I am to read the best books that are being published. And this is where we should push the conversation. How do we build better tools? What does that look like?
+  &lt;/p&gt;
   &lt;/div&gt;
-&lt;/nav&gt;
+&lt;/article&gt;
 
 </pre>
 </div>
 <div class="fl w-100 w-25-ns pl0 pl2-ns">
 <h2 class="f5">css</h2>
-<pre class="pa3 ba br2 b--black-10 h5" id="css">.border-box {
-    box-sizing: border-box;
+<pre class="pa3 ba br2 b--black-10 h5" id="css">.bl {
+    border-left-style: solid;
+    border-left-width: 1px;
 }
 
-.br-100 {
-    border-radius: 100%;
+.b--gold {
+    border-color: #ffb700;
 }
 
-.db {
-    display: block;
+.bw1 {
+    border-width: .125rem;
 }
 
 .dib {
     display: inline-block;
 }
 
-.h2 {
-    height: 2rem;
+.sans-serif {
+    font-family: -apple-system,
+                 BlinkMacSystemFont,
+                 'avenir next',
+                 avenir,
+                 helvetica,
+                 'helvetica neue',
+                 ubuntu,
+                 roboto,
+                 noto,
+                 'segoe ui',
+                 arial,
+                 sans-serif;
 }
 
-.link {
-    text-decoration: none;
-    transition: color .15s ease-in;
+.georgia {
+    font-family: georgia, serif;
 }
 
-.link:link, .link:visited {
-    transition: color .15s ease-in;
+.i {
+    font-style: italic;
 }
 
-.link:hover {
-    transition: color .15s ease-in;
+.fw1 {
+    font-weight: 100;
 }
 
-.link:active {
-    transition: color .15s ease-in;
+.tracked {
+    letter-spacing: .1em;
 }
 
-.link:focus {
-    transition: color .15s ease-in;
-    outline: 1px dotted currentColor;
+.tracked-tight {
+    letter-spacing: -.05em;
 }
 
-.w2 {
-    width: 2rem;
+.lh-title {
+    line-height: 1.25;
 }
 
-.w-100 {
-    width: 100%;
+.lh-copy {
+    line-height: 1.5;
 }
 
-.dark-gray {
-    color: #333;
+.mw9 {
+    max-width: 96rem;
 }
 
-.mid-gray {
-    color: #555;
+.black-80 {
+    color: rgba(0, 0, 0, .8);
 }
 
-.pa3 {
-    padding: 1rem;
+.white {
+    color: #fff;
 }
 
-.mr3 {
-    margin-right: 1rem;
+.bg-black-90 {
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.bg-gold {
+    background-color: #ffb700;
+}
+
+.pa1 {
+    padding: .25rem;
+}
+
+.pa4 {
+    padding: 2rem;
+}
+
+.pl4 {
+    padding-left: 2rem;
 }
 
 .mb2 {
     margin-bottom: .5rem;
 }
 
-.tc {
-    text-align: center;
+.mb4 {
+    margin-bottom: 2rem;
+}
+
+.mv0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.ttu {
+    text-transform: uppercase;
+}
+
+.f2 {
+    font-size: 2.25rem;
+}
+
+.f3 {
+    font-size: 1.5rem;
+}
+
+.f5 {
+    font-size: 1rem;
 }
 
 .f6 {
     font-size: .875rem;
 }
 
-.v-mid {
-    vertical-align: middle;
+.measure {
+    max-width: 30em;
 }
 
-.dim {
-    opacity: 1;
-    transition: opacity .15s ease-in;
+.measure-narrow {
+    max-width: 20em;
 }
 
-.dim:hover, .dim:focus {
-    opacity: .5;
-    transition: opacity .15s ease-in;
+.center {
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.dim:active {
-    opacity: .8;
-    transition: opacity .15s ease-out;
+@media screen and (min-width: 30em) {
+    .pt5-ns {
+        padding-top: 4rem;
+    }
+
+    .f3-ns {
+        font-size: 1.5rem;
+    }
+
+    .f4-ns {
+        font-size: 1.25rem;
+    }
+
+    .f5-ns {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+    .f1-m {
+        font-size: 3rem;
+    }
 }
 
 @media screen and (min-width: 60em) {
-    .dt-l {
-        display: table;
+    .mw9-l {
+        max-width: 96rem;
     }
 
-    .dtc-l {
-        display: table-cell;
+    .ph7-l {
+        padding-left: 16rem;
+        padding-right: 16rem;
     }
 
-    .w-25-l {
-        width: 25%;
-    }
-
-    .w-75-l {
-        width: 75%;
-    }
-
-    .ph5-l {
-        padding-left: 4rem;
-        padding-right: 4rem;
-    }
-
-    .mr4-l {
-        margin-right: 2rem;
-    }
-
-    .mb0-l {
-        margin-bottom: 0;
-    }
-
-    .tl-l {
-        text-align: left;
-    }
-
-    .tr-l {
-        text-align: right;
-    }
-
-    .f5-l {
-        font-size: 1rem;
+    .f-headline-l {
+        font-size: 6rem;
     }
 }
 
@@ -209,45 +286,53 @@
     <h2 class="f5 mb3 mt4">Css stats for this component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Gzipped Size</dt>
-      <dd class="ml0 b f3 f2-ns">521<small class="f6">B</small>
+      <dd class="ml0 b f3 f2-ns">670<small class="f6">B</small>
       </dd>
     </dl>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Selectors</dt>
-      <dd class="ml0 b f3 f2-ns">35</dd>
+      <dd class="ml0 b f3 f2-ns">39</dd>
     </dl>
     <dl class="dib mt0">
       <dt class="db f6">Declarations</dt>
-      <dd class="ml0 b f3 f2-ns">39</dd>
+      <dd class="ml0 b f3 f2-ns">43</dd>
     </dl>
   </div>
   <div class="fl w-100">
     <h2 class="f5 mt4">Modules referenced</h2>
     <ul class="list pl0 cf lh-copy mw7">
       
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-box-sizing">tachyons-box-sizing</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-borders">tachyons-borders</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-radius">tachyons-border-radius</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-colors">tachyons-border-colors</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-widths">tachyons-border-widths</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-display">tachyons-display</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-heights">tachyons-heights</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-font-family">tachyons-font-family</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-links">tachyons-links</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-font-style">tachyons-font-style</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-widths">tachyons-widths</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-font-weight">tachyons-font-weight</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-letter-spacing">tachyons-letter-spacing</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-line-height">tachyons-line-height</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-max-widths">tachyons-max-widths</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-skins">tachyons-skins</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-spacing">tachyons-spacing</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-text-align">tachyons-text-align</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-text-transform">tachyons-text-transform</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-type-scale">tachyons-type-scale</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-vertical-align">tachyons-vertical-align</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-typography">tachyons-typography</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-hovers">tachyons-hovers</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-utilities">tachyons-utilities</a></li>
   
     </ul>
   </div>
@@ -257,7 +342,7 @@
 
 
   <h4 class="mt5">Install via npm <small class="fw2 f6 db mt1">Only installs the needed tachyons-modules for this component</small></h4>
-  <code class="f6">npm i --save tachyons-box-sizing tachyons-border-radius tachyons-display tachyons-heights tachyons-links tachyons-widths tachyons-skins tachyons-spacing tachyons-text-align tachyons-type-scale tachyons-vertical-align tachyons-hovers</code>
+  <code class="f6">npm i --save tachyons-borders tachyons-border-colors tachyons-border-widths tachyons-display tachyons-font-family tachyons-font-style tachyons-font-weight tachyons-letter-spacing tachyons-line-height tachyons-max-widths tachyons-skins tachyons-spacing tachyons-text-transform tachyons-type-scale tachyons-typography tachyons-utilities</code>
   <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 
