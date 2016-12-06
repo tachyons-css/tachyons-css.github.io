@@ -299,7 +299,7 @@ export default () => (
       <h3 className="f6 ttu fw6 mt0 mb3 bb pb2">Colors</h3>
       <div className="dt-ns dt--fixed-ns">
         <div className="dtc-ns v-mid pr4-ns">
-<table className="border-collapse w-100" cellspacing="0" cellpadding="0">
+<table className="border-collapse w-100" cellSpacing="0" cellPadding="0">
 <tbody className="black-60 f6">
 <tr><td className="bb b--black-05 bg-dark-red pa4"></td><td className="bb b--black-05 ph4 f4 b dark-red">Aa</td><td className="bb b--black-05">--dark-red:  #e7040f;</td></tr>
 <tr><td className="bb b--black-05 bg-red pa4 "></td><td className="bb b--black-05 ph4 f4 b red">Aa</td><td className="bb b--black-05">--red:  #ff4136;</td></tr>

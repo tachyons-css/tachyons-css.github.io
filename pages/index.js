@@ -9,7 +9,7 @@ import {
 } from '../components/t/home'
 
 export default () => (
-  <Layout title='TACHYONS - Css Toolkit'>
+  <Layout title='TACHYONS / Css Toolkit'>
     <Nav />
 		<StyleGuide />
     <Testimonials />
