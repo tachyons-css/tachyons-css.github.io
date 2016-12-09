@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>TACHYONS - Layout Five Column Collapse Alternate</title>
+<title>TACHYONS - Cards Basic Text Card</title>
 <meta name="description" content="Tachyons Component">
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -24,103 +24,127 @@
 </head>
 <body class="w-100 sans-serif bg-white">
 <main>
-  <div class="cf">
-  <div class="fl w-50 w-20-ns tc pv5 bg-black-05">
-    1
+  <article class="center mw5 mw6-ns br3 hidden ba mv4">
+  <h1 class="f4 bg-near-black br3 br--top white-80 mv0 pv2 ph3">Title of card</h1>
+  <div class="pa3 bt">
+    <p class="f6 f5-ns lh-copy measure pv0">
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+      tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+      vero eos et accusam et justo duo dolores et ea rebum.
+    </p>
   </div>
-  <div class="fl w-50 w-20-ns tc pv5 bg-black-10">
-    2
-  </div>
-  <div class="fl w-100 w-20-ns tc pv5 bg-black-20">
-    3
-  </div>
-  <div class="fl w-50 w-20-ns tc pv5 bg-black-10">
-    4
-  </div>
-  <div class="fl w-50 w-20-ns tc pv5 bg-black-05">
-    5
-  </div>
-</div>
+</article>
 
   <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70 bg-white">
-  <h1 class="f4 f3-ns mt4">Five Column Collapse Alternate</h1>
+  <h1 class="f4 f3-ns mt4">Basic Text Card</h1>
 <div class="cf">
 <div class="fl w-100 w-75-ns pr0 pr2-ns">
 <h2 class="f5">HTML</h2>
 <p class="f5 black-70"></p>
 <pre class="pa3 ba br2 b--black-10 h5 bg-white-20" id="html">
-&lt;div class=&quot;cf&quot;&gt;
-  &lt;div class=&quot;fl w-50 w-20-ns tc pv5 bg-black-05&quot;&gt;
-    1
+&lt;article class=&quot;center mw5 mw6-ns br3 hidden ba mv4&quot;&gt;
+  &lt;h1 class=&quot;f4 bg-near-black br3 br--top white-80 mv0 pv2 ph3&quot;&gt;Title of card&lt;/h1&gt;
+  &lt;div class=&quot;pa3 bt&quot;&gt;
+    &lt;p class=&quot;f6 f5-ns lh-copy measure pv0&quot;&gt;
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+      tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+      vero eos et accusam et justo duo dolores et ea rebum.
+    &lt;/p&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;fl w-50 w-20-ns tc pv5 bg-black-10&quot;&gt;
-    2
-  &lt;/div&gt;
-  &lt;div class=&quot;fl w-100 w-20-ns tc pv5 bg-black-20&quot;&gt;
-    3
-  &lt;/div&gt;
-  &lt;div class=&quot;fl w-50 w-20-ns tc pv5 bg-black-10&quot;&gt;
-    4
-  &lt;/div&gt;
-  &lt;div class=&quot;fl w-50 w-20-ns tc pv5 bg-black-05&quot;&gt;
-    5
-  &lt;/div&gt;
-&lt;/div&gt;
+&lt;/article&gt;
 
 </pre>
 </div>
 <div class="fl w-100 w-25-ns pl0 pl2-ns">
 <h2 class="f5">css</h2>
-<pre class="pa3 ba br2 b--black-10 h5" id="css">.cf:before, .cf:after {
-    content: " ";
-    display: table;
+<pre class="pa3 ba br2 b--black-10 h5" id="css">.ba {
+    border-style: solid;
+    border-width: 1px;
 }
 
-.cf:after {
-    clear: both;
+.bt {
+    border-top-style: solid;
+    border-top-width: 1px;
 }
 
-.cf {
-    *zoom: 1;
+.br3 {
+    border-radius: .5rem;
 }
 
-.fl {
-    float: left;
-    _display: inline;
+.br--top {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
-.w-50 {
-    width: 50%;
+.lh-copy {
+    line-height: 1.5;
 }
 
-.w-100 {
-    width: 100%;
+.mw5 {
+    max-width: 16rem;
 }
 
-.bg-black-20 {
-    background-color: rgba(0, 0, 0, .2);
+.white-80 {
+    color: rgba(255, 255, 255, .8);
 }
 
-.bg-black-10 {
-    background-color: rgba(0, 0, 0, .1);
+.bg-near-black {
+    background-color: #111;
 }
 
-.bg-black-05 {
-    background-color: rgba(0, 0, 0, .05);
+.pa3 {
+    padding: 1rem;
 }
 
-.pv5 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+.pv0 {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-.tc {
-    text-align: center;
+.pv2 {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.ph3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.mv0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.mv4 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.f4 {
+    font-size: 1.25rem;
+}
+
+.f6 {
+    font-size: .875rem;
+}
+
+.measure {
+    max-width: 30em;
+}
+
+.center {
+    margin-right: auto;
+    margin-left: auto;
 }
 
 @media screen and (min-width: 30em) {
-    .w-20-ns {
-        width: 20%;
+    .mw6-ns {
+        max-width: 32rem;
+    }
+
+    .f5-ns {
+        font-size: 1rem;
     }
 }
 
@@ -132,33 +156,39 @@
     <h2 class="f5 mb3 mt4">Css stats for this component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Gzipped Size</dt>
-      <dd class="ml0 b f3 f2-ns">284<small class="f6">B</small>
+      <dd class="ml0 b f3 f2-ns">383<small class="f6">B</small>
       </dd>
     </dl>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Selectors</dt>
-      <dd class="ml0 b f3 f2-ns">13</dd>
+      <dd class="ml0 b f3 f2-ns">20</dd>
     </dl>
     <dl class="dib mt0">
       <dt class="db f6">Declarations</dt>
-      <dd class="ml0 b f3 f2-ns">15</dd>
+      <dd class="ml0 b f3 f2-ns">29</dd>
     </dl>
   </div>
   <div class="fl w-100">
     <h2 class="f5 mt4">Modules referenced</h2>
     <ul class="list pl0 cf lh-copy mw7">
       
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-clears">tachyons-clears</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-borders">tachyons-borders</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-floats">tachyons-floats</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-border-radius">tachyons-border-radius</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-widths">tachyons-widths</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-line-height">tachyons-line-height</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-max-widths">tachyons-max-widths</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-skins">tachyons-skins</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-spacing">tachyons-spacing</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-text-align">tachyons-text-align</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-type-scale">tachyons-type-scale</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-typography">tachyons-typography</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-utilities">tachyons-utilities</a></li>
   
     </ul>
   </div>
@@ -168,7 +198,7 @@
 
 
   <h4 class="mt5">Install via npm <small class="fw2 f6 db mt1">Only installs the needed tachyons-modules for this component</small></h4>
-  <code class="f6">npm i --save tachyons-clears tachyons-floats tachyons-widths tachyons-skins tachyons-spacing tachyons-text-align</code>
+  <code class="f6">npm i --save tachyons-borders tachyons-border-radius tachyons-line-height tachyons-max-widths tachyons-skins tachyons-spacing tachyons-type-scale tachyons-typography tachyons-utilities</code>
   <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 

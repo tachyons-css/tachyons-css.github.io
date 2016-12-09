@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>TACHYONS - Layout Five Column Collapse Alternate</title>
+<title>TACHYONS - Text Title Subtitle Centered</title>
 <meta name="description" content="Tachyons Component">
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -24,103 +24,94 @@
 </head>
 <body class="w-100 sans-serif bg-white">
 <main>
-  <div class="cf">
-  <div class="fl w-50 w-20-ns tc pv5 bg-black-05">
-    1
-  </div>
-  <div class="fl w-50 w-20-ns tc pv5 bg-black-10">
-    2
-  </div>
-  <div class="fl w-100 w-20-ns tc pv5 bg-black-20">
-    3
-  </div>
-  <div class="fl w-50 w-20-ns tc pv5 bg-black-10">
-    4
-  </div>
-  <div class="fl w-50 w-20-ns tc pv5 bg-black-05">
-    5
-  </div>
-</div>
+  <header class="tc ph4">
+  <h1 class="f3 f2-m f1-l fw2 black-90 mv3">
+    This is the title
+  </h1>
+  <h2 class="f5 f4-m f3-l fw2 black-50 mt0 lh-copy">
+    This is the subtitle where additional information can go if you really need it.
+  </h2>
+</header>
 
   <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70 bg-white">
-  <h1 class="f4 f3-ns mt4">Five Column Collapse Alternate</h1>
+  <h1 class="f4 f3-ns mt4">Title Subtitle Centered</h1>
 <div class="cf">
 <div class="fl w-100 w-75-ns pr0 pr2-ns">
 <h2 class="f5">HTML</h2>
 <p class="f5 black-70"></p>
 <pre class="pa3 ba br2 b--black-10 h5 bg-white-20" id="html">
-&lt;div class=&quot;cf&quot;&gt;
-  &lt;div class=&quot;fl w-50 w-20-ns tc pv5 bg-black-05&quot;&gt;
-    1
-  &lt;/div&gt;
-  &lt;div class=&quot;fl w-50 w-20-ns tc pv5 bg-black-10&quot;&gt;
-    2
-  &lt;/div&gt;
-  &lt;div class=&quot;fl w-100 w-20-ns tc pv5 bg-black-20&quot;&gt;
-    3
-  &lt;/div&gt;
-  &lt;div class=&quot;fl w-50 w-20-ns tc pv5 bg-black-10&quot;&gt;
-    4
-  &lt;/div&gt;
-  &lt;div class=&quot;fl w-50 w-20-ns tc pv5 bg-black-05&quot;&gt;
-    5
-  &lt;/div&gt;
-&lt;/div&gt;
+&lt;header class=&quot;tc ph4&quot;&gt;
+  &lt;h1 class=&quot;f3 f2-m f1-l fw2 black-90 mv3&quot;&gt;
+    This is the title
+  &lt;/h1&gt;
+  &lt;h2 class=&quot;f5 f4-m f3-l fw2 black-50 mt0 lh-copy&quot;&gt;
+    This is the subtitle where additional information can go if you really need it.
+  &lt;/h2&gt;
+&lt;/header&gt;
 
 </pre>
 </div>
 <div class="fl w-100 w-25-ns pl0 pl2-ns">
 <h2 class="f5">css</h2>
-<pre class="pa3 ba br2 b--black-10 h5" id="css">.cf:before, .cf:after {
-    content: " ";
-    display: table;
+<pre class="pa3 ba br2 b--black-10 h5" id="css">.fw2 {
+    font-weight: 200;
 }
 
-.cf:after {
-    clear: both;
+.lh-copy {
+    line-height: 1.5;
 }
 
-.cf {
-    *zoom: 1;
+.black-90 {
+    color: rgba(0, 0, 0, .9);
 }
 
-.fl {
-    float: left;
-    _display: inline;
+.black-50 {
+    color: rgba(0, 0, 0, .5);
 }
 
-.w-50 {
-    width: 50%;
+.ph4 {
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
-.w-100 {
-    width: 100%;
+.mt0 {
+    margin-top: 0;
 }
 
-.bg-black-20 {
-    background-color: rgba(0, 0, 0, .2);
-}
-
-.bg-black-10 {
-    background-color: rgba(0, 0, 0, .1);
-}
-
-.bg-black-05 {
-    background-color: rgba(0, 0, 0, .05);
-}
-
-.pv5 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+.mv3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .tc {
     text-align: center;
 }
 
-@media screen and (min-width: 30em) {
-    .w-20-ns {
-        width: 20%;
+.f3 {
+    font-size: 1.5rem;
+}
+
+.f5 {
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+    .f2-m {
+        font-size: 2.25rem;
+    }
+
+    .f4-m {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .f1-l {
+        font-size: 3rem;
+    }
+
+    .f3-l {
+        font-size: 1.5rem;
     }
 }
 
@@ -132,33 +123,33 @@
     <h2 class="f5 mb3 mt4">Css stats for this component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Gzipped Size</dt>
-      <dd class="ml0 b f3 f2-ns">284<small class="f6">B</small>
+      <dd class="ml0 b f3 f2-ns">283<small class="f6">B</small>
       </dd>
     </dl>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Selectors</dt>
-      <dd class="ml0 b f3 f2-ns">13</dd>
+      <dd class="ml0 b f3 f2-ns">14</dd>
     </dl>
     <dl class="dib mt0">
       <dt class="db f6">Declarations</dt>
-      <dd class="ml0 b f3 f2-ns">15</dd>
+      <dd class="ml0 b f3 f2-ns">16</dd>
     </dl>
   </div>
   <div class="fl w-100">
     <h2 class="f5 mt4">Modules referenced</h2>
     <ul class="list pl0 cf lh-copy mw7">
       
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-clears">tachyons-clears</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-font-weight">tachyons-font-weight</a></li>
   
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-floats">tachyons-floats</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-widths">tachyons-widths</a></li>
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-line-height">tachyons-line-height</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-skins">tachyons-skins</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-spacing">tachyons-spacing</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-text-align">tachyons-text-align</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-type-scale">tachyons-type-scale</a></li>
   
     </ul>
   </div>
@@ -168,7 +159,7 @@
 
 
   <h4 class="mt5">Install via npm <small class="fw2 f6 db mt1">Only installs the needed tachyons-modules for this component</small></h4>
-  <code class="f6">npm i --save tachyons-clears tachyons-floats tachyons-widths tachyons-skins tachyons-spacing tachyons-text-align</code>
+  <code class="f6">npm i --save tachyons-font-weight tachyons-line-height tachyons-skins tachyons-spacing tachyons-text-align tachyons-type-scale</code>
   <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 
