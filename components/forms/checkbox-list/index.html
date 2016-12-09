@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>TACHYONS - Articles Large Title Text</title>
+<title>TACHYONS - Forms Checkbox List</title>
 <meta name="description" content="Tachyons Component">
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -24,81 +24,116 @@
 </head>
 <body class="w-100 sans-serif bg-white">
 <main>
-  <article class="pa3 pa5-ns">
-  <h1 class="f3 f2-m f1-l">Title</h1>
-  <p class="measure lh-copy">
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-    no sea takimata sanctus est Lorem ipsum dolor sit amet.
-  </p>
-  <p class="measure lh-copy">
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-    no sea takimata sanctus est Lorem ipsum dolor sit amet.
-  </p>
-</article>
+  <form class="pa4">
+  <fieldset id="favorite_movies" class="bn">
+    <legend class="fw7 mb2">Favorite Movies</legend>
+    <div class="flex items-center mb2">
+      <input class="mr2" type="checkbox" value="spacejam">
+      <label class="lh-copy">Space Jam</label>
+    </div>
+    <div class="flex items-center mb2">
+      <input class="mr2" type="checkbox" value="airbud">
+      <label class="lh-copy">Air Bud</label>
+    </div>
+    <div class="flex items-center mb2">
+      <input class="mr2" type="checkbox" value="hocuspocus">
+      <label class="lh-copy">Hocus Pocus</label>
+    </div>
+    <div class="flex items-center mb2">
+      <input class="mr2" type="checkbox" value="diehard">
+      <label class="lh-copy">Die Hard</label>
+    </div>
+    <div class="flex items-center mb2">
+      <input class="mr2" type="checkbox" value="primer">
+      <label class="lh-copy">Primer</label>
+    </div>
+    <div class="flex items-center mb2">
+      <input class="mr2" type="checkbox" value="proxy">
+      <label class="lh-copy">Hudsucker Proxy</label>
+    </div>
+    <div class="flex items-center mb2">
+      <input class="mr2" type="checkbox" value="homealone">
+      <label class="lh-copy">Home Alone</label>
+    </div>
+  </fieldset>
+</form>
 
   <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70 bg-white">
-  <h1 class="f4 f3-ns mt4">Large Title Text</h1>
+  <h1 class="f4 f3-ns mt4">Checkbox List</h1>
 <div class="cf">
 <div class="fl w-100 w-75-ns pr0 pr2-ns">
 <h2 class="f5">HTML</h2>
 <p class="f5 black-70"></p>
 <pre class="pa3 ba br2 b--black-10 h5 bg-white-20" id="html">
-&lt;article class=&quot;pa3 pa5-ns&quot;&gt;
-  &lt;h1 class=&quot;f3 f2-m f1-l&quot;&gt;Title&lt;/h1&gt;
-  &lt;p class=&quot;measure lh-copy&quot;&gt;
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-    no sea takimata sanctus est Lorem ipsum dolor sit amet.
-  &lt;/p&gt;
-  &lt;p class=&quot;measure lh-copy&quot;&gt;
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-    no sea takimata sanctus est Lorem ipsum dolor sit amet.
-  &lt;/p&gt;
-&lt;/article&gt;
+&lt;form class=&quot;pa4&quot;&gt;
+  &lt;fieldset id=&quot;favorite_movies&quot; class=&quot;bn&quot;&gt;
+    &lt;legend class=&quot;fw7 mb2&quot;&gt;Favorite Movies&lt;/legend&gt;
+    &lt;div class=&quot;flex items-center mb2&quot;&gt;
+      &lt;input class=&quot;mr2&quot; type=&quot;checkbox&quot; value=&quot;spacejam&quot;&gt;
+      &lt;label class=&quot;lh-copy&quot;&gt;Space Jam&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;flex items-center mb2&quot;&gt;
+      &lt;input class=&quot;mr2&quot; type=&quot;checkbox&quot; value=&quot;airbud&quot;&gt;
+      &lt;label class=&quot;lh-copy&quot;&gt;Air Bud&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;flex items-center mb2&quot;&gt;
+      &lt;input class=&quot;mr2&quot; type=&quot;checkbox&quot; value=&quot;hocuspocus&quot;&gt;
+      &lt;label class=&quot;lh-copy&quot;&gt;Hocus Pocus&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;flex items-center mb2&quot;&gt;
+      &lt;input class=&quot;mr2&quot; type=&quot;checkbox&quot; value=&quot;diehard&quot;&gt;
+      &lt;label class=&quot;lh-copy&quot;&gt;Die Hard&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;flex items-center mb2&quot;&gt;
+      &lt;input class=&quot;mr2&quot; type=&quot;checkbox&quot; value=&quot;primer&quot;&gt;
+      &lt;label class=&quot;lh-copy&quot;&gt;Primer&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;flex items-center mb2&quot;&gt;
+      &lt;input class=&quot;mr2&quot; type=&quot;checkbox&quot; value=&quot;proxy&quot;&gt;
+      &lt;label class=&quot;lh-copy&quot;&gt;Hudsucker Proxy&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;flex items-center mb2&quot;&gt;
+      &lt;input class=&quot;mr2&quot; type=&quot;checkbox&quot; value=&quot;homealone&quot;&gt;
+      &lt;label class=&quot;lh-copy&quot;&gt;Home Alone&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
 
 </pre>
 </div>
 <div class="fl w-100 w-25-ns pl0 pl2-ns">
 <h2 class="f5">css</h2>
-<pre class="pa3 ba br2 b--black-10 h5" id="css">.lh-copy {
+<pre class="pa3 ba br2 b--black-10 h5" id="css">.bn {
+    border-style: none;
+    border-width: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.fw7 {
+    font-weight: 700;
+}
+
+.lh-copy {
     line-height: 1.5;
 }
 
-.pa3 {
-    padding: 1rem;
+.pa4 {
+    padding: 2rem;
 }
 
-.f3 {
-    font-size: 1.5rem;
+.mr2 {
+    margin-right: .5rem;
 }
 
-.measure {
-    max-width: 30em;
-}
-
-@media screen and (min-width: 30em) {
-    .pa5-ns {
-        padding: 4rem;
-    }
-}
-
-@media screen and (min-width: 30em) and (max-width: 60em) {
-    .f2-m {
-        font-size: 2.25rem;
-    }
-}
-
-@media screen and (min-width: 60em) {
-    .f1-l {
-        font-size: 3rem;
-    }
+.mb2 {
+    margin-bottom: .5rem;
 }
 
 </pre>
@@ -109,29 +144,31 @@
     <h2 class="f5 mb3 mt4">Css stats for this component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Gzipped Size</dt>
-      <dd class="ml0 b f3 f2-ns">185<small class="f6">B</small>
+      <dd class="ml0 b f3 f2-ns">177<small class="f6">B</small>
       </dd>
     </dl>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Selectors</dt>
-      <dd class="ml0 b f3 f2-ns">7</dd>
+      <dd class="ml0 b f3 f2-ns">8</dd>
     </dl>
     <dl class="dib mt0">
       <dt class="db f6">Declarations</dt>
-      <dd class="ml0 b f3 f2-ns">7</dd>
+      <dd class="ml0 b f3 f2-ns">9</dd>
     </dl>
   </div>
   <div class="fl w-100">
     <h2 class="f5 mt4">Modules referenced</h2>
     <ul class="list pl0 cf lh-copy mw7">
       
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-borders">tachyons-borders</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-flexbox">tachyons-flexbox</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-font-weight">tachyons-font-weight</a></li>
+  
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-line-height">tachyons-line-height</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-spacing">tachyons-spacing</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-type-scale">tachyons-type-scale</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-typography">tachyons-typography</a></li>
   
     </ul>
   </div>
@@ -141,7 +178,7 @@
 
 
   <h4 class="mt5">Install via npm <small class="fw2 f6 db mt1">Only installs the needed tachyons-modules for this component</small></h4>
-  <code class="f6">npm i --save tachyons-line-height tachyons-spacing tachyons-type-scale tachyons-typography</code>
+  <code class="f6">npm i --save tachyons-borders tachyons-flexbox tachyons-font-weight tachyons-line-height tachyons-spacing</code>
   <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 
