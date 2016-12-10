@@ -1,5 +1,6 @@
 const _ = require('lodash');
 const chalk = require('chalk');
+const crypto = require('crypto');
 const fm = require('json-front-matter');
 const fs = require('fs');
 const glob = require('glob');
@@ -33,6 +34,8 @@ module.exports = globPattern => new Promise((resolve, reject) => {
       reject(err);
     }
 
+    const npmPackage = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+
     console.log('- Found', components.length, 'components');
 
     const componentsForNav = {};
@@ -40,11 +43,18 @@ module.exports = globPattern => new Promise((resolve, reject) => {
       const componentTokens = component.replace('src/components/', '').split('/');
       const category = componentTokens[0];
 
-      // Check the front matter for screenshot overrides
       const componentHtml = fs.readFileSync(component, 'utf8');
       const fmParsed = fm.parse(componentHtml);
       const frontMatter = fmParsed.attributes || {};
       const dir = component.replace('src/', '').replace('.html', '');
+
+      // Compute component signature based on the Tachyons version and the contents of the
+      // component itself. This can be used to bust the browser cache of screenshots.
+      const md5sum = crypto.createHash('md5');
+      md5sum.update(npmPackage.version);
+      md5sum.update(componentHtml);
+      const signature = md5sum.digest('hex');
+
       componentsForNav[category] = componentsForNav[category] || [];
       componentsForNav[category].push({
         name: frontMatter.name || getName(component),
@@ -54,8 +64,9 @@ module.exports = globPattern => new Promise((resolve, reject) => {
         href: `/${dir}/index.html`,
         screenshot: {
           path: `${dir}/${screenshotBasename}.png`,
-          href: `/${dir}/${screenshotBasename}.png`,
+          href: `/${dir}/${screenshotBasename}.png?version=${signature}`,
         },
+        signature,
         frontMatter,
       });
     });

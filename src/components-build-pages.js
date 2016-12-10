@@ -94,7 +94,7 @@ module.exports = componentsForNavPath => new Promise((resolve, reject) => {
         const compiledComponent = _.template(componentTemplate)(frontMatter);
         mkdirp.sync(path.dirname(component.path));
         fs.writeFileSync(component.path, compiledComponent);
-        console.log('  * Created component:', component.path);
+        console.log('  * Created component:', component.href);
       }).catch((e) => {
         console.log(e);
       });

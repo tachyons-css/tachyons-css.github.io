@@ -16,7 +16,7 @@ const componentsBuildIndex = require('./src/components-build-index');
 const componentsBuildPages = require('./src/components-build-pages');
 const componentsBuildScreenshots = require('./src/components-build-screenshots');
 
-const globPattern = 'src/components/cards/*.html';
+const globPattern = 'src/components/banners/*.html';
 componentsBuildIndex(globPattern)
 .then(componentsForNavPath => componentsBuildPages(componentsForNavPath))
 .then(componentsForNavPath => componentsBuildScreenshots(componentsForNavPath))

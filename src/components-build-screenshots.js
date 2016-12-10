@@ -87,7 +87,7 @@ module.exports = componentsForNavPath => new Promise((resolve, reject) => {
             // do *not* use componentRect in .screenshot() below or risk distortions
             .screenshot(component.screenshot.path)
             .then(() => {
-              console.log('  * Created screenshot: ', component.screenshot.path);
+              console.log('  * Created screenshot: ', component.screenshot.href);
             });
         }
       } // Loop over components
