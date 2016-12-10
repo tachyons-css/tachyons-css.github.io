@@ -30,8 +30,8 @@
           <% componentsForNav[category].map(function(componentForNav) { %>
             <div class="fl w-50 w-third-m w-25-l pb2 pr2">
               <div class="ba b--black-30 aspect-ratio aspect-ratio--16x9">
-                <div class="aspect-ratio--object <%= componentForNav.screenshot['background-size'] || 'cover' %>"
-                     style="background:url(<%= componentForNav.screenshot.path %>) no-repeat <%= componentForNav.screenshot['background-position'] || 'center center' %>;"></div>
+                <div class="aspect-ratio--object <%= componentForNav.frontMatter.screenshot && componentForNav.frontMatter.screenshot['background-size'] || 'cover' %>"
+                     style="background:url(<%= componentForNav.screenshot.href %>) no-repeat <%= componentForNav.frontMatter.screenshot && componentForNav.frontMatter.screenshot['background-position'] || 'center center' %>;"></div>
               </div>
               <a class="pv2 f5 pointer db tc bg-white black-70 link underline-hover border-box" href="<%= componentForNav.href %>" title="<%= componentForNav.name %>">
                 <%= componentForNav.name %>

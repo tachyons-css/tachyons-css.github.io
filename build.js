@@ -11,11 +11,27 @@
 
 // The rest of the build process is async and requires some promises
 // var comp_build = Promise.resolve(true); // uncomment and comment next to skip build
-var comp_build = require('./src/components-build')();
-comp_build.then(function () {
-  console.log('components build complete')
-}).then(function () {
-  return require('./src/components-screenshot-build')().then(function () {
-    console.log('components screenshots complete')
-  })
+
+const componentsBuildIndex = require('./src/components-build-index');
+const componentsBuildPages = require('./src/components-build-pages');
+const componentsBuildScreenshots = require('./src/components-build-screenshots');
+
+const globPattern = 'src/components/cards/*.html';
+componentsBuildIndex(globPattern)
+.then(componentsForNavPath => componentsBuildPages(componentsForNavPath))
+.then(componentsForNavPath => componentsBuildScreenshots(componentsForNavPath))
+.then(() => {
+  console.log('All done');
 })
+.catch((err) => {
+  console.log(err);
+});
+
+// var comp_build = require('./src/components-build')();
+// comp_build.then(function () {
+//   console.log('components build complete')
+// }).then(function () {
+//   // return require('./src/components-screenshot-build')().then(function () {
+//   //   console.log('components screenshots complete')
+//   // })
+// })
