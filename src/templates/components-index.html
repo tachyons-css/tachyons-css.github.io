@@ -5,7 +5,7 @@
 <meta name="description" content="Tachyons Components">
   <%= head %>
   <style type="text/css" media="screen">
-    .transparent { color: transparent; } 
+    .transparent { color: transparent; }
   </style>
 </head>
 <body class="w-100 sans-serif">
@@ -26,11 +26,17 @@
         </div>
       </div>
       <div class="ph3 ph5-ns mb5">
-        <div class="mw9 center">
+        <div class="mw9 center cf">
           <% componentsForNav[category].map(function(componentForNav) { %>
-            <a class="f5 pointer dib mr4 pv2 bg-white black-70 link underline-hover border-box" href="<%= componentForNav.href %>" title="<%= componentForNav.name %>">
-              <%= componentForNav.name %>
-            </a>
+            <div class="fl w-50 w-third-m w-25-l pb2 pr2">
+              <div class="ba b--black-30 aspect-ratio aspect-ratio--16x9">
+                <div class="aspect-ratio--object <%= componentForNav.screenshot['background-size'] || 'cover' %>"
+                     style="background:url(<%= componentForNav.screenshot.path %>) no-repeat <%= componentForNav.screenshot['background-position'] || 'center center' %>;"></div>
+              </div>
+              <a class="pv2 f5 pointer db tc bg-white black-70 link underline-hover border-box" href="<%= componentForNav.href %>" title="<%= componentForNav.name %>">
+                <%= componentForNav.name %>
+              </a>
+            </div>
           <% }) %>
       </div>
     </div>

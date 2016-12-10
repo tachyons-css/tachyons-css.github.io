@@ -28,93 +28,105 @@ var header = fs.readFileSync('src/templates/header.html', 'utf8')
 var highlight = fs.readFileSync('src/templates/highlight.html', 'utf8')
 
 module.exports = function () {
-  glob('src/components/**/*.html', {}, function (err, components) {
-    if (err) {
-      console.error(err)
-      return
-    }
+  return new Promise(function (resolve, reject) {
+    glob('src/components/**/*.html', {}, function (err, components) {
+      if (err) {
+        console.error(err)
+        return reject(err)
+      }
 
-    var template = fs.readFileSync('src/templates/components.html', 'utf8')
-    var indexTemplate = fs.readFileSync('src/templates/components-index.html', 'utf8')
+      var template = fs.readFileSync('src/templates/components.html', 'utf8')
+      var indexTemplate = fs.readFileSync('src/templates/components-index.html', 'utf8')
 
-    var componentsForNav = {}
-    components.map(function (component) {
-      var componentTokens = component.replace('src/components/', '').split('/')
-      var category = componentTokens[0]
+      var componentsForNav = {}
+      components.map(function (component) {
+        var componentTokens = component.replace('src/components/', '').split('/')
+        var category = componentTokens[0]
 
-      componentsForNav[category] = componentsForNav[category] || []
-      componentsForNav[category].push({
-        href: component.replace('src', '').replace('.html', '') + '/index.html',
-        name: getName(component)
-      })
-    })
+        // Check the front matter for screenshot overrides
+        var componentHtml = fs.readFileSync(component, 'utf8')
+        var fmParsed = fm.parse(componentHtml)
+        var frontMatter = fmParsed.attributes || {}
+        var screenshot = frontMatter.screenshot || {}
+        screenshot.path = component.replace('src', '').replace('.html', '') + '/screenshot.png'
 
-    var compiledPage = _.template(indexTemplate)({
-      componentsForNav: componentsForNav,
-      title: 'Components',
-      analytics: analytics,
-      footer: footer,
-      head: head,
-      header: header,
-    })
-
-    mkdirp.sync('components')
-    fs.writeFileSync('components/index.html', compiledPage)
-
-    components.forEach(function (component) {
-      var newDir = rmHtmlExt(component.replace('src/', ''))
-      var newFile = newDir + '/index.html'
-      var componentHtml = fs.readFileSync(component, 'utf8')
-
-      var fmParsed = fm.parse(componentHtml)
-      var frontMatter = fmParsed.attributes || {}
-      frontMatter.bodyClass = frontMatter.bodyClass || ''
-      frontMatter.title = frontMatter.title || getTitle(component)
-      frontMatter.name = frontMatter.name || getName(component)
-      frontMatter.classes = getClasses(fmParsed.body).map(function(klass) {
-        return '.' + klass
-      })
-      frontMatter.componentHtml = componentHtml
-      frontMatter.content = fmParsed.body
-      frontMatter.escapedHtml = escapeHtml(fmParsed.body)
-      frontMatter.footer = footer
-      frontMatter.analytics = analytics
-      frontMatter.head = head
-      frontMatter.highlight = highlight
-      frontMatter.componentsForNav = componentsForNav
-
-      var moduleSrcs = {}
-      var getModules = postcss.plugin('get-modules', function () {
-        return function (css, result) {
-          css.walkRules(function (rule) {
-            moduleSrcs[rule.source.input.from] = true
-          })
-        }
+        componentsForNav[category] = componentsForNav[category] || []
+        componentsForNav[category].push({
+          href: component.replace('src', '').replace('.html', '') + '/index.html',
+          name: getName(component),
+          screenshot: screenshot
+        })
       })
 
-      postcss([
-        atImport(), cssVariables(), conditionals(), customMedia(), select(frontMatter.classes),
-        removeComments({ removeAll: true }), mqPacker(), removeEmpty(), getModules(), perfectionist()
-      ]).process(tachyonsCss, {
-        from: 'src/css/tachyons.css'
-      }).then(function (result) {
-        console.log('component css selection complete for', component)
-        frontMatter.componentCss = result.css
-        frontMatter.stats = cssstats(frontMatter.componentCss)
+      var compiledPage = _.template(indexTemplate)({
+        componentsForNav: componentsForNav,
+        title: 'Components',
+        analytics: analytics,
+        footer: footer,
+        head: head,
+        header: header,
+      })
 
-        // TODO: Update me once src/ uses the npm modules
-        frontMatter.modules = Object.keys(moduleSrcs).map(function (module) {
-          return 'tachyons-' + module.split('/_')[1].replace('.css', '')
+      mkdirp.sync('components')
+      fs.writeFileSync('components/index.html', compiledPage)
+
+      var promises = []
+      components.forEach(function (component) {
+        var newDir = rmHtmlExt(component.replace('src/', ''))
+        var newFile = newDir + '/index.html'
+        var componentHtml = fs.readFileSync(component, 'utf8')
+
+        var fmParsed = fm.parse(componentHtml)
+        var frontMatter = fmParsed.attributes || {}
+        frontMatter.bodyClass = frontMatter.bodyClass || ''
+        frontMatter.title = frontMatter.title || getTitle(component)
+        frontMatter.name = frontMatter.name || getName(component)
+        frontMatter.classes = getClasses(fmParsed.body).map(function(klass) {
+          return '.' + klass
+        })
+        frontMatter.componentHtml = componentHtml
+        frontMatter.content = fmParsed.body
+        frontMatter.escapedHtml = escapeHtml(fmParsed.body)
+        frontMatter.footer = footer
+        frontMatter.analytics = analytics
+        frontMatter.head = head
+        frontMatter.highlight = highlight
+        frontMatter.componentsForNav = componentsForNav
+
+        var moduleSrcs = {}
+        var getModules = postcss.plugin('get-modules', function () {
+          return function (css, result) {
+            css.walkRules(function (rule) {
+              moduleSrcs[rule.source.input.from] = true
+            })
+          }
         })
 
-        var compiledPage = _.template(template)(frontMatter)
-        console.log('creating new dir', newDir)
-        mkdirp.sync(newDir)
-        fs.writeFileSync(newFile, compiledPage)
-        console.log('finished component build for', component)
-      }).catch(function (e) { console.log(e) })
-    })
-  })
+        promises.push(postcss([
+          atImport(), cssVariables(), conditionals(), customMedia(), select(frontMatter.classes),
+          removeComments({ removeAll: true }), mqPacker(), removeEmpty(), getModules(), perfectionist()
+        ]).process(tachyonsCss, {
+          from: 'src/css/tachyons.css'
+        }).then(function (result) {
+          console.log('component css selection complete for', component)
+          frontMatter.componentCss = result.css
+          frontMatter.stats = cssstats(frontMatter.componentCss)
+
+          // TODO: Update me once src/ uses the npm modules
+          frontMatter.modules = Object.keys(moduleSrcs).map(function (module) {
+            return 'tachyons-' + module.split('/_')[1].replace('.css', '')
+          })
+
+          var compiledPage = _.template(template)(frontMatter)
+          console.log('creating new dir', newDir)
+          mkdirp.sync(newDir)
+          fs.writeFileSync(newFile, compiledPage)
+          console.log('finished component build for', component)
+        }).catch(function (e) { console.log(e) }))
+      })
+      resolve(Promise.all(promises))
+    }) // glob
+  }) // return promise
 }
 
 function getTitle(component) {
