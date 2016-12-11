@@ -78,15 +78,17 @@ module.exports = _options => new Promise((resolve, reject) => {
     const footer = fs.readFileSync(options.footerTemplatePath, 'utf8');
     const head = fs.readFileSync(options.headTemplatePath, 'utf8');
     const header = fs.readFileSync(options.headerTemplatePath, 'utf8');
-    const indexTemplate = fs.readFileSync(options.componentsIndexTemplatePath, 'utf8');
+    const componentsIndexTemplate = fs.readFileSync(options.componentsIndexTemplatePath, 'utf8');
+    const lazysizesTemplate = fs.readFileSync(options.lazysizesTemplate, 'utf8');
 
-    const compiledPage = _.template(indexTemplate)({
+    const compiledPage = _.template(componentsIndexTemplate)({
       componentsForNav,
       title: 'Components',
       analytics,
       footer,
       head,
       header,
+      lazysizesTemplate,
       options,
     });
     mkdirp.sync(path.dirname(options.componentsIndexPath));

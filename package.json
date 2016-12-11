@@ -24,7 +24,10 @@
     "doc:images": "watch 'node src/modules/images.js' src/templates/docs/images",
     "doc:bgsize": "watch 'node src/modules/background-size.js' src/templates/docs/background-size",
     "build:all": "node build.js && bash script.sh",
-    "cson": "node src/components-cson-build.js"
+    "cson": "node src/components-cson-build.js",
+    "copy:lazysizes": "cp node_modules/lazysizes/lazysizes.min.js js/",
+    "copy:lazysizes:plugins": "cp node_modules/lazysizes/plugins/unveilhooks/ls.unveilhooks.min.js js/",
+    "postinstall": "npm run copy:lazysizes && npm run copy:lazysizes:plugins"
   },
   "repository": "tachyons-css/tachyons-css.github.io",
   "author": "mrmrs",
@@ -40,6 +43,7 @@
     "imagemin": "^5.2.2",
     "imagemin-mozjpeg": "^6.0.0",
     "jimp": "^0.2.27",
+    "lazysizes": "^3.0.0-rc2",
     "nightmare": "^2.8.1",
     "pretty-hrtime": "^1.0.3",
     "tachyons-background-size": "^5.0.3",

@@ -7,6 +7,9 @@
   <style type="text/css" media="screen">
     .transparent { color: transparent; }
   </style>
+  <%= lazysizesTemplate %>
+  <script src="/js/ls.unveilhooks.min.js" async=""></script>
+  <script src="/js/lazysizes.min.js" async=""></script>
 </head>
 <body class="w-100 sans-serif">
   <%= header %>
@@ -32,8 +35,9 @@
                href="<%= componentForNav.href %>"
                title="<%= componentForNav.name %>">
               <div class="ba b--dashed b--black-20 aspect-ratio aspect-ratio--<%= options.screenshotAspectRatio %>">
-                <div class="aspect-ratio--object"
-                     style="background:url(<%= componentForNav.screenshot.href %>) no-repeat <%= componentForNav.frontMatter.screenshot && componentForNav.frontMatter.screenshot['background-position'] || 'center center' %>/<%= componentForNav.frontMatter.screenshot && componentForNav.frontMatter.screenshot['background-size'] || 'cover' %>;"></div>
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="<%= componentForNav.screenshot.href %>"
+                     style="background-repeat: no-repeat; background-position: <%= componentForNav.frontMatter.screenshot && componentForNav.frontMatter.screenshot['background-position'] || 'center center' %>; background-size: <%= componentForNav.frontMatter.screenshot && componentForNav.frontMatter.screenshot['background-size'] || 'cover' %>;"></div>
               </div>
               <p class="f5 tc">
                 <%= componentForNav.name %>

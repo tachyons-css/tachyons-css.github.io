@@ -25,4 +25,5 @@ module.exports = {
   headerTemplatePath: 'src/templates/header.html',
   headTemplatePath: 'src/templates/head.html',
   highlightTemplatePath: 'src/templates/highlight.html',
+  lazysizesTemplate: 'src/templates/lazysizes.html',
 };
