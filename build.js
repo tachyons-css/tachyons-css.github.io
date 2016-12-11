@@ -21,7 +21,7 @@ const componentsBuildScreenshots = require('./src/components-build-screenshots')
 
 // See src/components-build-defaults for list of options that can be overriden
 const options = {
-  // componentsGlobPattern: 'src/components/text/*.html',
+  // componentsGlobPattern: 'src/components/buttons/*.html',
 };
 
 // Note that componentsBuildIndex() generates the index *and* the JSON

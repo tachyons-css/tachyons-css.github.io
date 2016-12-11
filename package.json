@@ -37,6 +37,8 @@
     "co": "^4.6.0",
     "express": "^4.14.0",
     "filesize": "^3.3.0",
+    "imagemin": "^5.2.2",
+    "imagemin-mozjpeg": "^6.0.0",
     "jimp": "^0.2.27",
     "nightmare": "^2.8.1",
     "pretty-hrtime": "^1.0.3",

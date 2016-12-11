@@ -6,14 +6,14 @@ module.exports = {
   componentsBuildPages: true,                        // false to skip building pages
   componentsBuildScreenshots: true,                  // false to skip building screenshots
   // Screenshots
-  screenshotName: 'screenshot.jpg',                  // name screenshot file in each component dir
+  screenshotName: 'screenshot.jpg',                  // name JPEG screenshot in each component dir
   screenshotAspectRatio: '4x3',                      // Tachyon aspect ratio of screenshot in index
   screenshotViewportWidth: 1024,                     // viewport width used for capture
   screenshotViewportHeight: 768,                     // viewport height used for capture
-  screenshotTargetMinWidth: 360,                     // min width of target, resized screenshot
-  screenshotTargetMinHeight: 128,                    // min height of target, resized screenshot
+  screenshotTargetMinWidth: 400,                     // min width of target, resized screenshot
+  screenshotTargetMinHeight: 160,                    // min height of target, resized screenshot
+  mozjpegQuality: 90,                                // mozjpeg optimizer quality (default 75)
   screenshotSelector: '[data-name="component-container"]', // DOM element to capture
-  screenshotCompressionQuality: 98,                  // JPEG compression quality before optimization
   // Misc
   tachyonsCssPath: 'src/css/tachyons.css',
   serverPort: 3333,

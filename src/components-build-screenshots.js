@@ -4,6 +4,8 @@ const co = require('co');
 const express = require('express');
 const filesize = require('filesize');
 const fs = require('fs');
+const imagemin = require('imagemin');
+const imageminMozjpeg = require('imagemin-mozjpeg');
 const Jimp = require('jimp');
 const Nightmare = require('nightmare');
 const path = require('path');
@@ -102,7 +104,9 @@ module.exports = _options => new Promise((resolve, reject) => {
           console.log(chalk.red('  * FAILED to create screenshot:'), component.screenshot.name);
           continue; // eslint-disable-line
         }
-        const tmpObj = tmp.fileSync({ dir: path.dirname(component.screenshot.path) });
+
+        const screenshotDir = path.dirname(component.screenshot.path);
+        const tmpPngObj = tmp.fileSync({ dir: screenshotDir });
         componentRect.height = Math.min(componentRect.height, options.screenshotViewportHeight);
         yield nightmare
           // we can not use .screenshot() with componentRect, so constrain the viewport instead
@@ -111,13 +115,12 @@ module.exports = _options => new Promise((resolve, reject) => {
             componentRect.height || options.screenshotViewportHeight
           ).scrollTo(componentRect.y, componentRect.x)
           // .wait(1000)
-          // do *not* use componentRect in .screenshot() below or risk distortions
-          .screenshot(tmpObj.name);
-        const tmpFileSize = fs.statSync(tmpObj.name).size;
-        tmpTotalFileSize += tmpFileSize;
+          .screenshot(tmpPngObj.name); // do *not* use componentRect here or risk distortions
 
-        // Resize and convert
-        const screenshot = yield Jimp.read(tmpObj.name);
+        // Resize and convert to JPEG, and optimize
+        const tmpJpegDirObj = tmp.dirSync({ dir: screenshotDir, unsafeCleanup: true });
+        const tmpJpegPath = path.join(tmpJpegDirObj.name, path.basename(component.screenshot.path));
+        const screenshot = yield Jimp.read(tmpPngObj.name);
         yield new Promise((write_resolve, write_reject) => {
           if (component.frontMatter.screenshot === undefined ||
               component.frontMatter.screenshot.autocrop !== false) {
@@ -131,18 +134,36 @@ module.exports = _options => new Promise((resolve, reject) => {
           const scale = Math.max(scaleHeight, scaleWidth);
           screenshot
             .scale(scale > 0 ? scale : 1.0)
-            .quality(options.screenshotCompressionQuality)
-            .write(component.screenshot.path, (err) => {
-              if (err) {
-                write_reject(err);
+            // Do not use .quality() here, default max quality helps optimizers below
+            .write(tmpJpegPath, (jimp_err) => {
+              if (jimp_err) {
+                write_reject(jimp_err);
               }
-              write_resolve();
+              // Optimize
+              imagemin([tmpJpegPath], screenshotDir, {
+                plugins: [
+                  imageminMozjpeg({ quality: options.mozjpegQuality }),
+                  // imageminJpegRecompress(), // this guy is useless
+                  // imageminJpegtran(),       // this guy is useless
+                ],
+              }).then(() => {
+                write_resolve();
+              }).catch((imagemin_err) => {
+                write_reject(imagemin_err);
+              });
             });
         });
 
-        tmpObj.removeCallback();
+        const tmpFileSize = fs.statSync(tmpPngObj.name).size;
+        tmpTotalFileSize += tmpFileSize;
         const screenshotFileSize = fs.statSync(component.screenshot.path).size;
         screenshotTotalFileSize += screenshotFileSize;
+
+        // Cleanup
+        tmpPngObj.removeCallback();
+        fs.unlinkSync(tmpJpegPath);
+        tmpJpegDirObj.removeCallback();
+
         console.log(
           '  * Created screenshot:',
           component.screenshot.path,
@@ -163,17 +184,4 @@ module.exports = _options => new Promise((resolve, reject) => {
   });
 
   resolve(renderPromise);
-
-  // TODO: optimize all PNG files, eventually resize to smaller width
-  // const imagemin = require('imagemin');
-  // const imageminPngquant = require('imagemin-pngquant');
-  // imagemin(['components/*.{jpg,png}'], ??, {
-  //     plugins: [
-  //         imageminPngquant({quality: '65-80'})
-  //     ]
-  // }).then(files => {
-  //     console.log(files);
-  //     //=> [{data: <Buffer 89 50 4e …>, path: 'build/images/foo.jpg'}, …]
-  // });
-  //
 }); // return promise
