@@ -36,6 +36,8 @@
     "chalk": "^1.1.3",
     "co": "^4.6.0",
     "express": "^4.14.0",
+    "filesize": "^3.3.0",
+    "jimp": "^0.2.27",
     "nightmare": "^2.8.1",
     "tachyons-background-size": "^5.0.3",
     "tachyons-base": "^1.2.5",
@@ -85,7 +87,8 @@
     "tachyons-white-space": "^4.0.1",
     "tachyons-widths": "^5.0.1",
     "tachyons-word-break": "3.0.1",
-    "tachyons-z-index": "^1.0.4"
+    "tachyons-z-index": "^1.0.4",
+    "tmp": "0.0.31"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.1",

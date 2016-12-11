@@ -9,16 +9,7 @@ const path = require('path');
 const rmHtmlExt = require('remove-html-extension');
 const titleize = require('titleize');
 
-const componentIndexPath = 'components/index.html';
-const componentsForNavPath = 'tmp/componentsForNav.json';
-const defaultComponentsGlobPattern = 'src/components/**/*.html';
-const screenshotBasename = 'screenshot';
-
-const analyticsTemplatePath = 'src/templates/ga.html';
-const footerTemplatePath = 'src/templates/footer.html';
-const headerTemplatePath = 'src/templates/header.html';
-const headTemplatePath = 'src/templates/head.html';
-const indexTemplatePath = 'src/templates/components-index.html';
+const defaults = require('./components-build-defaults');
 
 const getTitle = (component) => {
   const title = rmHtmlExt(component).replace('src/components/', '').replace(/(\/|_|-)/g, ' ');
@@ -27,16 +18,16 @@ const getTitle = (component) => {
 
 const getName = component => titleize(getTitle(component.split('/')[3]));
 
-module.exports = globPattern => new Promise((resolve, reject) => {
-  glob(globPattern || defaultComponentsGlobPattern, {}, (err, components) => {
+module.exports = _options => new Promise((resolve, reject) => {
+  const options = _.assign({}, defaults, _options);
+  glob(options.componentsGlobPattern, {}, (err, components) => {
     console.log(chalk.magenta('Working on components index...'));
     if (err) {
       reject(err);
+      return;
     }
 
     const npmPackage = JSON.parse(fs.readFileSync('package.json', 'utf8'));
-
-    console.log('- Found', components.length, 'components');
 
     const componentsForNav = {};
     components.forEach((component) => {
@@ -63,23 +54,29 @@ module.exports = globPattern => new Promise((resolve, reject) => {
         path: `${dir}/index.html`,
         href: `/${dir}/index.html`,
         screenshot: {
-          path: `${dir}/${screenshotBasename}.png`,
-          href: `/${dir}/${screenshotBasename}.png?version=${signature}`,
+          path: `${dir}/${options.screenshotName}`,
+          href: `/${dir}/${options.screenshotName}?version=${signature}`,
         },
         signature,
         frontMatter,
       });
     });
 
-    mkdirp.sync(path.dirname(componentsForNavPath));
-    fs.writeFileSync(componentsForNavPath, JSON.stringify(componentsForNav, undefined, 2));
-    console.log('- Created navigation JSON:', componentsForNavPath);
+    const categories = Object.keys(componentsForNav);
+    console.log(
+      '- Found', components.length, components.length > 1 ? 'components' : 'component',
+      'in', categories.length, categories.length > 1 ? 'categories' : 'category'
+    );
 
-    const analytics = fs.readFileSync(analyticsTemplatePath, 'utf8');
-    const footer = fs.readFileSync(footerTemplatePath, 'utf8');
-    const head = fs.readFileSync(headTemplatePath, 'utf8');
-    const header = fs.readFileSync(headerTemplatePath, 'utf8');
-    const indexTemplate = fs.readFileSync(indexTemplatePath, 'utf8');
+    mkdirp.sync(path.dirname(options.componentsForNavPath));
+    fs.writeFileSync(options.componentsForNavPath, JSON.stringify(componentsForNav, undefined, 2));
+    console.log('- Created navigation JSON:', options.componentsForNavPath);
+
+    const analytics = fs.readFileSync(options.analyticsTemplatePath, 'utf8');
+    const footer = fs.readFileSync(options.footerTemplatePath, 'utf8');
+    const head = fs.readFileSync(options.headTemplatePath, 'utf8');
+    const header = fs.readFileSync(options.headerTemplatePath, 'utf8');
+    const indexTemplate = fs.readFileSync(options.componentsIndexTemplatePath, 'utf8');
 
     const compiledPage = _.template(indexTemplate)({
       componentsForNav,
@@ -88,12 +85,13 @@ module.exports = globPattern => new Promise((resolve, reject) => {
       footer,
       head,
       header,
+      options,
     });
-    mkdirp.sync(path.dirname(componentIndexPath));
-    fs.writeFileSync(componentIndexPath, compiledPage);
-    console.log('- Created index:', componentIndexPath);
+    mkdirp.sync(path.dirname(options.componentsIndexPath));
+    fs.writeFileSync(options.componentsIndexPath, compiledPage);
+    console.log('- Created index:', options.componentsIndexPath);
 
     console.log(chalk.magenta('Done with components index!'));
-    resolve(componentsForNavPath);
+    resolve();
   }); // glob
 }); // return promise
