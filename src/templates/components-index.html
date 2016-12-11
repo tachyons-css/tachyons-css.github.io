@@ -28,15 +28,17 @@
       <div class="ph3 ph5-ns mb5">
         <div class="mw9 center cf">
           <% componentsForNav[category].map(function(componentForNav) { %>
-            <div class="fl w-50 w-third-m w-25-l pb2 pr2">
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="<%= componentForNav.href %>"
+               title="<%= componentForNav.name %>">
               <div class="ba b--dashed b--black-20 aspect-ratio aspect-ratio--<%= options.screenshotAspectRatio %>">
                 <div class="aspect-ratio--object"
                      style="background:url(<%= componentForNav.screenshot.href %>) no-repeat <%= componentForNav.frontMatter.screenshot && componentForNav.frontMatter.screenshot['background-position'] || 'center center' %>/<%= componentForNav.frontMatter.screenshot && componentForNav.frontMatter.screenshot['background-size'] || 'cover' %>;"></div>
               </div>
-              <a class="pv2 f5 pointer db tc bg-white black-70 link underline-hover border-box" href="<%= componentForNav.href %>" title="<%= componentForNav.name %>">
+              <p class="f5 tc">
                 <%= componentForNav.name %>
-              </a>
-            </div>
+              </p>
+            </a>
           <% }) %>
       </div>
     </div>

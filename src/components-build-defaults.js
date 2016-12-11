@@ -1,19 +1,19 @@
 module.exports = {
   // Components
-  componentsForNavPath: 'tmp/componentsForNav.json',
-  componentsGlobPattern: 'src/components/**/*.html',
-  componentsIndexPath: 'components/index.html',
-  componentsBuildPages: true, // false to skip
-  componentsBuildScreenshots: true, // false to skip
+  componentsForNavPath: 'tmp/componentsForNav.json', // temporary file built by the index
+  componentsGlobPattern: 'src/components/**/*.html', // source components to process
+  componentsIndexPath: 'components/index.html',      // target location of components index
+  componentsBuildPages: true,                        // false to skip building pages
+  componentsBuildScreenshots: true,                  // false to skip building screenshots
   // Screenshots
-  screenshotName: 'screenshot.jpg',
-  screenshotAspectRatio: '4x3',
-  screenshotViewportWidth: 1024,
-  screenshotViewportMaxHeight: 768,
-  screenshotFinalMinWidth: 360,
-  screenshotFinalMinHeight: 128,
-  screenshotSelector: '[data-name="component-container"]',
-  screenshotCompressionQuality: 98,
+  screenshotName: 'screenshot.jpg',                  // name screenshot file in each component dir
+  screenshotAspectRatio: '4x3',                      // Tachyon aspect ratio of screenshot in index
+  screenshotViewportWidth: 1024,                     // viewport width used for capture
+  screenshotViewportHeight: 768,                     // viewport height used for capture
+  screenshotTargetMinWidth: 360,                     // min width of target, resized screenshot
+  screenshotTargetMinHeight: 128,                    // min height of target, resized screenshot
+  screenshotSelector: '[data-name="component-container"]', // DOM element to capture
+  screenshotCompressionQuality: 98,                  // JPEG compression quality before optimization
   // Misc
   tachyonsCssPath: 'src/css/tachyons.css',
   serverPort: 3333,

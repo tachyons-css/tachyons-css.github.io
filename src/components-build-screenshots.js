@@ -7,6 +7,7 @@ const fs = require('fs');
 const Jimp = require('jimp');
 const Nightmare = require('nightmare');
 const path = require('path');
+const prettyHrtime = require('pretty-hrtime');
 const tmp = require('tmp');
 
 const defaults = require('./components-build-defaults');
@@ -38,6 +39,7 @@ const formatFromSizeToSize = (from, to) => `(${filesize(from)} => ${filesize(to)
 
 module.exports = _options => new Promise((resolve, reject) => {
   const options = _.assign({}, defaults, _options);
+  const startTime = process.hrtime();
   console.log(chalk.magenta('Working on components screenshots...'));
   if (options.componentsForNavPath === undefined || !fs.existsSync(options.componentsForNavPath)) {
     reject('Can not find components nav JSON file');
@@ -74,7 +76,7 @@ module.exports = _options => new Promise((resolve, reject) => {
         // Grab the size of the component enclosing rectangle
         // https://github.com/segmentio/nightmare/issues/498#issuecomment-189156529
         const componentRect = yield nightmare
-          .viewport(options.screenshotViewportWidth, options.screenshotViewportMaxHeight)
+          .viewport(options.screenshotViewportWidth, options.screenshotViewportHeight)
           // .wait(1000)
           .goto(`http://localhost:${options.serverPort}${component.href}`)
           .wait(selector)
@@ -101,12 +103,12 @@ module.exports = _options => new Promise((resolve, reject) => {
           continue; // eslint-disable-line
         }
         const tmpObj = tmp.fileSync({ dir: path.dirname(component.screenshot.path) });
-        componentRect.height = Math.min(componentRect.height, options.screenshotViewportMaxHeight);
+        componentRect.height = Math.min(componentRect.height, options.screenshotViewportHeight);
         yield nightmare
           // we can not use .screenshot() with componentRect, so constrain the viewport instead
           .viewport(
             componentRect.width || options.screenshotViewportWidth,
-            componentRect.height || options.screenshotViewportMaxHeight
+            componentRect.height || options.screenshotViewportHeight
           ).scrollTo(componentRect.y, componentRect.x)
           // .wait(1000)
           // do *not* use componentRect in .screenshot() below or risk distortions
@@ -119,13 +121,13 @@ module.exports = _options => new Promise((resolve, reject) => {
         yield new Promise((write_resolve, write_reject) => {
           if (component.frontMatter.screenshot === undefined ||
               component.frontMatter.screenshot.autocrop !== false) {
-            screenshot.autocrop(0.0, false);
+            screenshot.autocrop(false);
           }
           // Allow shrinking, up to a point
-          const scaleHeight = screenshot.bitmap.height <= options.screenshotFinalMinHeight
-            ? 0.0 : options.screenshotFinalMinHeight / screenshot.bitmap.height;
-          const scaleWidth = screenshot.bitmap.width <= options.screenshotFinalMinWidth
-            ? 0.0 : options.screenshotFinalMinWidth / screenshot.bitmap.width;
+          const scaleHeight = screenshot.bitmap.height <= options.screenshotTargetMinHeight
+            ? 0.0 : options.screenshotTargetMinHeight / screenshot.bitmap.height;
+          const scaleWidth = screenshot.bitmap.width <= options.screenshotTargetMinWidth
+            ? 0.0 : options.screenshotTargetMinWidth / screenshot.bitmap.width;
           const scale = Math.max(scaleHeight, scaleWidth);
           screenshot
             .scale(scale > 0 ? scale : 1.0)
@@ -152,9 +154,11 @@ module.exports = _options => new Promise((resolve, reject) => {
     yield nightmare.end();
     server.close();
     console.log('- Closed static HTML server');
+    const elapsed = process.hrtime(startTime);
     console.log(
       chalk.magenta('Done with components screenshots!'),
-      chalk.dim(formatFromSizeToSize(tmpTotalFileSize, screenshotTotalFileSize))
+      chalk.dim(formatFromSizeToSize(tmpTotalFileSize, screenshotTotalFileSize)),
+      chalk.dim(prettyHrtime(elapsed))
     );
   });
 

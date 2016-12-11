@@ -15,6 +15,7 @@ const mqPacker = require('css-mqpacker');
 const path = require('path');
 const perfectionist = require('perfectionist');
 const postcss = require('postcss');
+const prettyHrtime = require('pretty-hrtime');
 const removeComments = require('postcss-discard-comments');
 const removeEmpty = require('postcss-discard-empty');
 const select = require('postcss-select');
@@ -23,6 +24,7 @@ const defaults = require('./components-build-defaults');
 
 module.exports = _options => new Promise((resolve, reject) => {
   const options = _.assign({}, defaults, _options);
+  const startTime = process.hrtime();
   console.log(chalk.magenta('Working on components pages...'));
   if (options.componentsForNavPath === undefined || !fs.existsSync(options.componentsForNavPath)) {
     reject('Can not find components nav JSON file');
@@ -108,7 +110,8 @@ module.exports = _options => new Promise((resolve, reject) => {
       }
     }
   }).then(() => {
-    console.log(chalk.magenta('Done with components pages!'));
+    const elapsed = process.hrtime(startTime);
+    console.log(chalk.magenta('Done with components pages!'), chalk.dim(prettyHrtime(elapsed)));
   });
   resolve(renderPromise);
 }); // return promise

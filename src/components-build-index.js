@@ -6,6 +6,7 @@ const fs = require('fs');
 const glob = require('glob');
 const mkdirp = require('mkdirp');
 const path = require('path');
+const prettyHrtime = require('pretty-hrtime');
 const rmHtmlExt = require('remove-html-extension');
 const titleize = require('titleize');
 
@@ -20,6 +21,7 @@ const getName = component => titleize(getTitle(component.split('/')[3]));
 
 module.exports = _options => new Promise((resolve, reject) => {
   const options = _.assign({}, defaults, _options);
+  const startTime = process.hrtime();
   glob(options.componentsGlobPattern, {}, (err, components) => {
     console.log(chalk.magenta('Working on components index...'));
     if (err) {
@@ -91,7 +93,8 @@ module.exports = _options => new Promise((resolve, reject) => {
     fs.writeFileSync(options.componentsIndexPath, compiledPage);
     console.log('- Created index:', options.componentsIndexPath);
 
-    console.log(chalk.magenta('Done with components index!'));
+    const elapsed = process.hrtime(startTime);
+    console.log(chalk.magenta('Done with components index!'), chalk.dim(prettyHrtime(elapsed)));
     resolve();
   }); // glob
 }); // return promise
