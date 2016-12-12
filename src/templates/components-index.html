@@ -5,8 +5,11 @@
 <meta name="description" content="Tachyons Components">
   <%= head %>
   <style type="text/css" media="screen">
-    .transparent { color: transparent; } 
+    .transparent { color: transparent; }
   </style>
+  <%= lazysizesTemplate %>
+  <script src="/js/ls.unveilhooks.min.js" async=""></script>
+  <script src="/js/lazysizes.min.js" async=""></script>
 </head>
 <body class="w-100 sans-serif">
   <%= header %>
@@ -26,10 +29,19 @@
         </div>
       </div>
       <div class="ph3 ph5-ns mb5">
-        <div class="mw9 center">
+        <div class="mw9 center cf">
           <% componentsForNav[category].map(function(componentForNav) { %>
-            <a class="f5 pointer dib mr4 pv2 bg-white black-70 link underline-hover border-box" href="<%= componentForNav.href %>" title="<%= componentForNav.name %>">
-              <%= componentForNav.name %>
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="<%= componentForNav.href %>"
+               title="<%= componentForNav.name %>">
+              <div class="ba b--dashed b--black-20 aspect-ratio aspect-ratio--<%= options.screenshotAspectRatio %>">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="<%= componentForNav.screenshot.href %>"
+                     style="background-repeat: no-repeat; background-position: <%= componentForNav.frontMatter.screenshot && componentForNav.frontMatter.screenshot['background-position'] || 'center center' %>; background-size: <%= componentForNav.frontMatter.screenshot && componentForNav.frontMatter.screenshot['background-size'] || 'cover' %>;"></div>
+              </div>
+              <p class="f5 tc">
+                <%= componentForNav.name %>
+              </p>
             </a>
           <% }) %>
       </div>
