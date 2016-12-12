@@ -24,8 +24,9 @@
 </head>
 <body class="w-100 sans-serif bg-white">
 <main>
+  <div data-name="component-container">
   <div class="pa3 pa5-ns">
-  <ul class="list pl0 measure">
+  <ul class="list pl0 measure center">
     <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">Orange</li>
     <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">Apple</li>
     <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">Peach</li>
@@ -35,6 +36,7 @@
   </ul>
 </div>
 
+  </div>
   <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70 bg-white">
   <h1 class="f4 f3-ns mt4">Block Item Dotted Border</h1>
 <div class="cf">
@@ -43,7 +45,7 @@
 <p class="f5 black-70"></p>
 <pre class="pa3 ba br2 b--black-10 h5 bg-white-20" id="html">
 &lt;div class=&quot;pa3 pa5-ns&quot;&gt;
-  &lt;ul class=&quot;list pl0 measure&quot;&gt;
+  &lt;ul class=&quot;list pl0 measure center&quot;&gt;
     &lt;li class=&quot;lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30&quot;&gt;Orange&lt;/li&gt;
     &lt;li class=&quot;lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30&quot;&gt;Apple&lt;/li&gt;
     &lt;li class=&quot;lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30&quot;&gt;Peach&lt;/li&gt;
@@ -107,6 +109,11 @@
     max-width: 30em;
 }
 
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
 @media screen and (min-width: 30em) {
     .pa5-ns {
         padding: 4rem;
@@ -121,16 +128,16 @@
     <h2 class="f5 mb3 mt4">Css stats for this component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Gzipped Size</dt>
-      <dd class="ml0 b f3 f2-ns">259<small class="f6">B</small>
+      <dd class="ml0 b f3 f2-ns">282<small class="f6">B</small>
       </dd>
     </dl>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Selectors</dt>
-      <dd class="ml0 b f3 f2-ns">13</dd>
+      <dd class="ml0 b f3 f2-ns">14</dd>
     </dl>
     <dl class="dib mt0">
       <dt class="db f6">Declarations</dt>
-      <dd class="ml0 b f3 f2-ns">15</dd>
+      <dd class="ml0 b f3 f2-ns">17</dd>
     </dl>
   </div>
   <div class="fl w-100">
@@ -153,6 +160,8 @@
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-typography">tachyons-typography</a></li>
   
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-utilities">tachyons-utilities</a></li>
+  
     </ul>
   </div>
 </div>
@@ -161,7 +170,7 @@
 
 
   <h4 class="mt5">Install via npm <small class="fw2 f6 db mt1">Only installs the needed tachyons-modules for this component</small></h4>
-  <code class="f6">npm i --save tachyons-borders tachyons-border-colors tachyons-border-style tachyons-border-widths tachyons-line-height tachyons-lists tachyons-spacing tachyons-typography</code>
+  <code class="f6">npm i --save tachyons-borders tachyons-border-colors tachyons-border-style tachyons-border-widths tachyons-line-height tachyons-lists tachyons-spacing tachyons-typography tachyons-utilities</code>
   <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 

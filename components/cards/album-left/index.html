@@ -24,7 +24,8 @@
 </head>
 <body class="w-100 sans-serif bg-white pt5">
 <main>
-  <a class="dib mw5 black link dim"
+  <div data-name="component-container">
+  <a class="db center mw5 black link dim"
    title="Frank Ocean's Blonde on Apple Music"
    href="https://geo.itunes.apple.com/us/album/blonde/id1146195596?at=1l3vqFJ&mt=1&app=music">
 
@@ -41,6 +42,7 @@
   </dl>
 </a>
 
+  </div>
   <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70 bg-white">
   <h1 class="f4 f3-ns mt4">Album Left</h1>
 <div class="cf">
@@ -48,7 +50,7 @@
 <h2 class="f5">HTML</h2>
 <p class="f5 black-70"></p>
 <pre class="pa3 ba br2 b--black-10 h5 bg-white-20" id="html">
-&lt;a class=&quot;dib mw5 black link dim&quot;
+&lt;a class=&quot;db center mw5 black link dim&quot;
    title=&quot;Frank Ocean&#39;s Blonde on Apple Music&quot;
    href=&quot;https://geo.itunes.apple.com/us/album/blonde/id1146195596?at=1l3vqFJ&amp;mt=1&amp;app=music&quot;&gt;
 
@@ -80,10 +82,6 @@
 
 .db {
     display: block;
-}
-
-.dib {
-    display: inline-block;
 }
 
 .fw9 {
@@ -140,6 +138,11 @@
     font-size: .875rem;
 }
 
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .clip {
     position: fixed !important;
     _position: absolute !important;
@@ -170,7 +173,7 @@
     <h2 class="f5 mb3 mt4">Css stats for this component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Gzipped Size</dt>
-      <dd class="ml0 b f3 f2-ns">426<small class="f6">B</small>
+      <dd class="ml0 b f3 f2-ns">439<small class="f6">B</small>
       </dd>
     </dl>
     <dl class="dib mr4 mt0">
@@ -179,7 +182,7 @@
     </dl>
     <dl class="dib mt0">
       <dt class="db f6">Declarations</dt>
-      <dd class="ml0 b f3 f2-ns">30</dd>
+      <dd class="ml0 b f3 f2-ns">31</dd>
     </dl>
   </div>
   <div class="fl w-100">
@@ -206,6 +209,8 @@
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-type-scale">tachyons-type-scale</a></li>
   
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-utilities">tachyons-utilities</a></li>
+  
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-visibility">tachyons-visibility</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-hovers">tachyons-hovers</a></li>
@@ -218,7 +223,7 @@
 
 
   <h4 class="mt5">Install via npm <small class="fw2 f6 db mt1">Only installs the needed tachyons-modules for this component</small></h4>
-  <code class="f6">npm i --save tachyons-borders tachyons-border-colors tachyons-display tachyons-font-weight tachyons-line-height tachyons-links tachyons-max-widths tachyons-skins tachyons-spacing tachyons-type-scale tachyons-visibility tachyons-hovers</code>
+  <code class="f6">npm i --save tachyons-borders tachyons-border-colors tachyons-display tachyons-font-weight tachyons-line-height tachyons-links tachyons-max-widths tachyons-skins tachyons-spacing tachyons-type-scale tachyons-utilities tachyons-visibility tachyons-hovers</code>
   <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 
