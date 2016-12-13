@@ -20,9 +20,9 @@ const getTitle = (component) => {
 const getName = component => titleize(getTitle(component.split('/')[3]));
 
 module.exports = _options => new Promise((resolve, reject) => {
-  const options = _.assign({}, defaults, _options);
+  const options = _.merge({}, defaults, _options);
   const startTime = process.hrtime();
-  glob(options.componentsGlobPattern, {}, (err, components) => {
+  glob(options.components.globPattern, {}, (err, components) => {
     console.log(chalk.magenta('Working on components index...'));
     if (err) {
       reject(err);
@@ -38,7 +38,8 @@ module.exports = _options => new Promise((resolve, reject) => {
 
       const componentHtml = fs.readFileSync(component, 'utf8');
       const fmParsed = fm.parse(componentHtml);
-      const frontMatter = fmParsed.attributes || {};
+      const srcFrontMatter = fmParsed.attributes || {};
+      const frontMatter = _.merge({}, options.components.frontMatter, srcFrontMatter);
       const dir = component.replace('src/', '').replace('.html', '');
 
       // Compute component signature based on the Tachyons version and the contents of the
@@ -56,11 +57,14 @@ module.exports = _options => new Promise((resolve, reject) => {
         path: `${dir}/index.html`,
         href: `/${dir}/index.html`,
         screenshot: {
-          path: `${dir}/${options.screenshotName}`,
-          href: `/${dir}/${options.screenshotName}?version=${signature}`,
+          path: `${dir}/${options.screenshot.basename}`,
+          href: `/${dir}/${options.screenshot.basename}?version=${signature}`,
         },
         signature,
-        frontMatter,
+        // This is the raw front matter, as found in the component source, NOT merged
+        // with any defaults, so that it is easier to spot the overrides.
+        // It is up to build scripts to merge with options.components.frontMatter down the road.
+        frontMatter: srcFrontMatter,
       });
     });
 
@@ -70,16 +74,16 @@ module.exports = _options => new Promise((resolve, reject) => {
       'in', categories.length, categories.length > 1 ? 'categories' : 'category'
     );
 
-    mkdirp.sync(path.dirname(options.componentsForNavPath));
-    fs.writeFileSync(options.componentsForNavPath, JSON.stringify(componentsForNav, undefined, 2));
-    console.log('- Created navigation JSON:', options.componentsForNavPath);
+    mkdirp.sync(path.dirname(options.components.forNavPath));
+    fs.writeFileSync(options.components.forNavPath, JSON.stringify(componentsForNav, undefined, 2));
+    console.log('- Created navigation JSON:', options.components.forNavPath);
 
-    const analytics = fs.readFileSync(options.analyticsTemplatePath, 'utf8');
-    const footer = fs.readFileSync(options.footerTemplatePath, 'utf8');
-    const head = fs.readFileSync(options.headTemplatePath, 'utf8');
-    const header = fs.readFileSync(options.headerTemplatePath, 'utf8');
-    const componentsIndexTemplate = fs.readFileSync(options.componentsIndexTemplatePath, 'utf8');
-    const lazysizesTemplate = fs.readFileSync(options.lazysizesTemplate, 'utf8');
+    const analytics = fs.readFileSync(options.templates.analyticsPath, 'utf8');
+    const footer = fs.readFileSync(options.templates.footerPath, 'utf8');
+    const head = fs.readFileSync(options.templates.headPath, 'utf8');
+    const header = fs.readFileSync(options.templates.headerPath, 'utf8');
+    const componentsIndexTemplate = fs.readFileSync(options.templates.componentsIndexPath, 'utf8');
+    const lazysizesTemplate = fs.readFileSync(options.templates.lazysizesPath, 'utf8');
 
     const compiledPage = _.template(componentsIndexTemplate)({
       componentsForNav,
@@ -91,9 +95,9 @@ module.exports = _options => new Promise((resolve, reject) => {
       lazysizesTemplate,
       options,
     });
-    mkdirp.sync(path.dirname(options.componentsIndexPath));
-    fs.writeFileSync(options.componentsIndexPath, compiledPage);
-    console.log('- Created index:', options.componentsIndexPath);
+    mkdirp.sync(path.dirname(options.components.indexPath));
+    fs.writeFileSync(options.components.indexPath, compiledPage);
+    console.log('- Created index:', options.components.indexPath);
 
     const elapsed = process.hrtime(startTime);
     console.log(chalk.magenta('Done with components index!'), chalk.dim(prettyHrtime(elapsed)));

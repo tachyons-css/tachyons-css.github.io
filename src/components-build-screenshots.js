@@ -40,19 +40,19 @@ const initNightmare = () => Nightmare({ // eslint-disable-line
 const formatFromSizeToSize = (from, to) => `(${filesize(from)} => ${filesize(to)})`;
 
 module.exports = _options => new Promise((resolve, reject) => {
-  const options = _.assign({}, defaults, _options);
+  const options = _.merge({}, defaults, _options);
   const startTime = process.hrtime();
   console.log(chalk.magenta('Working on components screenshots...'));
-  if (options.componentsForNavPath === undefined || !fs.existsSync(options.componentsForNavPath)) {
+  if (options.components.forNavPath === undefined || !fs.existsSync(options.components.forNavPath)) {
     reject('Can not find components nav JSON file');
     return;
   }
-  if (!options.componentsBuildScreenshots) {
+  if (!options.components.buildScreenshots) {
     console.log(chalk.dim('Skipped by request.'));
     resolve();
     return;
   }
-  const componentsForNav = JSON.parse(fs.readFileSync(options.componentsForNavPath, 'utf8'));
+  const componentsForNav = JSON.parse(fs.readFileSync(options.components.forNavPath, 'utf8'));
 
   const nightmare = initNightmare();
 
@@ -70,18 +70,15 @@ module.exports = _options => new Promise((resolve, reject) => {
 
       for (let comp_idx = 0; comp_idx < componentsForNav[category].length; comp_idx += 1) {
         const component = componentsForNav[category][comp_idx];
-        let selector = options.screenshotSelector;
-        if (component.frontMatter.screenshot && component.frontMatter.screenshot.selector) {
-          selector = `${selector} ${component.frontMatter.screenshot.selector}`;
-        }
+        const frontMatter = _.merge({}, options.components.frontMatter, component.frontMatter);
 
         // Grab the size of the component enclosing rectangle
         // https://github.com/segmentio/nightmare/issues/498#issuecomment-189156529
         const componentRect = yield nightmare
-          .viewport(options.screenshotViewportWidth, options.screenshotViewportHeight)
+          .viewport(options.screenshot.viewportWidth, options.screenshot.viewportHeight)
           // .wait(1000)
           .goto(`http://localhost:${options.serverPort}${component.href}`)
-          .wait(selector)
+          .wait(frontMatter.screenshot.selector)
           .evaluate((_selector) => {
             // Hide scrollbar that could pop up due to .scrollTo
             const sheet = document.styleSheets[0];
@@ -97,7 +94,7 @@ module.exports = _options => new Promise((resolve, reject) => {
               };
             }
             return false;
-          }, selector);
+          }, frontMatter.screenshot.selector);
 
         // Capture the component
         if (componentRect === false) {
@@ -107,12 +104,12 @@ module.exports = _options => new Promise((resolve, reject) => {
 
         const screenshotDir = path.dirname(component.screenshot.path);
         const tmpPngObj = tmp.fileSync({ dir: screenshotDir });
-        componentRect.height = Math.min(componentRect.height, options.screenshotViewportHeight);
+        componentRect.height = Math.min(componentRect.height, options.screenshot.viewportHeight);
         yield nightmare
           // we can not use .screenshot() with componentRect, so constrain the viewport instead
           .viewport(
-            componentRect.width || options.screenshotViewportWidth,
-            componentRect.height || options.screenshotViewportHeight
+            componentRect.width || options.screenshot.viewportWidth,
+            componentRect.height || options.screenshot.viewportHeight
           ).scrollTo(componentRect.y, componentRect.x)
           // .wait(1000)
           .screenshot(tmpPngObj.name); // do *not* use componentRect here or risk distortions
@@ -122,15 +119,14 @@ module.exports = _options => new Promise((resolve, reject) => {
         const tmpJpegPath = path.join(tmpJpegDirObj.name, path.basename(component.screenshot.path));
         const screenshot = yield Jimp.read(tmpPngObj.name);
         yield new Promise((write_resolve, write_reject) => {
-          if (component.frontMatter.screenshot === undefined ||
-              component.frontMatter.screenshot.autocrop !== false) {
+          if (frontMatter.screenshot.autocrop) {
             screenshot.autocrop(false);
           }
           // Allow shrinking, up to a point
-          const scaleHeight = screenshot.bitmap.height <= options.screenshotTargetMinHeight
-            ? 0.0 : options.screenshotTargetMinHeight / screenshot.bitmap.height;
-          const scaleWidth = screenshot.bitmap.width <= options.screenshotTargetMinWidth
-            ? 0.0 : options.screenshotTargetMinWidth / screenshot.bitmap.width;
+          const scaleHeight = screenshot.bitmap.height <= options.screenshot.targetMinHeight
+            ? 0.0 : options.screenshot.targetMinHeight / screenshot.bitmap.height;
+          const scaleWidth = screenshot.bitmap.width <= options.screenshot.targetMinWidth
+            ? 0.0 : options.screenshot.targetMinWidth / screenshot.bitmap.width;
           const scale = Math.max(scaleHeight, scaleWidth);
           screenshot
             .scale(scale > 0 ? scale : 1.0)
@@ -142,7 +138,7 @@ module.exports = _options => new Promise((resolve, reject) => {
               // Optimize
               imagemin([tmpJpegPath], screenshotDir, {
                 plugins: [
-                  imageminMozjpeg({ quality: options.mozjpegQuality }),
+                  imageminMozjpeg({ quality: options.screenshot.mozjpegQuality }),
                   // imageminJpegRecompress(), // this guy is useless
                   // imageminJpegtran(),       // this guy is useless
                 ],

@@ -23,25 +23,25 @@ const select = require('postcss-select');
 const defaults = require('./components-build-defaults');
 
 module.exports = _options => new Promise((resolve, reject) => {
-  const options = _.assign({}, defaults, _options);
+  const options = _.merge({}, defaults, _options);
   const startTime = process.hrtime();
   console.log(chalk.magenta('Working on components pages...'));
-  if (options.componentsForNavPath === undefined || !fs.existsSync(options.componentsForNavPath)) {
+  if (options.components.forNavPath === undefined || !fs.existsSync(options.components.forNavPath)) {
     reject('Can not find components nav JSON file');
     return;
   }
-  if (!options.componentsBuildPages) {
+  if (!options.components.buildPages) {
     console.log(chalk.dim('Skipped by request.'));
     resolve();
     return;
   }
-  const componentsForNav = JSON.parse(fs.readFileSync(options.componentsForNavPath, 'utf8'));
+  const componentsForNav = JSON.parse(fs.readFileSync(options.components.forNavPath, 'utf8'));
 
-  const componentTemplate = fs.readFileSync(options.componentsTemplatePath, 'utf8');
-  const analytics = fs.readFileSync(options.analyticsTemplatePath, 'utf8');
-  const footer = fs.readFileSync(options.footerTemplatePath, 'utf8');
-  const head = fs.readFileSync(options.headTemplatePath, 'utf8');
-  const highlight = fs.readFileSync(options.highlightTemplatePath, 'utf8');
+  const componentTemplate = fs.readFileSync(options.templates.componentPath, 'utf8');
+  const analytics = fs.readFileSync(options.templates.analyticsPath, 'utf8');
+  const footer = fs.readFileSync(options.templates.footerPath, 'utf8');
+  const head = fs.readFileSync(options.templates.headPath, 'utf8');
+  const highlight = fs.readFileSync(options.templates.highlightPath, 'utf8');
 
   const tachyonsCss = fs.readFileSync(options.tachyonsCssPath, 'utf8');
 
@@ -57,10 +57,9 @@ module.exports = _options => new Promise((resolve, reject) => {
         const componentHtml = fs.readFileSync(component.src, 'utf8');
         const fmParsed = fm.parse(componentHtml);
 
-        const frontMatter = _.assign({}, component.frontMatter);
+        const frontMatter = _.merge({}, options.components.frontMatter, component.frontMatter);
         frontMatter.title = component.title;
         frontMatter.name = component.name;
-        frontMatter.bodyClass = frontMatter.bodyClass || '';
         frontMatter.classes = getClasses(fmParsed.body).map(klass => `.${klass}`);
         frontMatter.componentHtml = componentHtml;
         frontMatter.content = fmParsed.body;
