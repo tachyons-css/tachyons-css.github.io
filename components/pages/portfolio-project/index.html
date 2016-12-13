@@ -191,6 +191,26 @@
     box-sizing: border-box;
 }
 
+.aspect-ratio {
+    height: 0;
+    position: relative;
+}
+
+.aspect-ratio--16x9 {
+    padding-bottom: 56.25%;
+}
+
+.aspect-ratio--object {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
 .cover {
     background-size: cover !important;
 }
@@ -420,26 +440,6 @@
     max-width: 30em;
 }
 
-.aspect-ratio {
-    height: 0;
-    position: relative;
-}
-
-.aspect-ratio--16x9 {
-    padding-bottom: 56.25%;
-}
-
-.aspect-ratio--object {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-}
-
 .center {
     margin-right: auto;
     margin-left: auto;
@@ -555,7 +555,7 @@
     <h2 class="f5 mb3 mt4">Css stats for this component</h2>
     <dl class="dib mr4 mt0">
       <dt class="db f6">Gzipped Size</dt>
-      <dd class="ml0 b f3 f2-ns">1151<small class="f6">B</small>
+      <dd class="ml0 b f3 f2-ns">1155<small class="f6">B</small>
       </dd>
     </dl>
     <dl class="dib mr4 mt0">
@@ -572,6 +572,8 @@
     <ul class="list pl0 cf lh-copy mw7">
       
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-box-sizing">tachyons-box-sizing</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-aspect-ratios">tachyons-aspect-ratios</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-background-size">tachyons-background-size</a></li>
   
@@ -629,7 +631,7 @@
 
 
   <h4 class="mt5">Install via npm <small class="fw2 f6 db mt1">Only installs the needed tachyons-modules for this component</small></h4>
-  <code class="f6">npm i --save tachyons-box-sizing tachyons-background-size tachyons-background-position tachyons-borders tachyons-border-colors tachyons-border-widths tachyons-clears tachyons-display tachyons-floats tachyons-font-family tachyons-font-weight tachyons-heights tachyons-letter-spacing tachyons-line-height tachyons-max-widths tachyons-widths tachyons-overflow tachyons-skins tachyons-spacing tachyons-text-align tachyons-text-transform tachyons-type-scale tachyons-typography tachyons-utilities tachyons-hovers</code>
+  <code class="f6">npm i --save tachyons-box-sizing tachyons-aspect-ratios tachyons-background-size tachyons-background-position tachyons-borders tachyons-border-colors tachyons-border-widths tachyons-clears tachyons-display tachyons-floats tachyons-font-family tachyons-font-weight tachyons-heights tachyons-letter-spacing tachyons-line-height tachyons-max-widths tachyons-widths tachyons-overflow tachyons-skins tachyons-spacing tachyons-text-align tachyons-text-transform tachyons-type-scale tachyons-typography tachyons-utilities tachyons-hovers</code>
   <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 
@@ -1016,6 +1018,15 @@
         <a class="f6 f5-ns fw4 dib mr3 mb2 black-70 link hover-blue" href="/components/quotes/left-border/index.html">Left Border</a>
       
         <a class="f6 f5-ns fw4 dib mr3 mb2 black-70 link hover-blue" href="/components/quotes/pull-quote/index.html">Pull Quote</a>
+      
+    </div>
+  
+    <div>
+      <h2 class="f6 fw6 mb2 ttc black-70">tables</h2>
+      
+        <a class="f6 f5-ns fw4 dib mr3 mb2 black-70 link hover-blue" href="/components/tables/basic/index.html">Basic</a>
+      
+        <a class="f6 f5-ns fw4 dib mr3 mb2 black-70 link hover-blue" href="/components/tables/striped-dark/index.html">Striped Dark</a>
       
     </div>
   

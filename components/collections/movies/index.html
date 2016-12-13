@@ -189,7 +189,11 @@
 </div>
 <div class="fl w-100 w-25-ns pl0 pl2-ns">
 <h2 class="f5">css</h2>
-<pre class="pa3 ba br2 b--black-10 h5" id="css">.fl {
+<pre class="pa3 ba br2 b--black-10 h5" id="css">.aspect-ratio--4x6 {
+    padding-bottom: 150%;
+}
+
+.fl {
     float: left;
     _display: inline;
 }
@@ -222,10 +226,6 @@
 
 .overflow-hidden {
     overflow: hidden;
-}
-
-.aspect-ratio--4x6 {
-    padding-bottom: 150%;
 }
 
 .grow {
@@ -273,6 +273,8 @@
     <h2 class="f5 mt4">Modules referenced</h2>
     <ul class="list pl0 cf lh-copy mw7">
       
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-aspect-ratios">tachyons-aspect-ratios</a></li>
+  
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-floats">tachyons-floats</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-links">tachyons-links</a></li>
@@ -280,8 +282,6 @@
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-widths">tachyons-widths</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-overflow">tachyons-overflow</a></li>
-  
-    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-utilities">tachyons-utilities</a></li>
   
     <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-hovers">tachyons-hovers</a></li>
   
@@ -293,7 +293,7 @@
 
 
   <h4 class="mt5">Install via npm <small class="fw2 f6 db mt1">Only installs the needed tachyons-modules for this component</small></h4>
-  <code class="f6">npm i --save tachyons-floats tachyons-links tachyons-widths tachyons-overflow tachyons-utilities tachyons-hovers</code>
+  <code class="f6">npm i --save tachyons-aspect-ratios tachyons-floats tachyons-links tachyons-widths tachyons-overflow tachyons-hovers</code>
   <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 
@@ -680,6 +680,15 @@
         <a class="f6 f5-ns fw4 dib mr3 mb2 black-70 link hover-blue" href="/components/quotes/left-border/index.html">Left Border</a>
       
         <a class="f6 f5-ns fw4 dib mr3 mb2 black-70 link hover-blue" href="/components/quotes/pull-quote/index.html">Pull Quote</a>
+      
+    </div>
+  
+    <div>
+      <h2 class="f6 fw6 mb2 ttc black-70">tables</h2>
+      
+        <a class="f6 f5-ns fw4 dib mr3 mb2 black-70 link hover-blue" href="/components/tables/basic/index.html">Basic</a>
+      
+        <a class="f6 f5-ns fw4 dib mr3 mb2 black-70 link hover-blue" href="/components/tables/striped-dark/index.html">Striped Dark</a>
       
     </div>
   
