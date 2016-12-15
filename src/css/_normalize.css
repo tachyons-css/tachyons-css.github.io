@@ -171,7 +171,8 @@ dfn {
  */
 
 mark {
-  background-color: #ff0;
+  /* Manually remove default yellow color as this messes up the docs for skins"
+  background-color: transparent;
   color: #000;
 }
 
