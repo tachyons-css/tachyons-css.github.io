@@ -21,7 +21,18 @@ const componentsBuildScreenshots = require('./src/components-build-screenshots')
 
 // See src/components-build-defaults for list of options that can be overriden
 const options = {
-  // componentsGlobPattern: 'src/components/buttons/*.html',
+  components: {
+    globPattern: 'src/components/banners/*.html',
+    // frontMatter: {
+    //   bodyClass: 'bg-red',
+    //   screenshot: {
+    //     autocrop: false,
+    //   },
+    // },
+  },
+  // screenshot: {
+  //   aspectRatio: '16x9',
+  // },
 };
 
 // Note that componentsBuildIndex() generates the index *and* the JSON

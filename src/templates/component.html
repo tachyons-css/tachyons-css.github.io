@@ -7,7 +7,7 @@
 </head>
 <body class="w-100 sans-serif <%= bodyClass %>">
 <main>
-  <div data-name="component-container">
+  <div data-name="component">
   <%= content %>
   </div>
   <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70 bg-white">
@@ -64,8 +64,8 @@
   <% Object.keys(componentsForNav).map(function(category) { %>
     <div>
       <h2 class="f6 fw6 mb2 ttc black-70"><%= category %></h2>
-      <% componentsForNav[category].map(function(componentForNav) { %>
-        <a class="f6 f5-ns fw4 dib mr3 mb2 black-70 link hover-blue" href="<%= componentForNav.href %>"><%= componentForNav.name %></a>
+      <% componentsForNav[category].map(function(component) { %>
+        <a class="f6 f5-ns fw4 dib mr3 mb2 black-70 link hover-blue" href="<%= component.href %>"><%= component.name %></a>
       <% }) %>
     </div>
   <% }) %>

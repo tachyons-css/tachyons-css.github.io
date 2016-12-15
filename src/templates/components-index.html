@@ -30,17 +30,22 @@
       </div>
       <div class="ph3 ph5-ns mb5">
         <div class="mw9 center cf">
-          <% componentsForNav[category].map(function(componentForNav) { %>
+          <% componentsForNav[category].map(function(component) {
+               const frontMatter = _.merge({}, options.components.frontMatter, component.frontMatter);
+             %>
             <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
-               href="<%= componentForNav.href %>"
-               title="<%= componentForNav.name %>">
-              <div class="ba b--black-20 aspect-ratio aspect-ratio--<%= options.screenshotAspectRatio %>">
+               href="<%= component.href %>"
+               title="<%= component.name %>">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--<%= options.screenshot.aspectRatio %>">
                 <div class="aspect-ratio--object lazyload"
-                     data-bg="<%= componentForNav.screenshot.href %>"
-                     style="background-repeat: no-repeat; background-position: <%= componentForNav.frontMatter.screenshot && componentForNav.frontMatter.screenshot['background-position'] || 'center center' %>; background-size: <%= componentForNav.frontMatter.screenshot && componentForNav.frontMatter.screenshot['background-size'] || 'cover' %>;"></div>
+                     data-bg="<%= component.screenshot.href %>"
+                     style="background-repeat: no-repeat;
+                            background-position: <%= frontMatter.screenshot['background-position'] %>;
+                            background-size: <%= frontMatter.screenshot['background-size'] %>;">
+                </div>
               </div>
               <p class="f6 truncate">
-                <%= componentForNav.name %>
+                <%= component.name %>
               </p>
             </a>
           <% }) %>
