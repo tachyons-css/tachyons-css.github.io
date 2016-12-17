@@ -63,9 +63,10 @@
 
   <% Object.keys(componentsByCategory).map(function(category) { %>
     <div>
-      <h2 class="f6 fw6 mb2 ttc black-70"><%= category %></h2>
-      <% componentsByCategory[category].map(function(component) { %>
-        <a class="f6 f5-ns fw4 dib mr3 mb2 black-70 link hover-blue" href="<%= component.page.href %>"><%= component.page.name %></a>
+      <h2 class="f6 fw6 mb2 ttc black-70"><%= componentsByCategory[category].name %></h2>
+      <% componentsByCategory[category].components.map(function(component) { %>
+        <a class="f6 f5-ns fw4 dib mr3 mb2 black-70 link hover-blue"
+           href="<%= component.page.href %>"><%= component.page.name %></a>
       <% }) %>
     </div>
   <% }) %>

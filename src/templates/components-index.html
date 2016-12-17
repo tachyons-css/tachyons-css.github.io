@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>TACHYONS - <%= title %></title>
+<title>TACHYONS - <%= index.title %></title>
 <meta name="description" content="Tachyons Components">
   <%= templates.head %>
   <style type="text/css" media="screen">
@@ -15,22 +15,27 @@
   <%= templates.header %>
 <main class="bg-white black-70">
   <header class="ph3 ph5-ns pt3 bb bt b--black-10 mb4">
+    <% if (index.showSectionsTOC) { %>
     <div class="mw9 center">
-      <% Object.keys(componentsByCategory).map(function(category) { %>
-        <a class="f6 fw6 b dib mr3 mb3 pb1 link hover-blue black-70 ttc" href="#<%= category%>"><%= category %></a>
+      <% Object.keys(componentsBySections).map(function(section) { %>
+        <a class="f6 fw6 b dib mr3 mb3 pb1 link hover-blue black-70 ttc"
+           href="#<%= section %>"><%= componentsBySections[section].name %></a>
       <% }) %>
     </div>
+    <% } else { %>
+    <h2 class="f4"><%= index.title %></h2>
+    <% } %>
   </header>
   <section>
-    <% Object.keys(componentsByCategory).map(function(category) { %>
-      <div class="ph3 ph5-ns" id="<%= category  %>">
+    <% Object.keys(componentsBySections).map(function(section) { %>
+      <div class="ph3 ph5-ns" id="<%= section  %>">
         <div class="mw9 center">
-          <h3 class="f5 fw6 pb2 bb b--black-10 black-70 ttc"><%= category %></h3>
+          <h3 class="f5 fw6 pb2 bb b--black-10 black-70 ttc"><%= componentsBySections[section].name %></h3>
         </div>
       </div>
       <div class="ph3 ph5-ns mb5">
         <div class="mw9 center cf">
-          <% componentsByCategory[category].map(function(component) {
+          <% componentsBySections[section].components.map(function(component) {
                const frontMatter = _.merge({}, options.components.frontMatter, component.frontMatter);
              %>
             <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"

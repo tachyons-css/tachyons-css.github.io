@@ -1,3 +1,4 @@
+const moment = require('moment');
 const titleize = require('titleize');
 
 const cleanTitleize = str => titleize(str.replace(/(_|-)/g, ' '));
@@ -6,23 +7,41 @@ module.exports = {
   // Components
   components: {
     globPattern: 'src/components/**/*.html',       // source components to process
-    indexByCategory: {
-      path: 'components/index.html',               // target location of index by category
-      json: 'tmp/componentsByCategory.json',       // temporary JSON file built by the index
-    },
+    tempListPath: 'tmp/components.json',           // temporary JSON file built by the index
     build: {
       pages: true,                                 // false to skip building pages
       screenshots: true,                           // false to skip building screenshots
     },
+    index: {                                       // list index pages to build
+      byCategory: {                                // components by category
+        title: 'Components',
+        path: 'components/index.html',             // target location of index by category
+        sortAllBy: [['src'], ['asc']],             // sort by file location will do
+        limitAll: false,                           // use all components
+        createSectionsBy: 'category',              // create a section for each category
+        showSectionsTOC: true,                     // show Table of Contents (e.g. categories)
+      },
+      recent: {                                    // recent components
+        title: 'Recent Components',
+        path: 'components/recent.html',            // target location of recent index
+        sortAllBy: [['creationTime'], ['desc']],   // sort by most recent component first
+        limitAll: 50,                              // use the 50 most recent ones
+        createSectionsBy: c => moment(c.creationTime).format('YYYY-MM-DD'), // group by day
+        prettifySection: v => moment(v).format('LL'), // display as day
+        showSectionsTOC: false,                    // no need for Table of Contents
+      },
+    },
+    page: {                                        // options related to each component page
+      composeTitle: (category, name) => `${category} | ${name}`, // compose title from cat, name
+    },
     prettify: {
       id: cleanTitleize,                           // prettify component id into component name
       category: cleanTitleize,                     // prettify component category
-      title: (category, name) => `${category} | ${name}`, // compose title from category and name
+      creationTime: v => moment(v).format('LLL'),  // prettify component creation time
     },
     frontMatter: {                                 // font matter defaults (i.e. optional)
       name: undefined,                             // undefined to infer component name
       title: undefined,                            // undefined to infer component title
-      category: undefined,                         // undefined to infer component category
       bodyClass: 'bg-white',                       // class to apply on <body>
       screenshot: {                                // per-component screenshot options
         selector: '[data-name="component"]',       // DOM element to capture
