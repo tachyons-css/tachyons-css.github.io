@@ -43,16 +43,17 @@ module.exports = _options => new Promise((resolve, reject) => {
   const options = _.merge({}, defaults, _options);
   const startTime = process.hrtime();
   console.log(chalk.magenta('Working on components screenshots...'));
-  if (options.components.forNavPath === undefined || !fs.existsSync(options.components.forNavPath)) {
+  if (options.components.indexByCategory.json === undefined ||
+      !fs.existsSync(options.components.indexByCategory.json)) {
     reject('Can not find components nav JSON file');
     return;
   }
-  if (!options.components.buildScreenshots) {
+  if (!options.components.build.screenshots) {
     console.log(chalk.dim('Skipped by request.'));
     resolve();
     return;
   }
-  const componentsForNav = JSON.parse(fs.readFileSync(options.components.forNavPath, 'utf8'));
+  const componentsByCategory = JSON.parse(fs.readFileSync(options.components.indexByCategory.json, 'utf8'));
 
   const nightmare = initNightmare();
 
@@ -63,26 +64,27 @@ module.exports = _options => new Promise((resolve, reject) => {
     const server = yield startServer(options);
 
     // Unfortunately, can't use forEach() in generators, so let's for()...
-    const categories = Object.keys(componentsForNav);
+    const categories = Object.keys(componentsByCategory);
     for (let cat_idx = 0; cat_idx < categories.length; cat_idx += 1) {
       const category = categories[cat_idx];
       console.log(chalk.yellow('- Processing category:'), category);
 
-      for (let comp_idx = 0; comp_idx < componentsForNav[category].length; comp_idx += 1) {
-        const component = componentsForNav[category][comp_idx];
+      for (let comp_idx = 0; comp_idx < componentsByCategory[category].length; comp_idx += 1) {
+        const component = componentsByCategory[category][comp_idx];
         const frontMatter = _.merge({}, options.components.frontMatter, component.frontMatter);
 
         // Grab the size of the component enclosing rectangle
         // https://github.com/segmentio/nightmare/issues/498#issuecomment-189156529
         const componentRect = yield nightmare
-          .viewport(options.screenshot.viewportWidth, options.screenshot.viewportHeight)
+          .viewport(options.screenshot.viewport.width, options.screenshot.viewport.height)
           // .wait(1000)
-          .goto(`http://localhost:${options.serverPort}${component.href}`)
+          .goto(`http://localhost:${options.serverPort}${component.page.href}`)
           .wait(frontMatter.screenshot.selector)
           .evaluate((_selector) => {
             // Hide scrollbar that could pop up due to .scrollTo
-            const sheet = document.styleSheets[0];
-            sheet.insertRule('::-webkit-scrollbar { display:none; }');
+            const styleEl = document.createElement('style');
+            document.head.appendChild(styleEl);
+            styleEl.sheet.insertRule('::-webkit-scrollbar { display:none; }', 0);
             const element = document.querySelector(_selector);
             if (element) {
               const rect = element.getBoundingClientRect();
@@ -98,18 +100,18 @@ module.exports = _options => new Promise((resolve, reject) => {
 
         // Capture the component
         if (componentRect === false) {
-          console.log(chalk.red('  * FAILED to create screenshot:'), component.screenshot.name);
+          console.log(chalk.red('  * FAILED to create screenshot:'), component.screenshot.path);
           continue; // eslint-disable-line
         }
 
         const screenshotDir = path.dirname(component.screenshot.path);
         const tmpPngObj = tmp.fileSync({ dir: screenshotDir });
-        componentRect.height = Math.min(componentRect.height, options.screenshot.viewportHeight);
+        componentRect.height = Math.min(componentRect.height, options.screenshot.viewport.height);
         yield nightmare
           // we can not use .screenshot() with componentRect, so constrain the viewport instead
           .viewport(
-            componentRect.width || options.screenshot.viewportWidth,
-            componentRect.height || options.screenshot.viewportHeight
+            componentRect.width || options.screenshot.viewport.width,
+            componentRect.height || options.screenshot.viewport.height
           ).scrollTo(componentRect.y, componentRect.x)
           // .wait(1000)
           .screenshot(tmpPngObj.name); // do *not* use componentRect here or risk distortions
@@ -123,10 +125,10 @@ module.exports = _options => new Promise((resolve, reject) => {
             screenshot.autocrop(false);
           }
           // Allow shrinking, up to a point
-          const scaleHeight = screenshot.bitmap.height <= options.screenshot.targetMinHeight
-            ? 0.0 : options.screenshot.targetMinHeight / screenshot.bitmap.height;
-          const scaleWidth = screenshot.bitmap.width <= options.screenshot.targetMinWidth
-            ? 0.0 : options.screenshot.targetMinWidth / screenshot.bitmap.width;
+          const scaleHeight = screenshot.bitmap.height <= options.screenshot.target.minHeight
+            ? 0.0 : options.screenshot.target.minHeight / screenshot.bitmap.height;
+          const scaleWidth = screenshot.bitmap.width <= options.screenshot.target.minWidth
+            ? 0.0 : options.screenshot.target.minWidth / screenshot.bitmap.width;
           const scale = Math.max(scaleHeight, scaleWidth);
           screenshot
             .scale(scale > 0 ? scale : 1.0)

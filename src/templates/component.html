@@ -3,7 +3,7 @@
 <head>
 <title>TACHYONS - <%= title %></title>
 <meta name="description" content="Tachyons Component">
-  <%= head %>
+  <%= templates.head %>
 </head>
 <body class="w-100 sans-serif <%= bodyClass %>">
 <main>
@@ -61,11 +61,11 @@
   <section class="bt b--black-10 mt5 pv4">
     <h1 class="f6 b ttu">Other Components</h1>
 
-  <% Object.keys(componentsForNav).map(function(category) { %>
+  <% Object.keys(componentsByCategory).map(function(category) { %>
     <div>
       <h2 class="f6 fw6 mb2 ttc black-70"><%= category %></h2>
-      <% componentsForNav[category].map(function(component) { %>
-        <a class="f6 f5-ns fw4 dib mr3 mb2 black-70 link hover-blue" href="<%= component.href %>"><%= component.name %></a>
+      <% componentsByCategory[category].map(function(component) { %>
+        <a class="f6 f5-ns fw4 dib mr3 mb2 black-70 link hover-blue" href="<%= component.page.href %>"><%= component.page.name %></a>
       <% }) %>
     </div>
   <% }) %>
@@ -77,9 +77,9 @@
     <li><%= klass %></li>
   <% } %>
 
-	<%= highlight %>
-  <%= footer %>
-  <%= analytics %>
+	<%= templates.highlight %>
+  <%= templates.footer %>
+  <%= templates.analytics %>
 </body>
 </html>
 

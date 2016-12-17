@@ -22,7 +22,7 @@ const componentsBuildScreenshots = require('./src/components-build-screenshots')
 // See src/components-build-defaults for list of options that can be overriden
 const options = {
   components: {
-    globPattern: 'src/components/banners/*.html',
+    globPattern: 'src/components/article-lists/*.html',
     // frontMatter: {
     //   bodyClass: 'bg-red',
     //   screenshot: {
@@ -48,7 +48,7 @@ const options = {
 co(function* generator() {
   yield componentsBuildIndex(options);        // <- builds component index page and JSON index
   yield componentsBuildPages(options);        // <- comment to skip building pages
-  yield componentsBuildScreenshots(options);  // <- comment to skip building screenshots
+  // yield componentsBuildScreenshots(options);  // <- comment to skip building screenshots
 }).then(() => {
   const elapsed = process.hrtime(startTime);
   console.log(chalk.green('All done'), chalk.dim(prettyHrtime(elapsed)));
