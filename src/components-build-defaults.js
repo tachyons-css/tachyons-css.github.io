@@ -37,7 +37,7 @@ module.exports = {
     rss: {                                         // RSS feed
       title: 'Tachyons Recent Components',
       categories: ['CSS', 'Functional CSS'],       // Categories this feed belongs to
-      ttl: 0,                                      // Number of mins feed can be cached
+      ttl: 60,                                     // Number of mins feed can be cached
       path: 'components/rss.xml',                  // target location of feed (sync head.html)
       count: 20,                                   // how many in feed
     },
