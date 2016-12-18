@@ -137,6 +137,7 @@
     "postcss-select": "^2.1.0",
     "pretty-hrtime": "^1.0.3",
     "remove-html-extension": "0.0.1",
+    "rss": "^1.2.1",
     "s3": "^4.4.0",
     "titleize": "^1.0.0",
     "tmp": "0.0.31",

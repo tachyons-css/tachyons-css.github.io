@@ -3468,7 +3468,7 @@ mime-db@~1.25.0:
   version "1.25.0"
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.25.0.tgz#c18dbd7c73a5dbf6f44a024dc0d165a1e7b1c392"
 
-mime-types@^2.1.12, mime-types@~2.1.11, mime-types@~2.1.13, mime-types@~2.1.7:
+mime-types@^2.1.12, mime-types@^2.1.7, mime-types@~2.1.11, mime-types@~2.1.13, mime-types@~2.1.7:
   version "2.1.13"
   resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.13.tgz#e07aaa9c6c6b9a7ca3012c69003ad25a39e92a88"
   dependencies:
@@ -4807,6 +4807,13 @@ rollup@^0.36.3:
   dependencies:
     source-map-support "^0.4.0"
 
+rss@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/rss/-/rss-1.2.1.tgz#a52671ea35a73ef969b66026b8a2f0653261bc46"
+  dependencies:
+    mime-types "^2.1.7"
+    xml "^1.0.0"
+
 rsvp@^3.0.13, rsvp@^3.0.18:
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/rsvp/-/rsvp-3.3.3.tgz#34633caaf8bc66ceff4be3c2e1dffd032538a813"
@@ -6060,6 +6067,10 @@ xml2js@^0.4.5:
   dependencies:
     sax ">=0.6.0"
     xmlbuilder "^4.1.0"
+
+xml@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/xml/-/xml-1.0.1.tgz#78ba72020029c5bc87b8a81a3cfcd74b4a2fc1e5"
 
 xmlbuilder@0.4.2:
   version "0.4.2"

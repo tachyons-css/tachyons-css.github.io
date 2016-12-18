@@ -47,7 +47,6 @@ const getComponents = options => new Promise((resolve, reject) => {
         const componentPath = componentPaths[comp_idx];
 
         const firstCommit = yield getComponentFirstCommit(repo, componentPath);
-        const creationTime = firstCommit.date().getTime();
 
         const componentHtml = fs.readFileSync(componentPath, 'utf8');
         const fmParsed = fm.parse(componentHtml);
@@ -87,7 +86,8 @@ const getComponents = options => new Promise((resolve, reject) => {
           id,
           category,
           src: componentPath,
-          creationTime,
+          creationTime: firstCommit.date().getTime(),
+          author: firstCommit.author().toString(),
           signature,
           page,
           screenshot,

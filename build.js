@@ -17,13 +17,14 @@ const startTime = process.hrtime();
 
 const componentsBuildList = require('./src/components-build-list');
 const componentsBuildIndex = require('./src/components-build-index');
+const componentsBuildRSS = require('./src/components-build-rss');
 const componentsBuildPages = require('./src/components-build-pages');
 const componentsBuildScreenshots = require('./src/components-build-screenshots');
 
 // See src/components-build-defaults for list of options that can be overriden
 const options = {
   components: {
-    globPattern: 'src/components/b**/*.html',
+    // globPattern: 'src/components/article**/*.html',
     // frontMatter: {
     //   bodyClass: 'bg-red',
     //   screenshot: {
@@ -49,6 +50,7 @@ const options = {
 co(function* generator() {
   yield componentsBuildList(options);        // <- builds temporary components list (JSON)
   yield componentsBuildIndex(options);       // <- builds index pages (by category & most recent)
+  yield componentsBuildRSS(options);         // <- builds RSS feed
   yield componentsBuildPages(options);       // <- comment to skip building pages
   yield componentsBuildScreenshots(options); // <- comment to skip building screenshots
 }).then(() => {

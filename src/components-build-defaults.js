@@ -2,8 +2,11 @@ const moment = require('moment');
 const titleize = require('titleize');
 
 const cleanTitleize = str => titleize(str.replace(/(_|-)/g, ' '));
+const creationTimeToYMD = c => moment(c.creationTime).format('YYYY-MM-DD');
 
 module.exports = {
+  siteUrl: 'http://tachyons.io',                   // needed for RSS feed
+  siteDescription: 'Tachyons. Functional CSS for humans.',
   // Components
   components: {
     globPattern: 'src/components/**/*.html',       // source components to process
@@ -21,15 +24,22 @@ module.exports = {
         createSectionsBy: 'category',              // create a section for each category
         showSectionsTOC: true,                     // show Table of Contents (e.g. categories)
       },
-      recent: {                                    // recent components
+      mostRecent: {                                // most recent components
         title: 'Recent Components',
         path: 'components/recent.html',            // target location of recent index
         sortAllBy: [['creationTime'], ['desc']],   // sort by most recent component first
         limitAll: 50,                              // use the 50 most recent ones
-        createSectionsBy: c => moment(c.creationTime).format('YYYY-MM-DD'), // group by day
+        createSectionsBy: creationTimeToYMD,       // group by day
         prettifySection: v => moment(v).format('LL'), // display as day
         showSectionsTOC: false,                    // no need for Table of Contents
       },
+    },
+    rss: {                                         // RSS feed
+      title: 'Tachyons Recent Components',
+      categories: ['CSS', 'Functional CSS'],       // Categories this feed belongs to
+      ttl: 0,                                      // Number of mins feed can be cached
+      path: 'components/rss.xml',                  // target location of feed (sync head.html)
+      count: 20,                                   // how many in feed
     },
     page: {                                        // options related to each component page
       composeTitle: (category, name) => `${category} | ${name}`, // compose title from cat, name
