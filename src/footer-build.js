@@ -31,20 +31,20 @@ module.exports = function () {
 
     var indexTemplate = fs.readFileSync('src/templates/footer-template.html', 'utf8')
 
-    var componentsForNav = {}
+    var componentsByCategory = {}
     components.map(function (component) {
       var componentTokens = component.replace('src/components/', '').split('/')
       var category = componentTokens[0]
 
-      componentsForNav[category] = componentsForNav[category] || []
-      componentsForNav[category].push({
+      componentsByCategory[category] = componentsByCategory[category] || []
+      componentsByCategory[category].push({
         href: component.replace('src', '').replace('.html', '') + '/index.html',
         name: getName(component)
       })
     })
 
     var compiledPage = _.template(indexTemplate)({
-      componentsForNav: componentsForNav,
+      componentsByCategory: componentsByCategory,
       title: 'Components',
     })
 
