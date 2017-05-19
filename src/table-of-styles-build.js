@@ -33,7 +33,8 @@ module.exports = function () {
 
         var newRow = '<tr>' +
           '<td class="bb b--black-05 pv3">' +'<pre class="f6 f5-l">' + rule.selector + '</pre>'+'</td>' +
-          '<td class="bb b--black-05 pv3">' + '<pre class="f6 f5-l">' +
+          '<td class="bb b--black-05 pv3 mw6">' +
+          '<pre class="f6 f5-l" style="white-space:pre-wrap; word-wrap:break-word;">' +
             rule.nodes.map(function (decl) {
               return  decl.prop + ':' + decl.value
             }).join('<br>') +
