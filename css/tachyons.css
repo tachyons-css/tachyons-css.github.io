@@ -1,3 +1,4 @@
+@import './_text-align';
 /*! TACHYONS v4.6.0 | http://tachyons.io */
 /*
  *
@@ -22,7 +23,7 @@
  *
  */
 /* External Library Includes */
-/*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -33,6 +34,10 @@
 html { line-height: 1.15; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */ }
 /* Sections
    ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body { margin: 0; }
 /**
  * Add the correct display in IE 9-.
  */
@@ -128,9 +133,10 @@ svg:not(:root) { overflow: hidden; }
 /* Forms
    ========================================================================== */
 /**
- * Remove the margin in Firefox and Safari.
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
  */
-button, input, optgroup, select, textarea { margin: 0; }
+button, input, optgroup, select, textarea { font-family: sans-serif; /* 1 */ font-size: 100%; /* 1 */ line-height: 1.15; /* 1 */ margin: 0; /* 2 */ }
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
@@ -158,6 +164,10 @@ button::-moz-focus-inner, [type="button"]::-moz-focus-inner,
  */
 button:-moz-focusring, [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring { outline: 1px dotted ButtonText; }
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset { padding: .35em .75em .625em; }
 /**
  * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
@@ -1688,28 +1698,6 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .no-underline { text-decoration: none; }
 /*
 
-  TEXT ALIGN
-  Docs: http://tachyons.io/docs/typography/text-align/
-
-  Base
-    t = text-align
-
-  Modifiers
-    l = left
-    r = right
-    c = center
-
-  Media Query Extensions:
-    -ns = not-small
-    -m  = medium
-    -l  = large
-
-*/
-.tl { text-align: left; }
-.tr { text-align: right; }
-.tc { text-align: center; }
-/*
-
    TEXT TRANSFORM
    Docs: http://tachyons.io/docs/typography/text-transform/
 
@@ -2445,9 +2433,6 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .strike-ns { text-decoration: line-through; }
  .underline-ns { text-decoration: underline; }
  .no-underline-ns { text-decoration: none; }
- .tl-ns { text-align: left; }
- .tr-ns { text-align: right; }
- .tc-ns { text-align: center; }
  .ttc-ns { text-transform: capitalize; }
  .ttl-ns { text-transform: lowercase; }
  .ttu-ns { text-transform: uppercase; }
@@ -2860,9 +2845,6 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .strike-m { text-decoration: line-through; }
  .underline-m { text-decoration: underline; }
  .no-underline-m { text-decoration: none; }
- .tl-m { text-align: left; }
- .tr-m { text-align: right; }
- .tc-m { text-align: center; }
  .ttc-m { text-transform: capitalize; }
  .ttl-m { text-transform: lowercase; }
  .ttu-m { text-transform: uppercase; }
@@ -3275,9 +3257,6 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .strike-l { text-decoration: line-through; }
  .underline-l { text-decoration: underline; }
  .no-underline-l { text-decoration: none; }
- .tl-l { text-align: left; }
- .tr-l { text-align: right; }
- .tc-l { text-align: center; }
  .ttc-l { text-transform: capitalize; }
  .ttl-l { text-transform: lowercase; }
  .ttu-l { text-transform: uppercase; }
