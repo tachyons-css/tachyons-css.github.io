@@ -1,6 +1,6 @@
 {
   "name": "tachyons-css.github.io",
-  "version": "4.7.0",
+  "version": "4.8.0",
   "description": "Documentation for Tachyons -- a performant, mobile-first, and 100% responsive modular css framework.",
   "main": "index.html",
   "scripts": {
@@ -36,7 +36,7 @@
     "url": "https://github.com/tachyons-css/tachyons-css.github.io/issues"
   },
   "dependencies": {
-    "tachyons": "^4.7.0",
+    "tachyons": "^4.8.0",
     "tachyons-background-size": "^5.0.5",
     "tachyons-base": "^1.2.6",
     "tachyons-border-colors": "^4.2.3",
