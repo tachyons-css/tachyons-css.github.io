@@ -32,7 +32,7 @@
       <a href="/" class="dib f5 f4-ns fw6 mt0 mb1 link black-70" title="Home">
         Tachyons
         <div class="dib">
-          <small class="nowrap f6 mt2 mt3-ns pr2 black-70 fw2">v4.7.0</small>
+          <small class="nowrap f6 mt2 mt3-ns pr2 black-70 fw2">v4.8.0</small>
         </div>
       </a>
     </div>
@@ -95,24 +95,24 @@
         <p class="lh-copy measure">You can dim any element on hover and focus with the dim element. Not just text. Here is a card component that will dim on hover.</p>
 <div class="bl-ns bw2-ns b--black-05 pl3-ns">
         <a href="#" class="link black mw5 db dim pa2 ba b--black-10 br2 shadow-1">
-          <img src="http://mrmrs.io/photos/037.jpg" alt="SF at night" class="db mb2 mw-100" />
+          <img src="http://mrmrs.github.io/photos/037.jpg" alt="SF at night" class="db mb2 mw-100" />
           <span class="db f6 pv2">Card title</span>
         </a>
 <code class="f6 db mt3 pre">
 &lt;a href="#" class="link black dim db mw5 pa2 br2 ba b--black-10 shadow-1"&gt;
-  &lt;img src="http://mrmrs.io/photos/037.jpg" alt="SF at night" class="db mb2 mw-100" /&gt;
+  &lt;img src="http://mrmrs.github.io/photos/037.jpg" alt="SF at night" class="db mb2 mw-100" /&gt;
   &lt;span class="db f6 pv2"&gt;Card title&lt;/span&gt;
 &lt;/a&gt;
 </code>
 </div>
         <h4 class="f5 mt4 mt5-ns">Reveal Children on Hover</h4>
         <div class="bl-ns bw2-ns b--black-05 pl3-ns">
-          <a href="#" class="link mw5 dt hide-child br2 cover bg-center" style="background-image: url(http://mrmrs.io/photos/012.jpg); ">
+          <a href="#" class="link mw5 dt hide-child br2 cover bg-center" style="background-image: url(http://mrmrs.github.io/photos/012.jpg); ">
             <span class="white b dtc v-mid w-100 h-100 child bg-black-40 pa5 br2">This is some card content</span>
           </a>
 
 <code class="f6 db pre">
-&lt;a href="#" style="background-image: url(http://mrmrs.io/images/0010.jpg); 
+&lt;a href="#" style="background-image: url(http://mrmrs.github.io/images/0010.jpg); 
       class="link mw5 dt hide-child br2 cover bg-center" "&gt;
   &lt;span class="white dtc v-mid w-100 h-100 child bg-black-40 pa5"&gt;
     Card title 
@@ -322,6 +322,7 @@
 .shadow-hover::after {
   content: '';
   box-shadow: 0px 0px 16px 2px rgba( 0, 0, 0, .2 );
+  border-radius: inherit;
   opacity: 0;
   position: absolute;
   top: 0;
