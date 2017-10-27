@@ -19,7 +19,7 @@ var siteHeader = fs.readFileSync('./src/templates/header.html', 'utf8')
 var head = fs.readFileSync('./src/templates/head.html', 'utf8')
 var googleAnalytics = fs.readFileSync('./src/templates/ga.html', 'utf8')
 var googleAnalytics = fs.readFileSync('./src/templates/ga.html', 'utf8')
-
+var layoutNav = fs.readFileSync('./src/templates/layout-nav.html', 'utf8')
 
 var template = fs.readFileSync('./src/templates/docs/flexbox/index.html', 'utf8')
 var tpl = _.template(template)
@@ -33,8 +33,8 @@ var html = tpl({
   siteFooter: siteFooter,
   googleAnalytics: googleAnalytics,
   head: head,
-  siteHeader: siteHeader
-
+  siteHeader: siteHeader,
+  layoutNav: layoutNav
 })
 
 fs.writeFileSync('./docs/layout/flexbox/index.html', html)
