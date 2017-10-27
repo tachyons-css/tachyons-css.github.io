@@ -67,148 +67,218 @@
         </div>
       </header>
       <article class="pa3 ph5-ns">
-        <h3 class="f6 ttu tracked mt0">Widths</h3>
+        <h3 class="f6 ttu tracked mt0">Flex</h3>
         <p class="measure f5 f4-ns  lh-copy">
-          The widths module contains both a five-step width scale based on powers of two
-          as well as a series of percentage values that can be combined with floats for
-          an infinitely nestable and fully responsive grid system.
+          Flex can be used to achieve powerful horizontal or vertical layouts without JavaScript.
         </p>
-        <p class="measure f6 lh-copy">
-          Class name structure is as follows:
-        </p>
-<pre>
-Base:
-  w = width
 
-Modifiers
-  1 = 1st step in width scale
-  2 = 2nd step in width scale
-  3 = 3rd step in width scale
-  4 = 4th step in width scale
-  5 = 5th step in width scale
+        <div class="ph3 ph5-ns">
+          <h3 class="f5 mb4 pb2 bb">Examples</h3>
+          <h4 class="f6 mb2 mt4">Flex</h4>
 
-  -10  = literal value 10%
-  -20  = literal value 20%
-  -25  = literal value 25%
-  -30  = literal value 30%
-  -33  = literal value 33%
-  -34  = literal value 34%
-  -40  = literal value 40%
-  -50  = literal value 50%
-  -60  = literal value 60%
-  -70  = literal value 70%
-  -75  = literal value 75%
-  -80  = literal value 80%
-  -90  = literal value 90%
-  -100 = literal value 100%
+          <p class="measure f5 lh-copy">
+            Declaring the class <code>flex</code> on an element will squeeze all its children
+            into a single row.
+          </p>
 
-  -third  = calc(100% / 3)
-  -two-thirds  = calc(100% / 3)
-  -auto  = string value auto
+          <div class="flex flex-wrap">
+            <div class="w-100 w-50-l">
+              <code class="f6 pre mb3">
+&lt;div class="flex"&gt;
+  &lt;div class="outline w-25 pa3 mr2"&gt;
+    &lt;code&gt;1&lt;/code&gt;
+  &lt;/div&gt;
+  &lt;div class="outline w-25 pa3 mr2"&gt;
+    &lt;code&gt;2&lt;/code&gt;
+  &lt;/div&gt;
+  &lt;div class="outline w-25 pa3 mr2"&gt;
+    &lt;code&gt;3&lt;/code&gt;
+  &lt;/div&gt;
+  &lt;div class="outline w-25 pa3 mr2"&gt;
+    &lt;code&gt;4&lt;/code&gt;
+  &lt;/div&gt;
+  &lt;div class="outline w-25 pa3"&gt;
+    &lt;code&gt;5&lt;/code&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+              </code>
+            </div>
 
+            <div class="w-100 w-50-ns pl3-l">
+              <div class="flex mt3">
+                <div class="outline w-25 pa3 mr2">
+                  <code>1</code>
+                </div>
+                <div class="outline w-25 pa3 mr2">
+                  <code>2</code>
+                </div>
+                <div class="outline w-25 pa3 mr2">
+                  <code>3</code>
+                </div>
+                <div class="outline w-25 pa3 mr2">
+                  <code>4</code>
+                </div>
+                <div class="outline w-25 pa3">
+                  <code>5</code>
+                </div>
+              </div>
+            </div>
+          </div>
 
-Media Query Extensions:
-  -ns = not-small
-  -m  = medium
-  -l  = large
-</pre>
-      </article>
-      <div class="ph3 ph5-ns pt4 pb5">
-        <h3 class="f5 mb4 pb2 bb">Examples</h3>
-        <h3 class="f5 book pt4 caps">Width Scale</h3>
-        <table border="0" cellspacing="5" cellpadding="5">
-          <tr>
-            <td>
-              <code class="code">.w1</code>
-            </td>
-            <td><div class="w1 bg-black-10 pv2"></div></td>
-          </tr>
-          <tr>
-            <td>
-              <code class="code">.w2</code>
-            </td>
-            <td><div class="w2 bg-black-10 pv2"></div></td>
-          </tr>
-          <tr>
-            <td>
-              <code class="code">.w3</code>
-            </td>
-            <td><div class="w3 bg-black-10 pv2"></div></td>
-          </tr>
-          <tr>
-            <td>
-              <code class="code">.w4</code>
-            </td>
-            <td><div class="w4 bg-black-10 pv2"></div></td>
-          </tr>
-          <tr>
-            <td>
-              <code class="code">.w5</code>
-            </td>
-            <td><div class="w5 bg-black-10 pv2"></div></td>
-          </tr>
-        </table>
-        <h3 class="f5 book pt4 caps">Width Percentages</h3>
-        <div class="bg-black-10 w-100">
-          <div class="w-10 bg-black-10 mb2">
-            <code class="code">w-10</code>
+          <h4 class="f6 mb2 mt4">Flex wrap</h4>
+
+          <p class="mt3 measure f5 lh-copy">
+            Specifying <code>flex-wrap</code> will cause child elements to wrap to multiple rows once
+            they take more width than their parent.
+          </p>
+
+          <div class="flex flex-wrap">
+            <div class="w-100 w-50-ns">
+              <code class="f6 pre mb3">
+&lt;div class="flex flex-wrap"&gt;
+  &lt;div class="outline w-25 pa3 mr2"&gt;
+    &lt;code&gt;1&lt;/code&gt;
+  &lt;/div&gt;
+  &lt;div class="outline w-25 pa3 mr2"&gt;
+    &lt;code&gt;2&lt;/code&gt;
+  &lt;/div&gt;
+  &lt;div class="outline w-25 pa3 mr2"&gt;
+    &lt;code&gt;3&lt;/code&gt;
+  &lt;/div&gt;
+  &lt;div class="outline w-25 pa3 mr2"&gt;
+    &lt;code&gt;4&lt;/code&gt;
+  &lt;/div&gt;
+  &lt;div class="outline w-25 pa3"&gt;
+    &lt;code&gt;5&lt;/code&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+              </code>
+            </div>
+
+            <div class="w-100 w-50-l pl3-l">
+              <div class="flex flex-wrap mt3">
+                <div class="outline w-25 pa3 mr2">
+                  <code>1</code>
+                </div>
+                <div class="outline w-25 pa3 mr2">
+                  <code>2</code>
+                </div>
+                <div class="outline w-25 pa3 mr2">
+                  <code>3</code>
+                </div>
+                <div class="outline w-25 pa3 mr2 mt2">
+                  <code>4</code>
+                </div>
+                <div class="outline w-25 pa3 mt2">
+                  <code>5</code>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="w-20 bg-black-10 mb2">
-            <code class="code">w-20</code>
+
+          <h4 class="f6 mb2 mt4">Flex wrap reverse</h4>
+
+          <p class="measure f5 lh-copy">
+            Specifying <code>flex-wrap-reverse</code> reverses the ordering of rows.
+          </p>
+
+          <div class="flex flex-wrap">
+            <div class="w-100 w-50-ns">
+              <code class="f6 pre">
+&lt;div class="flex flex-wrap-reverse"&gt;
+  &lt;div class="outline w-25 pa3 mr2"&gt;
+    &lt;code&gt;1&lt;/code&gt;
+  &lt;/div&gt;
+  &lt;div class="outline w-25 pa3 mr2"&gt;
+    &lt;code&gt;2&lt;/code&gt;
+  &lt;/div&gt;
+  &lt;div class="outline w-25 pa3 mr2"&gt;
+    &lt;code&gt;3&lt;/code&gt;
+  &lt;/div&gt;
+  &lt;div class="outline w-25 pa3 mr2"&gt;
+    &lt;code&gt;4&lt;/code&gt;
+  &lt;/div&gt;
+  &lt;div class="outline w-25 pa3"&gt;
+    &lt;code&gt;5&lt;/code&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+              </code>
+            </div>
+
+            <div class="w-100 w-50-l pl3-l">
+              <div class="flex flex-wrap-reverse mt3">
+                <div class="outline w-25 pa3 mr2">
+                  <code>1</code>
+                </div>
+                <div class="outline w-25 pa3 mr2">
+                  <code>2</code>
+                </div>
+                <div class="outline w-25 pa3 mr2">
+                  <code>3</code>
+                </div>
+                <div class="outline w-25 pa3 mr2 mb2">
+                  <code>4</code>
+                </div>
+                <div class="outline w-25 pa3 mb2">
+                  <code>5</code>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="w-25 bg-black-10 mb2">
-            <code class="code">w-25</code>
+
+          <h4 class="f6 mb2 mt4">Flex column</h4>
+
+          <p class="measure f5 lh-copy">
+            Column layouts are achievable with <code>flex-column</code>.
+          </p>
+
+          <div class="flex flex-wrap">
+            <div class="w-100 w-50-ns">
+              <code class="f6 pre">
+&lt;div class="flex flex-column"&gt;
+  &lt;div class="outline w-25 pa3 mr2"&gt;
+    &lt;code&gt;1&lt;/code&gt;
+  &lt;/div&gt;
+  &lt;div class="outline w-25 pa3 mr2"&gt;
+    &lt;code&gt;2&lt;/code&gt;
+  &lt;/div&gt;
+  &lt;div class="outline w-25 pa3 mr2"&gt;
+    &lt;code&gt;3&lt;/code&gt;
+  &lt;/div&gt;
+  &lt;div class="outline w-25 pa3 mr2"&gt;
+    &lt;code&gt;4&lt;/code&gt;
+  &lt;/div&gt;
+  &lt;div class="outline w-25 pa3"&gt;
+    &lt;code&gt;5&lt;/code&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+              </code>
+            </div>
+
+            <div class="w-100 w-50-l pl3-l">
+              <div class="flex flex-column mt3">
+                <div class="outline w-25 pa3 mt2">
+                  <code>1</code>
+                </div>
+                <div class="outline w-25 pa3 mt2">
+                  <code>2</code>
+                </div>
+                <div class="outline w-25 pa3 mt2">
+                  <code>3</code>
+                </div>
+                <div class="outline w-25 pa3 mt2">
+                  <code>4</code>
+                </div>
+                <div class="outline w-25 pa3 mt2">
+                  <code>5</code>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="w-30 bg-black-10 mb2">
-            <code class="code">w-30</code>
-          </div>
-          <div class="w-33 bg-black-10 mb2">
-            <code class="code">w-33</code>
-          </div>
-          <div class="w-third bg-black-10 mb2">
-            <code class="code">w-third</code>
-          </div>
-          <div class="w-34 bg-black-10 mb2">
-            <code class="code">w-34</code>
-          </div>
-          <div class="w-40 bg-black-10 mb2">
-            <code class="code">w-40</code>
-          </div>
-          <div class="w-50 bg-black-10 mb2">
-            <code class="code">w-50</code>
-          </div>
-          <div class="w-60 bg-black-10 mb2">
-            <code class="code">w-60</code>
-          </div>
-          <div class="w-two-thirds bg-black-10 mb2">
-            <code class="code">w-two-thirds</code>
-          </div>
-          <div class="w-75 bg-black-10 mb2">
-            <code class="code">w-75</code>
-          </div>
-          <div class="w-80 bg-black-10 mb2">
-            <code class="code">w-80</code>
-          </div>
-          <div class="w-90 bg-black-10 mb2">
-            <code class="code">w-90</code>
-          </div>
-          <div class="w-100 bg-black-10 mb2">
-            <code class="code">w-100</code>
-          </div>
-        </div>
-        <div class="mt5 cf">
-          <div class="dib mr4">
-            <h1 class="f6 fw6">Previous</h1>
-            <a href="/docs/layout/display/" class="link fw6 blue dim">Display</a>
-          </div>
-          <div class="dib">
-            <h4 class="f6 fw6">Next</h4>
-            <a href="/docs/layout/max-widths/" class="link fw6 blue dim">Max Widths</a>
-          </div>
-        </div>
+
         <div class="mt5">
           <h4 class="f6 fw6">Reference</h4>
-          <a href="https://developer.mozilla.org/en/docs/Web/css/width" class="link fw6 blue dim">MDN - Width property</a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex" class="link fw6 blue dim">MDN - Flex property</a>
         </div>
       </div>
       <section class="bg-white black-70 pt4 pb5 overflow-container">
