@@ -14,6 +14,7 @@ repos=(
 "src/modules/debug.js"
 "src/modules/display.js"
 "src/modules/docs.js"
+"src/modules/flexbox.js"
 "src/modules/floats.js"
 "src/modules/font-family.js"
 "src/modules/font-style.js"
