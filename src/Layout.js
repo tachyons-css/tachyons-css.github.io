@@ -4,7 +4,7 @@ import Header from './Header'
 import Footer from './Footer'
 
 export default ({
-  title = 'Tachyons - Css Toolkit',
+  title = 'TACHYONS - Css Toolkit',
   version,
   children
 }) =>
@@ -12,7 +12,7 @@ export default ({
     <title>{title}</title>
     <link
       rel='stylesheet'
-      href={`https://unpkg.com/tachyons/css/tachyons.min.css`}
+      href='https://unpkg.com/tachyons/css/tachyons.min.css'
     />
 
     <Header version={version} />

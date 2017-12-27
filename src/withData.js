@@ -5,7 +5,7 @@ import data from '../data.json'
 
 export default Component => props =>
   <Component
-    version={version}
     {...props}
     {...data}
+    version={version}
   />
