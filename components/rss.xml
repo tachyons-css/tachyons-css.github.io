@@ -1,81 +1,81 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Tachyons Recent Components]]></title><description><![CDATA[Tachyons. Functional CSS for humans.]]></description><link>http://tachyons.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 15 Aug 2017 12:36:29 GMT</lastBuildDate><atom:link href="http://tachyons.io/components/rss.xml" rel="self" type="application/rss+xml"/><ttl>60</ttl><category><![CDATA[CSS]]></category><category><![CDATA[Functional CSS]]></category><item><title><![CDATA[Tables | Basic]]></title><description><![CDATA[
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Tachyons Recent Components]]></title><description><![CDATA[Tachyons. Functional CSS for humans.]]></description><link>http://tachyons.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 26 Dec 2017 23:54:18 GMT</lastBuildDate><atom:link href="http://tachyons.io/components/rss.xml" rel="self" type="application/rss+xml"/><ttl>60</ttl><category><![CDATA[CSS]]></category><category><![CDATA[Functional CSS]]></category><item><title><![CDATA[Tables | Basic]]></title><description><![CDATA[
     <p>Tachyons. Functional CSS for humans.</p>
-    <a href="http://tachyons.io/components/tables/basic/index.html"><img src="http://tachyons.io/components/tables/basic/screenshot.jpg?version=de523cd8357311bede7a9820d2b4d72a"></a>
+    <a href="http://tachyons.io/components/tables/basic/index.html"><img src="http://tachyons.io/components/tables/basic/screenshot.jpg?version=d963dfa4cefd78b2fee53838b0ff7ae1"></a>
     <p><small>Component by mrmrs &lt;hi@mrmrs.cc&gt;</small></p>
     ]]></description><link>http://tachyons.io/components/tables/basic/index.html</link><guid isPermaLink="false">tables:basic</guid><category><![CDATA[CSS]]></category><category><![CDATA[Functional CSS]]></category><dc:creator><![CDATA[mrmrs <hi@mrmrs.cc>]]></dc:creator><pubDate>Mon, 12 Dec 2016 19:57:38 GMT</pubDate></item><item><title><![CDATA[Tables | Striped Dark]]></title><description><![CDATA[
     <p>Tachyons. Functional CSS for humans.</p>
-    <a href="http://tachyons.io/components/tables/striped-dark/index.html"><img src="http://tachyons.io/components/tables/striped-dark/screenshot.jpg?version=2455cdbeced87bb7eb107bd5e0d9abc7"></a>
+    <a href="http://tachyons.io/components/tables/striped-dark/index.html"><img src="http://tachyons.io/components/tables/striped-dark/screenshot.jpg?version=6bb33bb0ab31154e5329ae7989f3a575"></a>
     <p><small>Component by mrmrs &lt;hi@mrmrs.cc&gt;</small></p>
     ]]></description><link>http://tachyons.io/components/tables/striped-dark/index.html</link><guid isPermaLink="false">tables:striped-dark</guid><category><![CDATA[CSS]]></category><category><![CDATA[Functional CSS]]></category><dc:creator><![CDATA[mrmrs <hi@mrmrs.cc>]]></dc:creator><pubDate>Mon, 12 Dec 2016 19:57:38 GMT</pubDate></item><item><title><![CDATA[Footers | Studios]]></title><description><![CDATA[
     <p>Tachyons. Functional CSS for humans.</p>
-    <a href="http://tachyons.io/components/footers/studios/index.html"><img src="http://tachyons.io/components/footers/studios/screenshot.jpg?version=22e2599f0ce70b178b2360af6b05b804"></a>
+    <a href="http://tachyons.io/components/footers/studios/index.html"><img src="http://tachyons.io/components/footers/studios/screenshot.jpg?version=0ef7f09b1e1466146d972c19665c4b12"></a>
     <p><small>Component by mrmrs &lt;hi@mrmrs.cc&gt;</small></p>
     ]]></description><link>http://tachyons.io/components/footers/studios/index.html</link><guid isPermaLink="false">footers:studios</guid><category><![CDATA[CSS]]></category><category><![CDATA[Functional CSS]]></category><dc:creator><![CDATA[mrmrs <hi@mrmrs.cc>]]></dc:creator><pubDate>Mon, 12 Dec 2016 11:46:58 GMT</pubDate></item><item><title><![CDATA[Marketing | Iphone App]]></title><description><![CDATA[
     <p>Tachyons. Functional CSS for humans.</p>
-    <a href="http://tachyons.io/components/marketing/iphone-app/index.html"><img src="http://tachyons.io/components/marketing/iphone-app/screenshot.jpg?version=d6588778d5125d97e96419a3da92f7e4"></a>
+    <a href="http://tachyons.io/components/marketing/iphone-app/index.html"><img src="http://tachyons.io/components/marketing/iphone-app/screenshot.jpg?version=396a4b126281503a8ea7ec76cfc14557"></a>
     <p><small>Component by mrmrs &lt;hi@mrmrs.cc&gt;</small></p>
     ]]></description><link>http://tachyons.io/components/marketing/iphone-app/index.html</link><guid isPermaLink="false">marketing:iphone-app</guid><category><![CDATA[CSS]]></category><category><![CDATA[Functional CSS]]></category><dc:creator><![CDATA[mrmrs <hi@mrmrs.cc>]]></dc:creator><pubDate>Mon, 12 Dec 2016 11:46:58 GMT</pubDate></item><item><title><![CDATA[Pages | Portfolio Project]]></title><description><![CDATA[
     <p>Tachyons. Functional CSS for humans.</p>
-    <a href="http://tachyons.io/components/pages/portfolio-project/index.html"><img src="http://tachyons.io/components/pages/portfolio-project/screenshot.jpg?version=4acf058c611eb9f5a2756cc1a3c65346"></a>
+    <a href="http://tachyons.io/components/pages/portfolio-project/index.html"><img src="http://tachyons.io/components/pages/portfolio-project/screenshot.jpg?version=d4b42d99823866b1eba3be030d53db12"></a>
     <p><small>Component by mrmrs &lt;hi@mrmrs.cc&gt;</small></p>
     ]]></description><link>http://tachyons.io/components/pages/portfolio-project/index.html</link><guid isPermaLink="false">pages:portfolio-project</guid><category><![CDATA[CSS]]></category><category><![CDATA[Functional CSS]]></category><dc:creator><![CDATA[mrmrs <hi@mrmrs.cc>]]></dc:creator><pubDate>Mon, 12 Dec 2016 11:46:58 GMT</pubDate></item><item><title><![CDATA[Cards | Basic Text Card]]></title><description><![CDATA[
     <p>Tachyons. Functional CSS for humans.</p>
-    <a href="http://tachyons.io/components/cards/basic-text-card/index.html"><img src="http://tachyons.io/components/cards/basic-text-card/screenshot.jpg?version=675d5fcaadfce3a6d86b960a93de047d"></a>
+    <a href="http://tachyons.io/components/cards/basic-text-card/index.html"><img src="http://tachyons.io/components/cards/basic-text-card/screenshot.jpg?version=c147033158a002a6cbbd159aa75b51a7"></a>
     <p><small>Component by mrmrs &lt;hi@mrmrs.cc&gt;</small></p>
     ]]></description><link>http://tachyons.io/components/cards/basic-text-card/index.html</link><guid isPermaLink="false">cards:basic-text-card</guid><category><![CDATA[CSS]]></category><category><![CDATA[Functional CSS]]></category><dc:creator><![CDATA[mrmrs <hi@mrmrs.cc>]]></dc:creator><pubDate>Fri, 09 Dec 2016 23:01:48 GMT</pubDate></item><item><title><![CDATA[Forms | Checkbox List]]></title><description><![CDATA[
     <p>Tachyons. Functional CSS for humans.</p>
-    <a href="http://tachyons.io/components/forms/checkbox-list/index.html"><img src="http://tachyons.io/components/forms/checkbox-list/screenshot.jpg?version=932f7690a7b38e677f9a23458f1677ca"></a>
+    <a href="http://tachyons.io/components/forms/checkbox-list/index.html"><img src="http://tachyons.io/components/forms/checkbox-list/screenshot.jpg?version=2f9bf1790c1c259f7e91f569b2ea58d9"></a>
     <p><small>Component by mrmrs &lt;hi@mrmrs.cc&gt;</small></p>
     ]]></description><link>http://tachyons.io/components/forms/checkbox-list/index.html</link><guid isPermaLink="false">forms:checkbox-list</guid><category><![CDATA[CSS]]></category><category><![CDATA[Functional CSS]]></category><dc:creator><![CDATA[mrmrs <hi@mrmrs.cc>]]></dc:creator><pubDate>Fri, 09 Dec 2016 23:01:48 GMT</pubDate></item><item><title><![CDATA[Text | Title Subtitle Centered]]></title><description><![CDATA[
     <p>Tachyons. Functional CSS for humans.</p>
-    <a href="http://tachyons.io/components/text/title-subtitle-centered/index.html"><img src="http://tachyons.io/components/text/title-subtitle-centered/screenshot.jpg?version=083e9503e8ccbae51e9dcfad0a895e61"></a>
+    <a href="http://tachyons.io/components/text/title-subtitle-centered/index.html"><img src="http://tachyons.io/components/text/title-subtitle-centered/screenshot.jpg?version=3556c83d8cda8aee27a69073f0a449a2"></a>
     <p><small>Component by mrmrs &lt;hi@mrmrs.cc&gt;</small></p>
     ]]></description><link>http://tachyons.io/components/text/title-subtitle-centered/index.html</link><guid isPermaLink="false">text:title-subtitle-centered</guid><category><![CDATA[CSS]]></category><category><![CDATA[Functional CSS]]></category><dc:creator><![CDATA[mrmrs <hi@mrmrs.cc>]]></dc:creator><pubDate>Fri, 09 Dec 2016 23:01:48 GMT</pubDate></item><item><title><![CDATA[Articles | Title Highlight Header Cover]]></title><description><![CDATA[
     <p>Tachyons. Functional CSS for humans.</p>
-    <a href="http://tachyons.io/components/articles/title-highlight-header-cover/index.html"><img src="http://tachyons.io/components/articles/title-highlight-header-cover/screenshot.jpg?version=48fe4bce5f56423aba22b1be10bd9f5f"></a>
+    <a href="http://tachyons.io/components/articles/title-highlight-header-cover/index.html"><img src="http://tachyons.io/components/articles/title-highlight-header-cover/screenshot.jpg?version=5181a6569493f53f48d0d43c6f52c904"></a>
     <p><small>Component by mrmrs &lt;hi@mrmrs.cc&gt;</small></p>
     ]]></description><link>http://tachyons.io/components/articles/title-highlight-header-cover/index.html</link><guid isPermaLink="false">articles:title-highlight-header-cover</guid><category><![CDATA[CSS]]></category><category><![CDATA[Functional CSS]]></category><dc:creator><![CDATA[mrmrs <hi@mrmrs.cc>]]></dc:creator><pubDate>Fri, 09 Dec 2016 15:22:14 GMT</pubDate></item><item><title><![CDATA[Banners | Info]]></title><description><![CDATA[
     <p>Tachyons. Functional CSS for humans.</p>
-    <a href="http://tachyons.io/components/banners/info/index.html"><img src="http://tachyons.io/components/banners/info/screenshot.jpg?version=2a35167e1fc1f99a597d6865df5edbaa"></a>
+    <a href="http://tachyons.io/components/banners/info/index.html"><img src="http://tachyons.io/components/banners/info/screenshot.jpg?version=dc77c54f930fde939ff09dcf79b926ce"></a>
     <p><small>Component by mrmrs &lt;hi@mrmrs.cc&gt;</small></p>
     ]]></description><link>http://tachyons.io/components/banners/info/index.html</link><guid isPermaLink="false">banners:info</guid><category><![CDATA[CSS]]></category><category><![CDATA[Functional CSS]]></category><dc:creator><![CDATA[mrmrs <hi@mrmrs.cc>]]></dc:creator><pubDate>Fri, 09 Dec 2016 15:22:14 GMT</pubDate></item><item><title><![CDATA[Buttons | Basic Previous Next]]></title><description><![CDATA[
     <p>Tachyons. Functional CSS for humans.</p>
-    <a href="http://tachyons.io/components/buttons/basic-previous-next/index.html"><img src="http://tachyons.io/components/buttons/basic-previous-next/screenshot.jpg?version=ca58124d38dabb75124ad3a61e61e6e9"></a>
+    <a href="http://tachyons.io/components/buttons/basic-previous-next/index.html"><img src="http://tachyons.io/components/buttons/basic-previous-next/screenshot.jpg?version=62a268ff1db8685b389ccbea1db66fea"></a>
     <p><small>Component by mrmrs &lt;hi@mrmrs.cc&gt;</small></p>
     ]]></description><link>http://tachyons.io/components/buttons/basic-previous-next/index.html</link><guid isPermaLink="false">buttons:basic-previous-next</guid><category><![CDATA[CSS]]></category><category><![CDATA[Functional CSS]]></category><dc:creator><![CDATA[mrmrs <hi@mrmrs.cc>]]></dc:creator><pubDate>Fri, 09 Dec 2016 15:22:14 GMT</pubDate></item><item><title><![CDATA[Error Pages | 404]]></title><description><![CDATA[
     <p>Tachyons. Functional CSS for humans.</p>
-    <a href="http://tachyons.io/components/error-pages/404/index.html"><img src="http://tachyons.io/components/error-pages/404/screenshot.jpg?version=bd60aba43a7fd246d022525ef93e75fe"></a>
+    <a href="http://tachyons.io/components/error-pages/404/index.html"><img src="http://tachyons.io/components/error-pages/404/screenshot.jpg?version=d9e81d33f649265bfb45ebdd088545e1"></a>
     <p><small>Component by mrmrs &lt;hi@mrmrs.cc&gt;</small></p>
     ]]></description><link>http://tachyons.io/components/error-pages/404/index.html</link><guid isPermaLink="false">error-pages:404</guid><category><![CDATA[CSS]]></category><category><![CDATA[Functional CSS]]></category><dc:creator><![CDATA[mrmrs <hi@mrmrs.cc>]]></dc:creator><pubDate>Fri, 09 Dec 2016 15:22:14 GMT</pubDate></item><item><title><![CDATA[Footers | Inline Text]]></title><description><![CDATA[
     <p>Tachyons. Functional CSS for humans.</p>
-    <a href="http://tachyons.io/components/footers/inline-text/index.html"><img src="http://tachyons.io/components/footers/inline-text/screenshot.jpg?version=bbe42a04352fafc41d9cb79be746490e"></a>
+    <a href="http://tachyons.io/components/footers/inline-text/index.html"><img src="http://tachyons.io/components/footers/inline-text/screenshot.jpg?version=3959d49dc56319487a801122698555c3"></a>
     <p><small>Component by mrmrs &lt;hi@mrmrs.cc&gt;</small></p>
     ]]></description><link>http://tachyons.io/components/footers/inline-text/index.html</link><guid isPermaLink="false">footers:inline-text</guid><category><![CDATA[CSS]]></category><category><![CDATA[Functional CSS]]></category><dc:creator><![CDATA[mrmrs <hi@mrmrs.cc>]]></dc:creator><pubDate>Fri, 09 Dec 2016 15:22:14 GMT</pubDate></item><item><title><![CDATA[Forms | Input Text Label]]></title><description><![CDATA[
     <p>Tachyons. Functional CSS for humans.</p>
-    <a href="http://tachyons.io/components/forms/input-text-label/index.html"><img src="http://tachyons.io/components/forms/input-text-label/screenshot.jpg?version=54043cc5eaa5e6236fa72df8928fbbb6"></a>
+    <a href="http://tachyons.io/components/forms/input-text-label/index.html"><img src="http://tachyons.io/components/forms/input-text-label/screenshot.jpg?version=e1f647259a7f0a11858623213fb19e2d"></a>
     <p><small>Component by mrmrs &lt;hi@mrmrs.cc&gt;</small></p>
     ]]></description><link>http://tachyons.io/components/forms/input-text-label/index.html</link><guid isPermaLink="false">forms:input-text-label</guid><category><![CDATA[CSS]]></category><category><![CDATA[Functional CSS]]></category><dc:creator><![CDATA[mrmrs <hi@mrmrs.cc>]]></dc:creator><pubDate>Tue, 06 Dec 2016 01:39:57 GMT</pubDate></item><item><title><![CDATA[Forms | Password]]></title><description><![CDATA[
     <p>Tachyons. Functional CSS for humans.</p>
-    <a href="http://tachyons.io/components/forms/password/index.html"><img src="http://tachyons.io/components/forms/password/screenshot.jpg?version=233dddd17fffbf9eb3862926533847d9"></a>
+    <a href="http://tachyons.io/components/forms/password/index.html"><img src="http://tachyons.io/components/forms/password/screenshot.jpg?version=7d8416aeacc9c34b7480437cfe6f9c37"></a>
     <p><small>Component by mrmrs &lt;hi@mrmrs.cc&gt;</small></p>
     ]]></description><link>http://tachyons.io/components/forms/password/index.html</link><guid isPermaLink="false">forms:password</guid><category><![CDATA[CSS]]></category><category><![CDATA[Functional CSS]]></category><dc:creator><![CDATA[mrmrs <hi@mrmrs.cc>]]></dc:creator><pubDate>Tue, 06 Dec 2016 01:39:57 GMT</pubDate></item><item><title><![CDATA[Forms | Textarea Label]]></title><description><![CDATA[
     <p>Tachyons. Functional CSS for humans.</p>
-    <a href="http://tachyons.io/components/forms/textarea-label/index.html"><img src="http://tachyons.io/components/forms/textarea-label/screenshot.jpg?version=924873df664ceb8dd30967126b0effea"></a>
+    <a href="http://tachyons.io/components/forms/textarea-label/index.html"><img src="http://tachyons.io/components/forms/textarea-label/screenshot.jpg?version=98a4f2ad75633261d3d7ec026d92931f"></a>
     <p><small>Component by mrmrs &lt;hi@mrmrs.cc&gt;</small></p>
     ]]></description><link>http://tachyons.io/components/forms/textarea-label/index.html</link><guid isPermaLink="false">forms:textarea-label</guid><category><![CDATA[CSS]]></category><category><![CDATA[Functional CSS]]></category><dc:creator><![CDATA[mrmrs <hi@mrmrs.cc>]]></dc:creator><pubDate>Tue, 06 Dec 2016 01:39:57 GMT</pubDate></item><item><title><![CDATA[Nav | Minimal Sign Up]]></title><description><![CDATA[
     <p>Tachyons. Functional CSS for humans.</p>
-    <a href="http://tachyons.io/components/nav/minimal-sign-up/index.html"><img src="http://tachyons.io/components/nav/minimal-sign-up/screenshot.jpg?version=653fe406bdd113ebfe3302958c24afd6"></a>
+    <a href="http://tachyons.io/components/nav/minimal-sign-up/index.html"><img src="http://tachyons.io/components/nav/minimal-sign-up/screenshot.jpg?version=510d56ca82124d7e149c2e0c235afd29"></a>
     <p><small>Component by mrmrs &lt;hi@mrmrs.cc&gt;</small></p>
     ]]></description><link>http://tachyons.io/components/nav/minimal-sign-up/index.html</link><guid isPermaLink="false">nav:minimal-sign-up</guid><category><![CDATA[CSS]]></category><category><![CDATA[Functional CSS]]></category><dc:creator><![CDATA[mrmrs <hi@mrmrs.cc>]]></dc:creator><pubDate>Tue, 06 Dec 2016 01:39:57 GMT</pubDate></item><item><title><![CDATA[Articles | Headline Title Text]]></title><description><![CDATA[
     <p>Tachyons. Functional CSS for humans.</p>
-    <a href="http://tachyons.io/components/articles/headline-title-text/index.html"><img src="http://tachyons.io/components/articles/headline-title-text/screenshot.jpg?version=68d4322049fca9ac86659507dd626f42"></a>
+    <a href="http://tachyons.io/components/articles/headline-title-text/index.html"><img src="http://tachyons.io/components/articles/headline-title-text/screenshot.jpg?version=3ea4a5d77e939333afd77213c020008d"></a>
     <p><small>Component by mrmrs &lt;hi@mrmrs.cc&gt;</small></p>
     ]]></description><link>http://tachyons.io/components/articles/headline-title-text/index.html</link><guid isPermaLink="false">articles:headline-title-text</guid><category><![CDATA[CSS]]></category><category><![CDATA[Functional CSS]]></category><dc:creator><![CDATA[mrmrs <hi@mrmrs.cc>]]></dc:creator><pubDate>Mon, 05 Dec 2016 03:11:04 GMT</pubDate></item><item><title><![CDATA[Collections | Vinyl]]></title><description><![CDATA[
     <p>Tachyons. Functional CSS for humans.</p>
-    <a href="http://tachyons.io/components/collections/vinyl/index.html"><img src="http://tachyons.io/components/collections/vinyl/screenshot.jpg?version=54b4253852e58f86d44e9e8a04e244a0"></a>
+    <a href="http://tachyons.io/components/collections/vinyl/index.html"><img src="http://tachyons.io/components/collections/vinyl/screenshot.jpg?version=6a9873f0829b25791616d8a3332dd0ab"></a>
     <p><small>Component by mrmrs &lt;hi@mrmrs.cc&gt;</small></p>
     ]]></description><link>http://tachyons.io/components/collections/vinyl/index.html</link><guid isPermaLink="false">collections:vinyl</guid><category><![CDATA[CSS]]></category><category><![CDATA[Functional CSS]]></category><dc:creator><![CDATA[mrmrs <hi@mrmrs.cc>]]></dc:creator><pubDate>Mon, 05 Dec 2016 03:11:04 GMT</pubDate></item><item><title><![CDATA[Definition Lists | Inline]]></title><description><![CDATA[
     <p>Tachyons. Functional CSS for humans.</p>
-    <a href="http://tachyons.io/components/definition-lists/inline/index.html"><img src="http://tachyons.io/components/definition-lists/inline/screenshot.jpg?version=9778d243e08edcd2607798c3b8f93dba"></a>
+    <a href="http://tachyons.io/components/definition-lists/inline/index.html"><img src="http://tachyons.io/components/definition-lists/inline/screenshot.jpg?version=7273d511260b8547eb7f25b38b9c2a44"></a>
     <p><small>Component by mrmrs &lt;hi@mrmrs.cc&gt;</small></p>
     ]]></description><link>http://tachyons.io/components/definition-lists/inline/index.html</link><guid isPermaLink="false">definition-lists:inline</guid><category><![CDATA[CSS]]></category><category><![CDATA[Functional CSS]]></category><dc:creator><![CDATA[mrmrs <hi@mrmrs.cc>]]></dc:creator><pubDate>Mon, 05 Dec 2016 03:11:04 GMT</pubDate></item></channel></rss>
