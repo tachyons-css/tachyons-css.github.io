@@ -1,11 +1,11 @@
 import React from 'react'
 
+import { version } from '../package.json'
 import Header from './Header'
 import Footer from './Footer'
 
 export default ({
   title = 'TACHYONS - Css Toolkit',
-  version,
   children
 }) =>
   <div className='w-100 sans-serif'>
@@ -16,6 +16,5 @@ export default ({
     />
 
     <Header version={version} />
-    <div>{children}</div>
-    <Footer />
+    <main>{children}</main>
   </div>

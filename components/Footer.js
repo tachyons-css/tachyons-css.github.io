@@ -1,9 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
+
+import Container from './Container'
 
 export default () =>
   <footer className='bg-white black-70 ph3 ph5-ns pv5 pv6-ns bt b--black-10'>
-    <div className='mw9 center'>
+    <Container>
       <div className='mb5 lh-copy'>
         <Link className='black-70 link hover-blue b dib mr3 mb3' to='/' title='Home'>
           Home
@@ -74,5 +76,5 @@ export default () =>
         The word comes from the Greek:
         ταχύς or tachys, meaning 'swift, quick, fast, rapid'
       </small>
-    </div>
+    </Container>
   </footer>
