@@ -6,7 +6,8 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
-    "start": "next start"
+    "start": "next start",
+    "lint": "prettier *.js components/*.js pages/*.js --write"
   },
   "repository": "tachyons-css/docs",
   "author": "mrmrs",
@@ -102,6 +103,7 @@
   ],
   "devDependencies": {
     "@compositor/markdown-loader": "0.0.7",
+    "prettier": "^1.10.2",
     "webpack": "^3.11.0"
   }
 }
