@@ -5,8 +5,8 @@ import Flex from './Flex'
 import { NavLink, TitleLink } from './ui'
 
 export default ({ version }) => (
-  <header className="w-100 pa3 ph5-ns bg-white">
-    <Container>
+  <header className="pv3">
+    <Container padding={true}>
       <Flex justify="between" alignItems="center">
         <TitleLink
           href="/"

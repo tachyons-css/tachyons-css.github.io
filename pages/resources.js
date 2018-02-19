@@ -5,7 +5,7 @@ import Container from '../components/Container'
 
 export default () => (
   <Layout title="TACHYONS - Resources">
-    <Container ph={true}>
+    <Container padding={true}>
       <h1 className="f3 f1-l">Resources</h1>
       <article>
         <h3 className="f5 fw6 bb bw2 pb2 mb3">Recommended Reading</h3>
