@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const NavLink = ({ href = '#!', ...props }) => (
   <Link href={href}>
     <a
-      className="f6 fw6 hover-blue link black-70 mr2 mr3-m mr4-l dib"
+      className="f6 fw6 hover-blue link black-70 ml2 ml3-m ml4-l dib"
       {...props}
     />
   </Link>
