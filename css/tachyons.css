@@ -388,7 +388,7 @@ img { max-width: 100%; }
 */
 .b--black { border-color: #000; }
 .b--near-black { border-color: #111; }
-.b--dark-gray { border-color: #4d4d4f; }
+.b--dark-gray { border-color: #333; }
 .b--mid-gray { border-color: #555; }
 .b--gray { border-color: #777; }
 .b--silver { border-color: #999; }
@@ -424,8 +424,8 @@ img { max-width: 100%; }
 .b--dark-red { border-color: #e7040f; }
 .b--red { border-color: #ff4136; }
 .b--light-red { border-color: #ff725c; }
-.b--orange { border-color: #f48120; }
-.b--gold { border-color: #faad3f; }
+.b--orange { border-color: #ff6300; }
+.b--gold { border-color: #ffb700; }
 .b--yellow { border-color: #ffd700; }
 .b--light-yellow { border-color: #fbf1a9; }
 .b--purple { border-color: #5e2ca5; }
@@ -439,8 +439,8 @@ img { max-width: 100%; }
 .b--light-green { border-color: #9eebcf; }
 .b--navy { border-color: #001b44; }
 .b--dark-blue { border-color: #00449e; }
-.b--blue { border-color: #408bc9; }
-.b--light-blue { border-color: #76c4e2; }
+.b--blue { border-color: #357edd; }
+.b--light-blue { border-color: #96ccff; }
 .b--lightest-blue { border-color: #cdecff; }
 .b--washed-blue { border-color: #f6fffe; }
 .b--washed-green { border-color: #e8fdf5; }
@@ -918,11 +918,11 @@ code, .code { font-family: Consolas, monaco, monospace; }
    Docs: http://tachyons.io/docs/elements/links/
 
 */
-.link { text-decoration: none; -webkit-transition: color .15s ease-in; transition: color .15s ease-in; }
-.link:link, .link:visited { -webkit-transition: color .15s ease-in; transition: color .15s ease-in; }
-.link:hover { -webkit-transition: color .15s ease-in; transition: color .15s ease-in; }
-.link:active { -webkit-transition: color .15s ease-in; transition: color .15s ease-in; }
-.link:focus { -webkit-transition: color .15s ease-in; transition: color .15s ease-in; outline: 1px dotted currentColor; }
+.link { text-decoration: none; transition: color .15s ease-in; }
+.link:link, .link:visited { transition: color .15s ease-in; }
+.link:hover { transition: color .15s ease-in; }
+.link:active { transition: color .15s ease-in; }
+.link:focus { transition: color .15s ease-in; outline: 1px dotted currentColor; }
 /*
 
    LISTS
@@ -1138,7 +1138,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .white-10 { color: rgba( 255, 255, 255, .1 ); }
 .black { color: #000; }
 .near-black { color: #111; }
-.dark-gray { color: #4d4d4f; }
+.dark-gray { color: #333; }
 .mid-gray { color: #555; }
 .gray { color: #777; }
 .silver { color: #999; }
@@ -1150,8 +1150,8 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .dark-red { color: #e7040f; }
 .red { color: #ff4136; }
 .light-red { color: #ff725c; }
-.orange { color: #f48120; }
-.gold { color: #faad3f; }
+.orange { color: #ff6300; }
+.gold { color: #ffb700; }
 .yellow { color: #ffd700; }
 .light-yellow { color: #fbf1a9; }
 .purple { color: #5e2ca5; }
@@ -1165,8 +1165,8 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .light-green { color: #9eebcf; }
 .navy { color: #001b44; }
 .dark-blue { color: #00449e; }
-.blue { color: #408bc9; }
-.light-blue { color: #76c4e2; }
+.blue { color: #357edd; }
+.light-blue { color: #96ccff; }
 .lightest-blue { color: #cdecff; }
 .washed-blue { color: #f6fffe; }
 .washed-green { color: #e8fdf5; }
@@ -1195,7 +1195,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /* Background colors */
 .bg-black { background-color: #000; }
 .bg-near-black { background-color: #111; }
-.bg-dark-gray { background-color: #4d4d4f; }
+.bg-dark-gray { background-color: #333; }
 .bg-mid-gray { background-color: #555; }
 .bg-gray { background-color: #777; }
 .bg-silver { background-color: #999; }
@@ -1208,8 +1208,8 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .bg-dark-red { background-color: #e7040f; }
 .bg-red { background-color: #ff4136; }
 .bg-light-red { background-color: #ff725c; }
-.bg-orange { background-color: #f48120; }
-.bg-gold { background-color: #faad3f; }
+.bg-orange { background-color: #ff6300; }
+.bg-gold { background-color: #ffb700; }
 .bg-yellow { background-color: #ffd700; }
 .bg-light-yellow { background-color: #fbf1a9; }
 .bg-purple { background-color: #5e2ca5; }
@@ -1223,8 +1223,8 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .bg-light-green { background-color: #9eebcf; }
 .bg-navy { background-color: #001b44; }
 .bg-dark-blue { background-color: #00449e; }
-.bg-blue { background-color: #408bc9; }
-.bg-light-blue { background-color: #76c4e2; }
+.bg-blue { background-color: #357edd; }
+.bg-light-blue { background-color: #96ccff; }
 .bg-lightest-blue { background-color: #cdecff; }
 .bg-washed-blue { background-color: #f6fffe; }
 .bg-washed-green { background-color: #e8fdf5; }
@@ -1243,8 +1243,8 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .hover-black:focus { color: #000; }
 .hover-near-black:hover { color: #111; }
 .hover-near-black:focus { color: #111; }
-.hover-dark-gray:hover { color: #4d4d4f; }
-.hover-dark-gray:focus { color: #4d4d4f; }
+.hover-dark-gray:hover { color: #333; }
+.hover-dark-gray:focus { color: #333; }
 .hover-mid-gray:hover { color: #555; }
 .hover-mid-gray:focus { color: #555; }
 .hover-gray:hover { color: #777; }
@@ -1302,8 +1302,8 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .hover-bg-black:focus { background-color: #000; }
 .hover-bg-near-black:hover { background-color: #111; }
 .hover-bg-near-black:focus { background-color: #111; }
-.hover-bg-dark-gray:hover { background-color: #4d4d4f; }
-.hover-bg-dark-gray:focus { background-color: #4d4d4f; }
+.hover-bg-dark-gray:hover { background-color: #333; }
+.hover-bg-dark-gray:focus { background-color: #333; }
 .hover-bg-mid-gray:hover { background-color: #555; }
 .hover-bg-mid-gray:focus { background-color: #555; }
 .hover-bg-gray:hover { background-color: #777; }
@@ -1364,10 +1364,10 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .hover-red:focus { color: #ff4136; }
 .hover-light-red:hover { color: #ff725c; }
 .hover-light-red:focus { color: #ff725c; }
-.hover-orange:hover { color: #f48120; }
-.hover-orange:focus { color: #f48120; }
-.hover-gold:hover { color: #faad3f; }
-.hover-gold:focus { color: #faad3f; }
+.hover-orange:hover { color: #ff6300; }
+.hover-orange:focus { color: #ff6300; }
+.hover-gold:hover { color: #ffb700; }
+.hover-gold:focus { color: #ffb700; }
 .hover-yellow:hover { color: #ffd700; }
 .hover-yellow:focus { color: #ffd700; }
 .hover-light-yellow:hover { color: #fbf1a9; }
@@ -1394,10 +1394,10 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .hover-navy:focus { color: #001b44; }
 .hover-dark-blue:hover { color: #00449e; }
 .hover-dark-blue:focus { color: #00449e; }
-.hover-blue:hover { color: #408bc9; }
-.hover-blue:focus { color: #408bc9; }
-.hover-light-blue:hover { color: #76c4e2; }
-.hover-light-blue:focus { color: #76c4e2; }
+.hover-blue:hover { color: #357edd; }
+.hover-blue:focus { color: #357edd; }
+.hover-light-blue:hover { color: #96ccff; }
+.hover-light-blue:focus { color: #96ccff; }
 .hover-lightest-blue:hover { color: #cdecff; }
 .hover-lightest-blue:focus { color: #cdecff; }
 .hover-washed-blue:hover { color: #f6fffe; }
@@ -1414,10 +1414,10 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .hover-bg-red:focus { background-color: #ff4136; }
 .hover-bg-light-red:hover { background-color: #ff725c; }
 .hover-bg-light-red:focus { background-color: #ff725c; }
-.hover-bg-orange:hover { background-color: #f48120; }
-.hover-bg-orange:focus { background-color: #f48120; }
-.hover-bg-gold:hover { background-color: #faad3f; }
-.hover-bg-gold:focus { background-color: #faad3f; }
+.hover-bg-orange:hover { background-color: #ff6300; }
+.hover-bg-orange:focus { background-color: #ff6300; }
+.hover-bg-gold:hover { background-color: #ffb700; }
+.hover-bg-gold:focus { background-color: #ffb700; }
 .hover-bg-yellow:hover { background-color: #ffd700; }
 .hover-bg-yellow:focus { background-color: #ffd700; }
 .hover-bg-light-yellow:hover { background-color: #fbf1a9; }
@@ -1444,10 +1444,10 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .hover-bg-navy:focus { background-color: #001b44; }
 .hover-bg-dark-blue:hover { background-color: #00449e; }
 .hover-bg-dark-blue:focus { background-color: #00449e; }
-.hover-bg-blue:hover { background-color: #408bc9; }
-.hover-bg-blue:focus { background-color: #408bc9; }
-.hover-bg-light-blue:hover { background-color: #76c4e2; }
-.hover-bg-light-blue:focus { background-color: #76c4e2; }
+.hover-bg-blue:hover { background-color: #357edd; }
+.hover-bg-blue:focus { background-color: #357edd; }
+.hover-bg-light-blue:hover { background-color: #96ccff; }
+.hover-bg-light-blue:focus { background-color: #96ccff; }
 .hover-bg-lightest-blue:hover { background-color: #cdecff; }
 .hover-bg-lightest-blue:focus { background-color: #cdecff; }
 .hover-bg-washed-blue:hover { background-color: #f6fffe; }
@@ -1881,16 +1881,16 @@ code, .code { font-family: Consolas, monaco, monospace; }
   Dim element on hover by adding the dim class.
 
 */
-.dim { opacity: 1; -webkit-transition: opacity .15s ease-in; transition: opacity .15s ease-in; }
-.dim:hover, .dim:focus { opacity: .5; -webkit-transition: opacity .15s ease-in; transition: opacity .15s ease-in; }
-.dim:active { opacity: .8; -webkit-transition: opacity .15s ease-out; transition: opacity .15s ease-out; }
+.dim { opacity: 1; transition: opacity .15s ease-in; }
+.dim:hover, .dim:focus { opacity: .5; transition: opacity .15s ease-in; }
+.dim:active { opacity: .8; transition: opacity .15s ease-out; }
 /*
 
   Animate opacity to 100% on hover by adding the glow class.
 
 */
-.glow { -webkit-transition: opacity .15s ease-in; transition: opacity .15s ease-in; }
-.glow:hover, .glow:focus { opacity: 1; -webkit-transition: opacity .15s ease-in; transition: opacity .15s ease-in; }
+.glow { transition: opacity .15s ease-in; }
+.glow:hover, .glow:focus { opacity: 1; transition: opacity .15s ease-in; }
 /*
 
   Hide child & reveal on hover:
@@ -1905,15 +1905,15 @@ code, .code { font-family: Consolas, monaco, monospace; }
     <div class="child"> Hidden until hover or focus </div>
   </div>
 */
-.hide-child .child { opacity: 0; -webkit-transition: opacity .15s ease-in; transition: opacity .15s ease-in; }
-.hide-child:hover  .child, .hide-child:focus  .child, .hide-child:active .child { opacity: 1; -webkit-transition: opacity .15s ease-in; transition: opacity .15s ease-in; }
+.hide-child .child { opacity: 0; transition: opacity .15s ease-in; }
+.hide-child:hover  .child, .hide-child:focus  .child, .hide-child:active .child { opacity: 1; transition: opacity .15s ease-in; }
 .underline-hover:hover, .underline-hover:focus { text-decoration: underline; }
 /* Can combine this with overflow-hidden to make background images grow on hover
  * even if you are using background-size: cover */
-.grow { -moz-osx-font-smoothing: grayscale; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transform: translateZ( 0 ); transform: translateZ( 0 ); -webkit-transition: -webkit-transform .25s ease-out; transition: -webkit-transform .25s ease-out; transition: transform .25s ease-out; transition: transform .25s ease-out, -webkit-transform .25s ease-out; }
+.grow { -moz-osx-font-smoothing: grayscale; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transform: translateZ( 0 ); transform: translateZ( 0 ); transition: -webkit-transform .25s ease-out; transition: transform .25s ease-out; transition: transform .25s ease-out, -webkit-transform .25s ease-out; }
 .grow:hover, .grow:focus { -webkit-transform: scale( 1.05 ); transform: scale( 1.05 ); }
 .grow:active { -webkit-transform: scale( .90 ); transform: scale( .90 ); }
-.grow-large { -moz-osx-font-smoothing: grayscale; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transform: translateZ( 0 ); transform: translateZ( 0 ); -webkit-transition: -webkit-transform .25s ease-in-out; transition: -webkit-transform .25s ease-in-out; transition: transform .25s ease-in-out; transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out; }
+.grow-large { -moz-osx-font-smoothing: grayscale; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transform: translateZ( 0 ); transform: translateZ( 0 ); transition: -webkit-transform .25s ease-in-out; transition: transform .25s ease-in-out; transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out; }
 .grow-large:hover, .grow-large:focus { -webkit-transform: scale( 1.2 ); transform: scale( 1.2 ); }
 .grow-large:active { -webkit-transform: scale( .95 ); transform: scale( .95 ); }
 /* Add pointer on hover */
@@ -1924,12 +1924,12 @@ code, .code { font-family: Consolas, monaco, monospace; }
    Performant box-shadow animation pattern from 
    http://tobiasahlin.com/blog/how-to-animate-box-shadow/ 
 */
-.shadow-hover { cursor: pointer; position: relative; -webkit-transition: all .5s cubic-bezier( .165, .84, .44, 1 ); transition: all .5s cubic-bezier( .165, .84, .44, 1 ); }
-.shadow-hover::after { content: ''; box-shadow: 0 0 16px 2px rgba( 0, 0, 0, .2 ); border-radius: inherit; opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; -webkit-transition: opacity .5s cubic-bezier( .165, .84, .44, 1 ); transition: opacity .5s cubic-bezier( .165, .84, .44, 1 ); }
+.shadow-hover { cursor: pointer; position: relative; transition: all .5s cubic-bezier( .165, .84, .44, 1 ); }
+.shadow-hover::after { content: ''; box-shadow: 0 0 16px 2px rgba( 0, 0, 0, .2 ); border-radius: inherit; opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; transition: opacity .5s cubic-bezier( .165, .84, .44, 1 ); }
 .shadow-hover:hover::after, .shadow-hover:focus::after { opacity: 1; }
 /* Combine with classes in skins and skins-pseudo for 
  * many different transition possibilities. */
-.bg-animate, .bg-animate:hover, .bg-animate:focus { -webkit-transition: background-color .15s ease-in-out; transition: background-color .15s ease-in-out; }
+.bg-animate, .bg-animate:hover, .bg-animate:focus { transition: background-color .15s ease-in-out; }
 /*
 
   Z-INDEX
@@ -1992,9 +1992,9 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .nested-copy-indent p+p { text-indent: 1em; margin-top: 0; margin-bottom: 0; }
 .nested-copy-seperator p+p { margin-top: 1.5em; }
 .nested-img img { width: 100%; max-width: 100%; display: block; }
-.nested-links a { color: #408bc9; -webkit-transition: color .15s ease-in; transition: color .15s ease-in; }
-.nested-links a:hover { color: #76c4e2; -webkit-transition: color .15s ease-in; transition: color .15s ease-in; }
-.nested-links a:focus { color: #76c4e2; -webkit-transition: color .15s ease-in; transition: color .15s ease-in; }
+.nested-links a { color: #357edd; transition: color .15s ease-in; }
+.nested-links a:hover { color: #96ccff; transition: color .15s ease-in; }
+.nested-links a:focus { color: #96ccff; transition: color .15s ease-in; }
 /*
 
   STYLES
