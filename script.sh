@@ -9,7 +9,7 @@ repos=(
 "src/modules/box-shadow.js"
 "src/modules/box-sizing.js"
 "src/modules/clearfix.js"
-"src/modules/colors.js"
+#"src/modules/colors.js"
 "src/modules/debug-grid.js"
 "src/modules/debug.js"
 "src/modules/display.js"
