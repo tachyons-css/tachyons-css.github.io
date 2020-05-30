@@ -1,12 +1,12 @@
 /*
 
    CLEARFIX
-   http://tachyons.io/docs/layout/clearfix/
+   https://tachyons.io/docs/layout/clearfix/
 
 */
 
 /* Nicolas Gallaghers Clearfix solution
-   Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
+   Ref: https://nicolasgallagher.com/micro-clearfix-hack/ */
 
 .cf:before,
 .cf:after { content: " "; display: table; }
