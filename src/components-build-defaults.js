@@ -5,7 +5,7 @@ const cleanTitleize = str => titleize(str.replace(/(_|-)/g, ' '));
 const creationTimeToYMD = c => moment(c.creationTime).format('YYYY-MM-DD');
 
 module.exports = {
-  siteUrl: 'http://tachyons.io',                   // needed for RSS feed
+  siteUrl: 'https://tachyons.io',                   // needed for RSS feed
   siteDescription: 'Tachyons. Functional CSS for humans.',
   // Components
   components: {
