@@ -9,8 +9,56 @@
   </head>
   <body class="w-100 sans-serif">
     <%= siteHeader %>
-    <main class="bg-washed-blue black-70">
-      <article class="bt b--black-10 pa3 ph5-ns">
+    <main class="bg-white black-70">
+      <header class="ph3 ph5-ns w-100 bg-transparent pv3 mb4 mb5-ns bt bb b--black-10 overflow-auto">
+        <div class="nowrap mw9 center">
+          <%= layoutNav %>
+        </div>
+      </header>
+      <article class="pa3 ph5-ns">
+        <h3 class="f6 ttu tracked mt0">Clearfix</h3>
+        <p class="measure f4 f3-ns lh-copy">
+          When floats are used for layouts - they need a clearfix solution. This helps prevent
+          layout problems caused by the elements being removed from the block context of the
+          surrounding elements.
+        </p>
+      </article>
+      <div class="ph3 ph5-ns pt4 pb5">
+        <h3 class="f5 mb4 pb2 bb">Examples</h3>
+        <h3 class="f4">Cleared Floats</h3>
+        <p class="measure lh-copy">
+          This example shows two floated elements wrapped in an element with a 4px solid red border.
+          In the top version where the floats are cleared, the red element wraps around the elements.
+          In the second example - the parent element is collapsed and the two floated elements sit outside of it.
+          It should be noted you don’t have to clear floated elements that are inside another floated element.
+        </p>
+        <div class="cf" style="outline: 8px solid red;">
+          <div class="fl w-50 pv4" style="background: rgba(0,20,120,.6)"></div>
+          <div class="fl w-50 pv4" style="background: rgba(0,50,80,.6)"></div>
+        </div>
+        <h3 class="f4">UnCleared Floats</h3>
+        <div style="outline: 8px solid red;">
+          <div class="fl w-50 pv4" style="background: rgba(0,20,120,.6)"></div>
+          <div class="fl w-50 pv4" style="background: rgba(0,50,80,.6)"></div>
+        </div>
+
+        <div class="mt5 cf">
+          <div class="dib mr4">
+            <h4 class="f6 fw6">Previous</h4>
+            <a href="/docs/layout/floats/" class="link fw6 blue dim">Floats</a>
+          </div>
+          <div class="dib">
+            <h4 class="f6 fw6">Next</h4>
+            <a href="/docs/layout/display/" class="link fw6 blue dim">Display</a>
+          </div>
+        </div>
+        <div class="mt5">
+          <h4 class="f6 fw6">Reference</h4>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clear" class="link fw6 blue dim">MDN - Clears</a>
+        </div>
+      </div>
+      <section class="bg-white black-70 pt4 pb5 overflow-container">
+        <header class="ph3 ph5-ns pt4">
         <h4 class="f4 mv0 fw6 dib mr4"><%= name %></h4>
         <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
         <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
@@ -32,48 +80,6 @@
             <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
           </dl>
         </div>
-        <p class="measure f4 f3-ns lh-copy">
-          When floats are used for layouts - they need a clearfix solution. This helps prevent
-          layout problems caused by the elements being removed from the block context of the
-          surrounding elements.
-        </p>
-      </article>
-      <div class="ph3 ph5-ns pt4 pb5">
-        <h2 class="f3 b">Examples</h2>
-        <h3 class="f4">Cleared Floats</h3>
-        <p class="measure lh-copy">
-          This example shows two floated elements wrapped in an element with a 4px solid red border.
-          In the top version where the floats are cleared, the red element wraps around the elements.
-          In the second example - the parent element is collapsed and the two floated elements sit outside of it.
-          It should be noted you don't have to clear floated elements that are inside another floated element.
-        </p>
-        <div class="cf" style="outline: 8px solid red;">
-          <div class="fl w-50 pv4" style="background: rgba(0,20,120,.6)"></div>
-          <div class="fl w-50 pv4" style="background: rgba(0,50,80,.6)"></div>
-        </div>
-        <h3 class="f4">UnCleared Floats</h3>
-        <div style="outline: 8px solid red;">
-          <div class="fl w-50 pv4" style="background: rgba(0,20,120,.6)"></div>
-          <div class="fl w-50 pv4" style="background: rgba(0,50,80,.6)"></div>
-        </div>
-
-        <div class="mt5 cf">
-          <div class="dib mr4">
-            <h1 class="f4 ttu tracked fw6">Previous</h1>
-            <a href="/docs/layout/floats/" class="link fw6 blue dim">Floats</a>
-          </div>
-          <div class="dib">
-            <h1 class="f4 ttu tracked fw6">Next</h1>
-            <a href="/docs/layout/display/" class="link fw6 blue dim">Display</a>
-          </div>
-        </div>
-        <div class="mt5">
-          <h1 class="f4 ttu tracked fw6">Reference</h1>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clears" class="link fw6 blue dim">MDN - Clears</a>
-        </div>
-      </div>
-      <section class="bg-washed-blue black-70 pt4 pb5 overflow-container">
-        <header class="ph3 ph5-ns pt4">
           <kbd>src/_clearfix.css</kbd>
         </header>
 <pre class="ph3 ph5-ns">

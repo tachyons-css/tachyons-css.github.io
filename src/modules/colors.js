@@ -6,10 +6,14 @@ var filesize = require('filesize')
 var cssstats = require('cssstats')
 var parseColors = require('./parse-colors')
 var parseCombos = require('./parse-combos')
+var parseCombosAA = require('./parse-combos-aa')
+var parseCombosAAA = require('./parse-combos-aaa')
 
 var css = fs.readFileSync('./css/tachyons.css', 'utf8')
 var colors = parseColors(css)
 var combos = parseCombos(colors)
+var combosAA = parseCombosAA(colors)
+var combosAAA = parseCombosAAA(colors)
 
 
 var module = require('tachyons-skins/package.json')
@@ -40,7 +44,9 @@ var html = tpl({
   head: head,
   siteHeader: siteHeader,
   colors: colors,
-  combos: combos
+  combos: combos,
+  combosAA: combosAA,
+  combosAAA: combosAAA
 })
 
 fs.writeFileSync('./docs/themes/skins/index.html', html)

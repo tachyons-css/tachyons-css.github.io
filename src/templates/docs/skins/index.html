@@ -4,88 +4,446 @@
     <title>
        Skins / Themes / Docs / TACHYONS
     </title>
-    <meta name="description" content="Functional css for humans.">
+    <meta name="description" content="Documentation for the Tachyons color palette along with a comprehensive list of accessible combinations.">
     <%= head  %>
   </head>
   <body class="w-100 sans-serif">
     <%= siteHeader %>
-    <main class="bg-washed-blue black-70">
-      <article class="bt b--black-10 pa3 ph5-ns">
-        <h4 class="f4 mv0 fw6 dib mr4">tachyons-skins</h4>
-        <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
-        <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
-        <div>
-          <dl class="dib mr4 mt0">
-            <dt class="f6 db">Declarations </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.declarations.total %></dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Selectors </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.total %></dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Max. Specificity Score </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.specificity.max %></dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Size of Avg. Rule </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
-          </dl>
+    <main class="bg-white black-70">
+      <header class="ph3 ph5-ns w-100 pv3 mb4 mb5-ns bt bb b--black-10 overflow-auto">
+        <div class="nowrap mw9 center">
+        <a class="f6 fw6 dim link black pb2-ns mr2 mr3-m mr4-l" href="/docs/themes/skins/" title="Skins">Skins</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/themes/hovers/" title="Hovers">Hovers</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/themes/background-size/" title="Background size">Background Size</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/themes/borders/" title="Borders">Borders</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/themes/border-radius/" title="Border Radius">Border Radius</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/themes/box-shadow/" title="Box Shadow">Box Shadow</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/themes/opacity/" title="Opacity">Opacity</a>
         </div>
+      </header>
+      <article class="pa3 ph5-ns">
+        <h3 class="f6 ttu tracked mt0">Skins</h3>
         <p class="measure f4 lh-copy">
-          Color utilities for text and background-colors. Listed below are the a11y friendly combinations that are available.
+          Tachyons comes with a collection of classes for setting the color of text
+and the color of the background. Listed below are the a11y friendly
+combinations that are available.
         </p>
       </article>
       <div class="ph3 ph5-ns pt4 pb5">
         <h2 class="f3">Color Palette</h2>
-        <ul class="list pl0 ml0">
+        <ul class="list pl0 ml0 cf">
           <% colors.map(renderColor) %>
         </ul>
         <% function renderColor(color) { %>
-          <li class="dib pa2 br2 ba b--light-gray mr1 mb2">
-            <div style="background-color:<%= color %>"
-              class="pa4 mb2"></div>
+          <li class="fl w-100 w-50-m w-25-l mb1">
+
+            <div style="background-color:<%= color %>" class="fl w-40 pv4"></div>
+<div class="fl w-60 lh-copy pl2 pt2">
+<% if (color == "#000000") { %>
+<b class="db"> black </b>
+<% } %>
+<% if (color == "#111111") { %>
+<b class="db"> near-black </b>
+<% } %>
+<% if (color == "#333333") { %>
+<b class="db">  dark-gray </b>
+<% } %>
+<% if (color == "#555555") { %>
+<b class="db">mid-gray </b>
+<% } %>
+<% if (color == "#777777") { %>
+<b class="db"> gray</b>
+<% } %>
+<% if (color == "#999999") { %>
+<b class="db"> silver</b>
+<% } %>
+<% if (color == "#AAAAAA") { %>
+<b class="db"> light-silver</b>
+<% } %>
+<% if (color == "#CCCCCC") { %>
+<b class="db"> moon-gray </b>
+<% } %>
+<% if (color == "#EEEEEE") { %>
+<b class="db"> light-gray</b>
+<% } %>
+<% if (color == "#F4F4F4") { %>
+<b class="db"> near-white</b>
+<% } %>
+<% if (color == "#FFFFFF") { %>
+<b class="db"> white </b>
+<% } %>
+<% if (color == "#E7040F") { %>
+<b class="db"> dark-red </b>
+<% } %>
+<% if (color == "#FF4136") { %>
+<b class="db"> red </b>
+<% } %>
+<% if (color == "#FF725C") { %>
+<b class="db"> light-red </b>
+<% } %>
+<% if (color == "#FF6300") { %>
+<b class="db"> orange </b>
+<% } %>
+<% if (color == "#FFB700") { %>
+<b class="db"> gold </b>
+<% } %>
+<% if (color == "#FFD700") { %>
+<b class="db"> yellow </b>
+<% } %>
+<% if (color == "#FBF1A9") { %>
+<b class="db"> light-yellow </b>
+<% } %>
+<% if (color == "#5E2CA5") { %>
+<b class="db"> purple </b>
+<% } %>
+<% if (color == "#A463F2") { %>
+<b class="db"> light-purple </b>
+<% } %>
+<% if (color == "#D5008F") { %>
+<b class="db"> dark-pink </b>
+<% } %>
+<% if (color == "#FF41B4") { %>
+<b class="db"> hot-pink </b>
+<% } %>
+<% if (color == "#FF80CC") { %>
+<b class="db"> pink </b>
+<% } %>
+<% if (color == "#FFA3D7") { %>
+<b class="db"> light-pink </b>
+<% } %>
+<% if (color == "#137752") { %>
+<b class="db"> dark-green </b>
+<% } %>
+<% if (color == "#19A974") { %>
+<b class="db"> green </b>
+<% } %>
+<% if (color == "#9EEBCF") { %>
+<b class="db"> light-green </b>
+<% } %>
+<% if (color == "#001B44") { %>
+<b class="db"> navy </b>
+<% } %>
+<% if (color == "#00449E") { %>
+<b class="db"> dark-blue </b>
+<% } %>
+<% if (color == "#357EDD") { %>
+<b class="db"> blue </b>
+<% } %>
+<% if (color == "#96CCFF") { %>
+<b class="db"> light-blue </b>
+<% } %>
+<% if (color == "#CDECFF") { %>
+<b class="db"> lightest-blue </b>
+<% } %>
+<% if (color == "#F6FFFE") { %>
+<b class="db"> washed-blue</b>
+<% } %>
+<% if (color == "#E8FDF5") { %>
+<b class="db"> washed-green </b>
+<% } %>
+<% if (color == "#FFFCEB") { %>
+<b class="db"> washed-yellow</b>
+<% } %>
+<% if (color == "#FFDFDF") { %>
+<b class="db"> washed-red</b>
+<% } %>
             <code class="f6"><%= color %></code>
+</div>
           </li>
+
         <% } %>
-        <h2>Combinations</h2>
+        <h2>Accessible Combinations</h2>
+          <p class="lh-copy dib mr4">
+            <span class="db f6"><b>AA Large</b> (contrast ≥ 3.0)</span>
+            <span class="db f2-m f1-l b"><%= combos.length %></span>
+          </p>
+          <p class="lh-copy dib mr4">
+            <span class="db f6"><b>AA</b> (contrast ≥ 4.5)</span>
+            <span class="db f2-m f1-l b"><%= combosAA.length %></span>
+          </p>
+          <p class="lh-copy dib mr4">
+            <span class="db f6"><b>AAA</b> (contrast ≥ 7.0)</span>
+            <span class="db f2-m f1-l b"><%= combosAAA.length %></span>
+          </p>
         <ul class="cf list pl0 ml0">
           <% combos.map(renderCombo) %>
         </ul>
         <% function renderCombo(combo) { %>
-          <li class="fl w-100 w-50-m w-25-l"
+          <li class="fl w-100 w-50-ns"
             style="color:<%= combo.pairing %>;background-color:<%= combo.hex %>">
             <div class="pa4">
-              <span class="f4 f1-ns b">Aa</span>
+              <span class="f4 f1-ns b dib pr3">Aa</span>
+              <b class="dib"><%= combo.contrast.toFixed(2) %></b>
+<blockquote class="ph0 pb2 mb3 bb mh0 mt0">
               <p class="lh-copy measure f6">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-                vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                In visual perception a color is almost never seen as it really
+is – as it physically is. This fact makes color the most relative medium in
+art. 
+               <i>- Josef Albers</i>
               </p>
-              <code class="f6 db"><%= combo.pairing %></code>
-              <code class="f6 db"><%= combo.hex %></code>
-              <%= combo.contrast.toFixed(2) %>
+</blockquote>
+<div class="w-100 overflow-auto">
+<% if (combo.pairing == "#000000") { %>
+    <code class="f6 db lh-copy nowrap">.black { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#111111") { %>
+    <code class="f6 db lh-copy nowrap">.near-black { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#333333") { %>
+    <code class="f6 db lh-copy nowrap">.dark-gray { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#555555") { %>
+    <code class="f6 db lh-copy nowrap">.mid-gray { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#777777") { %>
+    <code class="f6 db lh-copy nowrap">.gray { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#999999") { %>
+    <code class="f6 db lh-copy nowrap">.silver { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#AAAAAA") { %>
+    <code class="f6 db lh-copy nowrap">.light-silver { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#CCCCCC") { %>
+    <code class="f6 db lh-copy nowrap">.moon-gray { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#EEEEEE") { %>
+    <code class="f6 db lh-copy nowrap">.light-gray { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#F4F4F4") { %>
+    <code class="f6 db lh-copy nowrap">.near-white { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#FFFFFF") { %>
+    <code class="f6 db lh-copy nowrap">.white { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#E7040F") { %>
+  <code class="f6 db lh-copy nowrap">.dark-red { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#FF4136") { %>
+  <code class="f6 db lh-copy nowrap">.red { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#FF725C") { %>
+  <code class="f6 db lh-copy nowrap">.light-red { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#FF6300") { %>
+  <code class="f6 db lh-copy nowrap">.orange { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#FFB700") { %>
+  <code class="f6 db lh-copy nowrap">.gold { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#FFD700") { %>
+  <code class="f6 db lh-copy nowrap">.yellow { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#FBF1A9") { %>
+  <code class="f6 db lh-copy nowrap">.light-yellow { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#5E2CA5") { %>
+  <code class="f6 db lh-copy nowrap">.purple { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#A463F2") { %>
+  <code class="f6 db lh-copy nowrap">.light-purple { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#D5008F") { %>
+  <code class="f6 db lh-copy nowrap">.dark-pink { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#FF41B4") { %>
+  <code class="f6 db lh-copy nowrap">.hot-pink { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#FF80CC") { %>
+  <code class="f6 db lh-copy nowrap">.pink { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#FFA3D7") { %>
+  <code class="f6 db lh-copy nowrap">.light-pink { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#137752") { %>
+  <code class="f6 db lh-copy nowrap">.dark-green { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#19A974") { %>
+  <code class="f6 db lh-copy nowrap">.green { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#9EEBCF") { %>
+  <code class="f6 db lh-copy nowrap">.light-green { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#001B44") { %>
+  <code class="f6 db lh-copy nowrap">.navy { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#00449E") { %>
+  <code class="f6 db lh-copy nowrap">.dark-blue { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#357EDD") { %>
+  <code class="f6 db lh-copy nowrap">.blue { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#96CCFF") { %>
+  <code class="f6 db lh-copy nowrap">.light-blue { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#CDECFF") { %>
+  <code class="f6 db lh-copy nowrap">.lightest-blue { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#F6FFFE") { %>
+  <code class="f6 db lh-copy nowrap">.washed-blue { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#E8FDF5") { %>
+  <code class="f6 db lh-copy nowrap">.washed-green { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#FFFCEB") { %>
+  <code class="f6 db lh-copy nowrap">.washed-yellow { color: <%= combo.pairing %> }</code>
+<% } %>
+<% if (combo.pairing == "#FFDFDF") { %>
+  <code class="f6 db lh-copy nowrap">.washed-red { color: <%= combo.pairing %> }</code>
+<% } %>
+
+<% if (combo.hex == "#000000") { %>
+    <code class="f6 db lh-copy nowrap">.bg-black { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#111111") { %>
+    <code class="f6 db lh-copy nowrap">.bg-near-black { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#333333") { %>
+    <code class="f6 db lh-copy nowrap">.bg-dark-gray { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#555555") { %>
+    <code class="f6 db lh-copy nowrap">.bg-mid-gray { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#777777") { %>
+    <code class="f6 db lh-copy nowrap">.bg-gray { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#999999") { %>
+    <code class="f6 db lh-copy nowrap">.bg-silver { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#AAAAAA") { %>
+    <code class="f6 db lh-copy nowrap">.bg-light-silver { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#CCCCCC") { %>
+    <code class="f6 db lh-copy nowrap">.bg-moon-gray { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#EEEEEE") { %>
+    <code class="f6 db lh-copy nowrap">.bg-light-gray { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#F4F4F4") { %>
+    <code class="f6 db lh-copy nowrap">.bg-near-white { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#FFFFFF") { %>
+    <code class="f6 db lh-copy nowrap">.bg-white { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#E7040F") { %>
+  <code class="f6 db lh-copy nowrap">.bg-dark-red { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#FF4136") { %>
+  <code class="f6 db lh-copy nowrap">.bg-red { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#FF725C") { %>
+  <code class="f6 db lh-copy nowrap">.bg-light-red { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#FF6300") { %>
+  <code class="f6 db lh-copy nowrap">.bg-orange { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#FFB700") { %>
+  <code class="f6 db lh-copy nowrap">.bg-gold { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#FFD700") { %>
+  <code class="f6 db lh-copy nowrap">.bg-yellow { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#FBF1A9") { %>
+  <code class="f6 db lh-copy nowrap">.bg-light-yellow { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#5E2CA5") { %>
+  <code class="f6 db lh-copy nowrap">.bg-purple { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#A463F2") { %>
+  <code class="f6 db lh-copy nowrap">.bg-light-purple { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#D5008F") { %>
+  <code class="f6 db lh-copy nowrap">.bg-dark-pink { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#FF41B4") { %>
+  <code class="f6 db lh-copy nowrap">.bg-hot-pink { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#FF80CC") { %>
+  <code class="f6 db lh-copy nowrap">.bg-pink { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#FFA3D7") { %>
+  <code class="f6 db lh-copy nowrap">.bg-light-pink { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#137752") { %>
+  <code class="f6 db lh-copy nowrap">.bg-dark-green { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#19A974") { %>
+  <code class="f6 db lh-copy nowrap">.bg-green { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#9EEBCF") { %>
+  <code class="f6 db lh-copy nowrap">.bg-light-green { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#001B44") { %>
+  <code class="f6 db lh-copy nowrap">.bg-navy { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#00449E") { %>
+  <code class="f6 db lh-copy nowrap">.bg-dark-blue { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#357EDD") { %>
+  <code class="f6 db lh-copy nowrap">.bg-blue { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#96CCFF") { %>
+  <code class="f6 db lh-copy nowrap">.bg-light-blue { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#CDECFF") { %>
+  <code class="f6 db lh-copy nowrap">.bg-lightest-blue { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#F6FFFE") { %>
+  <code class="f6 db lh-copy nowrap">.bg-washed-blue { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#E8FDF5") { %>
+  <code class="f6 db lh-copy nowrap">.bg-washed-green { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#FFFCEB") { %>
+  <code class="f6 db lh-copy nowrap">.bg-washed-yellow { background-color: <%= combo.hex %> }</code>
+<% } %>
+<% if (combo.hex == "#FFDFDF") { %>
+  <code class="f6 db lh-copy nowrap">.bg-washed-red { background-color: <%= combo.hex %> }</code>
+
+<% } %>
+</div>
             </div>
           </li>
         <% } %>
         <div class="mt5 cf">
           <div class="dib mr4">
-            <h1 class="f4 ttu tracked fw6">Previous</h1>
+            <h4 class="f6 fw6">Previous</h4>
             <a href="/docs/layout/position/" class="link fw6 blue dim">Position</a>
           </div>
-          <div class="dib">
-            <h1 class="f4 ttu tracked fw6">Next</h1>
-            <a href="/docs/themes/hovers/" class="link fw6 blue dim">Hovers</a>
+          <div class="dib mr4">
+            <h4 class="f6 fw6">Next</h4>
+            <a href="/docs/themes/skins-pseudo/" class="link fw6 blue dim">Next</a>
           </div>
         </div>
         <div class="mt5">
-          <h1 class="f4 ttu tracked fw6">Reference</h1>
+          <h4 class="f6 fw6">Reference</h4>
           <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius" class="link fw6 blue dim">MDN - Border Radius</a>
         </div>
       </div>
-      <section class="bg-washed-blue black-70 pt4 pb5 overflow-container">
+      <section class="bg-white black-70 pt4 pb5 overflow-container">
         <header class="ph3 ph5-ns pt4">
+        <h4 class="f4 mv0 fw6 dib mr4">tachyons-skins</h4>
+        <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
+        <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
+        <div>
+          <dl class="dib mr4 mt0">
+            <dt class="f6 db lh-copy nowrap">Declarations </dt>
+
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.declarations.total %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db lh-copy nowrap pr2">Selectors </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.total %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db lh-copy nowrap pr2">Max. Specificity Score </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.specificity.max %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db lh-copy nowrap pr2">Size of Avg. Rule </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
+          </dl>
+        </div>
           <kbd>src/_skins.css</kbd>
         </header>
 <pre class="ph3 ph5-ns">

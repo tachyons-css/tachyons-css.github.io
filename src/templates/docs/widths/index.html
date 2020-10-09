@@ -9,28 +9,14 @@
   </head>
   <body class="w-100 sans-serif">
     <%= siteHeader %>
-    <main class="bg-washed-blue black-70">
-      <article class="bt b--black-10 pa3 ph5-ns">
-        <h4 class="f4 mv0 fw6 dib mr4"><%= name %></h4>
-        <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
-        <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
-        <div>
-          <dl class="dib mr4 mt0">
-            <dt class="f6 db">Declarations </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.declarations.total %></dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Selectors </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.total %></dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Max. Specificity Score </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.specificity.max %></dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Size of Avg. Rule </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
-          </dl>
+    <main class="bg-white black-70">
+      <header class="ph3 ph5-ns w-100 bg-transparent pv3 mb4 mb5-ns bt bb b--black-10 overflow-auto">
+        <div class="nowrap mw9 center">
+          <%= layoutNav %>
+        </div>
+      </header>
+      <article class="pa3 ph5-ns">
+        <h3 class="f6 ttu tracked mt0">Widths</h3>
         <p class="measure f5 f4-ns  lh-copy">
           The widths module contains both a five-step width scale based on powers of two
           as well as a series of percentage values that can be combined with floats for
@@ -53,15 +39,20 @@ Modifiers
   -10  = literal value 10%
   -20  = literal value 20%
   -25  = literal value 25%
+  -30  = literal value 30%
   -33  = literal value 33%
   -34  = literal value 34%
   -40  = literal value 40%
   -50  = literal value 50%
   -60  = literal value 60%
+  -70  = literal value 70%
   -75  = literal value 75%
   -80  = literal value 80%
+  -90  = literal value 90%
   -100 = literal value 100%
 
+  -third  = calc(100% / 3)
+  -two-thirds  = calc(100% / 1.5)
   -auto  = string value auto
 
 
@@ -70,10 +61,9 @@ Media Query Extensions:
   -m  = medium
   -l  = large
 </pre>
-        </div>
       </article>
       <div class="ph3 ph5-ns pt4 pb5">
-        <h2 class="f3 bold">Examples</h2>
+        <h3 class="f5 mb4 pb2 bb">Examples</h3>
         <h3 class="f5 book pt4 caps">Width Scale</h3>
         <table border="0" cellspacing="5" cellpadding="5">
           <tr>
@@ -118,8 +108,14 @@ Media Query Extensions:
           <div class="w-25 bg-black-10 mb2">
             <code class="code">w-25</code>
           </div>
+          <div class="w-30 bg-black-10 mb2">
+            <code class="code">w-30</code>
+          </div>
           <div class="w-33 bg-black-10 mb2">
             <code class="code">w-33</code>
+          </div>
+          <div class="w-third bg-black-10 mb2">
+            <code class="code">w-third</code>
           </div>
           <div class="w-34 bg-black-10 mb2">
             <code class="code">w-34</code>
@@ -133,11 +129,17 @@ Media Query Extensions:
           <div class="w-60 bg-black-10 mb2">
             <code class="code">w-60</code>
           </div>
+          <div class="w-two-thirds bg-black-10 mb2">
+            <code class="code">w-two-thirds</code>
+          </div>
           <div class="w-75 bg-black-10 mb2">
             <code class="code">w-75</code>
           </div>
           <div class="w-80 bg-black-10 mb2">
             <code class="code">w-80</code>
+          </div>
+          <div class="w-90 bg-black-10 mb2">
+            <code class="code">w-90</code>
           </div>
           <div class="w-100 bg-black-10 mb2">
             <code class="code">w-100</code>
@@ -145,21 +147,42 @@ Media Query Extensions:
         </div>
         <div class="mt5 cf">
           <div class="dib mr4">
-            <h1 class="f4 ttu tracked fw6">Previous</h1>
+            <h1 class="f6 fw6">Previous</h1>
             <a href="/docs/layout/display/" class="link fw6 blue dim">Display</a>
           </div>
           <div class="dib">
-            <h1 class="f4 ttu tracked fw6">Next</h1>
+            <h4 class="f6 fw6">Next</h4>
             <a href="/docs/layout/max-widths/" class="link fw6 blue dim">Max Widths</a>
           </div>
         </div>
         <div class="mt5">
-          <h1 class="f4 ttu tracked fw6">Reference</h1>
+          <h4 class="f6 fw6">Reference</h4>
           <a href="https://developer.mozilla.org/en/docs/Web/css/width" class="link fw6 blue dim">MDN - Width property</a>
         </div>
       </div>
-      <section class="bg-washed-blue black-70 pt4 pb5 overflow-container">
+      <section class="bg-white black-70 pt4 pb5 overflow-container">
         <header class="ph3 ph5-ns pt4">
+        <h4 class="f4 mv0 fw6 dib mr4"><%= name %></h4>
+        <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
+        <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
+        <div>
+          <dl class="dib mr4 mt0">
+            <dt class="f6 db">Declarations </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.declarations.total %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Selectors </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.total %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Max. Specificity Score </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.specificity.max %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Size of Avg. Rule </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
+          </dl>
+</div>
           <kbd>src/_widths.css</kbd>
         </header>
 <pre class="ph3 ph5-ns">

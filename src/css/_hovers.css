@@ -1,8 +1,10 @@
 /*
 
   HOVER EFFECTS
+  Docs: http://tachyons.io/docs/themes/hovers/
 
     - Dim
+    - Glow
     - Hide Child
     - Underline text
     - Grow
@@ -27,6 +29,20 @@
 }
 .dim:active {
   opacity: .8; transition: opacity .15s ease-out;
+}
+
+/*
+
+  Animate opacity to 100% on hover by adding the glow class.
+
+*/
+.glow {
+  transition: opacity .15s ease-in;
+}
+.glow:hover,
+.glow:focus {
+  opacity: 1;
+  transition: opacity .15s ease-in;
 }
 
 /*
@@ -83,7 +99,7 @@
   -moz-osx-font-smoothing: grayscale;
   backface-visibility: hidden;
   transform: translateZ(0);
-  transition: transform 0.25s ease-in-out;
+  transition: transform .25s ease-in-out;
 }
 
 .grow-large:hover,
@@ -101,10 +117,44 @@
   cursor: pointer;
 }
 
-/* Add shadow on hover */
+/* 
+   Add shadow on hover.
 
-.shadow-hover:hover,
-.shadow-hover:focus {
-  box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 );
+   Performant box-shadow animation pattern from 
+   http://tobiasahlin.com/blog/how-to-animate-box-shadow/ 
+*/
+
+.shadow-hover {
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.shadow-hover::after {
+  content: '';
+  box-shadow: 0px 0px 16px 2px rgba( 0, 0, 0, .2 );
+  border-radius: inherit;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: opacity 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.shadow-hover:hover::after,
+.shadow-hover:focus::after {
+  opacity: 1;
+}
+
+/* Combine with classes in skins and skins-pseudo for 
+ * many different transition possibilities. */
+
+.bg-animate,
+.bg-animate:hover,
+.bg-animate:focus {
+  transition: background-color .15s ease-in-out; 
 }
 

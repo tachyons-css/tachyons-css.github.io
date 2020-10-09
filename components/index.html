@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="author" content="@mrmrs">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/css/tachyons.min.css">
+<link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
 <style>
   .blue { color: #0074D9; }
   .bg-blue { background-color: #0074D9; }
@@ -20,203 +20,2894 @@
   #carbonads a:link { text-decoration: none!important; color: #222!important; }
 
 </style>
+<link rel="alternate" type="application/rss+xml" title="RSS Feed for Tachyons Recent Components" href="/components/rss.xml" />
 
+  <style type="text/css" media="screen">
+    .transparent { color: transparent; }
+  </style>
+  <style type="text/css" media="screen">
+/* https://github.com/aFarkas/lazysizes#css-api */
+.lazyload {
+    opacity: 0;
+}
+
+.lazyloading {
+    opacity: 1;
+    transition: opacity 300ms;
+    background-color: #eee;
+}
+</style>
+
+  <script src="/js/ls.unveilhooks.min.js" async=""></script>
+  <script src="/js/lazysizes.min.js" async=""></script>
 </head>
 <body class="w-100 sans-serif">
-  <header class="w-100 dt pa3 ph5-ns bg-washed-blue">
-  <div class="dtc v-mid tl w-50">
-    <a href="/" class="dib f5 f4-ns fw6 mt0 mb1 link black-70 dim" title="Home">
-      Tachyons
-      <div class="dib">
-        <small class="nowrap f6 mt2 mt3-ns pr2 black-70 fw2">v4.3.0</small>
-      </div>
-    </a>
+  <header class="w-100 pa3 ph5-ns bg-white">
+  <div class="db dt-ns mw9 center w-100">
+    <div class="db dtc-ns v-mid tl w-50">
+      <a href="/" class="dib f5 f4-ns fw6 mt0 mb1 link black-70" title="Home">
+        Tachyons
+        <div class="dib">
+          <small class="nowrap f6 mt2 mt3-ns pr2 black-70 fw2">v4.12.0</small>
+        </div>
+      </a>
+    </div>
+    <nav class="db dtc-ns v-mid w-100 tl tr-ns mt2 mt0-ns">
+      <a title="Documentation" href="/docs/"
+          class="f6 fw6 hover-blue link black-70 mr2 mr3-m mr4-l dib">
+        Docs
+      </a>
+      <a title="Components" href="/components/"
+          class="f6 fw6 hover-blue link black-70 mr2 mr3-m mr4-l dib">
+        Components
+      </a>
+      <a title="Gallery of sites built with Tachyons" href="/gallery/"
+          class="f6 fw6 hover-blue link black-70 mr2 mr3-m mr4-l dib">
+        Gallery
+      </a>
+      <a title="Resources" href="/resources/"
+          class="f6 fw6 hover-blue link black-70 mr2 mr3-m mr4-l dib">
+        Resources
+      </a>
+      <a title="Tachyons on GitHub" href="http://github.com/tachyons-css/tachyons/"
+          class="f6 fw6 hover-blue link black-70 mr2 mr3-m mr4-l dn dib-l">
+        GitHub
+      </a>
+    </nav>
   </div>
-  <nav class="db dtc v-mid w-100 tr">
-    <a title="Documentation" href="/docs/"
-        class="f6 fw6 dim link black-70 mr1 mr3-m mr4-l dib">
-      Docs
-    </a>
-    <a title="Components" href="/components/"
-        class="f6 fw6 dim link black-70 mr1 mr3-m mr4-l dib">
-      Components
-    </a>
-    <a title="Tachyons on GitHub" href="http://github.com/tachyons-css/tachyons/"
-        class="f6 fw6 dim link black-70 mr1 mr3-m mr4-l dn dib-l">
-      GitHub
-    </a>
-  </nav>
 </header>
 
-<main class="bg-washed-blue bt b--black-10">
-  <section class="pa3 pa5-ns">
+<main class="bg-white black-70">
+  <header class="ph3 ph5-ns pt3 bb bt b--black-10 mb4">
     
-      <h1 class="f6 b ttu tracked mt4">articles</h1>
+    <div class="mw9 center">
       
-        <a class="dib mr3 mb2 blue link dim" href="/components/articles/full-bleed-background/index.html">Full Bleed Background</a>
+        <a class="f6 fw6 b dib mr3 mb3 pb1 link hover-blue black-70 ttc"
+           href="#article-lists">Article Lists</a>
       
-        <a class="dib mr3 mb2 blue link dim" href="/components/articles/large-title-text/index.html">Large Title Text</a>
+        <a class="f6 fw6 b dib mr3 mb3 pb1 link hover-blue black-70 ttc"
+           href="#articles">Articles</a>
       
-        <a class="dib mr3 mb2 blue link dim" href="/components/articles/left-title-top-border/index.html">Left Title Top Border</a>
+        <a class="f6 fw6 b dib mr3 mb3 pb1 link hover-blue black-70 ttc"
+           href="#avatars">Avatars</a>
       
-        <a class="dib mr3 mb2 blue link dim" href="/components/articles/left-title/index.html">Left Title</a>
+        <a class="f6 fw6 b dib mr3 mb3 pb1 link hover-blue black-70 ttc"
+           href="#banners">Banners</a>
       
-        <a class="dib mr3 mb2 blue link dim" href="/components/articles/photo-essay/index.html">Photo Essay</a>
+        <a class="f6 fw6 b dib mr3 mb3 pb1 link hover-blue black-70 ttc"
+           href="#buttons">Buttons</a>
       
-        <a class="dib mr3 mb2 blue link dim" href="/components/articles/single-column-large-title/index.html">Single Column Large Title</a>
+        <a class="f6 fw6 b dib mr3 mb3 pb1 link hover-blue black-70 ttc"
+           href="#cards">Cards</a>
       
-        <a class="dib mr3 mb2 blue link dim" href="/components/articles/title-text-image/index.html">Title Text Image</a>
+        <a class="f6 fw6 b dib mr3 mb3 pb1 link hover-blue black-70 ttc"
+           href="#collections">Collections</a>
       
-        <a class="dib mr3 mb2 blue link dim" href="/components/articles/title-text/index.html">Title Text</a>
+        <a class="f6 fw6 b dib mr3 mb3 pb1 link hover-blue black-70 ttc"
+           href="#definition-lists">Definition Lists</a>
       
+        <a class="f6 fw6 b dib mr3 mb3 pb1 link hover-blue black-70 ttc"
+           href="#error-pages">Error Pages</a>
+      
+        <a class="f6 fw6 b dib mr3 mb3 pb1 link hover-blue black-70 ttc"
+           href="#footers">Footers</a>
+      
+        <a class="f6 fw6 b dib mr3 mb3 pb1 link hover-blue black-70 ttc"
+           href="#forms">Forms</a>
+      
+        <a class="f6 fw6 b dib mr3 mb3 pb1 link hover-blue black-70 ttc"
+           href="#headers">Headers</a>
+      
+        <a class="f6 fw6 b dib mr3 mb3 pb1 link hover-blue black-70 ttc"
+           href="#layout">Layout</a>
+      
+        <a class="f6 fw6 b dib mr3 mb3 pb1 link hover-blue black-70 ttc"
+           href="#links">Links</a>
+      
+        <a class="f6 fw6 b dib mr3 mb3 pb1 link hover-blue black-70 ttc"
+           href="#lists">Lists</a>
+      
+        <a class="f6 fw6 b dib mr3 mb3 pb1 link hover-blue black-70 ttc"
+           href="#marketing">Marketing</a>
+      
+        <a class="f6 fw6 b dib mr3 mb3 pb1 link hover-blue black-70 ttc"
+           href="#nav">Nav</a>
+      
+        <a class="f6 fw6 b dib mr3 mb3 pb1 link hover-blue black-70 ttc"
+           href="#pages">Pages</a>
+      
+        <a class="f6 fw6 b dib mr3 mb3 pb1 link hover-blue black-70 ttc"
+           href="#quotes">Quotes</a>
+      
+        <a class="f6 fw6 b dib mr3 mb3 pb1 link hover-blue black-70 ttc"
+           href="#tables">Tables</a>
+      
+        <a class="f6 fw6 b dib mr3 mb3 pb1 link hover-blue black-70 ttc"
+           href="#text">Text</a>
+      
+    </div>
     
-      <h1 class="f6 b ttu tracked mt4">banners</h1>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/banners/basic/index.html">Basic</a>
-      
+  </header>
+  <section>
     
-      <h1 class="f6 b ttu tracked mt4">buttons</h1>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/buttons/basic/index.html">Basic</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/buttons/pill-grow/index.html">Pill Grow</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/buttons/pill/index.html">Pill</a>
-      
+      <div class="ph3 ph5-ns" id="article-lists">
+        <div class="mw9 center">
+          <h3 class="f5 fw6 pb2 bb b--black-10 black-70 ttc">Article Lists</h3>
+        </div>
+      </div>
+      <div class="ph3 ph5-ns mb5">
+        <div class="mw9 center cf">
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/article-lists/title-preview-author-media-flipped/index.html"
+               title="Title Preview Author Media Flipped">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/article-lists/title-preview-author-media-flipped/screenshot.jpg?version=e7d48896dffd3f5aff8ff766386cacff"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Title Preview Author Media Flipped
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/article-lists/title-preview-author-media/index.html"
+               title="Title Preview Author Media">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/article-lists/title-preview-author-media/screenshot.jpg?version=b7275ac4c2b6018cd43c47bc159ad0b0"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Title Preview Author Media
+              </p>
+            </a>
+          
+      </div>
+    </div>
     
-      <h1 class="f6 b ttu tracked mt4">cards</h1>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/cards/album-centered/index.html">Album Centered</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/cards/album-left/index.html">Album Left</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/cards/news-card/index.html">News Card</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/cards/product-card/index.html">Product Card</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/cards/profile-card-title-subtitle/index.html">Profile Card Title Subtitle</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/cards/profile-card/index.html">Profile Card</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/cards/text-card/index.html">Text Card</a>
-      
+      <div class="ph3 ph5-ns" id="articles">
+        <div class="mw9 center">
+          <h3 class="f5 fw6 pb2 bb b--black-10 black-70 ttc">Articles</h3>
+        </div>
+      </div>
+      <div class="ph3 ph5-ns mb5">
+        <div class="mw9 center cf">
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/articles/feature/index.html"
+               title="Feature">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/articles/feature/screenshot.jpg?version=c03163149583d3b9e1558d1d76d86157"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Feature
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/articles/full-bleed-background/index.html"
+               title="Full Bleed Background">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/articles/full-bleed-background/screenshot.jpg?version=fe175b8cc7d8c30fb8313e8a48cd172b"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Full Bleed Background
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/articles/headline-title-text/index.html"
+               title="Headline Title Text">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/articles/headline-title-text/screenshot.jpg?version=b10552f8ce862dccba8ea073a882e4b4"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Headline Title Text
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/articles/large-title-text/index.html"
+               title="Large Title Text">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/articles/large-title-text/screenshot.jpg?version=27380f711c2f3ba71e111189c9d5d5ea"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Large Title Text
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/articles/left-title-top-border/index.html"
+               title="Left Title Top Border">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/articles/left-title-top-border/screenshot.jpg?version=7157a7fcbd70dce44573e4d452f4310c"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Left Title Top Border
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/articles/left-title/index.html"
+               title="Left Title">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/articles/left-title/screenshot.jpg?version=104df56f1a2f890e8bd5e960970afea1"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Left Title
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/articles/photo-essay/index.html"
+               title="Photo Essay">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/articles/photo-essay/screenshot.jpg?version=0331a664d3244966fc22bcb7596d5e7b"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Photo Essay
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/articles/single-column-large-title/index.html"
+               title="Single Column Large Title">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/articles/single-column-large-title/screenshot.jpg?version=9e50188128151dac3db664da0ac15deb"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Single Column Large Title
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/articles/title-highlight-header-cover/index.html"
+               title="Title Highlight Header Cover">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/articles/title-highlight-header-cover/screenshot.jpg?version=3c06484127b97502da945f9d071e7b58"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Title Highlight Header Cover
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/articles/title-text-image/index.html"
+               title="Title Text Image">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/articles/title-text-image/screenshot.jpg?version=e346bbfed946d8780713baa9d08e0220"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Title Text Image
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/articles/title-text/index.html"
+               title="Title Text">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/articles/title-text/screenshot.jpg?version=94d5a0acab16e2522b0f986db23f990a"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Title Text
+              </p>
+            </a>
+          
+      </div>
+    </div>
     
-      <h1 class="f6 b ttu tracked mt4">collections</h1>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/collections/albums/index.html">Albums</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/collections/movies/index.html">Movies</a>
-      
+      <div class="ph3 ph5-ns" id="avatars">
+        <div class="mw9 center">
+          <h3 class="f5 fw6 pb2 bb b--black-10 black-70 ttc">Avatars</h3>
+        </div>
+      </div>
+      <div class="ph3 ph5-ns mb5">
+        <div class="mw9 center cf">
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/avatars/circle-border/index.html"
+               title="Circle Border">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/avatars/circle-border/screenshot.jpg?version=cb0db27a4c651b43cedc9c1a60548a25"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Circle Border
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/avatars/circle/index.html"
+               title="Circle">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/avatars/circle/screenshot.jpg?version=9a9156de442673f455cc26a97a0319ee"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Circle
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/avatars/double-ring/index.html"
+               title="Double Ring">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/avatars/double-ring/screenshot.jpg?version=ee9a835748e0117d1f815ef1b87f95be"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Double Ring
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/avatars/rounded-large/index.html"
+               title="Rounded Large">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/avatars/rounded-large/screenshot.jpg?version=23ba78a345117df1a3d375952f56a85d"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Rounded Large
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/avatars/rounded-medium/index.html"
+               title="Rounded Medium">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/avatars/rounded-medium/screenshot.jpg?version=9a3a529de7bcc267ea610921decd3cfb"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Rounded Medium
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/avatars/rounded-small/index.html"
+               title="Rounded Small">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/avatars/rounded-small/screenshot.jpg?version=d0828a358b35fc085a1db891f0663a92"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Rounded Small
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/avatars/square/index.html"
+               title="Square">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/avatars/square/screenshot.jpg?version=425ecc91c58eae5e1cf8e5e8cf3a1fc3"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Square
+              </p>
+            </a>
+          
+      </div>
+    </div>
     
-      <h1 class="f6 b ttu tracked mt4">footers</h1>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/footers/simple-large-type/index.html">Simple Large Type</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/footers/small-print/index.html">Small Print</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/footers/social-circles/index.html">Social Circles</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/footers/social-text/index.html">Social Text</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/footers/social/index.html">Social</a>
-      
+      <div class="ph3 ph5-ns" id="banners">
+        <div class="mw9 center">
+          <h3 class="f5 fw6 pb2 bb b--black-10 black-70 ttc">Banners</h3>
+        </div>
+      </div>
+      <div class="ph3 ph5-ns mb5">
+        <div class="mw9 center cf">
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/banners/basic/index.html"
+               title="Basic">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/banners/basic/screenshot.jpg?version=f5a23177f0f48205e01cc21a3893ec3d"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Basic
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/banners/info/index.html"
+               title="Info">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/banners/info/screenshot.jpg?version=8e52329b8b34e53f87b32cf86846bf5e"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Info
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/banners/single-cta/index.html"
+               title="Single Cta">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/banners/single-cta/screenshot.jpg?version=6fa64a425de89988fd9d8f207a90a817"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Single Cta
+              </p>
+            </a>
+          
+      </div>
+    </div>
     
-      <h1 class="f6 b ttu tracked mt4">headers</h1>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/headers/circle-avatar-title-subtitle/index.html">Circle Avatar Title Subtitle</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/headers/fixed-semi-transparent/index.html">Fixed Semi Transparent</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/headers/rounded-avatar-title-subtitle/index.html">Rounded Avatar Title Subtitle</a>
-      
+      <div class="ph3 ph5-ns" id="buttons">
+        <div class="mw9 center">
+          <h3 class="f5 fw6 pb2 bb b--black-10 black-70 ttc">Buttons</h3>
+        </div>
+      </div>
+      <div class="ph3 ph5-ns mb5">
+        <div class="mw9 center cf">
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/buttons/basic-previous-next/index.html"
+               title="Basic Previous Next">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/buttons/basic-previous-next/screenshot.jpg?version=4bc963516c3b4c6ce9694c835f0a3172"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Basic Previous Next
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/buttons/basic-rounded-extra-small/index.html"
+               title="Basic Rounded Extra Small">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/buttons/basic-rounded-extra-small/screenshot.jpg?version=01c10412976226afdefc9095ada3f8fb"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Basic Rounded Extra Small
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/buttons/basic-rounded-small/index.html"
+               title="Basic Rounded Small">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/buttons/basic-rounded-small/screenshot.jpg?version=288bee2800f3dfa0bfaa5775bb9f1c0c"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Basic Rounded Small
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/buttons/basic-rounded/index.html"
+               title="Basic Rounded">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/buttons/basic-rounded/screenshot.jpg?version=b47fd033e0a58053c53dbc45a6354b9e"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Basic Rounded
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/buttons/basic/index.html"
+               title="Basic">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/buttons/basic/screenshot.jpg?version=7308ccff611bc6af06fd13a29eb10c86"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Basic
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/buttons/centered-icons/index.html"
+               title="Centered Icons">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/buttons/centered-icons/screenshot.jpg?version=43f27951296f9bca81f68efe7a63f861"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Centered Icons
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/buttons/pill-grow/index.html"
+               title="Pill Grow">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/buttons/pill-grow/screenshot.jpg?version=3cae05532a11142cbb0105ec990862e4"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Pill Grow
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/buttons/pill/index.html"
+               title="Pill">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/buttons/pill/screenshot.jpg?version=d35ed656ff21404a5e3c7436725b9350"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Pill
+              </p>
+            </a>
+          
+      </div>
+    </div>
     
-      <h1 class="f6 b ttu tracked mt4">layout</h1>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/layout/centered-container/index.html">Centered Container</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/layout/flag-object-collapse/index.html">Flag Object Collapse</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/layout/flag-object/index.html">Flag Object</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/layout/four-column-collapse-two/index.html">Four Column Collapse Two</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/layout/four-column/index.html">Four Column</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/layout/two-column-collapse-one/index.html">Two Column Collapse One</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/layout/two-column/index.html">Two Column</a>
-      
+      <div class="ph3 ph5-ns" id="cards">
+        <div class="mw9 center">
+          <h3 class="f5 fw6 pb2 bb b--black-10 black-70 ttc">Cards</h3>
+        </div>
+      </div>
+      <div class="ph3 ph5-ns mb5">
+        <div class="mw9 center cf">
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/cards/album-centered/index.html"
+               title="Album Centered">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/cards/album-centered/screenshot.jpg?version=42e5f18fc30dd24c9801c0cae5258bf4"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Album Centered
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/cards/album-left/index.html"
+               title="Album Left">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/cards/album-left/screenshot.jpg?version=af330aa15b5d30637218a8a298435461"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Album Left
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/cards/basic-text-card/index.html"
+               title="Basic Text Card">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/cards/basic-text-card/screenshot.jpg?version=405b7347b2e7446e93f39cbd04acbada"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Basic Text Card
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/cards/news-card/index.html"
+               title="News Card">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/cards/news-card/screenshot.jpg?version=6c109d02bb38e098f763f070bbf35fe3"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                News Card
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/cards/product-card/index.html"
+               title="Product Card">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/cards/product-card/screenshot.jpg?version=de8103560241e0b7ab9709eed107efc1"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Product Card
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/cards/profile-card-title-subtitle/index.html"
+               title="Profile Card Title Subtitle">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/cards/profile-card-title-subtitle/screenshot.jpg?version=7ebf7978dac21037869efe6d793525d0"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Profile Card Title Subtitle
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/cards/profile-card/index.html"
+               title="Profile Card">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/cards/profile-card/screenshot.jpg?version=d2786ea1f9dd1814f5e236ecb93aa500"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Profile Card
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/cards/suggested-profile/index.html"
+               title="Suggested Profile">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/cards/suggested-profile/screenshot.jpg?version=0997746a2c6def1e5b01f03bf6f086f6"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Suggested Profile
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/cards/text-card/index.html"
+               title="Text Card">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/cards/text-card/screenshot.jpg?version=50cfd6345dc5481d48b08e150fd34870"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Text Card
+              </p>
+            </a>
+          
+      </div>
+    </div>
     
-      <h1 class="f6 b ttu tracked mt4">lists</h1>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/lists/border-spaced/index.html">Border Spaced</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/lists/border-tight/index.html">Border Tight</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/lists/large-links-inline/index.html">Large Links Inline</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/lists/links-inline/index.html">Links Inline</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/lists/links-with-borders-inline/index.html">Links With Borders Inline</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/lists/slab-stat-large/index.html">Slab Stat Large</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/lists/slab-stat-small/index.html">Slab Stat Small</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/lists/slab-stat/index.html">Slab Stat</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/lists/title-text/index.html">Title Text</a>
-      
+      <div class="ph3 ph5-ns" id="collections">
+        <div class="mw9 center">
+          <h3 class="f5 fw6 pb2 bb b--black-10 black-70 ttc">Collections</h3>
+        </div>
+      </div>
+      <div class="ph3 ph5-ns mb5">
+        <div class="mw9 center cf">
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/collections/albums/index.html"
+               title="Albums">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/collections/albums/screenshot.jpg?version=e6be8a7470f8673d9e737fffd6146ec0"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Albums
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/collections/movies/index.html"
+               title="Movies">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/collections/movies/screenshot.jpg?version=676c213fd9e49a84e064b63661b1cbbd"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Movies
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/collections/posters-dim/index.html"
+               title="Posters Dim">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/collections/posters-dim/screenshot.jpg?version=9cbb611b5a371317c3320fe3dcc03d5a"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Posters Dim
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/collections/posters/index.html"
+               title="Posters">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/collections/posters/screenshot.jpg?version=33994cbee7748e6c30a02038c2d4ed58"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Posters
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/collections/square-title-subtitle/index.html"
+               title="Square Title Subtitle">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/collections/square-title-subtitle/screenshot.jpg?version=68b47bee52c21c27d5271cd45affc4aa"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Square Title Subtitle
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/collections/vinyl/index.html"
+               title="Vinyl">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/collections/vinyl/screenshot.jpg?version=c3f369646aef3f74a016eba59e1e8b20"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Vinyl
+              </p>
+            </a>
+          
+      </div>
+    </div>
     
-      <h1 class="f6 b ttu tracked mt4">nav</h1>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/nav/large-title-link-list/index.html">Large Title Link List</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/nav/list-overflow/index.html">List Overflow</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/nav/logo-links-inline-collapse/index.html">Logo Links Inline Collapse</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/nav/logo-links-inline/index.html">Logo Links Inline</a>
-      
-        <a class="dib mr3 mb2 blue link dim" href="/components/nav/title-link-list/index.html">Title Link List</a>
-      
+      <div class="ph3 ph5-ns" id="definition-lists">
+        <div class="mw9 center">
+          <h3 class="f5 fw6 pb2 bb b--black-10 black-70 ttc">Definition Lists</h3>
+        </div>
+      </div>
+      <div class="ph3 ph5-ns mb5">
+        <div class="mw9 center cf">
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/definition-lists/inline/index.html"
+               title="Inline">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/definition-lists/inline/screenshot.jpg?version=6b791d3b8c3db22f4e5f8bcc16f461fb"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Inline
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/definition-lists/simple/index.html"
+               title="Simple">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/definition-lists/simple/screenshot.jpg?version=2c8704123ec82504a7b571ef599395c0"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Simple
+              </p>
+            </a>
+          
+      </div>
+    </div>
+    
+      <div class="ph3 ph5-ns" id="error-pages">
+        <div class="mw9 center">
+          <h3 class="f5 fw6 pb2 bb b--black-10 black-70 ttc">Error Pages</h3>
+        </div>
+      </div>
+      <div class="ph3 ph5-ns mb5">
+        <div class="mw9 center cf">
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/error-pages/404/index.html"
+               title="404">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/error-pages/404/screenshot.jpg?version=b66be15d0ab53b422923e717c10fa633"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                404
+              </p>
+            </a>
+          
+      </div>
+    </div>
+    
+      <div class="ph3 ph5-ns" id="footers">
+        <div class="mw9 center">
+          <h3 class="f5 fw6 pb2 bb b--black-10 black-70 ttc">Footers</h3>
+        </div>
+      </div>
+      <div class="ph3 ph5-ns mb5">
+        <div class="mw9 center cf">
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/footers/centered-icons-hover-glow/index.html"
+               title="Centered Icons Hover Glow">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/footers/centered-icons-hover-glow/screenshot.jpg?version=dd599e0abade6cdcc4489b0b3ff02cc9"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Centered Icons Hover Glow
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/footers/inline-text/index.html"
+               title="Inline Text">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/footers/inline-text/screenshot.jpg?version=f70c7eabacd685341cab8d83dd5b3beb"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Inline Text
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/footers/simple-large-type/index.html"
+               title="Simple Large Type">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/footers/simple-large-type/screenshot.jpg?version=913879f2e433c8d2612cd676c8cafbf2"
+                     style="background-repeat: no-repeat;
+                            background-position: left center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Simple Large Type
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/footers/small-print/index.html"
+               title="Small Print">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/footers/small-print/screenshot.jpg?version=3893f4138fc816f436563dd3eea25bd0"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Small Print
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/footers/social-circles/index.html"
+               title="Social Circles">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/footers/social-circles/screenshot.jpg?version=932a64602d7b25652f78bb9c728078bd"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Social Circles
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/footers/social-simple-text/index.html"
+               title="Social Simple Text">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/footers/social-simple-text/screenshot.jpg?version=ce8f082bd4b2d25d3f915e48dd9d1545"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Social Simple Text
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/footers/social-simple/index.html"
+               title="Social Simple">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/footers/social-simple/screenshot.jpg?version=2f48ade9326c1f1a78e8d4db62456905"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Social Simple
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/footers/social-text/index.html"
+               title="Social Text">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/footers/social-text/screenshot.jpg?version=084db43773cb7aac3c6851294dfb4dfb"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Social Text
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/footers/social/index.html"
+               title="Social">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/footers/social/screenshot.jpg?version=01c6ea8dfca8f1dcb61e6b7f31d08f21"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Social
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/footers/studios/index.html"
+               title="Studios">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/footers/studios/screenshot.jpg?version=d917dc6a275f02ac364a319d31565b95"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Studios
+              </p>
+            </a>
+          
+      </div>
+    </div>
+    
+      <div class="ph3 ph5-ns" id="forms">
+        <div class="mw9 center">
+          <h3 class="f5 fw6 pb2 bb b--black-10 black-70 ttc">Forms</h3>
+        </div>
+      </div>
+      <div class="ph3 ph5-ns mb5">
+        <div class="mw9 center cf">
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/forms/checkbox-list/index.html"
+               title="Checkbox List">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/forms/checkbox-list/screenshot.jpg?version=50f5ba37316f8caca83776f7fa8dbdcd"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Checkbox List
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/forms/input-text-label/index.html"
+               title="Input Text Label">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/forms/input-text-label/screenshot.jpg?version=5528a758eabe71c37d02a46eff9d61b4"
+                     style="background-repeat: no-repeat;
+                            background-position: left center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Input Text Label
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/forms/newsletter-subscription/index.html"
+               title="Newsletter Subscription">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/forms/newsletter-subscription/screenshot.jpg?version=9a1b013023ac42c670ab9af6b6872542"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Newsletter Subscription
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/forms/password/index.html"
+               title="Password">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/forms/password/screenshot.jpg?version=e629e1f82ae6fb0d6c3ca0957f2a3c75"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Password
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/forms/sign-in/index.html"
+               title="Sign In">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/forms/sign-in/screenshot.jpg?version=07622bcadfd994b7db9b3416c6fedca7"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Sign In
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/forms/sign-up/index.html"
+               title="Sign Up">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/forms/sign-up/screenshot.jpg?version=ec6c95ad6e8e626788650e073298232b"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Sign Up
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/forms/textarea-label/index.html"
+               title="Textarea Label">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/forms/textarea-label/screenshot.jpg?version=c3f561cfa53b53e69ce1fd8589e98459"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Textarea Label
+              </p>
+            </a>
+          
+      </div>
+    </div>
+    
+      <div class="ph3 ph5-ns" id="headers">
+        <div class="mw9 center">
+          <h3 class="f5 fw6 pb2 bb b--black-10 black-70 ttc">Headers</h3>
+        </div>
+      </div>
+      <div class="ph3 ph5-ns mb5">
+        <div class="mw9 center cf">
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/headers/circle-avatar-title-subtitle/index.html"
+               title="Circle Avatar Title Subtitle">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/headers/circle-avatar-title-subtitle/screenshot.jpg?version=d3cbfd5aad58a9dc271f661feeb0f7d1"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Circle Avatar Title Subtitle
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/headers/rounded-avatar-title-subtitle/index.html"
+               title="Rounded Avatar Title Subtitle">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/headers/rounded-avatar-title-subtitle/screenshot.jpg?version=bb0506fe097eca7c299c9198ded774ae"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Rounded Avatar Title Subtitle
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/headers/startup-hero/index.html"
+               title="Startup Hero">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/headers/startup-hero/screenshot.jpg?version=1dcac22cfd61ac54f7c8452c4d00e7bc"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Startup Hero
+              </p>
+            </a>
+          
+      </div>
+    </div>
+    
+      <div class="ph3 ph5-ns" id="layout">
+        <div class="mw9 center">
+          <h3 class="f5 fw6 pb2 bb b--black-10 black-70 ttc">Layout</h3>
+        </div>
+      </div>
+      <div class="ph3 ph5-ns mb5">
+        <div class="mw9 center cf">
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/aspect-ratio-16x9/index.html"
+               title="Aspect Ratio 16x9">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/aspect-ratio-16x9/screenshot.jpg?version=be654294f94b84a70084370ad4ddf5a5"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Aspect Ratio 16x9
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/aspect-ratio-1x1/index.html"
+               title="Aspect Ratio 1x1">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/aspect-ratio-1x1/screenshot.jpg?version=bfda8736c0829c00185bd432c994905d"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Aspect Ratio 1x1
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/aspect-ratio-3x4/index.html"
+               title="Aspect Ratio 3x4">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/aspect-ratio-3x4/screenshot.jpg?version=c4550cc5e84b6176b5582aa6e5387aad"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Aspect Ratio 3x4
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/aspect-ratio-4x3/index.html"
+               title="Aspect Ratio 4x3">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/aspect-ratio-4x3/screenshot.jpg?version=2fe69e9a95398d6dc9c898d5d3948f5e"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Aspect Ratio 4x3
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/aspect-ratio-4x6/index.html"
+               title="Aspect Ratio 4x6">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/aspect-ratio-4x6/screenshot.jpg?version=75fb93fa306b446ac10d1d0b7a856bb1"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Aspect Ratio 4x6
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/aspect-ratio-5x7/index.html"
+               title="Aspect Ratio 5x7">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/aspect-ratio-5x7/screenshot.jpg?version=c1fabdcab86d0b2950d9d910408d2421"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Aspect Ratio 5x7
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/aspect-ratio-5x8/index.html"
+               title="Aspect Ratio 5x8">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/aspect-ratio-5x8/screenshot.jpg?version=44870fc17d29550c489067ab840cb9f4"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Aspect Ratio 5x8
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/aspect-ratio-6x4/index.html"
+               title="Aspect Ratio 6x4">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/aspect-ratio-6x4/screenshot.jpg?version=7af017b4bf3f744dd6b8fc2e0b856f79"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Aspect Ratio 6x4
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/aspect-ratio-7x5/index.html"
+               title="Aspect Ratio 7x5">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/aspect-ratio-7x5/screenshot.jpg?version=95653c8f11e9aa5603da1de1e923e7b6"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Aspect Ratio 7x5
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/aspect-ratio-8x5/index.html"
+               title="Aspect Ratio 8x5">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/aspect-ratio-8x5/screenshot.jpg?version=f616289950e8b1385dcdd1881fccfb86"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Aspect Ratio 8x5
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/aspect-ratio-9x16/index.html"
+               title="Aspect Ratio 9x16">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/aspect-ratio-9x16/screenshot.jpg?version=21c318b4c33e1a904640f50d4613fe66"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Aspect Ratio 9x16
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/centered-container/index.html"
+               title="Centered Container">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/centered-container/screenshot.jpg?version=d492210d49e8083cd9b22af3a3c1f374"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Centered Container
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/five-column-collapse-alternate/index.html"
+               title="Five Column Collapse Alternate">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/five-column-collapse-alternate/screenshot.jpg?version=26ff78d42b6d04329977cb76daa8f828"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Five Column Collapse Alternate
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/five-column-collapse-asymmetrical/index.html"
+               title="Five Column Collapse Asymmetrical">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/five-column-collapse-asymmetrical/screenshot.jpg?version=2d839aae2bfa118e27d017a74e753379"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Five Column Collapse Asymmetrical
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/five-column-collapse-mixed/index.html"
+               title="Five Column Collapse Mixed">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/five-column-collapse-mixed/screenshot.jpg?version=accaf2b4c008061ac4e70c1c8ff65384"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Five Column Collapse Mixed
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/five-column-collapse-one/index.html"
+               title="Five Column Collapse One">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/five-column-collapse-one/screenshot.jpg?version=f89402d0e8f92d6d01588cd5e7b6e70c"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Five Column Collapse One
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/five-column/index.html"
+               title="Five Column">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/five-column/screenshot.jpg?version=5e88ce6323c51a317cd80872002053c1"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Five Column
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/fixed-table-layout-grid-mixed-rows/index.html"
+               title="Fixed Table Layout Grid Mixed Rows">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/fixed-table-layout-grid-mixed-rows/screenshot.jpg?version=59a4fc1238ccd3189e7edc90b0081411"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Fixed Table Layout Grid Mixed Rows
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/fixed-table-layout-grid/index.html"
+               title="Fixed Table Layout Grid">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/fixed-table-layout-grid/screenshot.jpg?version=b015cdf9fe13a4755f92d85af170ed2b"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Fixed Table Layout Grid
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/flag-object-bottom/index.html"
+               title="Flag Object Bottom">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/flag-object-bottom/screenshot.jpg?version=4d0dd7144c7b82ac0bc6e0ba0ce738d6"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Flag Object Bottom
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/flag-object-collapse/index.html"
+               title="Flag Object Collapse">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/flag-object-collapse/screenshot.jpg?version=4400994a7be2ffc6df7c9e083dc62368"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Flag Object Collapse
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/flag-object-top/index.html"
+               title="Flag Object Top">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/flag-object-top/screenshot.jpg?version=9a7357d0f241a57e89695ee2bd870a1d"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Flag Object Top
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/flag-object/index.html"
+               title="Flag Object">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/flag-object/screenshot.jpg?version=b24c1880e333ca6fc3d7b7876d8d4c08"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Flag Object
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/four-column-collapse-two-collapse-one/index.html"
+               title="Four Column Collapse Two Collapse One">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/four-column-collapse-two-collapse-one/screenshot.jpg?version=6830231a101bdf89587df2cbfef96cb9"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Four Column Collapse Two Collapse One
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/four-column-collapse-two/index.html"
+               title="Four Column Collapse Two">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/four-column-collapse-two/screenshot.jpg?version=573eef78fb69e3b82ff93ba6eff6880c"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Four Column Collapse Two
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/four-column/index.html"
+               title="Four Column">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/four-column/screenshot.jpg?version=1a39054b846ce5874a64b5222ccf1922"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Four Column
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/full-bleed-16x9/index.html"
+               title="Full Bleed 16x9">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/full-bleed-16x9/screenshot.jpg?version=8d0174ab8c8bcbb899a9a599173859e7"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Full Bleed 16x9
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/full-bleed-4x6/index.html"
+               title="Full Bleed 4x6">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/full-bleed-4x6/screenshot.jpg?version=139f0d71a81cb57957fcc740a5f990f4"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Full Bleed 4x6
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/full-bleed-5x7/index.html"
+               title="Full Bleed 5x7">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/full-bleed-5x7/screenshot.jpg?version=300d8cfec9b315e21fcbc79fbde61a59"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Full Bleed 5x7
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/full-bleed-5x8/index.html"
+               title="Full Bleed 5x8">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/full-bleed-5x8/screenshot.jpg?version=934af8b92ae329250b584a1b45cf56d6"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Full Bleed 5x8
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/full-bleed-6x4/index.html"
+               title="Full Bleed 6x4">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/full-bleed-6x4/screenshot.jpg?version=15f2ecd726de7e768ddfe997449518bd"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Full Bleed 6x4
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/full-bleed-7x5/index.html"
+               title="Full Bleed 7x5">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/full-bleed-7x5/screenshot.jpg?version=95941d4b3cc075640e837928932979af"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Full Bleed 7x5
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/full-bleed-8x5/index.html"
+               title="Full Bleed 8x5">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/full-bleed-8x5/screenshot.jpg?version=35b21b3376a56b5501f8fcba2be70393"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Full Bleed 8x5
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/full-bleed-9x16/index.html"
+               title="Full Bleed 9x16">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/full-bleed-9x16/screenshot.jpg?version=4111b5003f6905f1de0f2187487eb0cf"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Full Bleed 9x16
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/full-bleed-square/index.html"
+               title="Full Bleed Square">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/full-bleed-square/screenshot.jpg?version=ab33c333751d132c7a595e3286635c76"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Full Bleed Square
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/full-screen-centered-title/index.html"
+               title="Full Screen Centered Title">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/full-screen-centered-title/screenshot.jpg?version=e28f83dc110d19c1559835980355210a"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Full Screen Centered Title
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/horizontal-aspect-ratios/index.html"
+               title="Horizontal Aspect Ratios">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/horizontal-aspect-ratios/screenshot.jpg?version=1bc302cd27c6f3c0054ce82f21279cb0"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Horizontal Aspect Ratios
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/three-column-collapse-one/index.html"
+               title="Three Column Collapse One">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/three-column-collapse-one/screenshot.jpg?version=ccc07d3097eb859d8a27162d5e5c9eb6"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Three Column Collapse One
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/three-column/index.html"
+               title="Three Column">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/three-column/screenshot.jpg?version=40320f8a0b0e77882d48df56f475a931"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Three Column
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/two-column-collapse-one/index.html"
+               title="Two Column Collapse One">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/two-column-collapse-one/screenshot.jpg?version=fbe82d57c97681a280d26b4ece0ddf16"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Two Column Collapse One
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/layout/two-column/index.html"
+               title="Two Column">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/layout/two-column/screenshot.jpg?version=05e6d1b72b771628ee7479ee2a138a8a"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Two Column
+              </p>
+            </a>
+          
+      </div>
+    </div>
+    
+      <div class="ph3 ph5-ns" id="links">
+        <div class="mw9 center">
+          <h3 class="f5 fw6 pb2 bb b--black-10 black-70 ttc">Links</h3>
+        </div>
+      </div>
+      <div class="ph3 ph5-ns mb5">
+        <div class="mw9 center cf">
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/links/animate-background-color/index.html"
+               title="Animate Background Color">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/links/animate-background-color/screenshot.jpg?version=1302fbde5ea2f8d292f3564fd021741c"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Animate Background Color
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/links/animate-color/index.html"
+               title="Animate Color">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/links/animate-color/screenshot.jpg?version=3d3189bb49e1deac413c87658b9149d4"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Animate Color
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/links/dim-no-underline/index.html"
+               title="Dim No Underline">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/links/dim-no-underline/screenshot.jpg?version=f8208acbc34f8d01bc1ee8e8d0a537e6"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Dim No Underline
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/links/underline-on-hover/index.html"
+               title="Underline On Hover">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/links/underline-on-hover/screenshot.jpg?version=4bf487adf5f90311e80a55008f969489"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Underline On Hover
+              </p>
+            </a>
+          
+      </div>
+    </div>
+    
+      <div class="ph3 ph5-ns" id="lists">
+        <div class="mw9 center">
+          <h3 class="f5 fw6 pb2 bb b--black-10 black-70 ttc">Lists</h3>
+        </div>
+      </div>
+      <div class="ph3 ph5-ns mb5">
+        <div class="mw9 center cf">
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/lists/block-item-dotted-border/index.html"
+               title="Block Item Dotted Border">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/lists/block-item-dotted-border/screenshot.jpg?version=f9c7f7853e17eb17a0ec02b662a5b44c"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Block Item Dotted Border
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/lists/border-spaced/index.html"
+               title="Border Spaced">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/lists/border-spaced/screenshot.jpg?version=c09820c1f48be235ec13e6477f26598f"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Border Spaced
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/lists/border-tight/index.html"
+               title="Border Tight">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/lists/border-tight/screenshot.jpg?version=34c772cf800ec1b02c554fea3cb5ddf4"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Border Tight
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/lists/contact-phone/index.html"
+               title="Contact Phone">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/lists/contact-phone/screenshot.jpg?version=818cb023b937f5f261e863bf0eff41c8"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Contact Phone
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/lists/follower-notifications-rounded-square-avatar/index.html"
+               title="Follower Notifications Rounded Square Avatar">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/lists/follower-notifications-rounded-square-avatar/screenshot.jpg?version=c272e7061bc47ffc42544e3d53543022"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Follower Notifications Rounded Square Avatar
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/lists/follower-notifications/index.html"
+               title="Follower Notifications">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/lists/follower-notifications/screenshot.jpg?version=77df59c9a18b76b29c0d0569a820aaf2"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Follower Notifications
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/lists/hashtags/index.html"
+               title="Hashtags">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/lists/hashtags/screenshot.jpg?version=f5b339430e63f1b01a0b186ad8871a54"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Hashtags
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/lists/items-image-title-price/index.html"
+               title="Items Image Title Price">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/lists/items-image-title-price/screenshot.jpg?version=d44e33669dbb229fed52d2dd798e60a3"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Items Image Title Price
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/lists/large-links-inline/index.html"
+               title="Large Links Inline">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/lists/large-links-inline/screenshot.jpg?version=4c325afc8403e4c2a356e63d4488aec8"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Large Links Inline
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/lists/links-animate-color/index.html"
+               title="Links Animate Color">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/lists/links-animate-color/screenshot.jpg?version=3bdf5a6152efccd7a00d184be0e76f7b"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Links Animate Color
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/lists/links-inline/index.html"
+               title="Links Inline">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/lists/links-inline/screenshot.jpg?version=17c707ab3424e3ee200a35e2d4199860"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Links Inline
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/lists/links-with-borders-inline/index.html"
+               title="Links With Borders Inline">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/lists/links-with-borders-inline/screenshot.jpg?version=3bbdffa4f0a24493f678ce30b1afc293"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Links With Borders Inline
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/lists/slab-stat-large/index.html"
+               title="Slab Stat Large">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/lists/slab-stat-large/screenshot.jpg?version=6b0a21e4a1effe9a0d165f6f9b2bd095"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Slab Stat Large
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/lists/slab-stat-small/index.html"
+               title="Slab Stat Small">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/lists/slab-stat-small/screenshot.jpg?version=4d254d6cdaf6554cbab6df54ad794e6b"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Slab Stat Small
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/lists/slab-stat/index.html"
+               title="Slab Stat">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/lists/slab-stat/screenshot.jpg?version=52d5598ca268d9801e421c77b9f14e55"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Slab Stat
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/lists/title-text/index.html"
+               title="Title Text">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/lists/title-text/screenshot.jpg?version=ee3078989d5cb0629103d89618163a40"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Title Text
+              </p>
+            </a>
+          
+      </div>
+    </div>
+    
+      <div class="ph3 ph5-ns" id="marketing">
+        <div class="mw9 center">
+          <h3 class="f5 fw6 pb2 bb b--black-10 black-70 ttc">Marketing</h3>
+        </div>
+      </div>
+      <div class="ph3 ph5-ns mb5">
+        <div class="mw9 center cf">
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/marketing/iphone-app/index.html"
+               title="Iphone App">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/marketing/iphone-app/screenshot.jpg?version=6dac7ed00cc8a8b98028e24907117542"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Iphone App
+              </p>
+            </a>
+          
+      </div>
+    </div>
+    
+      <div class="ph3 ph5-ns" id="nav">
+        <div class="mw9 center">
+          <h3 class="f5 fw6 pb2 bb b--black-10 black-70 ttc">Nav</h3>
+        </div>
+      </div>
+      <div class="ph3 ph5-ns mb5">
+        <div class="mw9 center cf">
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/nav/fixed-semi-transparent/index.html"
+               title="Fixed Semi Transparent">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/nav/fixed-semi-transparent/screenshot.jpg?version=046199a7215117bdf2db840eda982c12"
+                     style="background-repeat: no-repeat;
+                            background-position: center top;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Fixed Semi Transparent
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/nav/large-title-link-list/index.html"
+               title="Large Title Link List">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/nav/large-title-link-list/screenshot.jpg?version=9bf30f4cbb1248372c91ea37c284fbec"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Large Title Link List
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/nav/list-overflow/index.html"
+               title="List Overflow">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/nav/list-overflow/screenshot.jpg?version=50c4713abddbcc2542f9c95d73191881"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                List Overflow
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/nav/logo-links-inline-collapse/index.html"
+               title="Logo Links Inline Collapse">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/nav/logo-links-inline-collapse/screenshot.jpg?version=a04e0e3b33c671724551bfa11922540b"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Logo Links Inline Collapse
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/nav/logo-links-inline/index.html"
+               title="Logo Links Inline">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/nav/logo-links-inline/screenshot.jpg?version=7df5b4141af9e7880822abb083f780d0"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Logo Links Inline
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/nav/logo-titles-links-centered/index.html"
+               title="Logo Titles Links Centered">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/nav/logo-titles-links-centered/screenshot.jpg?version=9b911a7bb8e63da499380909dbaced37"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Logo Titles Links Centered
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/nav/minimal-sign-up/index.html"
+               title="Minimal Sign Up">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/nav/minimal-sign-up/screenshot.jpg?version=8eda9e6ed689e6df126c01274ec3c4fa"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Minimal Sign Up
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/nav/title-link-list/index.html"
+               title="Title Link List">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/nav/title-link-list/screenshot.jpg?version=dd081c6a2ddec9d0267f17b75218284b"
+                     style="background-repeat: no-repeat;
+                            background-position: left center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Title Link List
+              </p>
+            </a>
+          
+      </div>
+    </div>
+    
+      <div class="ph3 ph5-ns" id="pages">
+        <div class="mw9 center">
+          <h3 class="f5 fw6 pb2 bb b--black-10 black-70 ttc">Pages</h3>
+        </div>
+      </div>
+      <div class="ph3 ph5-ns mb5">
+        <div class="mw9 center cf">
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/pages/4x4-mixed-grid/index.html"
+               title="4x4 Mixed Grid">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/pages/4x4-mixed-grid/screenshot.jpg?version=22da139ca61dcc25b66bd41cb373fa2f"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                4x4 Mixed Grid
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/pages/double/index.html"
+               title="Double">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/pages/double/screenshot.jpg?version=9317070167f5c3cb9c518ff3c7dfb234"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Double
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/pages/portfolio-project/index.html"
+               title="Portfolio Project">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/pages/portfolio-project/screenshot.jpg?version=edd25bb7f43ec6b854da7e7188d743d4"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Portfolio Project
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/pages/swiss-cover-five-columns/index.html"
+               title="Swiss Cover Five Columns">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/pages/swiss-cover-five-columns/screenshot.jpg?version=4e4a2677fc95251805c0c1d7d1a17953"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Swiss Cover Five Columns
+              </p>
+            </a>
+          
+      </div>
+    </div>
+    
+      <div class="ph3 ph5-ns" id="quotes">
+        <div class="mw9 center">
+          <h3 class="f5 fw6 pb2 bb b--black-10 black-70 ttc">Quotes</h3>
+        </div>
+      </div>
+      <div class="ph3 ph5-ns mb5">
+        <div class="mw9 center cf">
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/quotes/left-border/index.html"
+               title="Left Border">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/quotes/left-border/screenshot.jpg?version=e61cabfc3ce045c8a3c643e5e4a9b9b3"
+                     style="background-repeat: no-repeat;
+                            background-position: left center;
+                            background-size: auto;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Left Border
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/quotes/pull-quote/index.html"
+               title="Pull Quote">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/quotes/pull-quote/screenshot.jpg?version=3e0e06bddfdb0f386ba717f71e80a7f2"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Pull Quote
+              </p>
+            </a>
+          
+      </div>
+    </div>
+    
+      <div class="ph3 ph5-ns" id="tables">
+        <div class="mw9 center">
+          <h3 class="f5 fw6 pb2 bb b--black-10 black-70 ttc">Tables</h3>
+        </div>
+      </div>
+      <div class="ph3 ph5-ns mb5">
+        <div class="mw9 center cf">
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/tables/basic/index.html"
+               title="Basic">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/tables/basic/screenshot.jpg?version=dd36e80c6266d09f13769c1975fa41bd"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Basic
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/tables/striped-dark/index.html"
+               title="Striped Dark">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/tables/striped-dark/screenshot.jpg?version=f59036ba56ddbc64a1dd1965f6a5c29c"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Striped Dark
+              </p>
+            </a>
+          
+      </div>
+    </div>
+    
+      <div class="ph3 ph5-ns" id="text">
+        <div class="mw9 center">
+          <h3 class="f5 fw6 pb2 bb b--black-10 black-70 ttc">Text</h3>
+        </div>
+      </div>
+      <div class="ph3 ph5-ns mb5">
+        <div class="mw9 center cf">
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/text/large-paragraph/index.html"
+               title="Large Paragraph">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/text/large-paragraph/screenshot.jpg?version=5d9aef90925d60806f2ba3eaf67bda9f"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Large Paragraph
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/text/narrow-paragraph/index.html"
+               title="Narrow Paragraph">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/text/narrow-paragraph/screenshot.jpg?version=f155e10c8ddfd3fb41a8dde8c5cd8782"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Narrow Paragraph
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/text/paragraph/index.html"
+               title="Paragraph">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/text/paragraph/screenshot.jpg?version=7badaaeee8292b60093a8ad572ba0fef"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Paragraph
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/text/small-narrow-paragraph/index.html"
+               title="Small Narrow Paragraph">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/text/small-narrow-paragraph/screenshot.jpg?version=e3312fa5056bb4a4e4aaa24382b6cd64"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Small Narrow Paragraph
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/text/small-paragraph/index.html"
+               title="Small Paragraph">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/text/small-paragraph/screenshot.jpg?version=c3c31369836b2633459e1832a722f53d"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Small Paragraph
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/text/title-subtitle-centered/index.html"
+               title="Title Subtitle Centered">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/text/title-subtitle-centered/screenshot.jpg?version=815a9f165cbba2ab99332de8f079c457"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Title Subtitle Centered
+              </p>
+            </a>
+          
+            <a class="db pointer link underline-hover black-70 fl w-50 w-third-m w-25-l pb2 pr2 border-box"
+               href="/components/text/wide-paragraph/index.html"
+               title="Wide Paragraph">
+              <div class="ba b--black-20 aspect-ratio aspect-ratio--4x3">
+                <div class="aspect-ratio--object lazyload"
+                     data-bg="/components/text/wide-paragraph/screenshot.jpg?version=386296cb39934ed447d51eebd127254e"
+                     style="background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;">
+                </div>
+              </div>
+              <p class="f6 truncate">
+                Wide Paragraph
+              </p>
+            </a>
+          
+      </div>
+    </div>
     
   </section>
 </main>
 
-  <footer class="bg-washed-blue black-70 ph3 ph5-ns pv5 pv6-ns bt b--black-10">
-  <a href="https://twitter.com/intent/tweet?text=Tachyons: Functional css for humans.&url=http://tachyons.io" target="_blank" class="dn mb3 twitter bg-white-50 link dim br2 ph2 pb1 pt0 lh-solid" style="background-color: #55acee;">
+  <footer class="bg-white black-70 ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+  <div class="mw9 center">
+  <div class="mb5 lh-copy">
+    <a class="black-70 link hover-blue b dib mr3 mb3" href="/" title="Home">
+      Home
+    </a>
+    <a class="black-70 link hover-blue b dib mr3 mb3" href="/docs" title="Docs">
+      Docs
+    </a>
+    <a class="black-70 link hover-blue b dib mr3 mb3" href="/components/" title="Components">
+      Components
+    </a>
+    <a class="black-70 link hover-blue b dib mr3 mb3" href="/gallery/" title="Gallery of Sites built with Tachyons">
+      Gallery
+    </a>
+    <a class="black-70 link hover-blue b dib mr3 mb3" href="/resources/" title="Resources related to Tachyons">
+      Resources
+    </a>
+    <a class="black-70 link hover-blue b dib mr3 mb3" href="/xray/" title="The X-Ray chrome extension for aligning things to a grid.">
+      X-Ray
+    </a>
+    <a class="black-70 link hover-blue b dib mr3 mb3" href="http://opencollective.com/tachyons" title="Support Tachyons Development">
+      Supporting Tachyons
+    </a>
+  </div>
+  <article class="v-top">
+    <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+    <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+  <a href="https://twitter.com/intent/tweet?text=Tachyons: A functional css toolkit for designing in the browser.&url=http://tachyons.io" class="twitter bg-white-50 link dib dim br2 ph2 pb1 lh-solid v-top" style="background-color: #55acee;">
     <svg class="geomicon dib v-mid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="#fff">
       <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
     </svg>
     <span class="dib v-mid white fw6" style="font-size: 12px;">Tweet</span>
   </a>
-  <div class="mb4">
-    <a class="black-70 link dim b dib mr3" href="/" title="Home">
-      Home
-    </a>
-    <a class="black-70 link dim b dib mr3" href="/docs" title="Docs">
-      Docs
-    </a>
-    <a class="black-70 link dim b dib mr3" href="/components/" title="Components">
-      Components
-    </a>
-  </div>
-  <article>
-    <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-    <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
   </article>
   <div class="mt4">
-    <a class="ba black-70 link br2 dim b dib mr3 mb3 pv2 ph3" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
-      Join our Slack Channel
+    <a class="ba black-70 no-underline grow br2 b inline-flex items-center mr3 mb3 pv2 ph3" href="https://twitter.com/tachyons_css" title="Follow us on Twitter">
+      <div class="w2 pv1 pr2">
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.375-1.337.648-2.085.795-.598-.638-1.45-1.036-2.396-1.036-1.812 0-3.282 1.468-3.282 3.28 0 .258.03.51.085.75C5.152 5.39 2.733 4.084 1.114 2.1.83 2.583.67 3.147.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.416-.02-.617-.058.418 1.304 1.63 2.253 3.067 2.28-1.124.88-2.54 1.404-4.077 1.404-.265 0-.526-.015-.783-.045 1.453.93 3.178 1.474 5.032 1.474 6.038 0 9.34-5 9.34-9.338 0-.143-.004-.284-.01-.425.64-.463 1.198-1.04 1.638-1.7z" fill-rule="nonzero"/></svg>
+</div>
+      <span>Follow @tachyons_css</span>
     </a>
-    <a class="ba br2 black-70 link dim b dib pv2 ph3  mb3" href="https://github.com/tachyons-css/tachyons/issues" title="File a bug, request a feature, ask a question!">
-      Open an Issue
+    <a class="ba black-70 no-underline grow br2 b inline-flex items-center mr3 mb3 pv2 ph3" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
+      <div class="dib w2 pv1 pr2">
+      <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><g fill-rule="nonzero"><path d="M6.586 7.33l.69 2.057 2.137-.716-.69-2.056-2.137.716z"/><path d="M12.55 9.37l-1.037.347.36 1.073c.145.434-.09.904-.524 1.05-.096.03-.19.045-.287.042-.338-.01-.65-.226-.765-.566l-.36-1.072-2.138.716.36 1.072c.145.435-.09.905-.523 1.05-.096.032-.192.045-.286.043-.34-.01-.65-.226-.764-.566l-.36-1.075-1.037.348c-.096.03-.19.045-.286.042-.34-.008-.65-.226-.765-.565-.146-.434.09-.904.522-1.05L5.7 9.914l-.69-2.058-1.037.347c-.094.032-.19.045-.285.043-.338-.01-.65-.226-.765-.566-.145-.434.09-.904.523-1.05l1.037-.347-.36-1.073c-.145-.434.09-.904.524-1.05.435-.145.905.09 1.05.524l.36 1.072 2.137-.716-.36-1.072c-.144-.435.09-.905.524-1.05.435-.145.906.09 1.05.523l.36 1.075 1.037-.347c.434-.146.904.088 1.05.522.145.434-.09.904-.523 1.05l-1.037.347.69 2.057 1.036-.347c.435-.145.905.09 1.05.523.146.434-.09.904-.522 1.05zm2.78-3.57C13.68.304 11.298-.98 5.8.67.304 2.32-.98 4.7.67 10.2c1.65 5.497 4.03 6.78 9.53 5.13 5.497-1.65 6.78-4.03 5.13-9.53z"/></g></svg>
+    </div>
+        <span>
+          Need Help? Join our Slack Channel
+        </span>
+    </a>
+    <a class="ba br2 black-70 no-underline grow b inline-flex items-center mb3 pv2 ph3" href="https://github.com/tachyons-css/tachyons/issues" title="File a bug, request a feature, ask a question!">
+      <div class="w2 pv1 pr2">
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.083-.202-.358-1.015.077-2.117 0 0 .672-.215 2.2.82.638-.178 1.323-.266 2.003-.27.68.004 1.364.092 2.003.27 1.527-1.035 2.198-.82 2.198-.82.437 1.102.163 1.915.08 2.117.513.56.823 1.274.823 2.147 0 3.073-1.87 3.75-3.653 3.947.287.246.543.735.543 1.48 0 1.07-.01 1.933-.01 2.195 0 .215.144.463.55.385C13.71 14.53 16 11.534 16 8c0-4.418-3.582-8-8-8"/></svg>
+</div>
+      <span>Open an Issue on GitHub</span>
     </a>
   </div>
-  <p class="measure copy lh-copy">
+  <p class="f6 measure copy lh-copy">
     Have a question? Need help? Feel free to open an issue on GitHub or ask a
-    question in our slack channel. We're here to try and help make designing in
+    question in our slack channel. We’re here to try and help make designing in
     the browser fun.
   </p>
   <div class="pt4 cf mw5">
@@ -227,9 +2918,10 @@
     that always moves faster than light.
     The word comes from the Greek:
     <br> <br>
-    ταχύς or tachys, meaning "swift, quick, fast, rapid"
+    ταχύς or tachys, meaning “swift, quick, fast, rapid”
   </small>
 
+</div>
 </footer>
 
       <script>

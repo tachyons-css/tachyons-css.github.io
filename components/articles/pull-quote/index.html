@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TACHYONS - Articles Pull Quote</title>
+<meta name="description" content="Tachyons Component">
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="author" content="@mrmrs">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/tachyons.min.css">
+<style>
+  .blue { color: #0074D9; }
+  .bg-blue { background-color: #0074D9; }
+
+  .carbon-poweredby { width: 100%; font-size: 12px; float: left; }
+  .carbon-wrap { float: left; width: 100%; box-sizing: border-box; }
+  .carbon-img  { float: left; width: 50%;  box-sizing: border-box; }
+  .carbon-text  { float: left; width: 50%; padding-left: 16px; box-sizing: border-box; font-size: 12px; }
+
+  #carbonads a:link { text-decoration: none!important; color: #222!important; }
+
+</style>
+
+</head>
+<body class="w-100 sans-serif bg-white">
+<main>
+  <article class="athelas pa4">
+  <p class="f6 f4-ns lh-copy measure center">
+    The form of our letters, the older handwriting and inscriptions as much as
+    the cuttings in use today, reflects a convention that has slowly solidified,
+    an agreement hardened in many battles. Even after the Renaissance several
+    European countries retained broken, blackletter national scripts in opposition to roman, the obligatory type for all Latin material; yet even today, I hope, the last word about Fraktur has not been spoken. 
+  </p>
+  <blockquote class="ph0 f4 f1-ns measure-narrow center">
+    <p class="fw9 lh-copy lh-title-ns">The punches of Claude Garamond, cut around 1530 in Paris, are simply unsurpassed in their clarity, readability and beauty. 
+    </p>
+  </blockquote>
+  <p class="f6 f4-ns lh-copy measure center">
+    Apart from that, the roman minuscule has been our way of writing for hundreds
+    of years. What followed were merely fashionable variations, here and there even
+    deformations, of the noble basic form, but no improvement whatever. The
+    punches of Claude Garamond, cut around 1530 in Paris, are simply unsurpassed in
+    their clarity, readability and beauty. Garamond appeared on the scene at a
+    time when the occidental book, as an object, cast off its medieval
+    ponderousness and took up the form which today is still the best: the slender
+    and upright rectangular body, comprising folded sheets stitched or sewn at
+    the back, in a cover whose protruding edges protect the trimmed pages.
+  </p>
+
+</article>
+
+  <section data-name="component-info" class="pa3 pa5-ns bt b--black-10 black-70 bg-white">
+  <h1 class="f4 f3-ns mt4">Pull Quote</h1>
+<div class="cf">
+<div class="fl w-100 w-75-ns pr0 pr2-ns">
+<h2 class="f5">HTML</h2>
+<p class="f5 black-70"></p>
+<pre class="pa3 ba br2 b--black-10 h5 bg-white-20" id="html">
+&lt;article class=&quot;athelas pa4&quot;&gt;
+  &lt;p class=&quot;f6 f4-ns lh-copy measure center&quot;&gt;
+    The form of our letters, the older handwriting and inscriptions as much as
+    the cuttings in use today, reflects a convention that has slowly solidified,
+    an agreement hardened in many battles. Even after the Renaissance several
+    European countries retained broken, blackletter national scripts in opposition to roman, the obligatory type for all Latin material; yet even today, I hope, the last word about Fraktur has not been spoken. 
+  &lt;/p&gt;
+  &lt;blockquote class=&quot;ph0 f4 f1-ns measure-narrow center&quot;&gt;
+    &lt;p class=&quot;fw9 lh-copy lh-title-ns&quot;&gt;The punches of Claude Garamond, cut around 1530 in Paris, are simply unsurpassed in their clarity, readability and beauty. 
+    &lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;p class=&quot;f6 f4-ns lh-copy measure center&quot;&gt;
+    Apart from that, the roman minuscule has been our way of writing for hundreds
+    of years. What followed were merely fashionable variations, here and there even
+    deformations, of the noble basic form, but no improvement whatever. The
+    punches of Claude Garamond, cut around 1530 in Paris, are simply unsurpassed in
+    their clarity, readability and beauty. Garamond appeared on the scene at a
+    time when the occidental book, as an object, cast off its medieval
+    ponderousness and took up the form which today is still the best: the slender
+    and upright rectangular body, comprising folded sheets stitched or sewn at
+    the back, in a cover whose protruding edges protect the trimmed pages.
+  &lt;/p&gt;
+
+&lt;/article&gt;
+
+</pre>
+</div>
+<div class="fl w-100 w-25-ns pl0 pl2-ns">
+<h2 class="f5">css</h2>
+<pre class="pa3 ba br2 b--black-10 h5" id="css">.athelas {
+    font-family: athelas, georgia, serif;
+}
+
+.fw9 {
+    font-weight: 900;
+}
+
+.lh-copy {
+    line-height: 1.5;
+}
+
+.pa4 {
+    padding: 2rem;
+}
+
+.ph0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.f4 {
+    font-size: 1.25rem;
+}
+
+.f6 {
+    font-size: .875rem;
+}
+
+.measure {
+    max-width: 30em;
+}
+
+.measure-narrow {
+    max-width: 20em;
+}
+
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (min-width: 30em) {
+    .lh-title-ns {
+        line-height: 1.25;
+    }
+
+    .f1-ns {
+        font-size: 3rem;
+    }
+
+    .f4-ns {
+        font-size: 1.25rem;
+    }
+}
+
+</pre>
+</div>
+</div>
+<div class="cf">
+  <div class="fl w-100">
+    <h2 class="f5 mb3 mt4">Css stats for this component</h2>
+    <dl class="dib mr4 mt0">
+      <dt class="db f6">Gzipped Size</dt>
+      <dd class="ml0 b f3 f2-ns">272<small class="f6">B</small>
+      </dd>
+    </dl>
+    <dl class="dib mr4 mt0">
+      <dt class="db f6">Selectors</dt>
+      <dd class="ml0 b f3 f2-ns">13</dd>
+    </dl>
+    <dl class="dib mt0">
+      <dt class="db f6">Declarations</dt>
+      <dd class="ml0 b f3 f2-ns">15</dd>
+    </dl>
+  </div>
+  <div class="fl w-100">
+    <h2 class="f5 mt4">Modules referenced</h2>
+    <ul class="list pl0 cf lh-copy mw7">
+      
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-font-family">tachyons-font-family</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-font-weight">tachyons-font-weight</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-line-height">tachyons-line-height</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-spacing">tachyons-spacing</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-type-scale">tachyons-type-scale</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-typography">tachyons-typography</a></li>
+  
+    <li class="fl w-100 w-50-m w-33-ns"><a class="f5 link dim blue fw6" href="https://github.com/tachyons-css/tachyons-utilities">tachyons-utilities</a></li>
+  
+    </ul>
+  </div>
+</div>
+
+  
+
+
+  <h4 class="mt5">Install via npm <small class="fw2 f6 db mt1">Only installs the needed tachyons-modules for this component</small></h4>
+  <code class="f6">npm i --save tachyons-font-family tachyons-font-weight tachyons-line-height tachyons-spacing tachyons-type-scale tachyons-typography tachyons-utilities</code>
+  <section class="bt b--black-10 mt5 pv4">
+    <h1 class="f6 b ttu">Other Components</h1>
+
+  
+    <div>
+      <h2 class="f5 mb2 ttc mid-gray">articles</h2>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/articles/feature/index.html">Feature</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/articles/full-bleed-background/index.html">Full Bleed Background</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/articles/large-title-text/index.html">Large Title Text</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/articles/left-title-top-border/index.html">Left Title Top Border</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/articles/left-title/index.html">Left Title</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/articles/photo-essay/index.html">Photo Essay</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/articles/pull-quote/index.html">Pull Quote</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/articles/single-column-large-title/index.html">Single Column Large Title</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/articles/title-text-image/index.html">Title Text Image</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/articles/title-text/index.html">Title Text</a>
+      
+    </div>
+  
+    <div>
+      <h2 class="f5 mb2 ttc mid-gray">banners</h2>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/banners/basic/index.html">Basic</a>
+      
+    </div>
+  
+    <div>
+      <h2 class="f5 mb2 ttc mid-gray">buttons</h2>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/buttons/basic/index.html">Basic</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/buttons/pill-grow/index.html">Pill Grow</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/buttons/pill/index.html">Pill</a>
+      
+    </div>
+  
+    <div>
+      <h2 class="f5 mb2 ttc mid-gray">cards</h2>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/cards/album-centered/index.html">Album Centered</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/cards/album-left/index.html">Album Left</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/cards/news-card/index.html">News Card</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/cards/product-card/index.html">Product Card</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/cards/profile-card-title-subtitle/index.html">Profile Card Title Subtitle</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/cards/profile-card/index.html">Profile Card</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/cards/text-card/index.html">Text Card</a>
+      
+    </div>
+  
+    <div>
+      <h2 class="f5 mb2 ttc mid-gray">collections</h2>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/collections/albums/index.html">Albums</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/collections/movies/index.html">Movies</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/collections/posters/index.html">Posters</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/collections/square-title-subtitle/index.html">Square Title Subtitle</a>
+      
+    </div>
+  
+    <div>
+      <h2 class="f5 mb2 ttc mid-gray">definition-lists</h2>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/definition-lists/simple/index.html">Simple</a>
+      
+    </div>
+  
+    <div>
+      <h2 class="f5 mb2 ttc mid-gray">footers</h2>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/footers/simple-large-type/index.html">Simple Large Type</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/footers/small-print/index.html">Small Print</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/footers/social-circles/index.html">Social Circles</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/footers/social-text/index.html">Social Text</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/footers/social/index.html">Social</a>
+      
+    </div>
+  
+    <div>
+      <h2 class="f5 mb2 ttc mid-gray">forms</h2>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/forms/newsletter-subscription/index.html">Newsletter Subscription</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/forms/sign-in/index.html">Sign In</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/forms/sign-up/index.html">Sign Up</a>
+      
+    </div>
+  
+    <div>
+      <h2 class="f5 mb2 ttc mid-gray">headers</h2>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/headers/circle-avatar-title-subtitle/index.html">Circle Avatar Title Subtitle</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/headers/rounded-avatar-title-subtitle/index.html">Rounded Avatar Title Subtitle</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/headers/startup-hero/index.html">Startup Hero</a>
+      
+    </div>
+  
+    <div>
+      <h2 class="f5 mb2 ttc mid-gray">layout</h2>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/aspect-ratio-16x9/index.html">Aspect Ratio 16x9</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/aspect-ratio-1x1/index.html">Aspect Ratio 1x1</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/aspect-ratio-3x4/index.html">Aspect Ratio 3x4</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/aspect-ratio-4x3/index.html">Aspect Ratio 4x3</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/aspect-ratio-4x6/index.html">Aspect Ratio 4x6</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/aspect-ratio-5x7/index.html">Aspect Ratio 5x7</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/aspect-ratio-5x8/index.html">Aspect Ratio 5x8</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/aspect-ratio-6x4/index.html">Aspect Ratio 6x4</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/aspect-ratio-7x5/index.html">Aspect Ratio 7x5</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/aspect-ratio-8x5/index.html">Aspect Ratio 8x5</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/aspect-ratio-9x16/index.html">Aspect Ratio 9x16</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/centered-container/index.html">Centered Container</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/five-column-collapse-alternate/index.html">Five Column Collapse Alternate</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/five-column-collapse-asymmetrical/index.html">Five Column Collapse Asymmetrical</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/five-column-collapse-mixed/index.html">Five Column Collapse Mixed</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/five-column-collapse-one/index.html">Five Column Collapse One</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/five-column/index.html">Five Column</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/fixed-table-layout-grid-mixed-rows/index.html">Fixed Table Layout Grid Mixed Rows</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/fixed-table-layout-grid/index.html">Fixed Table Layout Grid</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/flag-object-bottom/index.html">Flag Object Bottom</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/flag-object-collapse/index.html">Flag Object Collapse</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/flag-object-top/index.html">Flag Object Top</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/flag-object/index.html">Flag Object</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/four-column-collapse-two-collapse-one/index.html">Four Column Collapse Two Collapse One</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/four-column-collapse-two/index.html">Four Column Collapse Two</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/four-column/index.html">Four Column</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/full-bleed-16x9/index.html">Full Bleed 16x9</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/full-bleed-4x6/index.html">Full Bleed 4x6</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/full-bleed-5x7/index.html">Full Bleed 5x7</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/full-bleed-5x8/index.html">Full Bleed 5x8</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/full-bleed-6x4/index.html">Full Bleed 6x4</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/full-bleed-7x5/index.html">Full Bleed 7x5</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/full-bleed-8x5/index.html">Full Bleed 8x5</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/full-bleed-9x16/index.html">Full Bleed 9x16</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/full-bleed-square/index.html">Full Bleed Square</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/full-screen-centered-title/index.html">Full Screen Centered Title</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/horizontal-aspect-ratios/index.html">Horizontal Aspect Ratios</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/three-column-collapse-one/index.html">Three Column Collapse One</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/three-column/index.html">Three Column</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/two-column-collapse-one/index.html">Two Column Collapse One</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/layout/two-column/index.html">Two Column</a>
+      
+    </div>
+  
+    <div>
+      <h2 class="f5 mb2 ttc mid-gray">lists</h2>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/lists/border-spaced/index.html">Border Spaced</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/lists/border-tight/index.html">Border Tight</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/lists/follower-notifications-rounded-square-avatar/index.html">Follower Notifications Rounded Square Avatar</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/lists/follower-notifications/index.html">Follower Notifications</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/lists/hashtags/index.html">Hashtags</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/lists/items-image-title-price/index.html">Items Image Title Price</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/lists/large-links-inline/index.html">Large Links Inline</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/lists/links-inline/index.html">Links Inline</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/lists/links-with-borders-inline/index.html">Links With Borders Inline</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/lists/slab-stat-large/index.html">Slab Stat Large</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/lists/slab-stat-small/index.html">Slab Stat Small</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/lists/slab-stat/index.html">Slab Stat</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/lists/title-text/index.html">Title Text</a>
+      
+    </div>
+  
+    <div>
+      <h2 class="f5 mb2 ttc mid-gray">nav</h2>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/nav/fixed-semi-transparent/index.html">Fixed Semi Transparent</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/nav/large-title-link-list/index.html">Large Title Link List</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/nav/list-overflow/index.html">List Overflow</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/nav/logo-links-inline-collapse/index.html">Logo Links Inline Collapse</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/nav/logo-links-inline/index.html">Logo Links Inline</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/nav/logo-titles-links-centered/index.html">Logo Titles Links Centered</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/nav/title-link-list/index.html">Title Link List</a>
+      
+    </div>
+  
+    <div>
+      <h2 class="f5 mb2 ttc mid-gray">pages</h2>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/pages/4x4-mixed-grid/index.html">4x4 Mixed Grid</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/pages/double/index.html">Double</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/pages/swiss-cover-five-columns/index.html">Swiss Cover Five Columns</a>
+      
+    </div>
+  
+    <div>
+      <h2 class="f5 mb2 ttc mid-gray">text</h2>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/text/large-paragraph/index.html">Large Paragraph</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/text/narrow-paragraph/index.html">Narrow Paragraph</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/text/paragraph/index.html">Paragraph</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/text/small-narrow-paragraph/index.html">Small Narrow Paragraph</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/text/small-paragraph/index.html">Small Paragraph</a>
+      
+        <a class="f5 dib mr3 mb2 blue link dim fw6" href="/components/text/wide-paragraph/index.html">Wide Paragraph</a>
+      
+    </div>
+  
+  </section>
+  </section>
+</main>
+
+  
+
+	<script src="/js/highlight.min.js"></script>
+<script>
+  hljs.highlightBlock(document.querySelector('#css'))
+  hljs.highlightBlock(document.querySelector('#html'))
+</script>
+<style>
+/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #111;
+  color: rgba(0,0,0,.7);
+  background-color: #fff;
+  background-color: rgba(255,255,255,.2);
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #333;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #006C71;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #C64774;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-type,
+.hljs-class .hljs-title {
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: #00449E;
+  font-weight: normal;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: #009926;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #990073;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #0086b3;
+}
+
+.hljs-meta {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+</style>
+
+  <footer class="bg-white black-70 ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+  <div class="mw9 center">
+  <div class="mb5">
+    <a class="black-70 link dim b dib mr3" href="/" title="Home">
+      Home
+    </a>
+    <a class="black-70 link dim b dib mr3" href="/docs" title="Docs">
+      Docs
+    </a>
+    <a class="black-70 link dim b dib mr3" href="/components/" title="Components">
+      Components
+    </a>
+  </div>
+  <article class="v-top">
+    <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+    <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+  <a href="https://twitter.com/intent/tweet?text=Tachyons: A functional css toolkit for designing in the browser.&url=http://tachyons.io" class="twitter bg-white-50 link dib dim br2 ph2 pb1 lh-solid v-top" style="background-color: #55acee;">
+    <svg class="geomicon dib v-mid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="#fff">
+      <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
+    </svg>
+    <span class="dib v-mid white fw6" style="font-size: 12px;">Tweet</span>
+  </a>
+  </article>
+  <div class="mt4">
+    <a class="ba black-70 no-underline grow br2 b dib mr3 mb3 pv2 ph3" href="https://twitter.com/tachyons_css" title="Follow us on Twitter">
+      Follow us on Twitter
+    </a>
+    <a class="ba black-70 no-underline grow br2 b dib mr3 mb3 pv2 ph3" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
+      Join our Slack Channel
+    </a>
+    <a class="ba br2 black-70 no-underline grow b dib mb3 pv2 ph3" href="https://github.com/tachyons-css/tachyons/issues" title="File a bug, request a feature, ask a question!">
+      Open an Issue
+    </a>
+  </div>
+  <p class="f6 measure copy lh-copy">
+    Have a question? Need help? Feel free to open an issue on GitHub or ask a
+    question in our slack channel. We're here to try and help make designing in
+    the browser fun.
+  </p>
+  <div class="pt4 cf mw5">
+    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=tachyonsio" id="_carbonads_js"></script>
+  </div>
+  <small class="f6 measure db lh-copy mt5">
+    A tachyon /ˈtæki.ɒn/ or tachyonic particle is a hypothetical particle
+    that always moves faster than light.
+    The word comes from the Greek:
+    <br> <br>
+    ταχύς or tachys, meaning "swift, quick, fast, rapid"
+  </small>
+
+</div>
+</footer>
+
+      <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-55773803-1', 'auto');
+ga('send', 'pageview');
+
+    </script>
+
+</body>
+</html>
+
+

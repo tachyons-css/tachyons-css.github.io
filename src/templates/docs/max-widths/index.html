@@ -4,42 +4,33 @@
     <title>
        Max Widths / Layout / Docs / TACHYONS
     </title>
-    <meta name="description" content="css">
+    <meta name="description" content="Documentation for setting max-widths on elements with the Tachyons css framework.">
     <%= head  %>
   </head>
   <body class="w-100 sans-serif">
     <%= siteHeader %>
-    <main class="bg-washed-blue black-70">
-      <article class="bt b--black-10 pa3 ph5-ns">
-        <h4 class="f4 mv0 fw6 dib mr4"><%= name %></h4>
-        <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
-        <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
-        <div>
-          <dl class="dib mr4 mt0">
-            <dt class="f6 db">Declarations </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.declarations.total %></dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Selectors </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.total %></dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Max. Specificity Score </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.specificity.max %></dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Size of Avg. Rule </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
-          </dl>
+    <main class="bg-white black-70">
+      <header class="ph3 ph5-ns w-100 bg-transparent pv3 mb4 mb5-ns bt bb b--black-10 overflow-auto">
+        <div class="nowrap mw9 center">
+          <%= layoutNav %>
         </div>
+      </header>
+      <article class="pa3 ph5-ns">
+        <h3 class="f6 ttu tracked mt0">Max Widths</h3>
         <p class="measure f4 f3-ns lh-copy">
-          The max-widths module contains both a ten-step scale based on powers of two
-          as well as a series of percentage values that can prove useful. Max widths can be combined with widths
-          to ensure that your content doesn't get too wide on larger monitors. Max-widths can also help keep embedded media
-          within the canvas. As they are fluid across ranges of screen widths, max-widths are extremely useful when trying to keep a design
+          The max-widths module contains both a ten-step scale based on powers
+          of two as well as the ability to constrain element widths to a maximum of 100%.
+
+</p>
+<p class="measure f5 lh-copy">
+Max
+          widths can be combined with widths to ensure that your content doesn’t get too
+          wide on larger monitors. Max-widths can also help keep embedded media within
+          the canvas. As they are fluid across ranges of screen widths, max-widths are
+          extremely useful when trying to keep a design
           responsive.
         </p>
-        <p class="measure f5 f4-ns lh-copy">
+        <p class="measure f5 lh-copy">
           Class name structure is as follows:
         </p>
 <pre>
@@ -67,8 +58,8 @@ Media Query Extensions:
 </pre>
       </article>
       <div class="ph3 ph5-ns pt4 pb5">
-        <h2 class="f3 bold">Examples</h2>
-        <h3 class="f5 book pt4 caps">Max Width Scale</h3>
+        <h3 class="f5 mb4 pb2 bb">Examples</h3>
+        <h4 class="f6 book pt4 caps">Max Width Scale</h4>
         <table border="0" cellspacing="5" cellpadding="5">
           <tr>
             <td>
@@ -183,21 +174,42 @@ Media Query Extensions:
         </div>
         <div class="mt5 cf">
           <div class="dib mr4">
-            <h1 class="f4 ttu tracked fw6">Previous</h1>
+            <h4 class="f6 fw6">Previous</h4>
             <a href="/docs/layout/widths/" class="link fw6 blue dim">Widths</a>
           </div>
           <div class="dib">
-            <h1 class="f4 ttu tracked fw6">Next</h1>
+            <h4 class="f6 fw6">Next</h4>
             <a href="/docs/layout/heights/" class="link fw6 blue dim">Heights</a>
           </div>
         </div>
         <div class="mt5">
-          <h1 class="f4 ttu tracked fw6">Reference</h1>
+          <h4 class="f6 fw6">Reference</h4>
           <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max-width" class="link fw6 blue dim">MDN - Max Width</a>
         </div>
       </div>
-      <section class="bg-washed-blue black-70 pt4 pb5 overflow-container">
+      <section class="bg-white black-70 pt4 pb5 overflow-container">
       <header class="ph3 ph5-ns pt4">
+        <h4 class="f4 mv0 fw6 dib mr4"><%= name %></h4>
+        <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
+        <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
+        <div>
+          <dl class="dib mr4 mt0">
+            <dt class="f6 db">Declarations </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.declarations.total %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Selectors </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.total %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Max. Specificity Score </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.specificity.max %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Size of Avg. Rule </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
+          </dl>
+        </div>
         <kbd>src/_max-widths.css</kbd>
       </header>
 <pre class="ph3 ph5-ns">

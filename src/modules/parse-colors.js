@@ -17,10 +17,11 @@ module.exports = function(css) {
   colors = colors.map(function(color) {
     var hex
     try {
-      hex = Color(color).hexString()
+      hex = Color(color).hex()
       return hex
     } catch(e) {
       // Handle color values like inherit and currentcolor
+      console.log(e)
       return false
     }
   })

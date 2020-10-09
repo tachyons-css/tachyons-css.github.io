@@ -4,34 +4,14 @@
     <title>
       Typography / Docs / TACHYONS
     </title>
-    <meta name="description" content="">
+    <meta name="description" content="Typography utilities available in the Tachyons css framework.">
     <%= head  %>
   </head>
   <body class="w-100 sans-serif">
     <%= siteHeader %>
-    <main class="bg-washed-blue black-70">
+    <main class="bg-white black-70">
       <article class="bt b--black-10 pa3 ph5-ns">
-        <h4 class="f4 mv0 fw6 dib mr4"><%= name %></h4>
-        <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
-        <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
-        <div>
-          <dl class="dib mr4 mt0">
-            <dt class="f6 db">Declarations </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.declarations.total %></dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Selectors </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.total %></dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Max. Specificity Score </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.specificity.max %></dd>
-          </dl>
-          <dl class="dib mr4">
-            <dt class="f6 db pr2">Size of Avg. Rule </dt>
-            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
-          </dl>
-        </div>
+        <h3 class="f6 ttu tracked mt0">Typography</h3>
         <p class="measure f4 f3-ns lh-copy">
           A small collection of typographic utilities.
         </p>
@@ -68,7 +48,7 @@ kjkjit
             </tr>
           </table>
         </div>
-        <h2 class="f3 b mb5 mt5 mt6-ns">Examples</h2>
+        <h3 class="f5 mb4 pb2 bb">Examples</h3>
         <code class="f6 gray">.f-headline 6rem</code>
         <p class="f-headline b lh-solid oh measure mt0 mb5 nowrap ws-normal-ns overflow-hidden word-wrap">
           Jelly-like above the high wire, six quaking pachyderms kept the climax
@@ -97,7 +77,7 @@ kjkjit
         <code class="f6 db gray">.f4 1.25rem</code>
         <p class="f4 lh-copy mt0 mb4 mb5-ns measure">
           We promptly judged antique ivory buckles for the next prize. Heavy
-          boxes perform quick waltzes and jigs.  Blowzy night-frumps vex'd Jack Q
+          boxes perform quick waltzes and jigs.  Blowzy night-frumps vex’d Jack Q
         </p>
         <code class="f6 db gray">.f5 1rem</code>
         <p class="f5 lh-copy mt0 mb4 mb5-ns measure">
@@ -113,17 +93,38 @@ kjkjit
         </p>
         <div class="mt5 cf">
           <div class="dib mr4">
-            <h1 class="f4 ttu tracked fw6">Previous</h1>
+            <h4 class="f6 fw6">Previous</h4>
             <a href="/docs/elements/forms/" class="link fw6 blue dim">Forms</a>
           </div>
           <div class="dib">
-            <h1 class="f4 ttu tracked fw6">Next</h1>
+            <h4 class="f6 fw6">Next</h4>
             <a href="/docs/typography/measure/" class="link fw6 blue dim">Measure</a>
           </div>
         </div>
       </div>
-      <section class="bg-washed-blue black-70 pt4 pb5 overflow-container">
+      <section class="bg-white black-70 pt4 pb5 overflow-container">
         <header class="ph3 ph5-ns pt4">
+        <h4 class="f4 mv0 fw6 dib mr4"><%= name %></h4>
+        <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
+        <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
+        <div>
+          <dl class="dib mr4 mt0">
+            <dt class="f6 db">Declarations </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.declarations.total %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Selectors </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.total %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Max. Specificity Score </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.selectors.specificity.max %></dd>
+          </dl>
+          <dl class="dib mr4">
+            <dt class="f6 db pr2">Size of Avg. Rule </dt>
+            <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
+          </dl>
+        </div>
           <kbd>src/_typography.css</kbd>
         </header>
 <pre class="ph3 ph5-ns">

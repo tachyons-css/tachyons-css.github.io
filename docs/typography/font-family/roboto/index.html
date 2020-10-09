@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+       Roboto / Typography / Docs / TACHYONS
+    </title>
+    <meta name="description" content="Documentation for the Roboto typeface.">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="author" content="@mrmrs">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+<style>
+  .blue { color: #0074D9; }
+  .bg-blue { background-color: #0074D9; }
+
+  .carbon-poweredby { width: 100%; font-size: 12px; float: left; }
+  .carbon-wrap { float: left; width: 100%; box-sizing: border-box; }
+  .carbon-img  { float: left; width: 50%;  box-sizing: border-box; }
+  .carbon-text  { float: left; width: 50%; padding-left: 16px; box-sizing: border-box; font-size: 12px; }
+
+  #carbonads a:link { text-decoration: none!important; color: #222!important; }
+
+</style>
+<link rel="alternate" type="application/rss+xml" title="RSS Feed for Tachyons Recent Components" href="/components/rss.xml" />
+
+  </head>
+  <body class="w-100 sans-serif">
+    <header class="w-100 pa3 ph5-ns bg-white">
+  <div class="db dt-ns mw9 center w-100">
+    <div class="db dtc-ns v-mid tl w-50">
+      <a href="/" class="dib f5 f4-ns fw6 mt0 mb1 link black-70" title="Home">
+        Tachyons
+        <div class="dib">
+          <small class="nowrap f6 mt2 mt3-ns pr2 black-70 fw2">v4.12.0</small>
+        </div>
+      </a>
+    </div>
+    <nav class="db dtc-ns v-mid w-100 tl tr-ns mt2 mt0-ns">
+      <a title="Documentation" href="/docs/"
+          class="f6 fw6 hover-blue link black-70 mr2 mr3-m mr4-l dib">
+        Docs
+      </a>
+      <a title="Components" href="/components/"
+          class="f6 fw6 hover-blue link black-70 mr2 mr3-m mr4-l dib">
+        Components
+      </a>
+      <a title="Gallery of sites built with Tachyons" href="/gallery/"
+          class="f6 fw6 hover-blue link black-70 mr2 mr3-m mr4-l dib">
+        Gallery
+      </a>
+      <a title="Resources" href="/resources/"
+          class="f6 fw6 hover-blue link black-70 mr2 mr3-m mr4-l dib">
+        Resources
+      </a>
+      <a title="Tachyons on GitHub" href="http://github.com/tachyons-css/tachyons/"
+          class="f6 fw6 hover-blue link black-70 mr2 mr3-m mr4-l dn dib-l">
+        GitHub
+      </a>
+    </nav>
+  </div>
+</header>
+
+    <main class="bg-white black-70 bt b--black-10">
+      <header class="ph3 ph5-ns w-100 bg-transparent pv3 mb4 mb5-ns bb b--black-10 overflow-auto">
+        <div class="nowrap mw9 center">
+          <a title="Avenir Next" href="/docs/typography/font-family/avenir"
+              class="pb2-ns f6 fw6 dim link black-70 mr2 mr3-m mr4-l dib">
+            Avenir Next
+          </a>
+          <a title="Helvetica" href="/docs/typography/font-family/helvetica"
+              class="pb2-ns f6 fw6 dim link black-70 mr2 mr3-m mr4-l dib">
+            Helvetica
+          </a>
+          <a title="San Francisco" href="/docs/typography/font-family/san-francisco"
+              class="pb2-ns f6 fw6 dim link black-70 mr2 mr3-m mr4-l dib">
+            San Francisco
+          </a>
+          <a title="Roboto" href="/docs/typography/font-family/roboto"
+              class="pb2-ns f6 fw6 dim link black mr2 mr3-m mr4-l dib">
+            Roboto
+          </a>
+          <a title="System Sans Serif" href="/docs/typography/font-family/system-sans-serif"
+              class="pb2-ns f6 fw6 dim link black-70 mr2 mr3-m mr4-l dib">
+            System Sans-Serif
+          </a>
+          <a title="Athelas" href="/docs/typography/font-family/athelas"
+              class="pb2-ns f6 fw6 dim link black-70 mr2 mr3-m mr4-l dib">
+              Athelas
+          </a>
+          <a title="Baskerville" href="/docs/typography/font-family/baskerville"
+              class="pb2-ns f6 fw6 dim link black-70 mr2 mr3-m mr4-l dib">
+              Baskerville
+          </a>
+          <a title="Garamond" href="/docs/typography/font-family/garamond"
+              class="pb2-ns f6 fw6 dim link black-70 mr2 mr3-m mr4-l dib">
+            Garamond
+          </a>
+          <a title="Georgia" href="/docs/typography/font-family/georgia"
+              class="pb2-ns f6 fw6 dim link black-70 mr2 mr3-m mr4-l dib">
+            Georgia
+          </a>
+          <a title="System Serif" href="/docs/typography/font-family/system-serif"
+              class="pb2-ns f6 fw6 dim link black-70 mr2 mr3-m mr4-l dib">
+            System Serif
+          </a>
+        </div>
+      </header>
+      <div class="ph3 ph5-ns pt4 pb5">
+        <article style="font-family: "Roboto, Noto";">
+          <h2 class="f6 fw4 f6 mb3 helvetica">Typeface alphabets</h2>
+          <div class="overflow-auto">
+            <h3 class="f2 f1-m f-subheadline-l fw4 roboto ttu tracked mt0">roboto</h3>
+            <p class="f4 f2-m f1-l tracked-tight">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+            <p class="f4 f2-m f1-l ttu tracked-tight">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+            <p class="f4 f2-m f1-l tracked">1234567890 !@#$%^&amp;*()</p>
+            <p class="f4 f2-m f1-l tracked">œ∑´®†¥¨ˆøπ“‘«åß∂ƒ©˙∆˚¬…æΩ≈ç√∫˜µ≤≥÷</p>
+          </div>
+          <section>
+            <h3 class="f6 ttu fw4">Font Weights</h3>
+          <div class="w-100 overflow-x-auto">
+            <table class="mt4">
+              <caption class="f6 tl pb3">900</caption>
+              <tr>
+                <td class="tc f-headline fw9 br b--black-10 v-base">A</td>
+                <td class="tc ph2 br f-subheadline fw9 br b--black-10 v-base">A</td>
+                <td class="tc f1 fw9 br b--black-10 v-base">A</td>
+                <td class="tc f2 fw9 br b--black-10 v-base">A</td>
+                <td class="tc f3 fw9 br b--black-10 v-base">A</td>
+                <td class="tc f4 fw9 br b--black-10 v-base">A</td>
+                <td class="tc f5 fw9 br b--black-10 v-base">A</td>
+                <td class="tc f6 fw9 b--black-10 v-base">A</td>
+              </tr>
+              <tr>
+                <td class="tc gray f6 fw2 pr2 bt br b--black-10 pt1">6rem (96px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">5rem (80px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">3rem (48px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">2.25rem (36px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1.5rem (24px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1.25rem (20px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1rem (16px)</td>
+                <td class="tc gray f6 fw2 pl2 bt b--black-10 pt1">.875rem (14px)</td>
+              </tr>
+            </table>
+            <table class="mt4">
+              <caption class="f6 tl pb3">800</caption>
+              <tr>
+                <td class="tc f-headline fw8 br b--black-10 v-base">A</td>
+                <td class="tc ph2 br f-subheadline fw8 br b--black-10 v-base">A</td>
+                <td class="tc f1 fw8 br b--black-10 v-base">A</td>
+                <td class="tc f2 fw8 br b--black-10 v-base">A</td>
+                <td class="tc f3 fw8 br b--black-10 v-base">A</td>
+                <td class="tc f4 fw8 br b--black-10 v-base">A</td>
+                <td class="tc f5 fw8 br b--black-10 v-base">A</td>
+                <td class="tc f6 fw8 b--black-10 v-base">A</td>
+              </tr>
+              <tr>
+                <td class="tc gray f6 fw2 pr2 bt br b--black-10 pt1">6rem (96px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">5rem (80px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">3rem (48px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">2.25rem (36px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1.5rem (24px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1.25rem (20px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1rem (16px)</td>
+                <td class="tc gray f6 fw2 pl2 bt b--black-10 pt1">.875rem (14px)</td>
+              </tr>
+            </table>
+            <table class="mt4">
+              <caption class="f6 tl pb3">700</caption>
+              <tr>
+                <td class="tc f-headline fw7 br b--black-10 v-base">A</td>
+                <td class="tc ph2 br f-subheadline fw7 br b--black-10 v-base">A</td>
+                <td class="tc f1 fw7 br b--black-10 v-base">A</td>
+                <td class="tc f2 fw7 br b--black-10 v-base">A</td>
+                <td class="tc f3 fw7 br b--black-10 v-base">A</td>
+                <td class="tc f4 fw7 br b--black-10 v-base">A</td>
+                <td class="tc f5 fw7 br b--black-10 v-base">A</td>
+                <td class="tc f6 fw7 b--black-10 v-base">A</td>
+              </tr>
+              <tr>
+                <td class="tc gray f6 fw2 pr2 bt br b--black-10 pt1">6rem (96px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">5rem (80px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">3rem (48px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">2.25rem (36px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1.5rem (24px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1.25rem (20px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1rem (16px)</td>
+                <td class="tc gray f6 fw2 pl2 bt b--black-10 pt1">.875rem (14px)</td>
+              </tr>
+            </table>
+            <table class="mt4">
+              <caption class="f6 tl pb3">600</caption>
+              <tr>
+                <td class="tc f-headline fw6 br b--black-10 v-base">A</td>
+                <td class="tc ph2 br f-subheadline fw6 br b--black-10 v-base">A</td>
+                <td class="tc f1 fw6 br b--black-10 v-base">A</td>
+                <td class="tc f2 fw6 br b--black-10 v-base">A</td>
+                <td class="tc f3 fw6 br b--black-10 v-base">A</td>
+                <td class="tc f4 fw6 br b--black-10 v-base">A</td>
+                <td class="tc f5 fw6 br b--black-10 v-base">A</td>
+                <td class="tc f6 fw6 b--black-10 v-base">A</td>
+              </tr>
+              <tr>
+                <td class="tc gray f6 fw2 pr2 bt br b--black-10 pt1">6rem (96px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">5rem (80px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">3rem (48px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">2.25rem (36px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1.5rem (24px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1.25rem (20px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1rem (16px)</td>
+                <td class="tc gray f6 fw2 pl2 bt b--black-10 pt1">.875rem (14px)</td>
+              </tr>
+            </table>
+            <table class="mt4">
+              <caption class="f6 tl pb3">500</caption>
+              <tr>
+                <td class="tc f-headline fw5 br b--black-10 v-base">A</td>
+                <td class="tc ph2 br f-subheadline fw5 br b--black-10 v-base">A</td>
+                <td class="tc f1 fw5 br b--black-10 v-base">A</td>
+                <td class="tc f2 fw5 br b--black-10 v-base">A</td>
+                <td class="tc f3 fw5 br b--black-10 v-base">A</td>
+                <td class="tc f4 fw5 br b--black-10 v-base">A</td>
+                <td class="tc f5 fw5 br b--black-10 v-base">A</td>
+                <td class="tc f6 fw5 b--black-10 v-base">A</td>
+              </tr>
+              <tr>
+                <td class="tc gray f6 fw2 pr2 bt br b--black-10 pt1">6rem (96px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">5rem (80px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">3rem (48px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">2.25rem (36px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1.5rem (24px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1.25rem (20px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1rem (16px)</td>
+                <td class="tc gray f6 fw2 pl2 bt b--black-10 pt1">.875rem (14px)</td>
+              </tr>
+            </table>
+            <table class="mt4">
+              <caption class="f6 tl pb3">400</caption>
+              <tr>
+                <td class="tc f-headline fw4 br b--black-10 v-base">A</td>
+                <td class="tc ph2 br f-subheadline fw4 br b--black-10 v-base">A</td>
+                <td class="tc f1 fw4 br b--black-10 v-base">A</td>
+                <td class="tc f2 fw4 br b--black-10 v-base">A</td>
+                <td class="tc f3 fw4 br b--black-10 v-base">A</td>
+                <td class="tc f4 fw4 br b--black-10 v-base">A</td>
+                <td class="tc f5 fw4 br b--black-10 v-base">A</td>
+                <td class="tc f6 fw4 b--black-10 v-base">A</td>
+              </tr>
+              <tr>
+                <td class="tc gray f6 fw2 pr2 bt br b--black-10 pt1">6rem (96px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">5rem (80px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">3rem (48px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">2.25rem (36px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1.5rem (24px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1.25rem (20px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1rem (16px)</td>
+                <td class="tc gray f6 fw2 pl2 bt b--black-10 pt1">.875rem (14px)</td>
+              </tr>
+            </table>
+            <table class="mt4">
+              <caption class="f6 tl pb3">300</caption>
+              <tr>
+                <td class="tc f-headline fw3 br b--black-10 v-base">A</td>
+                <td class="tc ph2 br f-subheadline fw3 br b--black-10 v-base">A</td>
+                <td class="tc f1 fw3 br b--black-10 v-base">A</td>
+                <td class="tc f2 fw3 br b--black-10 v-base">A</td>
+                <td class="tc f3 fw3 br b--black-10 v-base">A</td>
+                <td class="tc f4 fw3 br b--black-10 v-base">A</td>
+                <td class="tc f5 fw3 br b--black-10 v-base">A</td>
+                <td class="tc f6 fw3 b--black-10 v-base">A</td>
+              </tr>
+              <tr>
+                <td class="tc gray f6 fw2 pr2 bt br b--black-10 pt1">6rem (96px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">5rem (80px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">3rem (48px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">2.25rem (36px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1.5rem (24px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1.25rem (20px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1rem (16px)</td>
+                <td class="tc gray f6 fw2 pl2 bt b--black-10 pt1">.875rem (14px)</td>
+              </tr>
+            </table>
+            <table class="mt4">
+              <caption class="f6 tl pb3">200</caption>
+              <tr>
+                <td class="tc f-headline fw2 br b--black-10 v-base">A</td>
+                <td class="tc ph2 br f-subheadline fw2 br b--black-10 v-base">A</td>
+                <td class="tc f1 fw2 br b--black-10 v-base">A</td>
+                <td class="tc f2 fw2 br b--black-10 v-base">A</td>
+                <td class="tc f3 fw2 br b--black-10 v-base">A</td>
+                <td class="tc f4 fw2 br b--black-10 v-base">A</td>
+                <td class="tc f5 fw2 br b--black-10 v-base">A</td>
+                <td class="tc f6 fw2 b--black-10 v-base">A</td>
+              </tr>
+              <tr>
+                <td class="tc gray f6 fw2 pr2 bt br b--black-10 pt1">6rem (96px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">5rem (80px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">3rem (48px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">2.25rem (36px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1.5rem (24px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1.25rem (20px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1rem (16px)</td>
+                <td class="tc gray f6 fw2 pl2 bt b--black-10 pt1">.875rem (14px)</td>
+              </tr>
+            </table>
+            <table class="mt4">
+              <caption class="f6 tl pb3">100</caption>
+              <tr>
+                <td class="tc f-headline fw1 br b--black-10 v-base">A</td>
+                <td class="tc ph2 br f-subheadline fw1 br b--black-10 v-base">A</td>
+                <td class="tc f1 fw1 br b--black-10 v-base">A</td>
+                <td class="tc f2 fw1 br b--black-10 v-base">A</td>
+                <td class="tc f3 fw1 br b--black-10 v-base">A</td>
+                <td class="tc f4 fw1 br b--black-10 v-base">A</td>
+                <td class="tc f5 fw1 br b--black-10 v-base">A</td>
+                <td class="tc f6 fw1 b--black-10 v-base">A</td>
+              </tr>
+              <tr>
+                <td class="tc gray f6 fw2 pr2 bt br b--black-10 pt1">6rem (96px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">5rem (80px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">3rem (48px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">2.25rem (36px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1.5rem (24px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1.25rem (20px)</td>
+                <td class="tc gray f6 fw2 ph2 bt br b--black-10 pt1">1rem (16px)</td>
+                <td class="tc gray f6 fw2 pl2 bt b--black-10 pt1">.875rem (14px)</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+        <section class="mt5">
+          <h3 class="f6 ttu fw4">Italic</h3>
+          <p class="f4 f2-m f1-l i tracked-tight">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+          <p class="f4 f2-m f1-l i ttu tracked-tight">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+        </section>
+          <section class="roboto pv4 mv4 bt b--black-70 measure f2">
+            <p class="f5 f3-l lh-copy">
+              Roboto is a sans-serif typeface family developed by Google as the system font for its mobile operating system Android.
+            </p>
+            <p class="f5 lh-copy measure-narrow dib mr4-l mt0 v-top">
+              “We see Roboto as an evolving type family and plan to continue to change and update it as the system evolves. It used to be that a type family was designed once and then used without change for many years. Sometimes an updated version was released with a new name, sometimes by appending a ‘Neue’ or ‘New’. The old model for releasing metal typefaces doesn’t make sense
+              for an operating system that is constantly improving. As the system evolves over time, the type should evolve along with it.” - <cite>Google</cite>
+            </p>
+            <p class="f5 lh-copy measure-narrow dib mt0 v-top">
+              Roboto supports 16 weights as well as advanced typographic features such as small caps, ligatures and lower case numerals. Roboto currently covers most scripts based on Latin, Cyrillic and Greek alphabets.
+            </p>
+            <p class="f5 lh-copy measure-narrow dib mt0 v-top">
+              Like many neo-grotesque designs, roboto has narrow apertures, which limit
+              its legibility onscreen and at small print sizes. It also has no visible
+              difference between upper-case ‘i’ and lower-case ‘L’, although the number 1 is
+              quite identifiable with its flag at top left.
+            </p>
+          </section>
+        </article>
+        <div class="mt5 cf pt4 bt b--black-10">
+          <div class="dib mr4">
+            <h1 class="f6 fw6">Previous</h1>
+            <a href="/docs/typography/font-weight/" class="link fw6 blue dim">Font Weight</a>
+          </div>
+          <div class="dib">
+            <h4 class="f6 fw6">Next</h4>
+            <a href="/docs/typography/font-style/" class="link fw6 blue dim">Font Style</a>
+          </div>
+        </div>
+        <div class="mt5">
+          <h4 class="f6 fw6">Reference</h4>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family" class="link fw6 blue dim">MDN - Font Family</a>
+        </div>
+      </div>
+      <div class="ph3 ph5-ns pb5">
+    <article  class="pb3">
+      <h2 class="f6 fw7 ttu tracked">Overview of Tachyons</h2>
+      <a class="f5 fw4 dim link blue db pv1" href="/docs/table-of-styles/" title="View a list of styles">Table of Styles</a>
+      <a class="f5 fw4 dim link blue db pv1" href="/docs/table-of-properties/" title="View a list of properties">Table of Properties</a>
+    </article>
+    <section class="cf w-100 mt3">
+      <article class="fn fl-ns w-100 w-25-l">
+        <h2 class="f6 fw7 ttu tracked" id="typography">Typography</h2>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/scale" title="Type">Type Scale</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/measure/" title="Measure">Measure</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/line-height" title="Line Height">Line Height / Leading</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/tracking" title="Tracking">Tracking</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-weight" title="Font Weights">Font Weights</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-style" title="Font Families">Font Style</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/vertical-align" title="Font Families">Vertical Align</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/text-align" title="Text Align">Text Align</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/text-transform" title="Text Transform">Text Transform</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/text-decoration" title="Text Decoration">Text Decoration</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/white-space" title="White Space">White Space</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-family" title="Font Families">Font Families</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-family/avenir" title="Font Families">Avenir Next</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-family/helvetica" title="Font Families">Helvetica</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-family/roboto" title="Font Families">Roboto</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-family/san-francisco" title="Font Families">San Francisco</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-family/system-sans-serif" title="Font Families">System Sans-Serif</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-family/athelas" title="Font Families">Athelas</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-family/baskerville" title="Font Families">Baskerville</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-family/garamond" title="Font Families">Garamond</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-family/georgia" title="Font Families">Georgia</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/typography/font-family/system-serif" title="Font Families">System Serif</a>
+      </article>
+      <article class="fn fl-ns w-100 w-25-l">
+        <h2 class="f6 fw7 ttu tracked" id="layout">Layout</h2>
+        <a class="f5  fw4 dim link blue db pv1" href="/docs/debug/" title="Debugging Documentation">Debugging</a>
+        <a class="f5  fw4 dim link blue db pv1" href="/docs/debug-grid/" title="Debugging with background grids">Debug with a Grid</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/grid" title="Basic Grid">Basic Grid</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/flexbox" title="Flexbox">Flexbox</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/box-sizing" title="Box Sizing Documentation">Box Sizing</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/spacing" title="Spacing Documentation">Spacing</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/floats" title="Floats Documentation">Floats</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/clearfix" title="Clears Documentation">Clearfix</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/display" title="Display Documentation">Display</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/widths" title="Widths Documentation">Widths</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/max-widths" title="Max Widths Documentation">Max Widths</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/heights" title="Heights Documentation">Heights</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/layout/position" title="Position Documentation">Position</a>
+      </article>
+      <article class="fn fl-ns w-100 w-25-l">
+        <h2 class="f6 fw7 ttu tracked">Theming</h2>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/themes/skins/" title="Hovers Documentation">Skins</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/themes/skins-pseudo/" title="Skin transitions">Skins animations</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/themes/hovers/" title="Hovers Documentation">Hovers</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/themes/background-size/" title="Background Size Documentation">Background Size</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/themes/borders/" title="Borders Documentation">Borders</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/themes/border-radius/" title="Border Radius Documentation">Border Radius</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/themes/box-shadow/" title="Box Shadow Documentation">Box Shadow</a>
+        <a class="f5 fw4 dim link blue db pv1" href="/docs/themes/opacity/" title="Opacity Documentation">Opacity</a>
+      </article>
+    <article class="fn fl-ns w-100 w-25-l">
+      <h2 class="f6 fw7 ttu tracked">Elements</h2>
+      <a class="f5 fw4 dim link blue db pv1" href="/docs/elements/images/" title="View images documentation">Images</a>
+      <a class="f5 fw4 dim link blue db pv1" href="/docs/elements/links/" title="View links documentation">Links</a>
+      <a class="f5 fw4 dim link blue db pv1" href="/docs/elements/lists/" title="View lists documentation">Lists</a>
+      <a class="f5 fw4 dim link blue db pv1 dn" href="/docs/elements/forms/" title="View forms documentation">Forms</a>
+      <a class="f5 fw4 dim link blue db pv1 dn" href="/docs/elements/tables/" title="View tables module documentation">Tables</a>
+    </article>
+    </section>
+</div>
+
+    </main>
+    <footer class="bg-white black-70 ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+  <div class="mw9 center">
+  <div class="mb5 lh-copy">
+    <a class="black-70 link hover-blue b dib mr3 mb3" href="/" title="Home">
+      Home
+    </a>
+    <a class="black-70 link hover-blue b dib mr3 mb3" href="/docs" title="Docs">
+      Docs
+    </a>
+    <a class="black-70 link hover-blue b dib mr3 mb3" href="/components/" title="Components">
+      Components
+    </a>
+    <a class="black-70 link hover-blue b dib mr3 mb3" href="/gallery/" title="Gallery of Sites built with Tachyons">
+      Gallery
+    </a>
+    <a class="black-70 link hover-blue b dib mr3 mb3" href="/resources/" title="Resources related to Tachyons">
+      Resources
+    </a>
+    <a class="black-70 link hover-blue b dib mr3 mb3" href="/xray/" title="The X-Ray chrome extension for aligning things to a grid.">
+      X-Ray
+    </a>
+    <a class="black-70 link hover-blue b dib mr3 mb3" href="http://opencollective.com/tachyons" title="Support Tachyons Development">
+      Supporting Tachyons
+    </a>
+  </div>
+  <article class="v-top">
+    <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+    <iframe src="https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+  <a href="https://twitter.com/intent/tweet?text=Tachyons: A functional css toolkit for designing in the browser.&url=http://tachyons.io" class="twitter bg-white-50 link dib dim br2 ph2 pb1 lh-solid v-top" style="background-color: #55acee;">
+    <svg class="geomicon dib v-mid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="#fff">
+      <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
+    </svg>
+    <span class="dib v-mid white fw6" style="font-size: 12px;">Tweet</span>
+  </a>
+  </article>
+  <div class="mt4">
+    <a class="ba black-70 no-underline grow br2 b inline-flex items-center mr3 mb3 pv2 ph3" href="https://twitter.com/tachyons_css" title="Follow us on Twitter">
+      <div class="w2 pv1 pr2">
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.375-1.337.648-2.085.795-.598-.638-1.45-1.036-2.396-1.036-1.812 0-3.282 1.468-3.282 3.28 0 .258.03.51.085.75C5.152 5.39 2.733 4.084 1.114 2.1.83 2.583.67 3.147.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.416-.02-.617-.058.418 1.304 1.63 2.253 3.067 2.28-1.124.88-2.54 1.404-4.077 1.404-.265 0-.526-.015-.783-.045 1.453.93 3.178 1.474 5.032 1.474 6.038 0 9.34-5 9.34-9.338 0-.143-.004-.284-.01-.425.64-.463 1.198-1.04 1.638-1.7z" fill-rule="nonzero"/></svg>
+</div>
+      <span>Follow @tachyons_css</span>
+    </a>
+    <a class="ba black-70 no-underline grow br2 b inline-flex items-center mr3 mb3 pv2 ph3" href="http://tachyons-slack-invite.herokuapp.com" title="Join our Slack Channel">
+      <div class="dib w2 pv1 pr2">
+      <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><g fill-rule="nonzero"><path d="M6.586 7.33l.69 2.057 2.137-.716-.69-2.056-2.137.716z"/><path d="M12.55 9.37l-1.037.347.36 1.073c.145.434-.09.904-.524 1.05-.096.03-.19.045-.287.042-.338-.01-.65-.226-.765-.566l-.36-1.072-2.138.716.36 1.072c.145.435-.09.905-.523 1.05-.096.032-.192.045-.286.043-.34-.01-.65-.226-.764-.566l-.36-1.075-1.037.348c-.096.03-.19.045-.286.042-.34-.008-.65-.226-.765-.565-.146-.434.09-.904.522-1.05L5.7 9.914l-.69-2.058-1.037.347c-.094.032-.19.045-.285.043-.338-.01-.65-.226-.765-.566-.145-.434.09-.904.523-1.05l1.037-.347-.36-1.073c-.145-.434.09-.904.524-1.05.435-.145.905.09 1.05.524l.36 1.072 2.137-.716-.36-1.072c-.144-.435.09-.905.524-1.05.435-.145.906.09 1.05.523l.36 1.075 1.037-.347c.434-.146.904.088 1.05.522.145.434-.09.904-.523 1.05l-1.037.347.69 2.057 1.036-.347c.435-.145.905.09 1.05.523.146.434-.09.904-.522 1.05zm2.78-3.57C13.68.304 11.298-.98 5.8.67.304 2.32-.98 4.7.67 10.2c1.65 5.497 4.03 6.78 9.53 5.13 5.497-1.65 6.78-4.03 5.13-9.53z"/></g></svg>
+    </div>
+        <span>
+          Need Help? Join our Slack Channel
+        </span>
+    </a>
+    <a class="ba br2 black-70 no-underline grow b inline-flex items-center mb3 pv2 ph3" href="https://github.com/tachyons-css/tachyons/issues" title="File a bug, request a feature, ask a question!">
+      <div class="w2 pv1 pr2">
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.083-.202-.358-1.015.077-2.117 0 0 .672-.215 2.2.82.638-.178 1.323-.266 2.003-.27.68.004 1.364.092 2.003.27 1.527-1.035 2.198-.82 2.198-.82.437 1.102.163 1.915.08 2.117.513.56.823 1.274.823 2.147 0 3.073-1.87 3.75-3.653 3.947.287.246.543.735.543 1.48 0 1.07-.01 1.933-.01 2.195 0 .215.144.463.55.385C13.71 14.53 16 11.534 16 8c0-4.418-3.582-8-8-8"/></svg>
+</div>
+      <span>Open an Issue on GitHub</span>
+    </a>
+  </div>
+  <p class="f6 measure copy lh-copy">
+    Have a question? Need help? Feel free to open an issue on GitHub or ask a
+    question in our slack channel. We’re here to try and help make designing in
+    the browser fun.
+  </p>
+  <div class="pt4 cf mw5">
+    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=tachyonsio" id="_carbonads_js"></script>
+  </div>
+  <small class="f6 measure db lh-copy mt5">
+    A tachyon /ˈtæki.ɒn/ or tachyonic particle is a hypothetical particle
+    that always moves faster than light.
+    The word comes from the Greek:
+    <br> <br>
+    ταχύς or tachys, meaning “swift, quick, fast, rapid”
+  </small>
+
+</div>
+</footer>
+
+        <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-55773803-1', 'auto');
+ga('send', 'pageview');
+
+    </script>
+
+  </body>
+</html>

@@ -8,10 +8,69 @@
     <%= head  %>
   </head>
   <body class="w-100 sans-serif">
-
     <%= siteHeader %>
-    <main class="bg-washed-blue black-70">
-      <article class="bt b--black-10 pa3 ph5-ns">
+    <main class="bg-white black-70">
+      <header class="ph3 ph5-ns w-100 bg-transparent pv3 mb4 mb5-ns bt bb b--black-10 overflow-auto">
+        <div class="nowrap mw9 center">
+          <%= layoutNav %>
+        </div>
+      </header>
+      <article class="pa3 ph5-ns">
+        <h3 class="f6 ttu tracked mt0">Floats</h3>
+        <p class="measure f3 lh-copy">
+          Single purpose classes for setting the display of an element at any breakpoint.
+        </p>
+        <p class="measure f4 lh-copy">
+          Floats may be set on any element, but it will only affect elements
+          that aren’t absolutely positioned. When you float an element
+          you inherently set its display to block.
+        </p>
+        <p class="measure f4 lh-copy">
+          There are only three values that can be declared for float: left, right, or none.
+          These three base classes are very easy to memorize: fl, fr, fn.
+          Combine float left/right with width utilities to create fluid multi-column layouts.
+        </p>
+      </article>
+      <div class="ph3 ph5-ns pt4 pb5">
+        <h3 class="f5 mb4 pb2 bb">Examples</h3>
+        <h3 class="f5 book pt4 caps">Float Left</h3>
+        <div class="cf">
+          <div class="fl bg-black-05">Float Left</div>
+        </div>
+        <h3 class="f5 book pt4 caps">Float Right</h3>
+        <div class="cf">
+          <div class="fr bg-black-05">Float Right</div>
+        </div>
+        <h3 class="f5 book pt4 caps">Float None</h3>
+        <div class="fn bg-black-05">Float None</div>
+        <h3 class="f5 book pt4 caps">Float With Images</h3>
+        <p class="f3">Originally floats were used to wrap text around images as in the example below.</p>
+        <div class="cf">
+          <img src="http://tachyons.io/img/example-1.jpg" class="fl w4 mr3" alt="example 1">
+          <p class="measure mt0">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+            vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+        <div class="mt5 cf">
+          <div class="dib mr4">
+            <h4 class="f6 fw6">Previous</h4>
+            <a href="/docs/layout/spacing/" class="link fw6 blue dim">Spacing</a>
+          </div>
+          <div class="dib">
+            <h4 class="f6 fw6">Next</h4>
+            <a href="/docs/layout/clearfix/" class="link fw6 blue dim">Clearfix</a>
+          </div>
+        </div>
+        <div class="mt5">
+          <h4 class="f6 fw6">Reference</h4>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/floats" class="link fw6 blue dim">MDN - Floats</a>
+        </div>
+      </div>
+      <section class="bg-white black-70 pt4 pb5 overflow-container">
+      <header class="ph3 ph5-ns pt4">
         <h4 class="f4 mv0 fw6 dib mr4"><%= name %></h4>
         <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
         <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
@@ -33,60 +92,6 @@
             <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
           </dl>
         </div>
-        <p class="measure f3 lh-copy">
-          Single purpose classes for setting the display of an element at any breakpoint.
-        </p>
-        <p class="measure f4 lh-copy">
-          Floats may be set on any element, but it will only affect elements
-          that aren't absolutely positioned. When you float an element
-          you inherently set its display to block.
-        </p>
-        <p class="measure f4 lh-copy">
-          There are only three values that can be declared for float: left, right, or none.
-          These three base classes are very easy to memorize: fl, fr, fn.
-          Combine float left/right with width utilities to create fluid multi-column layouts.
-        </p>
-      </article>
-      <div class="ph3 ph5-ns pt4 pb5">
-        <h2 class="f3 bold">Examples</h2>
-        <h3 class="f5 book pt4 caps">Float Left</h3>
-        <div class="cf">
-          <div class="fl bg-black-05">Float Left</div>
-        </div>
-        <h3 class="f5 book pt4 caps">Float Right</h3>
-        <div class="cf">
-          <div class="fr bg-black-05">Float Right</div>
-        </div>
-        <h3 class="f5 book pt4 caps">Float None</h3>
-        <div class="fn bg-black-05">Float None</div>
-        <h3 class="f5 book pt4 caps">Float With Images</h3>
-        <p class="f3">Originally floats were used to wrap text around images as in the example below.</p>
-        <div class="cf">
-          <img src="/img/example-1.jpg" class="fl w4 mr3" alt="example 1">
-          <p class="measure mtn">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-            vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          </p>
-        </div>
-        <div class="mt5 cf">
-          <div class="dib mr4">
-            <h1 class="f4 ttu tracked fw6">Previous</h1>
-            <a href="/docs/layout/spacing/" class="link fw6 blue dim">Spacing</a>
-          </div>
-          <div class="dib">
-            <h1 class="f4 ttu tracked fw6">Next</h1>
-            <a href="/docs/layout/clearfix/" class="link fw6 blue dim">Clearfix</a>
-          </div>
-        </div>
-        <div class="mt5">
-          <h1 class="f4 ttu tracked fw6">Reference</h1>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/floats" class="link fw6 blue dim">MDN - Floats</a>
-        </div>
-      </div>
-      <section class="bg-washed-blue black-70 pt4 pb5 overflow-container">
-      <header class="ph3 ph5-ns pt4">
         <kbd>src/_floats.css</kbd>
       </header>
 <pre class="ph3 ph5-ns">

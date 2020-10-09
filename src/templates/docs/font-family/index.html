@@ -4,13 +4,168 @@
     <title>
        <%= name %> / Typography / Docs / TACHYONS
     </title>
-    <meta name="description" content="">
+    <meta name="description" content="Documentation about the system fonts available for use with Tachyons">
     <%= head  %>
   </head>
   <body class="w-100 sans-serif">
     <%= siteHeader %>
-    <main class="bg-washed-blue black-70">
-      <article class="bt b--black-10 pa3 ph5-ns">
+    <main class="bg-white black-70">
+      <header class="ph3 ph5-ns w-100 pv3 mb4 mb5-ns bt bb b--black-10 overflow-auto">
+        <div class="nowrap mw9 center">
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/scale/" title="Type">Type Scale</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/measure/" title="Measure">Measure</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/line-height/" title="Line Height">Line Height / Leading</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/tracking/" title="Tracking">Tracking</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/font-weight/" title="Font Weights">Font Weights</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/font-style/" title="Font style">Font Style</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/vertical-align/" title="Vertical Align">Vertical Align</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/text-align/" title="Text Align">Text Align</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/text-transform" title="Text Transform">Text Transform</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/text-decoration" title="Text Decoration">Text Decoration</a>
+        <a class="f6 fw6 dim link black-70 pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/white-space" title="White Space">White Space</a>
+        <a class="f6 fw6 dim link black pb2-ns mr2 mr3-m mr4-l" href="/docs/typography/font-family" title="Font Families">Font Families</a>
+        </div>
+      </header>
+      <article class="pa3 ph5-ns">
+        <h3 class="f6 ttu tracked mt0">Font Family</h3>
+        <p class="measure f4 f3-ns lh-copy">
+          There are several pre-defined classes for setting the typeface of a page or element. It is suggested
+          that you customize or extend this module to suit your own needs. As tachyons is a toolkit for designing
+          performant webpages it comes with a variety of font stacks that utilize attractive system fonts with appropriate fallbacks.
+        </p>
+        <p class="measure f5 f4-ns lh-copy">
+          Relying on systems fonts greatly improves page performance and can also help
+          your web application/site blend in with the user’s operating
+          system. Readability is strongly linked to familiarity, so
+          this helps create a more fluid reading experience, allowing your users to
+          focus on your content.
+        </p>
+      </article>
+      <div class="ph3 ph5-ns pt4 pb5">
+        <h3 class="f5 mb4 pb2 bb">Examples</h3>
+        <h3 class="f5 fw4 sans-serif pt4">Default System Sans Serif</h3>
+        <p class="system-sans-serif lh-copy measure">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+          no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <h3 class="f5 fw4 sans-serif pt4">Default System Serif</h3>
+        <p class="system-serif lh-copy measure">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+          no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <h3 class="f5 fw4 sans-serif pt4">System Sans Serif with Fallbacks</h3>
+        <p class="sans-serif lh-copy measure">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+          no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <h3 class="f5 fw4 sans-serif pt4">Consolas, monaco <span class="fw4 ttn">(Fallback: system monospace)</h3>
+        <p class="code lh-copy measure">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+          no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <h3 class="f5 fw4 sans-serif pt4">Courier <span class="fw4 ttn">(Fallback: system monospace)</h3>
+        <p class="code lh-copy measure">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+          no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <a href="/docs/typography/font-family/helvetica/" class="link black-70 hover-blue db">
+          <h3 class="f5 fw4 sans-serif pt4">Helvetica <span>(Fallback: system sans-serif)</h3>
+          <span class="helvetica db lh-copy measure">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+            vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </span>
+        </a>
+        <a href="/docs/typography/font-family/avenir/" class="link black-70 hover-blue db">
+          <h3 class="f5 fw4 sans-serif pt4">Avenir <span>(Fallback: system sans-serif)</h3>
+          <span class="avenir db lh-copy measure">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+            vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </span>
+        </a>
+        <a href="/docs/typography/font-family/athelas/" class="link black-70 hover-blue db">
+          <h3 class="f5 fw4 sans-serif pt4">Athelas <span>(Fallback: system serif)</h3>
+          <span class="athelas db lh-copy measure">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+            vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </span>
+        </a>
+        <a href="/docs/typography/font-family/georgia/" class="link black-70 hover-blue db">
+          <h3 class="f5 fw4 sans-serif pt4">Georgia <span>(Fallback: system serif)</h3>
+          <span class="georgia db lh-copy measure">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+            vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </span>
+        </a>
+        <h3 class="f5 fw4 sans-serif pt4">Times <span>(Fallback: system serif)</h3>
+        <p class="times lh-copy measure">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+          no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <h3 class="f5 fw4 sans-serif pt4">Bodoni MT<span>(Fallback: system serif)</h3>
+        <p class="bodoni lh-copy measure">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+          no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <h3 class="f5 fw4 sans-serif pt4">Calisto <span>(Fallback: system serif)</h3>
+        <p class="calisto lh-copy measure">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+          no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <h3 class="f5 fw4 sans-serif pt4">Garamond <span>(Fallback: system serif)</h3>
+        <p class="garamond lh-copy measure">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+          no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <h3 class="f5 fw4 sans-serif pt4">Baskerville <span>(Fallback: system serif)</h3>
+        <p class="baskerville fw1 lh-copy measure">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+          no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <div class="mt5 cf">
+          <div class="dib mr4">
+            <h4 class="f6 fw6">Previous</h4>
+            <a href="/docs/typography/font-weight/" class="link fw6 blue dim">Font Weight</a>
+          </div>
+          <div class="dib">
+            <h4 class="f6 fw6">Next</h4>
+            <a href="/docs/typography/font-style/" class="link fw6 blue dim">Font Style</a>
+          </div>
+        </div>
+        <div class="mt5">
+          <h4 class="f6 fw6">Reference</h4>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family" class="link fw6 blue dim">MDN - Font Family</a>
+        </div>
+      </div>
+      <section class="bg-white bt bb b--black-40 black-70 pt4 pb5 mb5 overflow-container">
+      <header class="ph3 ph5-ns pt4">
         <h4 class="f4 mv0 fw6 dib mr4"><%= name %></h4>
         <span class="f4 b dib pl0 ml0 mr4">v<%= moduleVersion %></span>
         <span class="f4 b dib pl0 ml0 mr4"><%= moduleSize %></span>
@@ -32,59 +187,7 @@
             <dd class="db pl0 ml0 f4 f2-ns b"><%= moduleObj.rules.size.average %></dd>
           </dl>
         </div>
-        <p class="measure f4 f3-ns lh-copy">
-          There are several pre-defined classes for setting the typeface of a page or element. It is suggested
-          that you customize or extend this module to suit your own needs. As tachyons is a toolkit for designing
-          performant webpages it comes with a variety of font stacks that utilize attractive system fonts with appropriate fallbacks.
-        </p>
-        <p class="measure f5 f4-ns lh-copy">
-          Relying on systems fonts greatly improves page performance and can also help
-          your web application/site blend in with the users operating
-          system. This can help create a more fluid reading experience, allowing your users to
-          focus on your content.
-        </p>
-      </article>
-      <div class="ph3 ph5-ns pt4 pb5">
-        <h2 class="f3 bold">Examples</h2>
-        <h3 class="f5 book sans-serif pt4 caps">Default System Sans Serif</h3>
-        <p class="system-sans-serif lh-copy measure">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-          no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        </p>
-        <h3 class="f5 book sans-serif pt4 caps">Default System Serif</h3>
-        <p class="system-serif lh-copy measure">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-          no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        </p>
-        <h3 class="f5 book sans-serif pt4 caps">System Sans Serif with Fallbacks</h3>
-        <p class="sans-serif lh-copy measure">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-          no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        </p>
-        <div class="mt5 cf">
-          <div class="dib mr4">
-            <h1 class="f4 ttu tracked fw6">Previous</h1>
-            <a href="/docs/typography/font-weight/" class="link fw6 blue dim">Font Weight</a>
-          </div>
-          <div class="dib">
-            <h1 class="f4 ttu tracked fw6">Next</h1>
-            <a href="/docs/typography/font-style/" class="link fw6 blue dim">Font Style</a>
-          </div>
-        </div>
-        <div class="mt5">
-          <h1 class="f4 ttu tracked fw6">Reference</h1>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family" class="link fw6 blue dim">MDN - Font Family</a>
-        </div>
-      </div>
-      <section class="bg-washed-blue black-70 pt4 pb5 overflow-container">
-      <header class="ph3 ph5-ns pt4">
-        <kbd>src/_font-families.css</kbd>
+        <kbd>src/_font-family.css</kbd>
       </header>
 <pre class="ph3 ph5-ns">
 <code class="code" style="font-size: .75rem;">
